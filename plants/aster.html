@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ohio Native Asters · Symphyotrichum · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f7f5f0;
+      --bg-warm:     #f0ede5;
+      --bg-card:     #faf9f6;
+      --bg-violet:   #ede8f4;
+      --border:      rgba(80,70,120,0.14);
+      --border-v:    rgba(100,80,160,0.28);
+      --violet:      #5a4898;
+      --violet-soft: #7a68b8;
+      --violet-pale: #c0b4e0;
+      --amber:       #9a7018;
+      --amber-soft:  #b88c28;
+      --herb:        #4a6048;
+      --herb-soft:   #5e7a5c;
+      --text:        #1e1c28;
+      --text-dim:    #3e3850;
+      --text-faint:  #7068888;
+      --ink:         #1a1828;
+    }
+
+    /* Fix typo in text-faint */
+    :root { --text-faint: #706888; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 470px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--bg-warm);
+    }
+
+    /* Late October afternoon sky — warm amber below, blue-violet above */
+    .hero-light {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 75% 50% at 55% 20%, rgba(120,100,190,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 55% at 15% 55%, rgba(180,150,60,0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 50% at 88% 70%, rgba(140,120,200,0.16) 0%, transparent 55%),
+        linear-gradient(175deg, #e8e4f0 0%, #edeae4 45%, #ece8de 100%);
+    }
+
+    /* Aster illustration */
+    .hero-illustration {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      width: 60%;
+      height: 95%;
+      opacity: 0.82;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 1.2rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--violet);
+      opacity: 0.5;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.5rem, 8vw, 3.5rem);
+      line-height: 1.0;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      animation: rise 0.7s 0.1s ease both;
+    }
+
+    .hero h1 em {
+      display: block;
+      font-style: italic;
+      color: var(--violet-soft);
+      font-weight: 600;
+    }
+
+    .hero-latin {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-faint);
+      margin-top: 0.5rem;
+      animation: rise 0.7s 0.2s ease both;
+    }
+
+    .hero-tagline {
+      margin-top: 1rem;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 360px;
+      line-height: 1.65;
+      animation: rise 0.7s 0.3s ease both;
+    }
+
+    .finale-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+      background: rgba(90,72,152,0.1);
+      border: 1px solid rgba(90,72,152,0.28);
+      border-radius: 3px;
+      padding: 0.32em 0.9em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--violet);
+      animation: rise 0.7s 0.4s ease both;
+    }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band {
+      background: var(--ink);
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+
+    .fact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(192,180,224,0.58);
+    }
+
+    .fact-value {
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: #dcd8ec;
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 2.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.4rem, 4.5vw, 1.85rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+      line-height: 1.15;
+    }
+
+    .section p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--violet); font-weight: 500; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 0.28em 0.85em;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-faint);
+      background: var(--bg-warm);
+    }
+
+    /* ── LAST NECTAR CALLOUT ──────────────────── */
+    /* The urgency block — amber, warm, serious */
+    .nectar-callout {
+      background: var(--ink);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 1.4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nectar-callout::before {
+      content: '✦';
+      position: absolute;
+      top: -0.5rem;
+      right: 0.8rem;
+      font-size: 7rem;
+      color: rgba(180,140,40,0.08);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .nectar-callout-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber-soft);
+      margin-bottom: 0.7rem;
+      opacity: 0.9;
+    }
+
+    .nectar-callout p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.03rem;
+      color: #d8d0ec;
+      margin: 0 !important;
+      line-height: 1.75;
+      position: relative;
+    }
+
+    .nectar-callout strong {
+      color: #e8c86c !important;
+    }
+
+    /* ── TAXONOMY EXPLAINER ───────────────────── */
+    .taxonomy-box {
+      background: var(--bg-violet);
+      border: 1px solid var(--border-v);
+      border-left: 3px solid var(--violet-soft);
+      border-radius: 0 4px 4px 0;
+      padding: 1.3rem 1.4rem;
+      margin: 1.2rem 0;
+    }
+
+    .taxonomy-box-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--violet);
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+
+    .taxonomy-box p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    /* ── SEASONAL TIMELINE ────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+
+    .tl-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-season {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      width: 88px;
+      flex-shrink: 0;
+      padding: 0.85rem 0.8rem 0.85rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tl-bar {
+      width: 3px;
+      background: var(--border);
+      flex-shrink: 0;
+      margin: 0.4rem 1rem 0.4rem 0;
+      border-radius: 2px;
+    }
+
+    .tl-row.peak   .tl-bar { background: var(--violet); }
+    .tl-row.build  .tl-bar { background: var(--violet-pale); }
+    .tl-row.quiet  .tl-bar { background: var(--herb-soft); }
+
+    .tl-text {
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      padding: 0.85rem 0;
+      line-height: 1.55;
+    }
+
+    /* ── SPECIES GRID ─────────────────────────── */
+    .species-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    @media (max-width: 520px) {
+      .species-grid { grid-template-columns: 1fr; }
+    }
+
+    .species-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .species-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--violet-pale);
+    }
+
+    .species-card.featured::before { background: var(--violet); }
+
+    /* Color-coded left stripe per species */
+    .species-card.new-england::before  { background: #7a58c0; }
+    .species-card.smooth::before       { background: #5870b8; }
+    .species-card.sky-blue::before     { background: #4898c8; }
+    .species-card.aromatic::before     { background: #8868b8; }
+
+    .species-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--violet-soft);
+      margin-bottom: 0.4rem;
+    }
+
+    .species-common {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+
+    .species-latin {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--text-faint);
+      margin-bottom: 0.7rem;
+    }
+
+    .species-desc {
+      font-size: 0.86rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    .species-traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.7rem;
+    }
+
+    .species-trait {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      background: var(--bg-violet);
+      border: 1px solid var(--border);
+      padding: 0.18em 0.6em;
+      border-radius: 2px;
+    }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+
+    .care-table td {
+      padding: 0.75rem 0.4rem;
+      vertical-align: top;
+    }
+
+    .care-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--violet-soft);
+      width: 30%;
+      padding-top: 0.9rem;
+    }
+
+    .care-table td:last-child {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+
+    .companion-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+      opacity: 0.85;
+    }
+
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+
+    .companion-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .companion-row:last-child { border-bottom: none; }
+
+    .companion-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--violet-pale);
+      flex-shrink: 0;
+      margin-top: 0.5em;
+    }
+
+    .companion-common {
+      font-size: 0.96rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .companion-latin {
+      font-style: italic;
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: var(--text-faint);
+    }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+
+    .story-card {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .story-card--highlight {
+      background: var(--bg-violet);
+      border: 1px solid var(--border-v);
+      border-top: 3px solid var(--violet);
+      border-radius: 0 0 5px 5px;
+      padding: 1.4rem;
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+    }
+
+    .story-number {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(90,72,152,0.28);
+      flex-shrink: 0;
+      padding-top: 0.25rem;
+      min-width: 2rem;
+    }
+
+    .story-card--highlight .story-number { color: var(--violet); opacity: 0.8; }
+
+    .story-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .story-body p {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.78;
+      margin-bottom: 0.85rem;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--violet); font-weight: 500; }
+    .story-body em { color: var(--text-faint); font-style: italic; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--border);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: rgba(192,180,224,0.42);
+      line-height: 2;
+    }
+
+    footer strong { color: rgba(192,180,224,0.68); font-weight: 500; }
+
+    /* ── ANIMATIONS ───────────────────────────── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Aster illustration:
+         Daisy-form flowers with many fine ray petals radiating
+         from a warm golden central disc. Multiple flower heads
+         at different stages — bud, full bloom, and past peak.
+         Characteristic opposite leaves along branching stems. -->
+    <svg class="hero-illustration" viewBox="0 0 300 430" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- Main branching stems -->
+      <line x1="148" y1="430" x2="148" y2="240" stroke="#4a5848" stroke-width="3.2" stroke-linecap="round"/>
+      <line x1="148" y1="295" x2="100" y2="220" stroke="#4a5848" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="148" y1="268" x2="200" y2="195" stroke="#4a5848" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="148" y1="240" x2="144" y2="140" stroke="#4a5848" stroke-width="2.6" stroke-linecap="round"/>
+      <line x1="100" y1="220" x2="68"  y2="168" stroke="#4a5848" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="100" y1="220" x2="126" y2="162" stroke="#4a5848" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="200" y1="195" x2="178" y2="148" stroke="#4a5848" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="200" y1="195" x2="224" y2="152" stroke="#4a5848" stroke-width="1.6" stroke-linecap="round"/>
+
+      <!-- Leaves — opposite pairs, lance-shaped -->
+      <g fill="none" stroke="#3e5040" stroke-linecap="round">
+        <path d="M148 340 C135 330 120 330 112 336" stroke-width="1.5" opacity="0.75"/>
+        <path d="M148 340 C161 330 176 330 184 336" stroke-width="1.5" opacity="0.75"/>
+        <path d="M148 380 C138 372 126 373 120 378" stroke-width="1.3" opacity="0.6"/>
+        <path d="M148 380 C158 372 170 373 176 378" stroke-width="1.3" opacity="0.6"/>
+        <path d="M148 410 C140 405 130 406 124 410" stroke-width="1.2" opacity="0.45"/>
+        <path d="M148 410 C156 405 166 406 172 410" stroke-width="1.2" opacity="0.45"/>
+        <!-- leaves on branches -->
+        <path d="M122 200 C115 194 106 194 102 198" stroke-width="1.2" opacity="0.65"/>
+        <path d="M188 178 C194 172 203 172 207 176" stroke-width="1.2" opacity="0.65"/>
+      </g>
+
+      <!-- FLOWER 1 — main terminal, full bloom, deep violet -->
+      <!-- Ray petals -->
+      <g fill="none" stroke="#7a58c0" stroke-width="1.4" stroke-linecap="round">
+        <!-- 16 petals radiating from center at ~130,132 -->
+        <path d="M130 132 L118 108"/><path d="M132 132 L122 106"/>
+        <path d="M135 131 L128 104"/><path d="M138 130 L136 103"/>
+        <path d="M141 130 L143 103"/><path d="M143 131 L149 104"/>
+        <path d="M145 132 L154 106"/><path d="M146 134 L158 110"/>
+        <path d="M145 136 L158 118"/><path d="M144 138 L156 126"/>
+        <path d="M143 140 L153 132"/><path d="M141 141 L149 139"/>
+        <path d="M138 141 L144 145"/><path d="M135 141 L137 147"/>
+        <path d="M132 140 L128 147"/><path d="M130 138 L120 142"/>
+        <path d="M129 136 L116 136"/><path d="M129 134 L117 128"/>
+      </g>
+      <!-- Petal fills — slightly transparent -->
+      <g opacity="0.7">
+        <ellipse cx="124" cy="118" rx="3" ry="11" fill="#8a68d0" transform="rotate(-30 124 118)"/>
+        <ellipse cx="128" cy="113" rx="3" ry="11" fill="#8a68d0" transform="rotate(-18 128 113)"/>
+        <ellipse cx="133" cy="110" rx="3" ry="11" fill="#9070d8" transform="rotate(-8 133 110)"/>
+        <ellipse cx="139" cy="109" rx="3" ry="11" fill="#9070d8" transform="rotate(2 139 109)"/>
+        <ellipse cx="145" cy="110" rx="3" ry="11" fill="#8a68d0" transform="rotate(12 145 110)"/>
+        <ellipse cx="150" cy="114" rx="3" ry="11" fill="#8a68d0" transform="rotate(24 150 114)"/>
+        <ellipse cx="154" cy="120" rx="3" ry="11" fill="#7a58c0" transform="rotate(38 154 120)"/>
+        <ellipse cx="154" cy="128" rx="3" ry="10" fill="#7a58c0" transform="rotate(55 154 128)"/>
+        <ellipse cx="150" cy="136" rx="3" ry="10" fill="#7a58c0" transform="rotate(72 150 136)"/>
+        <ellipse cx="144" cy="142" rx="3" ry="10" fill="#7a58c0" transform="rotate(88 144 142)"/>
+        <ellipse cx="137" cy="144" rx="3" ry="10" fill="#8a68d0" transform="rotate(-102 137 144)"/>
+        <ellipse cx="130" cy="143" rx="3" ry="10" fill="#8a68d0" transform="rotate(-118 130 143)"/>
+        <ellipse cx="124" cy="140" rx="3" ry="10" fill="#7a58c0" transform="rotate(-135 124 140)"/>
+        <ellipse cx="119" cy="134" rx="3" ry="10" fill="#7a58c0" transform="rotate(-152 119 134)"/>
+        <ellipse cx="118" cy="126" rx="3" ry="11" fill="#7a58c0" transform="rotate(-168 118 126)"/>
+        <ellipse cx="120" cy="118" rx="3" ry="11" fill="#7a58c0" transform="rotate(155 120 118)"/>
+      </g>
+      <!-- Golden disc center -->
+      <circle cx="136" cy="128" r="10" fill="#d4a828" opacity="0.9"/>
+      <circle cx="136" cy="128" r="7"  fill="#e8c040" opacity="0.85"/>
+      <!-- disc florets -->
+      <g fill="#a87820" opacity="0.7">
+        <circle cx="133" cy="125" r="1.2"/><circle cx="136" cy="124" r="1.2"/>
+        <circle cx="139" cy="125" r="1.2"/><circle cx="140" cy="128" r="1.2"/>
+        <circle cx="139" cy="131" r="1.2"/><circle cx="136" cy="132" r="1.2"/>
+        <circle cx="133" cy="131" r="1.2"/><circle cx="132" cy="128" r="1.2"/>
+        <circle cx="136" cy="128" r="1.2"/>
+      </g>
+
+      <!-- FLOWER 2 — left branch, slightly smaller, medium violet -->
+      <g opacity="0.82">
+        <g fill="none" stroke="#6a68b8" stroke-width="1.2" stroke-linecap="round">
+          <path d="M82 157 L72 136"/><path d="M85 156 L78 134"/>
+          <path d="M88 155 L84 133"/><path d="M91 154 L91 132"/>
+          <path d="M93 155 L97 133"/><path d="M94 157 L100 136"/>
+          <path d="M93 160 L101 143"/><path d="M92 163 L99 153"/>
+          <path d="M90 165 L96 162"/><path d="M87 166 L90 170"/>
+          <path d="M84 165 L82 170"/><path d="M81 163 L74 165"/>
+          <path d="M80 160 L70 158"/>
+        </g>
+        <g opacity="0.65">
+          <ellipse cx="76"  cy="145" rx="2.5" ry="9" fill="#7a78c8" transform="rotate(-28 76 145)"/>
+          <ellipse cx="80"  cy="141" rx="2.5" ry="9" fill="#7a78c8" transform="rotate(-14 80 141)"/>
+          <ellipse cx="85"  cy="140" rx="2.5" ry="9" fill="#8080d0" transform="rotate(0 85 140)"/>
+          <ellipse cx="90"  cy="140" rx="2.5" ry="9" fill="#8080d0" transform="rotate(14 90 140)"/>
+          <ellipse cx="95"  cy="142" rx="2.5" ry="9" fill="#7a78c8" transform="rotate(28 95 142)"/>
+          <ellipse cx="99"  cy="148" rx="2.5" ry="9" fill="#7a78c8" transform="rotate(45 99 148)"/>
+          <ellipse cx="99"  cy="156" rx="2.5" ry="9" fill="#7070c0" transform="rotate(65 99 156)"/>
+          <ellipse cx="95"  cy="163" rx="2.5" ry="9" fill="#7070c0" transform="rotate(85 95 163)"/>
+          <ellipse cx="87"  cy="168" rx="2.5" ry="8" fill="#7070c0" transform="rotate(-100 87 168)"/>
+          <ellipse cx="80"  cy="166" rx="2.5" ry="8" fill="#7070c0" transform="rotate(-120 80 166)"/>
+          <ellipse cx="74"  cy="160" rx="2.5" ry="8" fill="#7070c0" transform="rotate(-145 74 160)"/>
+          <ellipse cx="72"  cy="152" rx="2.5" ry="9" fill="#7070c0" transform="rotate(-165 72 152)"/>
+        </g>
+        <circle cx="87" cy="158" r="8"   fill="#c89820" opacity="0.88"/>
+        <circle cx="87" cy="158" r="5.5" fill="#dca830" opacity="0.82"/>
+        <g fill="#9a7018" opacity="0.65">
+          <circle cx="85" cy="156" r="1.0"/><circle cx="87" cy="155" r="1.0"/>
+          <circle cx="89" cy="156" r="1.0"/><circle cx="90" cy="158" r="1.0"/>
+          <circle cx="89" cy="160" r="1.0"/><circle cx="87" cy="161" r="1.0"/>
+          <circle cx="85" cy="160" r="1.0"/><circle cx="84" cy="158" r="1.0"/>
+        </g>
+      </g>
+
+      <!-- FLOWER 3 — right branch, similar violet, offset -->
+      <g opacity="0.80">
+        <g fill="none" stroke="#7260c0" stroke-width="1.2" stroke-linecap="round">
+          <path d="M205 140 L196 120"/><path d="M208 139 L202 118"/>
+          <path d="M211 138 L208 117"/><path d="M214 138 L215 116"/>
+          <path d="M216 139 L221 118"/><path d="M217 141 L225 122"/>
+          <path d="M216 144 L223 132"/><path d="M214 147 L220 141"/>
+          <path d="M212 149 L217 151"/><path d="M209 150 L211 156"/>
+          <path d="M206 150 L204 155"/><path d="M203 148 L196 152"/>
+          <path d="M202 145 L192 145"/>
+        </g>
+        <g opacity="0.62">
+          <ellipse cx="200" cy="129" rx="2.5" ry="9" fill="#8268c8" transform="rotate(-25 200 129)"/>
+          <ellipse cx="204" cy="125" rx="2.5" ry="9" fill="#8268c8" transform="rotate(-12 204 125)"/>
+          <ellipse cx="209" cy="124" rx="2.5" ry="9" fill="#8870d0" transform="rotate(2 209 124)"/>
+          <ellipse cx="214" cy="125" rx="2.5" ry="9" fill="#8870d0" transform="rotate(16 214 125)"/>
+          <ellipse cx="219" cy="129" rx="2.5" ry="9" fill="#8268c8" transform="rotate(30 219 129)"/>
+          <ellipse cx="222" cy="136" rx="2.5" ry="9" fill="#8268c8" transform="rotate(50 222 136)"/>
+          <ellipse cx="221" cy="144" rx="2.5" ry="8" fill="#7860c0" transform="rotate(70 221 144)"/>
+          <ellipse cx="217" cy="151" rx="2.5" ry="8" fill="#7860c0" transform="rotate(88 217 151)"/>
+          <ellipse cx="209" cy="154" rx="2.5" ry="8" fill="#7860c0" transform="rotate(-105 209 154)"/>
+          <ellipse cx="202" cy="151" rx="2.5" ry="8" fill="#7860c0" transform="rotate(-125 202 151)"/>
+          <ellipse cx="196" cy="145" rx="2.5" ry="8" fill="#7860c0" transform="rotate(-150 196 145)"/>
+          <ellipse cx="194" cy="137" rx="2.5" ry="9" fill="#7860c0" transform="rotate(-168 194 137)"/>
+        </g>
+        <circle cx="208" cy="142" r="8"   fill="#c89820" opacity="0.88"/>
+        <circle cx="208" cy="142" r="5.5" fill="#dca830" opacity="0.82"/>
+        <g fill="#9a7018" opacity="0.65">
+          <circle cx="206" cy="140" r="1.0"/><circle cx="208" cy="139" r="1.0"/>
+          <circle cx="210" cy="140" r="1.0"/><circle cx="211" cy="142" r="1.0"/>
+          <circle cx="210" cy="144" r="1.0"/><circle cx="208" cy="145" r="1.0"/>
+          <circle cx="206" cy="144" r="1.0"/><circle cx="205" cy="142" r="1.0"/>
+        </g>
+      </g>
+
+      <!-- BUD — top of central stem, tight and elongated -->
+      <g opacity="0.72">
+        <ellipse cx="144" cy="128" rx="8" ry="12" fill="#9070c8" opacity="0.5"/>
+        <ellipse cx="144" cy="128" rx="5" ry="9"  fill="#a880d8" opacity="0.6"/>
+        <!-- bud sepal tips -->
+        <path d="M136 132 C133 128 134 122 138 118" stroke="#4a5848" stroke-width="1" fill="none" opacity="0.7"/>
+        <path d="M152 132 C155 128 154 122 150 118" stroke="#4a5848" stroke-width="1" fill="none" opacity="0.7"/>
+      </g>
+
+      <!-- LEFT OUTER FLOWER — smaller, past peak, petals reflexing -->
+      <g opacity="0.55">
+        <g fill="none" stroke="#6060a8" stroke-width="1.0" stroke-linecap="round">
+          <path d="M65 158 L58 141"/><path d="M68 157 L63 139"/>
+          <path d="M71 157 L70 138"/><path d="M74 157 L76 138"/>
+          <path d="M76 158 L80 140"/><path d="M76 161 L81 148"/>
+          <path d="M74 164 L78 158"/><path d="M71 165 L72 168"/>
+          <path d="M68 164 L65 167"/><path d="M65 162 L58 163"/>
+          <path d="M63 159 L55 157"/>
+        </g>
+        <circle cx="70" cy="160" r="6.5" fill="#b89018" opacity="0.8"/>
+        <circle cx="70" cy="160" r="4"   fill="#caa028" opacity="0.75"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plants · Group Profile</div>
+      <h1>Ohio Native<em>Asters</em></h1>
+      <p class="hero-latin">Symphyotrichum spp.</p>
+      <p class="hero-tagline">The grand finale of the Ohio prairie year — deep violet-blue flowers that arrive just as most everything else has finished, feeding the last wave of pollinators before winter.</p>
+      <div class="finale-badge">✦ Last Major Nectar Source · Late Season</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Native perennial wildflowers</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">1–6 ft by species</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom</span>
+      <span class="fact-value">Late summer through frost</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun to part shade</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium; varies</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Ohio species</span>
+      <span class="fact-value">10+ native species</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Group</p>
+    <h2>Not One Plant — A Whole Family of Them</h2>
+
+    <div class="taxonomy-box">
+      <p class="taxonomy-box-label">A note on naming</p>
+      <p>What most people call "asters" were reclassified in the 1990s from the genus <em>Aster</em> to <em>Symphyotrichum</em> — a change that more accurately reflects their evolutionary relationships. The common name "aster" still applies and is used throughout this profile. Ohio is home to more than ten native <em>Symphyotrichum</em> species, ranging from sprawling groundcovers to towering six-foot plants, all sharing the characteristic ray-and-disc flower structure.</p>
+    </div>
+
+    <p>Asters are one of the most ecologically important groups of native wildflowers in the eastern United States. Their timing alone makes them invaluable: they bloom from late summer into October and sometimes beyond the first frost, providing <strong>critical nectar and pollen</strong> to migrating butterflies, overwintering bees, and late-season specialist insects at the exact moment when nearly every other flower has finished.</p>
+    <p>In a prairie or meadow planting, asters serve as the visual and ecological climax of the season — a final burst of color, insect activity, and beauty before dormancy sets in.</p>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Meadow edges</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Naturalistic borders</span>
+      <span class="pill">Butterfly gardens</span>
+      <span class="pill">Autumn structure</span>
+    </div>
+  </section>
+
+  <!-- THE LAST NECTAR SECTION -->
+  <section class="section">
+    <p class="eyebrow">Ecological Urgency</p>
+    <h2>The Last Major Nectar Source</h2>
+    <p>Timing is everything in ecology, and asters have it. While goldenrods overlap in season, asters often extend further into fall, continuing to bloom after hard frosts have silenced most other plants. For pollinators preparing for winter, this matters enormously.</p>
+
+    <div class="nectar-callout">
+      <p class="nectar-callout-label">Why late-season bloom matters</p>
+      <p>Monarch butterflies fuel their 3,000-mile migration to Mexico almost entirely on late-season nectar — and asters are among their <strong>most critical fueling stations</strong>. Bumblebee queens building fat reserves before overwintering, specialist bees completing their final broods, and migrating painted ladies all converge on asters in a way that is largely invisible to casual observers but ecologically irreplaceable.</p>
+    </div>
+
+    <p>This makes asters not just beautiful but <strong>ecologically urgent</strong>. A garden without late-season native flowers is a garden that fails pollinators at their most vulnerable moment. A single large aster planting in October can support hundreds of insects on a warm afternoon.</p>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row quiet">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Rosettes and young shoots emerge from the ground; foliage develops through late spring with little visual drama — asters spend spring building the infrastructure for fall</div>
+      </div>
+      <div class="tl-row build">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Stems elongate and branch; foliage contributes texture and habitat. Taller species may benefit from a late-June "Chelsea chop" — cutting back by half — to create bushier, better-proportioned plants</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Peak bloom — the season's grand finale. Violet-blue, lavender, and purple flowers cover the plants and immediately attract migrating butterflies, late bees, and dozens of other insect species</div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Spent seedheads provide winter bird food and subtle structural texture; basal foliage and stems offer overwintering habitat for insects and spiders</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OHIO ASTER SPECIES -->
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Native Asters</h2>
+    <p>Ohio's native asters span a wide range of sizes, habitat preferences, and garden applications. These four are among the most ecologically valuable and garden-worthy species in the state.</p>
+
+    <div class="species-grid">
+
+      <div class="species-card new-england">
+        <p class="species-tag">Iconic · Tallgrass Prairie</p>
+        <p class="species-common">New England Aster</p>
+        <p class="species-latin">Symphyotrichum novae-angliae</p>
+        <p class="species-desc">The showiest and most widely recognized native aster — large, intensely colored flowers in shades from deep violet to magenta-purple. One of the most important monarch butterfly nectar sources in the eastern United States. Bold and upright; benefits from cutting back in June to control height and improve form.</p>
+        <div class="species-traits">
+          <span class="species-trait">3–6 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Medium–moist</span>
+          <span class="species-trait">Monarch magnet</span>
+        </div>
+      </div>
+
+      <div class="species-card smooth">
+        <p class="species-tag">Refined · Prairie Native</p>
+        <p class="species-common">Smooth Aster</p>
+        <p class="species-latin">Symphyotrichum laeve</p>
+        <p class="species-desc">An underused gem with elegant powder-blue flowers and distinctive waxy, blue-green foliage that provides interest even before bloom. More drought-tolerant than New England aster. Stays upright without staking and naturalizes beautifully. An important late-season resource for specialist native bees.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–4 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry to medium</span>
+          <span class="species-trait">Drought tolerant</span>
+        </div>
+      </div>
+
+      <div class="species-card sky-blue">
+        <p class="species-tag">Ohio's Own · Sky-blue</p>
+        <p class="species-common">Sky Blue Aster</p>
+        <p class="species-latin">Symphyotrichum oolentangiense</p>
+        <p class="species-desc">Named after the Olentangy River in Ohio — one of the few plant species directly named for an Ohio waterway. Pale sky-blue to lavender flowers on an open, airy branching structure. Well-suited to dry, lean, and sandy soils. More delicate in habit than other species, with exceptional ornamental character.</p>
+        <div class="species-traits">
+          <span class="species-trait">1–3 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry to medium</span>
+          <span class="species-trait">Ohio-named</span>
+        </div>
+      </div>
+
+      <div class="species-card aromatic">
+        <p class="species-tag">Hardy · Four-season interest</p>
+        <p class="species-common">Aromatic Aster</p>
+        <p class="species-latin">Symphyotrichum oblongifolium</p>
+        <p class="species-desc">One of the toughest and longest-blooming Ohio asters — distinctively fragrant foliage and a rounded, mounding habit that holds its form beautifully. Tolerates heat, drought, and poor soils. Often the last aster blooming in the garden, extending well into October and sometimes November. Excellent fall color from foliage as well as flowers.</p>
+        <div class="species-traits">
+          <span class="species-trait">1–3 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry; heat tolerant</span>
+          <span class="species-trait">Latest to bloom</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WILDLIFE SUPPORT -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Wildlife Value</h2>
+    <p>Asters support an exceptional range of wildlife — not just pollinators, but specialist insects, seed-eating birds, and the broader food web. Their late timing makes them <strong>irreplaceable</strong> rather than simply valuable.</p>
+    <p><strong>Monarchs and migrating butterflies</strong> use asters as primary fueling stops, sometimes in impressive numbers on warm October afternoons. <strong>Specialist native bees</strong> — including several <em>Andrena</em> species that forage almost exclusively on asters — depend on the late-season pollen for completing their final broods. <strong>Goldfinches and sparrows</strong> work the seedheads through winter. <strong>Ambush bugs and predatory insects</strong> use the flowers as hunting grounds, completing their own seasonal cycles.</p>
+    <p>The dense branching structure also provides nesting sites and shelter for small insects and spiders through the dormant season. Leaving asters standing through winter is not just aesthetically rewarding — it is ecologically meaningful.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Most Ohio native asters are adaptable and easy to grow in full sun. The key variables are moisture and height management — different species have different tolerances, and tall species like New England aster benefit from early-season pinching.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun preferred; most tolerate part shade with reduced bloom</td></tr>
+      <tr><td>Soil</td><td>Adaptable; most prefer average to lean soils — avoid over-fertilizing</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium depending on species; New England aster prefers medium-moist</td></tr>
+      <tr><td>Height control</td><td>Cut tall species back by half in late June ("Chelsea chop") for fuller, shorter plants</td></tr>
+      <tr><td>Spacing</td><td>2–3 feet; clump-forming and non-invasive</td></tr>
+      <tr><td>Division</td><td>Divide every 3–4 years in spring to maintain vigor</td></tr>
+      <tr><td>Winter care</td><td>Leave standing through winter — seeds feed birds, stems harbor insects</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANION PLANTS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Asters reach their peak when most prairie species are winding down — pair them with plants that provide earlier season interest, and asters will carry the planting through to its close.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Earlier-season partners (visual succession)</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Simultaneous late-season companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrods</span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ironweed</span> <span class="companion-latin">Vernonia spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Structural & textural companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Switchgrass</span> <span class="companion-latin">Panicum virgatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Lovegrass</span> <span class="companion-latin">Eragrostis spectabilis</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">One Species Is Named After an Ohio River</h3>
+        <p>Sky Blue Aster — <em>Symphyotrichum oolentangiense</em> — takes its scientific name from the Olentangy River in central Ohio, one of the few native plant species named directly for an Ohio waterway. The name was given in the 19th century when the plant was first formally described from specimens collected near the river.</p>
+        <p>The Olentangy River flows through Columbus and into the Scioto. The aster that carries its name is a characteristically Ohio prairie plant — pale sky-blue flowers, airy branching, and a tolerance for the dry, lean soils of Ohio's vanished prairie remnants. It is, in a botanical sense, a piece of Ohio's natural history encoded in a scientific name.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Specialist Bees Evolved Alongside Asters</h3>
+        <p>Several native bee species in the genus <em>Andrena</em> are <strong>specialist foragers on asters</strong> — they collect pollen almost exclusively from <em>Symphyotrichum</em> species to feed their larvae. These bees are active in fall, timed precisely to the aster bloom, and they depend on asters being present in the landscape to complete their reproductive cycle.</p>
+        <p>Without native asters, these specialist bees cannot reproduce. Without these bees, asters are less efficiently pollinated. The relationship is an example of deep co-evolutionary interdependence — two species that have shaped each other over millions of years, and that quietly disappear together when the landscape loses its native plants.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">"Aster" Means Star — and the Name Suits Them</h3>
+        <p>The word <em>aster</em> comes from the Greek for star — a reference to the radiating ray petals that give asters their characteristic daisy-like form. Unlike true daisies, however, asters have a complex, multilayered flower structure: the showy "petals" are actually individual ray flowers, each one a complete flower in its own right, surrounding a central disc packed with dozens of tiny disc florets.</p>
+        <p>This means that what looks like a single aster flower is actually a <strong>composite of many individual flowers</strong> — a design shared across the entire daisy family (Asteraceae), which is one of the largest and most successful plant families on Earth. Each disc floret opens in sequence from the outside in, extending the bloom period and offering fresh nectar resources over many days.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">They Are the Prairie's Last Act — and Its Most Important One</h3>
+        <p>A prairie planting without asters is a story without an ending. All summer long, the bloom sequence moves forward — spring ephemerals, early summer umbels, midsummer coneflowers and mints, late summer grasses and goldenrods. Asters are the final chapter: the richest, most colorful, most ecologically urgent bloom of the entire year.</p>
+        <p>For the insects and birds preparing for winter or migration, that final chapter is not decorative — it is <strong>life-sustaining</strong>. The fat reserves a monarch butterfly builds on asters in Ohio in October may determine whether it survives the 3,000-mile journey to Mexico. The pollen a bumblebee queen collects from an aromatic aster in late October may be the last food she eats before overwintering. In this sense, asters are not just the end of the season. They are the reason the season matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Symphyotrichum spp. · Native Perennial · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
