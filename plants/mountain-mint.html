@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mountain Mint · Pycnanthemum · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f6f5f0;
+      --bg-warm:      #efede5;
+      --bg-card:      #faf9f6;
+      --bg-silver:    #e8ecea;
+      --border:       rgba(100,120,110,0.18);
+      --border-silver:rgba(140,160,155,0.35);
+      --silver:       #5a7870;
+      --silver-soft:  #7a9e94;
+      --silver-pale:  #b8d0c8;
+      --herb:         #3a6858;
+      --herb-soft:    #4e8070;
+      --stone:        #4a5250;
+      --stone-light:  #7a8a84;
+      --text:         #1e2622;
+      --text-dim:     #3e5048;
+      --text-faint:   #6e8078;
+      --warm-white:   #fdfcf8;
+      --ink:          #1a2420;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 460px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--bg-warm);
+    }
+
+    /* Bright airy haze — midsummer noon light */
+    .hero-light {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 55% at 55% 20%, rgba(200,220,210,0.45) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 85% 55%, rgba(180,210,200,0.25) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 60% at 10% 70%, rgba(220,215,200,0.3) 0%, transparent 60%),
+        linear-gradient(175deg, #e4e8e4 0%, #eaece6 45%, #e6e8e0 100%);
+    }
+
+    /* Silver bract illustration */
+    .hero-illustration {
+      position: absolute;
+      top: -5px;
+      right: -15px;
+      width: 62%;
+      height: 92%;
+      opacity: 0.78;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--herb);
+      margin-bottom: 1.2rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--herb);
+      opacity: 0.55;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.6rem, 8vw, 3.6rem);
+      line-height: 1.0;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+      animation: rise 0.7s 0.1s ease both;
+    }
+
+    .hero h1 em {
+      display: block;
+      font-style: italic;
+      color: var(--silver);
+      font-weight: 600;
+    }
+
+    .hero-latin {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--stone-light);
+      margin-top: 0.5rem;
+      animation: rise 0.7s 0.2s ease both;
+    }
+
+    .hero-tagline {
+      margin-top: 1rem;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 350px;
+      line-height: 1.65;
+      animation: rise 0.7s 0.3s ease both;
+    }
+
+    .flagship-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+      background: rgba(58,104,88,0.1);
+      border: 1px solid rgba(58,104,88,0.28);
+      border-radius: 3px;
+      padding: 0.32em 0.9em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--herb);
+      animation: rise 0.7s 0.4s ease both;
+    }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band {
+      background: var(--ink);
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+
+    .fact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(184,208,200,0.6);
+    }
+
+    .fact-value {
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: #dce8e0;
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 2.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--silver);
+      margin-bottom: 0.5rem;
+    }
+
+    .section h2 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.4rem, 4.5vw, 1.85rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+      line-height: 1.15;
+    }
+
+    .section p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--herb); font-weight: 500; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 0.28em 0.85em;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-faint);
+      background: var(--bg-warm);
+    }
+
+    /* ── KEYSTONE CALLOUT ─────────────────────── */
+    .keystone-callout {
+      background: var(--ink);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 1.4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .keystone-callout::before {
+      content: '✦';
+      position: absolute;
+      top: -1rem;
+      right: 1rem;
+      font-size: 8rem;
+      color: rgba(184,208,200,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .keystone-callout p {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #cce0d8;
+      margin: 0 !important;
+      line-height: 1.75;
+      position: relative;
+    }
+
+    .keystone-callout strong {
+      color: var(--silver-pale) !important;
+    }
+
+    /* ── INSECT DIVERSITY HUB ─────────────────── */
+    /* The visual centerpiece — a radial-style insect taxonomy display */
+    .insect-hub {
+      margin: 1.4rem 0;
+    }
+
+    .insect-category {
+      margin-bottom: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .insect-category-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-warm);
+      cursor: default;
+    }
+
+    .insect-category-icon {
+      font-size: 1.1rem;
+      flex-shrink: 0;
+      width: 28px;
+      text-align: center;
+    }
+
+    .insect-category-name {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--stone);
+      font-weight: 500;
+      flex: 1;
+    }
+
+    .insect-count-badge {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      color: var(--silver);
+      background: var(--bg-silver);
+      border: 1px solid var(--border-silver);
+      padding: 0.15em 0.6em;
+      border-radius: 10px;
+    }
+
+    .insect-list {
+      padding: 0.6rem 1rem 0.8rem 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .insect-tag {
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.2em 0.7em;
+      border-radius: 3px;
+      font-style: italic;
+    }
+
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    /* ── SEASONAL TIMELINE ────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+
+    .tl-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-season {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      width: 88px;
+      flex-shrink: 0;
+      padding: 0.85rem 0.8rem 0.85rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tl-bar {
+      width: 3px;
+      background: var(--border);
+      flex-shrink: 0;
+      margin: 0.4rem 1rem 0.4rem 0;
+      border-radius: 2px;
+    }
+
+    .tl-row.peak .tl-bar   { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar   { background: var(--stone-light); }
+
+    .tl-text {
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      padding: 0.85rem 0;
+      line-height: 1.55;
+    }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+
+    .care-table td {
+      padding: 0.75rem 0.4rem;
+      vertical-align: top;
+    }
+
+    .care-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--silver);
+      width: 30%;
+      padding-top: 0.9rem;
+    }
+
+    .care-table td:last-child {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+
+    .companion-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--herb-soft);
+      margin-bottom: 0.6rem;
+      opacity: 0.85;
+    }
+
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+
+    .companion-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .companion-row:last-child { border-bottom: none; }
+
+    .companion-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--silver);
+      flex-shrink: 0;
+      margin-top: 0.5em;
+      opacity: 0.55;
+    }
+
+    .companion-common {
+      font-size: 0.96rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .companion-latin {
+      font-style: italic;
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: var(--text-faint);
+    }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+
+    .story-card {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .story-card--highlight {
+      background: var(--bg-warm);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--silver);
+      border-radius: 0 0 5px 5px;
+      padding: 1.4rem;
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+    }
+
+    .story-number {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(90,120,112,0.3);
+      flex-shrink: 0;
+      padding-top: 0.25rem;
+      min-width: 2rem;
+    }
+
+    .story-card--highlight .story-number { color: var(--silver); }
+
+    .story-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .story-body p {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.78;
+      margin-bottom: 0.85rem;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--herb); font-weight: 500; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    /* ── OHIO SPECIES SECTION ─────────────────── */
+    .species-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    @media (max-width: 520px) {
+      .species-grid { grid-template-columns: 1fr; }
+    }
+
+    .species-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 1.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .species-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--silver-pale);
+    }
+
+    .species-card.featured::before {
+      background: var(--silver);
+    }
+
+    .species-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--silver);
+      margin-bottom: 0.4rem;
+    }
+
+    .species-card.featured .species-tag {
+      color: var(--herb);
+    }
+
+    .species-common {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+
+    .species-latin {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--stone-light);
+      margin-bottom: 0.7rem;
+    }
+
+    .species-desc {
+      font-size: 0.86rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    .species-traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.7rem;
+    }
+
+    .species-trait {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      background: var(--bg-silver);
+      border: 1px solid var(--border);
+      padding: 0.18em 0.6em;
+      border-radius: 2px;
+    }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--border);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: rgba(184,208,200,0.45);
+      line-height: 2;
+    }
+
+    footer strong { color: rgba(184,208,200,0.7); font-weight: 500; }
+
+    /* ── ANIMATIONS ───────────────────────────── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Mountain mint illustration:
+         Clustered bract structure — flat-topped flower clusters
+         surrounded by distinctive silvery oval bracts.
+         The silver bracts are the signature visual element. -->
+    <svg class="hero-illustration" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- Main stems -->
+      <line x1="148" y1="420" x2="148" y2="200" stroke="#4a6858" stroke-width="3" stroke-linecap="round"/>
+      <line x1="148" y1="290" x2="108" y2="240" stroke="#4a6858" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="148" y1="268" x2="192" y2="218" stroke="#4a6858" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="148" y1="320" x2="94"  y2="278" stroke="#4a6858" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="148" y1="310" x2="202" y2="268" stroke="#4a6858" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="148" y1="200" x2="146" y2="130" stroke="#4a6858" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- leaf pairs along stem -->
+      <path d="M148 350 C138 342 128 344 122 350" stroke="#3a5848" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M148 350 C158 342 168 344 174 350" stroke="#3a5848" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+      <path d="M148 385 C136 378 126 380 120 386" stroke="#3a5848" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+      <path d="M148 385 C160 378 170 380 176 386" stroke="#3a5848" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+      <!-- SILVER BRACTS — the signature element.
+           Each flower cluster is surrounded by broad silvery oval bracts
+           that radiate outward like a halo. -->
+
+      <!-- Main terminal cluster — top center -->
+      <!-- Bracts (silvery oval leaves around base of flower head) -->
+      <g opacity="0.85">
+        <!-- outer bract ring -->
+        <ellipse cx="116" cy="182" rx="14" ry="8" fill="#b8cec8" transform="rotate(-35 116 182)"/>
+        <ellipse cx="132" cy="172" rx="14" ry="8" fill="#b8cec8" transform="rotate(-15 132 172)"/>
+        <ellipse cx="150" cy="168" rx="14" ry="8" fill="#c4d8d0" transform="rotate(5 150 168)"/>
+        <ellipse cx="167" cy="172" rx="14" ry="8" fill="#b8cec8" transform="rotate(20 167 172)"/>
+        <ellipse cx="179" cy="182" rx="14" ry="8" fill="#aabfb8" transform="rotate(40 179 182)"/>
+        <ellipse cx="184" cy="196" rx="13" ry="7" fill="#a8bcb4" transform="rotate(60 184 196)"/>
+        <ellipse cx="180" cy="210" rx="12" ry="7" fill="#aabfb8" transform="rotate(80 180 210)"/>
+        <ellipse cx="112" cy="196" rx="13" ry="7" fill="#a8bcb4" transform="rotate(-60 112 196)"/>
+        <ellipse cx="116" cy="210" rx="12" ry="7" fill="#aabfb8" transform="rotate(-80 116 210)"/>
+        <!-- inner bract ring -->
+        <ellipse cx="136" cy="178" rx="10" ry="6" fill="#cce0d8" transform="rotate(-20 136 178)"/>
+        <ellipse cx="148" cy="174" rx="10" ry="6" fill="#d4e6de" transform="rotate(0 148 174)"/>
+        <ellipse cx="160" cy="178" rx="10" ry="6" fill="#cce0d8" transform="rotate(20 160 178)"/>
+        <ellipse cx="168" cy="190" rx="9" ry="5.5" fill="#c4d8d0" transform="rotate(45 168 190)"/>
+        <ellipse cx="128" cy="190" rx="9" ry="5.5" fill="#c4d8d0" transform="rotate(-45 128 190)"/>
+      </g>
+      <!-- flower head center — tiny florets -->
+      <circle cx="148" cy="192" r="14" fill="#e8f0ec" opacity="0.9"/>
+      <circle cx="148" cy="192" r="11" fill="#deeee6" opacity="0.8"/>
+      <!-- tiny floret dots -->
+      <g fill="#8aaa98" opacity="0.7">
+        <circle cx="144" cy="188" r="1.3"/><circle cx="148" cy="186" r="1.3"/><circle cx="152" cy="188" r="1.3"/>
+        <circle cx="155" cy="192" r="1.3"/><circle cx="152" cy="196" r="1.3"/><circle cx="148" cy="198" r="1.3"/>
+        <circle cx="144" cy="196" r="1.3"/><circle cx="141" cy="192" r="1.3"/>
+        <circle cx="148" cy="192" r="1.3"/>
+      </g>
+
+      <!-- Left upper cluster -->
+      <g opacity="0.78">
+        <ellipse cx="84"  cy="222" rx="11" ry="6.5" fill="#b8cec8" transform="rotate(-40 84 222)"/>
+        <ellipse cx="96"  cy="214" rx="11" ry="6"   fill="#b8cec8" transform="rotate(-20 96 214)"/>
+        <ellipse cx="110" cy="212" rx="12" ry="6.5" fill="#c0d4cc" transform="rotate(0 110 212)"/>
+        <ellipse cx="122" cy="216" rx="11" ry="6"   fill="#b8cec8" transform="rotate(20 122 216)"/>
+        <ellipse cx="130" cy="226" rx="10" ry="6"   fill="#b0c8c0" transform="rotate(45 130 226)"/>
+        <ellipse cx="126" cy="238" rx="9"  cy="5.5" fill="#b0c8c0" transform="rotate(65 126 238)" ry="5.5"/>
+        <ellipse cx="84"  cy="235" rx="9"  ry="5.5" fill="#a8bcb4" transform="rotate(-65 84 235)"/>
+      </g>
+      <circle cx="108" cy="228" r="10" fill="#e4eeea" opacity="0.85"/>
+      <g fill="#8aaa98" opacity="0.65">
+        <circle cx="105" cy="225" r="1.1"/><circle cx="108" cy="223" r="1.1"/><circle cx="111" cy="225" r="1.1"/>
+        <circle cx="112" cy="229" r="1.1"/><circle cx="108" cy="231" r="1.1"/><circle cx="104" cy="229" r="1.1"/>
+      </g>
+
+      <!-- Right upper cluster -->
+      <g opacity="0.78">
+        <ellipse cx="168" cy="200" rx="11" ry="6"   fill="#b8cec8" transform="rotate(-20 168 200)"/>
+        <ellipse cx="180" cy="196" rx="12" ry="6.5" fill="#c0d4cc" transform="rotate(0 180 196)"/>
+        <ellipse cx="194" cy="200" rx="11" ry="6"   fill="#b8cec8" transform="rotate(20 194 200)"/>
+        <ellipse cx="202" cy="210" rx="10" ry="6"   fill="#b0c8c0" transform="rotate(45 202 210)"/>
+        <ellipse cx="196" cy="222" rx="9"  ry="5.5" fill="#b0c8c0" transform="rotate(65 196 222)"/>
+        <ellipse cx="164" cy="212" rx="9"  ry="5.5" fill="#a8bcb4" transform="rotate(-45 164 212)"/>
+      </g>
+      <circle cx="184" cy="210" r="10" fill="#e4eeea" opacity="0.85"/>
+      <g fill="#8aaa98" opacity="0.65">
+        <circle cx="181" cy="207" r="1.1"/><circle cx="184" cy="205" r="1.1"/><circle cx="187" cy="207" r="1.1"/>
+        <circle cx="188" cy="211" r="1.1"/><circle cx="184" cy="213" r="1.1"/><circle cx="180" cy="211" r="1.1"/>
+      </g>
+
+      <!-- Left lower cluster -->
+      <g opacity="0.68">
+        <ellipse cx="72"  cy="262" rx="10" ry="5.5" fill="#b8cec8" transform="rotate(-30 72 262)"/>
+        <ellipse cx="84"  cy="254" rx="10" ry="5.5" fill="#b8cec8" transform="rotate(-10 84 254)"/>
+        <ellipse cx="97"  cy="254" rx="11" ry="6"   fill="#c0d4cc" transform="rotate(10 97 254)"/>
+        <ellipse cx="108" cy="260" rx="10" ry="5.5" fill="#b8cec8" transform="rotate(30 108 260)"/>
+        <ellipse cx="113" cy="272" rx="9"  ry="5"   fill="#b0c8c0" transform="rotate(55 113 272)"/>
+        <ellipse cx="68"  cy="274" rx="9"  ry="5"   fill="#a8bcb4" transform="rotate(-55 68 274)"/>
+      </g>
+      <circle cx="92" cy="267" r="9" fill="#e4eeea" opacity="0.8"/>
+      <g fill="#8aaa98" opacity="0.6">
+        <circle cx="89" cy="264" r="1.0"/><circle cx="92" cy="262" r="1.0"/><circle cx="95" cy="264" r="1.0"/>
+        <circle cx="95" cy="269" r="1.0"/><circle cx="92" cy="271" r="1.0"/><circle cx="89" cy="269" r="1.0"/>
+      </g>
+
+      <!-- Right lower cluster -->
+      <g opacity="0.68">
+        <ellipse cx="186" cy="250" rx="10" ry="5.5" fill="#b8cec8" transform="rotate(-10 186 250)"/>
+        <ellipse cx="198" cy="248" rx="11" ry="6"   fill="#c0d4cc" transform="rotate(10 198 248)"/>
+        <ellipse cx="210" cy="254" rx="10" ry="5.5" fill="#b8cec8" transform="rotate(30 210 254)"/>
+        <ellipse cx="214" cy="266" rx="9"  ry="5"   fill="#b0c8c0" transform="rotate(55 214 266)"/>
+        <ellipse cx="182" cy="262" rx="9"  ry="5"   fill="#a8bcb4" transform="rotate(-45 182 262)"/>
+      </g>
+      <circle cx="200" cy="260" r="9" fill="#e4eeea" opacity="0.8"/>
+      <g fill="#8aaa98" opacity="0.6">
+        <circle cx="197" cy="257" r="1.0"/><circle cx="200" cy="255" r="1.0"/><circle cx="203" cy="257" r="1.0"/>
+        <circle cx="203" cy="262" r="1.0"/><circle cx="200" cy="264" r="1.0"/><circle cx="197" cy="262" r="1.0"/>
+      </g>
+
+      <!-- Hint of a bee visiting — a tiny abstract shape -->
+      <g opacity="0.45" transform="translate(162, 178)">
+        <ellipse cx="0" cy="0" rx="5" ry="3" fill="#c8a020" transform="rotate(-20)"/>
+        <ellipse cx="-4" cy="0" rx="3" ry="2" fill="#a88018" transform="rotate(-20)"/>
+        <line x1="-2" y1="-3" x2="-8" y2="-7" stroke="#8a9878" stroke-width="0.7" opacity="0.6"/>
+        <line x1="1" y1="-3" x2="5" y2="-7" stroke="#8a9878" stroke-width="0.7" opacity="0.6"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Flagship Profile</div>
+      <h1>Mountain<em>Mint</em></h1>
+      <p class="hero-latin">Pycnanthemum spp.</p>
+      <p class="hero-tagline">Ohio's most ecologically active summer perennial — a living biodiversity hub that hosts more insect species simultaneously than almost any other native plant.</p>
+      <div class="flagship-badge">✦ Keystone Pollinator Plant</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Native perennial herb</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">2–4 feet</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom</span>
+      <span class="fact-value">Mid to late summer</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun to part shade</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Medium; adaptable</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Spread</span>
+      <span class="fact-value">Rhizomatous colony</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Ohio's Biodiversity Hub</h2>
+    <p>Mountain mint is widely considered one of the most ecologically valuable pollinator plants in eastern North America. During peak bloom, a single patch becomes <strong>intensely alive with insect activity</strong> — native bees, wasps, butterflies, hoverflies, beetles, and predatory insects, often supporting more insect diversity simultaneously than nearly any other perennial in the garden.</p>
+    <p>Its clusters of small nectar-rich flowers are surrounded by distinctive silvery bracts that create a luminous haze effect in meadow plantings. Ecologically, it functions less as a single-species pollinator attractor and more as an <strong>open-access biodiversity platform</strong> supporting many layers of ecological interaction simultaneously.</p>
+
+    <div class="keystone-callout">
+      <p>Xerces Society pollinator studies consistently rank <strong>Pycnanthemum</strong> among the top native perennials for supporting pollinator abundance and diversity. Its highly accessible flower clusters support insects with many different feeding strategies, body sizes, and tongue lengths — creating extraordinary biodiversity around the flowers.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Meadow systems</span>
+      <span class="pill">Ecological borders</span>
+      <span class="pill">Rain garden edges</span>
+      <span class="pill">Biodiversity gardens</span>
+    </div>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Dense aromatic foliage emerges and gradually spreads through rhizomatous growth; distinctively minty fragrance present from early on</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Silvery bracts and nectar-rich flower clusters reach peak bloom — the most insect-active period of the year, with constant movement and visitor diversity</div>
+      </div>
+      <div class="tl-row fade">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Seedheads and fading silver bracts continue contributing meadow texture; late visitors forage final blooms</div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Persistent stems provide overwintering refuge for insects and contribute ecological structure through dormant months</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSECT DIVERSITY -->
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits — and Why It Matters</h2>
+    <p>Mountain mint's shallow, clustered flowers act as <strong>open-access nectar platforms</strong> — accessible to insects of many body sizes and feeding strategies simultaneously. This is what makes the ecological impact exceptional: a single plant in bloom supports an entire community, not a single species.</p>
+
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🐝</span>
+          <span class="insect-category-name">Native Bees</span>
+          <span class="insect-count-badge">8+ species</span>
+        </div>
+        <div class="insect-list">
+          <span class="insect-tag common">Common Eastern Bumblebee</span>
+          <span class="insect-tag common">Brown-belted Bumblebee</span>
+          <span class="insect-tag">Metallic Green Sweat Bees</span>
+          <span class="insect-tag">Small Sweat Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Long-horned Bees</span>
+          <span class="insect-tag">Small Carpenter Bees</span>
+          <span class="insect-tag">Furrow Bees</span>
+        </div>
+      </div>
+
+      <div class="insect-category">
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🦋</span>
+          <span class="insect-category-name">Butterflies & Moths</span>
+          <span class="insect-count-badge">10+ species</span>
+        </div>
+        <div class="insect-list">
+          <span class="insect-tag common">Monarch</span>
+          <span class="insect-tag common">Eastern Tiger Swallowtail</span>
+          <span class="insect-tag common">Black Swallowtail</span>
+          <span class="insect-tag common">Silver-spotted Skipper</span>
+          <span class="insect-tag">Hummingbird Clearwing Moth</span>
+          <span class="insect-tag">Fritillaries</span>
+          <span class="insect-tag">Least Skipper</span>
+          <span class="insect-tag">Various nocturnal moths</span>
+        </div>
+      </div>
+
+      <div class="insect-category">
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🪰</span>
+          <span class="insect-category-name">Beneficial Flies & Wasps</span>
+          <span class="insect-count-badge">many species</span>
+        </div>
+        <div class="insect-list">
+          <span class="insect-tag">Hoverflies (Syrphidae)</span>
+          <span class="insect-tag">Parasitic Wasps</span>
+          <span class="insect-tag">Paper Wasps</span>
+          <span class="insect-tag">Thread-waisted Wasps</span>
+          <span class="insect-tag">Potter Wasps</span>
+          <span class="insect-tag">Solitary Hunting Wasps</span>
+        </div>
+      </div>
+
+      <div class="insect-category">
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🪲</span>
+          <span class="insect-category-name">Predatory & Other Insects</span>
+          <span class="insect-count-badge">food web support</span>
+        </div>
+        <div class="insect-list">
+          <span class="insect-tag">Ambush Bugs</span>
+          <span class="insect-tag">Assassin Bugs</span>
+          <span class="insect-tag">Soldier Beetles</span>
+          <span class="insect-tag">Predatory Spiders</span>
+          <span class="insect-tag">Flower Beetles</span>
+          <span class="insect-tag">Lacewings</span>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top: 1.2rem;">Many of these visitors are not just pollinators — they are <strong>predators, parasitoids, and food-web stabilizers</strong> that help regulate broader ecosystem dynamics. Mountain mint doesn't just feed insects; it concentrates them in ways that strengthen the whole ecological web.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Mountain mint is adaptable and relatively easy to establish. Its rhizomatous habit means it will gradually spread — plan for this in the design, or manage edges as needed. In ecological plantings, this spreading behavior is a feature: it creates naturalistic colonies that weave between other species.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; best bloom and fragrance in full sun</td></tr>
+      <tr><td>Soil</td><td>Adaptable to clay, loam, and average soils; tolerates lean conditions</td></tr>
+      <tr><td>Moisture</td><td>Medium; tolerates short dry periods once established</td></tr>
+      <tr><td>Height</td><td>2–4 feet depending on species; upright and bushy</td></tr>
+      <tr><td>Spread</td><td>Rhizomatous — gradually forms naturalistic colonies</td></tr>
+      <tr><td>Fragrance</td><td>Strongly aromatic foliage; may deter deer and rabbits</td></tr>
+      <tr><td>Winter care</td><td>Leave stems standing for overwintering insects; cut back in early spring</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANION PLANTS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Mountain mint works best woven rhythmically through a planting rather than massed in one location — its soft texture and constant insect activity make it a unifying presence among bolder species.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Structural contrast companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Switchgrass</span> <span class="companion-latin">Panicum virgatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ironweed</span> <span class="companion-latin">Vernonia spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Pollinator sequence companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Swamp Milkweed</span> <span class="companion-latin">Asclepias incarnata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Matrix & texture companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Lovegrass</span> <span class="companion-latin">Eragrostis spectabilis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">It's a Keystone Plant — Not Because It Hosts One Species, But Dozens Simultaneously</h3>
+        <p>Most discussions of "keystone plants" focus on a single famous relationship — milkweed and monarchs, golden alexanders and black swallowtails. Mountain mint's keystone status works differently: during peak bloom, a single patch may host <strong>dozens of insect species at once</strong>, including bees, wasps, flies, beetles, butterflies, predatory insects, and parasitoids.</p>
+        <p>This simultaneous multi-species support is ecologically rare and exceptionally valuable. It means mountain mint isn't just a pollinator plant — it's a biodiversity amplifier that strengthens an entire food web every day it blooms.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Silver Isn't a Flower — It's a Bract</h3>
+        <p>The distinctive silver-white haze that makes mountain mint so luminous in meadow plantings isn't the flower itself. It's the <strong>bract</strong> — a modified leaf that surrounds the actual flower cluster. The bracts are broad, silvery, and almost metallic in full sun, which explains why the plant seems to glow from a distance.</p>
+        <p>This silvery radiance serves a dual purpose: it makes the plant highly visible to pollinators from a distance, effectively advertising the nectar resources within. Once an insect arrives, the actual flowers are tiny, numerous, and extremely accessible — a landing platform, not a tunnel.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The Fragrance Is a Defense and an Invitation at Once</h3>
+        <p>Mountain mint's strong minty fragrance comes from aromatic oils in the foliage — specifically a suite of terpenoid compounds that make the plant unpalatable to deer, rabbits, and most browsing herbivores. In a garden context, this makes it one of the more reliably deer-resistant native perennials.</p>
+        <p>The same aromatic chemistry that repels herbivores also <em>attracts</em> pollinators and beneficial insects, which are drawn to the scent. The plant has evolved a single chemical solution that simultaneously defends against threats and invites allies — a sophisticated balancing act that has helped make it one of the most successful native perennials in eastern North American meadow ecosystems.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Its Roots Are as Important as Its Flowers</h3>
+        <p>Mountain mint spreads by rhizomes — underground stems that gradually extend outward and send up new shoots. This growth habit is often described as a design challenge, but ecologically it's one of the plant's greatest strengths. The spreading colony creates a <strong>continuous root network</strong> that stabilizes soil, supports below-ground mycorrhizal communities, and provides a persistent structural framework for the meadow system.</p>
+        <p>In naturalistic planting design, this rhizomatous habit is embraced rather than controlled: mountain mint is allowed to weave through and between other species, creating the kind of interlocking, resilient community that actual prairie systems rely on. In that context, its tendency to spread is not a flaw — it's the whole point.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OHIO SPECIES SECTION -->
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Mountain Mint Species</h2>
+    <p>Several species of mountain mint are native to Ohio, each with a slightly different character, habitat preference, and garden application. The genus <em>Pycnanthemum</em> is represented across Ohio's prairies, meadows, woodland edges, and wetland margins.</p>
+
+    <div class="species-grid">
+
+      <div class="species-card featured">
+        <p class="species-tag">Flagship Species</p>
+        <p class="species-common">Clustered Mountain Mint</p>
+        <p class="species-latin">Pycnanthemum muticum</p>
+        <p class="species-desc">The most ornamentally striking Ohio species — broad silvery bracts create the most luminous haze effect of the genus. Exceptionally high pollinator value. Spreads to form substantial colonies in moist to medium soils. The benchmark for mountain mint in garden settings.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–3 ft</span>
+          <span class="species-trait">Full sun – part shade</span>
+          <span class="species-trait">Medium moisture</span>
+          <span class="species-trait">Spreads by rhizome</span>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <p class="species-tag">Common · Adaptable</p>
+        <p class="species-common">Virginia Mountain Mint</p>
+        <p class="species-latin">Pycnanthemum virginianum</p>
+        <p class="species-desc">Narrow leaves and a slightly more upright form. Very common in Ohio prairies and meadows. Excellent pollinator value and highly adaptable to a range of moisture conditions from dry to moist. Often the most widely available species in the nursery trade.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–3 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry to moist</span>
+          <span class="species-trait">Rhizomatous</span>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <p class="species-tag">Fine-textured · Dry sites</p>
+        <p class="species-common">Narrowleaf Mountain Mint</p>
+        <p class="species-latin">Pycnanthemum tenuifolium</p>
+        <p class="species-desc">The finest-textured species — very narrow thread-like leaves give it an airy, almost grass-like quality. Well-suited to dry to medium soils and lean conditions where other species may be too aggressive. Its delicate form pairs especially well with fine-textured grasses.</p>
+        <div class="species-traits">
+          <span class="species-trait">1–2.5 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry to medium</span>
+          <span class="species-trait">Less aggressive</span>
+        </div>
+      </div>
+
+      <div class="species-card">
+        <p class="species-tag">Bold · Woodland edge</p>
+        <p class="species-common">Hoary Mountain Mint</p>
+        <p class="species-latin">Pycnanthemum incanum</p>
+        <p class="species-desc">The most architecturally bold Ohio species — large silvery-white bracts are even broader and more dramatic than <em>P. muticum</em>. Tolerates more shade than other species, making it one of the few mountain mints suited to woodland edge and dappled sun conditions.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–4 ft</span>
+          <span class="species-trait">Part shade tolerant</span>
+          <span class="species-trait">Medium moisture</span>
+          <span class="species-trait">Bold bracts</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Pycnanthemum spp. · Native Perennial · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>

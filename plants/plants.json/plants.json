@@ -11,7 +11,8 @@
     "description": "Ohio's essential early-season pollinator plant — golden umbels that feed specialist bees and host black swallowtail butterflies before midsummer species emerge.",
     "url": "golden-alexanders.html",
     "tagClass": "tag-wildflower",
-    "accentClass": "accent-alexanders",
+    "accentFrom": "#edeadc",
+    "accentTo": "#e6e0d0",
     "svgIcon": "alexanders"
   },
   {
@@ -26,7 +27,8 @@
     "description": "A bold architectural prairie plant with spiky globe flower heads — one of the most distinctive natives in any meadow planting, with extraordinary value for beneficial insects.",
     "url": "rattlesnake-master.html",
     "tagClass": "tag-perennial",
-    "accentClass": "accent-rattlesnake",
+    "accentFrom": "#e4e8ee",
+    "accentTo": "#dce2ec",
     "svgIcon": "rattlesnake"
   },
   {
@@ -41,7 +43,8 @@
     "description": "A native prairie grass with deep roots, airy seed heads, and exceptional soil-building value — one of Ohio's ecological workhorses, beautiful through all four seasons.",
     "url": "switchgrass.html",
     "tagClass": "tag-grass",
-    "accentClass": "accent-switchgrass",
+    "accentFrom": "#ede8dc",
+    "accentTo": "#e4dfd2",
     "svgIcon": "switchgrass"
   },
   {
@@ -56,7 +59,24 @@
     "description": "A low, airy native grass known for its purple-pink cloudlike seed heads and soft meadow texture — the atmospheric connector of the late-summer prairie.",
     "url": "purple-lovegrass.html",
     "tagClass": "tag-grass",
-    "accentClass": "accent-lovegrass",
+    "accentFrom": "#ede0e8",
+    "accentTo": "#e4d4de",
     "svgIcon": "lovegrass"
+  },
+  {
+    "commonName": "Mountain Mint",
+    "scientificName": "Pycnanthemum spp.",
+    "type": "Native Perennial",
+    "bloom": "Blooms mid–late summer",
+    "season": "Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium; adaptable",
+    "height": "2–4 ft",
+    "description": "Ohio's most ecologically active summer perennial — a keystone biodiversity hub that hosts more insect species simultaneously than almost any other native plant.",
+    "url": "mountain-mint.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#e4ece8",
+    "accentTo": "#dce8e2",
+    "svgIcon": "mint"
   }
 ]
