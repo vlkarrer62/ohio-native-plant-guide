@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ohio Native Plant Guide — Full plant directory. Browse native plant profiles by common name, scientific name, bloom time, and ecological role." />
+  <title>Plant Directory · Ohio Native Plant Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f4f1eb;
+      --bg-raised:   #edeae2;
+      --bg-card:     #f9f7f2;
+      --bg-deep:     #1e2018;
+      --border:      rgba(100,120,70,0.18);
+      --border-gold: rgba(160,120,30,0.35);
+      --gold:        #8a6a18;
+      --gold-soft:   #b08a28;
+      --green:       #4a7030;
+      --green-soft:  #5a8a3a;
+      --sage:        #6a8858;
+      --text:        #252a1e;
+      --text-dim:    #4a5838;
+      --text-faint:  #7a8a68;
+      --rust:        #7a4820;
+      --steel:       #3a6070;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 17px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── NAV ──────────────────────────────────── */
+    nav {
+      background: rgba(244,241,235,0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.1rem 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+    }
+
+    .nav-logo-text {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .nav-logo-text span {
+      display: block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-back:hover { color: var(--gold); }
+
+    .nav-back::before { content: '←'; }
+
+    @media (max-width: 540px) {
+      nav { padding: 1rem 1.4rem; }
+    }
+
+    /* ── PAGE HEADER ──────────────────────────── */
+    .page-header {
+      background: var(--bg-raised);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+    }
+
+    .page-header-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .page-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--green-soft);
+      margin-bottom: 1rem;
+    }
+
+    .page-eyebrow::before,
+    .page-eyebrow::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background: var(--green-soft);
+      opacity: 0.5;
+    }
+
+    .page-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+      margin-bottom: 1.1rem;
+    }
+
+    .page-title em {
+      font-style: italic;
+      color: var(--gold-soft);
+    }
+
+    .page-intro {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.02rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.8;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── FILTER BAR ───────────────────────────── */
+    .filter-bar {
+      padding: 1.4rem 2rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-bar-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .filter-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .filter-count strong {
+      color: var(--green-soft);
+      font-weight: 500;
+    }
+
+    /* ── DIRECTORY ────────────────────────────── */
+    .directory {
+      flex: 1;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .directory-inner {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Section grouping by season */
+    .season-group {
+      margin-bottom: 3.5rem;
+    }
+
+    .season-label {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.4rem;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .season-label.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .season-label-text {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      white-space: nowrap;
+    }
+
+    .season-label-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Plant cards */
+    .plant-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .plant-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      text-decoration: none;
+      color: inherit;
+      display: grid;
+      grid-template-columns: 56px 1fr auto;
+      align-items: center;
+      gap: 0;
+      transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.18s ease;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease, opacity 0.4s ease;
+      margin-bottom: 0.6rem;
+    }
+
+    .plant-card:last-child { margin-bottom: 0; }
+
+    .plant-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .plant-card:hover {
+      border-color: rgba(90,138,58,0.4);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      transform: translateY(-2px);
+    }
+
+    /* Left accent stripe with mini illustration */
+    .plant-card-accent {
+      width: 56px;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    /* Per-plant color tints */
+    .accent-switchgrass    { background: linear-gradient(160deg, #ede8dc, #e4dfd2); }
+    .accent-alexanders     { background: linear-gradient(160deg, #edeadc, #e6e0d0); }
+    .accent-rattlesnake    { background: linear-gradient(160deg, #e4e8ee, #dce2ec); }
+
+    .plant-card-body {
+      padding: 1.3rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .plant-card-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.1rem;
+    }
+
+    .plant-type-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.2em 0.6em;
+      border-radius: 2px;
+      font-weight: 400;
+    }
+
+    .tag-grass      { color: #6a7818; background: rgba(106,120,24,0.10); border: 1px solid rgba(106,120,24,0.2); }
+    .tag-wildflower { color: #7a6818; background: rgba(122,104,24,0.10); border: 1px solid rgba(122,104,24,0.2); }
+    .tag-perennial  { color: #3a6070; background: rgba(58,96,112,0.10); border: 1px solid rgba(58,96,112,0.2); }
+
+    .plant-bloom-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.57rem;
+      letter-spacing: 0.1em;
+      color: var(--text-faint);
+    }
+
+    .plant-card-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+    }
+
+    .plant-card-latin {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: var(--text-faint);
+      line-height: 1.2;
+    }
+
+    .plant-card-desc {
+      margin-top: 0.3rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+
+    /* Traits row */
+    .plant-card-traits {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .trait {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 300;
+      color: var(--text-faint);
+    }
+
+    .trait-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .dot-sun    { background: #b08a28; }
+    .dot-water  { background: #3a8090; }
+    .dot-height { background: #4a7030; }
+
+    /* Right arrow area */
+    .plant-card-arrow {
+      padding: 1.3rem 1.4rem 1.3rem 0.8rem;
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .arrow-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-soft);
+      transition: gap 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .plant-card:hover .arrow-inner {
+      gap: 0.7rem;
+      color: var(--gold);
+    }
+
+    .arrow-inner::after {
+      content: '→';
+      font-size: 0.85rem;
+      transition: transform 0.2s ease;
+    }
+
+    .plant-card:hover .arrow-inner::after {
+      transform: translateX(3px);
+    }
+
+    @media (max-width: 600px) {
+      .plant-card { grid-template-columns: 44px 1fr; }
+      .plant-card-arrow { display: none; }
+      .plant-card-body { padding: 1.1rem 1.2rem; }
+      .plant-card-traits { display: none; }
+    }
+
+    /* ── COMING SOON ──────────────────────────── */
+    .coming-soon {
+      margin-top: 4rem;
+      padding: 2.4rem 2rem;
+      background: var(--bg-raised);
+      border: 1px solid var(--border-gold);
+      border-radius: 4px;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.5rem;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .coming-soon.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .coming-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .coming-text h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .coming-text p {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--bg-deep);
+      border-top: 1px solid rgba(100,120,70,0.2);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      color: #5a6a48;
+      line-height: 2;
+    }
+
+    footer a {
+      color: #8aaa70;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover { color: #c8a840; }
+
+    footer strong { color: #a8b890; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav aria-label="Site navigation">
+    <a href="../index.html" class="nav-logo">
+      <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+        <path d="M14 24 C14 24 4 18 4 10 C4 6 8 3 14 3 C20 3 24 6 24 10 C24 18 14 24 14 24Z" stroke="#6a9448" stroke-width="1.3" fill="none"/>
+        <path d="M14 24 L14 8" stroke="#6a9448" stroke-width="1" opacity="0.5"/>
+        <path d="M14 14 C11 12 8 12 6 13" stroke="#6a9448" stroke-width="0.9" opacity="0.5"/>
+        <path d="M14 18 C17 16 20 16 22 17" stroke="#6a9448" stroke-width="0.9" opacity="0.5"/>
+      </svg>
+      <div class="nav-logo-text">
+        Ohio Native Plant Guide
+        <span>Ecological Reference</span>
+      </div>
+    </a>
+    <a href="../index.html" class="nav-back" aria-label="Back to homepage">Home</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-inner">
+      <div class="page-eyebrow">Ohio Native Plants</div>
+      <h1 class="page-title">Plant <em>Directory</em></h1>
+      <p class="page-intro">A growing reference for Ohio's native plants — each profile explores ecology, wildlife relationships, growing conditions, and the natural history that makes every species worth knowing.</p>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar" aria-label="Directory status">
+    <div class="filter-bar-inner">
+      <span class="filter-label">Showing all profiles</span>
+      <span class="filter-count"><strong>3</strong> profiles available · more coming soon</span>
+    </div>
+  </div>
+
+  <!-- DIRECTORY -->
+  <main class="directory" id="main">
+    <div class="directory-inner">
+
+      <!-- Spring flowering -->
+      <div class="season-group">
+        <div class="season-label" aria-hidden="true">
+          <span class="season-label-text">Spring</span>
+          <div class="season-label-line"></div>
+        </div>
+
+        <div class="plant-list">
+          <a href="golden-alexanders.html" class="plant-card" aria-label="Golden Alexanders — Zizia aurea — View full profile">
+            <div class="plant-card-accent accent-alexanders">
+              <!-- Mini umbel illustration -->
+              <svg width="30" height="42" viewBox="0 0 30 42" fill="none" aria-hidden="true">
+                <line x1="15" y1="42" x2="15" y2="26" stroke="#5a7438" stroke-width="1.6" stroke-linecap="round"/>
+                <line x1="15" y1="33" x2="8" y2="22" stroke="#5a7438" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="15" y1="30" x2="22" y2="20" stroke="#5a7438" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="15" y1="26" x2="15" y2="14" stroke="#5a7438" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="15" cy="12" r="4.5" fill="#a08820" opacity="0.8"/>
+                <circle cx="10" cy="8"  r="3"   fill="#a08820" opacity="0.7"/>
+                <circle cx="20" cy="8"  r="3"   fill="#a08820" opacity="0.7"/>
+                <circle cx="7"  cy="20" r="3"   fill="#a08820" opacity="0.65"/>
+                <circle cx="23" cy="18" r="3"   fill="#a08820" opacity="0.65"/>
+              </svg>
+            </div>
+            <div class="plant-card-body">
+              <div class="plant-card-meta">
+                <span class="plant-type-tag tag-wildflower">Spring Wildflower</span>
+                <span class="plant-bloom-tag">Blooms late spring</span>
+              </div>
+              <div class="plant-card-name">Golden Alexanders</div>
+              <div class="plant-card-latin">Zizia aurea</div>
+              <p class="plant-card-desc">Ohio's essential early-season pollinator plant — golden umbels that feed specialist bees and host black swallowtail butterflies before midsummer species emerge.</p>
+              <div class="plant-card-traits">
+                <span class="trait"><span class="trait-dot dot-sun"></span>Full sun to part shade</span>
+                <span class="trait"><span class="trait-dot dot-water"></span>Moist to medium</span>
+                <span class="trait"><span class="trait-dot dot-height"></span>3–4 ft</span>
+              </div>
+            </div>
+            <div class="plant-card-arrow">
+              <span class="arrow-inner">Profile</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Summer flowering / structural -->
+      <div class="season-group">
+        <div class="season-label" aria-hidden="true">
+          <span class="season-label-text">Summer · Fall</span>
+          <div class="season-label-line"></div>
+        </div>
+
+        <div class="plant-list">
+
+          <a href="rattlesnake-master.html" class="plant-card" aria-label="Rattlesnake Master — Eryngium yuccifolium — View full profile">
+            <div class="plant-card-accent accent-rattlesnake">
+              <!-- Mini globe illustration -->
+              <svg width="30" height="42" viewBox="0 0 30 42" fill="none" aria-hidden="true">
+                <line x1="15" y1="42" x2="15" y2="25" stroke="#4a6838" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="15" y1="34" x2="7"  y2="27" stroke="#4a6838" stroke-width="1.2" stroke-linecap="round"/>
+                <line x1="15" y1="31" x2="23" y2="24" stroke="#4a6838" stroke-width="1.2" stroke-linecap="round"/>
+                <circle cx="15" cy="13" r="9"   stroke="#6a7a50" stroke-width="1.1" fill="rgba(175,188,128,0.15)"/>
+                <line x1="15" y1="4"  x2="15" y2="1"  stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+                <line x1="22" y1="6"  x2="24" y2="4"  stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+                <line x1="22" y1="19" x2="24" y2="21" stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+                <line x1="15" y1="22" x2="15" y2="25" stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+                <line x1="8"  y1="19" x2="6"  y2="21" stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+                <line x1="8"  y1="6"  x2="6"  y2="4"  stroke="#6a7a50" stroke-width="0.9" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="plant-card-body">
+              <div class="plant-card-meta">
+                <span class="plant-type-tag tag-perennial">Native Perennial</span>
+                <span class="plant-bloom-tag">Blooms mid–late summer</span>
+              </div>
+              <div class="plant-card-name">Rattlesnake Master</div>
+              <div class="plant-card-latin">Eryngium yuccifolium</div>
+              <p class="plant-card-desc">A bold architectural prairie plant with spiky globe flower heads — one of the most distinctive natives in any meadow planting, with extraordinary value for beneficial insects.</p>
+              <div class="plant-card-traits">
+                <span class="trait"><span class="trait-dot dot-sun"></span>Full sun</span>
+                <span class="trait"><span class="trait-dot dot-water"></span>Dry to medium</span>
+                <span class="trait"><span class="trait-dot dot-height"></span>3–5 ft</span>
+              </div>
+            </div>
+            <div class="plant-card-arrow">
+              <span class="arrow-inner">Profile</span>
+            </div>
+          </a>
+
+          <a href="switchgrass.html" class="plant-card" aria-label="Switchgrass — Panicum virgatum — View full profile">
+            <div class="plant-card-accent accent-switchgrass">
+              <!-- Mini switchgrass stem + seed head -->
+              <svg width="30" height="42" viewBox="0 0 30 42" fill="none" aria-hidden="true">
+                <line x1="15" y1="42" x2="14" y2="18" stroke="#5a7840" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="14" y1="28" x2="8"  y2="20" stroke="#5a7840" stroke-width="1.1" stroke-linecap="round"/>
+                <line x1="14" y1="24" x2="20" y2="17" stroke="#5a7840" stroke-width="1.1" stroke-linecap="round"/>
+                <line x1="14" y1="18" x2="12" y2="8"  stroke="#5a7840" stroke-width="1.4" stroke-linecap="round"/>
+                <line x1="12" y1="8"  x2="7"  y2="3"  stroke="#8aae58" stroke-width="0.8" stroke-linecap="round"/>
+                <line x1="12" y1="8"  x2="14" y2="2"  stroke="#8aae58" stroke-width="0.8" stroke-linecap="round"/>
+                <line x1="12" y1="8"  x2="17" y2="4"  stroke="#8aae58" stroke-width="0.8" stroke-linecap="round"/>
+                <line x1="8"  y1="20" x2="4"  y2="15" stroke="#8aae58" stroke-width="0.7" stroke-linecap="round" opacity="0.7"/>
+                <line x1="20" y1="17" x2="24" y2="12" stroke="#8aae58" stroke-width="0.7" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="plant-card-body">
+              <div class="plant-card-meta">
+                <span class="plant-type-tag tag-grass">Warm-Season Grass</span>
+                <span class="plant-bloom-tag">Seeds late summer–winter</span>
+              </div>
+              <div class="plant-card-name">Switchgrass</div>
+              <div class="plant-card-latin">Panicum virgatum</div>
+              <p class="plant-card-desc">A native prairie grass with deep roots, airy seed heads, and exceptional soil-building value — one of Ohio's ecological workhorses, beautiful through all four seasons.</p>
+              <div class="plant-card-traits">
+                <span class="trait"><span class="trait-dot dot-sun"></span>Full sun to part sun</span>
+                <span class="trait"><span class="trait-dot dot-water"></span>Dry to medium</span>
+                <span class="trait"><span class="trait-dot dot-height"></span>3–6 ft</span>
+              </div>
+            </div>
+            <div class="plant-card-arrow">
+              <span class="arrow-inner">Profile</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- Coming soon -->
+      <div class="coming-soon" id="coming-soon">
+        <div class="coming-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <path d="M14 24 C14 24 4 18 4 10 C4 6 8 3 14 3 C20 3 24 6 24 10 C24 18 14 24 14 24Z" stroke="#6a8858" stroke-width="1.3" fill="none"/>
+            <path d="M14 24 L14 8" stroke="#6a8858" stroke-width="1" opacity="0.5"/>
+            <path d="M14 14 C11 12 8 12 6 13" stroke="#6a8858" stroke-width="0.9" opacity="0.5"/>
+            <path d="M14 18 C17 16 20 16 22 17" stroke="#6a8858" stroke-width="0.9" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="coming-text">
+          <h3>More profiles coming soon</h3>
+          <p>This directory grows alongside the garden. Each new profile follows the same depth — ecology, wildlife relationships, natural history, and growing guidance. Future entries will include Wild Bergamot, Purple Coneflower, Little Bluestem, New England Aster, and many more Ohio native species.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Guide</strong> &ensp;·&ensp;
+      <a href="../index.html">← Back to Homepage</a>
+    </p>
+    <p style="margin-top: 0.4rem; font-size: 0.55rem; opacity: 0.6;">
+      Ohio Native Plant Directory · Ecological Reference
+    </p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.season-label, .plant-card, .coming-soon');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          const delay = e.target.classList.contains('plant-card')
+            ? Array.from(document.querySelectorAll('.plant-card')).indexOf(e.target) * 80
+            : 0;
+          setTimeout(() => e.target.classList.add('visible'), delay);
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.06 });
+    reveals.forEach(r => obs.observe(r));
+  </script>
+</body>
+</html>
