@@ -100,5 +100,22 @@
     "accentFrom": "#eae6f4",
     "accentTo": "#dfd8f0",
     "svgIcon": "aster"
-  }
+  },
+  {
+  "commonName": "Prairie Dropseed",
+  "scientificName": "Sporobolus heterolepis",
+  "type": "Warm-Season Grass",
+  "category": "grasses",
+  "bloom": "Seeds late summer to fall",
+  "season": "Summer · Fall",
+  "sun": "Full sun to part shade",
+  "moisture": "Dry to medium",
+  "height": "18–24 inches",
+  "description": "The most refined native grass — a perfect fountain of hair-thin foliage, extraordinary buttery fragrance in late summer, and flawless amber fall color. Long-lived and slow to establish.",
+  "url": "prairie-dropseed.html",
+  "tagClass": "tag-grass",
+  "accentFrom": "#ede8d8",
+  "accentTo": "#e6dfc8",
+  "svgIcon": "dropseed"
+}
 ]

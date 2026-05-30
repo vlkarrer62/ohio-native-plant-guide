@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prairie Dropseed · Sporobolus heterolepis · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #f8f4ed;
+      --bg-warm:     #f2ede3;
+      --bg-card:     #faf8f3;
+      --bg-amber:    #f0e8d4;
+      --border:      rgba(120,100,60,0.16);
+      --border-a:    rgba(160,120,40,0.3);
+      --amber:       #8a6818;
+      --amber-soft:  #aa8830;
+      --amber-pale:  #d4b878;
+      --bronze:      #6a4e28;
+      --bronze-soft: #8a6a40;
+      --herb:        #4a6038;
+      --herb-soft:   #5e7848;
+      --text:        #1e1a10;
+      --text-dim:    #4a4030;
+      --text-faint:  #8a7860;
+      --ink:         #1a160c;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      line-height: 1.8;
+      font-size: 18px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--bg-warm);
+    }
+
+    /* Warm, low, late afternoon — amber and tawny gold */
+    .hero-light {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 55% at 60% 20%, rgba(200,160,60,0.2) 0%, transparent 60%),
+        radial-gradient(ellipse 65% 55% at 15% 65%, rgba(160,130,60,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 45% at 92% 75%, rgba(180,150,80,0.14) 0%, transparent 55%),
+        linear-gradient(172deg, #eee8d8 0%, #f0ead8 45%, #eee6d4 100%);
+    }
+
+    .hero-illustration {
+      position: absolute;
+      top: 0;
+      right: -15px;
+      width: 64%;
+      height: 98%;
+      opacity: 0.8;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1.2rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--amber);
+      opacity: 0.55;
+    }
+
+    .hero h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2.5rem, 8vw, 3.6rem);
+      line-height: 1.0;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      animation: rise 0.7s 0.1s ease both;
+    }
+
+    .hero h1 em {
+      display: block;
+      font-style: italic;
+      color: var(--amber-soft);
+      font-weight: 400;
+    }
+
+    .hero-latin {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-faint);
+      margin-top: 0.5rem;
+      animation: rise 0.7s 0.2s ease both;
+    }
+
+    .hero-tagline {
+      margin-top: 1rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 360px;
+      line-height: 1.65;
+      animation: rise 0.7s 0.3s ease both;
+    }
+
+    .scent-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+      background: rgba(138,104,24,0.1);
+      border: 1px solid rgba(138,104,24,0.28);
+      border-radius: 3px;
+      padding: 0.32em 0.9em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--amber);
+      animation: rise 0.7s 0.4s ease both;
+    }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band {
+      background: var(--ink);
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+
+    .fact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(212,184,120,0.55);
+    }
+
+    .fact-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: #e4d8b8;
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 2.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+
+    .section h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.5rem, 4.5vw, 2rem);
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .section p {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      line-height: 1.85;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--bronze); font-weight: 500; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 0.28em 0.85em;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-faint);
+      background: var(--bg-warm);
+    }
+
+    /* ── PATIENCE CALLOUT ─────────────────────── */
+    .patience-callout {
+      background: var(--bg-amber);
+      border: 1px solid var(--border-a);
+      border-left: 4px solid var(--amber-pale);
+      border-radius: 0 4px 4px 0;
+      padding: 1.4rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .patience-callout-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 0.6rem;
+      opacity: 0.85;
+    }
+
+    .patience-callout p {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--bronze);
+      margin: 0 !important;
+      line-height: 1.75;
+    }
+
+    .patience-callout strong {
+      color: var(--amber) !important;
+      font-style: normal;
+    }
+
+    /* ── SCENT FEATURE ────────────────────────── */
+    .scent-feature {
+      background: var(--ink);
+      border-radius: 6px;
+      padding: 2rem;
+      margin: 1.4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scent-feature::before {
+      content: '✦';
+      position: absolute;
+      top: -0.5rem;
+      right: 0.8rem;
+      font-size: 7rem;
+      color: rgba(212,184,120,0.07);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .scent-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber-pale);
+      margin-bottom: 0.7rem;
+      opacity: 0.85;
+    }
+
+    .scent-feature p {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #ddd0a8;
+      margin: 0 !important;
+      line-height: 1.78;
+      position: relative;
+    }
+
+    .scent-feature strong { color: #e8c870 !important; font-style: normal; }
+
+    /* ── SEASONAL TIMELINE ────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+
+    .tl-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-season {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      width: 88px;
+      flex-shrink: 0;
+      padding: 0.85rem 0.8rem 0.85rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tl-bar {
+      width: 3px;
+      background: var(--border);
+      flex-shrink: 0;
+      margin: 0.4rem 1rem 0.4rem 0;
+      border-radius: 2px;
+    }
+
+    .tl-row.peak   .tl-bar { background: var(--amber); }
+    .tl-row.warm   .tl-bar { background: var(--amber-pale); }
+    .tl-row.quiet  .tl-bar { background: var(--herb-soft); }
+
+    .tl-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      padding: 0.85rem 0;
+      line-height: 1.55;
+    }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+
+    .care-table td {
+      padding: 0.75rem 0.4rem;
+      vertical-align: top;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .care-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      width: 30%;
+      padding-top: 0.9rem;
+    }
+
+    .care-table td:last-child {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+
+    .companion-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--herb-soft);
+      margin-bottom: 0.6rem;
+      opacity: 0.85;
+    }
+
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+
+    .companion-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .companion-row:last-child { border-bottom: none; }
+
+    .companion-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--amber-pale);
+      flex-shrink: 0;
+      margin-top: 0.55em;
+    }
+
+    .companion-common {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.97rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .companion-latin {
+      font-style: italic;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.88rem;
+      color: var(--text-faint);
+    }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+
+    .story-card {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .story-card--highlight {
+      background: var(--bg-amber);
+      border: 1px solid var(--border-a);
+      border-top: 3px solid var(--amber-soft);
+      border-radius: 0 0 5px 5px;
+      padding: 1.4rem;
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+    }
+
+    .story-number {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(138,104,24,0.28);
+      flex-shrink: 0;
+      padding-top: 0.25rem;
+      min-width: 2rem;
+    }
+
+    .story-card--highlight .story-number { color: var(--amber); }
+
+    .story-title {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.12rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .story-body p {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.85;
+      margin-bottom: 0.85rem;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--amber-soft); font-weight: 500; }
+    .story-body em { color: var(--text-faint); }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--border);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: rgba(212,184,120,0.42);
+      line-height: 2;
+    }
+
+    footer strong { color: rgba(212,184,120,0.68); font-weight: 500; }
+
+    /* ── ANIMATIONS ───────────────────────────── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Prairie dropseed illustration:
+         A perfect fountain form — fine arching culms that radiate
+         outward and downward from a tight central crown.
+         Open, airy panicles at the tips of the arching stems.
+         The illustration captures the signature vase/fountain silhouette
+         that makes dropseed so distinctive. -->
+    <svg class="hero-illustration" viewBox="0 0 300 430" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMax meet">
+
+      <!-- Fine-textured leaf blades — the fountain base.
+           All originate from a tight crown point ~(148, 360)
+           and arc outward. Many fine lines, closely spaced. -->
+
+      <!-- RIGHT ARC — long arching culms -->
+      <g stroke="#8a8040" stroke-linecap="round">
+        <path d="M148 360 C155 340 175 310 205 275 C225 255 248 238 268 220" stroke-width="1.3" fill="none"/>
+        <path d="M148 360 C158 338 182 305 215 268 C238 245 260 228 278 215" stroke-width="1.1" fill="none" opacity="0.85"/>
+        <path d="M148 360 C162 335 190 298 224 260 C248 236 270 220 285 208" stroke-width="1.0" fill="none" opacity="0.75"/>
+        <path d="M148 360 C165 332 198 292 234 253 C258 229 278 215 290 204" stroke-width="0.9" fill="none" opacity="0.65"/>
+        <path d="M148 360 C168 330 204 286 242 247 C264 226 280 215 288 208" stroke-width="0.85" fill="none" opacity="0.55"/>
+        <path d="M148 360 C155 342 172 318 194 292 C215 268 238 248 256 232" stroke-width="1.2" fill="none" opacity="0.8"/>
+        <path d="M148 360 C152 344 165 325 184 305 C204 283 228 265 248 250" stroke-width="1.1" fill="none" opacity="0.7"/>
+        <path d="M148 360 C150 346 160 332 175 318 C194 300 216 284 235 270" stroke-width="1.0" fill="none" opacity="0.6"/>
+      </g>
+
+      <!-- LEFT ARC — mirrored fountain -->
+      <g stroke="#8a8040" stroke-linecap="round">
+        <path d="M148 360 C141 340 121 310 91 275 C71 255 48 238 28 220" stroke-width="1.3" fill="none"/>
+        <path d="M148 360 C138 338 114 305 81 268 C58 245 36 228 18 215" stroke-width="1.1" fill="none" opacity="0.85"/>
+        <path d="M148 360 C134 335 106 298 72 260 C48 236 26 220 11 208" stroke-width="1.0" fill="none" opacity="0.75"/>
+        <path d="M148 360 C131 332 98 292 62 253 C38 229 18 215 6 204" stroke-width="0.9" fill="none" opacity="0.65"/>
+        <path d="M148 360 C141 342 124 318 102 292 C81 268 58 248 40 232" stroke-width="1.2" fill="none" opacity="0.8"/>
+        <path d="M148 360 C144 344 131 325 112 305 C92 283 68 265 48 250" stroke-width="1.1" fill="none" opacity="0.7"/>
+        <path d="M148 360 C146 346 136 332 121 318 C102 300 80 284 61 270" stroke-width="1.0" fill="none" opacity="0.6"/>
+      </g>
+
+      <!-- CENTER UPRIGHT culms — the tallest, go nearly vertical before arching -->
+      <g stroke="#8a8040" stroke-linecap="round">
+        <path d="M148 360 C148 330 148 295 146 260 C144 230 140 205 136 182" stroke-width="1.4" fill="none"/>
+        <path d="M148 360 C150 330 152 295 153 260 C154 230 154 205 152 182" stroke-width="1.3" fill="none" opacity="0.85"/>
+        <path d="M148 360 C145 332 143 298 140 265 C137 235 133 210 128 188" stroke-width="1.1" fill="none" opacity="0.75"/>
+        <path d="M148 360 C151 332 155 298 158 265 C161 235 163 210 162 188" stroke-width="1.1" fill="none" opacity="0.75"/>
+        <path d="M148 360 C143 334 137 300 132 268 C127 238 122 214 118 192" stroke-width="1.0" fill="none" opacity="0.65"/>
+        <path d="M148 360 C153 334 159 300 164 268 C169 238 172 214 172 192" stroke-width="1.0" fill="none" opacity="0.65"/>
+      </g>
+
+      <!-- FLOWERING PANICLES — open, airy, at the tips of the culms.
+           Dropseed panicles are distinctively open and delicate —
+           the individual spikelets are tiny and widely spaced on
+           hair-fine branches. -->
+
+      <!-- Main central panicles (top area) -->
+      <g stroke="#b0a060" stroke-width="0.7" stroke-linecap="round" opacity="0.8">
+        <!-- Left of center panicle — around 136, 175 -->
+        <line x1="136" y1="182" x2="126" y2="165"/>
+        <line x1="136" y1="182" x2="130" y2="160"/>
+        <line x1="136" y1="182" x2="136" y2="158"/>
+        <line x1="136" y1="182" x2="142" y2="162"/>
+        <line x1="136" y1="175" x2="122" y2="162"/>
+        <line x1="136" y1="175" x2="128" y2="156"/>
+        <line x1="136" y1="175" x2="140" y2="158"/>
+        <!-- spikelet dots -->
+      </g>
+      <g fill="#c0b070" opacity="0.75">
+        <circle cx="126" cy="164" r="1.2"/>
+        <circle cx="130" cy="159" r="1.1"/>
+        <circle cx="136" cy="157" r="1.2"/>
+        <circle cx="142" cy="161" r="1.1"/>
+        <circle cx="122" cy="161" r="1.0"/>
+        <circle cx="128" cy="155" r="1.0"/>
+        <circle cx="140" cy="157" r="1.0"/>
+      </g>
+
+      <!-- Right of center panicle — around 152, 175 -->
+      <g stroke="#b0a060" stroke-width="0.7" stroke-linecap="round" opacity="0.8">
+        <line x1="152" y1="182" x2="142" y2="166"/>
+        <line x1="152" y1="182" x2="148" y2="162"/>
+        <line x1="152" y1="182" x2="155" y2="160"/>
+        <line x1="152" y1="182" x2="162" y2="165"/>
+        <line x1="152" y1="175" x2="144" y2="160"/>
+        <line x1="152" y1="175" x2="154" y2="156"/>
+        <line x1="152" y1="175" x2="164" y2="162"/>
+      </g>
+      <g fill="#c0b070" opacity="0.75">
+        <circle cx="142" cy="165" r="1.2"/>
+        <circle cx="148" cy="161" r="1.1"/>
+        <circle cx="155" cy="159" r="1.2"/>
+        <circle cx="162" cy="164" r="1.1"/>
+        <circle cx="144" cy="159" r="1.0"/>
+        <circle cx="154" cy="155" r="1.0"/>
+        <circle cx="164" cy="161" r="1.0"/>
+      </g>
+
+      <!-- Far right panicle — on long right-arching culm ~268, 220 -->
+      <g stroke="#b0a060" stroke-width="0.65" stroke-linecap="round" opacity="0.65">
+        <line x1="268" y1="220" x2="260" y2="208"/>
+        <line x1="268" y1="220" x2="265" y2="206"/>
+        <line x1="268" y1="220" x2="270" y2="206"/>
+        <line x1="268" y1="220" x2="276" y2="210"/>
+        <line x1="264" y1="215" x2="256" y2="205"/>
+        <line x1="264" y1="215" x2="266" y2="203"/>
+        <line x1="264" y1="215" x2="272" y2="207"/>
+      </g>
+      <g fill="#c0b070" opacity="0.62">
+        <circle cx="260" cy="207" r="1.0"/>
+        <circle cx="265" cy="205" r="1.0"/>
+        <circle cx="270" cy="205" r="1.0"/>
+        <circle cx="276" cy="209" r="0.9"/>
+        <circle cx="256" cy="204" r="0.9"/>
+        <circle cx="266" cy="202" r="0.9"/>
+        <circle cx="272" cy="206" r="0.9"/>
+      </g>
+
+      <!-- Far left panicle — mirrored ~28, 220 -->
+      <g stroke="#b0a060" stroke-width="0.65" stroke-linecap="round" opacity="0.65">
+        <line x1="28" y1="220" x2="20" y2="208"/>
+        <line x1="28" y1="220" x2="25" y2="206"/>
+        <line x1="28" y1="220" x2="30" y2="206"/>
+        <line x1="28" y1="220" x2="36" y2="210"/>
+        <line x1="24" y1="215" x2="16" y2="205"/>
+        <line x1="24" y1="215" x2="26" y2="203"/>
+        <line x1="24" y1="215" x2="32" y2="207"/>
+      </g>
+      <g fill="#c0b070" opacity="0.62">
+        <circle cx="20" cy="207" r="1.0"/>
+        <circle cx="25" cy="205" r="1.0"/>
+        <circle cx="30" cy="205" r="1.0"/>
+        <circle cx="36" cy="209" r="0.9"/>
+        <circle cx="16" cy="204" r="0.9"/>
+        <circle cx="26" cy="202" r="0.9"/>
+        <circle cx="32" cy="206" r="0.9"/>
+      </g>
+
+      <!-- Mid-arc panicles — scattered, various positions -->
+      <g stroke="#b0a060" stroke-width="0.6" stroke-linecap="round" opacity="0.58">
+        <!-- Right mid ~215, 268 -->
+        <line x1="215" y1="268" x2="208" y2="256"/>
+        <line x1="215" y1="268" x2="213" y2="254"/>
+        <line x1="215" y1="268" x2="220" y2="256"/>
+        <line x1="215" y1="268" x2="224" y2="262"/>
+      </g>
+      <g fill="#c0b070" opacity="0.55">
+        <circle cx="208" cy="255" r="0.9"/>
+        <circle cx="213" cy="253" r="0.9"/>
+        <circle cx="220" cy="255" r="0.9"/>
+        <circle cx="224" cy="261" r="0.9"/>
+      </g>
+      <g stroke="#b0a060" stroke-width="0.6" stroke-linecap="round" opacity="0.58">
+        <!-- Left mid ~81, 268 -->
+        <line x1="81" y1="268" x2="74" y2="256"/>
+        <line x1="81" y1="268" x2="79" y2="254"/>
+        <line x1="81" y1="268" x2="86" y2="256"/>
+        <line x1="81" y1="268" x2="90" y2="262"/>
+      </g>
+      <g fill="#c0b070" opacity="0.55">
+        <circle cx="74" cy="255" r="0.9"/>
+        <circle cx="79" cy="253" r="0.9"/>
+        <circle cx="86" cy="255" r="0.9"/>
+        <circle cx="90" cy="261" r="0.9"/>
+      </g>
+
+      <!-- Subtle fall color on lower blades — warm amber at base -->
+      <g stroke="#c09040" stroke-linecap="round" opacity="0.3">
+        <path d="M148 360 C145 355 140 350 134 345 C128 340 120 336 112 334" stroke-width="1.4" fill="none"/>
+        <path d="M148 360 C151 355 156 350 162 345 C168 340 176 336 184 334" stroke-width="1.4" fill="none"/>
+        <path d="M148 360 C143 356 136 354 128 354 C120 354 112 356 106 358" stroke-width="1.2" fill="none"/>
+        <path d="M148 360 C153 356 160 354 168 354 C176 354 184 356 190 358" stroke-width="1.2" fill="none"/>
+      </g>
+
+      <!-- Crown / base — where all the stems emerge -->
+      <ellipse cx="148" cy="362" rx="14" ry="5" fill="#9a8850" opacity="0.35"/>
+      <ellipse cx="148" cy="364" rx="18" ry="5" fill="#8a7840" opacity="0.2"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant</div>
+      <h1>Prairie<em>Dropseed</em></h1>
+      <p class="hero-latin">Sporobolus heterolepis</p>
+      <p class="hero-tagline">One of the most refined native grasses of the prairie — a perfect fountain of fine texture, extraordinary fragrance, and graceful four-season form.</p>
+      <div class="scent-badge">✦ Fragrant Seed Heads · Late Summer</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Warm-season grass</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">18–24 inches</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom / Seed</span>
+      <span class="fact-value">Late summer to fall</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun to part shade</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Form</span>
+      <span class="fact-value">Fountain-shaped clump</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>One of the Jewel Grasses of the Prairie</h2>
+    <p>Prairie dropseed is unlike any other native grass. Where switchgrass is tall and structural and lovegrass is soft and atmospheric, dropseed is <strong>precise</strong>. Each plant forms a perfect, symmetrical fountain of extraordinarily fine-textured foliage — hair-thin blades arching outward from a tight central crown with a geometry that seems almost impossibly refined for something growing in the wild.</p>
+    <p>It is a grass that rewards close attention. The foliage is so fine it catches and diffuses light rather than simply reflecting it. In summer, the open, airy panicles rise above the mound on slender stems. In fall, the entire plant shifts to warm amber, orange, and bronze. In winter, the tawny dried foliage holds its fountain form through snow and ice.</p>
+
+    <div class="patience-callout">
+      <p class="patience-callout-label">A word on establishment</p>
+      <p>Prairie dropseed is famously <strong>slow to establish</strong> — it may show little visible growth for the first two or three seasons while developing its deep root system. Do not be discouraged. A well-established dropseed plant is essentially permanent, living for decades and improving every year.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Garden edging</span>
+      <span class="pill">Pathway borders</span>
+      <span class="pill">Mass plantings</span>
+      <span class="pill">Dry meadows</span>
+      <span class="pill">Four-season texture</span>
+    </div>
+  </section>
+
+  <!-- THE SCENT -->
+  <section class="section">
+    <p class="eyebrow">The Fragrance</p>
+    <h2>A Grass That Smells of Autumn</h2>
+    <p>Prairie dropseed's most surprising quality — the one that stops people in their tracks — is its <strong>fragrance</strong>. In late summer, when the open panicles are in full flower, the plant releases a distinctive scent that is unlike anything else in the native garden.</p>
+
+    <div class="scent-feature">
+      <p class="scent-label">How people describe it</p>
+      <p>Buttered popcorn. Cilantro. Warm coriander. A hint of soap, or autumn leaves, or something faintly spiced. The scent is <strong>genuinely unusual</strong> — pleasant but difficult to place, the kind of fragrance that makes people stop, look around, and ask what they're smelling. It is strongest on warm, still afternoons in August and September, and carries several feet from the plant.</p>
+    </div>
+
+    <p>The fragrance comes from volatile aromatic compounds released by the ripening seeds — the "dropseed" name itself refers to the way the tiny seeds detach and fall cleanly from the ripe panicle when brushed. The scent is brief, tied specifically to flowering and early seed set, and gone by the time the panicles fully ripen. It is one of those ephemeral seasonal qualities that rewards people who pay attention to a garden over time.</p>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>Exquisite in Every Season</h2>
+    <p>Few native plants carry their form as gracefully through the entire year. Dropseed's four-season character is a primary reason it has become a favored grass in both ecological restoration and refined garden design.</p>
+    <div class="timeline">
+      <div class="tl-row quiet">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Fine green foliage emerges slowly; the fountain form reconstitutes from the crown. Deceptively understated — most of the energy is going underground</div>
+      </div>
+      <div class="tl-row warm">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">The full fountain form fills in with lush green foliage; open, airy panicles emerge in late summer and release the distinctive fragrance during peak seed set</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">The season's transformation — foliage shifts to warm amber, tawny orange, and burnished bronze. The entire plant glows in autumn light, particularly in low-angle afternoon sun</div>
+      </div>
+      <div class="tl-row warm">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">The dried fountain form persists beautifully through winter — a warm tawny gold against snow. One of the most structurally compelling native grasses in the dormant landscape</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WILDLIFE SUPPORT -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Wildlife & Habitat Value</h2>
+    <p>Prairie dropseed is not the ecological powerhouse that mountain mint or asters are, but it fills an important structural role in the meadow community. Its primary wildlife value is <strong>habitat and food</strong> rather than pollinator support.</p>
+    <p>The tiny seeds are eaten by small sparrows, juncos, and other seed-eating birds that work through meadow plantings in fall and winter. The dense basal tufts provide cover and overwintering habitat for small invertebrates, ground-nesting insects, and spiders. As a long-lived clump grass, it contributes root-level soil stability and below-ground organic matter over decades — a slow but meaningful ecological investment.</p>
+    <p>In a broader design context, dropseed's finest ecological contribution may be as a <strong>matrix companion</strong> — the fine-textured, space-filling grass that visually connects bolder flowering species without competing with them. A meadow of coneflowers, rattlesnake master, and mountain mint gains enormous visual coherence and naturalistic character when dropseed is woven throughout.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Prairie dropseed is almost entirely self-sufficient once established — but that establishment takes patience. Plant it correctly, water it through its first summer, and then leave it alone. It will reward you for the rest of your gardening life.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun is ideal; tolerates light part shade with slightly reduced density</td></tr>
+      <tr><td>Soil</td><td>Well-drained preferred; tolerates clay, sandy, and lean soils — avoid consistently wet conditions</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; very drought-tolerant once established</td></tr>
+      <tr><td>Height</td><td>18–24 inches in bloom; fountain spreads 18–24 inches wide at maturity</td></tr>
+      <tr><td>Spacing</td><td>18–24 inches for individual specimens; 12–15 inches for mass plantings</td></tr>
+      <tr><td>Establishment</td><td>Slow — expect 2–3 seasons before the plant shows mature character; water regularly the first year</td></tr>
+      <tr><td>Maintenance</td><td>Very low — cut back in early spring before new growth emerges; avoid dividing unnecessarily</td></tr>
+      <tr><td>Longevity</td><td>Extremely long-lived; a well-sited plant may outlast the garden around it</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANION PLANTS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Prairie dropseed is an ideal weaving grass — its fine texture and restrained scale make it a perfect companion for bolder species without ever competing with them. Repeat it in drifts of three to five plants throughout a planting for the best effect.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Bold structural companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Culver's Root</span> <span class="companion-latin">Veronicastrum virginicum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Texture & matrix companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Lovegrass</span> <span class="companion-latin">Eragrostis spectabilis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Sideoats Grama</span> <span class="companion-latin">Bouteloua curtipendula</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Pollinator companions (for ecological balance)</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Grass</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">It Smells Like Buttered Popcorn — and No One Can Agree Why</h3>
+        <p>The distinctive fragrance of prairie dropseed in late summer bloom is one of the most reliably surprising things in the native plant world. Botanists and plant enthusiasts have described it as buttered popcorn, warm coriander, soap, cilantro, spiced autumn leaves, and something faintly like fresh bread. Rarely does anyone describe the same scent the same way twice.</p>
+        <p>The compounds responsible are volatile terpenoids and aromatic esters produced by the ripening seeds. The specific combination is unique to <em>Sporobolus heterolepis</em>, and the fragrance is brief — tied to a narrow window of peak flowering. <strong>Miss that window and you miss the scent until next year.</strong> This is part of what makes prairie dropseed a plant that rewards people who pay close attention to their garden's changing character season by season.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Fountain Form Is a Feat of Precision</h3>
+        <p>The perfect symmetrical fountain shape of a mature prairie dropseed isn't an accident or an artifact of cultivation — it is the plant's natural form, expressing a geometry shaped by millions of years of prairie evolution. Each blade arcs outward from the crown at nearly the same angle and length as every other blade, creating a form that landscape designers sometimes describe as looking almost <em>designed</em>.</p>
+        <p>This form serves the plant functionally: the arching blades shed water efficiently to the root zone, the open structure allows wind to reach the seeds for dispersal, and the tight crown protects the growing points from fire and grazing pressure. <strong>The beauty is the biology.</strong> Prairie dropseed looks the way it does because that shape works — and it has worked for a very long time.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Patience Is the Price of Something Permanent</h3>
+        <p>Prairie dropseed's reputation for slow establishment is well-earned and worth understanding. In its first one to three years, a newly planted dropseed may show little visible growth — a few thin blades, no fountain form, no flowers. This frustrates gardeners accustomed to faster-establishing plants.</p>
+        <p>What is happening underground, however, is significant. Dropseed is building a deep, dense root system that will eventually make it one of the most resilient plants in the garden — drought-tolerant, long-lived, and nearly indestructible once established. A prairie dropseed planted thoughtfully can live for <strong>forty or fifty years</strong>, outlasting multiple rounds of surrounding plantings, gradually becoming more beautiful with every season. It asks for patience at the beginning and gives it back across decades.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Sporobolus heterolepis · Warm-Season Grass · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
