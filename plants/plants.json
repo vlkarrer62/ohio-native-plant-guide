@@ -78,21 +78,5 @@
     "accentFrom": "#e4ece8",
     "accentTo": "#dce8e2",
     "svgIcon": "mint"
-  }
-{
-  "commonName": "Ohio Native Asters",
-  "scientificName": "Symphyotrichum spp.",
-  "type": "Native Perennial",
-  "bloom": "Blooms late summer through frost",
-  "season": "Summer · Fall",
-  "sun": "Full sun to part shade",
-  "moisture": "Dry to medium; varies by species",
-  "height": "1–6 ft",
-  "description": "The grand finale of the Ohio prairie year — violet-blue flowers that arrive just as most everything else finishes, feeding migrating monarchs, specialist bees, and late pollinators before winter.",
-  "url": "aster.html",
-  "tagClass": "tag-perennial",
-  "accentFrom": "#eae6f4",
-  "accentTo": "#dfd8f0",
-  "svgIcon": "aster"
-}
+  }	
 ]
