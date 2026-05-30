@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purple Lovegrass · Eragrostis spectabilis · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #1a1218;
+      --bg-raised:  #221820;
+      --bg-card:    #281e26;
+      --border:     rgba(200,140,160,0.14);
+      --border-rose:rgba(200,140,160,0.32);
+      --rose:       #c87890;
+      --rose-soft:  #e0a0b8;
+      --rose-dim:   rgba(200,120,144,0.35);
+      --bronze:     #b07840;
+      --bronze-soft:#c89058;
+      --sage:       #6a8858;
+      --sage-soft:  #88aa70;
+      --text:       #ede0e8;
+      --text-dim:   #a888a0;
+      --text-faint: #705868;
+      --white:      #f4eef2;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 17px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 460px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    /* Soft radial bloom — like sunset haze */
+    .hero-glow {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 75% 55% at 55% 30%, rgba(200,100,130,0.22) 0%, transparent 65%),
+        radial-gradient(ellipse 50% 40% at 20% 60%, rgba(140,80,110,0.14) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 85% 50%, rgba(176,120,64,0.10) 0%, transparent 60%),
+        linear-gradient(170deg, #150e12 0%, #1a1218 50%, #120e10 100%);
+    }
+
+    /* Floating panicle cloud illustration */
+    .hero-cloud {
+      position: absolute;
+      top: 0;
+      right: -30px;
+      width: 70%;
+      height: 88%;
+      opacity: 0.65;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 2.5rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 1.2rem;
+      opacity: 0.85;
+      animation: rise 0.7s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--rose);
+      opacity: 0.6;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: clamp(2.8rem, 9vw, 3.8rem);
+      line-height: 1.0;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      animation: rise 0.7s 0.1s ease both;
+    }
+
+    .hero h1 em {
+      display: block;
+      font-style: italic;
+      color: var(--rose-soft);
+      font-weight: 300;
+    }
+
+    .hero-latin {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-dim);
+      margin-top: 0.5rem;
+      animation: rise 0.7s 0.2s ease both;
+    }
+
+    .hero-tagline {
+      margin-top: 1rem;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 340px;
+      line-height: 1.65;
+      animation: rise 0.7s 0.3s ease both;
+    }
+
+    .season-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 1.2rem;
+      background: var(--rose-dim);
+      border: 1px solid rgba(200,120,144,0.4);
+      border-radius: 20px;
+      padding: 0.28em 0.9em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose-soft);
+      animation: rise 0.7s 0.4s ease both;
+    }
+
+    .season-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--rose);
+    }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band {
+      background: #0f0a0e;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .fact-item { display: flex; flex-direction: column; gap: 0.18rem; }
+
+    .fact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+    }
+
+    .fact-value {
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 2.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--rose);
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+
+    .section h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 1.1rem;
+      line-height: 1.15;
+    }
+
+    .section p {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .section strong { color: var(--rose-soft); font-weight: 500; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      font-size: 0.8rem;
+      font-weight: 300;
+      padding: 0.28em 0.85em;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-dim);
+      background: var(--bg-raised);
+    }
+
+    /* ── ATMOSPHERE BLOCK ─────────────────────── */
+    /* Special pull-quote style for the "living veil" concept */
+    .atmosphere-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--rose);
+      border-radius: 0 4px 4px 0;
+      padding: 1.4rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .atmosphere-block p {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.08rem;
+      color: var(--text);
+      margin: 0 !important;
+      line-height: 1.7;
+    }
+
+    /* ── SEASONAL TIMELINE ────────────────────── */
+    .timeline {
+      margin-top: 1.2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .timeline-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .timeline-row:last-child { border-bottom: none; }
+
+    .tl-season {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      width: 88px;
+      flex-shrink: 0;
+      padding: 0.85rem 0.8rem 0.85rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tl-bar {
+      width: 3px;
+      background: var(--border);
+      flex-shrink: 0;
+      margin: 0.4rem 1rem 0.4rem 0;
+      border-radius: 2px;
+    }
+
+    .timeline-row.peak .tl-bar   { background: var(--rose); }
+    .timeline-row.warm .tl-bar   { background: var(--bronze); }
+    .timeline-row.subtle .tl-bar { background: var(--sage); }
+
+    .tl-text {
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--text);
+      padding: 0.85rem 0;
+      line-height: 1.55;
+    }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+
+    .care-table td {
+      padding: 0.75rem 0.4rem;
+      vertical-align: top;
+    }
+
+    .care-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose);
+      opacity: 0.8;
+      width: 30%;
+      padding-top: 0.9rem;
+    }
+
+    .care-table td:last-child {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+
+    .companion-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--bronze-soft);
+      margin-bottom: 0.6rem;
+      opacity: 0.8;
+    }
+
+    .companion-list {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.4rem;
+    }
+
+    .companion-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .companion-row:last-child { border-bottom: none; }
+
+    .companion-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--rose);
+      flex-shrink: 0;
+      margin-top: 0.5em;
+      opacity: 0.55;
+    }
+
+    .companion-common {
+      font-size: 0.96rem;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .companion-latin {
+      font-style: italic;
+      font-size: 0.83rem;
+      font-weight: 300;
+      color: var(--text-dim);
+    }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .story-card {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-card:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .story-card--highlight {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--rose);
+      border-radius: 0 0 5px 5px;
+      padding: 1.4rem;
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+    }
+
+    .story-number {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(200,120,144,0.35);
+      flex-shrink: 0;
+      padding-top: 0.25rem;
+      min-width: 2rem;
+    }
+
+    .story-card--highlight .story-number { color: var(--rose); opacity: 0.8; }
+
+    .story-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .story-body p {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.78;
+      margin-bottom: 0.85rem;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--rose-soft); font-weight: 500; }
+    .story-body em { color: var(--text-dim); font-style: italic; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: #0f0a0e;
+      border-top: 1px solid var(--border);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: var(--text-faint);
+      line-height: 2;
+    }
+
+    footer strong { color: var(--text-dim); font-weight: 500; }
+
+    /* ── ANIMATIONS ───────────────────────────── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-glow"></div>
+
+    <!-- Panicle cloud illustration:
+         Fine branching stems with hundreds of tiny floret dots
+         creating the floating purple mist effect -->
+    <svg class="hero-cloud" viewBox="0 0 340 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- Main structural stems rising from base -->
+      <line x1="170" y1="420" x2="168" y2="280" stroke="#7a5868" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="185" y1="420" x2="190" y2="260" stroke="#7a5868" stroke-width="2.2" stroke-linecap="round"/>
+      <line x1="155" y1="420" x2="148" y2="295" stroke="#7a5868" stroke-width="2.0" stroke-linecap="round"/>
+      <line x1="200" y1="420" x2="208" y2="285" stroke="#7a5868" stroke-width="1.8" stroke-linecap="round"/>
+      <line x1="140" y1="420" x2="130" y2="310" stroke="#7a5868" stroke-width="1.6" stroke-linecap="round"/>
+      <line x1="215" y1="420" x2="225" y2="300" stroke="#7a5868" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Primary branching — each stem fans into many fine panicle branches -->
+      <!-- Center stem branches -->
+      <g stroke="#8a6070" stroke-width="0.9" stroke-linecap="round" opacity="0.85">
+        <line x1="168" y1="280" x2="140" y2="240"/>
+        <line x1="168" y1="280" x2="155" y2="225"/>
+        <line x1="168" y1="280" x2="168" y2="215"/>
+        <line x1="168" y1="280" x2="180" y2="222"/>
+        <line x1="168" y1="280" x2="192" y2="235"/>
+        <line x1="168" y1="265" x2="148" y2="235"/>
+        <line x1="168" y1="265" x2="185" y2="230"/>
+      </g>
+
+      <!-- Right main stem branches -->
+      <g stroke="#8a6070" stroke-width="0.9" stroke-linecap="round" opacity="0.8">
+        <line x1="190" y1="260" x2="162" y2="218"/>
+        <line x1="190" y1="260" x2="176" y2="208"/>
+        <line x1="190" y1="260" x2="190" y2="200"/>
+        <line x1="190" y1="260" x2="204" y2="210"/>
+        <line x1="190" y1="260" x2="218" y2="222"/>
+        <line x1="190" y1="260" x2="230" y2="238"/>
+        <line x1="190" y1="245" x2="172" y2="215"/>
+        <line x1="190" y1="245" x2="208" y2="220"/>
+      </g>
+
+      <!-- Left stem branches -->
+      <g stroke="#7a5868" stroke-width="0.85" stroke-linecap="round" opacity="0.75">
+        <line x1="148" y1="295" x2="122" y2="255"/>
+        <line x1="148" y1="295" x2="132" y2="245"/>
+        <line x1="148" y1="295" x2="148" y2="238"/>
+        <line x1="148" y1="295" x2="162" y2="250"/>
+        <line x1="148" y1="278" x2="128" y2="248"/>
+        <line x1="148" y1="278" x2="162" y2="242"/>
+      </g>
+
+      <!-- Far right stem branches -->
+      <g stroke="#7a5868" stroke-width="0.85" stroke-linecap="round" opacity="0.75">
+        <line x1="208" y1="285" x2="188" y2="248"/>
+        <line x1="208" y1="285" x2="202" y2="240"/>
+        <line x1="208" y1="285" x2="215" y2="242"/>
+        <line x1="208" y1="285" x2="228" y2="252"/>
+        <line x1="208" y1="285" x2="240" y2="262"/>
+        <line x1="208" y1="268" x2="220" y2="248"/>
+        <line x1="208" y1="268" x2="235" y2="256"/>
+      </g>
+
+      <!-- Secondary fine branches — the true panicle structure -->
+      <g stroke="#9a7088" stroke-width="0.7" stroke-linecap="round" opacity="0.65">
+        <!-- From center primary branches -->
+        <line x1="140" y1="240" x2="126" y2="210"/>
+        <line x1="140" y1="240" x2="133" y2="205"/>
+        <line x1="140" y1="240" x2="142" y2="202"/>
+        <line x1="140" y1="240" x2="150" y2="208"/>
+        <line x1="155" y1="225" x2="142" y2="196"/>
+        <line x1="155" y1="225" x2="152" y2="192"/>
+        <line x1="155" y1="225" x2="163" y2="196"/>
+        <line x1="155" y1="225" x2="170" y2="205"/>
+        <line x1="168" y1="215" x2="155" y2="186"/>
+        <line x1="168" y1="215" x2="163" y2="182"/>
+        <line x1="168" y1="215" x2="172" y2="183"/>
+        <line x1="168" y1="215" x2="180" y2="192"/>
+        <line x1="180" y1="222" x2="168" y2="194"/>
+        <line x1="180" y1="222" x2="176" y2="190"/>
+        <line x1="180" y1="222" x2="185" y2="192"/>
+        <line x1="180" y1="222" x2="193" y2="200"/>
+        <line x1="192" y1="235" x2="180" y2="206"/>
+        <line x1="192" y1="235" x2="188" y2="202"/>
+        <line x1="192" y1="235" x2="196" y2="205"/>
+        <line x1="192" y1="235" x2="205" y2="215"/>
+        <!-- From right primary -->
+        <line x1="162" y1="218" x2="148" y2="188"/>
+        <line x1="162" y1="218" x2="158" y2="184"/>
+        <line x1="162" y1="218" x2="166" y2="184"/>
+        <line x1="176" y1="208" x2="164" y2="178"/>
+        <line x1="176" y1="208" x2="172" y2="174"/>
+        <line x1="176" y1="208" x2="180" y2="176"/>
+        <line x1="190" y1="200" x2="178" y2="170"/>
+        <line x1="190" y1="200" x2="186" y2="167"/>
+        <line x1="190" y1="200" x2="194" y2="168"/>
+        <line x1="190" y1="200" x2="202" y2="176"/>
+        <line x1="204" y1="210" x2="194" y2="180"/>
+        <line x1="204" y1="210" x2="200" y2="176"/>
+        <line x1="204" y1="210" x2="210" y2="180"/>
+        <line x1="204" y1="210" x2="218" y2="188"/>
+        <line x1="218" y1="222" x2="208" y2="192"/>
+        <line x1="218" y1="222" x2="215" y2="188"/>
+        <line x1="218" y1="222" x2="224" y2="192"/>
+        <line x1="218" y1="222" x2="233" y2="204"/>
+        <line x1="230" y1="238" x2="220" y2="208"/>
+        <line x1="230" y1="238" x2="228" y2="206"/>
+        <line x1="230" y1="238" x2="236" y2="210"/>
+        <line x1="230" y1="238" x2="245" y2="222"/>
+        <!-- Left side -->
+        <line x1="122" y1="255" x2="108" y2="224"/>
+        <line x1="122" y1="255" x2="116" y2="220"/>
+        <line x1="122" y1="255" x2="125" y2="222"/>
+        <line x1="122" y1="255" x2="134" y2="230"/>
+        <line x1="132" y1="245" x2="118" y2="214"/>
+        <line x1="132" y1="245" x2="128" y2="212"/>
+        <line x1="132" y1="245" x2="136" y2="213"/>
+        <line x1="148" y1="238" x2="136" y2="208"/>
+        <line x1="148" y1="238" x2="144" y2="204"/>
+        <line x1="148" y1="238" x2="152" y2="206"/>
+        <line x1="162" y1="250" x2="152" y2="220"/>
+        <line x1="162" y1="250" x2="158" y2="217"/>
+        <line x1="162" y1="250" x2="166" y2="219"/>
+        <!-- Far right -->
+        <line x1="240" y1="262" x2="232" y2="232"/>
+        <line x1="240" y1="262" x2="238" y2="230"/>
+        <line x1="240" y1="262" x2="246" y2="234"/>
+        <line x1="240" y1="262" x2="255" y2="244"/>
+        <line x1="228" y1="252" x2="218" y2="222"/>
+        <line x1="228" y1="252" x2="225" y2="220"/>
+        <line x1="228" y1="252" x2="234" y2="224"/>
+      </g>
+
+      <!-- THE FLORET CLOUD — hundreds of tiny dots at every branch tip -->
+      <!-- These create the signature "floating mist" effect -->
+
+      <!-- Dense central cloud -->
+      <g fill="#c87890" opacity="0.75">
+        <!-- Row 1 — top of cloud, sparsest -->
+        <circle cx="162" cy="180" r="1.8"/>
+        <circle cx="168" cy="175" r="1.5"/>
+        <circle cx="175" cy="178" r="1.8"/>
+        <circle cx="155" cy="183" r="1.4"/>
+        <circle cx="183" cy="176" r="1.6"/>
+        <circle cx="170" cy="168" r="1.3"/>
+        <circle cx="178" cy="164" r="1.5"/>
+        <circle cx="162" cy="170" r="1.4"/>
+        <circle cx="188" cy="168" r="1.6"/>
+        <circle cx="152" cy="173" r="1.4"/>
+        <!-- Row 2 -->
+        <circle cx="145" cy="195" r="1.8"/>
+        <circle cx="153" cy="188" r="2.0"/>
+        <circle cx="162" cy="192" r="2.2"/>
+        <circle cx="170" cy="186" r="2.0"/>
+        <circle cx="178" cy="190" r="2.2"/>
+        <circle cx="186" cy="184" r="2.0"/>
+        <circle cx="194" cy="188" r="2.2"/>
+        <circle cx="202" cy="182" r="1.8"/>
+        <circle cx="210" cy="186" r="2.0"/>
+        <circle cx="148" cy="204" r="1.6"/>
+        <circle cx="218" cy="180" r="1.8"/>
+        <!-- Row 3 — densest -->
+        <circle cx="120" cy="210" r="1.6"/>
+        <circle cx="130" cy="205" r="2.0"/>
+        <circle cx="140" cy="200" r="2.2"/>
+        <circle cx="150" cy="208" r="2.4"/>
+        <circle cx="160" cy="200" r="2.5"/>
+        <circle cx="170" cy="198" r="2.6"/>
+        <circle cx="180" cy="204" r="2.5"/>
+        <circle cx="190" cy="197" r="2.4"/>
+        <circle cx="200" cy="204" r="2.5"/>
+        <circle cx="210" cy="198" r="2.4"/>
+        <circle cx="220" cy="204" r="2.3"/>
+        <circle cx="230" cy="200" r="2.2"/>
+        <circle cx="238" cy="208" r="2.0"/>
+        <circle cx="246" cy="215" r="1.8"/>
+        <!-- Row 4 — below dense -->
+        <circle cx="115" cy="226" r="1.5"/>
+        <circle cx="126" cy="220" r="2.0"/>
+        <circle cx="136" cy="216" r="2.2"/>
+        <circle cx="145" cy="222" r="2.3"/>
+        <circle cx="156" cy="216" r="2.4"/>
+        <circle cx="165" cy="212" r="2.5"/>
+        <circle cx="174" cy="218" r="2.4"/>
+        <circle cx="183" cy="212" r="2.5"/>
+        <circle cx="192" cy="218" r="2.4"/>
+        <circle cx="201" cy="213" r="2.3"/>
+        <circle cx="210" cy="218" r="2.4"/>
+        <circle cx="220" cy="213" r="2.3"/>
+        <circle cx="230" cy="218" r="2.2"/>
+        <circle cx="240" cy="224" r="2.0"/>
+        <circle cx="250" cy="230" r="1.8"/>
+        <!-- Row 5 — fading out bottom -->
+        <circle cx="118" cy="240" r="1.6"/>
+        <circle cx="128" cy="235" r="1.9"/>
+        <circle cx="140" cy="232" r="2.0"/>
+        <circle cx="152" cy="236" r="2.1"/>
+        <circle cx="162" cy="230" r="2.2"/>
+        <circle cx="172" cy="234" r="2.1"/>
+        <circle cx="182" cy="228" r="2.2"/>
+        <circle cx="192" cy="233" r="2.1"/>
+        <circle cx="202" cy="228" r="2.0"/>
+        <circle cx="212" cy="233" r="2.1"/>
+        <circle cx="222" cy="228" r="2.0"/>
+        <circle cx="232" cy="234" r="1.9"/>
+        <circle cx="242" cy="240" r="1.7"/>
+        <circle cx="250" cy="246" r="1.5"/>
+      </g>
+
+      <!-- Lighter pink — brighter tips and highlights -->
+      <g fill="#e0a0b8" opacity="0.55">
+        <circle cx="168" cy="172" r="1.4"/>
+        <circle cx="174" cy="165" r="1.2"/>
+        <circle cx="180" cy="170" r="1.3"/>
+        <circle cx="163" cy="167" r="1.1"/>
+        <circle cx="187" cy="165" r="1.3"/>
+        <circle cx="165" cy="193" r="1.8"/>
+        <circle cx="174" cy="189" r="1.9"/>
+        <circle cx="183" cy="193" r="1.9"/>
+        <circle cx="192" cy="188" r="1.8"/>
+        <circle cx="158" cy="203" r="2.0"/>
+        <circle cx="168" cy="199" r="2.1"/>
+        <circle cx="178" cy="203" r="2.1"/>
+        <circle cx="188" cy="199" r="2.0"/>
+        <circle cx="198" cy="203" r="2.0"/>
+        <circle cx="208" cy="199" r="1.9"/>
+        <circle cx="155" cy="218" r="1.9"/>
+        <circle cx="164" cy="213" r="2.0"/>
+        <circle cx="174" cy="218" r="2.0"/>
+        <circle cx="184" cy="213" r="2.0"/>
+        <circle cx="194" cy="218" r="1.9"/>
+        <circle cx="204" cy="213" r="1.9"/>
+        <circle cx="214" cy="218" r="1.8"/>
+      </g>
+
+      <!-- Deeper mauve — shadow and depth -->
+      <g fill="#a05878" opacity="0.45">
+        <circle cx="132" cy="208" r="1.8"/>
+        <circle cx="142" cy="204" r="2.0"/>
+        <circle cx="200" cy="210" r="1.9"/>
+        <circle cx="212" cy="204" r="1.8"/>
+        <circle cx="224" cy="210" r="1.7"/>
+        <circle cx="235" cy="215" r="1.6"/>
+        <circle cx="126" cy="224" r="1.7"/>
+        <circle cx="136" cy="219" r="1.9"/>
+        <circle cx="205" cy="222" r="1.9"/>
+        <circle cx="216" cy="216" r="1.8"/>
+        <circle cx="226" cy="221" r="1.7"/>
+        <circle cx="236" cy="227" r="1.6"/>
+      </g>
+
+      <!-- Stragglers — sparse dots that give the "floating" outer edge -->
+      <g fill="#c87890" opacity="0.35">
+        <circle cx="100" cy="228" r="1.2"/>
+        <circle cx="106" cy="218" r="1.0"/>
+        <circle cx="112" cy="210" r="1.3"/>
+        <circle cx="260" cy="240" r="1.2"/>
+        <circle cx="268" cy="250" r="1.0"/>
+        <circle cx="255" cy="230" r="1.1"/>
+        <circle cx="144" cy="180" r="1.1"/>
+        <circle cx="136" cy="192" r="1.0"/>
+        <circle cx="195" cy="175" r="1.2"/>
+        <circle cx="205" cy="182" r="1.0"/>
+        <circle cx="220" cy="192" r="1.1"/>
+        <circle cx="228" cy="200" r="1.2"/>
+        <circle cx="240" cy="208" r="1.0"/>
+        <circle cx="248" cy="216" r="1.1"/>
+        <circle cx="108" cy="234" r="1.0"/>
+        <circle cx="118" cy="250" r="1.1"/>
+      </g>
+
+      <!-- Very faint outermost wisps -->
+      <g fill="#e0a0b8" opacity="0.18">
+        <circle cx="92" cy="238" r="1.5"/>
+        <circle cx="98" cy="245" r="1.2"/>
+        <circle cx="270" cy="258" r="1.4"/>
+        <circle cx="278" cy="248" r="1.1"/>
+        <circle cx="138" cy="170" r="1.2"/>
+        <circle cx="130" cy="180" r="1.0"/>
+        <circle cx="210" cy="168" r="1.2"/>
+        <circle cx="218" cy="178" r="1.0"/>
+      </g>
+
+      <!-- Leaf blades at base — simple arching strokes -->
+      <g stroke="#4a6030" stroke-width="1.5" stroke-linecap="round" opacity="0.5" fill="none">
+        <path d="M155 420 C148 400 138 382 124 368"/>
+        <path d="M170 420 C170 398 175 378 183 362"/>
+        <path d="M185 420 C183 402 177 384 168 370"/>
+        <path d="M200 420 C200 400 206 380 214 365"/>
+        <path d="M145 420 C140 405 132 390 120 378"/>
+        <path d="M215 420 C215 403 220 386 228 372"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant</div>
+      <h1>Purple<em>Lovegrass</em></h1>
+      <p class="hero-latin">Eragrostis spectabilis</p>
+      <p class="hero-tagline">The atmospheric grass — a floating cloud of rose-purple that softens prairies and moves with every breath of wind.</p>
+      <div class="season-pill"><span class="season-dot"></span>Blooms Late Summer · Fall</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Warm-season grass</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">1–2 feet</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom</span>
+      <span class="fact-value">Late summer to fall</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Soil</span>
+      <span class="fact-value">Sandy, lean, well-drained</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Prairie's Atmosphere</h2>
+    <p>Purple lovegrass is a fine-textured native warm-season grass unlike most others — it doesn't command attention with bold structure or dramatic flowers. Instead, it creates something rarer: <strong>atmosphere</strong>. Its flowering panicles are so delicate that they form a glowing rose-purple haze above the plant, hovering like colored mist in late summer light.</p>
+    <p>In a prairie planting, this is the plant that makes everything else feel alive. It connects bolder species with softness, adds movement where there was stillness, and creates visual breathing room that keeps a meadow from feeling rigid or heavy.</p>
+
+    <div class="atmosphere-block">
+      <p>"Without fine-textured matrix plants like purple lovegrass, prairie plantings can quickly feel visually heavy or static. It is the difference between a collection of plants and a composition."</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Meadow edges</span>
+      <span class="pill">Pathway softening</span>
+      <span class="pill">Matrix plantings</span>
+      <span class="pill">Dry meadow transitions</span>
+      <span class="pill">Movement compositions</span>
+    </div>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="timeline-row subtle">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Low mounded foliage emerges subtly, gradually thickening into fine-textured green clumps</div>
+      </div>
+      <div class="timeline-row peak">
+        <div class="tl-season">Late Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Delicate flowering stems rise above the foliage — the signature floating purple-pink cloud appears, alive with movement in any breeze</div>
+      </div>
+      <div class="timeline-row warm">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">The haze develops warmer bronze and tawny tones; seeds disperse on wind while the plant continues contributing softness and motion</div>
+      </div>
+      <div class="timeline-row">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Dormant foliage contributes fine meadow texture and subtle ground-level structure through the cold months</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WILDLIFE -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Habitat Value</h2>
+    <p>Purple lovegrass plays a quieter ecological role than major nectar species — but a genuinely important one. It contributes <strong>habitat complexity and microclimate structure</strong> within meadow systems that larger flowering plants cannot provide.</p>
+    <p>The dense basal foliage provides shelter for small invertebrates and ground-dwelling organisms. The fine flowering canopy creates protective microhabitat and movement throughout late summer. Small native bees and generalist insects visit the flowers, and birds may forage the seeds.</p>
+    <p>Its greatest ecological contribution, however, may be structural: as a matrix grass that weaves through and around larger species, it creates the layered, continuous habitat texture that supports a broader community of insects, spiders, and small wildlife.</p>
+  </section>
+
+  <!-- GROWING -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Purple lovegrass is exceptionally well-suited to lean, dry, and sandy soils where other plants may struggle. It actually performs better in lower-fertility conditions — rich soils can cause floppy growth and diminish the delicate airy habit that makes it beautiful.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun; does not perform well in shade</td></tr>
+      <tr><td>Soil</td><td>Sandy, rocky, or lean well-drained soils; tolerates poor conditions</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; do not overwater or enrich</td></tr>
+      <tr><td>Height</td><td>1–2 feet; low-mounded form</td></tr>
+      <tr><td>Spacing</td><td>18–24 inches; effective in drifts and masses</td></tr>
+      <tr><td>Behavior</td><td>May self-seed in ideal sandy conditions; generally well-behaved</td></tr>
+      <tr><td>Winter care</td><td>Leave standing through winter for texture and habitat; cut back in early spring</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Purple lovegrass is most effective when woven rhythmically through a planting — its softness creating visual breathing room between bolder structural plants.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Structural contrast companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Switchgrass</span> <span class="companion-latin">Panicum virgatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Matrix & texture companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Sideoats Grama</span> <span class="companion-latin">Bouteloua curtipendula</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Sedges</span> <span class="companion-latin">Carex spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Pollinator sequence companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Grass</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">It Doesn't Look Like Grass — It Looks Like Smoke</h3>
+        <p>Most grasses look like grasses. Purple lovegrass does something else entirely. Its flower panicles are so fine, so numerous, and so loosely branched that from a few feet away they lose their individual identity entirely and merge into a <strong>floating cloud of rose-purple</strong> above the plant.</p>
+        <p>In mass plantings, this effect can be extraordinary — more like colored mist drifting through a prairie than individual plants in a garden. In late summer light, especially at dawn or dusk, the haze can appear almost luminous. It's one of the most atmospheric effects any native plant can create.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">It Is Essentially a Living Veil</h3>
+        <p>The flowering stems of purple lovegrass are so delicate that they respond to air movement that most plants ignore entirely. A breeze too light to move leaves — the kind you feel on your face but can't quite see — will set the entire flowering cloud in motion.</p>
+        <p>This makes the plant function almost like a <em>weather instrument</em> in the garden: when purple lovegrass moves, you know the air is alive. It adds a layer of animation and dynamism to a planting that no bold structural plant can provide. Prairie designers call this quality <strong>movement</strong> — and it's considered one of the most valuable and difficult properties to achieve in ecological landscapes.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The Most Important Plants Are Often the Quietest</h3>
+        <p>Purple lovegrass is not a showy pollinator magnet. It doesn't have the visual drama of rattlesnake master or the ecological stardom of milkweed. In a garden survey, most people would walk past it without stopping.</p>
+        <p>But remove it from a planting, and something subtle disappears. The composition stiffens. The bolder plants look heavier. The space between them feels empty rather than alive. <strong>Matrix grasses like this are the connective tissue of a prairie</strong> — the plants that turn a collection of species into a cohesive, breathing landscape. You notice them most when they're gone.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">It Thrives Where Others Can't</h3>
+        <p>Purple lovegrass is native to dry sandy prairies, rocky outcrops, and open lean soils across the eastern and central United States. It evolved in exactly the conditions that most garden plants consider inhospitable — thin soil, low nutrients, full exposure, periodic drought.</p>
+        <p>This makes it genuinely valuable in modern landscapes, where hot dry edges, sunny strips, and lean disturbed soils are common. In those challenging spots where almost nothing else will grow gracefully, purple lovegrass not only survives — it becomes luminous. Give it poor soil and full sun, and it will give you one of the most beautiful sights in a late summer garden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Eragrostis spectabilis · Warm-Season Grass · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.07 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
