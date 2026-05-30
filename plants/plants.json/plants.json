@@ -1,0 +1,62 @@
+[
+  {
+    "commonName": "Golden Alexanders",
+    "scientificName": "Zizia aurea",
+    "type": "Spring Wildflower",
+    "bloom": "Blooms late spring",
+    "season": "Spring",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to medium",
+    "height": "3–4 ft",
+    "description": "Ohio's essential early-season pollinator plant — golden umbels that feed specialist bees and host black swallowtail butterflies before midsummer species emerge.",
+    "url": "golden-alexanders.html",
+    "tagClass": "tag-wildflower",
+    "accentClass": "accent-alexanders",
+    "svgIcon": "alexanders"
+  },
+  {
+    "commonName": "Rattlesnake Master",
+    "scientificName": "Eryngium yuccifolium",
+    "type": "Native Perennial",
+    "bloom": "Blooms mid–late summer",
+    "season": "Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "3–5 ft",
+    "description": "A bold architectural prairie plant with spiky globe flower heads — one of the most distinctive natives in any meadow planting, with extraordinary value for beneficial insects.",
+    "url": "rattlesnake-master.html",
+    "tagClass": "tag-perennial",
+    "accentClass": "accent-rattlesnake",
+    "svgIcon": "rattlesnake"
+  },
+  {
+    "commonName": "Switchgrass",
+    "scientificName": "Panicum virgatum",
+    "type": "Warm-Season Grass",
+    "bloom": "Seeds late summer–winter",
+    "season": "Summer · Fall",
+    "sun": "Full sun to part sun",
+    "moisture": "Dry to medium",
+    "height": "3–6 ft",
+    "description": "A native prairie grass with deep roots, airy seed heads, and exceptional soil-building value — one of Ohio's ecological workhorses, beautiful through all four seasons.",
+    "url": "switchgrass.html",
+    "tagClass": "tag-grass",
+    "accentClass": "accent-switchgrass",
+    "svgIcon": "switchgrass"
+  },
+  {
+    "commonName": "Purple Lovegrass",
+    "scientificName": "Eragrostis spectabilis",
+    "type": "Warm-Season Grass",
+    "bloom": "Blooms late summer–fall",
+    "season": "Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "1–2 ft",
+    "description": "A low, airy native grass known for its purple-pink cloudlike seed heads and soft meadow texture — the atmospheric connector of the late-summer prairie.",
+    "url": "purple-lovegrass.html",
+    "tagClass": "tag-grass",
+    "accentClass": "accent-lovegrass",
+    "svgIcon": "lovegrass"
+  }
+]
