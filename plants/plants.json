@@ -202,5 +202,39 @@
     "accentFrom": "#eae4d8",
     "accentTo": "#e2dace",
     "svgIcon": "white-oak"
+  },
+  {
+    "commonName": "Witch Hazel",
+    "scientificName": "Hamamelis virginiana",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms October to December",
+    "season": "Fall \u00b7 Winter",
+    "sun": "Part shade to full sun",
+    "moisture": "Medium to moist",
+    "height": "10\u201320 feet",
+    "description": "The last native plant to flower in Ohio \u2014 spidery yellow blooms that open on bare branches in October and November, serving late-active moths and marking the close of the native plant year.",
+    "url": "witch-hazel.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#ece6d4",
+    "accentTo": "#e4dec8",
+    "svgIcon": "witch-hazel"
+  },
+  {
+    "commonName": "Bur Oak",
+    "scientificName": "Quercus macrocarpa",
+    "type": "Large Native Tree",
+    "category": "trees",
+    "bloom": "Catkins April to May",
+    "season": "Spring \u00b7 Summer \u00b7 Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "60\u201380 feet",
+    "description": "The toughest oak in North America \u2014 fire-adapted, deeply rooted, and built for the open savanna edge. Large fringed acorns, distinctive corky bark on young branches, and a lifespan measured in centuries.",
+    "url": "bur-oak.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#e6e0d0",
+    "accentTo": "#ddd8c4",
+    "svgIcon": "bur-oak"
   }
 ]
