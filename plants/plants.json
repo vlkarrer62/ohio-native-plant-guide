@@ -117,5 +117,56 @@
   "accentFrom": "#ede8d8",
   "accentTo": "#e6dfc8",
   "svgIcon": "dropseed"
-}
+  },
+  {
+  "commonName": "Purple Coneflower",
+  "scientificName": "Echinacea purpurea",
+  "type": "Native Perennial",
+  "category": "wildflowers",
+  "bloom": "Blooms midsummer to early fall",
+  "season": "Summer · Fall",
+  "sun": "Full sun to light part shade",
+  "moisture": "Dry to medium",
+  "height": "2–4 feet",
+  "description": "A bold midsummer wildflower with rose-purple drooping petals and a raised spiny cone — widely visited by bees, butterflies, and beetles in summer, and by goldfinches working the persistent seed heads through winter.",
+  "url": "purple-coneflower.html",
+  "tagClass": "tag-perennial",
+  "accentFrom": "#f0e4ec",
+  "accentTo": "#e8d8e4",
+  "svgIcon": "coneflower"
+  },
+  {
+  "commonName": "Red Buckeye",
+  "scientificName": "Aesculus pavia",
+  "type": "Small Native Tree",
+  "category": "trees",
+  "bloom": "Blooms April to May",
+  "season": "Spring",
+  "sun": "Part shade to full sun",
+  "moisture": "Medium to moist",
+  "height": "8–20 feet",
+  "description": "A small native tree of woodland edges that flowers in April with upright red panicles — timed precisely to the spring arrival of ruby-throated hummingbirds, and the first tree to bloom in the Ohio native garden.",
+  "url": "red-buckeye.html",
+  "tagClass": "tag-perennial",
+  "accentFrom": "#f0e4de",
+  "accentTo": "#e8d8d0",
+  "svgIcon": "red-buckeye"
+  },
+  {
+  "commonName": "White Oak",
+  "scientificName": "Quercus alba",
+  "type": "Large Native Tree",
+  "category": "trees",
+  "bloom": "Catkins April to May",
+  "season": "Spring · Summer · Fall",
+  "sun": "Full sun to part shade",
+  "moisture": "Dry to medium",
+  "height": "60–100 feet",
+  "description": "A long-lived canopy tree and ecological keystone — supporting over 500 caterpillar species, feeding dozens of wildlife species through its acorns, and anchoring entire woodland communities across centuries.",
+  "url": "white-oak.html",
+  "tagClass": "tag-perennial",
+  "accentFrom": "#eae4d8",
+  "accentTo": "#e2dace",
+  "svgIcon": "white-oak"
+  }
 ]
