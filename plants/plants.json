@@ -338,5 +338,40 @@
     "accentFrom": "#efe2e8",
     "accentTo": "#e6d2dc",
     "svgIcon": "joe-pye-weed"
+  },
+    {
+    "commonName": "Blazing Star",
+    "scientificName": "Liatris spp.",
+    "type": "Native Perennial",
+    "category": "wildflowers",
+    "bloom": "Blooms July to September",
+    "season": "Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to moist (by species)",
+    "height": "1–6 feet",
+    "description": "Tall purple spikes that open top-to-bottom against late summer — a nectar column for monarchs, bumblebees, and specialist bees through the warmest weeks of the year.",
+    "url": "liatris.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#ede8f4",
+    "accentTo": "#e4dced",
+    "svgIcon": "liatris"
+  },
+  {
+    "commonName": "Honey Locust",
+    "scientificName": "Gleditsia triacanthos",
+    "type": "Native Tree",
+    "category": "trees",
+    "bloom": "Blooms May to June",
+    "season": "Spring · Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Adaptable; drought-tolerant",
+    "height": "30–70 feet",
+    "description": "A tough, fast-growing tree of floodplains and forest edges — armed with branching thorns, hung with long sweet pods, and an underestimated contributor to wildlife and soil health.",
+    "url": "honey-locust.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#ede0c8",
+    "accentTo": "#e4d4b4",
+    "svgIcon": "honey-locust"
   }
+]
 ]
