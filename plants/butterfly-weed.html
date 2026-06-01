@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butterfly Weed · Asclepias tuberosa · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #181009;
+      --bg-warm:      #20160c;
+      --bg-card:      #211710;
+      --bg-silver:    #2a1b0e;
+      --border:       rgba(232,150,80,0.16);
+      --border-silver:rgba(232,160,90,0.30);
+      --silver:       #e8852e;   /* primary accent — orange */
+      --silver-soft:  #f0a85a;
+      --silver-pale:  #c87a2a;
+      --herb:         #eca040;   /* secondary accent — amber */
+      --herb-soft:    #d98a30;
+      --stone:        #c0a888;
+      --stone-light:  #ab9576;
+      --text:         #e4d6bf;
+      --text-dim:     #cdb99c;
+      --text-faint:   #9a8868;
+      --warm-white:   #fdfcf8;
+      --ink:          #0e0904;
+      --heading:      #f4e7d4;
+      --band-text:    #ece0cf;
+      --band-faint:   rgba(210,182,142,0.55);
+      --band-accent:  #f0b860;
+      --display: 'Cormorant Garamond', Georgia, serif;
+      --body: 'Jost', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(120% 70% at 85% 4%, rgba(232,133,46,0.10), transparent 60%),
+        radial-gradient(90% 55% at 8% 100%, rgba(232,133,46,0.05), transparent 55%),
+        var(--bg);
+      color: var(--text); font-family: var(--body);
+      font-weight: 300; line-height: 1.75; font-size: 17px;
+      max-width: 680px; margin: 0 auto;
+    }
+
+    .hero { position: relative; min-height: 470px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--bg-warm); }
+    .hero-light {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 50% at 70% 22%, rgba(232,133,46,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 45% at 88% 58%, rgba(240,168,90,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 80% 60% at 12% 80%, rgba(120,70,20,0.18) 0%, transparent 60%),
+        linear-gradient(175deg, #211609 0%, #1b1208 45%, #160f07 100%);
+    }
+    .hero-illustration { position: absolute; top: -5px; right: -15px; width: 60%; height: 94%; opacity: 0.92; }
+    .hero-content { position: relative; z-index: 2; padding: 3rem 2rem 2.5rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 1.2rem; animation: rise 0.7s ease both; }
+    .badge::before { content: ''; width: 18px; height: 1px; background: var(--silver); opacity: 0.6; }
+    .hero h1 { font-family: var(--display); font-weight: 600; font-size: clamp(2.8rem, 8.4vw, 4rem); line-height: 0.98; color: var(--heading); letter-spacing: 0; animation: rise 0.7s 0.1s ease both; }
+    .hero h1 em { display: block; font-style: italic; color: var(--silver); font-weight: 500; }
+    .hero-latin { font-family: var(--display); font-style: italic; font-size: 1.2rem; color: var(--stone-light); margin-top: 0.5rem; animation: rise 0.7s 0.2s ease both; }
+    .hero-tagline { margin-top: 1rem; font-size: 0.97rem; font-weight: 300; color: var(--text-dim); max-width: 350px; line-height: 1.65; animation: rise 0.7s 0.3s ease both; }
+    .flagship-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.2rem; background: var(--bg-silver); border: 1px solid var(--border-silver); border-radius: 3px; padding: 0.32em 0.9em; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); animation: rise 0.7s 0.4s ease both; }
+
+    .facts-band { background: var(--ink); padding: 1.5rem 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; border-top: 1px solid var(--border); }
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .fact-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-faint); }
+    .fact-value { font-size: 0.92rem; font-weight: 300; color: var(--band-text); line-height: 1.4; }
+
+    .section { padding: 2.5rem 2rem; border-bottom: 1px solid var(--border); opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.5rem; }
+    .section h2 { font-family: var(--display); font-size: clamp(1.7rem, 4.8vw, 2.2rem); font-weight: 600; color: var(--heading); margin-bottom: 1.1rem; line-height: 1.12; }
+    .section p { font-size: 1rem; font-weight: 300; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.8; }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--silver); font-weight: 400; }
+    .section em { font-style: italic; }
+
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .pill { font-size: 0.8rem; font-weight: 400; padding: 0.28em 0.85em; border: 1px solid var(--border); border-radius: 3px; color: var(--text-faint); background: var(--bg-card); }
+
+    .keystone-callout { background: var(--ink); border-radius: 6px; padding: 2rem; margin: 1.4rem 0; position: relative; overflow: hidden; box-shadow: 0 0 0 1px var(--border); }
+    .keystone-callout::before { content: '✦'; position: absolute; top: -1rem; right: 1rem; font-size: 8rem; color: var(--band-accent); opacity: 0.08; line-height: 1; pointer-events: none; }
+    .keystone-callout p { font-family: var(--display); font-style: italic; font-size: 1.2rem; color: var(--band-text); margin: 0 !important; line-height: 1.65; position: relative; }
+    .keystone-callout strong { color: var(--band-accent) !important; }
+
+    .insect-hub { margin: 1.4rem 0; }
+    .insect-category { margin-bottom: 0.5rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .insect-category-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-card); }
+    .insect-category-icon { font-size: 1.1rem; flex-shrink: 0; width: 28px; text-align: center; }
+    .insect-category-name { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone); font-weight: 500; flex: 1; }
+    .insect-count-badge { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--silver); background: var(--bg-silver); border: 1px solid var(--border-silver); padding: 0.15em 0.6em; border-radius: 10px; white-space: nowrap; }
+    .insect-list { padding: 0.6rem 1rem 0.8rem 3rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .insect-tag { font-size: 0.8rem; font-weight: 300; color: var(--text-dim); background: var(--bg-warm); border: 1px solid var(--border); padding: 0.2em 0.7em; border-radius: 3px; font-style: italic; }
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+    .tl-row { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+    .tl-row:last-child { border-bottom: none; }
+    .tl-season { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); width: 88px; flex-shrink: 0; padding: 0.85rem 0.8rem 0.85rem 0; display: flex; align-items: center; }
+    .tl-bar { width: 3px; background: var(--border); flex-shrink: 0; margin: 0.4rem 1rem 0.4rem 0; border-radius: 2px; }
+    .tl-row.peak .tl-bar { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar { background: var(--stone-light); }
+    .tl-text { font-size: 0.93rem; font-weight: 300; color: var(--text-dim); padding: 0.85rem 0; line-height: 1.55; }
+
+    .care-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+    .care-table td { padding: 0.75rem 0.4rem; vertical-align: top; }
+    .care-table td:first-child { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); width: 30%; padding-top: 0.9rem; }
+    .care-table td:last-child { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); line-height: 1.55; }
+
+    .companion-group { margin-top: 1.4rem; }
+    .companion-group-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--herb); margin-bottom: 0.6rem; opacity: 0.9; }
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+    .companion-row { display: flex; align-items: baseline; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .companion-row:last-child { border-bottom: none; }
+    .companion-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--silver); flex-shrink: 0; margin-top: 0.5em; opacity: 0.7; }
+    .companion-common { font-size: 0.96rem; font-weight: 400; color: var(--text); }
+    .companion-latin { font-style: italic; font-size: 0.83rem; font-weight: 300; color: var(--text-faint); }
+
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+    .story-card { display: flex; gap: 1.2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .story-card--highlight { background: var(--bg-card); border: 1px solid var(--border); border-top: 3px solid var(--silver); border-radius: 0 0 5px 5px; padding: 1.4rem; margin-left: -0.2rem; margin-right: -0.2rem; }
+    .story-number { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(232,133,46,0.35); flex-shrink: 0; padding-top: 0.25rem; min-width: 2rem; }
+    .story-card--highlight .story-number { color: var(--silver); }
+    .story-title { font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--heading); margin-bottom: 0.7rem; line-height: 1.24; }
+    .story-body p { font-size: 0.97rem; font-weight: 300; color: var(--text-dim); line-height: 1.78; margin-bottom: 0.85rem; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--silver); font-weight: 400; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    .species-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1.2rem; }
+    @media (max-width: 520px) { .species-grid { grid-template-columns: 1fr; } }
+    .species-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px; padding: 1.2rem; position: relative; overflow: hidden; }
+    .species-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--silver-pale); }
+    .species-card.featured::before { background: var(--silver); }
+    .species-tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.4rem; }
+    .species-card.featured .species-tag { color: var(--herb); }
+    .species-common { font-family: var(--display); font-weight: 600; font-size: 1.1rem; color: var(--heading); line-height: 1.2; margin-bottom: 0.2rem; }
+    .species-latin { font-family: var(--display); font-style: italic; font-size: 0.9rem; color: var(--stone-light); margin-bottom: 0.7rem; }
+    .species-desc { font-size: 0.86rem; font-weight: 300; color: var(--text-dim); line-height: 1.6; }
+    .species-traits { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+    .species-trait { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); background: var(--bg-silver); border: 1px solid var(--border); padding: 0.18em 0.6em; border-radius: 2px; }
+
+    footer { background: var(--ink); border-top: 1px solid var(--border); padding: 2.4rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.08em; color: var(--band-faint); line-height: 2; }
+    footer strong { color: var(--band-text); font-weight: 500; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-light"></div>
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+      <g fill="none" stroke="#7a5a30" stroke-width="2.4" stroke-linecap="round">
+        <path d="M150 440 C 150 350 146 250 162 150"/>
+        <path d="M150 330 C 166 300 220 282 244 250"/>
+        <path d="M150 272 C 138 246 100 236 70 224"/>
+      </g>
+      <g fill="#6e5028" opacity="0.9">
+        <path d="M150 384 C 124 372 98 366 76 372 C 100 378 126 382 150 384 Z"/>
+        <path d="M150 360 C 176 344 206 338 228 344 C 204 352 176 358 150 360 Z"/>
+        <path d="M154 322 C 130 308 106 302 86 308 C 108 316 132 322 154 324 Z"/>
+        <path d="M156 292 C 180 276 208 270 228 276 C 204 284 180 290 156 294 Z"/>
+        <path d="M158 256 C 136 242 114 236 96 242 C 116 250 138 256 158 258 Z"/>
+        <path d="M160 224 C 182 208 208 202 226 208 C 204 216 182 222 160 226 Z"/>
+        <path d="M162 192 C 142 178 122 172 106 178 C 124 186 144 192 162 194 Z"/>
+      </g>
+      <!-- upper flat-topped umbel -->
+      <g>
+        <g fill="none" stroke="#b56a20" stroke-width="1.1">
+          <path d="M162 150 l -24 -36 M162 150 l -10 -42 M162 150 l 6 -44 M162 150 l 20 -40 M162 150 l 32 -30 M162 150 l -36 -22"/>
+        </g>
+        <g fill="#f0922e">
+          <circle cx="136" cy="112" r="10"/><circle cx="150" cy="105" r="10"/>
+          <circle cx="168" cy="103" r="10"/><circle cx="184" cy="110" r="9.5"/>
+          <circle cx="196" cy="122" r="9"/><circle cx="124" cy="128" r="9"/>
+          <circle cx="158" cy="118" r="8.5"/><circle cx="174" cy="120" r="8.5"/>
+          <circle cx="148" cy="88" r="7.5"/><circle cx="170" cy="86" r="7.5"/>
+        </g>
+        <g fill="#fbb85e">
+          <circle cx="136" cy="112" r="3.6"/><circle cx="150" cy="105" r="3.6"/>
+          <circle cx="168" cy="103" r="3.6"/><circle cx="184" cy="110" r="3.4"/>
+          <circle cx="196" cy="122" r="3.2"/><circle cx="124" cy="128" r="3.2"/>
+          <circle cx="148" cy="88" r="2.8"/><circle cx="170" cy="86" r="2.8"/>
+        </g>
+      </g>
+      <!-- side branch umbel -->
+      <g>
+        <g fill="none" stroke="#b56a20" stroke-width="1">
+          <path d="M244 250 l -18 -22 M244 250 l -4 -26 M244 250 l 12 -22 M244 250 l 24 -14"/>
+        </g>
+        <g fill="#e8852e">
+          <circle cx="226" cy="228" r="8"/><circle cx="240" cy="222" r="8"/>
+          <circle cx="256" cy="226" r="8"/><circle cx="268" cy="236" r="7.5"/>
+          <circle cx="242" cy="234" r="7"/>
+        </g>
+        <g fill="#fbb85e">
+          <circle cx="226" cy="228" r="2.8"/><circle cx="240" cy="222" r="2.8"/><circle cx="256" cy="226" r="2.8"/>
+        </g>
+      </g>
+      <!-- spindle seed pod -->
+      <g>
+        <path d="M70 224 C 50 206 38 180 44 156 C 58 170 70 196 74 222 Z" fill="#8a6a3a" opacity="0.9"/>
+        <path d="M45 158 C 52 172 62 190 68 208" fill="none" stroke="#6e5028" stroke-width="1" opacity="0.7"/>
+      </g>
+    </svg>
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Milkweed Family</div>
+      <h1>Butterfly<em>Weed</em></h1>
+      <p class="hero-latin">Asclepias tuberosa</p>
+      <p class="hero-tagline">The milkweed without milky sap — flat clusters of vivid orange over dry, sunny ground, feeding the monarch and the meadow at once.</p>
+      <div class="flagship-badge">✦ Monarch Host Plant</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Perennial milkweed</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">1–2½ feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">June–August</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry, well-drained</span></div>
+    <div class="fact-item"><span class="fact-label">Root</span><span class="fact-value">Deep taproot</span></div>
+  </div>
+
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Orange in the Dry Ground</h2>
+    <p>Butterfly weed is a clump-forming perennial milkweed of dry, sunny places — old fields, roadsides, prairie remnants, and lean garden soil. From a deep central taproot it sends up several stems set with narrow leaves, topped through midsummer by flat clusters of small, intensely orange flowers. The colour is unusual among the milkweeds, most of which bloom in pink, mauve, or white.</p>
+    <p>It is unusual in another way too: where most milkweeds bleed a thick, milky latex when cut, the sap of <strong>Asclepias tuberosa</strong> is clear and watery. That is part of why it isn't always recognised as a milkweed — yet it carries the family's flower structure, with five reflexed petals beneath an upright crown of hoods and horns.</p>
+    <div class="keystone-callout">
+      <p>As a milkweed, it is a <strong>larval host for the monarch</strong>; as a nectar plant, it is worked by a wide range of butterflies and bees. Few plants of dry, sunny ground feed both the caterpillar and the adult so plainly.</p>
+    </div>
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Monarch waystations</span>
+      <span class="pill">Dry prairie plantings</span>
+      <span class="pill">Sunny borders</span>
+      <span class="pill">Gravel &amp; lean soils</span>
+      <span class="pill">Rock gardens</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Featured</p>
+    <h2>Host and Nectar at Once</h2>
+    <p>As a milkweed, butterfly weed is among the foods on which monarch caterpillars can feed and develop. At the same time, its flowers are a nectar source worked through the warm middle of summer by fritillaries, swallowtails, hairstreaks, bees, and wasps.</p>
+    <p>That combination — feeding the caterpillar and the one on the wing — is what gives the plant its standing in pollinator plantings. <strong>The leaves carry the next generation; the flowers feed the present one.</strong> It is also a noted favourite of the coral hairstreak, a small butterfly strongly associated with butterfly weed nectar in midsummer.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row fade"><div class="tl-season">Late spring</div><div class="tl-bar"></div><div class="tl-text">One of the last perennials to break ground — bare soil in May is normal. New shoots emerge only as the soil warms.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Stems lengthen; the flat flower clusters open into vivid orange.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">Peak bloom and peak insect activity around the clusters — the busiest weeks of the plant's year.</div></div>
+      <div class="tl-row"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Slender, spindle-shaped seed pods form where the flowers were.</div></div>
+      <div class="tl-row"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Pods split along one seam, releasing flat seeds on silky parachutes to drift on the wind.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits — and Why It Matters</h2>
+    <p>The milkweeds sit at the centre of a specialised insect community. Butterfly weed feeds the monarch as a host and offers open, accessible nectar to a broad range of general visitors at the same time.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies (host &amp; nectar)</span><span class="insect-count-badge">monarch host</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Monarch (larval host)</span>
+          <span class="insect-tag common">Coral Hairstreak</span>
+          <span class="insect-tag common">Great Spangled Fritillary</span>
+          <span class="insect-tag">Eastern Tiger Swallowtail</span>
+          <span class="insect-tag">American Lady</span>
+          <span class="insect-tag">Skippers</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Native Bees &amp; Wasps</span><span class="insect-count-badge">many species</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Sweat Bees</span>
+          <span class="insect-tag">Great Golden Digger Wasp</span>
+          <span class="insect-tag">Thread-waisted Wasps</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪲</span><span class="insect-category-name">Milkweed Specialists</span><span class="insect-count-badge">food web</span></div>
+        <div class="insect-list">
+          <span class="insect-tag">Large &amp; Small Milkweed Bugs</span>
+          <span class="insect-tag">Red Milkweed Beetle</span>
+          <span class="insect-tag">Milkweed Tussock Moth</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Many of these specialists take up the plant's defensive chemistry and advertise it with shared <em>orange-and-black</em> warning colours — the recurring signal of monarchs, milkweed bugs, and milkweed beetles built on the same plant family.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Butterfly weed is slow to establish and slow to wake each spring, but long-lived and self-reliant once settled. The deep taproot is the key to both its drought tolerance and its dislike of being moved.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun; flowering and form both suffer in shade</td></tr>
+      <tr><td>Soil</td><td>Lean, well-drained, even sandy or gravelly; dislikes rich, heavy, or wet ground</td></tr>
+      <tr><td>Moisture</td><td>Drought-tolerant once established; wet winter soil is the main cause of loss</td></tr>
+      <tr><td>Siting</td><td>The deep taproot resents disturbance — choose a permanent spot or start from seed</td></tr>
+      <tr><td>Patience</td><td>Late to emerge each spring; mark its place so it isn't dug or planted over</td></tr>
+      <tr><td>Aftercare</td><td>No fertilizer needed; leave pods for self-sowing or collect seed before they split</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Butterfly weed belongs with the dry-prairie and sunny-border plants that share its tolerance for heat and lean soil — and its orange reads especially well against fine grasses and cool purples.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Prairie grasses</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Sun perennials</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black-eyed Susan</span> <span class="companion-latin">Rudbeckia hirta</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Fine texture &amp; bloom</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Nodding Onion</span> <span class="companion-latin">Allium cernuum</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Milkweed Without Milk</h3>
+        <p>Snap a leaf of almost any milkweed and white latex wells up — bitter sap loaded with defensive compounds called cardenolides. Butterfly weed is the exception: its sap runs nearly <strong>clear</strong>, with comparatively low concentrations. Distinctive enough that the plant is sometimes overlooked as a milkweed entirely, even though its flowers are unmistakably <em>Asclepias</em>.</p>
+        <p>That milder chemistry left a mark on the plant's history. One old name is <strong>pleurisy root</strong>, from a tradition of using the root for respiratory complaints — recorded, too, in the species name <em>tuberosa</em>. Folk history worth knowing, not acting on. The name simply shows how closely earlier generations read a plant the clear sap helped set apart.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Anchored Deep, and in No Hurry</h3>
+        <p>A long fleshy <strong>taproot</strong> drives deep, storing reserves and explaining the plant's drought tolerance, long life, and strong dislike of being moved. A seedling invests its first year below ground, so plants are slow to bloom; a mature specimen wakes late each spring, bare ground while neighbours have leafed out. The lesson is always the same: choose the spot once, start it young, mark it, and wait.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Pollen in Saddlebags</h3>
+        <p>Milkweeds package pollen into waxy sacs called <strong>pollinia</strong>, joined in pairs like saddlebags. A visiting bee or butterfly slips a leg into a narrow slit while reaching for nectar; pulling free, it carries off an entire pollen packet. It is a precise, almost mechanical system — and a demanding one. A strong insect leaves as a courier; a small or weakened one occasionally cannot pull free at all.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">An Orange-and-Black Guild</h3>
+        <p>Milkweeds anchor a guild of specialists that feed almost nowhere else — and many sequester the plant's cardenolides into their own bodies, becoming distasteful to predators. Having borrowed the chemistry, they share the livery: the recurring <em>orange-and-black</em> of monarchs, milkweed bugs, and milkweed beetles is a common warning signal painted in the same colours on the same plant, generation after generation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Milkweeds</h2>
+    <p>Several milkweeds are native to Ohio, each suited to different ground — and all of them serve as monarch host plants. Matching the milkweed to your site's moisture is the surest path to success.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant</p>
+        <p class="species-common">Butterfly Weed</p>
+        <p class="species-latin">Asclepias tuberosa</p>
+        <p class="species-desc">The orange milkweed of dry, sunny ground. Clear sap, deep taproot, and the most vivid colour of the group — a clump-former rather than a spreader.</p>
+        <div class="species-traits"><span class="species-trait">1–2½ ft</span><span class="species-trait">Dry / sun</span><span class="species-trait">Orange</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Wet sites</p>
+        <p class="species-common">Swamp Milkweed</p>
+        <p class="species-latin">Asclepias incarnata</p>
+        <p class="species-desc">Soft pink domed clusters on tall stems for moist to wet ground. Clump-forming and well-behaved — the milkweed for rain gardens and pond edges.</p>
+        <div class="species-traits"><span class="species-trait">3–4 ft</span><span class="species-trait">Moist–wet</span><span class="species-trait">Pink</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Robust spreader</p>
+        <p class="species-common">Common Milkweed</p>
+        <p class="species-latin">Asclepias syriaca</p>
+        <p class="species-desc">The familiar roadside milkweed — fragrant mauve-pink globes and broad leaves. Spreads vigorously by rhizome, best where it has room to roam.</p>
+        <div class="species-traits"><span class="species-trait">3–5 ft</span><span class="species-trait">Average</span><span class="species-trait">Spreads</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Fine-leaved</p>
+        <p class="species-common">Whorled Milkweed</p>
+        <p class="species-latin">Asclepias verticillata</p>
+        <p class="species-desc">Thread-fine whorled leaves and small white clusters; tolerates lean, dry soil. Blooms later than most, extending the milkweed season into late summer.</p>
+        <div class="species-traits"><span class="species-trait">1–2 ft</span><span class="species-trait">Dry / lean</span><span class="species-trait">White</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.6">Asclepias tuberosa · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>

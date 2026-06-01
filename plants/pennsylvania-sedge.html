@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pennsylvania Sedge · Carex pensylvanica · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f2f3ec;
+      --bg-warm:      #e9ebe0;
+      --bg-card:      #f9faf4;
+      --bg-silver:    #e7ece0;
+      --border:       rgba(90,110,70,0.18);
+      --border-silver:rgba(120,150,100,0.32);
+      --silver:       #5e7444;
+      --silver-soft:  #7e9560;
+      --silver-pale:  #bcd0a4;
+      --herb:         #3f6a3a;
+      --herb-soft:    #57864e;
+      --stone:        #5a5e48;
+      --stone-light:  #8a8e72;
+      --text:         #20261a;
+      --text-dim:     #3e4a34;
+      --text-faint:   #6e7a5c;
+      --warm-white:   #fdfcf8;
+      --ink:          #1b2014;
+      --heading:      var(--ink);
+      --band-text:    #dde6ce;
+      --band-faint:   rgba(196,214,168,0.6);
+      --band-accent:  #c4d6a4;
+      --display: 'EB Garamond', Georgia, serif;
+      --body: 'Outfit', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text); font-family: var(--body);
+      font-weight: 300; line-height: 1.75; font-size: 17px;
+      max-width: 680px; margin: 0 auto;
+    }
+
+    .hero { position: relative; min-height: 460px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--bg-warm); }
+    .hero-light {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 75% 50% at 60% 18%, rgba(214,228,190,0.5) 0%, transparent 60%),
+        radial-gradient(ellipse 55% 50% at 85% 60%, rgba(190,210,160,0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 70% 60% at 8% 75%, rgba(225,224,205,0.32) 0%, transparent 60%),
+        linear-gradient(175deg, #e6eadf 0%, #edeee5 45%, #e6e9dc 100%);
+    }
+    .hero-illustration { position: absolute; top: -5px; right: -15px; width: 62%; height: 92%; opacity: 0.8; }
+    .hero-content { position: relative; z-index: 2; padding: 3rem 2rem 2.5rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--herb); margin-bottom: 1.2rem; animation: rise 0.7s ease both; }
+    .badge::before { content: ''; width: 18px; height: 1px; background: var(--herb); opacity: 0.55; }
+    .hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.6rem, 8vw, 3.6rem); line-height: 1.0; color: var(--heading); letter-spacing: -0.01em; animation: rise 0.7s 0.1s ease both; }
+    .hero h1 em { display: block; font-style: italic; color: var(--silver); font-weight: 500; }
+    .hero-latin { font-family: var(--display); font-style: italic; font-size: 1.1rem; color: var(--stone-light); margin-top: 0.5rem; animation: rise 0.7s 0.2s ease both; }
+    .hero-tagline { margin-top: 1rem; font-size: 0.97rem; font-weight: 300; color: var(--text-dim); max-width: 350px; line-height: 1.65; animation: rise 0.7s 0.3s ease both; }
+    .flagship-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.2rem; background: var(--bg-silver); border: 1px solid var(--border-silver); border-radius: 3px; padding: 0.32em 0.9em; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--herb); animation: rise 0.7s 0.4s ease both; }
+
+    .facts-band { background: var(--ink); padding: 1.5rem 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .fact-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-faint); }
+    .fact-value { font-size: 0.92rem; font-weight: 300; color: var(--band-text); line-height: 1.4; }
+
+    .section { padding: 2.5rem 2rem; border-bottom: 1px solid var(--border); opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.5rem; }
+    .section h2 { font-family: var(--display); font-size: clamp(1.5rem, 4.5vw, 1.95rem); font-weight: 700; color: var(--heading); margin-bottom: 1.1rem; line-height: 1.15; }
+    .section p { font-size: 1rem; font-weight: 300; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.8; }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--herb); font-weight: 500; }
+    .section em { font-style: italic; }
+
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .pill { font-size: 0.8rem; font-weight: 400; padding: 0.28em 0.85em; border: 1px solid var(--border); border-radius: 3px; color: var(--text-faint); background: var(--bg-warm); }
+
+    .keystone-callout { background: var(--ink); border-radius: 6px; padding: 2rem; margin: 1.4rem 0; position: relative; overflow: hidden; }
+    .keystone-callout::before { content: '✦'; position: absolute; top: -1rem; right: 1rem; font-size: 8rem; color: var(--band-accent); opacity: 0.07; line-height: 1; pointer-events: none; }
+    .keystone-callout p { font-family: var(--display); font-style: italic; font-size: 1.12rem; color: var(--band-text); margin: 0 !important; line-height: 1.7; position: relative; }
+    .keystone-callout strong { color: var(--band-accent) !important; }
+
+    .insect-hub { margin: 1.4rem 0; }
+    .insect-category { margin-bottom: 0.5rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .insect-category-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-warm); }
+    .insect-category-icon { font-size: 1.1rem; flex-shrink: 0; width: 28px; text-align: center; }
+    .insect-category-name { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone); font-weight: 500; flex: 1; }
+    .insect-count-badge { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--silver); background: var(--bg-silver); border: 1px solid var(--border-silver); padding: 0.15em 0.6em; border-radius: 10px; white-space: nowrap; }
+    .insect-list { padding: 0.6rem 1rem 0.8rem 3rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .insect-tag { font-size: 0.8rem; font-weight: 300; color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border); padding: 0.2em 0.7em; border-radius: 3px; font-style: italic; }
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+    .tl-row { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+    .tl-row:last-child { border-bottom: none; }
+    .tl-season { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); width: 88px; flex-shrink: 0; padding: 0.85rem 0.8rem 0.85rem 0; display: flex; align-items: center; }
+    .tl-bar { width: 3px; background: var(--border); flex-shrink: 0; margin: 0.4rem 1rem 0.4rem 0; border-radius: 2px; }
+    .tl-row.peak .tl-bar { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar { background: var(--stone-light); }
+    .tl-text { font-size: 0.93rem; font-weight: 300; color: var(--text-dim); padding: 0.85rem 0; line-height: 1.55; }
+
+    .care-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+    .care-table td { padding: 0.75rem 0.4rem; vertical-align: top; }
+    .care-table td:first-child { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); width: 30%; padding-top: 0.9rem; }
+    .care-table td:last-child { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); line-height: 1.55; }
+
+    .companion-group { margin-top: 1.4rem; }
+    .companion-group-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--herb-soft); margin-bottom: 0.6rem; opacity: 0.9; }
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+    .companion-row { display: flex; align-items: baseline; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .companion-row:last-child { border-bottom: none; }
+    .companion-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--silver); flex-shrink: 0; margin-top: 0.5em; opacity: 0.6; }
+    .companion-common { font-size: 0.96rem; font-weight: 400; color: var(--text); }
+    .companion-latin { font-style: italic; font-size: 0.83rem; font-weight: 300; color: var(--text-faint); }
+
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+    .story-card { display: flex; gap: 1.2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .story-card--highlight { background: var(--bg-warm); border: 1px solid var(--border); border-top: 3px solid var(--silver); border-radius: 0 0 5px 5px; padding: 1.4rem; margin-left: -0.2rem; margin-right: -0.2rem; }
+    .story-number { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(94,116,68,0.32); flex-shrink: 0; padding-top: 0.25rem; min-width: 2rem; }
+    .story-card--highlight .story-number { color: var(--silver); }
+    .story-title { font-family: var(--display); font-size: 1.18rem; font-weight: 700; color: var(--heading); margin-bottom: 0.7rem; line-height: 1.3; }
+    .story-body p { font-size: 0.97rem; font-weight: 300; color: var(--text-dim); line-height: 1.78; margin-bottom: 0.85rem; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--herb); font-weight: 500; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    .species-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1.2rem; }
+    @media (max-width: 520px) { .species-grid { grid-template-columns: 1fr; } }
+    .species-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px; padding: 1.2rem; position: relative; overflow: hidden; }
+    .species-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--silver-pale); }
+    .species-card.featured::before { background: var(--silver); }
+    .species-tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.4rem; }
+    .species-card.featured .species-tag { color: var(--herb); }
+    .species-common { font-family: var(--display); font-weight: 700; font-size: 1.02rem; color: var(--heading); line-height: 1.2; margin-bottom: 0.2rem; }
+    .species-latin { font-family: var(--display); font-style: italic; font-size: 0.85rem; color: var(--stone-light); margin-bottom: 0.7rem; }
+    .species-desc { font-size: 0.86rem; font-weight: 300; color: var(--text-dim); line-height: 1.6; }
+    .species-traits { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+    .species-trait { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); background: var(--bg-silver); border: 1px solid var(--border); padding: 0.18em 0.6em; border-radius: 2px; }
+
+    footer { background: var(--ink); border-top: 1px solid var(--border); padding: 2.4rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.08em; color: var(--band-faint); line-height: 2; }
+    footer strong { color: var(--band-text); font-weight: 500; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-light"></div>
+    <svg class="hero-illustration" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+      <g stroke="#86a064" stroke-width="1.7" stroke-linecap="round">
+        <path d="M168 420 C 166 320 140 210 78 120"/>
+        <path d="M170 420 C 170 310 168 190 120 84"/>
+        <path d="M172 420 C 176 308 196 184 168 68"/>
+        <path d="M174 420 C 182 318 232 196 250 104"/>
+        <path d="M176 420 C 190 330 256 240 286 156"/>
+        <path d="M166 420 C 152 326 100 240 38 196"/>
+        <path d="M164 420 C 144 336 86 286 20 268"/>
+      </g>
+      <g stroke="#9cb47e" stroke-width="1.3" stroke-linecap="round">
+        <path d="M169 420 C 172 312 210 198 240 122"/>
+        <path d="M171 420 C 178 308 224 188 240 88"/>
+        <path d="M167 420 C 154 320 108 224 44 156"/>
+        <path d="M170 420 C 168 314 162 200 130 100"/>
+        <path d="M173 420 C 184 330 240 268 292 214"/>
+        <path d="M165 420 C 140 340 70 312 8 300"/>
+      </g>
+      <g stroke="#6e8a52" stroke-width="1.8" stroke-linecap="round">
+        <path d="M170 420 C 168 300 162 188 156 96"/>
+        <path d="M172 420 C 178 306 196 200 218 122"/>
+      </g>
+      <g fill="#7e9560" opacity="0.92">
+        <ellipse cx="155" cy="84" rx="4.5" ry="16" transform="rotate(-6 155 84)"/>
+        <ellipse cx="150" cy="132" rx="3.2" ry="8" transform="rotate(-10 150 132)"/>
+        <ellipse cx="157" cy="170" rx="3" ry="7" transform="rotate(-8 157 170)"/>
+        <ellipse cx="219" cy="112" rx="4.2" ry="14" transform="rotate(10 219 112)"/>
+        <ellipse cx="210" cy="158" rx="3" ry="7" transform="rotate(8 210 158)"/>
+      </g>
+      <g stroke="#9cb47e" stroke-width="0.8" stroke-linecap="round" opacity="0.85">
+        <path d="M155 67 l -3 -11 M157 66 l 2 -10 M153 70 l -6 -8"/>
+        <path d="M219 97 l 3 -11 M217 98 l -2 -10 M221 100 l 6 -7"/>
+      </g>
+    </svg>
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Woodland Sedge</div>
+      <h1>Pennsylvania<em>Sedge</em></h1>
+      <p class="hero-latin">Carex pensylvanica</p>
+      <p class="hero-tagline">A fine-textured sedge of dry oak woods that spreads into a soft, low carpet — a living groundcover for the shade where turfgrass struggles.</p>
+      <div class="flagship-badge">✦ Dry-Shade Groundcover</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native sedge</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">6–8 inches</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">April–May (subtle)</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Part to full shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to medium</span></div>
+    <div class="fact-item"><span class="fact-label">Spread</span><span class="fact-value">Rhizomatous colony</span></div>
+  </div>
+
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Quiet Floor of the Oak Woods</h2>
+    <p>Pennsylvania sedge is a cool-season sedge of dry, open woodlands, where it forms loose colonies across the ground beneath oaks and hickories. The blades are narrow — often no wider than a grass leaf — and arch outward from the base, so a stand reads as a soft, flowing carpet rather than a stiff tuft. It greens up early, while the canopy is still bare, then settles into a low mat that holds through the growing season.</p>
+    <p>It spreads by slender <strong>rhizomes</strong>, knitting into a continuous cover over time rather than standing as separate clumps. The flowers, in April and May, are small and wind-pollinated — easy to miss, which suits the plant's character. Here the foliage, not the bloom, carries the season.</p>
+    <div class="keystone-callout">
+      <p>Because it is shade-adapted and shallow-rooted, Pennsylvania sedge <strong>competes well in the dry ground beneath trees</strong> — a setting where conventional turfgrass tends to fail without heavy water and fertilizer.</p>
+    </div>
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Shade groundcover</span>
+      <span class="pill">No-mow lawn alternative</span>
+      <span class="pill">Woodland gardens</span>
+      <span class="pill">Under trees</span>
+      <span class="pill">Slopes &amp; erosion</span>
+      <span class="pill">Matrix plantings</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Featured Use</p>
+    <h2>A Lawn That Doesn't Ask to Be Mown</h2>
+    <p>In dry shade — under mature trees, along the north side of a house, in the rooty ground where turf thins — Pennsylvania sedge can stand in for a lawn. Planted on close spacing, the rhizomes fill the gaps over a season or two into a low, even sward.</p>
+    <p>Left alone, it grows to six or eight inches and flops gently into a relaxed, meadow-like texture. <strong>Mown once or twice a year</strong> to three or four inches, it reads as a tidier groundcover. Either way it asks little once established, greens up earlier than warm-season turf, and tolerates light foot traffic — best thought of as a cover to walk through rather than a play lawn.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Among the first plants to green up; slender flowering culms rise with narrow spikes before the canopy leafs out.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">Fresh blades lengthen and arch into a soft, fine green cover that tolerates the dry shade beneath a closed canopy.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Foliage fades toward straw and bronze-green as the season cools.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Semi-evergreen in milder winters; older blades flatten and persist, then are replaced by new spring growth.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>What the Sedge Supports</h2>
+    <p>Sedges are quiet workhorses of the woodland groundlayer. Their value is partly who they feed and partly what they hold together — a living cover that shades out weed seedlings and stabilizes soil where bare ground would erode.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Skippers</span><span class="insect-count-badge">host plant</span></div>
+        <div class="insect-list"><span class="insect-tag common">Satyrs &amp; wood-nymphs</span><span class="insect-tag">Sedge-feeding skippers</span><span class="insect-tag">Browns (Satyrinae)</span></div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Birds</span><span class="insect-count-badge">seed &amp; cover</span></div>
+        <div class="insect-list"><span class="insect-tag common">Ground-foraging songbirds</span><span class="insect-tag common">Sparrows &amp; juncos</span><span class="insect-tag">Wild turkey (seed)</span></div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🌿</span><span class="insect-category-name">Groundlayer Value</span><span class="insect-count-badge">habitat</span></div>
+        <div class="insect-list"><span class="insect-tag">Low cover for small fauna</span><span class="insect-tag">Soil stabilization</span><span class="insect-tag">Weed suppression</span></div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Sedges in the genus <em>Carex</em> are documented larval hosts for a number of woodland butterflies and skippers — among them several of the satyrs and browns that drift low through shaded understory.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Adaptable and slow-spreading rather than aggressive, Pennsylvania sedge is one of the easier native groundcovers to establish in the right light. Give it the dry shade it prefers and it largely takes care of itself.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Part shade to full shade; tolerates morning sun, struggles in hot afternoon sun</td></tr>
+      <tr><td>Soil</td><td>Well-drained, average to dry; adapts to the lean, rooty soil under trees</td></tr>
+      <tr><td>Moisture</td><td>Drought-tolerant once established; water through the first season</td></tr>
+      <tr><td>Spacing</td><td>8–12 inches apart for groundcover fill; closer for faster coverage</td></tr>
+      <tr><td>Maintenance</td><td>Optional shear once or twice a year to 3–4 inches for a tidier look</td></tr>
+      <tr><td>Spread</td><td>Rhizomatous and colony-forming, but slow to moderate — not invasive</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Pennsylvania sedge reads as a matrix — the green ground from which woodland wildflowers and ferns emerge. It pairs naturally with the spring ephemerals and shade perennials of the same habitat.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland wildflowers</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Geranium</span> <span class="companion-latin">Geranium maculatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Woodland Phlox</span> <span class="companion-latin">Phlox divaricata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Columbine</span> <span class="companion-latin">Aquilegia canadensis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">White Wood Aster</span> <span class="companion-latin">Eurybia divaricata</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Ferns &amp; texture</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Christmas Fern</span> <span class="companion-latin">Polystichum acrostichoides</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foamflower</span> <span class="companion-latin">Tiarella cordifolia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Part-shade edge</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Edges, Not Blades</h3>
+        <p>Roll a flowering culm between thumb and finger and you can feel three flat faces meeting at three edges. Grass stems are round and hollow; sedge stems are solid and triangular. <strong>Sedges have edges, grasses have knees, and rushes are round</strong> — once felt, never forgotten.</p>
+        <p>The true diagnostic is subtler: each <em>Carex</em> seed is enclosed in a tiny inflated sac called a <strong>perigynium</strong>, found nowhere else in the plant kingdom. That sac is how botanists distinguish the roughly two thousand species in the genus — one of the largest on Earth, far older and more varied than its quiet appearance suggests.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Plant That Works the Edges of the Year</h3>
+        <p>Pennsylvania sedge is a cool-season grower that does its work in spring and fall — greening up before the canopy leafs out, resting through summer heat, freshening again in autumn. A stand that looks tired in July is not failing; it is waiting. This opposite rhythm to warm-season turf makes it perfectly matched to the woodland floor.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Where Turf Gives Up</h3>
+        <p>Dry, shaded, root-filled ground beneath a mature tree defeats most lawn grasses. Pennsylvania sedge is adapted to exactly those conditions — needing no fertilizer, no irrigation once established, and no repeated reseeding. Worth knowing: it is a cover to walk <em>across</em>, not a surface for hard play. On those terms it succeeds where grass only struggles.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">A Floor That Was Always There</h3>
+        <p>Before lawns, open oak woodland carried a continuous groundlayer of sedges and spring wildflowers, kept sunlit by periodic low fires. Pennsylvania sedge was a quiet mainstay of that floor. As fire was removed and woods grew denser, the understory thinned. Planting it beneath trees is not a novelty — it is putting back the layer that belonged there all along.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Sedges for Shade</h2>
+    <p>Pennsylvania sedge is one of several native <em>Carex</em> suited to shaded gardens, each with a slightly different texture and habit. Choosing among them is mostly a matter of moisture and whether you want a spreader or a tidy clump.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant</p>
+        <p class="species-common">Pennsylvania Sedge</p>
+        <p class="species-latin">Carex pensylvanica</p>
+        <p class="species-desc">The classic dry-shade groundcover. Spreads by rhizome into a soft, low carpet beneath trees — the benchmark native lawn alternative for shade.</p>
+        <div class="species-traits"><span class="species-trait">6–8 in</span><span class="species-trait">Dry shade</span><span class="species-trait">Spreads</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Tidy clump</p>
+        <p class="species-common">Appalachian Sedge</p>
+        <p class="species-latin">Carex appalachica</p>
+        <p class="species-desc">Very fine, fountain-like clumps that stay put rather than spreading. Good where you want defined mounds in dry shade instead of a running cover.</p>
+        <div class="species-traits"><span class="species-trait">10–14 in</span><span class="species-trait">Dry shade</span><span class="species-trait">Clumping</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Broad-leaved</p>
+        <p class="species-common">Plantainleaf Sedge</p>
+        <p class="species-latin">Carex plantaginea</p>
+        <p class="species-desc">Strappy, pleated blue-green leaves give a bolder texture. Prefers moist, rich woodland soil — a contrast to the fine-leaved spreaders.</p>
+        <div class="species-traits"><span class="species-trait">8–12 in</span><span class="species-trait">Moist shade</span><span class="species-trait">Broad leaf</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Fine-textured</p>
+        <p class="species-common">Ivory Sedge</p>
+        <p class="species-latin">Carex eburnea</p>
+        <p class="species-desc">Thread-fine, almost hair-like foliage in low tufts. Favours well-drained, often limey soils; delicate enough to read as a soft green haze.</p>
+        <div class="species-traits"><span class="species-trait">6–10 in</span><span class="species-trait">Dry–medium</span><span class="species-trait">Very fine</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Carex pensylvanica · Native Sedge · Native to Ohio</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
