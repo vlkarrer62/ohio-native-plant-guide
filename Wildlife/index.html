@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildlife Directory · Ohio Native Plant Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #f8f6f2;
+      --bg-warm:   #f0ece4;
+      --bg-card:   #ffffff;
+      --text:      #2a2016;
+      --text-dim:  #5a4e38;
+      --text-faint:#9a8e78;
+      --accent:    #c8920c;
+      --line:      #e2dcd2;
+      --ink:       #1c1608;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    .site-nav {
+      max-width: 1100px; margin: 0 auto;
+      padding: 22px 32px;
+      display: flex; justify-content: space-between; align-items: center;
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 12px; }
+    .nav-emblem {
+      width: 38px; height: 38px; flex-shrink: 0;
+    }
+    .nav-title { display: flex; flex-direction: column; line-height: 1; }
+    .nav-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.88rem; font-weight: 700; color: var(--ink);
+    }
+    .nav-sub {
+      font-family: 'DM Mono', monospace; font-size: 0.56rem;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-faint);
+      margin-top: 2px;
+    }
+    .nav-links { display: flex; gap: 28px; align-items: center; }
+    .nav-links a {
+      font-family: 'DM Mono', monospace; font-size: 0.68rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      max-width: 1100px; margin: 0 auto;
+      padding: 64px 32px 56px;
+      text-align: center;
+    }
+    .page-eyebrow {
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+      margin-bottom: 28px;
+    }
+    .eyebrow-rule { flex: 0 0 52px; height: 1px; background: var(--text-faint); opacity: 0.45; }
+    .eyebrow-text {
+      font-family: 'DM Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-faint);
+      white-space: nowrap;
+    }
+    .page-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.8rem, 6vw, 4.2rem);
+      font-weight: 700; line-height: 1.0; color: var(--ink);
+      letter-spacing: -0.02em; margin-bottom: 22px;
+    }
+    .page-title em { font-style: italic; color: var(--accent); font-weight: 400; }
+    .page-desc {
+      max-width: 580px; margin: 0 auto;
+      font-size: 1.06rem; font-weight: 300; color: var(--text-dim);
+      line-height: 1.72;
+    }
+
+    /* ── CONTROLS BAR ── */
+    .controls {
+      max-width: 1100px; margin: 0 auto;
+      padding: 14px 32px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 8px;
+    }
+    .controls-left, .controls-right {
+      font-family: 'DM Mono', monospace; font-size: 0.68rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint);
+    }
+    .controls-right { display: flex; gap: 6px; }
+    .controls-count { color: var(--ink); }
+
+    /* ── DIRECTORY ── */
+    .directory {
+      max-width: 1100px; margin: 0 auto;
+      padding: 0 32px 80px;
+    }
+
+    /* ── CATEGORY GROUP ── */
+    .category-section { margin-top: 48px; }
+    .category-header {
+      display: flex; align-items: center; gap: 16px;
+      margin-bottom: 20px;
+    }
+    .category-label {
+      font-family: 'DM Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-faint);
+      white-space: nowrap;
+    }
+    .category-rule { flex: 1; height: 1px; background: var(--line); }
+
+    /* ── ENTRY CARD ── */
+    .card-stack { display: flex; flex-direction: column; gap: 2px; }
+    .entry-card {
+      background: var(--bg-card);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      min-height: 120px;
+    }
+    .entry-card:hover {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      border-color: rgba(0,0,0,0.12);
+    }
+
+    .entry-accent {
+      width: 88px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .entry-icon {
+      width: 40px; height: 40px; color: rgba(255,255,255,0.55);
+    }
+    .entry-icon svg { width: 100%; height: 100%; }
+
+    .entry-body {
+      flex: 1; padding: 18px 20px 16px;
+      display: flex; flex-direction: column; justify-content: center;
+      min-width: 0;
+    }
+
+    .entry-meta {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 6px; flex-wrap: wrap;
+    }
+    .tag {
+      font-family: 'DM Mono', monospace; font-size: 0.62rem;
+      letter-spacing: 0.10em; text-transform: uppercase;
+      padding: 0.18em 0.65em; border-radius: 3px; white-space: nowrap;
+    }
+    .entry-season {
+      font-family: 'DM Mono', monospace; font-size: 0.66rem;
+      letter-spacing: 0.08em; color: var(--text-faint);
+    }
+
+    .entry-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.32rem; font-weight: 700; color: var(--ink);
+      line-height: 1.2; margin-bottom: 2px;
+    }
+    .entry-latin {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic; font-size: 0.9rem; color: var(--text-faint);
+      margin-bottom: 8px;
+    }
+    .entry-desc {
+      font-size: 0.95rem; font-weight: 300; color: var(--text-dim);
+      line-height: 1.6; margin-bottom: 10px;
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .entry-attrs {
+      display: flex; flex-wrap: wrap; gap: 2px 4px;
+    }
+    .entry-attr {
+      font-size: 0.82rem; font-weight: 300; color: var(--text-faint);
+    }
+
+    .entry-profile {
+      display: flex; align-items: center; padding: 0 24px;
+      flex-shrink: 0;
+      font-family: 'DM Mono', monospace; font-size: 0.66rem;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-faint); white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .entry-card:hover .entry-profile { color: var(--ink); }
+
+    /* ── WILDLIFE TAG CLASSES ── */
+    .tag-bee        { color: #7a5810; background: rgba(122,88,16,0.10);  border: 1px solid rgba(122,88,16,0.22); }
+    .tag-butterfly  { color: #6a4878; background: rgba(106,72,120,0.10); border: 1px solid rgba(106,72,120,0.22); }
+    .tag-moth       { color: #4a5060; background: rgba(74,80,96,0.10);   border: 1px solid rgba(74,80,96,0.22); }
+    .tag-wasp       { color: #5a6018; background: rgba(90,96,24,0.10);   border: 1px solid rgba(90,96,24,0.22); }
+    .tag-fly        { color: #485848; background: rgba(72,88,72,0.10);   border: 1px solid rgba(72,88,72,0.22); }
+    .tag-beetle     { color: #3a5830; background: rgba(58,88,48,0.10);   border: 1px solid rgba(58,88,48,0.22); }
+    .tag-bird       { color: #2a5870; background: rgba(42,88,112,0.10);  border: 1px solid rgba(42,88,112,0.22); }
+    .tag-mammal     { color: #5a4830; background: rgba(90,72,48,0.10);   border: 1px solid rgba(90,72,48,0.22); }
+    .tag-spider     { color: #603030; background: rgba(96,48,48,0.10);   border: 1px solid rgba(96,48,48,0.22); }
+    .tag-dragonfly  { color: #1a5858; background: rgba(26,88,88,0.10);   border: 1px solid rgba(26,88,88,0.22); }
+    .tag-firefly    { color: #6a6010; background: rgba(106,96,16,0.10);  border: 1px solid rgba(106,96,16,0.22); }
+    .tag-frog       { color: #385828; background: rgba(56,88,40,0.10);   border: 1px solid rgba(56,88,40,0.22); }
+
+    /* ── EMPTY STATE ── */
+    .coming-soon {
+      padding: 40px 0 20px;
+      font-family: 'DM Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint);
+      text-align: center;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--line);
+      background: var(--bg-warm);
+      padding: 36px 32px 48px;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: flex-start;
+      flex-wrap: wrap; gap: 16px;
+    }
+    .footer-inner p {
+      font-family: 'DM Mono', monospace; font-size: 0.66rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-faint);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 680px) {
+      .site-nav { padding: 16px 20px; }
+      .nav-links { gap: 16px; }
+      .page-header { padding: 44px 20px 40px; }
+      .controls { padding: 12px 20px; }
+      .directory { padding: 0 20px 60px; }
+      .entry-accent { width: 64px; }
+      .entry-icon { width: 30px; height: 30px; }
+      .entry-profile { padding: 0 14px; font-size: 0.6rem; }
+      .entry-name { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-logo" href="../index.html">
+      <!-- Botanical emblem -->
+      <svg class="nav-emblem" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="19" cy="19" r="17.5" stroke="#2a2016" stroke-width="1.1"/>
+        <path d="M19 30 C19 22 14 16 10 12 C14 14 18 18 19 23 C19 18 23 13 28 11 C24 15 19 22 19 30 Z" fill="#2a2016" opacity="0.85"/>
+        <path d="M19 23 C19 26 18 28 17 30" stroke="#2a2016" stroke-width="0.8" stroke-linecap="round" opacity="0.5"/>
+      </svg>
+      <div class="nav-title">
+        <span class="nav-name">Ohio Native Plant Guide</span>
+        <span class="nav-sub">Ecological Reference</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">← Home</a>
+      <a href="../plants/">← Plants</a>
+      <a href="../about.html">← About</a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-eyebrow">
+      <div class="eyebrow-rule"></div>
+      <span class="eyebrow-text">Ohio Wildlife</span>
+      <div class="eyebrow-rule"></div>
+    </div>
+    <h1 class="page-title">Wildlife <em>Directory</em></h1>
+    <p class="page-desc">A field guide to the animals that visit, pollinate, and depend on Ohio's native plants — each profile explores identification, behaviour, ecological role, and how to support them in your garden.</p>
+  </header>
+
+  <div class="controls">
+    <span class="controls-left">Showing All Profiles</span>
+    <div class="controls-right">
+      <span class="controls-count" id="entry-count">—</span>
+      <span>Profile Available · More Coming Soon</span>
+    </div>
+  </div>
+
+  <main class="directory" id="directory">
+    <!-- cards injected by JS -->
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <p>Ohio Native Plant Guide · Ecological Reference</p>
+      <p>Each profile supports understanding of the living systems in your garden</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── ICONS ──────────────────────────────────────────────────────────────────
+    const ICONS = {
+      'carpenter-bee': `<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="12" cy="15" rx="4" ry="5.5" fill="currentColor" opacity="0.35"/>
+        <ellipse cx="12" cy="9.5" rx="3.5" ry="3" fill="currentColor" opacity="0.6"/>
+        <ellipse cx="6.5" cy="10" rx="5.5" ry="3" transform="rotate(-18 6.5 10)" fill="currentColor" opacity="0.25"/>
+        <ellipse cx="17.5" cy="10" rx="5.5" ry="3" transform="rotate(18 17.5 10)" fill="currentColor" opacity="0.25"/>
+        <path d="M10 7.5 C8 5.5 6 3.5 5 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M14 7.5 C16 5.5 18 3.5 19 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>`,
+
+      // Generic wildlife fallback
+      '_default': `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="10" r="3.5" fill="currentColor" opacity="0.4"/>
+        <path d="M12 13.5 C10 15 9 17 9 19 C10.5 18 12 17.5 12 17.5 C12 17.5 13.5 18 15 19 C15 17 14 15 12 13.5 Z" fill="currentColor" opacity="0.35"/>
+      </svg>`
+    };
+
+    // ── CATEGORY CONFIG ──────────────────────────────────────────────────────
+    const CATEGORY_ORDER = ['pollinators', 'birds', 'mammals', 'other-garden-life'];
+    const CATEGORY_LABELS = {
+      'pollinators':      'Pollinators',
+      'birds':            'Birds',
+      'mammals':          'Mammals',
+      'other-garden-life':'Other Garden Life'
+    };
+
+    // ── BUILD CARD ────────────────────────────────────────────────────────────
+    function buildCard(entry) {
+      const icon = ICONS[entry.svgIcon] || ICONS['_default'];
+
+      // Activity line — use flightSeason if available, else join seasonSeen
+      const activityLine = entry.flightSeason
+        ? `Active ${entry.flightSeason}`
+        : entry.seasonSeen
+          ? `Active ${entry.seasonSeen.join(', ')}`
+          : '';
+
+      // Attribute bullets
+      const attrs = [
+        entry.size         && entry.size,
+        entry.flightSeason && entry.flightSeason,
+        entry.nesting      && entry.nesting
+      ].filter(Boolean);
+
+      return `
+        <a href="${entry.url}" class="entry-card">
+          <div class="entry-accent" style="background:linear-gradient(160deg,${entry.accentFrom},${entry.accentTo})">
+            <div class="entry-icon">${icon}</div>
+          </div>
+          <div class="entry-body">
+            <div class="entry-meta">
+              <span class="tag ${entry.tagClass}">${entry.type}</span>
+              ${activityLine ? `<span class="entry-season">${activityLine}</span>` : ''}
+            </div>
+            <h2 class="entry-name">${entry.commonName}</h2>
+            <p class="entry-latin">${entry.scientificName}</p>
+            <p class="entry-desc">${entry.description}</p>
+            <div class="entry-attrs">
+              ${attrs.map(a => `<span class="entry-attr">• ${a}</span>`).join('')}
+            </div>
+          </div>
+          <span class="entry-profile">Profile →</span>
+        </a>`;
+    }
+
+    // ── LOAD + RENDER ─────────────────────────────────────────────────────────
+    async function loadWildlife() {
+      let data;
+      try {
+        const res = await fetch('./wildlife.json');
+        data = await res.json();
+      } catch (e) {
+        document.getElementById('directory').innerHTML =
+          '<p class="coming-soon">Unable to load wildlife data.</p>';
+        return;
+      }
+
+      // Update count
+      const countEl = document.getElementById('entry-count');
+      countEl.textContent = data.length === 1
+        ? '1 Profile'
+        : `${data.length} Profiles`;
+
+      // Group by category
+      const groups = {};
+      data.forEach(entry => {
+        if (!groups[entry.category]) groups[entry.category] = [];
+        groups[entry.category].push(entry);
+      });
+
+      const container = document.getElementById('directory');
+      let html = '';
+
+      CATEGORY_ORDER.forEach(cat => {
+        const entries = groups[cat];
+        if (!entries || entries.length === 0) return;
+
+        html += `
+          <div class="category-section">
+            <div class="category-header">
+              <span class="category-label">${CATEGORY_LABELS[cat] || cat}</span>
+              <div class="category-rule"></div>
+            </div>
+            <div class="card-stack">
+              ${entries.map(buildCard).join('')}
+            </div>
+          </div>`;
+      });
+
+      // Show "coming soon" placeholders for empty categories
+      const emptyCats = CATEGORY_ORDER.filter(cat => !groups[cat] || groups[cat].length === 0);
+      if (emptyCats.length > 0) {
+        emptyCats.forEach(cat => {
+          html += `
+            <div class="category-section">
+              <div class="category-header">
+                <span class="category-label">${CATEGORY_LABELS[cat] || cat}</span>
+                <div class="category-rule"></div>
+              </div>
+              <p class="coming-soon">Profiles coming soon</p>
+            </div>`;
+        });
+      }
+
+      container.innerHTML = html || '<p class="coming-soon">No profiles available yet.</p>';
+    }
+
+    loadWildlife();
+  </script>
+</body>
+</html>
