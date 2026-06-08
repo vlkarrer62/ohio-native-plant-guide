@@ -1244,5 +1244,124 @@
       "dry-prairie",
       "sunny-border"
     ]
+  },
+  {
+    "commonName": "Ironweed",
+    "scientificName": "Vernonia spp.",
+    "slug": "ironweed",
+    "type": "Native Perennial",
+    "category": "wildflowers",
+    "bloom": "Blooms August to October",
+    "season": "Late Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium to moist",
+    "height": "3–8 feet",
+    "description": "Some of the most vivid purple in the Ohio late-summer landscape — a large, stiff-stemmed wildflower that arrives when much of the season has already finished, and a critical nectar source for migrating monarchs.",
+    "url": "ironweed.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#2a1040",
+    "accentTo": "#1e0830",
+    "svgIcon": "ironweed",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Late Summer",
+      "Fall"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Rain Garden Plant",
+      "Edge Plant"
+    ],
+    "relatedWildlifeSlugs": [],
+    "relatedPlantSlugs": [
+      "joe-pye-weed",
+      "switchgrass",
+      "cardinal-flower",
+      "aster",
+      "swamp-milkweed",
+      "coreopsis",
+      "liatris",
+      "goldenrod"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "wet-edge",
+      "rain-garden",
+      "stream-edge"
+    ]
+  },
+  {
+    "commonName": "Goldenrod",
+    "scientificName": "Solidago spp.",
+    "slug": "goldenrod",
+    "type": "Native Perennial",
+    "category": "wildflowers",
+    "bloom": "Blooms August to October",
+    "season": "Late Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Dry to moist (by species)",
+    "height": "1–6 feet",
+    "description": "The defining colour of the Ohio autumn — arching golden plumes that support over 100 Lepidoptera species, specialist bees, and migrating monarchs through the closing weeks of the growing season.",
+    "url": "goldenrod.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#ede0a8",
+    "accentTo": "#e4d090",
+    "svgIcon": "goldenrod",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Late Summer",
+      "Fall"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Matrix Plant",
+      "Structural Plant",
+      "Rain Garden Plant"
+    ],
+    "relatedWildlifeSlugs": [],
+    "relatedPlantSlugs": [
+      "ironweed",
+      "aster",
+      "joe-pye-weed",
+      "little-bluestem",
+      "switchgrass",
+      "prairie-dropseed",
+      "purple-coneflower",
+      "liatris"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "dry-prairie",
+      "woodland-edge",
+      "wet-edge"
+    ]
   }
 ]
