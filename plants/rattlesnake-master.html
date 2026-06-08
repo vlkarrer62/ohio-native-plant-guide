@@ -528,6 +528,10 @@
     }
 
     /* Animations */
+    .botanical-plate { margin: 0; }
+    .botanical-plate img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .botanical-plate figcaption { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-faint, #9a8e78); margin-top: 0.7rem; text-align: center; line-height: 1.6; }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(14px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -673,6 +677,18 @@
       <span class="pill">Habitat gardens</span>
       <span class="pill">Meadow plantings</span>
     </div>
+  </section>
+
+  <section class="section visible">
+    <p class="eyebrow">Field Guide Plate</p>
+    <h2>Rattlesnake Master</h2>
+    <figure class="botanical-plate">
+      <img
+        src="../images/rattlesnake-master-plate.png"
+        alt="Botanical illustration of Rattlesnake Master"
+        style="width:100%; height:auto; display:block; border-radius:4px;">
+      <figcaption>Eryngium yuccifolium · Field Guide Botanical Plate</figcaption>
+    </figure>
   </section>
 
   <!-- WILDLIFE -->
