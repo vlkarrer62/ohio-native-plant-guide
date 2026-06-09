@@ -44,6 +44,57 @@
       margin: 0 auto;
     }
 
+    /* ── PAGE NAVIGATION ───────────────────────── */
+.page-nav {
+  position: fixed;
+  top: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: min(640px, calc(100% - 1.5rem));
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.page-nav a {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(250, 249, 246, 0.78);
+  border: 1px solid rgba(80, 70, 120, 0.18);
+  color: var(--text-dim, #3e3850);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(30, 28, 40, 0.08);
+}
+
+.page-nav a:hover {
+  color: var(--accent, var(--violet, var(--silver, var(--herb, #5a4898))));
+  border-color: var(--accent, var(--violet, var(--silver, var(--herb, #5a4898))));
+  background: rgba(250, 249, 246, 0.94);
+}
+
+@media (max-width: 520px) {
+  .page-nav {
+    top: 0.65rem;
+    width: calc(100% - 1rem);
+  }
+
+  .page-nav a {
+    font-size: 0.5rem;
+    padding: 0.36rem 0.58rem;
+  }
+}
+
     /* ── HERO ─────────────────────────────────── */
     .hero {
       position: relative;
@@ -541,6 +592,10 @@
   </style>
 </head>
 <body>
+  <nav class="page-nav" aria-label="Page navigation">
+  <a href="../index.html">← Home</a>
+  <a href="index.html">Plant Directory</a>
+</nav>
 
   <!-- ════ HERO ═══════════════════════════════ -->
   <header class="hero">
