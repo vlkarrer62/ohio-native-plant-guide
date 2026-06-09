@@ -1363,5 +1363,32 @@
       "woodland-edge",
       "wet-edge"
     ]
-  }
+  },
+  {
+  "commonName": "False Sunflower",
+  "scientificName": "Heliopsis helianthoides",
+  "slug": "false-sunflower",
+  "type": "Summer Wildflower",
+  "category": "wildflowers",
+  "bloom": "Golden daisy-like heads, June to September",
+  "season": "Summer · Fall",
+  "sun": "Full sun to part shade",
+  "moisture": "Dry to medium",
+  "height": "3–5 feet",
+  "description": "A long-blooming golden composite of prairies and open ground, with ray florets that set seed and stay attached as the head ripens.",
+  "url": "false-sunflower.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#c8941e",
+  "accentTo": "#8a6418",
+  "svgIcon": "flower",
+  "plantType": "Wildflower",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Dry", "Medium"],
+  "bloomSeasonTags": ["Summer", "Late Summer", "Fall"],
+  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Seed Source"],
+  "gardenRole": ["Structural Plant", "Matrix Plant"],
+  "relatedWildlifeSlugs": ["carpenter-bee"],
+  "relatedPlantSlugs": ["purple-coneflower", "wild-bergamot", "butterfly-weed", "coreopsis", "goldenrod", "little-bluestem"],
+  "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
+}
 ]
