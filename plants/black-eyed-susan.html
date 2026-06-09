@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black-eyed Susan · Rudbeckia hirta · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #18120a;
+      --bg-warm:      #20180e;
+      --bg-card:      #221a0f;
+      --bg-silver:    #2a2012;
+      --border:       rgba(224,184,96,0.14);
+      --border-silver:rgba(232,200,112,0.26);
+      --silver:       #e6b82e;   /* primary accent — golden ray */
+      --silver-soft:  #f2cf5a;
+      --silver-pale:  #b89a52;
+      --herb:         #c79a54;   /* secondary — warm brown-gold */
+      --herb-soft:    #d8b676;
+      --stone:        #9a8a60;
+      --stone-light:  #b6a578;
+      --text:         #e4d8b8;
+      --text-dim:     #cebd95;
+      --text-faint:   #9a8a62;
+      --ink:          #0e0a04;
+      --heading:      #f4e7d4;
+      --band-text:    #ece0c0;
+      --band-faint:   rgba(224,184,96,0.50);
+      --band-accent:  #f2cf5a;
+      --display: 'Cormorant Garamond', Georgia, serif;
+      --body: 'Jost', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text); font-family: var(--body);
+      font-weight: 300; line-height: 1.75; font-size: 17px;
+      max-width: 680px; margin: 0 auto;
+    }
+
+    /* ── PAGE NAVIGATION (dark) ────────────────── */
+    .page-nav {
+      position: fixed;
+      top: 0.85rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      width: min(640px, calc(100% - 1.5rem));
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .page-nav a {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.42rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(24, 18, 8, 0.68);
+      border: 1px solid rgba(232, 212, 150, 0.18);
+      color: rgba(244, 231, 212, 0.78);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.56rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    .page-nav a:hover {
+      color: var(--silver);
+      border-color: var(--silver-soft);
+      background: rgba(30, 22, 10, 0.86);
+    }
+
+    @media (max-width: 520px) {
+      .page-nav { top: 0.65rem; width: calc(100% - 1rem); }
+      .page-nav a { font-size: 0.5rem; padding: 0.36rem 0.58rem; }
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero { position: relative; min-height: 470px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--bg-warm); }
+    .hero-light {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 66% 48% at 62% 26%, rgba(230,184,46,0.30) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 44% at 84% 60%, rgba(200,150,40,0.18) 0%, transparent 58%),
+        radial-gradient(ellipse 70% 60% at 12% 80%, rgba(60,44,20,0.40) 0%, transparent 60%),
+        linear-gradient(175deg, #221a0e 0%, #1a140a 45%, #140f08 100%);
+    }
+    .hero-illustration { position: absolute; top: -5px; right: -15px; width: 60%; height: 98%; opacity: 0.95; }
+    .hero-content { position: relative; z-index: 2; padding: 3rem 2rem 2.5rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 1.2rem; animation: rise 0.7s ease both; }
+    .badge::before { content: ''; width: 18px; height: 1px; background: var(--silver); opacity: 0.55; }
+    .hero h1 { font-family: var(--display); font-weight: 600; font-size: clamp(2.7rem, 8.5vw, 3.9rem); line-height: 1.0; color: var(--heading); letter-spacing: -0.01em; animation: rise 0.7s 0.1s ease both; }
+    .hero h1 em { display: block; font-style: italic; color: var(--silver); font-weight: 500; }
+    .hero-latin { font-family: var(--display); font-style: italic; font-size: 1.15rem; color: var(--stone-light); margin-top: 0.5rem; animation: rise 0.7s 0.2s ease both; }
+    .hero-tagline { margin-top: 1rem; font-size: 0.97rem; font-weight: 300; color: var(--text-dim); max-width: 360px; line-height: 1.65; animation: rise 0.7s 0.3s ease both; }
+    .flagship-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.2rem; background: var(--bg-silver); border: 1px solid var(--border-silver); border-radius: 3px; padding: 0.32em 0.9em; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); animation: rise 0.7s 0.4s ease both; }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band { background: var(--ink); padding: 1.5rem 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .fact-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-faint); }
+    .fact-value { font-size: 0.92rem; font-weight: 300; color: var(--band-text); line-height: 1.4; }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section { padding: 2.5rem 2rem; border-bottom: 1px solid var(--border); opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.5rem; opacity: 0.9; }
+    .section h2 { font-family: var(--display); font-size: clamp(1.6rem, 5vw, 2.1rem); font-weight: 600; color: var(--heading); margin-bottom: 1.1rem; line-height: 1.15; }
+    .section p { font-size: 1rem; font-weight: 300; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.8; }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--herb-soft); font-weight: 400; }
+    .section em { font-style: italic; }
+
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .pill { font-size: 0.8rem; font-weight: 300; padding: 0.28em 0.85em; border: 1px solid var(--border); border-radius: 3px; color: var(--text-faint); background: var(--bg-warm); }
+
+    /* ── KEYSTONE CALLOUT ─────────────────────── */
+    .keystone-callout { background: var(--ink); border-radius: 6px; padding: 2rem; margin: 1.4rem 0; position: relative; overflow: hidden; }
+    .keystone-callout::before { content: '✦'; position: absolute; top: -1rem; right: 1rem; font-size: 8rem; color: var(--band-accent); opacity: 0.09; line-height: 1; pointer-events: none; }
+    .keystone-callout p { font-family: var(--display); font-style: italic; font-size: 1.18rem; color: var(--band-text); margin: 0 !important; line-height: 1.7; position: relative; }
+    .keystone-callout strong { color: var(--band-accent) !important; font-style: normal; }
+
+    /* ── INSECT HUB ───────────────────────────── */
+    .insect-hub { margin: 1.4rem 0; }
+    .insect-category { margin-bottom: 0.5rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .insect-category-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-warm); }
+    .insect-category-icon { font-size: 1.1rem; flex-shrink: 0; width: 28px; text-align: center; }
+    .insect-category-name { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone-light); font-weight: 500; flex: 1; }
+    .insect-count-badge { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--silver); background: var(--bg-silver); border: 1px solid var(--border-silver); padding: 0.15em 0.6em; border-radius: 10px; white-space: nowrap; }
+    .insect-list { padding: 0.6rem 1rem 0.8rem 3rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .insect-tag { font-size: 0.8rem; font-weight: 300; color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border); padding: 0.2em 0.7em; border-radius: 3px; font-style: italic; }
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    /* ── TIMELINE ─────────────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+    .tl-row { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+    .tl-row:last-child { border-bottom: none; }
+    .tl-season { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); width: 88px; flex-shrink: 0; padding: 0.85rem 0.8rem 0.85rem 0; display: flex; align-items: center; }
+    .tl-bar { width: 3px; background: var(--border); flex-shrink: 0; margin: 0.4rem 1rem 0.4rem 0; border-radius: 2px; }
+    .tl-row.peak .tl-bar { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar { background: var(--stone-light); }
+    .tl-text { font-size: 0.93rem; font-weight: 300; color: var(--text-dim); padding: 0.85rem 0; line-height: 1.55; }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+    .care-table td { padding: 0.75rem 0.4rem; vertical-align: top; }
+    .care-table td:first-child { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); width: 30%; padding-top: 0.9rem; }
+    .care-table td:last-child { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); line-height: 1.55; }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+    .companion-group-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--herb-soft); margin-bottom: 0.6rem; opacity: 0.9; }
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+    .companion-row { display: flex; align-items: baseline; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .companion-row:last-child { border-bottom: none; }
+    .companion-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--silver); flex-shrink: 0; margin-top: 0.5em; opacity: 0.7; }
+    .companion-common { font-size: 0.96rem; font-weight: 400; color: var(--text); }
+    .companion-latin { font-style: italic; font-size: 0.83rem; font-weight: 300; color: var(--text-faint); }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+    .story-card { display: flex; gap: 1.2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .story-card--highlight { background: var(--bg-warm); border: 1px solid var(--border); border-top: 3px solid var(--silver); border-radius: 0 0 5px 5px; padding: 1.4rem; margin-left: -0.2rem; margin-right: -0.2rem; }
+    .story-number { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(230,184,46,0.32); flex-shrink: 0; padding-top: 0.25rem; min-width: 2rem; }
+    .story-card--highlight .story-number { color: var(--silver); }
+    .story-title { font-family: var(--display); font-size: 1.3rem; font-weight: 600; color: var(--heading); margin-bottom: 0.7rem; line-height: 1.3; }
+    .story-body p { font-size: 0.97rem; font-weight: 300; color: var(--text-dim); line-height: 1.78; margin-bottom: 0.85rem; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--herb-soft); font-weight: 400; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    /* ── SPECIES GRID ─────────────────────────── */
+    .species-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1.2rem; }
+    @media (max-width: 520px) { .species-grid { grid-template-columns: 1fr; } }
+    .species-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px; padding: 1.2rem; position: relative; overflow: hidden; }
+    .species-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--silver-pale); }
+    .species-card.featured::before { background: var(--silver); }
+    .species-tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--herb); margin-bottom: 0.4rem; }
+    .species-card.featured .species-tag { color: var(--silver); }
+    .species-common { font-family: var(--display); font-weight: 600; font-size: 1.14rem; color: var(--heading); line-height: 1.2; margin-bottom: 0.2rem; }
+    .species-latin { font-family: var(--display); font-style: italic; font-size: 0.9rem; color: var(--stone-light); margin-bottom: 0.7rem; }
+    .species-desc { font-size: 0.86rem; font-weight: 300; color: var(--text-dim); line-height: 1.6; }
+    .species-traits { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+    .species-trait { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); background: var(--bg-silver); border: 1px solid var(--border); padding: 0.18em 0.6em; border-radius: 2px; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer { background: var(--ink); border-top: 1px solid var(--border); padding: 2.4rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.08em; color: var(--band-faint); line-height: 2; }
+    footer strong { color: var(--band-text); font-weight: 500; }
+
+    /* ── BOTANICAL PLATE (CSS ready; add the <figure> when an image exists) ── */
+    .botanical-plate { margin: 0; }
+    .botanical-plate img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .botanical-plate figcaption { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-faint); margin-top: 0.7rem; text-align: center; line-height: 1.6; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+    a.companion-link {
+      color: inherit; text-decoration: underline;
+      text-decoration-thickness: 1px; text-underline-offset: 2px;
+      text-decoration-color: currentColor; opacity: 0.78;
+      transition: opacity 0.18s;
+    }
+    a.companion-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Rudbeckia hirta illustration:
+         A bristly-stemmed composite — golden-yellow ray florets,
+         often slightly drooping, radiating around a tall, domed,
+         dark brown-purple central cone (the "black eye"). Rough,
+         hairy lance-shaped leaves. Shown with one large open head,
+         a smaller side head, and a tight bud, glowing against the
+         dark ground. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- ── STEMS — bristly, olive-brown ── -->
+      <path d="M150 440 C150 384 149 318 150 256 C151 212 153 176 152 138" stroke="#6e6232" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M150 248 C166 230 190 214 210 200" stroke="#6e6232" stroke-width="2" stroke-linecap="round"/>
+      <path d="M152 196 C140 178 128 166 118 158" stroke="#6e6232" stroke-width="1.8" stroke-linecap="round"/>
+      <!-- bristle hairs on main stem -->
+      <g stroke="#8a7c44" stroke-width="0.7" stroke-linecap="round" opacity="0.5">
+        <path d="M150 410 l-4 -2"/><path d="M150 400 l4 -2"/>
+        <path d="M150 386 l-4 -2"/><path d="M150 372 l4 -2"/>
+        <path d="M150 356 l-4 -2"/><path d="M151 340 l4 -2"/>
+        <path d="M151 322 l-4 -2"/><path d="M151 306 l4 -2"/>
+      </g>
+
+      <!-- ── LEAVES — rough, lance-shaped, alternate ── -->
+      <g fill="#5e6a30" opacity="0.8">
+        <path d="M150 360 C136 352 122 350 113 356 C123 357 137 360 150 363 Z"/>
+        <path d="M150 318 C162 310 176 308 185 314 C175 315 161 318 150 321 Z"/>
+        <path d="M150 286 C137 279 125 278 118 283 C127 284 139 287 150 289 Z"/>
+      </g>
+      <!-- leaf bristle edges -->
+      <g stroke="#4e5828" stroke-width="0.6" stroke-linecap="round" opacity="0.5">
+        <path d="M128 356 l-2 3"/><path d="M138 358 l-2 3"/>
+        <path d="M168 312 l2 3"/><path d="M178 312 l2 3"/>
+      </g>
+
+      <!-- ════ FLOWER 1 — main head, golden rays around dark dome ════ -->
+      <g transform="translate(152,138)">
+        <!-- rays: ~14 elongated, slightly drooping, golden -->
+        <g>
+          <g transform="rotate(0)">  <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e6b82e"/></g>
+          <g transform="rotate(26)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#d6a824"/></g>
+          <g transform="rotate(52)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e6b82e"/></g>
+          <g transform="rotate(78)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#d6a824"/></g>
+          <g transform="rotate(104)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(130)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(156)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(182)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(208)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(234)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#d6a824"/></g>
+          <g transform="rotate(260)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e6b82e"/></g>
+          <g transform="rotate(286)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#d6a824"/></g>
+          <g transform="rotate(312)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e6b82e"/></g>
+          <g transform="rotate(338)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#d6a824"/></g>
+        </g>
+        <!-- subtle ray bases (darker gold ring beneath dome) -->
+        <circle cx="0" cy="0" r="15" fill="#a8801c" opacity="0.55"/>
+        <!-- dark domed cone -->
+        <circle cx="0" cy="0" r="13" fill="#241408"/>
+        <circle cx="-2.5" cy="-2.5" r="10" fill="#3a2410" opacity="0.85"/>
+        <!-- ring of opening florets (gold-green) at dome edge -->
+        <g fill="#9a8a2c" opacity="0.8">
+          <circle cx="-9" cy="-4" r="1.1"/><circle cx="-6" cy="-9" r="1.1"/><circle cx="0" cy="-11" r="1.1"/>
+          <circle cx="6" cy="-9" r="1.1"/><circle cx="9" cy="-4" r="1.1"/><circle cx="10" cy="3" r="1.1"/>
+          <circle cx="6" cy="9" r="1.1"/><circle cx="0" cy="11" r="1.1"/><circle cx="-6" cy="9" r="1.1"/>
+          <circle cx="-10" cy="3" r="1.1"/>
+        </g>
+        <!-- dark inner florets -->
+        <g fill="#180e06" opacity="0.9">
+          <circle cx="-3" cy="-2" r="1.3"/><circle cx="2" cy="-4" r="1.3"/><circle cx="4" cy="1" r="1.3"/>
+          <circle cx="1" cy="4" r="1.3"/><circle cx="-4" cy="3" r="1.3"/><circle cx="-1" cy="0" r="1.3"/>
+        </g>
+      </g>
+
+      <!-- ════ FLOWER 2 — side head, smaller ════ -->
+      <g transform="translate(210,200) scale(0.78)">
+        <g>
+          <g transform="rotate(12)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e0b228"/></g>
+          <g transform="rotate(38)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(64)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e0b228"/></g>
+          <g transform="rotate(90)"> <ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(116)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#c89818"/></g>
+          <g transform="rotate(142)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#c89818"/></g>
+          <g transform="rotate(168)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#c89818"/></g>
+          <g transform="rotate(194)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#c89818"/></g>
+          <g transform="rotate(220)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(246)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e0b228"/></g>
+          <g transform="rotate(272)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(298)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e0b228"/></g>
+          <g transform="rotate(324)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#cf9e1e"/></g>
+          <g transform="rotate(350)"><ellipse cx="0" cy="-30" rx="4.4" ry="17" fill="#e0b228"/></g>
+        </g>
+        <circle cx="0" cy="0" r="13" fill="#221306"/>
+        <circle cx="-2.5" cy="-2.5" r="9.5" fill="#372310" opacity="0.85"/>
+        <g fill="#8a7a28" opacity="0.78">
+          <circle cx="-8" cy="-3" r="1.1"/><circle cx="-3" cy="-8" r="1.1"/><circle cx="4" cy="-8" r="1.1"/>
+          <circle cx="9" cy="-1" r="1.1"/><circle cx="7" cy="7" r="1.1"/><circle cx="-1" cy="10" r="1.1"/>
+          <circle cx="-8" cy="6" r="1.1"/>
+        </g>
+      </g>
+
+      <!-- ════ BUD — tight, bristly green involucre, rays just lifting ════ -->
+      <g transform="translate(118,158)">
+        <circle cx="0" cy="0" r="8" fill="#5e6a30" opacity="0.92"/>
+        <!-- spreading bristly phyllaries -->
+        <g stroke="#4e5828" stroke-width="1.4" stroke-linecap="round" opacity="0.85" fill="none">
+          <path d="M0 -6 C-1 -12 -3 -17 -6 -20"/>
+          <path d="M0 -6 C1 -12 3 -17 6 -20"/>
+          <path d="M-6 -2 C-12 -4 -16 -6 -20 -5"/>
+          <path d="M6 -2 C12 -4 16 -6 20 -5"/>
+          <path d="M-5 4 C-10 7 -13 11 -16 14"/>
+          <path d="M5 4 C10 7 13 11 16 14"/>
+        </g>
+        <!-- first gold ray tips emerging -->
+        <path d="M-2 -7 C-3 -11 -2 -15 1 -17" stroke="#cf9e1e" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+        <path d="M3 -6 C5 -9 7 -11 9 -12" stroke="#cf9e1e" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Summer Wildflower</div>
+      <h1>Black-eyed<em>Susan</em></h1>
+      <p class="hero-latin">Rudbeckia hirta</p>
+      <p class="hero-tagline">Golden rays around a dark, domed eye — a fast, sun-loving pioneer that blooms from June into October and reseeds itself freely across open ground.</p>
+      <div class="flagship-badge">✦ Blooms June – October</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Short-lived perennial / biennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">1–3 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">June–October</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to medium</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Asteraceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Quick to Arrive, Generous While It Stays</h2>
+    <p>Black-eyed Susan is among the first native wildflowers most gardeners meet — a bristly, upright plant carrying golden daisy-like heads, each a ring of yellow ray florets around a raised, dark brown-purple central cone. The whole plant is rough to the touch: the species name <em>hirta</em> means "hairy," and the stems and leaves are covered in short stiff bristles. It blooms over a long stretch, June into October, on dry to average ground in full sun.</p>
+    <p>It is less a fixture than a traveller. Most plants behave as biennials or short-lived perennials, flowering hard for a season or two and then giving way — but they reseed readily into open soil, so a colony tends to <strong>move around a planting over the years</strong> rather than hold one spot. This habit is the key to understanding both how it grows and where it fits.</p>
+
+    <div class="keystone-callout">
+      <p>Black-eyed Susan is a <strong>pioneer</strong>: fast to germinate, quick to bloom, and well-suited to bare or disturbed ground. In a new prairie planting it often flowers heavily in the first year or two while slower, longer-lived perennials are still building roots — providing early cover, nectar, and structure, then thinning as the planting matures around it.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">New prairie plantings</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Sunny borders</span>
+      <span class="pill">Meadow gaps &amp; edges</span>
+      <span class="pill">Disturbed / bare ground</span>
+      <span class="pill">Cut flower gardens</span>
+    </div>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Bristly basal rosettes establish or last year's seedlings green up; flowering stems begin to rise in late spring. Self-sown seedlings are easy to spot and move while small.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">First heads open in June and continue in succession through the summer — the long, steady peak, worked by a wide range of bees and butterflies.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Bloom carries on; the earliest heads ripen as the dark cones fill with seed. Deadheading prolongs flowering, while leaving heads sets seed for next year.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall–Win.</div><div class="tl-bar"></div><div class="tl-text">Dark seed cones stand on stiff stems, drawing goldfinches and other small birds; the dried structure holds well into winter if left uncut.</div></div>
+    </div>
+  </section>
+
+  <!-- WILDLIFE SUPPORT -->
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>The open, flat-faced heads present nectar and pollen on an easy landing surface, so the visitor list is broad rather than specialised. The reward is concentrated in the dark central disc, where dozens of tiny florets open in sequence from the outer ring inward over many days.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees</span><span class="insect-count-badge">primary visitors</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Sweat Bees</span>
+          <span class="insect-tag common">Bumblebees</span>
+          <span class="insect-tag">Mining Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Small Carpenter Bees</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">nectar &amp; host</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Silvery Checkerspot</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Painted Lady</span>
+          <span class="insect-tag">Wavy-lined Emerald Moth</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Birds</span><span class="insect-count-badge">seed</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">American Goldfinch</span>
+          <span class="insect-tag">Black-capped Chickadee</span>
+          <span class="insect-tag">Song Sparrow</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">The <strong>silvery checkerspot</strong> butterfly uses Black-eyed Susan and related composites as a larval host plant — females lay eggs on the foliage, and the caterpillars feed on the leaves. A planting that tolerates some leaf chewing is doing exactly what a host plant is meant to do.</p>
+  </section>
+
+  <!-- CARE -->
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Black-eyed Susan is easy to establish and asks for little. The main thing to understand is its life cycle: because individual plants are often short-lived, a long-term presence depends on letting at least some seed set and fall, or on occasional reseeding.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun; tolerates very light shade with a looser, leggier habit</td></tr>
+      <tr><td>Soil</td><td>Adaptable — average to lean, well-drained; tolerates poor and disturbed soils</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; drought-tolerant once established; dislikes consistently wet ground</td></tr>
+      <tr><td>Lifespan</td><td>Often biennial or short-lived; persists in the garden by reseeding rather than longevity</td></tr>
+      <tr><td>Deadheading</td><td>Extends bloom; leave some heads late in the season to set seed for next year</td></tr>
+      <tr><td>Self-sowing</td><td>Reseeds freely into open soil; seedlings transplant easily when small</td></tr>
+      <tr><td>Winter care</td><td>Leave seed cones standing for birds and structure; cut back in early spring</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>As an early, fast-blooming pioneer, Black-eyed Susan pairs naturally with the slower perennials it shares a season with — and with the grasses that give a planting its standing structure once the susans begin to move on.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Summer prairie partners</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="purple-coneflower.html" class="companion-link">Purple Coneflower</a></span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="wild-bergamot.html" class="companion-link">Wild Bergamot</a></span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="coreopsis.html" class="companion-link">Tickseed</a></span> <span class="companion-latin">Coreopsis spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="liatris.html" class="companion-link">Blazing Star</a></span> <span class="companion-latin">Liatris spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Grasses &amp; structure</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="little-bluestem.html" class="companion-link">Little Bluestem</a></span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="prairie-dropseed.html" class="companion-link">Prairie Dropseed</a></span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="switchgrass.html" class="companion-link">Switchgrass</a></span> <span class="companion-latin">Panicum virgatum</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Into the late season</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="goldenrod.html" class="companion-link">Goldenrod</a></span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="aster.html" class="companion-link">Ohio Native Asters</a></span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="ironweed.html" class="companion-link">Ironweed</a></span> <span class="companion-latin">Vernonia spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DID YOU KNOW -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Named for Two Botanists and a Head of Hair</h3>
+        <p>The genus <em>Rudbeckia</em> was named by Carl Linnaeus in honour of Olof Rudbeck the Elder and his son Olof Rudbeck the Younger — Swedish botanists at Uppsala University, where the younger Rudbeck had been Linnaeus's teacher and patron. Naming a genus after a mentor was, in the eighteenth century, a considerable tribute, and Linnaeus chose a plant he admired for it.</p>
+        <p>The species name <em>hirta</em> is more literal: it is Latin for "hairy" or "rough," describing the short stiff bristles that cover the stems and leaves. <strong>Run a finger along the stem and you can feel exactly why it earned the name</strong> — the texture is one of the quickest ways to tell <em>Rudbeckia hirta</em> from its smoother relatives.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Plant That Doesn't Stay Put</h3>
+        <p>Many gardeners are surprised when their Black-eyed Susans seem to "wander" — flowering in one spot one year and a few feet away the next. This is not decline but design. As a short-lived plant that reproduces mainly by seed, it colonises open gaps, blooms, sets seed, and lets the next generation establish wherever there is bare soil. In a maturing planting it gradually yields ground to longer-lived perennials, persisting at the edges and in any disturbance. Understanding it as a <em>moving</em> rather than a <em>fixed</em> plant is the key to keeping it around.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Bees See a Target We Can't</h3>
+        <p>To human eyes, a Black-eyed Susan is a uniform ring of yellow around a dark centre. To a bee, it is something else entirely. The ray florets reflect ultraviolet light unevenly: their outer halves throw back UV while their bases absorb it, creating a dark <strong>ultraviolet "bullseye"</strong> around the central disc that is invisible to us but vivid to a pollinator's UV-sensitive vision. The pattern functions as a nectar guide, steering visiting insects straight to the florets at the centre — a piece of signage written in a colour we cannot see.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">The Dark Cone Feeds Two Seasons</h3>
+        <p>The "black eye" is not one structure but a packed dome of many tiny disc florets, each a complete flower. Through summer those florets supply nectar and pollen to bees and butterflies. After bloom, the same cone dries and fills with small seeds, and in fall and winter it becomes a perch and a larder for <em>goldfinches</em> and other small birds that work the heads for seed. Leaving the spent cones standing extends the plant's usefulness well past its flowering — one structure doing two seasons of work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OHIO RUDBECKIAS -->
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Rudbeckias</h2>
+    <p>Several native <em>Rudbeckia</em> grow in Ohio, sharing the dark-centred, golden-rayed flower but differing in height, habit, lifespan, and habitat. Knowing them apart helps in choosing the right one — and in recognising that "Black-eyed Susan" properly refers to just one of them.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant</p>
+        <p class="species-common">Black-eyed Susan</p>
+        <p class="species-latin">Rudbeckia hirta</p>
+        <p class="species-desc">The classic — bristly-hairy, short-lived, and quick to bloom from seed. Golden rays around a dark cone, on dry to average ground in full sun. A pioneer that reseeds and moves through a planting rather than holding one spot.</p>
+        <div class="species-traits"><span class="species-trait">1–3 ft</span><span class="species-trait">Short-lived</span><span class="species-trait">Hairy</span><span class="species-trait">Reseeds</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Reliably perennial</p>
+        <p class="species-common">Orange Coneflower</p>
+        <p class="species-latin">Rudbeckia fulgida</p>
+        <p class="species-desc">A longer-lived, clump-forming perennial that returns dependably year to year. Smaller flowers than <em>hirta</em> but many of them, blooming late summer into fall. The widely sold cultivar 'Goldsturm' comes from this species; the straight native species is the better ecological choice.</p>
+        <div class="species-traits"><span class="species-trait">2–3 ft</span><span class="species-trait">Perennial</span><span class="species-trait">Late summer</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Bushy &amp; floriferous</p>
+        <p class="species-common">Brown-eyed Susan</p>
+        <p class="species-latin">Rudbeckia triloba</p>
+        <p class="species-desc">A tall, much-branched, short-lived plant that carries a profusion of small dark-centred flowers — among the most generous bloomers in the genus. Excellent for pollinators; like <em>hirta</em>, it persists by reseeding rather than longevity.</p>
+        <div class="species-traits"><span class="species-trait">2–5 ft</span><span class="species-trait">Many small heads</span><span class="species-trait">Reseeds</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Tall &amp; moisture-loving</p>
+        <p class="species-common">Cutleaf Coneflower</p>
+        <p class="species-latin">Rudbeckia laciniata</p>
+        <p class="species-desc">A very tall species of moist ground, stream edges, and floodplains — reaching well over head height. Drooping yellow rays around a green-yellow (not dark) central cone distinguish it at a glance. A bold back-of-border or wet-edge plant.</p>
+        <div class="species-traits"><span class="species-trait">5–9 ft</span><span class="species-trait">Moist–wet</span><span class="species-trait">Green cone</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.5">Rudbeckia hirta · Native Wildflower · Native to Ohio</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
