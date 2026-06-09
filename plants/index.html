@@ -836,25 +836,27 @@ card.setAttribute('aria-label',
     // SCROLL REVEAL
     // ─────────────────────────────────────────────
     function attachRevealObserver() {
-      const items = document.querySelectorAll(
-        '.season-label, .plant-card, .coming-soon'
-      );
-      const cards = document.querySelectorAll('.plant-card');
+  const items = document.querySelectorAll(
+    '.season-label, .plant-card, .coming-soon'
+  );
+  const cards = document.querySelectorAll('.plant-card');
 
-      const obs = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          const el    = entry.target;
-          const delay = el.classList.contains('plant-card')
-            ? Array.from(cards).indexOf(el) * 80
-            : 0;
-          setTimeout(() => el.classList.add('visible'), delay);
-          obs.unobserve(el);
-        });
-      }, { threshold: 0.06 });
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
 
-      items.forEach(el => obs.observe(el));
-    }
+      const el = entry.target;
+      const delay = el.classList.contains('plant-card')
+        ? Math.min(Array.from(cards).indexOf(el) * 25, 300)
+        : 0;
+
+      setTimeout(() => el.classList.add('visible'), delay);
+      obs.unobserve(el);
+    });
+  }, { threshold: 0.06 });
+
+  items.forEach(el => obs.observe(el));
+}
     // ─────────────────────────────────────────────
 // DIRECTORY SEARCH
 // ─────────────────────────────────────────────
