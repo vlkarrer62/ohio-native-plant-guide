@@ -76,8 +76,8 @@
 }
 
 .page-nav a:hover {
-  color: var(--violet);
-  border-color: rgba(90, 72, 152, 0.36);
+  color: var(--silver);
+  border-color: var(--silver-soft);
   background: rgba(250, 249, 246, 0.94);
 }
 
@@ -201,6 +201,14 @@
     footer strong { color: var(--band-text); font-weight: 500; }
 
     @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+    a.companion-link {
+      color: inherit; text-decoration: underline;
+      text-decoration-thickness: 1px; text-underline-offset: 2px;
+      text-decoration-color: currentColor; opacity: 0.78;
+      transition: opacity 0.18s;
+    }
+    a.companion-link:hover { opacity: 1; }
   </style>
 </head>
 <body>
@@ -458,25 +466,25 @@
     <div class="companion-group">
       <p class="companion-group-label">Colour contrast</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="liatris.html" class="companion-link">Blazing Star</a></span> <span class="companion-latin">Liatris spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="wild-bergamot.html" class="companion-link">Wild Bergamot</a></span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="purple-coneflower.html" class="companion-link">Purple Coneflower</a></span> <span class="companion-latin">Echinacea purpurea</span></div></div>
       </div>
     </div>
     <div class="companion-group">
       <p class="companion-group-label">Prairie texture</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="little-bluestem.html" class="companion-link">Little Bluestem</a></span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="prairie-dropseed.html" class="companion-link">Prairie Dropseed</a></span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="rattlesnake-master.html" class="companion-link">Rattlesnake Master</a></span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
       </div>
     </div>
     <div class="companion-group">
       <p class="companion-group-label">Sequence companions</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="golden-alexanders.html" class="companion-link">Golden Alexanders</a></span> <span class="companion-latin">Zizia aurea</span></div></div>
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black-eyed Susan</span> <span class="companion-latin">Rudbeckia hirta</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="aster.html" class="companion-link">Ohio Native Asters</a></span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
       </div>
     </div>
   </section>
