@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviceberry · Amelanchier arborea · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f6f3ee;
+      --bg-warm:      #ece5db;
+      --bg-card:      #faf8f3;
+      --bg-silver:    #efe4e4;
+      --border:       rgba(140,90,104,0.13);
+      --border-silver:rgba(160,100,124,0.26);
+      --silver:       #9a5a6e;   /* primary accent — berry plum-rose */
+      --silver-soft:  #b47888;
+      --silver-pale:  #d8b4be;
+      --herb:         #5e7050;   /* secondary — sage green */
+      --herb-soft:    #7a8c68;
+      --stone:        #6a6258;
+      --stone-light:  #9a8c80;
+      --text:         #241c1e;
+      --text-dim:     #4a3e40;
+      --text-faint:   #897c7e;
+      --ink:          #1c1418;
+      --heading:      var(--ink);
+      --band-text:    #ecdce0;
+      --band-faint:   rgba(216,180,190,0.55);
+      --band-accent:  #e0b4c0;
+      --display: 'EB Garamond', Georgia, serif;
+      --body: 'Outfit', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg); color: var(--text); font-family: var(--body);
+      font-weight: 300; line-height: 1.75; font-size: 17px;
+      max-width: 680px; margin: 0 auto;
+    }
+
+    /* ── PAGE NAVIGATION ───────────────────────── */
+    .page-nav {
+      position: fixed;
+      top: 0.85rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      width: min(640px, calc(100% - 1.5rem));
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      pointer-events: none;
+    }
+
+    .page-nav a {
+      pointer-events: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.42rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(250, 249, 246, 0.78);
+      border: 1px solid rgba(140, 90, 104, 0.20);
+      color: var(--text-dim);
+      font-family: 'DM Mono', monospace;
+      font-size: 0.56rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 18px rgba(40, 28, 32, 0.08);
+    }
+
+    .page-nav a:hover {
+      color: var(--silver);
+      border-color: var(--silver-soft);
+      background: rgba(250, 249, 246, 0.94);
+    }
+
+    @media (max-width: 520px) {
+      .page-nav { top: 0.65rem; width: calc(100% - 1rem); }
+      .page-nav a { font-size: 0.5rem; padding: 0.36rem 0.58rem; }
+    }
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero { position: relative; min-height: 470px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--bg-warm); }
+    .hero-light {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 72% 50% at 60% 20%, rgba(216,180,190,0.34) 0%, transparent 60%),
+        radial-gradient(ellipse 54% 48% at 86% 60%, rgba(150,140,110,0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 68% 58% at 12% 80%, rgba(228,224,214,0.30) 0%, transparent 60%),
+        linear-gradient(175deg, #efe9e2 0%, #f1ece4 45%, #ebe4da 100%);
+    }
+    .hero-illustration { position: absolute; top: -5px; right: -15px; width: 60%; height: 98%; opacity: 0.9; }
+    .hero-content { position: relative; z-index: 2; padding: 3rem 2rem 2.5rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--silver); margin-bottom: 1.2rem; animation: rise 0.7s ease both; }
+    .badge::before { content: ''; width: 18px; height: 1px; background: var(--silver); opacity: 0.55; }
+    .hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.5rem, 8vw, 3.6rem); line-height: 1.0; color: var(--heading); letter-spacing: -0.01em; animation: rise 0.7s 0.1s ease both; }
+    .hero h1 em { display: block; font-style: italic; color: var(--silver); font-weight: 500; }
+    .hero-latin { font-family: var(--display); font-style: italic; font-size: 1.12rem; color: var(--stone-light); margin-top: 0.5rem; animation: rise 0.7s 0.2s ease both; }
+    .hero-tagline { margin-top: 1rem; font-size: 0.97rem; font-weight: 300; color: var(--text-dim); max-width: 360px; line-height: 1.65; animation: rise 0.7s 0.3s ease both; }
+    .flagship-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.2rem; background: var(--bg-silver); border: 1px solid var(--border-silver); border-radius: 3px; padding: 0.32em 0.9em; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); animation: rise 0.7s 0.4s ease both; }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band { background: var(--ink); padding: 1.5rem 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .fact-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-faint); }
+    .fact-value { font-size: 0.92rem; font-weight: 300; color: var(--band-text); line-height: 1.4; }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section { padding: 2.5rem 2rem; border-bottom: 1px solid var(--border); opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.5rem; }
+    .section h2 { font-family: var(--display); font-size: clamp(1.5rem, 4.5vw, 2rem); font-weight: 700; color: var(--heading); margin-bottom: 1.1rem; line-height: 1.18; }
+    .section p { font-size: 1rem; font-weight: 300; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.8; }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--silver); font-weight: 500; }
+    .section em { font-style: italic; }
+
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .pill { font-size: 0.8rem; font-weight: 400; padding: 0.28em 0.85em; border: 1px solid var(--border); border-radius: 3px; color: var(--text-faint); background: var(--bg-warm); }
+
+    /* ── KEYSTONE CALLOUT ─────────────────────── */
+    .keystone-callout { background: var(--ink); border-radius: 6px; padding: 2rem; margin: 1.4rem 0; position: relative; overflow: hidden; }
+    .keystone-callout::before { content: '✦'; position: absolute; top: -1rem; right: 1rem; font-size: 8rem; color: var(--band-accent); opacity: 0.08; line-height: 1; pointer-events: none; }
+    .keystone-callout p { font-family: var(--display); font-style: italic; font-size: 1.16rem; color: var(--band-text); margin: 0 !important; line-height: 1.7; position: relative; }
+    .keystone-callout strong { color: var(--band-accent) !important; font-style: normal; }
+
+    /* ── INSECT HUB ───────────────────────────── */
+    .insect-hub { margin: 1.4rem 0; }
+    .insect-category { margin-bottom: 0.5rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .insect-category-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-warm); }
+    .insect-category-icon { font-size: 1.1rem; flex-shrink: 0; width: 28px; text-align: center; }
+    .insect-category-name { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone); font-weight: 500; flex: 1; }
+    .insect-count-badge { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--silver); background: var(--bg-silver); border: 1px solid var(--border-silver); padding: 0.15em 0.6em; border-radius: 10px; white-space: nowrap; }
+    .insect-list { padding: 0.6rem 1rem 0.8rem 3rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .insect-tag { font-size: 0.8rem; font-weight: 300; color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border); padding: 0.2em 0.7em; border-radius: 3px; font-style: italic; }
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    /* ── TIMELINE ─────────────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+    .tl-row { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+    .tl-row:last-child { border-bottom: none; }
+    .tl-season { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); width: 88px; flex-shrink: 0; padding: 0.85rem 0.8rem 0.85rem 0; display: flex; align-items: center; }
+    .tl-bar { width: 3px; background: var(--border); flex-shrink: 0; margin: 0.4rem 1rem 0.4rem 0; border-radius: 2px; }
+    .tl-row.peak .tl-bar { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar { background: var(--stone-light); }
+    .tl-text { font-size: 0.93rem; font-weight: 300; color: var(--text-dim); padding: 0.85rem 0; line-height: 1.55; }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+    .care-table td { padding: 0.75rem 0.4rem; vertical-align: top; }
+    .care-table td:first-child { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); width: 30%; padding-top: 0.9rem; }
+    .care-table td:last-child { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); line-height: 1.55; }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+    .companion-group-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--herb); margin-bottom: 0.6rem; opacity: 0.9; }
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+    .companion-row { display: flex; align-items: baseline; gap: 0.7rem; padding: 0.55rem 0; border-bottom: 1px solid var(--border); }
+    .companion-row:last-child { border-bottom: none; }
+    .companion-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--silver); flex-shrink: 0; margin-top: 0.5em; opacity: 0.6; }
+    .companion-common { font-size: 0.96rem; font-weight: 400; color: var(--text); }
+    .companion-latin { font-style: italic; font-size: 0.83rem; font-weight: 300; color: var(--text-faint); }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+    .story-card { display: flex; gap: 1.2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .story-card--highlight { background: var(--bg-warm); border: 1px solid var(--border); border-top: 3px solid var(--silver); border-radius: 0 0 5px 5px; padding: 1.4rem; margin-left: -0.2rem; margin-right: -0.2rem; }
+    .story-number { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(154,90,110,0.30); flex-shrink: 0; padding-top: 0.25rem; min-width: 2rem; }
+    .story-card--highlight .story-number { color: var(--silver); }
+    .story-title { font-family: var(--display); font-size: 1.22rem; font-weight: 700; color: var(--heading); margin-bottom: 0.7rem; line-height: 1.3; }
+    .story-body p { font-size: 0.97rem; font-weight: 300; color: var(--text-dim); line-height: 1.78; margin-bottom: 0.85rem; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--silver); font-weight: 500; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    /* ── SPECIES GRID ─────────────────────────── */
+    .species-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; margin-top: 1.2rem; }
+    @media (max-width: 520px) { .species-grid { grid-template-columns: 1fr; } }
+    .species-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px; padding: 1.2rem; position: relative; overflow: hidden; }
+    .species-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--silver-pale); }
+    .species-card.featured::before { background: var(--silver); }
+    .species-tag { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--herb); margin-bottom: 0.4rem; }
+    .species-card.featured .species-tag { color: var(--silver); }
+    .species-common { font-family: var(--display); font-weight: 700; font-size: 1.12rem; color: var(--heading); line-height: 1.2; margin-bottom: 0.2rem; }
+    .species-latin { font-family: var(--display); font-style: italic; font-size: 0.9rem; color: var(--stone-light); margin-bottom: 0.7rem; }
+    .species-desc { font-size: 0.86rem; font-weight: 300; color: var(--text-dim); line-height: 1.6; }
+    .species-traits { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.7rem; }
+    .species-trait { font-family: 'DM Mono', monospace; font-size: 0.55rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-faint); background: var(--bg-silver); border: 1px solid var(--border); padding: 0.18em 0.6em; border-radius: 2px; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer { background: var(--ink); border-top: 1px solid var(--border); padding: 2.4rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.08em; color: var(--band-faint); line-height: 2; }
+    footer strong { color: var(--band-text); font-weight: 500; }
+
+    /* ── BOTANICAL PLATE (CSS ready; add the <figure> when an image exists) ── */
+    .botanical-plate { margin: 0; }
+    .botanical-plate img { width: 100%; height: auto; display: block; border-radius: 4px; }
+    .botanical-plate figcaption { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-faint); margin-top: 0.7rem; text-align: center; line-height: 1.6; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+    a.companion-link {
+      color: inherit; text-decoration: underline;
+      text-decoration-thickness: 1px; text-underline-offset: 2px;
+      text-decoration-color: currentColor; opacity: 0.78;
+      transition: opacity 0.18s;
+    }
+    a.companion-link:hover { opacity: 1; }
+  </style>
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Amelanchier illustration:
+         Early-spring branch — smooth grey bark with fine lenticels,
+         drooping racemes of white five-petalled flowers (the petals
+         narrow and strap-like), young leaves emerging with a bronze
+         tint, and a few unopened buds. The signature serviceberry
+         moment: blossom opening before the canopy has leafed out. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- ── BRANCHES — smooth pale grey bark ── -->
+      <path d="M176 440 C178 380 180 312 182 250 C183 212 186 176 192 142 C196 120 202 102 210 86" stroke="#9a948c" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M182 250 C200 234 224 220 244 210" stroke="#9a948c" stroke-width="3.6" stroke-linecap="round" fill="none"/>
+      <path d="M186 176 C172 162 158 150 146 134" stroke="#9a948c" stroke-width="3.2" stroke-linecap="round" fill="none"/>
+      <path d="M192 142 C200 124 206 112 208 100" stroke="#928c84" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+      <!-- lenticels (fine horizontal dashes on bark) -->
+      <g stroke="#7e766c" stroke-width="0.8" stroke-linecap="round" opacity="0.4">
+        <path d="M177 410 l5 0"/><path d="M179 388 l5 0"/><path d="M180 360 l5 0"/>
+        <path d="M181 330 l5 0"/><path d="M182 300 l5 0"/><path d="M183 272 l5 0"/>
+      </g>
+
+      <!-- ── YOUNG LEAVES — small, oval, finely toothed, bronze-green ── -->
+      <g opacity="0.9">
+        <!-- pair near lower fork -->
+        <path d="M182 250 C172 244 164 246 160 252 C166 256 174 256 182 252 Z" fill="#8a9466"/>
+        <path d="M182 250 C190 242 198 242 202 247 C196 251 188 252 182 252 Z" fill="#9aa074"/>
+        <!-- emerging leaves near right branch tip -->
+        <path d="M244 210 C236 203 228 203 224 208 C230 212 238 213 244 211 Z" fill="#9a8a6a"/>
+        <path d="M244 210 C252 204 260 205 263 210 C257 213 250 213 244 211 Z" fill="#a89072"/>
+        <!-- leaves near left branch -->
+        <path d="M146 134 C138 130 131 132 128 137 C134 140 141 140 146 136 Z" fill="#8a9466"/>
+        <path d="M146 134 C153 128 161 129 164 134 C158 137 151 137 146 136 Z" fill="#9aa074"/>
+        <!-- a couple along main upper stem -->
+        <path d="M198 124 C191 119 184 120 181 125 C186 128 193 128 198 126 Z" fill="#94986e"/>
+        <path d="M210 100 C204 95 197 96 194 101 C199 104 205 104 210 102 Z" fill="#9aa074"/>
+      </g>
+
+      <!-- ── FLOWER CLUSTERS — drooping racemes of white 5-petalled flowers ──
+           Each flower: 5 narrow strap-like white petals + pale centre.
+           A faint shadow ellipse lifts the white off the cream ground. -->
+
+      <!-- RACEME 1 — top of main stem, around (210,86) -->
+      <g>
+        <!-- soft shadows -->
+        <g fill="#e8e0d8" opacity="0.7">
+          <circle cx="210" cy="84" r="9"/><circle cx="224" cy="92" r="8"/><circle cx="200" cy="98" r="7.5"/>
+        </g>
+        <!-- flower A (210,84) -->
+        <g transform="translate(210,84)">
+          <g fill="#fcfbf8">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.4" fill="#cfc890"/>
+          <circle cx="0" cy="0" r="1" fill="#a8965e"/>
+        </g>
+        <!-- flower B (224,92) -->
+        <g transform="translate(224,92) scale(0.9)">
+          <g fill="#fbfaf7">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.2" fill="#cfc890"/>
+        </g>
+        <!-- flower C (200,98) -->
+        <g transform="translate(200,98) scale(0.82)">
+          <g fill="#fbfaf7">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.2" fill="#cfc890"/>
+        </g>
+        <!-- bud (216,104) -->
+        <ellipse cx="216" cy="104" rx="3" ry="4.5" fill="#f4eee8"/>
+        <path d="M214 107 C214 110 218 110 218 107" stroke="#9aa074" stroke-width="1" fill="none" opacity="0.7"/>
+      </g>
+
+      <!-- RACEME 2 — right branch tip, around (256,200) -->
+      <g>
+        <g fill="#e8e0d8" opacity="0.7">
+          <circle cx="256" cy="198" r="8.5"/><circle cx="270" cy="206" r="7.5"/><circle cx="248" cy="212" r="7"/>
+        </g>
+        <g transform="translate(256,198) scale(0.95)">
+          <g fill="#fcfbf8">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.4" fill="#cfc890"/>
+          <circle cx="0" cy="0" r="1" fill="#a8965e"/>
+        </g>
+        <g transform="translate(270,206) scale(0.82)">
+          <g fill="#fbfaf7">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.2" fill="#cfc890"/>
+        </g>
+        <g transform="translate(248,212) scale(0.78)">
+          <g fill="#fbfaf7">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2" fill="#cfc890"/>
+        </g>
+      </g>
+
+      <!-- RACEME 3 — left branch tip, around (142,128) -->
+      <g>
+        <g fill="#e8e0d8" opacity="0.7">
+          <circle cx="142" cy="126" r="8"/><circle cx="128" cy="132" r="7"/><circle cx="150" cy="138" r="6.5"/>
+        </g>
+        <g transform="translate(142,126) scale(0.92)">
+          <g fill="#fcfbf8">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2.3" fill="#cfc890"/>
+          <circle cx="0" cy="0" r="1" fill="#a8965e"/>
+        </g>
+        <g transform="translate(128,132) scale(0.8)">
+          <g fill="#fbfaf7">
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(72)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(144)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(216)"/>
+            <ellipse cx="0" cy="-7.5" rx="2" ry="7" transform="rotate(288)"/>
+          </g>
+          <circle cx="0" cy="0" r="2" fill="#cfc890"/>
+        </g>
+        <!-- bud -->
+        <ellipse cx="150" cy="138" rx="2.6" ry="4" fill="#f4eee8"/>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Tree · Small Tree / Shrub</div>
+      <h1>Service<em>berry</em></h1>
+      <p class="hero-latin">Amelanchier arborea</p>
+      <p class="hero-tagline">Among the first trees to bloom in spring — white blossom before the woods leaf out, edible berries in June, fiery fall color, and smooth silver-grey bark in winter.</p>
+      <div class="flagship-badge">✦ Four-Season Interest</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Small tree / large shrub</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">15–25 ft (to 40)</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Early spring (April)</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium; well-drained</span></div>
+    <div class="fact-item"><span class="fact-label">Fruit</span><span class="fact-value">June; edible</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>First to Bloom at the Woodland Edge</h2>
+    <p>Serviceberry is a small tree or large multi-stemmed shrub of woodland edges, open woods, and stream banks across Ohio. In early spring — often in April, before the surrounding canopy has leafed out — it opens drooping clusters of white flowers, each with five narrow, slightly twisted petals that give the whole tree an airy, almost smoky appearance from a distance. As the flowers fade, young leaves emerge with a bronze or coppery tint before settling to soft blue-green.</p>
+    <p>It earns its place in a garden several times over across the year: the early flowers, edible reddish-purple fruit in June, orange-to-red foliage in fall, and smooth silver-grey bark — often subtly striped — that carries the bare winter form. Few native trees of its modest size offer something in every season the way serviceberry does.</p>
+
+    <div class="keystone-callout">
+      <p>Serviceberry is among the <strong>earliest native trees to flower</strong>, opening before most woody plants have broken bud. That early timing puts pollen and nectar within reach of the first native bees of the year — mining bees and mason bees active in a season when few other trees offer anything at all.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Woodland edge</span>
+      <span class="pill">Small specimen tree</span>
+      <span class="pill">Naturalistic borders</span>
+      <span class="pill">Wildlife &amp; bird gardens</span>
+      <span class="pill">Understory layer</span>
+      <span class="pill">Edible landscaping</span>
+    </div>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row peak"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Among the first trees to flower — drooping racemes of white blossom open in April, often before the woods leaf out, as bronze-tinged young leaves emerge. Early bees work the flowers.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Fruit develops and ripens in June, passing from green through red to deep purple. Birds — and people — compete for the sweet, edible berries as foliage settles to blue-green.</div></div>
+      <div class="tl-row active"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Foliage turns warm orange to red, among the more reliable small trees for fall color in part shade. A quiet but vivid close to the season.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Smooth silver-grey bark, often with darker vertical striping, and a fine multi-stemmed branching structure carry the bare-branch form through the cold months.</div></div>
+    </div>
+  </section>
+
+  <!-- WILDLIFE SUPPORT -->
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who It Feeds</h2>
+    <p>Serviceberry supports wildlife at both ends of the growing season and underneath it — early flowers for emerging bees, June fruit for birds, and foliage that feeds a wide range of caterpillars through the summer.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Early-Spring Bees</span><span class="insect-count-badge">nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Mining Bees (Andrena)</span>
+          <span class="insect-tag common">Mason Bees</span>
+          <span class="insect-tag">Bumblebee Queens</span>
+          <span class="insect-tag">Small Carpenter Bees</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">host plant</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Red-spotted Purple</span>
+          <span class="insect-tag common">Viceroy</span>
+          <span class="insect-tag">Eastern Tiger Swallowtail</span>
+          <span class="insect-tag">Striped Hairstreak</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Fruit-Eating Birds</span><span class="insect-count-badge">June berries</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Cedar Waxwing</span>
+          <span class="insect-tag common">American Robin</span>
+          <span class="insect-tag">Gray Catbird</span>
+          <span class="insect-tag">Wood Thrush</span>
+          <span class="insect-tag">Northern Cardinal</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Serviceberry is a larval <strong>host plant</strong> for a wide range of butterflies and moths, whose caterpillars feed on the foliage — and those caterpillars are, in turn, the protein that most songbirds rely on to raise their young. A serviceberry feeds birds twice over: caterpillars in spring and early summer, fruit in June.</p>
+  </section>
+
+  <!-- CARE -->
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Serviceberry is adaptable and undemanding, tolerating a range of light from full sun to part shade — though flowering, fruiting, and fall color are all fullest with more sun. It is well-suited to the woodland-edge conditions of its native range.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; flowers, fruit, and fall color fullest in sun; tolerates dappled woodland light</td></tr>
+      <tr><td>Soil</td><td>Adaptable; prefers moist, well-drained, slightly acidic soil with organic matter; tolerates a range of textures</td></tr>
+      <tr><td>Moisture</td><td>Medium; consistent moisture suits it best; avoid prolonged drought when young</td></tr>
+      <tr><td>Form</td><td>Available as single-stemmed small tree or multi-stemmed shrub; choose to suit the spot</td></tr>
+      <tr><td>Fruit</td><td>Edible reddish-purple pomes ripen in June; birds usually harvest quickly unless netted</td></tr>
+      <tr><td>Fall color</td><td>Orange to red; more vivid with more sun</td></tr>
+      <tr><td>Note</td><td>As a member of the rose family, it can host cedar-serviceberry rust near junipers — usually cosmetic, rarely harmful</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Serviceberry sits naturally at the woodland edge, where it pairs with other small trees and shrubs of that transitional zone and lifts above a ground layer of shade-tolerant wildflowers and sedges.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland-edge trees &amp; shrubs</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="witch-hazel.html" class="companion-link">Witch Hazel</a></span> <span class="companion-latin">Hamamelis virginiana</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="red-buckeye.html" class="companion-link">Red Buckeye</a></span> <span class="companion-latin">Aesculus pavia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="white-oak.html" class="companion-link">White Oak</a></span> <span class="companion-latin">Quercus alba</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Understory &amp; ground layer</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="pennsylvania-sedge.html" class="companion-link">Pennsylvania Sedge</a></span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="penstemon.html" class="companion-link">Foxglove Beardtongue</a></span> <span class="companion-latin">Penstemon digitalis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="nodding-onion.html" class="companion-link">Nodding Onion</a></span> <span class="companion-latin">Allium cernuum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Early-season companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="golden-alexanders.html" class="companion-link">Golden Alexanders</a></span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Woodland Phlox</span> <span class="companion-latin">Phlox divaricata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Geranium</span> <span class="companion-latin">Geranium maculatum</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DID YOU KNOW -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">A Tree With Half a Dozen Names</h3>
+        <p>Few native plants carry as many common names as this one: serviceberry, juneberry, shadbush, shadblow, sugarplum, and — in Canada, where the fruit is grown commercially — saskatoon. Each name records a different way people noticed the tree. <em>Juneberry</em> marks when the fruit ripens. <em>Shadbush</em> recalls that it blooms just as shad run up the rivers to spawn, an old coastal calendar written in flowers.</p>
+        <p>The name <em>serviceberry</em> itself is debated. One common explanation holds that its early bloom coincided with the spring thaw, when mountain ground softened enough for burials and traveling preachers could resume holding <strong>services</strong> — so the tree flowered at "service" time. Whether or not the folk story is literally true, it captures something real: serviceberry blooms at the hinge of the year, when winter loosens its grip.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Fruit Isn't Really a Berry</h3>
+        <p>Despite the names, a serviceberry "berry" is botanically a <em>pome</em> — the same fruit type as an apple or pear, to which it is closely related within the rose family (Rosaceae). The small reddish-purple fruits are genuinely good to eat: sweet, faintly almond-flavored from the seeds, and often compared to blueberries. The catch is timing — birds tend to strip a tree within days of ripening, so gardeners hoping to harvest usually have to net a branch or move quickly.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">A Quiet Heavyweight for Caterpillars</h3>
+        <p>Serviceberry supports a notably wide range of native butterfly and moth caterpillars — among them the red-spotted purple, viceroy, and striped hairstreak. This matters beyond the insects themselves: caterpillars are the single most important food for nesting songbirds, which need enormous quantities of them to raise a brood. A flowering tree that also produces fruit and hosts caterpillars is feeding the food web at several levels at once — pollinators in spring, caterpillars and the birds that eat them through summer, and fruit-eaters in June.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Something in Every Season</h3>
+        <p>Many trees offer a single moment — a week of bloom, a flush of fall color — and recede the rest of the year. Serviceberry is unusual in carrying interest through all four seasons on a frame small enough for a modest garden. White flowers open the spring before the canopy closes; fruit ripens in June; foliage burns orange and red in fall; and smooth silver-grey bark, finely striped, holds the bare winter form.</p>
+        <p>That range is what makes it such a useful small tree at the woodland edge — it is never entirely out of season, and the wildlife it supports shifts with each phase rather than depending on a single brief event.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OHIO SERVICEBERRIES -->
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Serviceberries</h2>
+    <p>Several native <em>Amelanchier</em> grow in Ohio, and they hybridize freely enough that even botanists find them tricky to separate. All share the early white bloom, the June fruit, and the fine grey bark; they differ mainly in size, habit, and habitat.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant · Most Common</p>
+        <p class="species-common">Downy Serviceberry</p>
+        <p class="species-latin">Amelanchier arborea</p>
+        <p class="species-desc">The most widespread Ohio species, and the most tree-like — single or few-stemmed, reaching well above shrub height. Young leaves emerge softly hairy ("downy"), which helps separate it from the smooth-leaved species. A dependable woodland-edge small tree.</p>
+        <div class="species-traits"><span class="species-trait">15–40 ft</span><span class="species-trait">Sun–pt shade</span><span class="species-trait">Downy leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Smooth-leaved</p>
+        <p class="species-common">Allegheny Serviceberry</p>
+        <p class="species-latin">Amelanchier laevis</p>
+        <p class="species-desc">Very similar to downy serviceberry but with smooth (hairless) young leaves that emerge a striking bronze-purple. Often regarded as having the sweetest fruit of the group. Found in similar woodland and edge habitats; the two frequently hybridize.</p>
+        <div class="species-traits"><span class="species-trait">15–30 ft</span><span class="species-trait">Smooth leaves</span><span class="species-trait">Sweet fruit</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Shrubby · Wet sites</p>
+        <p class="species-common">Canadian Serviceberry</p>
+        <p class="species-latin">Amelanchier canadensis</p>
+        <p class="species-desc">A multi-stemmed, thicket-forming shrub of wetter ground — bogs, swamp edges, and moist thickets. More upright and suckering than the tree species, useful where a dense shrubby form and tolerance of damp soil are wanted.</p>
+        <div class="species-traits"><span class="species-trait">6–20 ft</span><span class="species-trait">Moist–wet</span><span class="species-trait">Thicket-forming</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Rocky · Dry sites</p>
+        <p class="species-common">Roundleaf Serviceberry</p>
+        <p class="species-latin">Amelanchier sanguinea</p>
+        <p class="species-desc">A smaller, often shrubby species with distinctly rounded leaves, found on dry, rocky slopes and bluffs. Less common and more compact than the tree serviceberries; suited to lean, well-drained ground where larger species struggle.</p>
+        <div class="species-traits"><span class="species-trait">3–10 ft</span><span class="species-trait">Dry rocky</span><span class="species-trait">Round leaves</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Amelanchier arborea · Native Tree · Native to Ohio</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
