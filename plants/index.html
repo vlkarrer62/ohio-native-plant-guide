@@ -201,6 +201,73 @@
       font-weight: 500;
     }
 
+    /* ── SEARCH BAR ───────────────────────────── */
+.search-section {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1.6rem 2rem;
+}
+
+.search-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-label {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 0.6rem;
+}
+
+.plant-search {
+  width: 100%;
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.68);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.98rem;
+  font-weight: 300;
+  padding: 0.9rem 1.1rem;
+  outline: none;
+  box-shadow: 0 8px 24px rgba(30, 32, 24, 0.06);
+}
+
+.plant-search::placeholder {
+  color: var(--text-faint);
+  opacity: 0.72;
+}
+
+.plant-search:focus {
+  border-color: var(--green-soft);
+  box-shadow: 0 0 0 3px rgba(90,138,58,0.12);
+}
+
+.search-count {
+  margin-top: 0.6rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
     /* ── DIRECTORY ────────────────────────────── */
     .directory {
       flex: 1;
@@ -526,6 +593,21 @@
     </div>
   </header>
 
+  <!-- SEARCH -->
+<section class="search-section" aria-label="Search plant directory">
+  <div class="search-inner">
+    <label for="plantSearch" class="search-label">Search the Plant Directory</label>
+    <input
+      type="search"
+      id="plantSearch"
+      class="plant-search"
+      placeholder="Search by name, bloom time, sun, moisture, wildlife role..."
+      autocomplete="off"
+    />
+    <p id="searchCount" class="search-count"></p>
+  </div>
+</section>
+
   <!-- FILTER BAR -->
   <div class="filter-bar" aria-label="Directory status">
     <div class="filter-bar-inner">
@@ -660,10 +742,23 @@
     // ─────────────────────────────────────────────
     function buildCard(plant, index) {
       const card = document.createElement('a');
-      card.href        = plant.url;
-      card.className   = 'plant-card';
-      card.setAttribute('aria-label',
-        `${plant.commonName} — ${plant.scientificName} — View full profile`);
+card.href        = plant.url;
+card.className   = 'plant-card';
+card.dataset.search = [
+  plant.commonName,
+  plant.scientificName,
+  plant.type,
+  plant.bloom,
+  plant.description,
+  plant.sun,
+  plant.moisture,
+  plant.height,
+  plant.season,
+  plant.searchKeywords || ''
+].join(' ');
+
+card.setAttribute('aria-label',
+  `${plant.commonName} — ${plant.scientificName} — View full profile`);
 
       const icon = ICONS[plant.svgIcon] || FALLBACK_ICON;
 
@@ -760,6 +855,55 @@
 
       items.forEach(el => obs.observe(el));
     }
+    // ─────────────────────────────────────────────
+// DIRECTORY SEARCH
+// ─────────────────────────────────────────────
+function initDirectorySearch() {
+  const input = document.getElementById('plantSearch');
+  const searchCount = document.getElementById('searchCount');
+  const plantCount = document.getElementById('plant-count');
+  const cards = Array.from(document.querySelectorAll('.plant-card'));
+  const seasonGroups = Array.from(document.querySelectorAll('.season-group'));
+  const comingSoon = document.getElementById('coming-soon');
+
+  if (!input || !cards.length) return;
+
+  function normalize(text) {
+    return String(text || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  }
+
+  function updateSearch() {
+    const query = normalize(input.value);
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const searchableText = normalize(`${card.textContent} ${card.dataset.search || ''}`);
+      const match = !query || searchableText.includes(query);
+
+      card.style.display = match ? '' : 'none';
+      if (match) visibleCount++;
+    });
+
+    seasonGroups.forEach(group => {
+      const visibleCards = group.querySelectorAll('.plant-card:not([style*="display: none"])');
+      group.style.display = visibleCards.length ? '' : 'none';
+    });
+
+    if (comingSoon) {
+      comingSoon.style.display = query ? 'none' : '';
+    }
+
+    if (!query) {
+      searchCount.textContent = '';
+      plantCount.innerHTML = `<strong>${cards.length}</strong> profile${cards.length !== 1 ? 's' : ''} available · more coming soon`;
+    } else {
+      searchCount.textContent = `${visibleCount} plant${visibleCount === 1 ? '' : 's'} found`;
+      plantCount.innerHTML = `<strong>${visibleCount}</strong> matching profile${visibleCount !== 1 ? 's' : ''}`;
+    }
+  }
+
+  input.addEventListener('input', updateSearch);
+}
 
     // ─────────────────────────────────────────────
     // MAIN — fetch & render
@@ -800,8 +944,9 @@
         // Coming soon block
         root.appendChild(buildComingSoon());
 
-        // Wire up scroll animations
-        attachRevealObserver();
+       // Wire up scroll animations and search
+       attachRevealObserver();
+       initDirectorySearch();
 
       } catch (err) {
         loadingEl && (loadingEl.style.display = 'none');
