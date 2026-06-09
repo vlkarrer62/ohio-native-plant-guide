@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catmint · Nepeta × faassenii · Garden Plant Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f8f6f2;
+      --bg-warm:      #eee8f0;
+      --bg-card:      #faf8fc;
+      --bg-silver:    #dbd4ec;
+      --border:       rgba(112,88,160,0.15);
+      --border-silver:rgba(136,108,190,0.28);
+      --silver:       #7058a8;
+      --silver-soft:  #9078c8;
+      --silver-pale:  #c0aed8;
+      --herb:         #5a7838;
+      --herb-soft:    #788a50;
+      --stone:        #786870;
+      --stone-light:  #a09098;
+      --text:         #201820;
+      --text-dim:     #4a3c48;
+      --text-faint:   #887880;
+      --ink:          #181018;
+      --heading:      var(--ink);
+      --band-text:    #ecdff8;
+      --band-faint:   rgba(215,195,240,0.55);
+      --band-accent:  #d4c040;
+      --display: 'EB Garamond', Georgia, serif;
+      --body: 'Outfit', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text); font-family: var(--body);
+      font-weight: 300; line-height: 1.75; font-size: 17px;
+      max-width: 680px; margin: 0 auto;
+    }
+
+    /* ── NON-NATIVE BANNER ── */
+    .non-native-banner {
+      background: #4e5a68;
+      padding: 0.65rem 2rem;
+      display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+    }
+    .banner-pip { color: #90aabe; font-size: 0.6rem; flex-shrink: 0; }
+    .banner-label {
+      font-family: 'DM Mono', monospace; font-size: 0.65rem;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: #e8f0f6; font-weight: 500; white-space: nowrap;
+    }
+    .banner-divider { color: rgba(200,218,232,0.35); font-size: 0.7rem; }
+    .banner-note {
+      font-family: 'DM Mono', monospace; font-size: 0.6rem;
+      letter-spacing: 0.08em; color: rgba(200,218,232,0.72);
+    }
+
+    /* ── HERO ── */
+    .hero { position: relative; min-height: 455px; display: flex; flex-direction: column; justify-content: flex-end; overflow: hidden; background: var(--bg-warm); }
+    .hero-light {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 70% 52% at 62% 20%, rgba(138,108,192,0.22) 0%, transparent 60%),
+        radial-gradient(ellipse 52% 48% at 88% 60%, rgba(118,88,178,0.14) 0%, transparent 55%),
+        radial-gradient(ellipse 68% 58% at 10% 80%, rgba(190,182,212,0.20) 0%, transparent 60%),
+        linear-gradient(175deg, #ede8f2 0%, #f0ecf6 45%, #eae4f0 100%);
+    }
+    .hero-illustration { position: absolute; top: -5px; right: -15px; width: 64%; height: 96%; opacity: 0.82; }
+    .hero-content { position: relative; z-index: 2; padding: 3rem 2rem 2.5rem; }
+    .badge { display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--stone); margin-bottom: 1.2rem; animation: rise 0.7s ease both; }
+    .badge::before { content: ''; width: 18px; height: 1px; background: var(--stone); opacity: 0.5; }
+    .hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(2.6rem, 8vw, 3.8rem); line-height: 1.0; color: var(--heading); animation: rise 0.7s 0.1s ease both; }
+    .hero h1 em { display: block; font-style: italic; color: var(--silver); font-weight: 500; }
+    .hero-latin { font-family: var(--display); font-style: italic; font-size: 1.1rem; color: var(--stone-light); margin-top: 0.5rem; animation: rise 0.7s 0.2s ease both; }
+    .hero-tagline { margin-top: 1rem; font-size: 0.97rem; font-weight: 300; color: var(--text-dim); max-width: 350px; line-height: 1.65; animation: rise 0.7s 0.3s ease both; }
+    .flagship-badge { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.2rem; background: var(--bg-silver); border: 1px solid var(--border-silver); border-radius: 3px; padding: 0.32em 0.9em; font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); animation: rise 0.7s 0.4s ease both; }
+
+    /* ── FACTS BAND ── */
+    .facts-band { background: var(--ink); padding: 1.5rem 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+    .fact-label { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--band-faint); }
+    .fact-value { font-size: 0.92rem; font-weight: 300; color: var(--band-text); line-height: 1.4; }
+
+    /* ── SECTIONS ── */
+    .section { padding: 2.5rem 2rem; border-bottom: 1px solid var(--border); opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--silver); margin-bottom: 0.5rem; }
+    .section h2 { font-family: var(--display); font-size: clamp(1.6rem, 4.8vw, 2.1rem); font-weight: 700; color: var(--heading); margin-bottom: 1.1rem; line-height: 1.15; }
+    .section p { font-size: 1rem; font-weight: 300; color: var(--text-dim); margin-bottom: 1rem; line-height: 1.8; }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--herb); font-weight: 500; }
+    .section em { font-style: italic; }
+
+    .pill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 0.8rem; }
+    .pill { font-size: 0.8rem; font-weight: 400; padding: 0.28em 0.85em; border: 1px solid var(--border); border-radius: 3px; color: var(--text-faint); background: var(--bg-warm); }
+
+    /* ── HONEST CONTEXT CALLOUT (replaces keystone for non-native) ── */
+    .context-callout { background: #f0ecf8; border: 1px solid var(--border); border-left: 3px solid #4e5a68; border-radius: 0 4px 4px 0; padding: 1.4rem 1.6rem; margin: 1.4rem 0; }
+    .context-callout p { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); margin: 0 !important; line-height: 1.72; }
+    .context-callout strong { color: #4e5a68 !important; font-weight: 500; }
+
+    /* ── WILDLIFE OBSERVED (uses observation date; replaces insect-hub) ── */
+    .observation-band { background: var(--bg-card); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; margin: 1.2rem 0; }
+    .observation-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-warm); border-bottom: 1px solid var(--border); }
+    .observation-date { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--silver); }
+    .observation-note { font-family: 'DM Mono', monospace; font-size: 0.58rem; letter-spacing: 0.08em; color: var(--text-faint); flex: 1; text-align: right; }
+    .observation-list { padding: 0.8rem 1rem; display: flex; flex-direction: column; gap: 0; }
+    .obs-row { display: flex; align-items: baseline; gap: 0.8rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); }
+    .obs-row:last-child { border-bottom: none; }
+    .obs-icon { font-size: 1rem; flex-shrink: 0; width: 24px; text-align: center; }
+    .obs-body { flex: 1; }
+    .obs-name { font-size: 0.95rem; font-weight: 400; color: var(--text); }
+    .obs-detail { font-size: 0.82rem; font-weight: 300; color: var(--text-faint); display: block; line-height: 1.5; }
+
+    .insect-hub { margin: 1.4rem 0; }
+    .insect-category { margin-bottom: 0.5rem; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+    .insect-category-header { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1rem; background: var(--bg-warm); }
+    .insect-category-icon { font-size: 1.1rem; flex-shrink: 0; width: 28px; text-align: center; }
+    .insect-category-name { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone); font-weight: 500; flex: 1; }
+    .insect-count-badge { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: var(--silver); background: var(--bg-silver); border: 1px solid var(--border-silver); padding: 0.15em 0.6em; border-radius: 10px; white-space: nowrap; }
+    .insect-list { padding: 0.6rem 1rem 0.8rem 3rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .insect-tag { font-size: 0.8rem; font-weight: 300; color: var(--text-dim); background: var(--bg-card); border: 1px solid var(--border); padding: 0.2em 0.7em; border-radius: 3px; font-style: italic; }
+    .insect-tag.common { font-style: normal; color: var(--text); font-weight: 400; }
+
+    /* ── TIMELINE ── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+    .tl-row { display: flex; align-items: stretch; border-bottom: 1px solid var(--border); }
+    .tl-row:last-child { border-bottom: none; }
+    .tl-season { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-faint); width: 88px; flex-shrink: 0; padding: 0.85rem 0.8rem 0.85rem 0; display: flex; align-items: center; }
+    .tl-bar { width: 3px; background: var(--border); flex-shrink: 0; margin: 0.4rem 1rem 0.4rem 0; border-radius: 2px; }
+    .tl-row.peak .tl-bar { background: var(--silver); }
+    .tl-row.active .tl-bar { background: var(--herb-soft); }
+    .tl-row.fade .tl-bar { background: var(--stone-light); }
+    .tl-text { font-size: 0.93rem; font-weight: 300; color: var(--text-dim); padding: 0.85rem 0; line-height: 1.55; }
+
+    /* ── CARE TABLE ── */
+    .care-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+    .care-table td { padding: 0.75rem 0.4rem; vertical-align: top; }
+    .care-table td:first-child { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--silver); width: 30%; padding-top: 0.9rem; }
+    .care-table td:last-child { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); line-height: 1.55; }
+
+    /* ── STORY CARDS ── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+    .story-card { display: flex; gap: 1.2rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .story-card--highlight { background: var(--bg-warm); border: 1px solid var(--border); border-top: 3px solid var(--silver); border-radius: 0 0 5px 5px; padding: 1.4rem; margin-left: -0.2rem; margin-right: -0.2rem; }
+    .story-number { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: rgba(112,88,168,0.28); flex-shrink: 0; padding-top: 0.25rem; min-width: 2rem; }
+    .story-card--highlight .story-number { color: var(--silver); }
+    .story-title { font-family: var(--display); font-size: 1.18rem; font-weight: 700; color: var(--heading); margin-bottom: 0.7rem; line-height: 1.3; }
+    .story-body p { font-size: 0.97rem; font-weight: 300; color: var(--text-dim); line-height: 1.78; margin-bottom: 0.85rem; }
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--herb); font-weight: 500; }
+    .story-body em { color: var(--stone-light); font-style: italic; }
+
+    /* ── FOOTER ── */
+    footer { background: var(--ink); border-top: 1px solid var(--border); padding: 2.4rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.63rem; letter-spacing: 0.08em; color: var(--band-faint); line-height: 2; }
+    footer strong { color: var(--band-text); font-weight: 500; }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+
+  <!-- ── NON-NATIVE BANNER ── -->
+  <div class="non-native-banner" role="note" aria-label="Plant origin note">
+    <span class="banner-pip">◆</span>
+    <span class="banner-label">Non-Native Garden Plant</span>
+    <span class="banner-divider">·</span>
+    <span class="banner-note">Not native to Ohio — included for documented garden and wildlife value</span>
+  </div>
+
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Catmint: low spreading mound with multiple arching stems; small grey-green
+         opposite ovate leaves; upper stems bearing dense whorled spikes of small
+         two-lipped lavender-blue flowers in the Lamiaceae family style -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- ── STEMS — multiple arching from base ── -->
+      <!-- Catmint is a low mound; stems arc outward from a central crown -->
+      <!-- Main central stem -->
+      <path d="M165 430 C164 400 163 360 162 318 C161 280 160 248 160 210 C160 178 161 154 162 128" stroke="#7a8858" stroke-width="2" stroke-linecap="round"/>
+      <!-- Left arch stem -->
+      <path d="M155 430 C148 395 136 350 122 302 C112 268 105 240 102 210 C100 186 104 164 110 142" stroke="#7a8858" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- Right arch stem -->
+      <path d="M175 430 C182 395 194 350 208 302 C218 268 225 240 228 210 C230 186 226 164 220 142" stroke="#7a8858" stroke-width="1.6" stroke-linecap="round"/>
+      <!-- Far left stem -->
+      <path d="M148 432 C138 392 120 344 102 292 C89 254 80 222 77 190 C75 166 80 148 88 130" stroke="#7a8858" stroke-width="1.3" stroke-linecap="round"/>
+      <!-- Far right stem -->
+      <path d="M182 432 C192 392 210 344 228 292 C241 254 250 222 253 190 C255 166 250 148 242 130" stroke="#7a8858" stroke-width="1.3" stroke-linecap="round"/>
+
+      <!-- ── LEAVES — small, ovate, opposite, grey-green ── -->
+      <!-- Along main stem -->
+      <g fill="#8a9862" opacity="0.72">
+        <!-- Pair at y≈370 main -->
+        <path d="M162 370 C154 363 144 362 140 367 C146 368 155 368 162 372 Z"/>
+        <path d="M162 370 C170 363 180 362 184 367 C178 368 169 368 162 372 Z"/>
+        <!-- Pair at y≈328 -->
+        <path d="M161 330 C154 323 145 322 141 327 C147 328 155 328 161 332 Z"/>
+        <path d="M161 330 C168 323 177 322 181 327 C175 328 166 328 161 332 Z"/>
+        <!-- Pair at y≈285 -->
+        <path d="M160 287 C154 280 146 280 142 284 C148 285 155 286 160 289 Z"/>
+        <path d="M160 287 C166 280 174 280 178 284 C172 285 165 286 160 289 Z"/>
+        <!-- Pair at y≈248 -->
+        <path d="M160 250 C154 244 147 243 144 247 C149 248 155 249 160 252 Z"/>
+        <path d="M160 250 C166 244 173 243 176 247 C171 248 165 249 160 252 Z"/>
+        <!-- Pair at y≈215 -->
+        <path d="M160 218 C155 212 148 211 145 215 C150 216 156 217 160 220 Z"/>
+        <path d="M160 218 C165 212 172 211 175 215 C170 216 164 217 160 220 Z"/>
+      </g>
+
+      <!-- Along left stem -->
+      <g fill="#8a9862" opacity="0.65">
+        <path d="M122 300 C115 293 107 293 104 297 C109 298 116 299 122 302 Z"/>
+        <path d="M122 300 C129 293 137 293 140 297 C135 298 128 299 122 302 Z"/>
+        <path d="M115 256 C108 250 100 250 97 254 C102 255 109 256 115 258 Z"/>
+        <path d="M115 256 C122 250 130 250 133 254 C128 255 121 256 115 258 Z"/>
+        <path d="M110 212 C104 206 97 206 94 210 C99 211 106 212 110 214 Z"/>
+        <path d="M110 212 C116 206 123 206 126 210 C121 211 115 212 110 214 Z"/>
+      </g>
+
+      <!-- Along right stem -->
+      <g fill="#8a9862" opacity="0.65">
+        <path d="M208 300 C215 293 223 293 226 297 C221 298 214 299 208 302 Z"/>
+        <path d="M208 300 C201 293 193 293 190 297 C195 298 202 299 208 302 Z"/>
+        <path d="M215 256 C222 250 230 250 233 254 C228 255 221 256 215 258 Z"/>
+        <path d="M215 256 C208 250 200 250 197 254 C202 255 209 256 215 258 Z"/>
+        <path d="M220 212 C227 206 235 206 238 210 C233 211 226 212 220 214 Z"/>
+        <path d="M220 212 C213 206 205 206 202 210 C207 211 214 212 220 214 Z"/>
+      </g>
+
+      <!-- ── FLOWER SPIKES — whorled lavender-blue clusters on upper stems ── -->
+      <!-- Main stem flower spike (y≈210 to y≈110) -->
+      <!-- Each whorl: a ring of tiny two-lipped flowers -->
+      <g fill="#9070c8" opacity="0.88">
+        <!-- Whorl at y≈210 -->
+        <circle cx="156" cy="210" r="2.4"/><circle cx="163" cy="208" r="2.4"/><circle cx="168" cy="211" r="2.2"/>
+        <circle cx="154" cy="215" r="2"/><circle cx="165" cy="214" r="2.2"/><circle cx="170" cy="208" r="2"/>
+        <!-- Whorl at y≈198 -->
+        <circle cx="157" cy="198" r="2.3"/><circle cx="163" cy="196" r="2.3"/><circle cx="168" cy="199" r="2.1"/>
+        <circle cx="155" cy="203" r="1.9"/><circle cx="166" cy="202" r="2.1"/>
+        <!-- Whorl at y≈186 -->
+        <circle cx="158" cy="186" r="2.2"/><circle cx="163" cy="184" r="2.2"/><circle cx="168" cy="187" r="2"/>
+        <circle cx="156" cy="191" r="1.9"/><circle cx="165" cy="190" r="2"/>
+        <!-- Whorl at y≈174 -->
+        <circle cx="158" cy="174" r="2.1"/><circle cx="163" cy="172" r="2.2"/><circle cx="167" cy="175" r="2"/>
+        <circle cx="156" cy="179" r="1.8"/><circle cx="165" cy="178" r="1.9"/>
+        <!-- Whorl at y≈163 -->
+        <circle cx="159" cy="163" r="2"/><circle cx="163" cy="161" r="2.1"/><circle cx="167" cy="164" r="1.9"/>
+        <circle cx="157" cy="168" r="1.7"/><circle cx="164" cy="167" r="1.8"/>
+        <!-- Whorl at y≈152 -->
+        <circle cx="159" cy="152" r="1.9"/><circle cx="163" cy="150" r="2"/><circle cx="167" cy="153" r="1.8"/>
+        <circle cx="157" cy="157" r="1.6"/><circle cx="164" cy="156" r="1.7"/>
+        <!-- Whorl at y≈142 -->
+        <circle cx="160" cy="142" r="1.8"/><circle cx="163" cy="140" r="1.9"/><circle cx="166" cy="143" r="1.7"/>
+        <circle cx="158" cy="147" r="1.5"/><circle cx="164" cy="146" r="1.6"/>
+        <!-- Upper whorls (y≈132 to y≈110) — tighter, smaller -->
+        <circle cx="160" cy="132" r="1.7"/><circle cx="163" cy="130" r="1.7"/><circle cx="166" cy="133" r="1.5"/>
+        <circle cx="161" cy="136" r="1.4"/>
+        <circle cx="161" cy="122" r="1.6"/><circle cx="163" cy="120" r="1.6"/><circle cx="165" cy="123" r="1.4"/>
+        <circle cx="162" cy="112" r="1.5"/><circle cx="164" cy="110" r="1.5"/><circle cx="163" cy="116" r="1.3"/>
+      </g>
+      <!-- Highlight petals (lighter) -->
+      <g fill="#b898e0" opacity="0.55">
+        <circle cx="162" cy="207" r="1.3"/><circle cx="164" cy="194" r="1.3"/>
+        <circle cx="162" cy="182" r="1.3"/><circle cx="162" cy="170" r="1.2"/>
+        <circle cx="162" cy="159" r="1.2"/><circle cx="162" cy="148" r="1.1"/>
+        <circle cx="162" cy="138" r="1.1"/><circle cx="162" cy="128" r="1.0"/>
+      </g>
+
+      <!-- Left stem flower spike (y≈210 to y≈120) -->
+      <g fill="#9070c8" opacity="0.78">
+        <circle cx="106" cy="210" r="2.2"/><circle cx="112" cy="208" r="2.2"/><circle cx="117" cy="211" r="2"/>
+        <circle cx="104" cy="215" r="1.8"/><circle cx="114" cy="214" r="2"/>
+        <circle cx="107" cy="198" r="2"/><circle cx="112" cy="196" r="2.1"/><circle cx="116" cy="199" r="1.9"/>
+        <circle cx="105" cy="203" r="1.7"/><circle cx="113" cy="202" r="1.8"/>
+        <circle cx="108" cy="186" r="1.9"/><circle cx="112" cy="184" r="2"/><circle cx="116" cy="187" r="1.8"/>
+        <circle cx="109" cy="174" r="1.8"/><circle cx="112" cy="172" r="1.9"/><circle cx="116" cy="175" r="1.7"/>
+        <circle cx="110" cy="163" r="1.7"/><circle cx="113" cy="161" r="1.8"/><circle cx="116" cy="164" r="1.6"/>
+        <circle cx="111" cy="152" r="1.6"/><circle cx="113" cy="150" r="1.7"/><circle cx="116" cy="153" r="1.5"/>
+        <circle cx="112" cy="142" r="1.5"/><circle cx="114" cy="140" r="1.6"/><circle cx="117" cy="143" r="1.4"/>
+        <circle cx="112" cy="132" r="1.4"/><circle cx="114" cy="130" r="1.5"/><circle cx="116" cy="133" r="1.3"/>
+        <circle cx="113" cy="122" r="1.3"/><circle cx="115" cy="120" r="1.4"/>
+      </g>
+
+      <!-- Right stem flower spike -->
+      <g fill="#9070c8" opacity="0.78">
+        <circle cx="214" cy="210" r="2.2"/><circle cx="220" cy="208" r="2.2"/><circle cx="225" cy="211" r="2"/>
+        <circle cx="212" cy="215" r="1.8"/><circle cx="222" cy="214" r="2"/>
+        <circle cx="215" cy="198" r="2"/><circle cx="220" cy="196" r="2.1"/><circle cx="224" cy="199" r="1.9"/>
+        <circle cx="213" cy="203" r="1.7"/><circle cx="221" cy="202" r="1.8"/>
+        <circle cx="216" cy="186" r="1.9"/><circle cx="220" cy="184" r="2"/><circle cx="224" cy="187" r="1.8"/>
+        <circle cx="217" cy="174" r="1.8"/><circle cx="220" cy="172" r="1.9"/><circle cx="224" cy="175" r="1.7"/>
+        <circle cx="218" cy="163" r="1.7"/><circle cx="221" cy="161" r="1.8"/><circle cx="224" cy="164" r="1.6"/>
+        <circle cx="219" cy="152" r="1.6"/><circle cx="221" cy="150" r="1.7"/><circle cx="224" cy="153" r="1.5"/>
+        <circle cx="220" cy="142" r="1.5"/><circle cx="222" cy="140" r="1.6"/><circle cx="225" cy="143" r="1.4"/>
+        <circle cx="221" cy="132" r="1.4"/><circle cx="222" cy="130" r="1.5"/><circle cx="224" cy="133" r="1.3"/>
+        <circle cx="222" cy="122" r="1.3"/><circle cx="223" cy="120" r="1.4"/>
+      </g>
+
+      <!-- Far left and right stems — flower tips only -->
+      <g fill="#9070c8" opacity="0.62">
+        <circle cx="88" cy="128" r="1.8"/><circle cx="91" cy="126" r="1.8"/><circle cx="94" cy="129" r="1.6"/>
+        <circle cx="88" cy="138" r="1.6"/><circle cx="91" cy="136" r="1.7"/><circle cx="94" cy="139" r="1.5"/>
+        <circle cx="88" cy="148" r="1.5"/><circle cx="91" cy="146" r="1.6"/>
+        <circle cx="89" cy="158" r="1.4"/><circle cx="92" cy="156" r="1.5"/>
+      </g>
+      <g fill="#9070c8" opacity="0.62">
+        <circle cx="242" cy="128" r="1.8"/><circle cx="245" cy="126" r="1.8"/><circle cx="248" cy="129" r="1.6"/>
+        <circle cx="242" cy="138" r="1.6"/><circle cx="245" cy="136" r="1.7"/><circle cx="248" cy="139" r="1.5"/>
+        <circle cx="242" cy="148" r="1.5"/><circle cx="245" cy="146" r="1.6"/>
+        <circle cx="243" cy="158" r="1.4"/><circle cx="246" cy="156" r="1.5"/>
+      </g>
+
+      <!-- Base / crown suggestion -->
+      <path d="M135 432 C148 428 165 426 182 428 C195 430 205 432 210 434" stroke="#6a7848" stroke-width="1.2" stroke-linecap="round" opacity="0.45"/>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Garden Plant · Non-Native Perennial</div>
+      <h1>Cat<em>mint</em></h1>
+      <p class="hero-latin">Nepeta × faassenii</p>
+      <p class="hero-tagline">A long-blooming Mediterranean garden perennial with a remarkable capacity to attract bees, hover flies, and butterflies — and an exceptionally long season to do it in.</p>
+      <div class="flagship-badge">✦ Observed Pollinator Habitat</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Origin</span><span class="fact-value">Mediterranean / Europe</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">1–2 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">May–September</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to medium</span></div>
+    <div class="fact-item"><span class="fact-label">Soil</span><span class="fact-value">Well-drained</span></div>
+  </div>
+
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Garden Value, Honestly Considered</h2>
+    <p>Catmint is a Mediterranean perennial — a hybrid of European <em>Nepeta</em> species — that has become one of the most widely used edging and border plants in American gardens. It forms a spreading grey-green mound covered in lavender-blue flower spikes from late spring through much of summer, and if cut back after the first flush, it rebounds with a second. The foliage is aromatic, softly textured, and strongly deer-resistant.</p>
+    <p>It is not native to Ohio and does not host the caterpillars of native moths and butterflies the way Ohio native plants do. But it is genuinely and consistently attractive to a wide range of pollinators — particularly bees — and its exceptionally long bloom window means it is providing that resource from May through September, bridging gaps when some native plantings are between flushes.</p>
+    <div class="context-callout">
+      <p><strong>A note on native value:</strong> Catmint contributes nectar and pollen but offers limited caterpillar hosting — the ecological foundation that native plants provide. In a garden actively building toward native plantings, it functions well as a bridge plant, supporting pollinators while the native community matures around it.</p>
+    </div>
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Border edging</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Pathway edges</span>
+      <span class="pill">Dry sunny spots</span>
+      <span class="pill">Deer-resistant planting</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Observed</p>
+    <h2>What Has Been Seen Here</h2>
+    <p>These are actual visitors documented on this plant. Catmint's open, accessible flower structure and abundant nectar bring a notably diverse range of insects for a non-native plant.</p>
+
+    <div class="observation-band">
+      <div class="observation-header">
+        <span class="observation-date">Recent observation — June 2026</span>
+        <span class="observation-note">This garden</span>
+      </div>
+      <div class="observation-list">
+        <div class="obs-row">
+          <span class="obs-icon">🪰</span>
+          <div class="obs-body">
+            <span class="obs-name">Hover Fly</span>
+            <span class="obs-detail">Family Syrphidae — bee-mimicking flies that are effective pollinators; larvae of many species feed on aphids, making them beneficial predators as well as pollinators</span>
+          </div>
+        </div>
+        <div class="obs-row">
+          <span class="obs-icon">🐝</span>
+          <div class="obs-body">
+            <span class="obs-name">Bees (multiple)</span>
+            <span class="obs-detail">Catmint is a reliable bee plant — the open two-lipped Lamiaceae flowers are accessible to both small bees and bumblebees; consistent visitors from first bloom through fall</span>
+          </div>
+        </div>
+        <div class="obs-row">
+          <span class="obs-icon">🐞</span>
+          <div class="obs-body">
+            <span class="obs-name">Small Lady Beetles</span>
+            <span class="obs-detail">Family Coccinellidae — predatory beetles hunting aphids and small insects among the stems and flowers; their presence signals a complex, active food web in this planting</span>
+          </div>
+        </div>
+        <div class="obs-row">
+          <span class="obs-icon">🦋</span>
+          <div class="obs-body">
+            <span class="obs-name">Skipper Butterfly</span>
+            <span class="obs-detail">Family Hesperiidae — fast-flying, often overlooked butterflies that use catmint as a reliable nectar source; several Ohio skipper species visit Lamiaceae family flowers regularly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Commonly Reported Visitors</span><span class="insect-count-badge">nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebees</span>
+          <span class="insect-tag common">Honey Bees</span>
+          <span class="insect-tag common">Sweat Bees</span>
+          <span class="insect-tag">Small native bees</span>
+          <span class="insect-tag">Syrphid flies (hover flies)</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Cabbage Whites</span>
+          <span class="insect-tag">Various butterflies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Long Season of Bloom</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Fresh grey-green mounds emerge early; flower buds appear by mid-spring. One of the earlier garden perennials to come into bloom.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">First peak bloom — lavender-blue spikes at their densest, heavily visited by bees from morning through midday on warm days.</div></div>
+      <div class="tl-row active"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">Cut back by half after first flush for a tidy rebound; reblooms within 3–4 weeks with fresh foliage and a full second flush of flowers.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Second bloom peak through August and into September — coincides with monarch migration and the final bee foraging push before winter.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Bloom tapers; foliage remains soft grey-green until frost. Cut back in fall or leave for winter structure — either works.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Garden Notes</p>
+    <h2>Growing Well</h2>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun gives the best flowering and most compact form; tolerates part shade but may sprawl and flower less</td></tr>
+      <tr><td>Soil</td><td>Well-drained to dry; dislikes wet or heavy clay; lean soil actually improves form and flower production</td></tr>
+      <tr><td>Moisture</td><td>Drought-tolerant once established — one of its most useful qualities for dry, sunny spots</td></tr>
+      <tr><td>Deadheading</td><td>Shear by half after first bloom (early July) for a full second flush; skip deadheading to let it sprawl more naturally</td></tr>
+      <tr><td>Deer</td><td>Strongly resistant — the aromatic foliage is reliably ignored by deer and rabbits</td></tr>
+      <tr><td>Spread</td><td>Sterile hybrid — does not self-sow; spreads slowly as a clump and can be divided every 3–4 years</td></tr>
+      <tr><td>Winter</td><td>Hardy in Ohio; cut back in spring when new growth appears at the base</td></tr>
+    </table>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>Notes on This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Why Hover Flies Are Worth Noticing</h3>
+        <p>The hover fly observed on this plant looks like a small bee or wasp — the striped abdomen is a deliberate visual mimicry. But it is a fly, in the family Syrphidae, and its ecological role is double-sided in a way few insects match. As an adult it is a pollinator, visiting flowers for nectar and pollen. As a larva, depending on the species, it is either an aphid predator — one larva can consume hundreds of aphids in its development — or a decomposer working in leaf litter and soil.</p>
+        <p>Seeing a hover fly on a plant is a small sign that <strong>the garden is complex enough to support this relationship</strong>. They arrive where there is something to hunt or something to eat, and their presence tells you more about the garden's food web than the plant alone.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Mint Family and Bees</h3>
+        <p>Catmint belongs to the Lamiaceae — the mint family — one of the most bee-friendly plant families in the world. The characteristic two-lipped flower (one broad lower lip, two narrow upper lobes) functions almost as a landing platform designed for bees. The nectar is accessible, the pollen is abundant, and the flower's architecture directs a visiting bee into exactly the right position for pollination. Many of the most valuable garden plants for pollinators — salvias, lavender, monarda, mountain mint — are Lamiaceae members. Catmint's consistent visitor numbers reflect family-level architecture as much as any individual charm.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Nepetalactone — The Compound Cats and Insects Both Notice</h3>
+        <p>The aromatic quality of catmint foliage comes from nepetalactone, an iridoid compound found throughout the genus. It is the same compound that produces the well-known response in cats. Less well-known is that nepetalactone also has insect-repellent properties — it is more effective than DEET against certain insects — while simultaneously attracting others. The leaf chemistry that deters deer and repels some insects also signals bees and certain flies that this is a productive foraging plant. The same molecule plays different roles depending on who encounters it.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our garden.<br/>This plant is not native to Ohio — it is included here for its<br/>documented value to visiting wildlife.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Nepeta × faassenii · Non-Native Garden Perennial · Mediterranean origin</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
