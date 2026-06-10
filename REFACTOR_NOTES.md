@@ -110,3 +110,11 @@ Pages updated:
 - Added a shared top return navigation component for wildlife profile pages.
 - Wildlife profiles now include links back to Home, the Wildlife Directory, and the Plant Directory.
 - Styling lives in `/css/base.css` under `.site-return-nav`.
+
+
+## Plant page consistency update
+
+- Standardized plant profile plate eyebrow labels to `Botanical Plate`.
+- Updated Serviceberry, False Sunflower, and Black-eyed Susan to use the shared botanical-plate placeholder frame pattern.
+- Removed duplicate inline scroll-reveal scripts from those three newer plant pages so they rely on `../js/plant-profile.js`.
+- No page visual redesigns were made.

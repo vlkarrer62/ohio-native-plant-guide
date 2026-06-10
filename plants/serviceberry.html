@@ -217,14 +217,22 @@
 
   <!-- FIELD GUIDE PLATE -->
   <section class="section visible">
-    <p class="eyebrow">Field Guide Plate</p>
+    <p class="eyebrow">Botanical Plate</p>
     <h2>Serviceberry</h2>
-    <figure class="botanical-plate">
-      <img
-        src="../images/serviceberry-plate.png"
-        alt="Botanical illustration of Allegheny Serviceberry"
-        style="width:100%; height:auto; display:block; border-radius:4px;">
-      <figcaption>Amelanchier laevis · Field Guide Botanical Plate</figcaption>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/serviceberry-plate.png"
+          alt="Botanical field-plate illustration of Allegheny Serviceberry"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/serviceberry-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Amelanchier laevis · Botanical field plate</figcaption>
     </figure>
   </section>
 
@@ -411,15 +419,6 @@
     <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
     <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Amelanchier laevis · Native Tree · Native to Ohio</p>
   </footer>
-
-  <script>
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.06 }
-    );
-    sections.forEach(s => observer.observe(s));
-  </script>
   <script src="../js/plant-profile.js"></script>
 </body>
 </html>
