@@ -79,3 +79,34 @@ Each individual plant profile now loads the shared behavior with:
 ```
 
 Known intentional open item: `nodding-onion.html` is still referenced in `plants.json`, but the page has not been created yet. Once that file exists, companion links to Nodding Onion should start working automatically.
+
+
+## Botanical plate placeholders
+
+Added placeholder botanical plate sections to plant pages that did not yet have a plate. Each placeholder looks for `images/[plant-page-slug]-plate.png`; adding an image with that exact filename will make it appear automatically.
+
+Pages updated:
+- `bur-oak.html`
+- `butterfly-weed.html`
+- `cardinal-flower.html`
+- `catmint.html`
+- `coreopsis.html`
+- `fox-sedge.html`
+- `honey-locust.html`
+- `joe-pye-weed.html`
+- `liatris.html`
+- `little-bluestem.html`
+- `mountain-mint.html`
+- `pennsylvania-sedge.html`
+- `prairie-dropseed.html`
+- `red-buckeye.html`
+- `switchgrass.html`
+- `white-oak.html`
+- `wild-bergamot.html`
+- `witch-hazel.html`
+
+
+## Wildlife navigation update
+- Added a shared top return navigation component for wildlife profile pages.
+- Wildlife profiles now include links back to Home, the Wildlife Directory, and the Plant Directory.
+- Styling lives in `/css/base.css` under `.site-return-nav`.

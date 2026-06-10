@@ -1,8 +1,0 @@
-/* Ohio Native Plant Guide
-   Shared CSS architecture scaffold.
-   Page-specific CSS has been extracted into /css/pages/ to preserve the existing visual design.
-   Move repeated selectors from those files into base.css and component files gradually. */
-
-/* Safe global defaults only */
-html { scroll-behavior: smooth; }
-img { max-width: 100%; }

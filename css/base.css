@@ -6,3 +6,49 @@
 /* Safe global defaults only */
 html { scroll-behavior: smooth; }
 img { max-width: 100%; }
+
+
+/* Shared return navigation for profile pages */
+.site-return-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: rgba(248, 244, 232, 0.92);
+  border-bottom: 1px solid var(--border, rgba(140,102,18,0.14));
+  backdrop-filter: blur(10px);
+}
+
+.site-return-nav a {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-dim, #4a3c18);
+  border: 1px solid var(--border, rgba(140,102,18,0.14));
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  background: var(--bg-card, rgba(255,255,255,0.55));
+}
+
+.site-return-nav a:hover,
+.site-return-nav a:focus-visible {
+  color: var(--heading, #1e1608);
+  border-color: var(--border-silver, rgba(168,126,24,0.28));
+}
+
+@media (max-width: 520px) {
+  .site-return-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-return-nav a {
+    white-space: nowrap;
+  }
+}
