@@ -132,6 +132,21 @@
       margin-bottom: 0.6rem;
       opacity: 0.9;
     }
+    .plant-links {
+  position: relative;
+  z-index: 10;
+}
+
+a.plant-link-row {
+  position: relative;
+  z-index: 11;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+a.plant-link-row * {
+  pointer-events: none;
+}
     .plant-link-list { display: flex; flex-direction: column; }
     a.plant-link-row {
       display: flex;
