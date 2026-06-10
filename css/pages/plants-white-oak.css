@@ -1,0 +1,582 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:           #f4f2ee;
+      --bg-warm:      #ece8e0;
+      --bg-card:      #f9f8f5;
+      --bg-bark:      #ebe6de;
+      --border:       rgba(100,90,70,0.16);
+      --border-b:     rgba(130,110,80,0.28);
+      --bark:         #786048;
+      --bark-soft:    #9a7858;
+      --bark-pale:    #c4a880;
+      --bark-faint:   #e8dece;
+      --olive:        #4a5830;
+      --olive-soft:   #607848;
+      --forest:       #384828;
+      --russet:       #8a5030;
+      --russet-soft:  #a86840;
+      --text-dim:     #8a7860;
+      --text-faint:   #b0a080;
+      --ink:          #181410;
+      --heading:      #9a7848;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-dim);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 400;
+      line-height: 1.85;
+      font-size: 18px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── PAGE NAVIGATION ───────────────────────── */
+.page-nav {
+  position: fixed;
+  top: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: min(640px, calc(100% - 1.5rem));
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+
+.page-nav a {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(250, 249, 246, 0.78);
+  border: 1px solid rgba(80, 70, 120, 0.18);
+  color: var(--text-dim, #3e3850);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(30, 28, 40, 0.08);
+}
+
+.page-nav a:hover {
+  color: var(--accent, var(--violet, var(--silver, var(--herb, #5a4898))));
+  border-color: var(--accent, var(--violet, var(--silver, var(--herb, #5a4898))));
+  background: rgba(250, 249, 246, 0.94);
+}
+
+@media (max-width: 520px) {
+  .page-nav {
+    top: 0.65rem;
+    width: calc(100% - 1rem);
+  }
+
+  .page-nav a {
+    font-size: 0.5rem;
+    padding: 0.36rem 0.58rem;
+  }
+}
+
+    /* ── HERO ─────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--bg-warm);
+    }
+
+    /* Old forest light — cool grey-green, late afternoon,
+       filtered through bark and canopy */
+    .hero-light {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 55% at 58% 20%, rgba(160,150,120,0.18) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 55% at 10% 65%, rgba(80,100,60,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse 65% 45% at 90% 72%, rgba(140,120,80,0.12) 0%, transparent 55%),
+        linear-gradient(174deg, #e8e2d4 0%, #ece6d8 45%, #e6e0d0 100%);
+    }
+
+    .hero-illustration {
+      position: absolute;
+      top: 0;
+      right: -10px;
+      width: 62%;
+      height: 100%;
+      opacity: 0.84;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 3rem 2rem 2.6rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin-bottom: 1.2rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .badge::before {
+      content: '';
+      width: 18px;
+      height: 1px;
+      background: var(--bark);
+      opacity: 0.5;
+    }
+
+    .hero h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 500;
+      font-size: clamp(2.4rem, 8vw, 3.6rem);
+      line-height: 1.0;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+      animation: rise 0.7s 0.1s ease both;
+    }
+
+    .hero h1 em {
+      display: block;
+      font-style: italic;
+      color: var(--bark-soft);
+      font-weight: 400;
+    }
+
+    .hero-latin {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--text-faint);
+      margin-top: 0.5rem;
+      animation: rise 0.7s 0.2s ease both;
+    }
+
+    .hero-tagline {
+      margin-top: 1rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      max-width: 360px;
+      line-height: 1.65;
+      animation: rise 0.7s 0.3s ease both;
+    }
+
+    .longevity-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+      background: rgba(120,96,72,0.1);
+      border: 1px solid rgba(120,96,72,0.24);
+      border-radius: 3px;
+      padding: 0.32em 0.9em;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bark);
+      animation: rise 0.7s 0.4s ease both;
+    }
+
+    /* ── QUICK FACTS BAND ─────────────────────── */
+    .facts-band {
+      background: var(--ink);
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .fact-item { display: flex; flex-direction: column; gap: 0.2rem; }
+
+    .fact-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(196,168,128,0.52);
+    }
+
+    .fact-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.92rem;
+      font-weight: 300;
+      color: #ddd0b8;
+      line-height: 1.4;
+    }
+
+    /* ── SECTIONS ─────────────────────────────── */
+    .section {
+      padding: 2.6rem 2rem;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .section.visible { opacity: 1; transform: translateY(0); }
+    .section:last-of-type { border-bottom: none; }
+
+    .eyebrow {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--bark);
+      margin-bottom: 0.5rem;
+      opacity: 0.85;
+    }
+
+    .section h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: clamp(1.5rem, 4.5vw, 2rem);
+      font-weight: 500;
+      color: var(--heading);
+      margin-bottom: 1.1rem;
+      line-height: 1.2;
+    }
+
+    .section p {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-dim);
+      margin-bottom: 1rem;
+      line-height: 1.88;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--bark); font-weight: 500; }
+
+    /* Pill list */
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.8rem;
+    }
+
+    .pill {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      padding: 0.28em 0.85em;
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      color: var(--text-faint);
+      background: var(--bg-warm);
+    }
+
+    /* ── LONGEVITY CALLOUT — the anchor block ─── */
+    /* Dark, weighty — the most serious callout in the guide */
+    .longevity-callout {
+      background: var(--ink);
+      border-radius: 6px;
+      padding: 2.2rem 2rem;
+      margin: 1.4rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .longevity-callout::before {
+      content: '500';
+      position: absolute;
+      top: -1rem;
+      right: 0.5rem;
+      font-family: 'EB Garamond', serif;
+      font-size: 9rem;
+      font-weight: 700;
+      color: rgba(196,168,128,0.06);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .longevity-callout-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--bark-pale);
+      margin-bottom: 0.8rem;
+      opacity: 0.85;
+    }
+
+    .longevity-callout p {
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+      font-size: 1.08rem;
+      color: #ccc0a0;
+      margin: 0 !important;
+      line-height: 1.8;
+      position: relative;
+    }
+
+    .longevity-callout strong { color: #e0c888 !important; font-style: normal; }
+
+    /* ── CATERPILLAR STAT ─────────────────────── */
+    /* A single striking number block */
+    .stat-block {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: center;
+      background: var(--bg-bark);
+      border: 1px solid var(--border-b);
+      border-radius: 4px;
+      padding: 1.4rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .stat-number {
+      font-family: 'EB Garamond', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--bark);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-number span {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-family: 'DM Mono', monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-top: 0.2rem;
+    }
+
+    .stat-text {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.97rem;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* ── SEASONAL TIMELINE ────────────────────── */
+    .timeline { margin-top: 1.2rem; display: flex; flex-direction: column; }
+
+    .tl-row {
+      display: flex;
+      align-items: stretch;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tl-row:last-child { border-bottom: none; }
+
+    .tl-season {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      width: 88px;
+      flex-shrink: 0;
+      padding: 0.85rem 0.8rem 0.85rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .tl-bar {
+      width: 3px;
+      background: var(--border);
+      flex-shrink: 0;
+      margin: 0.4rem 1rem 0.4rem 0;
+      border-radius: 2px;
+    }
+
+    .tl-row.peak    .tl-bar { background: var(--russet); }
+    .tl-row.foliage .tl-bar { background: var(--olive-soft); }
+    .tl-row.acorn   .tl-bar { background: var(--bark-soft); }
+
+    .tl-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.93rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      padding: 0.85rem 0;
+      line-height: 1.55;
+    }
+
+    /* ── CARE TABLE ───────────────────────────── */
+    .care-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .care-table tr { border-bottom: 1px solid var(--border); }
+    .care-table tr:last-child { border-bottom: none; }
+
+    .care-table td {
+      padding: 0.75rem 0.4rem;
+      vertical-align: top;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .care-table td:first-child {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bark);
+      width: 30%;
+      padding-top: 0.9rem;
+      opacity: 0.85;
+    }
+
+    .care-table td:last-child {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text-dim);
+      line-height: 1.55;
+    }
+
+    /* ── COMPANION PLANTS ─────────────────────── */
+    .companion-group { margin-top: 1.4rem; }
+
+    .companion-group-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--olive-soft);
+      margin-bottom: 0.6rem;
+      opacity: 0.85;
+    }
+
+    .companion-list { display: flex; flex-direction: column; margin-bottom: 1.4rem; }
+
+    .companion-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .companion-row:last-child { border-bottom: none; }
+
+    .companion-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--bark-pale);
+      flex-shrink: 0;
+      margin-top: 0.55em;
+    }
+
+    .companion-common {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.97rem;
+      font-weight: 400;
+      color: var(--heading);
+    }
+
+    .companion-latin {
+      font-style: italic;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.88rem;
+      color: var(--text-faint);
+    }
+
+    /* ── STORY CARDS ──────────────────────────── */
+    .fact-feature h2 { margin-bottom: 1.8rem; }
+
+    .story-card {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .story-card:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+    .story-card--highlight {
+      background: var(--bg-bark);
+      border: 1px solid var(--border-b);
+      border-top: 3px solid var(--bark-soft);
+      border-radius: 0 0 5px 5px;
+      padding: 1.4rem;
+      margin-left: -0.2rem;
+      margin-right: -0.2rem;
+    }
+
+    .story-number {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      color: rgba(120,96,72,0.25);
+      flex-shrink: 0;
+      padding-top: 0.25rem;
+      min-width: 2rem;
+    }
+
+    .story-card--highlight .story-number { color: var(--bark); opacity: 0.8; }
+
+    .story-title {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.12rem;
+      font-weight: 500;
+      color: var(--heading);
+      margin-bottom: 0.7rem;
+      line-height: 1.3;
+    }
+
+    .story-body p {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1rem;
+      color: var(--text-dim);
+      line-height: 1.88;
+      margin-bottom: 0.85rem;
+    }
+
+    .story-body p:last-child { margin-bottom: 0; }
+    .story-body strong { color: var(--bark-soft); font-weight: 500; }
+    .story-body em { color: var(--text-faint); font-style: italic; }
+
+    /* ── FOOTER ───────────────────────────────── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--border);
+      padding: 2.4rem 2rem;
+      text-align: center;
+    }
+
+    footer p {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.63rem;
+      letter-spacing: 0.08em;
+      color: rgba(196,168,128,0.42);
+      line-height: 2;
+    }
+
+    footer strong { color: rgba(196,168,128,0.65); font-weight: 500; }
+
+    /* ── ANIMATIONS ───────────────────────────── */
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }

@@ -48,6 +48,9 @@
       "sunny-meadow",
       "rain-garden",
       "woodland-edge"
+    ],
+    "aliases": [
+      "Zizia aurea"
     ]
   },
   {
@@ -97,6 +100,9 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Eryngium yuccifolium"
     ]
   },
   {
@@ -148,6 +154,9 @@
       "sunny-meadow",
       "rain-garden",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Panicum virgatum"
     ]
   },
   {
@@ -195,6 +204,9 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Eragrostis spectabilis"
     ]
   },
   {
@@ -245,16 +257,22 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "rain-garden"
+    ],
+    "aliases": [
+      "Pycnanthemum",
+      "Pycnanthemum spp."
     ]
   },
   {
-  "commonName": "Ohio Native Asters",
-  "aliases": [
-    "New England Aster",
-    "New England Asters",
-    "Asters",
-    "Aster"
-  ],
+    "commonName": "Ohio Native Asters",
+    "aliases": [
+      "New England Aster",
+      "New England Asters",
+      "Asters",
+      "Aster",
+      "White Wood Aster",
+      "Native Asters"
+    ],
     "scientificName": "Symphyotrichum spp.",
     "type": "Native Perennial",
     "category": "wildflowers",
@@ -350,6 +368,9 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Sporobolus heterolepis"
     ]
   },
   {
@@ -399,6 +420,9 @@
       "sunny-meadow",
       "woodland-edge",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Allium cernuum"
     ]
   },
   {
@@ -448,6 +472,9 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Schizachyrium scoparium"
     ]
   },
   {
@@ -501,6 +528,11 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "sunny-border"
+    ],
+    "aliases": [
+      "Coneflower",
+      "Echinacea",
+      "Echinacea purpurea"
     ]
   },
   {
@@ -547,6 +579,9 @@
     ],
     "relatedHabitatSlugs": [
       "woodland-edge"
+    ],
+    "aliases": [
+      "Aesculus pavia"
     ]
   },
   {
@@ -595,6 +630,9 @@
       "oak-savanna",
       "woodland-edge",
       "woodland-understory"
+    ],
+    "aliases": [
+      "Quercus alba"
     ]
   },
   {
@@ -644,6 +682,9 @@
     "relatedHabitatSlugs": [
       "woodland-edge",
       "stream-edge"
+    ],
+    "aliases": [
+      "Hamamelis virginiana"
     ]
   },
   {
@@ -690,6 +731,9 @@
     "relatedHabitatSlugs": [
       "oak-savanna",
       "sunny-meadow"
+    ],
+    "aliases": [
+      "Quercus macrocarpa"
     ]
   },
   {
@@ -741,6 +785,10 @@
       "rain-garden",
       "wet-edge",
       "pond-edge"
+    ],
+    "aliases": [
+      "Rose Milkweed",
+      "Asclepias incarnata"
     ]
   },
   {
@@ -792,6 +840,9 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Monarda fistulosa"
     ]
   },
   {
@@ -844,6 +895,9 @@
       "rain-garden",
       "wet-edge",
       "pond-edge"
+    ],
+    "aliases": [
+      "Carex vulpinoidea"
     ]
   },
   {
@@ -893,6 +947,9 @@
     "relatedHabitatSlugs": [
       "woodland-understory",
       "oak-savanna"
+    ],
+    "aliases": [
+      "Carex pensylvanica"
     ]
   },
   {
@@ -940,6 +997,10 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Butterfly Milkweed",
+      "Asclepias tuberosa"
     ]
   },
   {
@@ -991,6 +1052,10 @@
       "rain-garden",
       "wet-edge",
       "sunny-meadow"
+    ],
+    "aliases": [
+      "Joe-Pye Weed",
+      "Joe Pye"
     ]
   },
   {
@@ -1043,6 +1108,10 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "dry-prairie"
+    ],
+    "aliases": [
+      "Liatris",
+      "Liatris spp."
     ]
   },
   {
@@ -1092,6 +1161,9 @@
       "street-tree",
       "woodland-edge",
       "floodplain"
+    ],
+    "aliases": [
+      "Gleditsia triacanthos"
     ]
   },
   {
@@ -1144,6 +1216,11 @@
       "sunny-meadow",
       "woodland-edge",
       "sunny-border"
+    ],
+    "aliases": [
+      "Penstemon",
+      "Smooth Penstemon",
+      "Penstemon digitalis"
     ]
   },
   {
@@ -1195,6 +1272,9 @@
       "wet-edge",
       "pond-edge",
       "stream-edge"
+    ],
+    "aliases": [
+      "Lobelia cardinalis"
     ]
   },
   {
@@ -1249,6 +1329,9 @@
       "sunny-meadow",
       "dry-prairie",
       "sunny-border"
+    ],
+    "aliases": [
+      "Coreopsis"
     ]
   },
   {
@@ -1308,15 +1391,20 @@
       "wet-edge",
       "rain-garden",
       "stream-edge"
+    ],
+    "aliases": [
+      "Vernonia",
+      "Vernonia spp."
     ]
   },
   {
-  "commonName": "Goldenrod",
-  "aliases": [
-    "Goldenrods",
-    "Solidago"
-  ],
-  "scientificName": "Solidago spp.",
+    "commonName": "Goldenrod",
+    "aliases": [
+      "Goldenrods",
+      "Solidago",
+      "Tall Goldenrod"
+    ],
+    "scientificName": "Solidago spp.",
     "slug": "goldenrod",
     "type": "Native Perennial",
     "category": "wildflowers",
@@ -1375,85 +1463,186 @@
     ]
   },
   {
-  "commonName": "False Sunflower",
-  "scientificName": "Heliopsis helianthoides",
-  "slug": "false-sunflower",
-  "type": "Summer Wildflower",
-  "category": "wildflowers",
-  "bloom": "Golden daisy-like heads, June to September",
-  "season": "Summer · Fall",
-  "sun": "Full sun to part shade",
-  "moisture": "Dry to medium",
-  "height": "3–5 feet",
-  "description": "A long-blooming golden composite of prairies and open ground, with ray florets that set seed and stay attached as the head ripens.",
-  "url": "false-sunflower.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#c8941e",
-  "accentTo": "#8a6418",
-  "svgIcon": "flower",
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Dry", "Medium"],
-  "bloomSeasonTags": ["Summer", "Late Summer", "Fall"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Seed Source"],
-  "gardenRole": ["Structural Plant", "Matrix Plant"],
-  "relatedWildlifeSlugs": ["carpenter-bee"],
-  "relatedPlantSlugs": ["purple-coneflower", "wild-bergamot", "butterfly-weed", "coreopsis", "goldenrod", "little-bluestem"],
-  "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
+    "commonName": "False Sunflower",
+    "scientificName": "Heliopsis helianthoides",
+    "slug": "false-sunflower",
+    "type": "Summer Wildflower",
+    "category": "wildflowers",
+    "bloom": "Golden daisy-like heads, June to September",
+    "season": "Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Dry to medium",
+    "height": "3–5 feet",
+    "description": "A long-blooming golden composite of prairies and open ground, with ray florets that set seed and stay attached as the head ripens.",
+    "url": "false-sunflower.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#c8941e",
+    "accentTo": "#8a6418",
+    "svgIcon": "flower",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Summer",
+      "Late Summer",
+      "Fall"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Matrix Plant"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "purple-coneflower",
+      "wild-bergamot",
+      "butterfly-weed",
+      "coreopsis",
+      "goldenrod",
+      "little-bluestem"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "dry-prairie",
+      "sunny-border"
+    ],
+    "aliases": [
+      "Heliopsis helianthoides"
+    ]
   },
   {
-  "commonName": "Serviceberry",
-  "scientificName": "Amelanchier laevis",
-  "slug": "serviceberry",
-  "type": "Spring-Flowering Tree",
-  "category": "trees",
-  "bloom": "Drooping clusters of white flowers, early spring",
-  "season": "Spring · Summer · Fall",
-  "sun": "Full sun to part shade",
-  "moisture": "Medium",
-  "height": "15–25 feet (to 40)",
-  "description": "A four-season small tree: among the first to bloom in spring, edible June fruit, orange-red fall color, and smooth silver-grey bark.",
-  "url": "serviceberry.html",
-  "tagClass": "tag-tree",
-  "accentFrom": "#b47888",
-  "accentTo": "#5e4452",
-  "svgIcon": "tree",
-  "plantType": "Tree",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Medium", "Moist"],
-  "bloomSeasonTags": ["Spring"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant", "Seed Source"],
-  "gardenRole": ["Structural Plant", "Edge Plant"],
-  "relatedWildlifeSlugs": ["carpenter-bee"],
-  "relatedPlantSlugs": ["witch-hazel", "red-buckeye", "white-oak", "pennsylvania-sedge", "penstemon", "nodding-onion", "golden-alexanders"],
-  "relatedHabitatSlugs": ["woodland-edge", "woodland-understory", "oak-savanna"]
+    "commonName": "Serviceberry",
+    "scientificName": "Amelanchier laevis",
+    "slug": "serviceberry",
+    "type": "Spring-Flowering Tree",
+    "category": "trees",
+    "bloom": "Drooping clusters of white flowers, early spring",
+    "season": "Spring · Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium",
+    "height": "15–25 feet (to 40)",
+    "description": "A four-season small tree: among the first to bloom in spring, edible June fruit, orange-red fall color, and smooth silver-grey bark.",
+    "url": "serviceberry.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#b47888",
+    "accentTo": "#5e4452",
+    "svgIcon": "tree",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "witch-hazel",
+      "red-buckeye",
+      "white-oak",
+      "pennsylvania-sedge",
+      "penstemon",
+      "nodding-onion",
+      "golden-alexanders"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "woodland-understory",
+      "oak-savanna"
+    ],
+    "aliases": [
+      "Amelanchier",
+      "Amelanchier spp."
+    ]
   },
   {
-  "commonName": "Black-eyed Susan",
-  "scientificName": "Rudbeckia hirta",
-  "slug": "black-eyed-susan",
-  "type": "Summer Wildflower",
-  "category": "wildflowers",
-  "bloom": "Golden rays around a dark central cone, June to October",
-  "season": "Summer · Fall",
-  "sun": "Full sun",
-  "moisture": "Dry to medium",
-  "height": "1–3 feet",
-  "description": "A fast-establishing golden composite with a dark central cone — short-lived but freely reseeding, often first to bloom in a new planting.",
-  "url": "black-eyed-susan.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#e6b82e",
-  "accentTo": "#3a2410",
-  "svgIcon": "flower",
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun"],
-  "moistureTags": ["Dry", "Medium"],
-  "bloomSeasonTags": ["Summer", "Late Summer", "Fall"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant", "Seed Source"],
-  "gardenRole": ["Matrix Plant", "Filler"],
-  "relatedWildlifeSlugs": ["carpenter-bee"],
-  "relatedPlantSlugs": ["purple-coneflower", "coreopsis", "wild-bergamot", "liatris", "goldenrod", "aster", "little-bluestem"],
-  "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
-}
-
+    "commonName": "Black-eyed Susan",
+    "scientificName": "Rudbeckia hirta",
+    "slug": "black-eyed-susan",
+    "type": "Summer Wildflower",
+    "category": "wildflowers",
+    "bloom": "Golden rays around a dark central cone, June to October",
+    "season": "Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "1–3 feet",
+    "description": "A fast-establishing golden composite with a dark central cone — short-lived but freely reseeding, often first to bloom in a new planting.",
+    "url": "black-eyed-susan.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#e6b82e",
+    "accentTo": "#3a2410",
+    "svgIcon": "flower",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Summer",
+      "Late Summer",
+      "Fall"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Matrix Plant",
+      "Filler"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "purple-coneflower",
+      "coreopsis",
+      "wild-bergamot",
+      "liatris",
+      "goldenrod",
+      "aster",
+      "little-bluestem"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "dry-prairie",
+      "sunny-border"
+    ],
+    "aliases": [
+      "Black Eyed Susan",
+      "Black-Eyed Susan"
+    ]
+  }
 ]
