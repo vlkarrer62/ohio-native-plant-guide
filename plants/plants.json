@@ -374,65 +374,6 @@
     ]
   },
   {
-    "commonName": "Nodding Onion",
-    "scientificName": "Allium cernuum",
-    "type": "Native Bulb",
-    "category": "wildflowers",
-    "bloom": "Blooms early to midsummer",
-    "season": "Spring · Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "12–18 inches",
-    "description": "A native bulb with a distinctive nodding habit — rose-pink pendant flower clusters on arching stems, deer-resistant, and well-suited to dry rocky soils and sunny woodland edges.",
-    "url": "nodding-onion.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#ede6f0",
-    "accentTo": "#e4d8ec",
-    "svgIcon": "nodding-onion",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring",
-      "Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant"
-    ],
-    "gardenRole": [
-      "Filler",
-      "Edge Plant"
-    ],
-    "slug": "nodding-onion",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "prairie-dropseed",
-      "purple-lovegrass",
-      "little-bluestem",
-      "golden-alexanders",
-      "penstemon",
-      "wild-bergamot"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "woodland-edge",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Allium cernuum",
-      "Nodding Onion",
-      "Nodding Wild Onion",
-      "Wild Nodding Onion"
-    ]
-  },
-  {
     "commonName": "Little Bluestem",
     "scientificName": "Schizachyrium scoparium",
     "type": "Warm-Season Grass",
@@ -1651,5 +1592,93 @@
       "Black Eyed Susan",
       "Black-Eyed Susan"
     ]
+  },
+    [
+  {
+    "commonName": "Nodding Onion",
+    "scientificName": "Allium cernuum",
+    "slug": "nodding-onion",
+    "type": "Summer Wildflower",
+    "category": "wildflowers",
+    "bloom": "Pink to lilac bells in nodding umbels",
+    "season": "Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Dry to medium",
+    "height": "12–18 in",
+    "description": "A clump-forming native onion with slender grey-green leaves and umbels of pink-lilac bells that nod from a bent stalk in mid- to late summer. Its onion-scented foliage is generally left alone by deer and rabbits.",
+    "url": "nodding-onion.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#8a76a8",
+    "accentTo": "#b3a7c4",
+    "svgIcon": "flower",
+    "native": true,
+    "aliases": ["Allium cernuum", "Nodding Wild Onion", "Nodding Onions", "Lady's Leek"],
+    "plantType": "Wildflower",
+    "lightTags": ["Full Sun", "Part Sun"],
+    "moistureTags": ["Dry", "Medium"],
+    "bloomSeasonTags": ["Summer", "Late Summer"],
+    "wildlifeRole": ["Nectar Plant", "Pollen Plant"],
+    "gardenRole": ["Edge Plant", "Filler"],
+    "relatedWildlifeSlugs": ["sweat-bee", "carpenter-bee", "hover-fly"],
+    "relatedPlantSlugs": ["little-bluestem", "prairie-dropseed", "butterfly-weed", "purple-coneflower", "rattlesnake-master", "mountain-mint"],
+    "relatedHabitatSlugs": ["dry-prairie", "sunny-meadow"]
+  },
+  {
+    "commonName": "Culver's Root",
+    "scientificName": "Veronicastrum virginicum",
+    "slug": "culvers-root",
+    "type": "Summer Wildflower",
+    "category": "wildflowers",
+    "bloom": "Slender white candelabra spikes",
+    "season": "Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium to moist",
+    "height": "3–6 ft",
+    "description": "A tall, architectural native with tiered whorls of leaves and a candelabra of slender white flower spikes in mid- to late summer. A strong bee plant that holds its upright form into winter.",
+    "url": "culvers-root.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#5f7a5a",
+    "accentTo": "#86a07d",
+    "svgIcon": "spike",
+    "native": true,
+    "aliases": ["Veronicastrum virginicum", "Culvers Root", "Blackroot", "Black Root", "Bowman's Root"],
+    "plantType": "Wildflower",
+    "lightTags": ["Full Sun", "Part Sun"],
+    "moistureTags": ["Medium", "Moist"],
+    "bloomSeasonTags": ["Summer", "Late Summer"],
+    "wildlifeRole": ["Nectar Plant", "Pollen Plant"],
+    "gardenRole": ["Structural Plant", "Rain Garden Plant"],
+    "relatedWildlifeSlugs": ["bumble-bee", "long-horned-bee"],
+    "relatedPlantSlugs": ["cardinal-flower", "ironweed", "goldenrod", "wild-bergamot", "black-eyed-susan", "mountain-mint"],
+    "relatedHabitatSlugs": ["rain-garden", "wet-edge", "sunny-meadow"]
+  },
+  {
+    "commonName": "Ohio Spiderwort",
+    "scientificName": "Tradescantia ohiensis",
+    "slug": "ohio-spiderwort",
+    "type": "Summer Wildflower",
+    "category": "wildflowers",
+    "bloom": "Violet-blue three-petaled flowers",
+    "season": "Spring · Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Dry to medium",
+    "height": "2–3 ft",
+    "description": "A tough, adaptable native with arching blue-green leaves and clusters of violet-blue, three-petaled flowers — each open for a single morning — from late spring through summer. A reliable early-day pollen source for bees.",
+    "url": "ohio-spiderwort.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#4d5aa0",
+    "accentTo": "#8d97db",
+    "svgIcon": "flower",
+    "native": true,
+    "aliases": ["Tradescantia ohiensis", "Smooth Spiderwort", "Bluejacket", "Spiderwort", "Ohio Spiderworts"],
+    "plantType": "Wildflower",
+    "lightTags": ["Full Sun", "Part Sun"],
+    "moistureTags": ["Dry", "Medium"],
+    "bloomSeasonTags": ["Spring", "Summer"],
+    "wildlifeRole": ["Pollen Plant"],
+    "gardenRole": ["Matrix Plant", "Edge Plant"],
+    "relatedWildlifeSlugs": ["bumble-bee", "long-horned-bee", "hover-fly"],
+    "relatedPlantSlugs": ["little-bluestem", "prairie-dropseed", "butterfly-weed", "purple-coneflower", "black-eyed-susan", "golden-alexanders", "wild-bergamot", "coreopsis"],
+    "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
   }
 ]
