@@ -248,7 +248,14 @@
     ]
   },
   {
-    "commonName": "Ohio Native Asters",
+    {
+  "commonName": "Ohio Native Asters",
+  "aliases": [
+    "New England Aster",
+    "New England Asters",
+    "Asters",
+    "Aster"
+  ],
     "scientificName": "Symphyotrichum spp.",
     "type": "Native Perennial",
     "category": "wildflowers",
@@ -1305,8 +1312,12 @@
     ]
   },
   {
-    "commonName": "Goldenrod",
-    "scientificName": "Solidago spp.",
+  "commonName": "Goldenrod",
+  "aliases": [
+    "Goldenrods",
+    "Solidago"
+  ],
+  "scientificName": "Solidago spp.",
     "slug": "goldenrod",
     "type": "Native Perennial",
     "category": "wildflowers",
