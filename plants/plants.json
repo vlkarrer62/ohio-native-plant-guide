@@ -413,8 +413,12 @@
     "slug": "nodding-onion",
     "relatedWildlifeSlugs": [],
     "relatedPlantSlugs": [
+      "prairie-dropseed",
+      "purple-lovegrass",
+      "little-bluestem",
       "golden-alexanders",
-      "penstemon"
+      "penstemon",
+      "wild-bergamot"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow",
@@ -422,7 +426,10 @@
       "dry-prairie"
     ],
     "aliases": [
-      "Allium cernuum"
+      "Allium cernuum",
+      "Nodding Onion",
+      "Nodding Wild Onion",
+      "Wild Nodding Onion"
     ]
   },
   {
