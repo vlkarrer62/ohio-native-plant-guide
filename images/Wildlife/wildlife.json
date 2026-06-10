@@ -1,0 +1,54 @@
+[
+  {
+    "commonName": "Eastern Carpenter Bee",
+    "scientificName": "Xylocopa virginica",
+    "slug": "carpenter-bee",
+    "type": "Native Bee",
+    "category": "pollinators",
+    "subcategory": "bees",
+    "wildlifeType": [
+      "Bee"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Buzz Pollinator",
+      "Food-Web Participant"
+    ],
+    "supportedBy": [
+      "Nectar",
+      "Pollen",
+      "Dead Wood",
+      "Hollow Stems"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "¾–1 inch",
+    "flightSeason": "April–September",
+    "nesting": "Excavated softwood tunnels",
+    "range": "Statewide",
+    "description": "Ohio's largest native bee — a wood-boring soloist that pollinates with its whole body through buzz pollination, visiting a wide range of flowers from spring through fall.",
+    "url": "carpenter-bee_1.html",
+    "tagClass": "tag-bee",
+    "accentFrom": "#e8d890",
+    "accentTo": "#d8c870",
+    "svgIcon": "carpenter-bee",
+    "relatedPlantSlugs": [
+      "wild-bergamot",
+      "mountain-mint",
+      "purple-coneflower",
+      "penstemon",
+      "coreopsis",
+      "liatris",
+      "golden-alexanders"
+    ],
+    "relatedWildlifeSlugs": [],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge"
+    ]
+  }
+]
