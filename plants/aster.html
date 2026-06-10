@@ -692,6 +692,20 @@
       transition: opacity 0.18s;
     }
     a.companion-link:hover { opacity: 1; }
+    
+    a.companion-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: currentColor;
+  opacity: 0.78;
+  transition: opacity 0.18s;
+}
+
+a.companion-link:hover {
+  opacity: 1;
+}
   </style>
 </head>
 <body>
@@ -1173,6 +1187,68 @@
       { threshold: 0.06 }
     );
     sections.forEach(s => observer.observe(s));
+    <script>
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.07 }
+  );
+  sections.forEach(s => observer.observe(s));
+
+  // ─────────────────────────────────────────────
+  // AUTO-LINK COMPANION PLANTS
+  // Looks at plants.json and turns matching companion names into links.
+  // Existing manually linked companions are left alone.
+  // ─────────────────────────────────────────────
+  async function autoLinkCompanionPlants() {
+    try {
+      const res = await fetch('plants.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const plants = await res.json();
+
+      const normalize = text =>
+        String(text || '')
+          .toLowerCase()
+          .replace(/&/g, 'and')
+          .replace(/[’']/g, '')
+          .replace(/[^a-z0-9]+/g, ' ')
+          .trim();
+
+      const plantMap = new Map();
+
+      plants.forEach(plant => {
+        if (!plant.url) return;
+
+        const names = [
+          plant.commonName,
+          plant.scientificName,
+          plant.displayName,
+          plant.shortName
+        ].filter(Boolean);
+
+        names.forEach(name => {
+          plantMap.set(normalize(name), plant.url);
+        });
+      });
+
+      document.querySelectorAll('.companion-common').forEach(el => {
+        if (el.querySelector('a')) return;
+
+        const name = el.textContent.trim();
+        const matchUrl = plantMap.get(normalize(name));
+
+        if (!matchUrl) return;
+
+        el.innerHTML = `<a href="${matchUrl}" class="companion-link">${name}</a>`;
+      });
+
+    } catch (err) {
+      console.warn('Companion auto-linking failed:', err);
+    }
+  }
+
+  autoLinkCompanionPlants();
   </script>
 </body>
 </html>
