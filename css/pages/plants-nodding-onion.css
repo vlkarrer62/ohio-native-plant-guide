@@ -55,13 +55,23 @@
 
 html { scroll-behavior: smooth; }
 
+html {
+  background: #e8e3dc;            /* muted parchment backdrop so the card floats */
+  min-height: 100%;
+}
+
 body {
-  margin: 0;
+  /* contained field-guide card — centered and constrained, like the other profiles */
+  max-width: 680px;
+  margin: 1.5rem auto;
   background: var(--bg);
   color: var(--text);
   font-family: var(--body);
   font-weight: 300;
   line-height: 1.7;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(42, 38, 51, 0.06), 0 18px 50px rgba(42, 38, 51, 0.10);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -111,36 +121,42 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 7.5rem 1.5rem 3.2rem;
+  padding: 3.6rem 1.6rem 2.4rem;
+  text-align: center;                 /* vertical, plate-style stack */
   background:
-    radial-gradient(120% 90% at 82% 18%, var(--bg-silver) 0%, rgba(236,231,240,0) 58%),
+    radial-gradient(120% 80% at 50% 6%, var(--bg-silver) 0%, rgba(236,231,240,0) 62%),
     linear-gradient(168deg, #f6f3ef 0%, var(--bg) 60%, var(--bg-warm) 100%);
   border-bottom: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;       /* match the card's top corners */
 }
 .hero-light {
   position: absolute;
-  top: -18%;
-  right: -6%;
-  width: 60%;
-  height: 90%;
-  background: radial-gradient(circle, rgba(168,148,196,0.20) 0%, rgba(168,148,196,0) 68%);
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(168,148,196,0.18) 0%, rgba(168,148,196,0) 68%);
   filter: blur(8px);
   pointer-events: none;
 }
 .hero-illustration {
-  position: absolute;
-  right: clamp(-1.5rem, 2vw, 2.5rem);
-  bottom: 0;
-  height: 100%;
-  max-height: 430px;
+  /* in-flow now (it precedes the text in the DOM) → sits centered above the title */
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto 1.1rem;
+  height: auto;
   width: auto;
+  max-height: 270px;
+  max-width: 210px;
   opacity: 0.96;
   pointer-events: none;
 }
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 640px;
+  max-width: 34rem;
   margin: 0 auto;
 }
 .badge {
@@ -184,7 +200,7 @@ body {
   max-width: 30rem;
   font-size: 1.02rem;
   color: var(--text-dim);
-  margin: 0 0 1.4rem;
+  margin: 0 auto 1.4rem;
 }
 .flagship-badge {
   display: inline-block;
@@ -498,10 +514,10 @@ body {
 
 /* ── FOOTER ───────────────────────── */
 footer {
-  max-width: 680px;
-  margin: 3.5rem auto 0;
+  margin: 3.5rem 0 0;
   padding: 2.8rem 1.5rem 3.5rem;
   border-top: 1px solid var(--border);
+  border-radius: 0 0 16px 16px;       /* match the card's bottom corners */
   text-align: center;
 }
 footer p {
@@ -518,12 +534,25 @@ footer strong { color: var(--silver); font-weight: 500; }
   .species-card.featured { grid-column: auto; }
 }
 @media (max-width: 600px) {
-  .hero { padding-top: 6.5rem; }
-  .hero-illustration { opacity: 0.32; }
+  .hero { padding: 3rem 1.3rem 2rem; }
+  .hero-illustration { max-height: 220px; max-width: 180px; }
   .hero-content { max-width: none; }
   .facts-band { grid-template-columns: repeat(2, 1fr); }
   .story-card { grid-template-columns: 1fr; gap: 0.4rem; }
   .story-number { font-size: 0.78rem; }
+}
+@media (max-width: 540px) {
+  /* card goes edge-to-edge on phones; backdrop matches the page */
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .hero { border-radius: 0; }
+  footer { border-radius: 0; }
 }
 @media (max-width: 380px) {
   .facts-band { grid-template-columns: 1fr; }
