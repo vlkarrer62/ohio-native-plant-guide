@@ -16,133 +16,140 @@
     <a href="index.html">Plant Directory</a>
   </nav>
 
-  <!-- HERO -->
+  <!-- ════ HERO ═══════════════════════════════ -->
   <header class="hero">
     <div class="hero-light"></div>
 
-    <!-- Nodding onion illustration: slender onion leaves, arching stems, pendant umbels -->
-    <svg class="hero-illustration" viewBox="0 0 320 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
-      <!-- basal leaves -->
-      <g stroke="#77835f" stroke-linecap="round" fill="none" opacity="0.9">
-        <path d="M156 438 C150 370 146 318 152 256" stroke-width="3"/>
-        <path d="M168 438 C174 366 176 305 168 246" stroke-width="2.6"/>
-        <path d="M142 438 C126 376 116 324 124 270" stroke-width="2.2"/>
-        <path d="M184 438 C202 372 210 320 202 266" stroke-width="2.2"/>
-        <path d="M128 438 C104 388 94 344 100 300" stroke-width="1.8" opacity="0.72"/>
-        <path d="M198 438 C224 390 236 348 232 304" stroke-width="1.8" opacity="0.72"/>
+    <!-- Allium cernuum illustration:
+         A clump of slender grey-green grassy leaves at the base;
+         leafless flowering stalks (scapes) that rise and bend sharply
+         near the top so the loose umbel of small bell-shaped flowers
+         hangs downward — the "nodding" habit. Pale pink-lilac bells on
+         thread-like pedicels; one tight, upright papery bud at right. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+
+      <!-- ── BASAL LEAVES — slender, grassy, grey-green ── -->
+      <g stroke="#7e8a72" fill="none" stroke-linecap="round" opacity="0.82">
+        <path d="M146 440 C120 360 102 280 92 206" stroke-width="3"/>
+        <path d="M148 440 C134 356 124 270 120 180" stroke-width="3"/>
+        <path d="M150 440 C150 350 150 256 150 170" stroke-width="3.2"/>
+        <path d="M152 440 C166 358 178 274 184 188" stroke-width="3"/>
+        <path d="M150 440 C176 364 196 286 210 214" stroke-width="2.8"/>
+        <path d="M149 440 C138 380 130 326 128 286" stroke-width="2.2" opacity="0.6"/>
+        <path d="M151 440 C162 384 172 332 178 294" stroke-width="2.2" opacity="0.6"/>
       </g>
 
-      <!-- arching flower stems -->
-      <g stroke="#6f7c58" stroke-linecap="round" fill="none">
-        <path d="M160 438 C158 350 164 270 188 210 C202 174 208 150 196 132" stroke-width="3"/>
-        <path d="M154 438 C148 354 140 286 132 232 C126 190 128 156 146 136" stroke-width="2.4" opacity="0.84"/>
-        <path d="M172 438 C178 362 194 302 224 254 C242 226 250 198 238 176" stroke-width="2" opacity="0.72"/>
+      <!-- ── SCAPE 1 (main) — rises, bends over, umbel nods ── -->
+      <path d="M150 440 C150 360 151 268 152 200 C152 178 154 162 168 154"
+            stroke="#76836c" stroke-width="2.6" stroke-linecap="round"/>
+
+      <!-- main umbel: thread-like pedicels fanning down from the bend node (170,156) -->
+      <g stroke="#8a9080" stroke-width="1" stroke-linecap="round" opacity="0.85">
+        <path d="M170 156 C160 162 152 172 150 180"/>
+        <path d="M170 156 C162 164 158 176 158 188"/>
+        <path d="M170 156 C167 166 166 180 167 192"/>
+        <path d="M170 156 C172 166 174 182 175 192"/>
+        <path d="M170 156 C178 162 184 176 187 184"/>
+        <path d="M170 156 C176 160 182 168 188 174"/>
+        <path d="M170 156 C158 160 150 166 145 172"/>
+        <path d="M170 156 C170 164 170 174 170 182"/>
       </g>
 
-      <!-- pendant umbel left -->
-      <g transform="translate(146 136)">
-        <path d="M0 0 C-8 22 -20 36 -38 48" stroke="#6f7c58" stroke-width="1.4" stroke-linecap="round" fill="none"/>
-        <g stroke="#a86a84" stroke-width="1" stroke-linecap="round" opacity="0.8">
-          <path d="M0 0 L-18 28"/><path d="M0 0 L-28 22"/><path d="M0 0 L-10 36"/><path d="M0 0 L-34 36"/><path d="M0 0 L-22 42"/>
-        </g>
-        <g fill="#c98aa6" stroke="#8d5870" stroke-width="0.55">
-          <circle cx="-18" cy="28" r="4.8"/><circle cx="-28" cy="22" r="4.3"/><circle cx="-10" cy="36" r="4.6"/><circle cx="-34" cy="36" r="4.5"/><circle cx="-22" cy="42" r="4.8"/>
-          <circle cx="-42" cy="45" r="3.6" fill="#ddb3c6"/><circle cx="-15" cy="48" r="3.4" fill="#ddb3c6"/>
-        </g>
-      </g>
-
-      <!-- main pendant umbel -->
-      <g transform="translate(196 132)">
-        <path d="M0 0 C10 26 4 52 -20 72" stroke="#6f7c58" stroke-width="1.6" stroke-linecap="round" fill="none"/>
-        <g stroke="#9d617c" stroke-width="1.1" stroke-linecap="round" opacity="0.82">
-          <path d="M0 0 L-16 38"/><path d="M0 0 L4 42"/><path d="M0 0 L-30 34"/><path d="M0 0 L-8 54"/><path d="M0 0 L-42 48"/><path d="M0 0 L12 56"/><path d="M0 0 L-26 60"/>
-        </g>
-        <g fill="#c783a1" stroke="#89546f" stroke-width="0.6">
-          <circle cx="-16" cy="38" r="5.5"/><circle cx="4" cy="42" r="5.1"/><circle cx="-30" cy="34" r="5.3"/><circle cx="-8" cy="54" r="5.8"/><circle cx="-42" cy="48" r="4.8"/><circle cx="12" cy="56" r="4.7"/><circle cx="-26" cy="60" r="5.2"/>
-          <circle cx="-50" cy="58" r="3.8" fill="#e1b5c8"/><circle cx="-2" cy="68" r="3.8" fill="#e1b5c8"/>
-        </g>
-        <g fill="#f0d6df" opacity="0.65">
-          <circle cx="-18" cy="36" r="1.2"/><circle cx="2" cy="40" r="1.1"/><circle cx="-8" cy="52" r="1.2"/>
+      <!-- main umbel bells — pale pink-lilac, hanging -->
+      <g>
+        <!-- bell helper shape repeated at each pedicel tip -->
+        <path d="M147 175 Q146 182 150 185 Q154 182 153 175 Q150 173 147 175 Z" fill="#c2a8d2" opacity="0.92"/>
+        <path d="M155 183 Q154 191 158 194 Q162 191 161 183 Q158 181 155 183 Z" fill="#bca0cd" opacity="0.9"/>
+        <path d="M164 187 Q163 196 167 199 Q171 196 170 187 Q167 185 164 187 Z" fill="#c5acd6" opacity="0.92"/>
+        <path d="M172 187 Q171 196 175 199 Q179 196 178 187 Q175 185 172 187 Z" fill="#b89cca" opacity="0.9"/>
+        <path d="M184 179 Q183 187 187 190 Q191 187 190 179 Q187 177 184 179 Z" fill="#c2a8d2" opacity="0.9"/>
+        <path d="M185 169 Q184 177 188 180 Q192 177 191 169 Q188 167 185 169 Z" fill="#cbb4d9" opacity="0.88"/>
+        <path d="M142 167 Q141 175 145 178 Q149 175 148 167 Q145 165 142 167 Z" fill="#cbb4d9" opacity="0.88"/>
+        <path d="M167 177 Q166 185 170 188 Q174 185 173 177 Q170 175 167 177 Z" fill="#b596c9" opacity="0.9"/>
+        <!-- tiny pale mouths / stamen hints -->
+        <g fill="#9a7fb4" opacity="0.55">
+          <circle cx="150" cy="185" r="0.9"/><circle cx="158" cy="194" r="0.9"/>
+          <circle cx="167" cy="199" r="0.9"/><circle cx="175" cy="199" r="0.9"/>
+          <circle cx="187" cy="190" r="0.9"/><circle cx="170" cy="188" r="0.9"/>
         </g>
       </g>
 
-      <!-- right fading umbel -->
-      <g transform="translate(238 176)" opacity="0.62">
-        <path d="M0 0 C12 22 6 44 -14 62" stroke="#6f7c58" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-        <g stroke="#a86a84" stroke-width="0.9" stroke-linecap="round">
-          <path d="M0 0 L-8 32"/><path d="M0 0 L10 34"/><path d="M0 0 L-24 30"/><path d="M0 0 L-16 48"/>
-        </g>
-        <g fill="#d19ab2" stroke="#9b657c" stroke-width="0.45">
-          <circle cx="-8" cy="32" r="4"/><circle cx="10" cy="34" r="3.8"/><circle cx="-24" cy="30" r="3.9"/><circle cx="-16" cy="48" r="4.1"/>
-        </g>
+      <!-- ── SCAPE 2 (shorter, left) — also nodding ── -->
+      <path d="M150 440 C140 372 130 300 124 252 C122 232 120 218 110 212"
+            stroke="#76836c" stroke-width="2.2" stroke-linecap="round" opacity="0.92"/>
+      <g stroke="#8a9080" stroke-width="0.9" stroke-linecap="round" opacity="0.8">
+        <path d="M109 213 C104 219 101 228 101 234"/>
+        <path d="M109 213 C107 221 107 230 108 238"/>
+        <path d="M109 213 C112 220 115 229 117 235"/>
+        <path d="M109 213 C115 217 120 223 123 228"/>
       </g>
+      <g opacity="0.86">
+        <path d="M98 230 Q97 237 101 240 Q105 237 104 230 Q101 228 98 230 Z" fill="#c5acd6"/>
+        <path d="M105 234 Q104 241 108 244 Q112 241 111 234 Q108 232 105 234 Z" fill="#bca0cd"/>
+        <path d="M114 232 Q113 239 117 242 Q121 239 120 232 Q117 230 114 232 Z" fill="#c2a8d2"/>
+        <path d="M120 225 Q119 232 123 235 Q127 232 126 225 Q123 223 120 225 Z" fill="#cbb4d9"/>
+      </g>
+
+      <!-- ── SCAPE 3 — emerging, upright papery bud (spathe still closed) ── -->
+      <path d="M151 440 C158 376 168 312 178 268 C182 250 186 238 192 230"
+            stroke="#7e8a72" stroke-width="1.8" stroke-linecap="round" opacity="0.7"/>
+      <g opacity="0.8">
+        <path d="M192 230 C188 222 188 212 192 206 C196 212 196 222 192 230 Z" fill="#aeb89e"/>
+        <path d="M192 206 C191 201 192 197 194 196 C196 198 195 203 192 206 Z" fill="#c4b8a0" opacity="0.85"/>
+        <!-- a hint of lilac showing at the splitting tip -->
+        <ellipse cx="192" cy="214" rx="2.4" ry="3.4" fill="#c2a8d2" opacity="0.55"/>
+      </g>
+
     </svg>
 
     <div class="hero-content">
-      <div class="badge">Ohio Native · Wildflower · Bulb</div>
-      <h1>Nodding<em>Onion</em></h1>
+      <div class="badge">Ohio Native Plant · Summer Wildflower</div>
+      <h1>Nodding Onion<em>Allium cernuum</em></h1>
       <p class="hero-latin">Allium cernuum</p>
-      <p class="hero-tagline">A delicate native allium with rose-pink bells that bend downward before opening — a quiet bridge between spring's first bloom and the full voice of the summer prairie.</p>
-      <div class="flagship-badge">✦ Prairie Edge Bulb</div>
+      <p class="hero-tagline">A clump of slender grey-green leaves and a flowering stalk that bends sharply at the tip, carrying a loose umbel of small pink-lilac bells that hang downward through mid- and late summer — a wild onion of rocky slopes, open prairie, and lean ground.</p>
+      <div class="flagship-badge">✦ Nodding Summer Bloom</div>
     </div>
   </header>
 
-  <!-- FIELD GUIDE TAG BAND -->
-  <div class="field-tag-band">
-    <div class="field-tag-group">
-      <span class="field-tag-label">Plant Type</span>
-      <div class="field-tag-pills"><span class="field-tag">Native Bulb</span><span class="field-tag">Wildflower</span></div>
-    </div>
-    <div class="field-tag-group">
-      <span class="field-tag-label">Light</span>
-      <div class="field-tag-pills"><span class="field-tag sun">Full Sun</span><span class="field-tag sun">Part Sun</span></div>
-    </div>
-    <div class="field-tag-group">
-      <span class="field-tag-label">Moisture</span>
-      <div class="field-tag-pills"><span class="field-tag moisture">Dry</span><span class="field-tag moisture">Medium</span></div>
-    </div>
-    <div class="field-tag-group">
-      <span class="field-tag-label">Wildlife Role</span>
-      <div class="field-tag-pills"><span class="field-tag role">Native Bees</span><span class="field-tag role">Butterflies</span><span class="field-tag role">Small Pollinators</span></div>
-    </div>
-  </div>
-
   <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial bulb</span></div>
     <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">12–18 inches</span></div>
-    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Early to midsummer</span></div>
-    <div class="fact-item"><span class="fact-label">Flowers</span><span class="fact-value">Rose-pink nodding umbels</span></div>
-    <div class="fact-item"><span class="fact-label">Soil</span><span class="fact-value">Dry to medium, well-drained</span></div>
-    <div class="fact-item"><span class="fact-label">Layer</span><span class="fact-value">Edge / filler bulb</span></div>
-    <div class="fact-item"><span class="fact-label">Deer</span><span class="fact-value">Usually avoided</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Mid- to late summer</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to medium</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Amaryllidaceae</span></div>
   </div>
 
+  <!-- ABOUT -->
   <section class="section">
     <p class="eyebrow">About This Plant</p>
-    <h2>A Flower That Bows Before It Opens</h2>
-    <p>Nodding onion earns its name honestly. Each flowering stem rises slender and upright, then bends at the top so the cluster of buds hangs downward like a small chandelier. As the rose-pink flowers open, the umbel remains gently pendant — not collapsed, but bowed.</p>
-    <p>That nodding posture is one of the plant's signatures. It keeps the flower cluster protected while the buds are developing, then presents dozens of small nectar-bearing bells to bees, butterflies, and tiny pollinators moving low through the garden. The effect is quiet rather than showy: a soft mauve haze held just above grass blades and seedling leaves.</p>
+    <h2>A Wild Onion That Nods</h2>
+    <p>Nodding onion grows as a tidy clump of slender, grey-green leaves, flat to slightly channelled, rising from a cluster of small bulbs. In mid- to late summer a leafless flowering stalk lifts above the foliage and then bends sharply near the top, so the cluster of flowers hangs downward — the habit that gives the plant both its common name and its species name, <em>cernuum</em>, meaning "nodding" or "drooping." Each cluster is a loose umbel of many small bell-shaped flowers, typically pale pink to lilac, occasionally nearly white.</p>
+    <p>It is a plant of open, often lean ground — rocky slopes and ledges, dry prairie, gravelly banks, and the edges of open woods. The leaves and bulb carry the familiar onion-and-garlic scent of the genus <em>Allium</em>, released when the tissue is bruised or crushed. The clump tends to stay in place and increase slowly, by small bulb offsets and by seed, rather than running aggressively.</p>
+
     <div class="keystone-callout">
-      <p>Nodding onion is a bridge plant — arriving after the earliest spring bloomers but before the prairie reaches its midsummer peak. It gives small pollinators another step in the seasonal relay.</p>
+      <p>The whole plant carries the sulfur compounds characteristic of onions and garlic, released when leaves or bulbs are damaged. These compounds are thought to make the foliage unpalatable to deer and rabbits, so nodding onion often persists and flowers in places where heavier browsing pressure thins other summer-blooming forbs.</p>
     </div>
-    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best planted where</p>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
     <div class="pill-list">
-      <span class="pill">Sunny prairie edges</span>
-      <span class="pill">Dry meadow pockets</span>
-      <span class="pill">Rocky or lean soils</span>
-      <span class="pill">Front borders</span>
-      <span class="pill">Between fine grasses</span>
+      <span class="pill">Rock gardens</span>
+      <span class="pill">Dry sunny borders</span>
+      <span class="pill">Front-of-border edging</span>
+      <span class="pill">Prairie &amp; meadow plantings</span>
+      <span class="pill">Among fine grasses</span>
+      <span class="pill">Pollinator gardens</span>
     </div>
   </section>
 
-  <!-- BOTANICAL PLATE -->
-  <section class="section visible">
+  <section class="section botanical-plate-section">
     <p class="eyebrow">Botanical Plate</p>
     <h2>Nodding Onion</h2>
     <figure class="botanical-plate botanical-plate--placeholder">
       <div class="botanical-plate-frame">
         <img
           src="../images/nodding-onion-plate.png"
-          alt="Botanical field-plate illustration of Nodding Onion, Allium cernuum"
+          alt="Botanical field-plate illustration of Nodding Onion"
           onload="this.closest('.botanical-plate').classList.add('has-image')"
           onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
         />
@@ -157,76 +164,172 @@
 
   <section class="section">
     <p class="eyebrow">Seasonal Interest</p>
-    <h2>A Small Bloom at the Turning Point</h2>
+    <h2>A Year in the Life</h2>
     <div class="timeline">
-      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Slender onion leaves emerge early as the garden is still low and open, forming fine green tufts between sedges, grasses, and spring wildflowers.</div></div>
-      <div class="tl-row peak"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Arching stems lift above the foliage; flower buds bend downward and open into loose, rose-pink umbels that feed bees, butterflies, and small pollinators.</div></div>
-      <div class="tl-row active"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">Seed heads remain light and wiry while surrounding prairie plants gain height. The onion slips visually into the matrix rather than dominating it.</div></div>
-      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Foliage fades back toward the bulb as grasses and late flowers take over structure, color, and seed.</div></div>
-      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">The plant rests underground as a bulb, ready to return when the soil warms.</div></div>
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Grassy grey-green leaves emerge from the bulb clumps and form low, fine-textured tufts. Foliage builds through late spring while the plant gathers reserves.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Leafless scapes rise above the leaves, each bending over near the tip so the developing flower cluster begins to nod. A papery sheath splits to release the buds.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">Peak bloom — loose umbels of small pink-lilac bells hang from the bent stalks. Small bees and flies work the open clusters through July into August.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Flowering eases. As the seed capsules form and ripen, the stalk often straightens so the capsules turn upward — a reversal of the nodding habit.</div></div>
+      <div class="tl-row"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Capsules split to release small black seeds; the foliage yellows and dies back. The bulb clump overwinters below ground, often a little larger than the year before.</div></div>
     </div>
   </section>
 
   <section class="section">
-    <p class="eyebrow">Ecological Role</p>
-    <h2>Small Flowers, Many Visitors</h2>
-    <p>Nodding onion is not a huge nectar tower like Joe-Pye weed or a broad landing pad like mountain mint. Its strength is delicacy: many small flowers held in a loose cluster, accessible to native bees, butterflies, skippers, flies, and other small pollinators.</p>
-    <p>Because it blooms in early to midsummer, it helps carry the garden from the spring resources of <span class="companion-common">Golden Alexanders</span> and <span class="companion-common">Foxglove Beardtongue</span> into the warmer-season abundance of grasses, mints, milkweeds, asters, and blazing stars.</p>
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>The flowers are small and bell-shaped, held in an open cluster — a form that suits short-tongued insects able to reach nectar from the bell mouth or work the cluster from the side. Nodding onion is most active with smaller native bees and with flies, which match the flower size well.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Native Bees</span><span class="insect-count-badge">pollen &amp; nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Sweat Bees (Halictidae)</span>
+          <span class="insect-tag common">Small Carpenter Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Bumblebees</span>
+          <span class="insect-tag">Mining Bees</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Hover / Flower Flies (Syrphidae)</span>
+          <span class="insect-tag">Bee Flies</span>
+          <span class="insect-tag">Tachinid Flies</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Skippers</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Skippers</span>
+          <span class="insect-tag">Small butterflies</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">The same onion chemistry that flavours the foliage tends to keep <strong>deer and rabbits</strong> away from the leaves and bulbs. In gardens under browsing pressure, this can let nodding onion hold a flowering presence in mid- to late summer where unprotected forbs are repeatedly grazed.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Nodding onion is undemanding in the open, well-drained conditions it favours. Lean, gritty, or rocky soils and full sun produce compact, upright clumps; richer or shadier sites tend to give looser, floppier growth and fewer flowers.</p>
     <table class="care-table">
-      <tr><td>Pollinators</td><td>Native bees, small bees, butterflies, skippers, flower flies, and other small nectar-feeding insects</td></tr>
-      <tr><td>Garden function</td><td>Soft seasonal pulse, low filler, edge plant, and transition bloom between spring and midsummer</td></tr>
-      <tr><td>Wildlife value</td><td>Nectar and pollen for small-bodied visitors; useful in mixed plantings where bloom continuity matters</td></tr>
-      <tr><td>Resistance</td><td>Onion-scented foliage is usually avoided by deer and rabbits, making it useful near vulnerable plants</td></tr>
+      <tr><td>Light</td><td>Full sun to part shade; fullest bloom and most upright form come in sun</td></tr>
+      <tr><td>Soil</td><td>Well-drained; tolerates lean, gravelly, and rocky ground; average garden soil is fine if it drains</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; drought-tolerant once established; avoid consistently wet ground</td></tr>
+      <tr><td>Habit</td><td>Clump-forming from a cluster of bulbs; increases slowly by offsets and seed rather than running</td></tr>
+      <tr><td>Division</td><td>Lift and divide crowded clumps in spring or early fall every few years to keep them vigorous</td></tr>
+      <tr><td>Self-sowing</td><td>Seeds modestly into open soil; deadhead to limit spread, or leave the capsules to ripen and drop</td></tr>
+      <tr><td>Maintenance</td><td>Low; cut back foliage as it yellows in late season. Generally left alone by deer and rabbits</td></tr>
     </table>
   </section>
 
-  <section class="section companion-section">
-    <p class="eyebrow">Garden Companions</p>
-    <h2>Where It Belongs</h2>
-    <p>Nodding onion works best when it is allowed to weave through a planting rather than stand alone. Its thin leaves and bowed flowers are most visible against fine grasses and low spring-to-summer companions.</p>
-
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>The fine grey-green foliage and small lilac umbels read quietly against bolder prairie flowers and settle naturally among fine-textured grasses. Nodding onion suits the front and middle of a dry, sunny planting, where its modest scale is easy to see.</p>
     <div class="companion-group">
-      <p class="companion-group-label">Fine-textured matrix</p>
+      <p class="companion-group-label">Fine-textured grasses</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Lovegrass</span> <span class="companion-latin">Eragrostis spectabilis</span></div></div>
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
       </div>
     </div>
-
     <div class="companion-group">
-      <p class="companion-group-label">Seasonal relay partners</p>
+      <p class="companion-group-label">Dry-prairie colour</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foxglove Beardtongue</span> <span class="companion-latin">Penstemon digitalis</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Lean-soil companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Bow, and the Recovery</h3>
+        <p>The nodding habit is not fixed for the life of the plant. As the buds develop, the upper stalk bends sharply so the whole flower cluster hangs downward; the flowers open while facing the ground. Then, as the flowers fade and the seed capsules begin to swell and ripen, the stalk often straightens again and the capsules turn upward.</p>
+        <p>The reasons are not fully settled, but the downward nod is thought to shelter the nectar and pollen of the open bells from rain, while the later straightening lifts the ripening capsules to a height where wind and passing animals can shake the small seeds loose. The same stalk does two different jobs — presenting flowers, then dispersing seed — and changes its posture between them.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Smell Is the Safest Field Mark</h3>
+        <p>Several plants have narrow, grass-like leaves and small clustered flowers that can resemble a wild onion at a glance — including death camas (<em>Toxicoscordion</em> and relatives), which is toxic. The most reliable way to separate a true <em>Allium</em> from a look-alike is scent: the leaves and bulb of nodding onion and its relatives carry a distinct onion-and-garlic smell when crushed, while the toxic look-alikes do not. A plant with grass-like leaves and no onion scent should not be treated as a wild onion.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">A Clump That Stays Put</h3>
+        <p>Nodding onion grows from a cluster of small, slender bulbs that increase gradually over the years, adding offsets at the edges of the clump. It also sets seed, which can sprout in nearby open soil. Both forms of increase are slow and local rather than aggressive, so an established plant tends to widen into a fuller tuft in roughly the same spot — a quieter habit than the bulbil-forming wild onions that can colonise more freely.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">An Onion in Name and in Chemistry</h3>
+        <p>Nodding onion belongs to <em>Allium</em>, the same genus as the onions, garlic, leeks, and chives of the kitchen. Like its cultivated relatives, it produces sulfur-containing compounds that are released when the tissue is cut or chewed — the source of the smell and taste, and part of why browsing mammals tend to leave it alone. It has a long record of use as a wild food by Indigenous peoples and later settlers across its range, gathered for its mild edible bulbs and leaves.</p>
       </div>
     </div>
   </section>
 
   <section class="section">
-    <p class="eyebrow">Design Notes</p>
-    <h2>How to Use It</h2>
-    <p>Plant nodding onion in small drifts near the front or middle edge of a sunny planting, especially where low grasses leave enough light at the base. It is especially effective in repeated pockets — five here, seven there — so the bowed flowers appear as a rhythm moving through the garden.</p>
-    <p>Its vertical height is modest, but its gesture is memorable. The flower heads do not shout. They lean, nod, and quietly mark the place where spring has ended and summer is beginning.</p>
-  </section>
-
-  <section class="section">
-    <p class="eyebrow">Care &amp; Establishment</p>
-    <h2>Lean Soil, Good Drainage, Little Fuss</h2>
-    <table class="care-table">
-      <tr><td>Light</td><td>Full sun to part sun; best flowering occurs with good light</td></tr>
-      <tr><td>Moisture</td><td>Dry to medium soil; avoid constantly wet sites</td></tr>
-      <tr><td>Soil</td><td>Average to lean, well-drained soil; tolerates rocky or sandy conditions once established</td></tr>
-      <tr><td>Spacing</td><td>Plant in small groups 8–12 inches apart, or tuck between grasses and low perennials</td></tr>
-      <tr><td>Maintenance</td><td>Allow foliage to yellow naturally so the bulb can recharge; remove old stems only after they dry</td></tr>
-      <tr><td>Best use</td><td>Prairie edge, sunny border, pollinator garden, dry meadow pocket, or native bulb layer</td></tr>
-    </table>
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Wild Onions</h2>
+    <p>Several native <em>Allium</em> grow in Ohio. All share the onion scent and a clumping, bulb-forming habit, but they differ in leaf, in how the flower cluster is held, and in the habitats where they are found — from open rocky ground to spring woodland.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant · Summer-blooming</p>
+        <p class="species-common">Nodding Onion</p>
+        <p class="species-latin">Allium cernuum</p>
+        <p class="species-desc">The wild onion with the bent flowering stalk and the downward-hanging umbel of pink-lilac bells. A plant of open, well-drained ground — rocky slopes, prairie, and gravelly banks — blooming in mid- to late summer. Slender grey-green foliage and a tidy, slowly increasing clump.</p>
+        <div class="species-traits"><span class="species-trait">12–18 in</span><span class="species-trait">Dry–medium</span><span class="species-trait">Sun–pt shade</span><span class="species-trait">Nodding umbel</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Common · Spring–early summer</p>
+        <p class="species-common">Wild Garlic / Meadow Garlic</p>
+        <p class="species-latin">Allium canadense</p>
+        <p class="species-desc">A widespread native of fields, meadows, and open woods. Its flower head often produces small bulbils — tiny aerial bulbs — alongside or instead of flowers, which can let it spread more freely. Blooms earlier than nodding onion, in late spring into early summer.</p>
+        <div class="species-traits"><span class="species-trait">1–2 ft</span><span class="species-trait">Medium</span><span class="species-trait">Sun–pt shade</span><span class="species-trait">Bulbils</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Woodland · Spring ephemeral</p>
+        <p class="species-common">Ramps / Wild Leek</p>
+        <p class="species-latin">Allium tricoccum</p>
+        <p class="species-desc">A woodland species, unlike the open-ground onions. Broad, flat, glossy leaves appear in early spring and die back before the flower stalk blooms in summer. Found in rich, moist deciduous woods; long gathered as a wild food, and slow to recover where harvested heavily.</p>
+        <div class="species-traits"><span class="species-trait">6–18 in</span><span class="species-trait">Moist woods</span><span class="species-trait">Shade</span><span class="species-trait">Broad leaf</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Woodland · Narrow-leaved</p>
+        <p class="species-common">Narrowleaf Wild Leek</p>
+        <p class="species-latin">Allium burdickii</p>
+        <p class="species-desc">A close relative of the ramp, sometimes treated as a variety of it, with noticeably narrower leaves and white flowers. Shares the rich-woodland habitat and spring-ephemeral foliage but tends to grow in drier upland sites and form smaller, tighter colonies.</p>
+        <div class="species-traits"><span class="species-trait">6–14 in</span><span class="species-trait">Dry–moist woods</span><span class="species-trait">Shade</span><span class="species-trait">Narrow leaf</span></div>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
-    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Allium cernuum · Native Bulb · Ohio Native Plant</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Allium cernuum · Native Perennial · Native to Ohio</p>
   </footer>
 
   <script src="../js/plant-profile.js"></script>
