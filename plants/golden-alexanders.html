@@ -72,8 +72,8 @@
 }
 
 .page-nav a:hover {
-  color: var(--violet);
-  border-color: rgba(90, 72, 152, 0.36);
+  color: var(--gold);
+  border-color: var(--gold-soft);
   background: rgba(250, 249, 246, 0.94);
 }
 
@@ -752,6 +752,18 @@
     </div>
   </section>
 
+    <!-- FIELD GUIDE PLATE -->
+  <section class="section visible">
+    <p class="eyebrow">Field Guide Plate</p>
+    <h2>Golden Alexanders</h2>
+    <figure class="botanical-plate">
+      <img
+        src="../images/golden-alexanders-plate.png"
+        alt="Botanical illustration of Golden Alexanders">
+      <figcaption>Zizia aurea · Field Guide Botanical Plate</figcaption>
+    </figure>
+  </section>
+
   <!-- SEASONAL INTEREST -->
   <section class="section">
     <p class="eyebrow">Seasonal Interest</p>
@@ -831,7 +843,7 @@
     </table>
   </section>
 
-  <!-- COMPANION PLANTS -->
+   <!-- COMPANION PLANTS -->
   <section class="section">
     <p class="eyebrow">Planting Partners</p>
     <h2>Grows Well With</h2>
@@ -840,20 +852,20 @@
     <div class="companion-group">
       <p class="companion-group-label">Structural companions</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="little-bluestem.html" class="companion-link">Little Bluestem</a></span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="prairie-dropseed.html" class="companion-link">Prairie Dropseed</a></span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Culver's Root</span> <span class="companion-latin">Veronicastrum virginicum</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="joe-pye-weed.html" class="companion-link">Joe Pye Weed</a></span> <span class="companion-latin">Eutrochium spp.</span></div></div>
       </div>
     </div>
 
     <div class="companion-group">
       <p class="companion-group-label">Pollinator sequence companions</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="wild-bergamot.html" class="companion-link">Wild Bergamot</a></span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="butterfly-weed.html" class="companion-link">Butterfly Weed</a></span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="mountain-mint.html" class="companion-link">Mountain Mint</a></span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="liatris.html" class="companion-link">Blazing Star</a></span> <span class="companion-latin">Liatris spp.</span></div></div>
       </div>
     </div>
 
@@ -861,7 +873,7 @@
       <p class="companion-group-label">Texture & matrix companions</p>
       <div class="companion-list">
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Spiderwort</span> <span class="companion-latin">Tradescantia ohiensis</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foxglove Beardtongue</span> <span class="companion-latin">Penstemon digitalis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common"><a href="foxglove-beardtongue.html" class="companion-link">Foxglove Beardtongue</a></span> <span class="companion-latin">Penstemon digitalis</span></div></div>
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Sedges</span> <span class="companion-latin">Carex spp.</span></div></div>
       </div>
     </div>
@@ -909,6 +921,43 @@
       </div>
     </div>
   </section>
+
+  /* ── BOTANICAL PLATE ──────────────────────── */
+.botanical-plate { 
+  margin: 0; 
+}
+
+.botanical-plate img { 
+  width: 100%; 
+  height: auto; 
+  display: block; 
+  border-radius: 4px; 
+}
+
+.botanical-plate figcaption { 
+  font-family: 'DM Mono', monospace; 
+  font-size: 0.62rem; 
+  letter-spacing: 0.10em; 
+  text-transform: uppercase; 
+  color: var(--text-faint, #9a8e78); 
+  margin-top: 0.7rem; 
+  text-align: center; 
+  line-height: 1.6; 
+}
+
+a.companion-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: currentColor;
+  opacity: 0.78;
+  transition: opacity 0.18s;
+}
+
+a.companion-link:hover {
+  opacity: 1;
+}
 
   <!-- FOOTER -->
   <footer>
