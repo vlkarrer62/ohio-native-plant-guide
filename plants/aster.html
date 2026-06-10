@@ -1188,6 +1188,7 @@ a.companion-link:hover {
     );
     sections.forEach(s => observer.observe(s));
     <script>
+<script>
   const sections = document.querySelectorAll('.section');
   const observer = new IntersectionObserver(
     entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
@@ -1198,6 +1199,7 @@ a.companion-link:hover {
   // ─────────────────────────────────────────────
   // AUTO-LINK COMPANION PLANTS
   // Looks at plants.json and turns matching companion names into links.
+  // Supports aliases when plants.json includes an "aliases" array.
   // Existing manually linked companions are left alone.
   // ─────────────────────────────────────────────
   async function autoLinkCompanionPlants() {
@@ -1224,7 +1226,8 @@ a.companion-link:hover {
           plant.commonName,
           plant.scientificName,
           plant.displayName,
-          plant.shortName
+          plant.shortName,
+          ...(plant.aliases || [])
         ].filter(Boolean);
 
         names.forEach(name => {
@@ -1233,6 +1236,7 @@ a.companion-link:hover {
       });
 
       document.querySelectorAll('.companion-common').forEach(el => {
+        // Leave existing manual links alone.
         if (el.querySelector('a')) return;
 
         const name = el.textContent.trim();
