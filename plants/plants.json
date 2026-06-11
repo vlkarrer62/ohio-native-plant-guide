@@ -1679,5 +1679,35 @@
     "relatedWildlifeSlugs": ["bumble-bee", "long-horned-bee", "hover-fly"],
     "relatedPlantSlugs": ["little-bluestem", "prairie-dropseed", "butterfly-weed", "purple-coneflower", "black-eyed-susan", "golden-alexanders", "wild-bergamot", "coreopsis"],
     "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
-  }
+  },
+  {
+  "commonName": "Wild Ginger",
+  "scientificName": "Asarum canadense",
+  "slug": "wild-ginger",
+  "type": "Woodland Groundcover",
+  "category": "wildflowers",
+  "bloom": "Hidden maroon flowers at ground level",
+  "season": "Spring",
+  "sun": "Part to full shade",
+  "moisture": "Medium to moist",
+  "height": "4–8 in",
+  "description": "A low, spreading woodland groundcover with paired heart-shaped leaves and curious maroon flowers hidden at ground level in spring. Slow to establish but durable, long-lived, and left alone by deer.",
+  "url": "wild-ginger.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#8c5560",
+  "accentTo": "#b1868e",
+  "svgIcon": "leaf",
+  "native": true,
+  "aliases": ["Asarum canadense", "Canada Wild Ginger", "Canadian Wild Ginger", "Wild Ginger"],
+  "plantType": "Wildflower",
+  "lightTags": ["Part Sun", "Shade"],
+  "moistureTags": ["Medium", "Moist"],
+  "bloomSeasonTags": ["Spring"],
+  "wildlifeRole": ["Cover/Shelter", "Erosion Control", "Seed Source"],
+  "gardenRole": ["Groundcover", "Matrix Plant"],
+  "relatedWildlifeSlugs": [],
+  "relatedPlantSlugs": ["pennsylvania-sedge", "cardinal-flower", "foxglove-beardtongue", "aster", "goldenrod", "golden-alexanders", "serviceberry"],
+  "relatedHabitatSlugs": ["woodland-understory", "woodland-edge"]
+}
+
 ]
