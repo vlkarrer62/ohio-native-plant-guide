@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Woodland Edge",
+    "slug": "woodland-edge",
+    "type": "Transition Zone",
+    "subtitle": "Where the woods meet the open",
+    "summary": "The graded, layered band where closed forest gives way to open ground — dappled, shifting light, rich leaf-littered soil, and a full stack of layers from canopy to groundcover. Among the busiest and most plantable ground in any landscape.",
+    "url": "woodland-edge.html",
+    "tagClass": "tag-habitat",
+    "accentFrom": "#4a6b4a",
+    "accentTo": "#cda23f",
+    "svgIcon": "edge",
+    "light": "Dappled sun to shade",
+    "moisture": "Dry to moist (varies)",
+    "soil": "Rich, leaf-littered",
+    "structure": "Layered, canopy to ground",
+    "lightTags": ["Full Sun", "Part Sun", "Shade"],
+    "moistureTags": ["Dry", "Medium", "Moist"],
+    "layers": [
+      { "layer": "Canopy", "note": "Tall trees that close overhead behind the edge — oaks, maples, hickories — casting the shade the inner-woodland plants depend on." },
+      { "layer": "Understory", "note": "Smaller trees beneath the canopy — serviceberry, dogwood, redbud, hornbeam — catching the light the big trees let through." },
+      { "layer": "Shrub layer", "note": "Woody shrubs forming the edge's outer wall — viburnums, spicebush, hazelnut — dense cover for nesting birds and shelter for small animals." },
+      { "layer": "Herb layer", "note": "Wildflowers and grasses of part shade — wild geranium, columbine, golden alexanders — the showy spring-into-summer ribbon along the edge." },
+      { "layer": "Groundcover", "note": "Low, shade-tolerant plants and leaf litter carpeting the soil — wild ginger, woodland sedges — holding moisture and covering bare ground." }
+    ],
+    "foundAlong": ["Woodland borders", "Clearings & trail edges", "Hedgerows", "Fence lines & old fields", "Stream & pond margins", "Yard-and-woods boundaries"],
+    "designPrinciples": ["Layer tall to low", "Grade shade to sun", "Anchor with a small tree", "Keep a shrub band", "Leave the leaf litter", "Soften the mown line"],
+    "relatedPlantSlugs": ["serviceberry", "wild-geranium", "wild-columbine", "golden-alexanders", "foxglove-beardtongue", "wild-ginger", "pennsylvania-sedge", "wild-bergamot", "black-eyed-susan", "butterfly-weed"],
+    "relatedWildlifeSlugs": [],
+    "relatedHabitatSlugs": ["woodland-understory", "sunny-meadow", "oak-savanna"]
+  }
+]
