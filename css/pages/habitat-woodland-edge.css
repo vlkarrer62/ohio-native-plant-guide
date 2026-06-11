@@ -1,0 +1,566 @@
+/* ════════════════════════════════════════════════════════════
+   HABITAT PROFILE · Woodland Edge
+   Theme: Ecotone (light)  ·  Brygada 1918 + Outfit + DM Mono
+   Layout: contained field-guide card (matches the plant profiles).
+   First habitat-profile page — a distinct content tier. Habitat pages
+   share one typeface (Brygada 1918) and the green→gold ecotone palette
+   so they read as a family, separate from the per-plant profiles.
+   The hero illustration is a wide habitat cross-section, so the hero
+   art sits wider and lower than the plant pages.
+   Loads last, after ../css/base.css and ../css/plant-profile.css.
+   ════════════════════════════════════════════════════════════ */
+
+:root {
+  /* backgrounds — warm parchment with a faint green cast */
+  --bg:       #f4f0e6;
+  --bg-warm:  #ebe3d2;
+  --bg-card:  #faf6ec;
+  --bg-tint:  #e8ecdd;   /* soft sage-green wash for panels/badges */
+
+  /* borders */
+  --border:        rgba(48, 52, 38, 0.12);
+  --border-accent: rgba(74, 107, 74, 0.24);
+
+  /* primary accent — woodland green (the shaded side / page signature) */
+  --green:      #4a6b4a;
+  --green-soft: #84a07e;
+  --green-pale: #d3decb;
+
+  /* secondary accent — warm sun-gold (the open side) */
+  --sun:      #cda23f;
+  --sun-soft: #e2c67e;
+
+  /* neutral stone */
+  --stone:       #8f897b;
+  --stone-light: #c4bca8;
+
+  /* text — warm green-greys */
+  --text:       #34362d;
+  --text-dim:   #565748;
+  --text-faint: #888471;
+
+  /* darks */
+  --ink:     #28302a;
+  --heading: var(--ink);
+  --h2:      #5c7d58;   /* lighter, readable green for section headings */
+
+  /* dark band text (facts-band sits on --ink) */
+  --band-text:   #e9efe0;
+  --band-faint:  rgba(233, 239, 224, 0.46);
+  --band-accent: #b6c9a8;
+
+  /* page signature hue — drives page-nav hover & links */
+  --accent: #4a6b4a;
+
+  /* fonts */
+  --display: 'Brygada 1918', Georgia, 'Times New Roman', serif;
+  --body:    'Outfit', system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: #e5dcc8;            /* muted backdrop so the card floats */
+  min-height: 100%;
+}
+
+body {
+  /* contained field-guide card — centered and constrained */
+  max-width: 680px;
+  margin: 1.5rem auto;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-weight: 300;
+  line-height: 1.7;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(40, 48, 42, 0.06), 0 18px 50px rgba(40, 48, 42, 0.10);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── PAGE NAVIGATION (light) ───────────────────────── */
+.page-nav {
+  position: fixed;
+  top: 0.85rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: min(640px, calc(100% - 1.5rem));
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  pointer-events: none;
+}
+.page-nav a {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.42rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(250, 246, 236, 0.8);
+  border: 1px solid rgba(74, 107, 74, 0.2);
+  color: var(--text-dim, #45463a);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(36, 42, 32, 0.08);
+}
+.page-nav a:hover {
+  color: var(--accent, var(--green, #3c573c));
+  border-color: var(--accent, var(--green, #3c573c));
+  background: rgba(250, 246, 236, 0.94);
+}
+@media (max-width: 520px) {
+  .page-nav { top: 0.65rem; width: calc(100% - 1rem); }
+  .page-nav a { font-size: 0.5rem; padding: 0.36rem 0.58rem; }
+}
+
+/* ── HERO (contained plate — wide habitat cross-section) ──────── */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3.6rem 1.6rem 2.4rem;
+  text-align: center;
+  background:
+    radial-gradient(120% 80% at 78% 10%, rgba(226,198,126,0.22) 0%, rgba(226,198,126,0) 58%),
+    radial-gradient(120% 80% at 18% 14%, var(--bg-tint) 0%, rgba(232,236,221,0) 60%),
+    linear-gradient(168deg, #f6f3ea 0%, var(--bg) 60%, var(--bg-warm) 100%);
+  border-bottom: 1px solid var(--border);
+  border-radius: 16px 16px 0 0;
+}
+.hero-light {
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  height: 64%;
+  background: radial-gradient(circle, rgba(74,107,74,0.12) 0%, rgba(74,107,74,0) 68%);
+  filter: blur(8px);
+  pointer-events: none;
+}
+.hero-illustration {
+  /* wider + lower than the plant pages, for a habitat cross-section */
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto 1.2rem;
+  height: auto;
+  width: auto;
+  max-height: 210px;
+  max-width: 340px;
+  opacity: 0.98;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+.badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--bg-tint);
+  border: 1px solid var(--border-accent);
+  padding: 0.34rem 0.72rem;
+  border-radius: 999px;
+}
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.7rem, 7.5vw, 4.3rem);
+  line-height: 1.04;
+  letter-spacing: -0.012em;
+  color: var(--heading);
+  margin: 1.1rem 0 0.4rem;
+}
+.hero h1 em {
+  display: block;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.05rem, 3vw, 1.45rem);
+  letter-spacing: 0;
+  color: var(--green);
+  margin-top: 0.55rem;
+}
+.hero-tagline {
+  max-width: 31rem;
+  font-size: 1.02rem;
+  color: var(--text-dim);
+  margin: 0 auto 1.4rem;
+}
+.flagship-badge {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sun);
+  border: 1px dashed var(--sun-soft);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+}
+
+/* ── FACTS BAND (always dark, on --ink) ───────────────────────── */
+.facts-band {
+  background: var(--ink);
+  color: var(--band-text);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  padding: 0;
+}
+.fact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.34rem;
+  padding: 1.5rem 1.4rem;
+  background: var(--ink);
+  border-top: 1px solid rgba(233, 239, 224, 0.07);
+  border-left: 1px solid rgba(233, 239, 224, 0.07);
+}
+.fact-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--band-accent);
+}
+.fact-value {
+  font-family: var(--display);
+  font-size: 1.16rem;
+  line-height: 1.25;
+  color: var(--band-text);
+}
+
+/* ── SECTIONS ───────────────────────── */
+.section {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 0.5rem;
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.section.visible { opacity: 1; transform: none; }
+
+.eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin: 0 0 0.5rem;
+}
+.section h2 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  color: var(--h2);
+  margin: 0 0 1.1rem;
+}
+.section p { margin: 0 0 1rem; color: var(--text); }
+.section p strong { color: var(--text); font-weight: 500; }
+.section em { font-style: italic; }
+
+/* ── KEYSTONE CALLOUT ───────────────────────── */
+.keystone-callout {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink);
+  color: var(--band-text);
+  border-radius: 10px;
+  padding: 1.6rem 1.7rem;
+  margin: 1.6rem 0 0.4rem;
+}
+.keystone-callout::before {
+  content: "✦";
+  position: absolute;
+  top: -0.6rem;
+  right: 0.4rem;
+  font-size: 6rem;
+  line-height: 1;
+  color: rgba(182, 201, 168, 0.12);
+  pointer-events: none;
+}
+.keystone-callout p { margin: 0; color: var(--band-text); position: relative; z-index: 1; }
+.keystone-callout strong { color: #fff; font-weight: 500; }
+
+/* ── PILL LIST ───────────────────────── */
+.pill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.pill {
+  font-family: var(--body);
+  font-size: 0.82rem;
+  color: var(--green);
+  background: var(--bg-tint);
+  border: 1px solid var(--border-accent);
+  border-radius: 999px;
+  padding: 0.34rem 0.82rem;
+}
+
+/* ── LAYERS (timeline component, repurposed: canopy → ground) ──── */
+.timeline { display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.4rem; }
+.tl-row { display: grid; grid-template-columns: 92px 6px 1fr; gap: 0.9rem; align-items: start; }
+.tl-season {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  padding-top: 0.18rem;
+}
+.tl-bar {
+  width: 6px;
+  border-radius: 6px;
+  background: var(--stone-light);
+  min-height: 100%;
+  align-self: stretch;
+}
+.tl-row.peak   .tl-bar { background: var(--green); }
+.tl-row.active .tl-bar { background: var(--green-soft); }
+.tl-row.fade   .tl-bar { background: var(--sun-soft); }
+.tl-text { font-size: 0.94rem; color: var(--text-dim); }
+
+/* ── LIFE HUB (insect-hub component, repurposed: who lives here) ── */
+.insect-hub { display: flex; flex-direction: column; gap: 1rem; margin-top: 0.4rem; }
+.insect-category {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+}
+.insect-category-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.7rem; }
+.insect-category-icon { font-size: 1.05rem; }
+.insect-category-name {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--heading);
+  flex: 1;
+}
+.insect-count-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--bg-tint);
+  border: 1px solid var(--border-accent);
+  border-radius: 999px;
+  padding: 0.26rem 0.6rem;
+}
+.insect-list { display: flex; flex-wrap: wrap; gap: 0.42rem; }
+.insect-tag {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  background: var(--bg-warm);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.28rem 0.62rem;
+}
+.insect-tag.common {
+  color: var(--green);
+  background: rgba(74, 107, 74, 0.12);
+  border-color: rgba(74, 107, 74, 0.3);
+}
+
+/* ── CARE TABLE (kept for future habitat field-condition use) ──── */
+.care-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
+.care-table td {
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.94rem;
+  color: var(--text-dim);
+  vertical-align: top;
+}
+.care-table td:first-child {
+  width: 30%;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green);
+  padding-top: 1rem;
+}
+
+/* ── PLANTS-BY-LAYER (companion component, repurposed) ─────────── */
+.companion-group { margin-top: 1.4rem; }
+.companion-group-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 0.7rem;
+}
+.companion-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.companion-row { display: flex; align-items: baseline; gap: 0.7rem; }
+.companion-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--green-soft);
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+.companion-common { color: var(--text); font-size: 0.98rem; }
+.companion-latin {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-faint);
+  margin-left: 0.3rem;
+}
+/* explicit cross-links to plant pages (self-contained styling) */
+a.companion-link {
+  color: var(--green);
+  font-size: 0.98rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-accent);
+  transition: border-color 0.2s ease;
+}
+a.companion-link:hover { border-bottom-color: var(--green); }
+
+/* ── STORY CARDS ───────────────────────── */
+.fact-feature { max-width: 720px; }
+.story-card {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1rem;
+}
+.story-card--highlight {
+  background: var(--bg-tint);
+  border-color: var(--border-accent);
+}
+.story-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--green);
+  opacity: 0.8;
+}
+.story-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--heading);
+  margin: 0 0 0.6rem;
+}
+.story-body p { margin: 0 0 0.8rem; font-size: 0.95rem; color: var(--text-dim); }
+.story-body p:last-child { margin-bottom: 0; }
+.story-body strong { color: var(--text); font-weight: 500; }
+
+/* ── NEIGHBOURING HABITATS (species-grid component, repurposed) ── */
+.species-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.6rem;
+}
+.species-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.3rem 1.35rem;
+}
+.species-card.featured {
+  background: var(--bg-tint);
+  border-color: var(--border-accent);
+  grid-column: 1 / -1;
+}
+.species-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin: 0 0 0.5rem;
+}
+.species-common {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.32rem;
+  color: var(--heading);
+  margin: 0 0 0.1rem;
+}
+.species-latin {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-faint);
+  margin: 0 0 0.7rem;
+}
+.species-desc { font-size: 0.9rem; color: var(--text-dim); margin: 0 0 0.9rem; }
+.species-traits { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.species-trait {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.56rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  background: var(--bg-warm);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 0.24rem 0.52rem;
+}
+
+/* ── FOOTER ───────────────────────── */
+footer {
+  margin: 3.5rem 0 0;
+  padding: 2.8rem 1.5rem 3.5rem;
+  border-top: 1px solid var(--border);
+  border-radius: 0 0 16px 16px;
+  text-align: center;
+}
+footer p {
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--text-faint);
+  margin: 0;
+}
+footer strong { color: var(--green); font-weight: 500; }
+
+/* ── RESPONSIVE ───────────────────────── */
+@media (max-width: 720px) {
+  .species-grid { grid-template-columns: 1fr; }
+  .species-card.featured { grid-column: auto; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 3rem 1.3rem 2rem; }
+  .hero-illustration { max-height: 175px; max-width: 290px; }
+  .hero-content { max-width: none; }
+  .facts-band { grid-template-columns: repeat(2, 1fr); }
+  .story-card { grid-template-columns: 1fr; gap: 0.4rem; }
+  .story-number { font-size: 0.78rem; }
+}
+@media (max-width: 540px) {
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .hero { border-radius: 0; }
+  footer { border-radius: 0; }
+}
+@media (max-width: 380px) {
+  .facts-band { grid-template-columns: 1fr; }
+}

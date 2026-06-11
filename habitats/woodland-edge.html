@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Woodland Edge · Habitat Profile · Ohio Native Plant Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/pages/habitat-woodland-edge.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="../plants/index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Woodland edge cross-section: the descending profile of an edge,
+         shaded forest at left grading to open, sunny ground at right.
+         Tall canopy → understory tree → shrubs → herb layer → grasses,
+         with a soft sun on the open side and leaf litter in the shade. -->
+    <svg class="hero-illustration" viewBox="0 0 360 250" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <linearGradient id="we-shade" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#28302a" stop-opacity="0.14"/>
+          <stop offset="0.6" stop-color="#28302a" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <!-- soft sun on the open (right) side -->
+      <circle cx="312" cy="50" r="24" fill="#e6cf8e" opacity="0.5"/>
+      <circle cx="312" cy="50" r="14" fill="#ecd89e" opacity="0.6"/>
+
+      <!-- ground band + leaf litter / grass base -->
+      <path d="M0 232 C 90 226 270 226 360 230 L360 250 L0 250 Z" fill="#ddd0b6" opacity="0.5"/>
+      <g fill="#c4b18a" opacity="0.6">
+        <ellipse cx="40" cy="236" rx="9" ry="2.6"/>
+        <ellipse cx="92" cy="240" rx="8" ry="2.4"/>
+        <ellipse cx="150" cy="238" rx="7" ry="2.2"/>
+      </g>
+
+      <!-- ── CANOPY (left, tall) ── -->
+      <rect x="54" y="120" width="9" height="116" rx="3" fill="#6f5740"/>
+      <rect x="104" y="135" width="8" height="101" rx="3" fill="#6f5740"/>
+      <g>
+        <ellipse cx="50" cy="74" rx="40" ry="40" fill="#3f6147"/>
+        <ellipse cx="78" cy="92" rx="34" ry="34" fill="#456a4c"/>
+        <ellipse cx="60" cy="58" rx="28" ry="28" fill="#48694e"/>
+        <ellipse cx="70" cy="74" rx="22" ry="22" fill="#4f7153" opacity="0.85"/>
+      </g>
+      <g>
+        <ellipse cx="108" cy="104" rx="32" ry="32" fill="#3f6147"/>
+        <ellipse cx="128" cy="116" rx="26" ry="26" fill="#48694e"/>
+        <ellipse cx="118" cy="96" rx="20" ry="20" fill="#4f7153" opacity="0.85"/>
+      </g>
+
+      <!-- ── UNDERSTORY TREE (centre) ── -->
+      <rect x="158" y="158" width="6" height="78" rx="2.5" fill="#7a5f44"/>
+      <g>
+        <ellipse cx="161" cy="142" rx="26" ry="26" fill="#4a6b4a"/>
+        <ellipse cx="176" cy="152" rx="20" ry="20" fill="#557654"/>
+        <ellipse cx="168" cy="135" rx="15" ry="15" fill="#5d7d5a" opacity="0.85"/>
+      </g>
+
+      <!-- ── SHRUB LAYER (centre-right) ── -->
+      <path d="M188 232 C 184 196 206 176 222 176 C 240 176 256 196 252 232 Z" fill="#5a7d54"/>
+      <path d="M236 232 C 234 206 250 192 264 192 C 280 192 290 208 286 232 Z" fill="#65885a"/>
+      <ellipse cx="220" cy="196" rx="14" ry="12" fill="#6b8f5e" opacity="0.7"/>
+
+      <!-- ── HERB LAYER (right-centre): stems + small flowers ── -->
+      <g stroke="#6f8060" stroke-width="1.6" stroke-linecap="round" fill="none">
+        <path d="M298 232 C 298 214 298 202 298 192"/>
+        <path d="M308 232 C 309 216 310 206 311 198"/>
+        <path d="M289 232 C 288 218 287 210 286 204"/>
+      </g>
+      <circle cx="298" cy="189" r="4" fill="#d6a23c"/>
+      <circle cx="311" cy="195" r="3.4" fill="#c479a0"/>
+      <circle cx="286" cy="201" r="3.2" fill="#bf6f5a"/>
+
+      <!-- ── GRASSES (far right, sunny/open) ── -->
+      <g stroke="#9aa05e" stroke-width="1.5" stroke-linecap="round" fill="none">
+        <path d="M326 232 C 325 218 324 210 322 202"/>
+        <path d="M332 232 C 332 216 333 208 334 200"/>
+        <path d="M338 232 C 339 218 341 210 344 204"/>
+        <path d="M344 232 C 345 220 347 214 349 208"/>
+      </g>
+
+      <!-- shade overlay deepening the forest (left) side -->
+      <rect x="0" y="0" width="360" height="232" fill="url(#we-shade)"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Habitat · Transition Zone</div>
+      <h1>Woodland Edge<em>Where the woods meet the open</em></h1>
+      <p class="hero-tagline">The woodland edge is the graded band where closed forest gives way to open ground — a layered run of canopy, small trees, shrubs, and sun-and-shade plants. Because it borders two worlds, it shelters more life than either the deep woods or the open meadow alone.</p>
+      <div class="flagship-badge">✦ Edge Effect</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Ecotone</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Dappled sun to shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to moist (varies)</span></div>
+    <div class="fact-item"><span class="fact-label">Soil</span><span class="fact-value">Rich, leaf-littered</span></div>
+    <div class="fact-item"><span class="fact-label">Structure</span><span class="fact-value">Layered, tall to low</span></div>
+    <div class="fact-item"><span class="fact-label">Wildlife</span><span class="fact-value">High diversity</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Habitat</p>
+    <h2>Where Two Worlds Meet</h2>
+    <p>A woodland edge is an <em>ecotone</em> — a transition zone between two habitats, here the closed canopy of the woods and the open ground of a meadow, field, or clearing. Rather than an abrupt line, a healthy edge is a graded band: tall trees give way to smaller ones, then to shrubs, then to a sunlit ribbon of wildflowers and grasses before the open ground begins. Light is the organising force, shifting from full shade beneath the canopy to full sun a few steps away.</p>
+    <p>That gradient is why edges matter. Plants sort themselves along it, and because the band offers the resources of both neighbours — sun and shade, open foraging and dense cover, woodland flowers and meadow flowers — it tends to hold more species than either the deep woods or the open field on its own.</p>
+
+    <div class="keystone-callout">
+      <p>Bordering two habitats, a woodland edge offers food, light, cover, and nesting from both at once — and adds species that live only in the transition itself. The result, often called the <strong>edge effect</strong>, is a concentration of life: a soft, layered edge can be among the busiest ground in a landscape, working as habitat, as a travel corridor, and as a buffer that shelters the woodland interior.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Found along</p>
+    <div class="pill-list">
+      <span class="pill">Woodland borders</span>
+      <span class="pill">Clearings &amp; trail edges</span>
+      <span class="pill">Hedgerows</span>
+      <span class="pill">Fence lines &amp; old fields</span>
+      <span class="pill">Stream &amp; pond margins</span>
+      <span class="pill">Yard-and-woods boundaries</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Structure</p>
+    <h2>Reading the Layers</h2>
+    <p>An edge is built in tiers, tallest at the woodland side and stepping down toward the light. Each layer does a different job and hosts different life — which is why a layered edge supports so much more than a single band of plants.</p>
+    <div class="timeline">
+      <div class="tl-row peak"><div class="tl-season">Canopy</div><div class="tl-bar"></div><div class="tl-text">The tall trees that close overhead behind the edge — oaks, maples, hickories — casting the shade the inner-woodland plants depend on.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Understory</div><div class="tl-bar"></div><div class="tl-text">Smaller trees beneath the canopy — serviceberry, dogwood, redbud, hornbeam — catching the light the big trees let through.</div></div>
+      <div class="tl-row active"><div class="tl-season">Shrub layer</div><div class="tl-bar"></div><div class="tl-text">Woody shrubs forming the edge's outer wall — viburnums, spicebush, hazelnut — dense cover for nesting birds and shelter for small animals.</div></div>
+      <div class="tl-row active"><div class="tl-season">Herb layer</div><div class="tl-bar"></div><div class="tl-text">Wildflowers and grasses of part shade — wild geranium, columbine, golden alexanders — the showy spring-into-summer ribbon along the edge.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Groundcover</div><div class="tl-bar"></div><div class="tl-text">Low, shade-tolerant plants and leaf litter carpeting the soil — wild ginger, woodland sedges — holding moisture and covering bare ground.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Plants of the Edge</p>
+    <h2>What Grows Here</h2>
+    <p>These native plants from the guide all suit some part of the woodland edge, arranged from the wooded side toward the open. Together they show how a single edge can be planted in layers — and several are happiest precisely because they sit in this in-between light.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Small trees &amp; shrubs · the wooded wall</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/serviceberry.html">Serviceberry</a> <span class="companion-latin">Amelanchier spp.</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Herb layer · part shade</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/wild-geranium.html">Wild Geranium</a> <span class="companion-latin">Geranium maculatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/wild-columbine.html">Wild Columbine</a> <span class="companion-latin">Aquilegia canadensis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/golden-alexanders.html">Golden Alexanders</a> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/foxglove-beardtongue.html">Foxglove Beardtongue</a> <span class="companion-latin">Penstemon digitalis</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Groundcover · shaded floor</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/wild-ginger.html">Wild Ginger</a> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/pennsylvania-sedge.html">Pennsylvania Sedge</a> <span class="companion-latin">Carex pensylvanica</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">The sunny side · open ground</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/wild-bergamot.html">Wild Bergamot</a> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/black-eyed-susan.html">Black-eyed Susan</a> <span class="companion-latin">Rudbeckia hirta</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><a class="companion-link" href="../plants/butterfly-weed.html">Butterfly Weed</a> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Who Lives Here</p>
+    <h2>Life at the Edge</h2>
+    <p>The edge draws animals that use both the woods and the open — feeding in the sun, sheltering and nesting in the cover — along with species that specialise in the transition itself. A few of the many residents and visitors:</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Pollinators</span><span class="insect-count-badge">sun &amp; shade flowers</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Native Bees</span>
+          <span class="insect-tag">Bumblebees</span>
+          <span class="insect-tag">Spring Butterflies</span>
+          <span class="insect-tag">Hover Flies</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Edge Birds</span><span class="insect-count-badge">nest in cover, feed in open</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Gray Catbird</span>
+          <span class="insect-tag">Eastern Towhee</span>
+          <span class="insect-tag">Song Sparrow</span>
+          <span class="insect-tag">Cardinals</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Shelter &amp; Ground Life</span><span class="insect-count-badge">cover &amp; litter</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Eastern Box Turtle</span>
+          <span class="insect-tag">Chipmunks</span>
+          <span class="insect-tag">Fireflies</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">In the Garden</p>
+    <h2>Bringing the Edge Home</h2>
+    <p>A yard where lawn meets a tree line is already a woodland edge — usually a "hard" one, an abrupt mown line against a wall of trees, that offers little. Softening and layering it is one of the highest-value moves in a native garden: grade the heights down from the trees, fill in the missing tiers, and let the light do the sorting.</p>
+    <div class="pill-list">
+      <span class="pill">Layer tall → low</span>
+      <span class="pill">Grade shade → sun</span>
+      <span class="pill">Anchor with a small tree</span>
+      <span class="pill">Keep a shrub band</span>
+      <span class="pill">Leave the leaf litter</span>
+      <span class="pill">Soften the mown line</span>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Habitat</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Edge Effect</h3>
+        <p>Ecologists noticed long ago that the borders between habitats are unusually crowded with life. An edge holds the species of the woods, the species of the open ground, and a set of species that live only where the two meet — so the total can exceed either neighbour. More light reaches the ground than in the deep woods, but more cover stands close at hand than in the open field.</p>
+        <p>There is a catch worth knowing: not all edges are equal. A "hard" edge — a mown lawn meeting a straight wall of trees — is abrupt and thin, and does little. A "soft" edge, graded and layered over some depth, is what produces the richness. The difference between the two is mostly a matter of how the planting is shaped.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Corridor and a Buffer</h3>
+        <p>Edges do more than hold species in place. As continuous bands across a landscape, they act as travel corridors, letting animals move between patches of habitat under cover. And they work as buffers: a layered edge slows wind, holds humidity, and softens the swing of sun and temperature, protecting the cooler, moister woodland interior behind it from drying out.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Reading the Light</h3>
+        <p>The single strongest force shaping an edge is light. It grades from deep shade beneath the canopy to full sun in the open, and every plant has its place along that line — shade-lovers tucked in close, sun-lovers out front, and the part-shade specialists threaded through the middle. Learn to read the light across an edge and you can predict, fairly well, what will grow where.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Layers Multiply Niches</h3>
+        <p>Vertical structure is the other half of the story. A canopy, an understory, a shrub band, an herb layer, and a groundcover are five different places to live, feed, and nest, stacked over the same patch of ground. Each layer you add to an edge roughly adds a new set of residents — which is why a fully layered edge can be so much busier than a single tier of plants covering the same area.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">On the Gradient</p>
+    <h2>Neighbouring Habitats</h2>
+    <p>The woodland edge sits in the middle of a gradient. Step inward, under the closed canopy, and it becomes woodland understory; step outward, into full sun, and it opens into meadow. Each neighbour shares some of the edge's plants and trades others away.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Habitat · The transition</p>
+        <p class="species-common">Woodland Edge</p>
+        <p class="species-latin">Ecotone — forest to open ground</p>
+        <p class="species-desc">The graded, layered band where woods meet open ground. Dappled, shifting light; rich, leaf-littered soil; and a full stack of layers from canopy to groundcover. The busiest, most plantable ground in many landscapes, and a natural model for a native garden border.</p>
+        <div class="species-traits"><span class="species-trait">Sun → shade</span><span class="species-trait">Layered</span><span class="species-trait">High diversity</span><span class="species-trait">woodland-edge</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Inward · shadier</p>
+        <p class="species-common">Woodland Understory</p>
+        <p class="species-latin">Beneath the closed canopy</p>
+        <p class="species-desc">Step in under the trees and the light drops. Spring ephemerals, ferns, and shade groundcovers do their work early, before the canopy fully leafs out, then rest through the shaded summer. Cooler, moister, and quieter than the edge.</p>
+        <div class="species-traits"><span class="species-trait">Part–full shade</span><span class="species-trait">Moist</span><span class="species-trait">woodland-understory</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Outward · open</p>
+        <p class="species-common">Sunny Meadow</p>
+        <p class="species-latin">Open ground, full sun</p>
+        <p class="species-desc">Step out past the shrubs and the trees fall away. Prairie grasses and sun-loving wildflowers take over in full light, peaking through summer and fall — the open counterpart that the edge blends toward on its sunny side.</p>
+        <div class="species-traits"><span class="species-trait">Full sun</span><span class="species-trait">Dry–medium</span><span class="species-trait">sunny-meadow</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Related · open woodland</p>
+        <p class="species-common">Oak Savanna</p>
+        <p class="species-latin">Scattered oaks over grassland</p>
+        <p class="species-desc">A habitat that is almost all edge: widely spaced, open-grown oaks standing over sunny grassland, historically kept open by fire. Its dappled, part-shade ground shares much of the edge's plant list spread across a wider, sunnier scene.</p>
+        <div class="species-traits"><span class="species-trait">Dappled sun</span><span class="species-trait">Fire-shaped</span><span class="species-trait">oak-savanna</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Woodland Edge · Habitat Profile · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>
