@@ -1708,6 +1708,34 @@
   "relatedWildlifeSlugs": [],
   "relatedPlantSlugs": ["pennsylvania-sedge", "cardinal-flower", "foxglove-beardtongue", "aster", "goldenrod", "golden-alexanders", "serviceberry"],
   "relatedHabitatSlugs": ["woodland-understory", "woodland-edge"]
+},
+{
+  "commonName": "Wild Columbine",
+  "scientificName": "Aquilegia canadensis",
+  "slug": "wild-columbine",
+  "type": "Spring Wildflower",
+  "category": "wildflowers",
+  "bloom": "Nodding red-and-yellow spurred flowers",
+  "season": "Spring · Summer",
+  "sun": "Part shade to full sun",
+  "moisture": "Dry to medium",
+  "height": "1–2 ft",
+  "description": "Ohio's native columbine, with nodding red-and-yellow flowers whose long nectar spurs draw hummingbirds in spring. Airy blue-green foliage on a short-lived but freely self-sowing plant of rocky woods and ledges.",
+  "url": "wild-columbine.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#bf5147",
+  "accentTo": "#d68b83",
+  "svgIcon": "flower",
+  "native": true,
+  "aliases": ["Aquilegia canadensis", "Eastern Red Columbine", "Red Columbine", "Canadian Columbine", "Columbine"],
+  "plantType": "Wildflower",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Dry", "Medium"],
+  "bloomSeasonTags": ["Spring", "Summer"],
+  "wildlifeRole": ["Nectar Plant", "Host Plant"],
+  "gardenRole": ["Edge Plant", "Filler"],
+  "relatedWildlifeSlugs": ["bumble-bee"],
+  "relatedPlantSlugs": ["wild-ginger", "pennsylvania-sedge", "foxglove-beardtongue", "little-bluestem", "prairie-dropseed", "butterfly-weed", "golden-alexanders", "wild-bergamot", "purple-coneflower"],
+  "relatedHabitatSlugs": ["woodland-edge", "oak-savanna"]
 }
-
 ]
