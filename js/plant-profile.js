@@ -1,6 +1,6 @@
 // Shared plant profile behavior.
 // 1) Reveals .section blocks as they enter the viewport.
-// 2) Auto-links companion plant names using /plants/plants.json.
+// 2) Auto-links companion plant names using /data/plants.json.
 
 (function revealSections() {
   const sections = document.querySelectorAll('.section');
@@ -25,10 +25,10 @@ async function autoLinkCompanionPlants() {
     if (!companionNames.length) return;
 
     const possiblePaths = [
-      'plants.json',
-      './plants.json',
-      '../plants/plants.json',
-      '/ohio-native-plant-guide/plants/plants.json'
+      '../data/plants.json',
+      './data/plants.json',
+      'data/plants.json',
+      '/ohio-native-plant-guide/data/plants.json'
     ];
 
     let plants = null;

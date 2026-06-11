@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/directory.css" />
-  <link rel="stylesheet" href="../css/pages/plants-index.css" />
+  <link rel="stylesheet" href="../css/plants/index.css" />
 </head>
 <body>
 
@@ -363,7 +363,7 @@ function initDirectorySearch() {
       const loadingEl = document.getElementById('loading-msg');
 
       try {
-        const res = await fetch('plants.json');
+        const res = await fetch('../data/plants.json');
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const plants = await res.json();
 
@@ -405,7 +405,7 @@ function initDirectorySearch() {
         errorEl.className = 'error-state';
         errorEl.innerHTML = `
           <strong>Could not load plant data.</strong><br>
-          Make sure <code>plants.json</code> is in the same folder as this page
+          Make sure <code>../data/plants.json</code> exists and contains valid JSON
           and that you're serving the files from a web server (not opening locally as a file).`;
         root.appendChild(errorEl);
 

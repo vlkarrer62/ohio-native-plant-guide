@@ -1,6 +1,6 @@
 /* Shared plant profile stylesheet.
    This file is intentionally light for the first refactor so plant pages keep their original personalities.
-   Future repeated profile rules can be moved here from /css/pages/plants-*.css. */
+   Future repeated profile rules can be moved here from /css/plants/*.css. */
 
 /* Companion plant links: shared across plant profile pages.
    Keeps links subtle so the botanical/profile styling stays in control. */

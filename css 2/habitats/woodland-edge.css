@@ -827,8 +827,11 @@ body {
   pointer-events: none;
 }
 .keystone-callout p { margin: 0; color: var(--band-text); position: relative; z-index: 1; }
-.keystone-callout strong {
-  color: #f0d98b;
+.keystone-callout strong,
+.keystone-callout strong a,
+.keystone-callout a strong,
+.keystone-callout a {
+  color: #f0d98b !important;
   font-weight: 600;
 }
 
