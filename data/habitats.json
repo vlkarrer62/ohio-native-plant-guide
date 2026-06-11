@@ -28,5 +28,35 @@
     "relatedPlantSlugs": ["serviceberry", "wild-geranium", "wild-columbine", "golden-alexanders", "foxglove-beardtongue", "wild-ginger", "pennsylvania-sedge", "wild-bergamot", "black-eyed-susan", "butterfly-weed"],
     "relatedWildlifeSlugs": [],
     "relatedHabitatSlugs": ["woodland-understory", "sunny-meadow", "oak-savanna"]
-  }
+  },
+{
+  "name": "Oak Savanna",
+  "slug": "oak-savanna",
+  "type": "Prairie–Woodland Mosaic",
+  "subtitle": "Scattered oaks over open grassland",
+  "summary": "Widely spaced, open-grown oaks standing over a continuous prairie ground layer — a sunlit community historically kept open by periodic fire.",
+  "url": "oak-savanna.html",
+  "tagClass": "tag-habitat",
+  "accentFrom": "#4a6b4a",
+  "accentTo": "#cda23f",
+  "svgIcon": "savanna",
+  "light": "Open sun, light scattered shade",
+  "moisture": "Dry to medium",
+  "soil": "Often sandy, well-drained",
+  "structure": "Open canopy over continuous grass",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Dry", "Medium"],
+  "layers": [
+    { "layer": "Open canopy", "note": "Widely spaced oaks — bur oak and white oak are characteristic; crowns rarely touch." },
+    { "layer": "Understory", "note": "Sparse and intermittent — scattered small trees in gaps rather than a closed tier." },
+    { "layer": "Shrub layer", "note": "Low and fire-pruned; clonal shrubs that resprout after disturbance, kept patchy." },
+    { "layer": "Herb layer", "note": "The heart of the savanna — warm-season grasses and sun-loving forbs, continuous beneath the oaks." },
+    { "layer": "Groundcover", "note": "Grass thatch, sedges, and fallen oak leaves — the fine fuel that historically carried ground fires." }
+  ],
+  "foundAlong": ["Sandy ridges & old fields", "Prairie–woodland transitions", "Glacial outwash", "Historically fire-kept openings"],
+  "designPrinciples": ["Plant oaks as open specimens", "Let grass be the matrix", "Group forbs in drifts", "Keep it sunny and airy", "Mimic fire with mowing or cutting"],
+  "relatedPlantSlugs": ["bur-oak", "white-oak", "serviceberry", "witch-hazel", "little-bluestem", "prairie-dropseed", "switchgrass", "purple-lovegrass", "butterfly-weed", "wild-bergamot", "black-eyed-susan", "purple-coneflower", "liatris", "rattlesnake-master", "mountain-mint", "coreopsis", "false-sunflower", "aster", "goldenrod", "nodding-onion", "ohio-spiderwort", "golden-alexanders", "penstemon"],
+  "relatedWildlifeSlugs": ["carpenter-bee"],
+  "relatedHabitatSlugs": ["woodland-edge", "dry-prairie", "sunny-meadow"]
+}
 ]

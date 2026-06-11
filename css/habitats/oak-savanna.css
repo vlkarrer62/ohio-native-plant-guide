@@ -1,0 +1,15 @@
+/* ════════════════════════════════════════════════════════════
+   HABITAT · Oak Savanna
+   Page-specific CSS only
+   Loads after ../css/habitat-profile.css
+   ════════════════════════════════════════════════════════════ */
+.hero-illustration {
+  max-height: 210px;
+  max-width: 340px;
+}
+@media (max-width: 600px) {
+  .hero-illustration {
+    max-height: 175px;
+    max-width: 290px;
+  }
+}
