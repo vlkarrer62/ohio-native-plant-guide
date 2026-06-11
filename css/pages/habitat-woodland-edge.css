@@ -273,7 +273,7 @@ body {
   margin: 0 0 1.1rem;
 }
 .section p { margin: 0 0 1rem; color: var(--text); }
-.section p strong { color: var(--text); font-weight: 500; }
+.section p strong. {color: #a87918; font-weight: 600; }
 .section em { font-style: italic; }
 
 /* ── KEYSTONE CALLOUT ───────────────────────── */
