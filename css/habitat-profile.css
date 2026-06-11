@@ -797,3 +797,8 @@ footer strong {
     grid-template-columns: 1fr;
   }
 }
+body {
+
+  outline: 12px solid red !important;
+
+}
