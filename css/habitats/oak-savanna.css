@@ -1,8 +1,92 @@
 /* ════════════════════════════════════════════════════════════
    HABITAT · Oak Savanna
-   Page-specific CSS only
-   Loads after ../css/habitat-profile.css
+   Page-specific CSS — gives this habitat its own personality.
+   Loads after ../css/habitat-profile.css and re-themes it by
+   overriding the shared :root tokens (palette + display serif)
+   plus the few component rules that hardcode the green ecotone.
+
+   Signature:  Petrona (display)  ·  oak-amber + prairie gold
+               on warm sand, with a dark oak-bark ink.
+   (Woodland Edge keeps Brygada 1918 + the green→gold ecotone.)
    ════════════════════════════════════════════════════════════ */
+
+:root {
+  /* warm, sun-baked sand parchment */
+  --bg:       #f6efdf;
+  --bg-warm:  #ecdcbf;
+  --bg-card:  #fbf5e7;
+  --bg-tint:  #f1e6c9;   /* warm straw-gold wash for panels/badges */
+
+  /* borders */
+  --border:        rgba(60, 48, 28, 0.12);
+  --border-accent: rgba(160, 111, 43, 0.26);
+
+  /* primary accent — oak-amber (the page signature).
+     Token name kept as --green for the shared components;
+     here it carries the savanna's warm signature hue. */
+  --green:      #a06f2b;
+  --green-soft: #cba968;
+  --green-pale: #e8dab4;
+
+  /* secondary accent — prairie / fire gold */
+  --sun:      #d59a32;
+  --sun-soft: #eccd82;
+
+  /* neutral stone — warmed */
+  --stone:       #9a8b6d;
+  --stone-light: #cdbf9c;
+
+  /* text — warm brown-greys */
+  --text:       #352e22;
+  --text-dim:   #57503f;
+  --text-faint: #897e64;
+
+  /* darks — dark oak bark, not forest green-black */
+  --ink:     #2f271c;
+  --heading: var(--ink);
+  --h2:      #8a6526;   /* warm bronze section headings */
+
+  /* dark band text (facts-band + keystone sit on --ink) */
+  --band-text:   #f1e8d4;
+  --band-faint:  rgba(241, 232, 212, 0.46);
+  --band-accent: #d8c79a;
+
+  /* page signature hue — drives page-nav hover & links */
+  --accent: #a06f2b;
+
+  /* display serif — the savanna's own voice */
+  --display: 'Petrona', Georgia, 'Times New Roman', serif;
+}
+
+/* ── re-tint the spots where habitat-profile.css hardcodes green ── */
+
+/* hero sun-glow → warm amber (was a green radial) */
+.hero-light {
+  background: radial-gradient(circle, rgba(160, 111, 43, 0.14) 0%, rgba(160, 111, 43, 0) 68%);
+}
+
+/* warm the hero plate so the light reads sun-baked */
+.hero {
+  background:
+    radial-gradient(120% 82% at 80% 8%, rgba(213, 162, 58, 0.26) 0%, rgba(213, 162, 58, 0) 56%),
+    radial-gradient(120% 80% at 16% 16%, var(--bg-tint) 0%, rgba(241, 230, 201, 0) 60%),
+    linear-gradient(168deg, #fbf4e4 0%, var(--bg) 60%, var(--bg-warm) 100%);
+}
+
+/* page-nav pill border → amber */
+.page-nav a { border-color: rgba(160, 111, 43, 0.22); }
+
+/* "common" life tags → amber instead of green */
+.insect-tag.common {
+  color: var(--green);
+  background: rgba(160, 111, 43, 0.12);
+  border-color: rgba(160, 111, 43, 0.30);
+}
+
+/* keystone watermark glyph → warm straw (was sage) */
+.keystone-callout::before { color: rgba(216, 199, 154, 0.16); }
+
+/* ── page-specific hero sizing (same as the tier convention) ── */
 .hero-illustration {
   max-height: 210px;
   max-width: 340px;
