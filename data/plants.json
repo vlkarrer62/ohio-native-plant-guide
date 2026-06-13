@@ -1766,5 +1766,33 @@
   "relatedWildlifeSlugs": ["bumble-bee"],
   "relatedPlantSlugs": ["wild-ginger", "wild-columbine", "pennsylvania-sedge", "foxglove-beardtongue", "golden-alexanders", "cardinal-flower", "aster", "goldenrod", "wild-bergamot"],
   "relatedHabitatSlugs": ["woodland-edge", "woodland-understory"]
+},
+ {
+  "commonName": "White Snakeroot",
+  "scientificName": "Ageratina altissima",
+  "type": "Woodland Wildflower",
+  "category": "wildflowers",
+  "bloom": "Blooms late summer to fall",
+  "season": "Late Summer · Fall",
+  "sun": "Part shade to shade",
+  "moisture": "Medium to moist",
+  "height": "1–3 ft",
+  "description": "A bushy shade perennial whose flat-topped clusters of small, bright white flowers light up woodland ground in late summer and fall, when little else is blooming. All parts are toxic.",
+  "url": "white-snakeroot.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#e8ece2",
+  "accentTo": "#dfe6d6",
+  "svgIcon": "snakeroot",
+  "plantType": "Wildflower",
+  "lightTags": ["Part Sun", "Shade"],
+  "moistureTags": ["Medium", "Moist"],
+  "bloomSeasonTags": ["Late Summer", "Fall"],
+  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
+  "gardenRole": ["Filler", "Edge Plant"],
+  "slug": "white-snakeroot",
+  "relatedWildlifeSlugs": [],
+  "relatedPlantSlugs": ["wild-ginger", "pennsylvania-sedge", "wild-geranium", "wild-columbine", "golden-alexanders", "aster", "goldenrod"],
+  "relatedHabitatSlugs": ["woodland-edge", "woodland-understory"],
+  "aliases": ["Ageratina altissima", "Eupatorium rugosum", "Eupatorium ageratoides", "White Snake Root", "Snakeroot", "White Sanicle"]
 }
 ]
