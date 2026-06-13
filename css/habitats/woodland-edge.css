@@ -1,14 +1,81 @@
 /* ════════════════════════════════════════════════════════════
    HABITAT · Woodland Edge
-   Page-specific CSS only
-   Loads after ../css/habitat-profile.css
+   Page personality — TOKEN OVERRIDES ONLY.
+   Loads after ../css/habitat-profile.css. The shared file is the
+   structural "bones"; this file declares Woodland Edge's own look
+   by re-declaring tokens — no component rule overrides needed.
+
+   Voice:  Brygada 1918 (display) · green→gold "ecotone" palette
+           on warm parchment, with a forest green-black ink.
+   (These values match the shared default, so Woodland Edge is
+   self-describing rather than relying on the bones' fallback.)
    ════════════════════════════════════════════════════════════ */
 
+:root {
+  /* warm parchment with a faint green cast */
+  --bg:       #f4f0e6;
+  --bg-warm:  #ebe3d2;
+  --bg-card:  #faf6ec;
+  --bg-tint:  #e8ecdd;
+
+  /* borders */
+  --border:        rgba(48, 52, 38, 0.12);
+  --border-accent: rgba(74, 107, 74, 0.24);
+
+  /* primary accent — woodland green (the page signature) */
+  --green:      #4a6b4a;
+  --green-soft: #84a07e;
+  --green-pale: #d3decb;
+
+  /* secondary accent — warm sun-gold (the open side) */
+  --sun:      #cda23f;
+  --sun-soft: #e2c67e;
+
+  /* neutral stone */
+  --stone:       #8f897b;
+  --stone-light: #c4bca8;
+
+  /* text — warm green-greys */
+  --text:       #34362d;
+  --text-dim:   #565748;
+  --text-faint: #888471;
+
+  /* darks — forest green-black */
+  --ink:     #28302a;
+  --heading: var(--ink);
+  --h2:      #5c7d58;
+
+  /* dark-band text */
+  --band-text:   #e9efe0;
+  --band-faint:  rgba(233, 239, 224, 0.46);
+  --band-accent: #b6c9a8;
+
+  /* page-nav hover / link hue */
+  --accent: #4a6b4a;
+
+  /* keystone emphasis — gold on the dark panel */
+  --keystone-strong: #f0d98b;
+
+  /* surrounds */
+  --page-backdrop: #e5dcc8;
+  --hero-top:      #f6f3ea;
+
+  /* channel tokens — keep in sync with the solids above so the
+     translucent accents re-theme too */
+  --accent-rgb:      74 107 74;    /* = --green / --accent */
+  --sun-soft-rgb:    226 198 126;  /* = --sun-soft */
+  --band-accent-rgb: 182 201 168;  /* = --band-accent (keystone glyph) */
+  --hero-sun-rgb:    226 198 126;  /* hero warm radial (= sun-soft) */
+
+  /* display serif — Woodland Edge's voice */
+  --display: 'Brygada 1918', Georgia, 'Times New Roman', serif;
+}
+
+/* ── page-specific hero sizing (same as the tier convention) ── */
 .hero-illustration {
   max-height: 210px;
   max-width: 340px;
 }
-
 @media (max-width: 600px) {
   .hero-illustration {
     max-height: 175px;
