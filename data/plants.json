@@ -1794,5 +1794,33 @@
   "relatedPlantSlugs": ["wild-ginger", "pennsylvania-sedge", "wild-geranium", "wild-columbine", "golden-alexanders", "aster", "goldenrod"],
   "relatedHabitatSlugs": ["woodland-edge", "woodland-understory"],
   "aliases": ["Ageratina altissima", "Eupatorium rugosum", "Eupatorium ageratoides", "White Snake Root", "Snakeroot", "White Sanicle"]
+},
+{
+  "commonName": "Boneset",
+  "scientificName": "Eupatorium perfoliatum",
+  "type": "Wet-Meadow Wildflower",
+  "category": "wildflowers",
+  "bloom": "Blooms late summer to fall",
+  "season": "Late Summer · Fall",
+  "sun": "Full sun to part shade",
+  "moisture": "Moist to wet",
+  "height": "2–4 ft",
+  "description": "A stout wet-meadow perennial with pierced, perfoliate leaves and broad flat clusters of soft white flowers — among the most heavily visited late-season nectar plants for bees, wasps, and flies.",
+  "url": "boneset.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#e6ece8",
+  "accentTo": "#dde6e0",
+  "svgIcon": "boneset",
+  "plantType": "Wildflower",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Moist", "Wet"],
+  "bloomSeasonTags": ["Late Summer", "Fall"],
+  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
+  "gardenRole": ["Filler", "Edge Plant"],
+  "slug": "boneset",
+  "relatedWildlifeSlugs": [],
+  "relatedPlantSlugs": ["white-snakeroot", "culvers-root", "aster", "goldenrod"],
+  "relatedHabitatSlugs": ["sunny-meadow"],
+  "aliases": ["Eupatorium perfoliatum", "Common Boneset", "Thoroughwort", "Agueweed", "Feverwort", "Boneset"]
 }
 ]
