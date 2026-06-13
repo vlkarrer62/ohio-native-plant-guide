@@ -1,21 +1,26 @@
 /* ════════════════════════════════════════════════════════════
-   HABITAT PROFILE
-   Shared habitat profile system
-   Theme: Ecotone (light) · Brygada 1918 + Outfit + DM Mono
+   HABITAT PROFILE — shared structure ("the bones")
+   Brygada 1918 + Outfit + DM Mono · ecotone palette = DEFAULT only
 
-   This file should contain reusable habitat profile structure:
-   hero, facts band, sections, keystone callouts, layer lists,
-   life hub cards, plant-by-layer rows, story cards, neighboring
-   habitat cards, and footer styling.
+   This file owns LAYOUT and STRUCTURE for every habitat profile:
+   hero, facts band, sections, keystone callout, layer timeline,
+   life hub, plant-by-layer rows, story cards, neighbouring-habitat
+   cards, footer, and responsive behaviour.
 
-   Page-specific habitat files should live in:
-   css/habitats/[habitat-name].css
+   PERSONALITY lives per page in css/habitats/[slug].css.
+   Every colour here is read from a :root token (incl. the translucent
+   accents, via *-rgb channel tokens). A habitat changes its whole
+   look by overriding tokens — it should NEVER need to re-declare a
+   component rule just to recolour it. The values below are the
+   default (Woodland Edge / ecotone) theme; other habitats override.
 
-   Loads after ../css/base.css and before the specific habitat CSS.
+   Loads after ../css/base.css and before the page's habitat CSS.
    ════════════════════════════════════════════════════════════ */
 
 :root {
-  /* backgrounds — warm parchment with a faint green cast */
+  /* ── THEME TOKENS — override these per page to change personality ── */
+
+  /* backgrounds */
   --bg:       #f4f0e6;
   --bg-warm:  #ebe3d2;
   --bg-card:  #faf6ec;
@@ -25,12 +30,12 @@
   --border:        rgba(48, 52, 38, 0.12);
   --border-accent: rgba(74, 107, 74, 0.24);
 
-  /* primary accent — woodland green */
+  /* primary accent (the page signature hue) */
   --green:      #4a6b4a;
   --green-soft: #84a07e;
   --green-pale: #d3decb;
 
-  /* secondary accent — warm sun-gold */
+  /* secondary accent */
   --sun:      #cda23f;
   --sun-soft: #e2c67e;
 
@@ -43,20 +48,39 @@
   --text-dim:   #565748;
   --text-faint: #888471;
 
-  /* darks */
+  /* darks (facts band + keystone panel) */
   --ink:     #28302a;
   --heading: var(--ink);
   --h2:      #5c7d58;
 
-  /* dark band text */
+  /* dark-band text */
   --band-text:   #e9efe0;
   --band-faint:  rgba(233, 239, 224, 0.46);
   --band-accent: #b6c9a8;
 
-  /* page signature hue */
+  /* page-nav hover / link hue */
   --accent: #4a6b4a;
 
-  /* fonts */
+  /* keystone emphasis colour (gold on the dark panel) */
+  --keystone-strong: #f0d98b;
+
+  /* surrounds */
+  --page-backdrop: #e5dcc8;   /* behind the floating card */
+  --hero-top:      #f6f3ea;   /* top of the hero light wash */
+
+  /* ── CHANNEL TOKENS — "R G B" triplets that drive every translucent
+     accent so it re-themes with the page. Keep each in sync with its
+     solid token above. (Used as rgb(var(--x-rgb) / <alpha>).) ── */
+  --accent-rgb:      74 107 74;    /* = --green / --accent */
+  --sun-soft-rgb:    226 198 126;  /* = --sun-soft */
+  --band-text-rgb:   233 239 224;  /* = --band-text (band hairlines) */
+  --band-accent-rgb: 182 201 168;  /* = --band-accent (keystone glyph) */
+  --hero-sun-rgb:    226 198 126;  /* hero warm radial (defaults to sun-soft) */
+  --shadow-rgb:      40 48 42;     /* card + nav drop shadows */
+  --glass-rgb:       250 246 236;  /* nav pill frosted background */
+
+  /* ── TYPE — body/labels are constant across the guide; --display is
+     the per-page voice (override it per habitat). ── */
   --display: 'Brygada 1918', Georgia, 'Times New Roman', serif;
   --body:    'Outfit', system-ui, -apple-system, sans-serif;
 }
@@ -66,7 +90,7 @@
 }
 
 html {
-  background: #e5dcc8;
+  background: var(--page-backdrop);
   min-height: 100%;
 }
 
@@ -81,8 +105,8 @@ body {
   border: 1px solid var(--border);
   border-radius: 16px;
   box-shadow:
-    0 1px 3px rgba(40, 48, 42, 0.06),
-    0 18px 50px rgba(40, 48, 42, 0.10);
+    0 1px 3px rgb(var(--shadow-rgb) / 0.06),
+    0 18px 50px rgb(var(--shadow-rgb) / 0.10);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -109,8 +133,8 @@ body {
   justify-content: center;
   padding: 0.42rem 0.75rem;
   border-radius: 999px;
-  background: rgba(250, 246, 236, 0.8);
-  border: 1px solid rgba(74, 107, 74, 0.2);
+  background: rgb(var(--glass-rgb) / 0.8);
+  border: 1px solid rgb(var(--accent-rgb) / 0.2);
   color: var(--text-dim);
   font-family: 'DM Mono', monospace;
   font-size: 0.56rem;
@@ -118,13 +142,13 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   backdrop-filter: blur(10px);
-  box-shadow: 0 6px 18px rgba(36, 42, 32, 0.08);
+  box-shadow: 0 6px 18px rgb(var(--shadow-rgb) / 0.08);
 }
 
 .page-nav a:hover {
   color: var(--accent);
   border-color: var(--accent);
-  background: rgba(250, 246, 236, 0.94);
+  background: rgb(var(--glass-rgb) / 0.94);
 }
 
 /* ── HERO ───────────────────────── */
@@ -135,9 +159,9 @@ body {
   padding: 3.6rem 1.6rem 2.4rem;
   text-align: center;
   background:
-    radial-gradient(120% 80% at 78% 10%, rgba(226, 198, 126, 0.22) 0%, rgba(226, 198, 126, 0) 58%),
-    radial-gradient(120% 80% at 18% 14%, var(--bg-tint) 0%, rgba(232, 236, 221, 0) 60%),
-    linear-gradient(168deg, #f6f3ea 0%, var(--bg) 60%, var(--bg-warm) 100%);
+    radial-gradient(120% 80% at 78% 10%, rgb(var(--hero-sun-rgb) / 0.22) 0%, transparent 58%),
+    radial-gradient(120% 80% at 18% 14%, var(--bg-tint) 0%, transparent 60%),
+    linear-gradient(168deg, var(--hero-top) 0%, var(--bg) 60%, var(--bg-warm) 100%);
   border-bottom: 1px solid var(--border);
   border-radius: 16px 16px 0 0;
 }
@@ -149,7 +173,7 @@ body {
   transform: translateX(-50%);
   width: 88%;
   height: 64%;
-  background: radial-gradient(circle, rgba(74, 107, 74, 0.12) 0%, rgba(74, 107, 74, 0) 68%);
+  background: radial-gradient(circle, rgb(var(--accent-rgb) / 0.12) 0%, transparent 68%);
   filter: blur(8px);
   pointer-events: none;
 }
@@ -243,8 +267,8 @@ body {
   gap: 0.34rem;
   padding: 1.5rem 1.4rem;
   background: var(--ink);
-  border-top: 1px solid rgba(233, 239, 224, 0.07);
-  border-left: 1px solid rgba(233, 239, 224, 0.07);
+  border-top: 1px solid rgb(var(--band-text-rgb) / 0.07);
+  border-left: 1px solid rgb(var(--band-text-rgb) / 0.07);
 }
 
 .fact-label {
@@ -330,7 +354,7 @@ body {
   right: 0.4rem;
   font-size: 6rem;
   line-height: 1;
-  color: rgba(182, 201, 168, 0.12);
+  color: rgb(var(--band-accent-rgb) / 0.12);
   pointer-events: none;
 }
 
@@ -341,11 +365,16 @@ body {
   z-index: 1;
 }
 
-.keystone-callout strong,
+/* Emphasis inside the dark callout. NOTE the `p` in the selectors:
+   the callout sits inside a .section, so `.section p strong` (0,1,2)
+   would otherwise win and drag the emphasis to the dark body-text
+   colour (invisible on the dark panel). Matching `.keystone-callout p
+   strong` ties that specificity and wins on source order. */
+.keystone-callout p strong,
 .keystone-callout strong a,
 .keystone-callout a strong,
-.keystone-callout a {
-  color: #f0d98b;
+.keystone-callout p a {
+  color: var(--keystone-strong);
   font-weight: 600;
 }
 
@@ -481,8 +510,8 @@ body {
 
 .insect-tag.common {
   color: var(--green);
-  background: rgba(74, 107, 74, 0.12);
-  border-color: rgba(74, 107, 74, 0.3);
+  background: rgb(var(--accent-rgb) / 0.12);
+  border-color: rgb(var(--accent-rgb) / 0.3);
 }
 
 /* ── CARE TABLE ───────────────────────── */
