@@ -86,6 +86,15 @@
 /* keystone watermark glyph → warm straw (was sage) */
 .keystone-callout::before { color: rgba(216, 199, 154, 0.16); }
 
+/* keystone emphasis — pin to gold so it stays legible on the dark
+   oak-bark panel (otherwise the emphasis inherits a dark text colour
+   and vanishes against the dark background). */
+.keystone-callout p strong,
+.keystone-callout strong {
+  color: #f0d98b !important;
+  font-weight: 600;
+}
+
 /* ── page-specific hero sizing (same as the tier convention) ── */
 .hero-illustration {
   max-height: 210px;
