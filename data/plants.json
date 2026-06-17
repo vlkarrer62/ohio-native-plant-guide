@@ -1822,5 +1822,33 @@
   "relatedPlantSlugs": ["white-snakeroot", "culvers-root", "aster", "goldenrod"],
   "relatedHabitatSlugs": ["sunny-meadow"],
   "aliases": ["Eupatorium perfoliatum", "Common Boneset", "Thoroughwort", "Agueweed", "Feverwort", "Boneset"]
+},
+{
+  "commonName": "Wingstem",
+  "scientificName": "Verbesina alternifolia",
+  "type": "Bottomland Wildflower",
+  "category": "wildflowers",
+  "bloom": "Blooms late summer to fall",
+  "season": "Late Summer · Fall",
+  "sun": "Full sun to part shade",
+  "moisture": "Medium to moist",
+  "height": "3–8 ft",
+  "description": "A tall bottomland perennial with conspicuous winged stems and branched sprays of ragged yellow flowers in late summer — a generous, accessible nectar source that also hosts the silvery checkerspot and feeds finches.",
+  "url": "wingstem.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#efe9d2",
+  "accentTo": "#e6e0c6",
+  "svgIcon": "wingstem",
+  "plantType": "Wildflower",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Medium", "Moist"],
+  "bloomSeasonTags": ["Late Summer", "Fall"],
+  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
+  "gardenRole": ["Filler", "Edge Plant"],
+  "slug": "wingstem",
+  "relatedWildlifeSlugs": [],
+  "relatedPlantSlugs": ["boneset", "culvers-root", "goldenrod", "aster"],
+  "relatedHabitatSlugs": ["woodland-edge", "sunny-meadow"],
+  "aliases": ["Verbesina alternifolia", "Wingstem", "Yellow Ironweed", "Common Wingstem", "Actinomeris alternifolia"]
 }
 ]
