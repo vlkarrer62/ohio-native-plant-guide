@@ -19,6 +19,17 @@ a.companion-link:focus-visible {
   opacity: 1;
 }
 
+/* ── KEYSTONE EMPHASIS (central) ─────────────────────────────
+   .keystone-callout sits inside .section, so `.section p strong`
+   (0,1,2) would otherwise beat a per-page `.keystone-callout strong`
+   (0,1,1) and force the dark body-text colour onto the bold —
+   invisible on the dark --ink panel. This selector is (0,2,2), so it
+   wins regardless of file load order. Pages set only --keystone-strong. */
+.section .keystone-callout p strong {
+  color: var(--keystone-strong, #fff);
+  font-weight: 600;
+}
+
 
 /* ── BOTANICAL PLATE PLACEHOLDERS ──
    Missing plant plates use a predictable filename:
