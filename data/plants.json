@@ -1850,5 +1850,33 @@
   "relatedPlantSlugs": ["boneset", "culvers-root", "goldenrod", "aster"],
   "relatedHabitatSlugs": ["woodland-edge", "sunny-meadow"],
   "aliases": ["Verbesina alternifolia", "Wingstem", "Yellow Ironweed", "Common Wingstem", "Actinomeris alternifolia"]
+},
+{
+  "commonName": "Cup Plant",
+  "scientificName": "Silphium perfoliatum",
+  "type": "Prairie Wildflower",
+  "category": "wildflowers",
+  "bloom": "Blooms mid to late summer",
+  "season": "Summer · Late Summer",
+  "sun": "Full sun to part shade",
+  "moisture": "Medium to moist",
+  "height": "4–8 ft",
+  "description": "A towering prairie perennial with square stems and paired leaves fused into rain-holding cups, crowned by bright yellow sunflower heads — a multi-resource plant offering nectar, pollen, seed for finches, and water held in its leaves.",
+  "url": "cup-plant.html",
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#edeedd",
+  "accentTo": "#e3e6cd",
+  "svgIcon": "cup-plant",
+  "plantType": "Wildflower",
+  "lightTags": ["Full Sun", "Part Sun"],
+  "moistureTags": ["Medium", "Moist"],
+  "bloomSeasonTags": ["Summer", "Late Summer"],
+  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
+  "gardenRole": ["Filler", "Edge Plant"],
+  "slug": "cup-plant",
+  "relatedWildlifeSlugs": [],
+  "relatedPlantSlugs": ["wingstem", "boneset", "culvers-root", "goldenrod", "aster"],
+  "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie"],
+  "aliases": ["Silphium perfoliatum", "Cup Plant", "Cupplant", "Carpenter's Weed", "Indian Cup", "Squareweed"]
 }
 ]
