@@ -52,6 +52,9 @@
   /* page signature hue — drives page-nav hover */
   --accent: #5e7339;
 
+  /* keystone emphasis colour (resolved by central rule in plant-profile.css) */
+  --keystone-strong: #f0c75a;
+
   /* fonts */
   --display: 'Vollkorn', Georgia, 'Times New Roman', serif;
   --body:    'Outfit', system-ui, -apple-system, sans-serif;
@@ -295,7 +298,7 @@ body {
   pointer-events: none;
 }
 .keystone-callout p { margin: 0; color: var(--band-text); position: relative; z-index: 1; }
-.keystone-callout p strong { color: #f0c75a; font-weight: 600; }
+.keystone-callout p strong { color: var(--keystone-strong, #fff); font-weight: 600; }
 
 /* ── PILL LIST ───────────────────────── */
 .pill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
