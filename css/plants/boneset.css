@@ -295,7 +295,7 @@ body {
   pointer-events: none;
 }
 .keystone-callout p { margin: 0; color: var(--band-text); position: relative; z-index: 1; }
-.keystone-callout strong { color: #fff; font-weight: 500; }
+.keystone-callout p strong { color: #fff; font-weight: 500; }
 
 /* ── PILL LIST ───────────────────────── */
 .pill-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
