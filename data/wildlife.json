@@ -111,6 +111,121 @@
     ]
   },
   {
+    "commonName": "Bumble Bee",
+    "scientificName": "Genus Bombus",
+    "slug": "bumble-bee",
+    "type": "Native Bee",
+    "category": "pollinators",
+    "subcategory": "bees",
+    "wildlifeType": [
+      "Bee"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Buzz Pollinator",
+      "Social Bee"
+    ],
+    "supportedBy": [
+      "Long Bloom Season",
+      "Nest Cavities",
+      "Pollen & Nectar"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "Large, ~½–1 inch",
+    "activeSeason": "Early spring–fall",
+    "shelter": "Nests in cavities, often underground",
+    "range": "Statewide",
+    "description": "Ohio's big, fuzzy, social bees — black-and-gold buzz-pollinators that vibrate flowers to shake pollen loose, fly in cool weather many bees can't, and live in annual colonies founded each spring by a single overwintered queen.",
+    "url": "bumble-bee.html",
+    "tagClass": "tag-bee",
+    "accentFrom": "#e8c45e",
+    "accentTo": "#caa030",
+    "svgIcon": "bumble-bee",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"14.5\" rx=\"4.6\" ry=\"5.6\" fill=\"currentColor\" opacity=\"0.42\"/>\n        <path d=\"M7.6 13 H16.4 M7.8 16.2 H16.2\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.5\"/>\n        <ellipse cx=\"12\" cy=\"8.6\" rx=\"3.4\" ry=\"2.9\" fill=\"currentColor\" opacity=\"0.62\"/>\n        <ellipse cx=\"12\" cy=\"5\" rx=\"2.2\" ry=\"1.8\" fill=\"currentColor\" opacity=\"0.55\"/>\n        <ellipse cx=\"6\" cy=\"9.4\" rx=\"5.6\" ry=\"2.4\" transform=\"rotate(-20 6 9.4)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <ellipse cx=\"18\" cy=\"9.4\" rx=\"5.6\" ry=\"2.4\" transform=\"rotate(20 18 9.4)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <path d=\"M10.7 3.9 C9.9 3 9.3 2.6 8.7 2.3\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M13.3 3.9 C14.1 3 14.7 2.6 15.3 2.3\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n      </svg>",
+    "relatedPlantSlugs": [
+      "golden-alexanders",
+      "penstemon",
+      "wild-geranium",
+      "wild-bergamot",
+      "purple-coneflower",
+      "mountain-mint",
+      "liatris",
+      "goldenrod"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee",
+      "sweat-bee"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge",
+      "oak-savanna"
+    ]
+  },
+  {
+    "commonName": "Long-Horned Bee",
+    "scientificName": "Tribe Eucerini",
+    "slug": "long-horned-bee",
+    "type": "Native Bee",
+    "category": "pollinators",
+    "subcategory": "bees",
+    "wildlifeType": [
+      "Bee"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Composite Specialist",
+      "Ground-Nester"
+    ],
+    "supportedBy": [
+      "Composite Flowers",
+      "Bare Ground",
+      "Pollen & Nectar"
+    ],
+    "seasonSeen": [
+      "Summer",
+      "Late Summer",
+      "Fall"
+    ],
+    "size": "Medium–large, ~½ inch",
+    "activeSeason": "Summer–fall",
+    "shelter": "Nests in bare ground",
+    "range": "Statewide",
+    "description": "Robust, fast, tawny native bees of late-summer flowers — the males marked by remarkably long antennae. Many are devoted to composites like sunflowers and coneflowers, nesting in bare ground and timing their flight to the bloom.",
+    "url": "long-horned-bee.html",
+    "tagClass": "tag-bee",
+    "accentFrom": "#c8895a",
+    "accentTo": "#9a5a2c",
+    "svgIcon": "long-horned-bee",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"15\" rx=\"3.6\" ry=\"5\" fill=\"currentColor\" opacity=\"0.42\"/>\n        <path d=\"M8.6 13.6 H15.4 M8.8 16.6 H15.2\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.5\"/>\n        <ellipse cx=\"12\" cy=\"9.8\" rx=\"3\" ry=\"2.6\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <ellipse cx=\"12\" cy=\"6.6\" rx=\"1.9\" ry=\"1.6\" fill=\"currentColor\" opacity=\"0.55\"/>\n        <ellipse cx=\"6.4\" cy=\"10.6\" rx=\"5\" ry=\"2.1\" transform=\"rotate(-22 6.4 10.6)\" fill=\"currentColor\" opacity=\"0.2\"/>\n        <ellipse cx=\"17.6\" cy=\"10.6\" rx=\"5\" ry=\"2.1\" transform=\"rotate(22 17.6 10.6)\" fill=\"currentColor\" opacity=\"0.2\"/>\n        <path d=\"M11 5.6 C9.6 4 8.4 2.8 7.4 1.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.62\"/>\n        <path d=\"M13 5.6 C14.4 4 15.6 2.8 16.6 1.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.62\"/>\n      </svg>",
+    "relatedPlantSlugs": [
+      "false-sunflower",
+      "black-eyed-susan",
+      "purple-coneflower",
+      "wingstem",
+      "cup-plant",
+      "goldenrod",
+      "aster",
+      "coreopsis"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee",
+      "sweat-bee",
+      "bumble-bee"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "oak-savanna",
+      "woodland-edge"
+    ]
+  },
+  {
     "commonName": "Hover Fly",
     "scientificName": "Family Syrphidae",
     "slug": "hover-fly",
