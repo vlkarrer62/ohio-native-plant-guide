@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bumble Bee · Genus Bombus · Ohio Wildlife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/directory.css" />
+  <link rel="stylesheet" href="../css/wildlife/bumble-bee.css" />
+</head>
+<body>
+  <nav class="site-return-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Wildlife Directory</a>
+    <a href="../plants/index.html">Plant Directory</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Bumble bee (genus Bombus): a large, rounded, densely furred bee,
+         the thorax golden, the abdomen banded gold and black, with two
+         pairs of wings, elbowed antennae, and hind legs bearing the
+         corbicula (pollen basket) packed with an orange pollen load. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <radialGradient id="fuzz" cx="42%" cy="34%" r="72%">
+          <stop offset="0" stop-color="#f3cf66"/>
+          <stop offset="60%" stop-color="#e6b13a"/>
+          <stop offset="100%" stop-color="#bd8a26"/>
+        </radialGradient>
+        <linearGradient id="wingB" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#efe6cf" stop-opacity="0.42"/>
+          <stop offset="100%" stop-color="#bcae8e" stop-opacity="0.16"/>
+        </linearGradient>
+      </defs>
+
+      <!-- legs -->
+      <g stroke="#140e06" stroke-width="3.4" stroke-linecap="round" fill="none">
+        <path d="M120 196 C100 204 84 214 72 226"/>
+        <path d="M122 232 C102 242 88 254 78 268"/>
+        <path d="M180 196 C200 204 216 214 228 226"/>
+        <path d="M178 232 C198 242 212 254 222 268"/>
+        <!-- hind legs -->
+        <path d="M128 272 C110 292 96 314 90 338"/>
+        <path d="M172 272 C190 292 204 314 210 338"/>
+      </g>
+      <!-- corbiculae (pollen baskets) -->
+      <g>
+        <ellipse cx="96" cy="314" rx="13" ry="19" transform="rotate(22 96 314)" fill="#cf7a2a"/>
+        <ellipse cx="204" cy="314" rx="13" ry="19" transform="rotate(-22 204 314)" fill="#cf7a2a"/>
+        <ellipse cx="92" cy="308" rx="5" ry="9" transform="rotate(22 92 308)" fill="#e29a48" opacity="0.7"/>
+        <ellipse cx="208" cy="308" rx="5" ry="9" transform="rotate(-22 208 308)" fill="#e29a48" opacity="0.7"/>
+      </g>
+
+      <!-- wings -->
+      <g>
+        <ellipse cx="96" cy="200" rx="78" ry="32" transform="rotate(-22 96 200)" fill="url(#wingB)" stroke="#a89c7c" stroke-width="1.1"/>
+        <ellipse cx="204" cy="200" rx="78" ry="32" transform="rotate(22 204 200)" fill="url(#wingB)" stroke="#a89c7c" stroke-width="1.1"/>
+        <ellipse cx="88" cy="238" rx="58" ry="23" transform="rotate(-14 88 238)" fill="url(#wingB)" stroke="#a89c7c" stroke-width="1" opacity="0.85"/>
+        <ellipse cx="212" cy="238" rx="58" ry="23" transform="rotate(14 212 238)" fill="url(#wingB)" stroke="#a89c7c" stroke-width="1" opacity="0.85"/>
+        <g stroke="#9a8e6e" stroke-width="0.7" opacity="0.55" fill="none">
+          <path d="M150 192 C118 188 74 196 36 210"/><path d="M150 200 C116 200 72 210 38 224"/>
+          <path d="M150 192 C182 188 226 196 264 210"/><path d="M150 200 C184 200 228 210 262 224"/>
+        </g>
+      </g>
+
+      <!-- abdomen (banded gold / black, fuzzy) -->
+      <g>
+        <ellipse cx="150" cy="276" rx="44" ry="62" fill="#1a1208"/>
+        <clipPath id="abdH"><ellipse cx="150" cy="276" rx="44" ry="62"/></clipPath>
+        <g clip-path="url(#abdH)">
+          <rect x="104" y="218" width="92" height="30" fill="url(#fuzz)"/>
+          <rect x="104" y="272" width="92" height="26" fill="url(#fuzz)"/>
+          <ellipse cx="132" cy="240" rx="18" ry="50" fill="rgba(255,255,255,0.08)"/>
+        </g>
+        <!-- fuzz at abdomen edge -->
+        <g stroke="#e6b13a" stroke-width="1.5" stroke-linecap="round" opacity="0.55">
+          <path d="M106 232 l-7 -3"/><path d="M194 232 l7 -3"/>
+          <path d="M104 284 l-7 -1"/><path d="M196 284 l7 -1"/>
+          <path d="M150 337 l0 7"/><path d="M134 333 l-2 7"/><path d="M166 333 l2 7"/>
+        </g>
+        <ellipse cx="150" cy="276" rx="44" ry="62" fill="none" stroke="#0f0a04" stroke-width="1.5"/>
+      </g>
+
+      <!-- thorax (golden, fuzzy) -->
+      <ellipse cx="150" cy="186" rx="34" ry="32" fill="url(#fuzz)" stroke="#9a6f1e" stroke-width="1.5"/>
+      <ellipse cx="138" cy="176" rx="11" ry="15" fill="rgba(255,240,190,0.45)"/>
+      <g stroke="#e6b13a" stroke-width="1.8" stroke-linecap="round" opacity="0.6">
+        <path d="M118 174 l-8 -4"/><path d="M116 192 l-9 0"/><path d="M120 206 l-7 5"/>
+        <path d="M182 174 l8 -4"/><path d="M184 192 l9 0"/><path d="M180 206 l7 5"/>
+        <path d="M150 156 l0 -8"/>
+      </g>
+
+      <!-- head + eyes + elbowed antennae -->
+      <ellipse cx="150" cy="146" rx="20" ry="17" fill="#1a1208" stroke="#0f0a04" stroke-width="1.4"/>
+      <ellipse cx="135" cy="146" rx="5" ry="9" fill="#0a0702"/>
+      <ellipse cx="165" cy="146" rx="5" ry="9" fill="#0a0702"/>
+      <ellipse cx="138" cy="141" rx="2.4" ry="4" fill="rgba(240,220,160,0.5)"/>
+      <g stroke="#140e06" stroke-width="2.8" stroke-linecap="round" fill="none">
+        <path d="M140 133 C133 127 129 123 125 121"/>
+        <path d="M125 121 C119 117 115 111 113 105"/>
+        <path d="M160 133 C167 127 171 123 175 121"/>
+        <path d="M175 121 C181 117 185 111 187 105"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Wildlife · Pollinators · Bumble Bees</div>
+      <h1>Bumble<em>Bee</em></h1>
+      <p class="hero-latin">Genus Bombus</p>
+      <p class="hero-tagline">Ohio's big, fuzzy, social bees — black-and-gold buzz-pollinators that shake pollen loose by vibrating, fly in cool weather many bees can't, and build a colony anew each spring.</p>
+      <div class="flagship-badge">✦ Buzz Pollinator</div>
+    </div>
+  </header>
+
+  <!-- ── FIELD GUIDE TAG BAND ── -->
+  <div class="field-tag-band">
+    <div class="field-tag-group">
+      <span class="field-tag-label">Wildlife Type</span>
+      <div class="field-tag-pills">
+        <span class="field-tag">Bee (Bombus)</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Ecological Role</span>
+      <div class="field-tag-pills">
+        <span class="field-tag role">Pollinator</span>
+        <span class="field-tag role">Buzz Pollinator</span>
+        <span class="field-tag role">Social Bee</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Season Seen</span>
+      <div class="field-tag-pills">
+        <span class="field-tag season">Spring</span>
+        <span class="field-tag season">Summer</span>
+        <span class="field-tag season">Fall</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Supported By</span>
+      <div class="field-tag-pills">
+        <span class="field-tag support">Long Bloom Season</span>
+        <span class="field-tag support">Nest Cavities</span>
+        <span class="field-tag support">Pollen &amp; Nectar</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Bumble bees (Bombus)</span></div>
+    <div class="fact-item"><span class="fact-label">Size</span><span class="fact-value">Large — about ½–1 inch</span></div>
+    <div class="fact-item"><span class="fact-label">Forage</span><span class="fact-value">Nectar &amp; pollen, many flowers</span></div>
+    <div class="fact-item"><span class="fact-label">Colony</span><span class="fact-value">Annual &amp; social</span></div>
+    <div class="fact-item"><span class="fact-label">Nesting</span><span class="fact-value">Cavities, often underground</span></div>
+    <div class="fact-item"><span class="fact-label">Flight</span><span class="fact-value">Early spring–fall</span></div>
+  </div>
+
+  <section class="section">
+    <p class="eyebrow">About This Bee</p>
+    <h2>Big, Fuzzy, and Social</h2>
+    <p>Bumble bees are the large, round, densely furred bees of the garden — most of them banded in black and gold, a few carrying a band of orange or rust. Their thick pile and their habit of warming their own flight muscles let them work in cool, overcast weather that keeps smaller bees grounded, so they're often the <strong>first bees out in spring and the last in fall</strong>. A long tongue lets them reach into deep, tubular flowers that many bees can't.</p>
+    <p>They are also among the best <strong>buzz pollinators</strong> there are. Gripping a flower, a bumble bee can vibrate its flight muscles to shake pollen loose — a trick called sonication that some flowers depend on entirely. And unlike a solitary bee, a bumble bee lives in an <strong>annual colony</strong>: a single queen, overwintered alone, founds a nest each spring in a cavity — often an abandoned rodent burrow or a tussock of grass — and raises a season's worth of workers before the cycle begins again.</p>
+    <div class="keystone-callout">
+      <p>Because they fly cold and buzz-pollinate, bumble bees do work at the <strong>edges of the season and the edges of what other bees can do</strong> — which is why a garden that blooms early, blooms late, and leaves rough corners for nesting matters so much to them.</p>
+    </div>
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best supported by</p>
+    <div class="pill-list">
+      <span class="pill">Long bloom season</span>
+      <span class="pill">Early &amp; late flowers</span>
+      <span class="pill">Deep / tube flowers</span>
+      <span class="pill">Undisturbed nest sites</span>
+      <span class="pill">Rough, tussocky corners</span>
+      <span class="pill">No insecticides</span>
+    </div>
+  </section>
+
+  <!-- ── FIELD GUIDE PLATE ── -->
+  <section class="section field-plate-section">
+    <p class="eyebrow">Field Guide Plate</p>
+    <h2>Bumble Bee</h2>
+    <div class="plate-wrap">
+<svg viewBox="0 0 1000 506" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="Field guide plate: Bumble Bee, genus Bombus. Left panel shows a bumble bee from above — a fuzzy bee with a golden thorax and a gold-and-black banded abdomen and a pollen basket on the hind leg — with below it a caste size comparison of the large queen beside a smaller worker, and a detail of the hind-leg pollen basket packed with an orange pollen load. Right panel is a labelled anatomy diagram identifying the dense furry pile, the colour bands, the pollen basket on the hind leg, the long tongue used for tube flowers, the two pairs of wings, and the elbowed antennae, with notes that bumble bees buzz-pollinate by vibrating flowers, warm up by shivering their flight muscles, live in annual colonies where only new queens overwinter, and usually nest underground.">
+  <rect width="1000" height="506" fill="#130d06"/>
+  <rect x="12" y="12" width="976" height="482" fill="none" stroke="rgba(230,177,58,0.18)" stroke-width="0.8"/>
+  <line x1="486" y1="20" x2="486" y2="486" stroke="rgba(230,177,58,0.2)" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <defs>
+    <radialGradient id="fuzzP" cx="42%" cy="34%" r="72%">
+      <stop offset="0" stop-color="#f3cf66"/><stop offset="60%" stop-color="#e6b13a"/><stop offset="100%" stop-color="#bd8a26"/>
+    </radialGradient>
+    <linearGradient id="wingPB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6dcc0" stop-opacity="0.32"/><stop offset="100%" stop-color="#a89a78" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+
+  <text x="36" y="38" font-family="'Zilla Slab',Georgia,serif" font-size="15" fill="#f0d488" letter-spacing="0.12em">BUMBLE BEE</text>
+  <text x="36" y="55" font-family="'Zilla Slab',Georgia,serif" font-size="10.5" fill="#cbb482" letter-spacing="0.05em" font-style="italic">Genus Bombus · common eastern bumble bee</text>
+  <text x="36" y="69" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#d09a3a" letter-spacing="0.12em">OHIO WILDLIFE · POLLINATOR · LARGE FUZZY SOCIAL BEE</text>
+
+  <!-- LEFT: dorsal bee (top), caste comparison + pollen basket (bottom) -->
+  <g>
+    <g stroke="#0c0804" stroke-width="2.8" stroke-linecap="round" fill="none">
+      <path d="M206 150 C190 158 180 168 174 178"/><path d="M208 178 C192 188 184 200 180 212"/>
+      <path d="M212 206 C198 224 190 244 188 260"/>
+      <path d="M258 150 C274 158 284 168 290 178"/><path d="M256 178 C272 188 280 200 284 212"/>
+      <path d="M252 206 C266 224 274 244 276 260"/>
+    </g>
+    <ellipse cx="190" cy="244" rx="11" ry="16" transform="rotate(22 190 244)" fill="#cf7a2a"/>
+    <ellipse cx="274" cy="244" rx="11" ry="16" transform="rotate(-22 274 244)" fill="#cf7a2a"/>
+    <ellipse cx="186" cy="146" rx="60" ry="25" transform="rotate(-22 186 146)" fill="url(#wingPB)" stroke="#a89a78" stroke-width="1"/>
+    <ellipse cx="278" cy="146" rx="60" ry="25" transform="rotate(22 278 146)" fill="url(#wingPB)" stroke="#a89a78" stroke-width="1"/>
+    <ellipse cx="232" cy="216" rx="36" ry="50" fill="#1a1208"/>
+    <clipPath id="abdPB"><ellipse cx="232" cy="216" rx="36" ry="50"/></clipPath>
+    <g clip-path="url(#abdPB)">
+      <rect x="194" y="170" width="76" height="24" fill="url(#fuzzP)"/>
+      <rect x="194" y="214" width="76" height="20" fill="url(#fuzzP)"/>
+    </g>
+    <ellipse cx="232" cy="216" rx="36" ry="50" fill="none" stroke="#0f0a04" stroke-width="1.3"/>
+    <ellipse cx="232" cy="138" rx="28" ry="26" fill="url(#fuzzP)" stroke="#9a6f1e" stroke-width="1.3"/>
+    <ellipse cx="222" cy="130" rx="9" ry="12" fill="rgba(255,240,190,0.45)"/>
+    <ellipse cx="232" cy="106" rx="16" ry="14" fill="#1a1208" stroke="#0f0a04" stroke-width="1.2"/>
+    <ellipse cx="221" cy="106" rx="4" ry="7" fill="#0a0702"/><ellipse cx="243" cy="106" rx="4" ry="7" fill="#0a0702"/>
+    <g stroke="#0c0804" stroke-width="2.4" stroke-linecap="round" fill="none">
+      <path d="M224 96 C218 90 214 87 210 85"/><path d="M210 85 C205 82 202 77 200 72"/>
+      <path d="M240 96 C246 90 250 87 254 85"/><path d="M254 85 C259 82 262 77 264 72"/>
+    </g>
+    <text x="232" y="288" font-family="DM Mono,Courier New,monospace" font-size="8" fill="#d09a3a" letter-spacing="0.1em" text-anchor="middle">WORKER · DORSAL</text>
+  </g>
+
+  <!-- caste comparison -->
+  <g>
+    <!-- queen (large) -->
+    <ellipse cx="96" cy="392" rx="26" ry="36" fill="#1a1208" stroke="#0f0a04" stroke-width="1.1"/>
+    <clipPath id="qAbd"><ellipse cx="96" cy="392" rx="26" ry="36"/></clipPath>
+    <g clip-path="url(#qAbd)"><rect x="68" y="366" width="56" height="14" fill="url(#fuzzP)"/><rect x="68" y="392" width="56" height="12" fill="url(#fuzzP)"/></g>
+    <ellipse cx="96" cy="350" rx="20" ry="18" fill="url(#fuzzP)" stroke="#9a6f1e" stroke-width="1"/>
+    <ellipse cx="96" cy="330" rx="11" ry="9" fill="#1a1208"/>
+    <text x="96" y="442" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#cbb482" text-anchor="middle">QUEEN</text>
+    <!-- worker (small) -->
+    <ellipse cx="168" cy="398" rx="16" ry="22" fill="#1a1208" stroke="#0f0a04" stroke-width="1"/>
+    <clipPath id="wAbd"><ellipse cx="168" cy="398" rx="16" ry="22"/></clipPath>
+    <g clip-path="url(#wAbd)"><rect x="150" y="382" width="36" height="9" fill="url(#fuzzP)"/><rect x="150" y="400" width="36" height="8" fill="url(#fuzzP)"/></g>
+    <ellipse cx="168" cy="372" rx="13" ry="12" fill="url(#fuzzP)" stroke="#9a6f1e" stroke-width="1"/>
+    <ellipse cx="168" cy="357" rx="7" ry="6" fill="#1a1208"/>
+    <text x="168" y="442" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#cbb482" text-anchor="middle">WORKER</text>
+    <text x="132" y="330" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#d09a3a" text-anchor="middle" letter-spacing="0.08em">CASTE SIZE</text>
+  </g>
+
+  <!-- pollen-basket detail -->
+  <g>
+    <path d="M300 360 C316 380 330 404 332 430" stroke="#0c0804" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="324" cy="408" rx="18" ry="27" transform="rotate(-18 324 408)" fill="#cf7a2a" stroke="#8a4f1c" stroke-width="1"/>
+    <ellipse cx="318" cy="398" rx="7" ry="13" transform="rotate(-18 318 398)" fill="#e29a48" opacity="0.7"/>
+    <g fill="#8a4f1c" opacity="0.5"><circle cx="328" cy="412" r="2"/><circle cx="322" cy="420" r="2"/><circle cx="332" cy="402" r="2"/></g>
+    <text x="356" y="404" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#cbb482">POLLEN BASKET</text>
+    <text x="356" y="414" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#a89470">(CORBICULA)</text>
+    <text x="356" y="432" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#a89470">PACKED POLLEN LOAD</text>
+  </g>
+
+  <!-- RIGHT: labelled anatomy -->
+  <text x="502" y="38" font-family="'Zilla Slab',Georgia,serif" font-size="15" fill="#f0d488" letter-spacing="0.12em">BUMBLE BEE ANATOMY</text>
+  <text x="502" y="55" font-family="'Zilla Slab',Georgia,serif" font-size="10.5" fill="#cbb482" letter-spacing="0.05em" font-style="italic">Worker, from above</text>
+  <text x="502" y="69" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#c8923a" letter-spacing="0.12em">DENSE PILE TRAPS HEAT AND CARRIES POLLEN</text>
+
+  <g>
+    <g stroke="#0c0804" stroke-width="3" stroke-linecap="round" fill="none">
+      <path d="M680 214 C664 222 654 232 648 242"/><path d="M682 242 C666 252 658 264 654 276"/>
+      <path d="M686 270 C672 290 664 312 662 330"/>
+      <path d="M732 214 C748 222 758 232 764 242"/><path d="M730 242 C746 252 754 264 758 276"/>
+      <path d="M726 270 C740 290 748 312 750 330"/>
+    </g>
+    <ellipse cx="662" cy="312" rx="13" ry="19" transform="rotate(22 662 312)" fill="#cf7a2a" stroke="#8a4f1c" stroke-width="0.9"/>
+    <ellipse cx="750" cy="312" rx="13" ry="19" transform="rotate(-22 750 312)" fill="#cf7a2a" stroke="#8a4f1c" stroke-width="0.9"/>
+    <ellipse cx="636" cy="208" rx="66" ry="27" transform="rotate(-22 636 208)" fill="url(#wingPB)" stroke="#a89a78" stroke-width="1.1"/>
+    <ellipse cx="776" cy="208" rx="66" ry="27" transform="rotate(22 776 208)" fill="url(#wingPB)" stroke="#a89a78" stroke-width="1.1"/>
+    <ellipse cx="706" cy="284" rx="40" ry="56" fill="#1a1208"/>
+    <clipPath id="abdAB"><ellipse cx="706" cy="284" rx="40" ry="56"/></clipPath>
+    <g clip-path="url(#abdAB)">
+      <rect x="664" y="232" width="84" height="26" fill="url(#fuzzP)"/>
+      <rect x="664" y="284" width="84" height="22" fill="url(#fuzzP)"/>
+    </g>
+    <ellipse cx="706" cy="284" rx="40" ry="56" fill="none" stroke="#0f0a04" stroke-width="1.4"/>
+    <ellipse cx="706" cy="196" rx="32" ry="30" fill="url(#fuzzP)" stroke="#9a6f1e" stroke-width="1.4"/>
+    <ellipse cx="694" cy="186" rx="10" ry="14" fill="rgba(255,240,190,0.45)"/>
+    <ellipse cx="706" cy="160" rx="18" ry="15" fill="#1a1208" stroke="#0f0a04" stroke-width="1.3"/>
+    <ellipse cx="693" cy="160" rx="4.4" ry="8" fill="#0a0702"/><ellipse cx="719" cy="160" rx="4.4" ry="8" fill="#0a0702"/>
+    <!-- tongue / proboscis -->
+    <path d="M706 174 C705 186 705 196 705 206" stroke="#7a5320" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <g stroke="#0c0804" stroke-width="2.6" stroke-linecap="round" fill="none">
+      <path d="M698 150 C692 144 688 140 684 138"/><path d="M684 138 C679 134 676 129 674 124"/>
+      <path d="M714 150 C720 144 724 140 728 138"/><path d="M728 138 C733 134 736 129 738 124"/>
+    </g>
+
+    <!-- callouts -->
+    <circle cx="706" cy="196" r="2.2" fill="none" stroke="rgba(240,200,99,0.85)" stroke-width="0.7"/>
+    <line x1="700" y1="196" x2="540" y2="182" stroke="rgba(240,200,99,0.55)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="536" y="179" font-size="7.5" fill="#d9c48a" text-anchor="end">FURRY PILE</text>
+    <text x="536" y="189" font-size="7" fill="#a89470" text-anchor="end">TRAPS HEAT · HOLDS POLLEN</text>
+
+    <circle cx="706" cy="296" r="2.2" fill="none" stroke="rgba(240,200,99,0.85)" stroke-width="0.7"/>
+    <line x1="700" y1="296" x2="540" y2="284" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="536" y="281" font-size="7.5" fill="#d9c48a" text-anchor="end">COLOUR BANDS</text>
+    <text x="536" y="291" font-size="7" fill="#a89470" text-anchor="end">GOLD, BLACK, SOMETIMES RUST</text>
+
+    <circle cx="662" cy="314" r="2.2" fill="none" stroke="rgba(207,122,42,0.9)" stroke-width="0.7"/>
+    <line x1="656" y1="318" x2="540" y2="336" stroke="rgba(207,122,42,0.55)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="536" y="333" font-size="7.5" fill="#e0a258" text-anchor="end">POLLEN BASKET</text>
+    <text x="536" y="343" font-size="7" fill="#b08858" text-anchor="end">ON THE HIND LEG</text>
+
+    <circle cx="705" cy="206" r="2.2" fill="none" stroke="rgba(240,200,99,0.7)" stroke-width="0.7"/>
+    <line x1="711" y1="206" x2="858" y2="232" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="862" y="229" font-size="7.5" fill="#d9c48a">LONG TONGUE</text>
+    <text x="862" y="239" font-size="7" fill="#a89470">REACHES TUBE FLOWERS</text>
+
+    <circle cx="776" cy="208" r="2.2" fill="none" stroke="rgba(240,200,99,0.7)" stroke-width="0.7"/>
+    <line x1="782" y1="208" x2="858" y2="196" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="862" y="193" font-size="7.5" fill="#d9c48a">WINGS · TWO PAIRS</text>
+
+    <circle cx="684" cy="136" r="2.2" fill="none" stroke="rgba(240,200,99,0.7)" stroke-width="0.7"/>
+    <line x1="690" y1="136" x2="858" y2="128" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+    <text x="862" y="125" font-size="7.5" fill="#d9c48a">ELBOWED ANTENNAE</text>
+  </g>
+
+  <line x1="502" y1="404" x2="980" y2="404" stroke="rgba(230,177,58,0.16)" stroke-width="0.7"/>
+  <g font-family="DM Mono,Courier New,monospace" font-size="7.8" fill="#d09a3a" letter-spacing="0.1em">
+    <text x="502" y="424">BUZZ-POLLINATES — VIBRATES FLOWERS TO SHAKE POLLEN LOOSE</text>
+    <text x="502" y="439">WARMS UP BY SHIVERING ITS FLIGHT MUSCLES</text>
+    <text x="502" y="454">ANNUAL COLONY — ONLY NEW QUEENS OVERWINTER</text>
+    <text x="502" y="469">USUALLY NESTS UNDERGROUND IN AN OLD BURROW OR TUSSOCK</text>
+  </g>
+</svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">What They Visit</p>
+    <h2>Flowers Through the Season</h2>
+    <p>Bumble bees forage widely, but their long tongues and buzz make them especially good at deep tube flowers and at blooms that hold their pollen tightly. What matters most is an unbroken season: early flowers for the founding queens in spring, and late flowers for next year's queens before winter. They share many of these blooms with the <a href="carpenter-bee.html">carpenter bee</a> and <a href="sweat-bee.html">sweat bee</a>. Tap any plant to read its profile.</p>
+
+    <div class="plant-links">
+      <div class="plant-link-group">
+        <p class="plant-link-group-label">Early — forage for founding queens</p>
+        <div class="plant-link-list">
+          <a href="../plants/golden-alexanders.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Golden Alexanders</span>
+              <span class="plant-link-latin">Zizia aurea</span>
+            </div>
+            <span class="plant-link-note">Early nectar</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/penstemon.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Foxglove Beardtongue</span>
+              <span class="plant-link-latin">Penstemon digitalis</span>
+            </div>
+            <span class="plant-link-note">Tube flowers</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/wild-geranium.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Wild Geranium</span>
+              <span class="plant-link-latin">Geranium maculatum</span>
+            </div>
+            <span class="plant-link-note">Spring bloom</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="plant-link-group">
+        <p class="plant-link-group-label">Summer into fall — deep &amp; buzz flowers</p>
+        <div class="plant-link-list">
+          <a href="../plants/wild-bergamot.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Wild Bergamot</span>
+              <span class="plant-link-latin">Monarda fistulosa</span>
+            </div>
+            <span class="plant-link-note">Tube florets</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/purple-coneflower.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Purple Coneflower</span>
+              <span class="plant-link-latin">Echinacea purpurea</span>
+            </div>
+            <span class="plant-link-note">Deep disk</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/mountain-mint.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Mountain Mint</span>
+              <span class="plant-link-latin">Pycnanthemum spp.</span>
+            </div>
+            <span class="plant-link-note">Long nectar</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/liatris.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Blazing Star</span>
+              <span class="plant-link-latin">Liatris spp.</span>
+            </div>
+            <span class="plant-link-note">Bumble favourite</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/goldenrod.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Goldenrod</span>
+              <span class="plant-link-latin">Solidago spp.</span>
+            </div>
+            <span class="plant-link-note">Late fuel</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Life Cycle</p>
+    <h2>A Colony in a Year</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Early spring</div><div class="tl-bar"></div><div class="tl-text">A lone queen, overwintered underground, emerges and feeds, then searches for a nest cavity — often an abandoned rodent burrow, a grass tussock, or a sheltered hollow.</div></div>
+      <div class="tl-row active"><div class="tl-season">Late spring</div><div class="tl-bar"></div><div class="tl-text">She founds the colony alone, building wax cells and raising the first brood of workers herself on stored pollen and nectar.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">Workers take over the foraging and the colony grows; this is the busy season, with bees coming and going from the nest all day.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Late summer–fall</div><div class="tl-bar"></div><div class="tl-text">The colony rears new queens and males, which leave to mate. The old queen, the workers, and the males then die off as the season ends.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Only the newly mated queens survive, each waiting out the cold alone, dormant underground, until spring calls her out to begin again.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Habitat &amp; Needs</p>
+    <h2>What It Needs</h2>
+    <table class="care-table">
+      <tr><td>Forage</td><td>Nectar and pollen from many flowers, with a special role for deep tube flowers their long tongues can reach</td></tr>
+      <tr><td>Season</td><td>An unbroken bloom from very early spring (for founding queens) to late fall (for next year's queens)</td></tr>
+      <tr><td>Nest sites</td><td>Undisturbed cavities — old rodent burrows, grass tussocks, hollows under sheds or dense vegetation</td></tr>
+      <tr><td>Buzz flowers</td><td>Plants that release pollen only when vibrated benefit especially from a bumble bee's sonication</td></tr>
+      <tr><td>Colony</td><td>Annual and social: one founding queen builds a colony that lasts a single season</td></tr>
+      <tr><td>What helps</td><td>Long bloom season, early &amp; late flowers, rough undisturbed corners, no insecticides</td></tr>
+      <tr><td>What harms</td><td>Insecticides, mowing or digging out nest sites mid-season, and gaps in bloom that starve founding queens</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">How to Support It</p>
+    <h2>Garden Actions That Help</h2>
+    <p>Bumble bees reward a garden that thinks about the whole season and tolerates a little wildness.</p>
+    <p><strong>Bloom early and bloom late.</strong> Early flowers feed the founding queens when little else is open; late flowers fuel next year's queens before winter. The shoulders of the season matter as much as its peak.</p>
+    <p><strong>Plant deep and buzz-pollinated natives.</strong> Tube flowers and pollen-rich blooms reward a long tongue and a good buzz — and put bumble bees to work where they do their best.</p>
+    <p><strong>Leave rough corners for nests.</strong> Tussocky grass, an untidy bank, an old burrow left alone — these are where queens found their colonies. A yard mown and cleared to the edges offers nowhere to nest.</p>
+    <p><strong>Skip the insecticides.</strong> Sprays kill foraging bees and can contaminate the pollen carried home to the colony.</p>
+    <p><strong>Mow and dig thoughtfully.</strong> A ground nest can be destroyed in a single mid-season mowing or excavation. Where you can, leave some ground undisturbed from spring through fall.</p>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Bee</h2>
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Buzz in Buzz Pollination</h3>
+        <p>Some flowers hold their pollen inside tubes that only open under vibration. A bumble bee grips the flower, decouples its wings, and <strong>vibrates its flight muscles</strong> against it — a high buzz that shakes the pollen out in a cloud. Called sonication, it's something honey bees can't really do, and it's why bumble bees are so valued as pollinators of tomatoes, peppers, and a range of native blooms.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Warm-Blooded, Almost</h3>
+        <p>A bumble bee can <em>shiver</em> — vibrating its flight muscles without moving its wings — to warm itself before flight. Together with its thick fur, this lets it fly on cool, grey mornings when most bees stay put, and is why bumble bees are so often the first bees of spring and the last to give up in fall.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">A Colony That Lasts One Summer</h3>
+        <p>Unlike a honey bee hive, which lives on for years, a bumble bee colony lasts a single season. It begins with one queen doing every job herself — building, foraging, brooding — until her first workers hatch and take over. By fall the colony has produced the next generation of queens and then dies, leaving only those young, mated queens to carry the line through winter.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">The Ones in Trouble</h3>
+        <p>Not all bumble bees are doing well. Several once-common species have declined in recent decades, and the <strong>rusty-patched bumble bee</strong> — once widespread across this region — is now federally listed as endangered and only rarely recorded in Ohio. The reasons are debated and likely multiple, but a flower-rich, pesticide-free garden with undisturbed places to nest is part of what helps the bumble bees that remain.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Related Species</p>
+    <h2>Ohio's Bumble Bees</h2>
+    <p>Bombus is a genus of social, fuzzy bees told apart largely by their colour bands. A few of the ones you may meet — and one you most likely won't — around an Ohio garden.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">Most Common</p>
+        <p class="species-common">Common Eastern Bumble Bee</p>
+        <p class="species-latin">Bombus impatiens</p>
+        <p class="species-desc">By far the most common bumble bee in the region and a fixture of gardens: a golden-yellow thorax over a mostly black abdomen with one yellow band. Adaptable, abundant, and the one most people picture.</p>
+        <div class="species-traits"><span class="species-trait">Abundant</span><span class="species-trait">Yellow + black</span><span class="species-trait">Garden bee</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Common</p>
+        <p class="species-common">Brown-belted Bumble Bee</p>
+        <p class="species-latin">Bombus griseocollis</p>
+        <p class="species-desc">A widespread bumble bee named for the brownish band across the top of the abdomen, most visible on the workers. Common in open, flowery places through the summer.</p>
+        <div class="species-traits"><span class="species-trait">Brown belt</span><span class="species-trait">Summer</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Early</p>
+        <p class="species-common">Two-spotted Bumble Bee</p>
+        <p class="species-latin">Bombus bimaculatus</p>
+        <p class="species-desc">One of the earliest bumble bees to appear in spring, named for a pair of yellow marks on the abdomen. Often among the first you'll see working early bloom.</p>
+        <div class="species-traits"><span class="species-trait">Early spring</span><span class="species-trait">Two yellow spots</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Endangered</p>
+        <p class="species-common">Rusty-patched Bumble Bee</p>
+        <p class="species-latin">Bombus affinis</p>
+        <p class="species-desc">Once common across the region, now federally endangered and only rarely recorded in Ohio. Named for a small rusty patch on the worker's abdomen — a reminder of how quickly a familiar species can become a rare one.</p>
+        <div class="species-traits"><span class="species-trait">Federally listed</span><span class="species-trait">Rusty patch</span><span class="species-trait">Now rare</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Genus Bombus · Bumble Bees · Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>
