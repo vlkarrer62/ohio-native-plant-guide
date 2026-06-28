@@ -130,9 +130,9 @@
     function buildCard(entry) {
       const icon = ICONS[entry.svgIcon] || ICONS['_default'];
 
-      // Activity line — use flightSeason if available, else join seasonSeen
-      const activityLine = entry.flightSeason
-        ? `Active ${entry.flightSeason}`
+      // Activity line — use activeSeason if available, else join seasonSeen
+      const activityLine = entry.activeSeason
+        ? `Active ${entry.activeSeason}`
         : entry.seasonSeen
           ? `Active ${entry.seasonSeen.join(', ')}`
           : '';
@@ -140,8 +140,8 @@
       // Attribute bullets
       const attrs = [
         entry.size         && entry.size,
-        entry.flightSeason && entry.flightSeason,
-        entry.nesting      && entry.nesting
+        entry.activeSeason && entry.activeSeason,
+        entry.shelter      && entry.shelter
       ].filter(Boolean);
 
       return `
