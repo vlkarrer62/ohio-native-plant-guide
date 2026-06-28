@@ -51,5 +51,212 @@
       "woodland-edge",
       "oak-savanna"
     ]
+  },
+  {
+    "commonName": "Hover Fly",
+    "scientificName": "Family Syrphidae",
+    "slug": "hover-fly",
+    "type": "Native Fly",
+    "category": "pollinators",
+    "subcategory": "flies",
+    "wildlifeType": [
+      "Fly"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Pest Predator (larvae)",
+      "Bee Mimic"
+    ],
+    "supportedBy": [
+      "Open Flowers",
+      "Aphid Prey",
+      "Diverse Bloom"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "¼–¾ inch (varies)",
+    "flightSeason": "Spring–fall",
+    "nesting": "Larvae among aphid colonies",
+    "range": "Statewide",
+    "description": "A harmless fly in bee's colours — the adults are steady pollinators, while the aphid-eating larvae of many species quietly keep pests in check. Tell it from a bee by its single pair of wings and the hovering flight.",
+    "url": "hover-fly.html",
+    "tagClass": "tag-fly",
+    "accentFrom": "#ecca6a",
+    "accentTo": "#d8a83a",
+    "svgIcon": "hover-fly",
+    "relatedPlantSlugs": [
+      "golden-alexanders",
+      "boneset",
+      "mountain-mint",
+      "wingstem",
+      "goldenrod",
+      "aster"
+    ],
+    "relatedWildlifeSlugs": [
+      "aphid",
+      "lady-beetle"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge"
+    ]
+  },
+  {
+    "commonName": "Lady Beetle",
+    "scientificName": "Family Coccinellidae",
+    "slug": "lady-beetle",
+    "type": "Predatory Beetle",
+    "category": "predators",
+    "subcategory": "beetles",
+    "wildlifeType": [
+      "Beetle"
+    ],
+    "ecologicalRole": [
+      "Predator",
+      "Aphid-Eater",
+      "Pollen-Eater (some)"
+    ],
+    "supportedBy": [
+      "Aphid Prey",
+      "Pollen & Nectar",
+      "Winter Shelter"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "About 1–10 mm",
+    "flightSeason": "Spring–fall",
+    "nesting": "Overwinters in litter & shelter",
+    "range": "Statewide",
+    "description": "The garden's favourite predator — adults and their alligator-like larvae both devour aphids. The familiar one is now often the introduced Asian species, while several natives, like the nine-spotted, have grown scarce.",
+    "url": "lady-beetle.html",
+    "tagClass": "tag-beetle",
+    "accentFrom": "#e8a89e",
+    "accentTo": "#d8584a",
+    "svgIcon": "lady-beetle",
+    "relatedPlantSlugs": [
+      "wingstem",
+      "cup-plant",
+      "black-eyed-susan",
+      "golden-alexanders",
+      "mountain-mint",
+      "goldenrod"
+    ],
+    "relatedWildlifeSlugs": [
+      "aphid",
+      "hover-fly"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge"
+    ]
+  },
+  {
+    "commonName": "Common Eastern Firefly",
+    "scientificName": "Photinus pyralis",
+    "slug": "firefly",
+    "type": "Native Firefly",
+    "category": "predators",
+    "subcategory": "beetles",
+    "wildlifeType": [
+      "Beetle"
+    ],
+    "ecologicalRole": [
+      "Predator (larvae)",
+      "Bioindicator",
+      "Food-Web Participant"
+    ],
+    "supportedBy": [
+      "Leaf Litter",
+      "Moist Soil",
+      "Long Grass",
+      "Darkness"
+    ],
+    "seasonSeen": [
+      "Late Spring",
+      "Summer"
+    ],
+    "size": "½ inch (10–15 mm)",
+    "flightSeason": "June–July, at dusk",
+    "nesting": "Larvae in moist soil & litter",
+    "range": "Statewide",
+    "description": "A beetle that makes cold light — its dusk-time flashes are a courtship code, and its predatory \"glowworm\" larvae hunt soft-bodied prey in damp litter. A sensitive sign of dark, undisturbed ground.",
+    "url": "firefly.html",
+    "tagClass": "tag-firefly",
+    "accentFrom": "#d8e88a",
+    "accentTo": "#b6cf5e",
+    "svgIcon": "firefly",
+    "relatedPlantSlugs": [
+      "wild-ginger",
+      "pennsylvania-sedge",
+      "wild-geranium",
+      "wingstem",
+      "cup-plant",
+      "boneset"
+    ],
+    "relatedWildlifeSlugs": [],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "sunny-meadow"
+    ]
+  },
+  {
+    "commonName": "Aphid",
+    "scientificName": "Family Aphididae",
+    "slug": "aphid",
+    "type": "Native Sap-Feeder",
+    "category": "prey",
+    "subcategory": "true-bugs",
+    "wildlifeType": [
+      "Aphid"
+    ],
+    "ecologicalRole": [
+      "Sap-Feeder",
+      "Prey Base",
+      "Honeydew Producer"
+    ],
+    "supportedBy": [
+      "Host Plants",
+      "Tolerated Colonies",
+      "No Spraying"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "About 1–4 mm",
+    "flightSeason": "Active spring–fall",
+    "nesting": "On host-plant stems",
+    "range": "Statewide",
+    "description": "The maligned little herd at the base of the food web — soft sap-feeders that can stress a plant in numbers, yet feed ladybugs, lacewings, and hover fly larvae. The red ones on false sunflower are most likely native Uroleucon.",
+    "url": "aphid.html",
+    "tagClass": "tag-bug",
+    "accentFrom": "#e0a08c",
+    "accentTo": "#cf6a52",
+    "svgIcon": "aphid",
+    "relatedPlantSlugs": [
+      "wingstem",
+      "cup-plant",
+      "black-eyed-susan",
+      "goldenrod",
+      "aster",
+      "boneset"
+    ],
+    "relatedWildlifeSlugs": [
+      "lady-beetle",
+      "hover-fly"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border"
+    ]
   }
 ]
