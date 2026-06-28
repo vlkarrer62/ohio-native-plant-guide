@@ -35,6 +35,7 @@
     "accentFrom": "#e8d890",
     "accentTo": "#d8c870",
     "svgIcon": "carpenter-bee",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"15\" rx=\"4\" ry=\"5.5\" fill=\"currentColor\" opacity=\"0.35\"/>\n        <ellipse cx=\"12\" cy=\"9.5\" rx=\"3.5\" ry=\"3\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <ellipse cx=\"6.5\" cy=\"10\" rx=\"5.5\" ry=\"3\" transform=\"rotate(-18 6.5 10)\" fill=\"currentColor\" opacity=\"0.25\"/>\n        <ellipse cx=\"17.5\" cy=\"10\" rx=\"5.5\" ry=\"3\" transform=\"rotate(18 17.5 10)\" fill=\"currentColor\" opacity=\"0.25\"/>\n        <path d=\"M10 7.5 C8 5.5 6 3.5 5 2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>\n        <path d=\"M14 7.5 C16 5.5 18 3.5 19 2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\"/>\n      </svg>",
     "relatedPlantSlugs": [
       "wild-bergamot",
       "mountain-mint",
@@ -87,6 +88,7 @@
     "accentFrom": "#ecca6a",
     "accentTo": "#d8a83a",
     "svgIcon": "hover-fly",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"15\" rx=\"2.6\" ry=\"5.2\" fill=\"currentColor\" opacity=\"0.4\"/>\n        <ellipse cx=\"12\" cy=\"9.5\" rx=\"2.8\" ry=\"2.4\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <ellipse cx=\"12\" cy=\"5.8\" rx=\"2.7\" ry=\"1.9\" fill=\"currentColor\" opacity=\"0.55\"/>\n        <ellipse cx=\"6\" cy=\"9\" rx=\"6\" ry=\"1.9\" transform=\"rotate(-10 6 9)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <ellipse cx=\"18\" cy=\"9\" rx=\"6\" ry=\"1.9\" transform=\"rotate(10 18 9)\" fill=\"currentColor\" opacity=\"0.22\"/>\n      </svg>",
     "relatedPlantSlugs": [
       "golden-alexanders",
       "boneset",
@@ -140,6 +142,7 @@
     "accentFrom": "#e8a89e",
     "accentTo": "#d8584a",
     "svgIcon": "lady-beetle",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"12\" cy=\"13\" r=\"6.2\" fill=\"currentColor\" opacity=\"0.4\"/>\n        <ellipse cx=\"12\" cy=\"6.8\" rx=\"2.4\" ry=\"1.8\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <path d=\"M12 7.5 L12 19\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.55\"/>\n        <circle cx=\"9.4\" cy=\"11.5\" r=\"1\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <circle cx=\"14.6\" cy=\"11.5\" r=\"1\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <circle cx=\"9.2\" cy=\"15.4\" r=\"1\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <circle cx=\"14.8\" cy=\"15.4\" r=\"1\" fill=\"currentColor\" opacity=\"0.6\"/>\n      </svg>",
     "relatedPlantSlugs": [
       "false-sunflower",
       "wingstem",
@@ -194,6 +197,7 @@
     "accentFrom": "#d8e88a",
     "accentTo": "#b6cf5e",
     "svgIcon": "firefly",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"10.5\" rx=\"2.6\" ry=\"5\" fill=\"currentColor\" opacity=\"0.4\"/>\n        <ellipse cx=\"12\" cy=\"6\" rx=\"2.4\" ry=\"2\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <circle cx=\"12\" cy=\"17.5\" r=\"4\" fill=\"currentColor\" opacity=\"0.18\"/>\n        <circle cx=\"12\" cy=\"17.5\" r=\"2.3\" fill=\"currentColor\" opacity=\"0.65\"/>\n        <path d=\"M9 4.5 C8 3.5 7.2 3 6.4 2.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M15 4.5 C16 3.5 16.8 3 17.6 2.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n      </svg>",
     "relatedPlantSlugs": [
       "wild-ginger",
       "pennsylvania-sedge",
@@ -206,6 +210,63 @@
     "relatedHabitatSlugs": [
       "woodland-edge",
       "sunny-meadow"
+    ]
+  },
+  {
+    "commonName": "Green Lacewing",
+    "scientificName": "Family Chrysopidae",
+    "slug": "lacewing",
+    "type": "Predatory Lacewing",
+    "category": "predators",
+    "subcategory": "lacewings",
+    "wildlifeType": [
+      "Lacewing"
+    ],
+    "ecologicalRole": [
+      "Predator (larvae)",
+      "Generalist Hunter",
+      "Food-Web Participant"
+    ],
+    "supportedBy": [
+      "Aphid Prey",
+      "Pollen & Nectar",
+      "Sheltered Foliage",
+      "Night Darkness"
+    ],
+    "seasonSeen": [
+      "Late Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "Adult ~12–20 mm",
+    "activeSeason": "Late spring–fall, at dusk",
+    "shelter": "Larvae among aphid colonies",
+    "range": "Statewide",
+    "description": "The frail, golden-eyed lacewing of summer dusk — its delicate adults often sip nectar and honeydew, while its spindle-shaped larvae, the \"aphid lions,\" hunt aphids and other soft-bodied prey with sickle jaws.",
+    "url": "lacewing.html",
+    "tagClass": "tag-lacewing",
+    "accentFrom": "#8fd6a8",
+    "accentTo": "#3f9468",
+    "svgIcon": "lacewing",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"13\" rx=\"1.7\" ry=\"5.4\" fill=\"currentColor\" opacity=\"0.55\"/>\n        <ellipse cx=\"12\" cy=\"6.4\" rx=\"1.9\" ry=\"1.7\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <ellipse cx=\"6.6\" cy=\"11\" rx=\"6\" ry=\"2.6\" transform=\"rotate(-22 6.6 11)\" fill=\"currentColor\" opacity=\"0.3\"/>\n        <ellipse cx=\"17.4\" cy=\"11\" rx=\"6\" ry=\"2.6\" transform=\"rotate(22 17.4 11)\" fill=\"currentColor\" opacity=\"0.3\"/>\n        <ellipse cx=\"7.6\" cy=\"15.2\" rx=\"5\" ry=\"2.1\" transform=\"rotate(-14 7.6 15.2)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <ellipse cx=\"16.4\" cy=\"15.2\" rx=\"5\" ry=\"2.1\" transform=\"rotate(14 16.4 15.2)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <path d=\"M11 5.2 C10 4 9 3.2 8.2 2.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M13 5.2 C14 4 15 3.2 15.8 2.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n      </svg>",
+    "relatedPlantSlugs": [
+      "false-sunflower",
+      "wingstem",
+      "cup-plant",
+      "black-eyed-susan",
+      "golden-alexanders",
+      "mountain-mint",
+      "goldenrod"
+    ],
+    "relatedWildlifeSlugs": [
+      "aphid",
+      "lady-beetle",
+      "hover-fly"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge"
     ]
   },
   {
@@ -243,6 +304,7 @@
     "accentFrom": "#e0a08c",
     "accentTo": "#cf6a52",
     "svgIcon": "aphid",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"13\" rx=\"4\" ry=\"5.2\" fill=\"currentColor\" opacity=\"0.4\"/>\n        <ellipse cx=\"12\" cy=\"7.5\" rx=\"1.9\" ry=\"1.7\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <path d=\"M11 6.4 C10 5 9 4 8.2 3.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M13 6.4 C14 5 15 4 15.8 3.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M9.4 16.5 C8.8 17.8 8.4 18.6 8.2 19.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.55\"/>\n        <path d=\"M14.6 16.5 C15.2 17.8 15.6 18.6 15.8 19.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.55\"/>\n      </svg>",
     "relatedPlantSlugs": [
       "false-sunflower",
       "wingstem",
