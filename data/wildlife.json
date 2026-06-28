@@ -54,6 +54,63 @@
     ]
   },
   {
+    "commonName": "Sweat Bee",
+    "scientificName": "Family Halictidae",
+    "slug": "sweat-bee",
+    "type": "Native Bee",
+    "category": "pollinators",
+    "subcategory": "bees",
+    "wildlifeType": [
+      "Bee"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Generalist Forager",
+      "Ground-Nester"
+    ],
+    "supportedBy": [
+      "Diverse Bloom",
+      "Bare Ground",
+      "Pollen & Nectar"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "Tiny, ~4–10 mm",
+    "activeSeason": "Spring–fall",
+    "shelter": "Nests in bare ground",
+    "range": "Statewide",
+    "description": "A tiny, often dazzlingly metallic-green native bee that pollinates a wide range of flowers — and now and then lands to sip the salt from your skin. Most nest in bare ground, and as a family they run the full range from solitary to social.",
+    "url": "sweat-bee.html",
+    "tagClass": "tag-bee",
+    "accentFrom": "#6fc69a",
+    "accentTo": "#1f8f5e",
+    "svgIcon": "sweat-bee",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <ellipse cx=\"12\" cy=\"14.5\" rx=\"3.4\" ry=\"5.2\" fill=\"currentColor\" opacity=\"0.4\"/>\n        <path d=\"M8.7 12.6 H15.3 M8.6 15.4 H15.4 M9 18 H15\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.55\"/>\n        <ellipse cx=\"12\" cy=\"8.8\" rx=\"2.8\" ry=\"2.4\" fill=\"currentColor\" opacity=\"0.6\"/>\n        <ellipse cx=\"12\" cy=\"5.4\" rx=\"2.2\" ry=\"1.8\" fill=\"currentColor\" opacity=\"0.55\"/>\n        <ellipse cx=\"6.6\" cy=\"9.5\" rx=\"5.2\" ry=\"2.2\" transform=\"rotate(-22 6.6 9.5)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <ellipse cx=\"17.4\" cy=\"9.5\" rx=\"5.2\" ry=\"2.2\" transform=\"rotate(22 17.4 9.5)\" fill=\"currentColor\" opacity=\"0.22\"/>\n        <path d=\"M10.8 4.3 C10 3.4 9.4 3 8.8 2.7\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n        <path d=\"M13.2 4.3 C14 3.4 14.6 3 15.2 2.7\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.5\"/>\n      </svg>",
+    "relatedPlantSlugs": [
+      "golden-alexanders",
+      "penstemon",
+      "coreopsis",
+      "mountain-mint",
+      "purple-coneflower",
+      "black-eyed-susan",
+      "goldenrod",
+      "aster"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee",
+      "hover-fly"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge",
+      "oak-savanna"
+    ]
+  },
+  {
     "commonName": "Hover Fly",
     "scientificName": "Family Syrphidae",
     "slug": "hover-fly",
