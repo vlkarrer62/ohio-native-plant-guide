@@ -212,7 +212,7 @@
     "scientificName": "Family Aphididae",
     "slug": "aphid",
     "type": "Native Sap-Feeder",
-    "category": "prey",
+    "category": "other-garden-life",
     "subcategory": "true-bugs",
     "wildlifeType": [
       "Aphid"
@@ -233,7 +233,7 @@
       "Fall"
     ],
     "size": "About 1–4 mm",
-    "flightSeason": "Active spring–fall",
+    "flightSeason": "Spring–fall",
     "nesting": "On host-plant stems",
     "range": "Statewide",
     "description": "The maligned little herd at the base of the food web — soft sap-feeders that can stress a plant in numbers, yet feed ladybugs, lacewings, and hover fly larvae. The red ones on false sunflower are most likely native Uroleucon.",
