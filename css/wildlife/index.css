@@ -208,6 +208,8 @@
     .tag-spider     { color: #603030; background: rgba(96,48,48,0.10);   border: 1px solid rgba(96,48,48,0.22); }
     .tag-dragonfly  { color: #1a5858; background: rgba(26,88,88,0.10);   border: 1px solid rgba(26,88,88,0.22); }
     .tag-firefly    { color: #6a6010; background: rgba(106,96,16,0.10);  border: 1px solid rgba(106,96,16,0.22); }
+    .tag-lacewing   { color: #2f8a5e; background: rgba(47,138,94,0.10);  border: 1px solid rgba(47,138,94,0.22); }
+    .tag-bug        { color: #9c4422; background: rgba(156,68,34,0.10);  border: 1px solid rgba(156,68,34,0.22); }
     .tag-frog       { color: #385828; background: rgba(56,88,40,0.10);   border: 1px solid rgba(56,88,40,0.22); }
 
     /* ── EMPTY STATE ── */
