@@ -474,13 +474,6 @@
     <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Family Syrphidae · Native Flower Flies · Found Throughout Ohio</p>
   </footer>
 
-  <script>
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.06 }
-    );
-    sections.forEach(s => observer.observe(s));
-  </script>
+  <script src="../js/plant-profile.js"></script>
 </body>
 </html>
