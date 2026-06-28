@@ -141,6 +141,7 @@
     "accentTo": "#d8584a",
     "svgIcon": "lady-beetle",
     "relatedPlantSlugs": [
+      "false-sunflower",
       "wingstem",
       "cup-plant",
       "black-eyed-susan",
@@ -243,6 +244,7 @@
     "accentTo": "#cf6a52",
     "svgIcon": "aphid",
     "relatedPlantSlugs": [
+      "false-sunflower",
       "wingstem",
       "cup-plant",
       "black-eyed-susan",
