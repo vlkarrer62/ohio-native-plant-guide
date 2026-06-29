@@ -104,3 +104,53 @@ a.companion-link:focus-visible {
   color: var(--text-faint, #887840);
   text-align: center;
 }
+
+/* ── Botanical plate ⇄ garden photo switcher ────────────────── */
+.botanical-plate { text-align: center; }
+
+.plate-switch {
+  position: relative;
+  display: inline-flex;
+  margin: 0 auto 1rem;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--bg-warm, rgba(0,0,0,0.05));
+  border: 1px solid var(--border, rgba(0,0,0,0.1));
+}
+.plate-switch button {
+  position: relative;
+  z-index: 2;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  color: var(--text-dim, #8a7a60);
+  transition: color 0.22s ease;
+}
+.plate-switch button[aria-selected="true"] { color: var(--heading, #1e1608); }
+.plate-switch .thumb {
+  position: absolute;
+  top: 4px; bottom: 4px;
+  z-index: 1;
+  border-radius: 999px;
+  background: var(--bg-card, #fff);
+  border: 1px solid var(--border, rgba(0,0,0,0.08));
+  box-shadow: 0 2px 8px rgba(0,0,0,0.16);
+  transition: left 0.3s cubic-bezier(.4,1.25,.5,1), width 0.3s cubic-bezier(.4,1.25,.5,1);
+}
+.plate-switch .thumb::after {
+  content: "";
+  position: absolute;
+  left: 18%; right: 18%; bottom: 5px;
+  height: 2px; border-radius: 2px;
+  background: var(--switch-accent, var(--heading, currentColor));
+  opacity: 0.85;
+}
+.plate-view { display: none; }
+.plate-view.is-on { display: block; }
+.plate-garden-img { width: 100%; height: auto; display: block; border-radius: 6px; }
