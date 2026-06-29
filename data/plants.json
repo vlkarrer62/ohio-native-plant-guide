@@ -481,7 +481,11 @@
       "Coneflower",
       "Echinacea",
       "Echinacea purpurea"
-    ]
+    ],
+     "garden": {
+      "src": "../images/purple-coneflower-garden.jpg",
+      "caption": "Bay Village, Ohio · July 2025"
+    }
   },
   {
     "commonName": "Red Buckeye",
