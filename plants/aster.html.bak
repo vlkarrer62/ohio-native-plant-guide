@@ -254,19 +254,10 @@
 <section class="section visible">
   <p class="eyebrow">Botanical Plate</p>
   <h2>New England Aster</h2>
-  <figure class="botanical-plate botanical-plate--placeholder">
-    <div class="botanical-plate-frame">
-      <img
-        src="../images/aster-plate.png"
-        alt="Botanical field-plate illustration of New England aster with flower anatomy and native bee"
-        onload="this.closest('.botanical-plate').classList.add('has-image')"
-        onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
-      />
-      <div class="botanical-plate-placeholder" aria-hidden="true">
-        <span class="botanical-plate-placeholder-label">Plate pending</span>
-        <span class="botanical-plate-placeholder-file">images/aster-plate.png</span>
-      </div>
-    </div>
+  <figure class="botanical-plate">
+    <img
+      src="../images/aster-plate.png"
+      alt="Botanical field-plate illustration of New England aster with flower anatomy and native bee">
     <figcaption>Symphyotrichum novae-angliae · Botanical Plate</figcaption>
   </figure>
 </section>

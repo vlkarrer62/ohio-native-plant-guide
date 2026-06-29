@@ -202,19 +202,11 @@
   <section class="section visible">
     <p class="eyebrow">Botanical Plate</p>
     <h2>Swamp Milkweed</h2>
-    <figure class="botanical-plate botanical-plate--placeholder">
-      <div class="botanical-plate-frame">
-        <img
-          src="../images/milkweed-plate.png"
-          alt="Botanical illustration of Swamp Milkweed"
-          onload="this.closest('.botanical-plate').classList.add('has-image')"
-          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
-        />
-        <div class="botanical-plate-placeholder" aria-hidden="true">
-          <span class="botanical-plate-placeholder-label">Plate pending</span>
-          <span class="botanical-plate-placeholder-file">images/milkweed-plate.png</span>
-        </div>
-      </div>
+    <figure class="botanical-plate">
+      <img
+        src="../images/milkweed-plate.png"
+        alt="Botanical illustration of Swamp Milkweed"
+        style="width:100%; height:auto; display:block; border-radius:4px;">
       <figcaption>Asclepias incarnata · Botanical Plate</figcaption>
     </figure>
   </section>
