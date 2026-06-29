@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wingstem · Verbesina alternifolia · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/wingstem.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Verbesina alternifolia illustration:
+         A tall stem with conspicuous decurrent "wings" (leafy flanges
+         running down the stem), alternate lance-shaped toothed leaves,
+         topped by an open, branched spray of ragged yellow flower
+         heads — few, uneven, drooping rays around a domed centre. -->
+    <svg class="hero-illustration" viewBox="0 0 300 470" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ── WINGS (decurrent flanges; scalloped ribbons flanking the stem) ── -->
+      <g fill="#7d9a47" fill-opacity="0.85" stroke="#647c34" stroke-width="0.7">
+        <path d="M148 202 C138 218 138 234 148 250 C138 266 138 282 148 298 C138 314 138 330 148 346 C138 362 138 378 148 394 C138 410 138 426 148 442 L148 202 Z"/>
+        <path d="M152 202 C162 218 162 234 152 250 C162 266 162 282 152 298 C162 314 162 330 152 346 C162 362 162 378 152 394 C162 410 162 426 152 442 L152 202 Z"/>
+      </g>
+
+      <!-- ── ALTERNATE LEAVES (lance, toothed, decurrent) ── -->
+      <g fill="#7e9a4e" fill-opacity="0.92" stroke="#647c34" stroke-width="0.8" stroke-linejoin="round">
+        <!-- right @ ~230 -->
+        <path d="M153 232 C182 224 214 214 242 196 C216 220 188 234 153 238 Z"/>
+        <!-- left @ ~280 -->
+        <path d="M147 280 C118 272 86 262 58 244 C84 268 112 282 147 286 Z"/>
+        <!-- right @ ~330 -->
+        <path d="M153 330 C182 322 214 312 242 294 C216 318 188 332 153 336 Z"/>
+        <!-- left @ ~380 -->
+        <path d="M147 380 C118 372 86 362 58 344 C84 368 112 382 147 386 Z"/>
+        <!-- right @ ~426 -->
+        <path d="M153 426 C180 419 208 410 234 394 C210 416 184 428 153 431 Z"/>
+      </g>
+      <g stroke="#647c34" stroke-width="0.7" opacity="0.5">
+        <path d="M153 235 L238 200 M147 283 L62 248 M153 333 L238 298 M147 383 L62 348 M153 428 L231 398"/>
+      </g>
+
+      <!-- ── STEM (over the wing inner edges) ── -->
+      <path d="M150 462 L150 190" stroke="#647c34" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- ── FLOWER PEDUNCLES (branched spray) ── -->
+      <g stroke="#647c34" stroke-width="1.6" fill="none" stroke-linecap="round">
+        <path d="M150 192 C150 172 150 150 150 130"/>
+        <path d="M150 198 C132 182 120 166 114 150"/>
+        <path d="M150 198 C168 182 180 166 188 148"/>
+        <path d="M150 208 C122 200 106 192 100 186"/>
+        <path d="M150 208 C178 200 194 192 204 184"/>
+      </g>
+
+      <!-- ── RAGGED FLOWER HEADS (few, uneven, drooping rays) ── -->
+      <!-- main -->
+      <g transform="translate(150 122)">
+        <g fill="#e6bf42" stroke="#cf9f2a" stroke-width="0.5">
+          <ellipse cx="10" cy="0" rx="10" ry="2.3" transform="rotate(-95)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.1" transform="rotate(-55)"/>
+          <ellipse cx="11" cy="0" rx="10" ry="2.3" transform="rotate(-18)"/>
+          <ellipse cx="9"  cy="0" rx="9"  ry="2.2" transform="rotate(28)"/>
+          <ellipse cx="11" cy="0" rx="11" ry="2.3" transform="rotate(72)"/>
+          <ellipse cx="8"  cy="0" rx="8"  ry="2.1" transform="rotate(120)"/>
+          <ellipse cx="10" cy="0" rx="9"  ry="2.2" transform="rotate(165)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.1" transform="rotate(210)"/>
+        </g>
+        <circle r="5" fill="#ad832b"/>
+        <g fill="#cba23c"><circle cx="-1.6" cy="-1.4" r="1"/><circle cx="1.8" cy="0.6" r="1"/><circle cx="-0.4" cy="1.8" r="0.9"/></g>
+      </g>
+      <!-- upper-left -->
+      <g transform="translate(114 140) scale(0.84)">
+        <g fill="#e6bf42" stroke="#cf9f2a" stroke-width="0.6">
+          <ellipse cx="10" cy="0" rx="9"  ry="2.3" transform="rotate(-100)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(-50)"/>
+          <ellipse cx="11" cy="0" rx="10" ry="2.3" transform="rotate(-5)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(45)"/>
+          <ellipse cx="10" cy="0" rx="10" ry="2.3" transform="rotate(95)"/>
+          <ellipse cx="8"  cy="0" rx="8"  ry="2.1" transform="rotate(150)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.1" transform="rotate(195)"/>
+        </g>
+        <circle r="4.6" fill="#ad832b"/>
+        <g fill="#cba23c"><circle cx="-1.4" cy="-1.2" r="0.9"/><circle cx="1.6" cy="0.8" r="0.9"/></g>
+      </g>
+      <!-- upper-right -->
+      <g transform="translate(188 138) scale(0.84)">
+        <g fill="#e6bf42" stroke="#cf9f2a" stroke-width="0.6">
+          <ellipse cx="10" cy="0" rx="9"  ry="2.3" transform="rotate(-85)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(-35)"/>
+          <ellipse cx="11" cy="0" rx="10" ry="2.3" transform="rotate(15)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(60)"/>
+          <ellipse cx="10" cy="0" rx="10" ry="2.3" transform="rotate(110)"/>
+          <ellipse cx="8"  cy="0" rx="8"  ry="2.1" transform="rotate(160)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.1" transform="rotate(205)"/>
+        </g>
+        <circle r="4.6" fill="#ad832b"/>
+        <g fill="#cba23c"><circle cx="1.4" cy="-1.2" r="0.9"/><circle cx="-1.6" cy="0.8" r="0.9"/></g>
+      </g>
+      <!-- lower-left -->
+      <g transform="translate(100 178) scale(0.72)">
+        <g fill="#e6bf42" stroke="#cf9f2a" stroke-width="0.7">
+          <ellipse cx="10" cy="0" rx="9"  ry="2.4" transform="rotate(-105)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(-45)"/>
+          <ellipse cx="11" cy="0" rx="10" ry="2.4" transform="rotate(5)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(55)"/>
+          <ellipse cx="10" cy="0" rx="9"  ry="2.3" transform="rotate(120)"/>
+          <ellipse cx="8"  cy="0" rx="8"  ry="2.1" transform="rotate(175)"/>
+        </g>
+        <circle r="4.4" fill="#ad832b"/>
+        <g fill="#cba23c"><circle cx="-1.2" cy="-1" r="0.9"/><circle cx="1.4" cy="0.9" r="0.8"/></g>
+      </g>
+      <!-- lower-right -->
+      <g transform="translate(204 176) scale(0.72)">
+        <g fill="#e6bf42" stroke="#cf9f2a" stroke-width="0.7">
+          <ellipse cx="10" cy="0" rx="9"  ry="2.4" transform="rotate(-80)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(-30)"/>
+          <ellipse cx="11" cy="0" rx="10" ry="2.4" transform="rotate(20)"/>
+          <ellipse cx="9"  cy="0" rx="8"  ry="2.2" transform="rotate(70)"/>
+          <ellipse cx="10" cy="0" rx="9"  ry="2.3" transform="rotate(125)"/>
+          <ellipse cx="8"  cy="0" rx="8"  ry="2.1" transform="rotate(185)"/>
+        </g>
+        <circle r="4.4" fill="#ad832b"/>
+        <g fill="#cba23c"><circle cx="1.2" cy="-1" r="0.9"/><circle cx="-1.4" cy="0.9" r="0.8"/></g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Bottomland Wildflower</div>
+      <h1>Wingstem<em>Verbesina alternifolia</em></h1>
+      <p class="hero-tagline">A tall perennial of moist woods and stream bottoms, named for the leafy "wings" that run down its stem — topped in late summer by branched sprays of ragged, golden flower heads alive with bees and butterflies.</p>
+      <div class="flagship-badge">✦ Winged Stems</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">3–8 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Late summer to fall</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium to moist</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Asteraceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Winged Stem</h2>
+    <p>Wingstem is a tall, rangy perennial named for an unusual feature you can read with a fingertip: thin, leafy ridges — "wings" — run lengthwise down the stem, formed where the bases of the alternate leaves continue downward along it. The leaves themselves are lance-shaped, tapering, and toothed; the whole plant can reach well over head height by late summer.</p>
+    <p>Its flowers match its informal habit. Branched sprays at the stem tips carry many small yellow heads, each with only a few ray florets, unevenly spaced and often drooping around a domed centre — a dishevelled, "bad-hair-day" daisy that gives the plant its other common name, yellow ironweed. It grows in moist woods, floodplains, stream banks, ditches, and bottomland thickets, often forming colonies in sun to part shade.</p>
+
+    <div class="keystone-callout">
+      <p>Tall, open, and flowering late, wingstem holds its many small heads up where insects can reach them easily, making it a <strong>generous late-summer nectar and pollen source</strong> in moist, partly shaded ground where fewer composites grow. Its seeds are later taken by finches and other songbirds.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Rain gardens</span>
+      <span class="pill">Moist borders</span>
+      <span class="pill">Streambank plantings</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Part-shade meadows</span>
+      <span class="pill">Naturalizing</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Wingstem</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/wingstem-plate.png"
+          alt="Botanical field-plate illustration of Wingstem"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/wingstem-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Verbesina alternifolia · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Clumps push up from the crown, and the winged stems begin to rise — the leafy ridges along them visible early.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Rapid, tall growth. The plant gains much of its height, the winged stems conspicuous, the flower branches forming at the top.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Peak bloom — open, branched sprays of ragged yellow heads open above the foliage and are worked steadily by bees and butterflies.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Flowering fades to seed; the flat, two-awned seeds ripen and are taken by goldfinches and other songbirds. The tall stems stand.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Dried stems and seed heads persist, the winged stems still legible in silhouette, before being cut back in late winter.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Wingstem's many small, open heads, held high and blooming late, draw a broad mix of insects — native bees, bumblebees, wasps, flies, and butterflies. It is also a documented larval host for the silvery checkerspot butterfly, and supports the caterpillars of some moths, though those associations vary by place.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees &amp; Wasps</span><span class="insect-count-badge">nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Native Bees</span>
+          <span class="insect-tag">Bumblebees</span>
+          <span class="insect-tag">Wasps</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">nectar + larvae</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Silvery Checkerspot</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Moth Larvae</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies &amp; Others</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag">Flower Flies</span>
+          <span class="insect-tag">Beetles</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Beyond its insect visitors, wingstem feeds birds: its <strong>ripe seed</strong> is a draw for goldfinches and other songbirds in fall, and the standing stems add winter structure to a moist planting.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Wingstem is easy and vigorous wherever it has moisture, taking sun or part shade and tolerating more shade than most composites. That vigour is the thing to plan for: in rich, moist ground it grows tall and spreads by both rhizome and seed, so it is best where it has room to form a colony rather than in a tidy, confined bed.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; takes more shade than most daisies</td></tr>
+      <tr><td>Soil</td><td>Average to rich; tolerates clay and seasonal moisture</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; happiest on bottomland and stream banks</td></tr>
+      <tr><td>Habit</td><td>Tall and colony-forming; spreads by rhizomes and seed — give it room</td></tr>
+      <tr><td>Height</td><td>Often 5–8 ft in rich soil; site it at the back, where height is welcome</td></tr>
+      <tr><td>Maintenance</td><td>Low; cut back in late winter, and divide or thin to limit spread</td></tr>
+      <tr><td>Wildlife</td><td>Leave seed heads standing for finches and winter structure</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Wingstem suits the back of a moist, sunny-to-part-shade planting — rain gardens, bottomland borders, and stream edges — among other tall, late natives that can hold their own beside it.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Bottomland giants</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe-Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ironweed</span> <span class="companion-latin">Vernonia spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Cup Plant</span> <span class="companion-latin">Silphium perfoliatum</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Moist-meadow company</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Boneset</span> <span class="companion-latin">Eupatorium perfoliatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Culver's Root</span> <span class="companion-latin">Veronicastrum virginicum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blue Vervain</span> <span class="companion-latin">Verbena hastata</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Late-season colour</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrod</span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Aster</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Wings on the Stem</h3>
+        <p>Run a finger up the stem and you can feel where the name comes from: thin, leafy ridges run lengthwise along it, formed where each leaf base continues downward as a <strong>decurrent</strong> flange. These "wings" make wingstem easy to identify even when it is not in flower, and set it apart from the many other tall yellow composites of late summer.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Ragged Kind of Daisy</h3>
+        <p>Where a sunflower or coneflower carries a tidy ring of even rays, wingstem's heads look deliberately undone — a handful of ray florets, unevenly spaced and often bent back or drooping, around a small domed disc. The effect is more wild than formal, and it is part of why the plant reads as a creature of the floodplain and ditch rather than the flower bed.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Tall Forage, Late and Open</h3>
+        <p>By blooming late and holding many accessible flowers high on open, branched stems, wingstem extends the season's forage in moist, partly shaded places where late nectar can be scarce. It draws a wide range of bees and butterflies, serves as a larval host for the silvery checkerspot, and then feeds finches on its ripe seed — a long arc of use from summer into winter.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Wingstems &amp; Crownbeards</h3>
+        <p>Wingstem belongs to the genus <em>Verbesina</em>, the crownbeards — a small group of tall, late-blooming composites. Its best-known relative, white crownbeard or "frostweed" (<em>Verbesina virginica</em>), is famous for a winter trick: as the first hard freezes arrive, sap freezing in the base of the stem splits the bark and pushes out delicate ribbons of ice, the so-called "frost flowers." The genus is the subject of the showcase below.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Genus Verbesina</p>
+    <h2>Meet the Crownbeards</h2>
+    <p><em>Verbesina</em> — the wingstems and crownbeards — is a small genus of tall, late-blooming natives, several with winged stems like this one. Wingstem is the common Ohio member, of moist woods and bottomland; its relatives are scarcer here or belong farther south, and sort out by flower colour and habitat.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">Most Common · Garden-Ready</p>
+        <p class="species-common">Wingstem</p>
+        <p class="species-latin">Verbesina alternifolia</p>
+        <p class="species-desc">The species profiled on this page: winged stems, alternate toothed leaves, and branched sprays of ragged yellow heads in late summer. The common crownbeard of Ohio's moist woods, floodplains, and stream bottoms.</p>
+        <div class="species-traits"><span class="species-trait">3–8 ft</span><span class="species-trait">Moist · part shade</span><span class="species-trait">Yellow</span><span class="species-trait">Winged stem</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Dry prairie &amp; open woods</p>
+        <p class="species-common">Yellow Crownbeard</p>
+        <p class="species-latin">Verbesina helianthoides</p>
+        <p class="species-desc">A shorter, more sunflower-like species of dry prairies and open woods, with winged stems and fuller, neater yellow heads. Uncommon in Ohio, on drier ground than wingstem.</p>
+        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Dry–medium</span><span class="species-trait">Yellow</span><span class="species-trait">Winged stem</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">White-flowered · Frost flowers</p>
+        <p class="species-common">White Crownbeard</p>
+        <p class="species-latin">Verbesina virginica</p>
+        <p class="species-desc">"Frostweed" — a white-flowered crownbeard of woodland edges and bottoms, mostly south of Ohio, known for the ribbons of ice its stems extrude at the first hard freezes.</p>
+        <div class="species-traits"><span class="species-trait">3–6 ft</span><span class="species-trait">Med–moist</span><span class="species-trait">White</span><span class="species-trait">Frost flowers</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Southern · Clearings</p>
+        <p class="species-common">Southern Crownbeard</p>
+        <p class="species-latin">Verbesina occidentalis</p>
+        <p class="species-desc">A taller, more weedy crownbeard of clearings, roadsides, and old fields to the south, with sparse, few-rayed yellow heads. Largely outside Ohio, included here to round out the genus.</p>
+        <div class="species-traits"><span class="species-trait">3–6 ft</span><span class="species-trait">Medium</span><span class="species-trait">Yellow</span><span class="species-trait">Sparse rays</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Verbesina alternifolia · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

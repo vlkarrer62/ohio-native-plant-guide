@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ohio Spiderwort · Tradescantia ohiensis · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/ohio-spiderwort.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Tradescantia ohiensis illustration:
+         A clump of long, narrow, arching grass-like leaves with a waxy
+         blue-green (glaucous) cast, folding into a channel. Erect stems
+         topped by a cluster of three-petaled blue-violet flowers with
+         bright gold stamens, sitting above a pair of spreading bracts,
+         with several pointed buds among the open flowers. -->
+    <svg class="hero-illustration" viewBox="0 0 300 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ── STEM ── -->
+      <path d="M150 452 L150 150" stroke="#74a093" stroke-width="2.6" stroke-linecap="round"/>
+
+      <!-- ── ARCHING GLAUCOUS LEAVES ── -->
+      <g fill="#8eb0a5" fill-opacity="0.55">
+        <path d="M150 452 C120 400 92 320 78 250 C76 240 81 237 86 245 C100 302 126 382 156 450 Z"/>
+        <path d="M150 452 C180 400 208 320 222 250 C224 240 219 237 214 245 C200 302 174 382 144 450 Z"/>
+        <path d="M150 452 C129 412 110 354 102 308 C101 302 105 300 109 307 C118 354 135 410 155 450 Z"/>
+        <path d="M150 452 C171 412 190 354 198 308 C199 302 195 300 191 307 C182 354 165 410 145 450 Z"/>
+      </g>
+      <!-- leaf midribs -->
+      <g stroke="#74a093" stroke-width="0.8" fill="none" opacity="0.6">
+        <path d="M150 450 C124 400 98 322 84 250"/>
+        <path d="M150 450 C176 400 202 322 216 250"/>
+        <path d="M150 450 C131 410 112 354 104 308"/>
+        <path d="M150 450 C169 410 188 354 196 308"/>
+      </g>
+
+      <!-- ── FLORAL BRACTS (spreading, leaf-like) ── -->
+      <g fill="#7ea096" fill-opacity="0.7">
+        <path d="M150 166 C126 166 104 174 88 188 C106 180 128 175 150 173 Z"/>
+        <path d="M150 166 C174 166 196 174 212 188 C194 180 172 175 150 173 Z"/>
+      </g>
+
+      <!-- ── PEDICELS ── -->
+      <g stroke="#74a093" stroke-width="1.1" stroke-linecap="round" opacity="0.85">
+        <path d="M150 160 C150 150 150 138 150 122"/>
+        <path d="M150 162 C140 156 130 144 122 108"/>
+        <path d="M150 162 C162 156 174 146 182 116"/>
+        <path d="M150 164 C146 160 142 156 138 150"/>
+        <path d="M150 164 C156 160 162 156 166 150"/>
+      </g>
+
+      <!-- ── BUDS (pointed, glaucous) ── -->
+      <g fill="#7ea096">
+        <path d="M138 142 C141 145 142 152 138 158 C134 152 135 145 138 142 Z"/>
+        <path d="M166 142 C169 145 170 152 166 158 C162 152 163 145 166 142 Z"/>
+      </g>
+      <g fill="#9aa3e0" opacity="0.6">
+        <ellipse cx="138" cy="145" rx="1.6" ry="2.2"/>
+        <ellipse cx="166" cy="145" rx="1.6" ry="2.2"/>
+      </g>
+
+      <!-- ── FLOWER B (upper-left, smaller) ── -->
+      <g>
+        <ellipse cx="122" cy="95" rx="8" ry="12" fill="#8d97db" stroke="#6b76c4" stroke-width="0.6"/>
+        <ellipse cx="122" cy="95" rx="8" ry="12" fill="#8d97db" stroke="#6b76c4" stroke-width="0.6" transform="rotate(120 122 108)"/>
+        <ellipse cx="122" cy="95" rx="8" ry="12" fill="#8893d6" stroke="#6b76c4" stroke-width="0.6" transform="rotate(240 122 108)"/>
+        <circle cx="122" cy="108" r="3" fill="#caa23f"/>
+        <g stroke="#caa23f" stroke-width="0.8" opacity="0.9">
+          <path d="M122 108 l-5 -4 M122 108 l5 -4 M122 108 l-6 2 M122 108 l6 2"/>
+        </g>
+      </g>
+
+      <!-- ── FLOWER C (right, smaller) ── -->
+      <g>
+        <ellipse cx="182" cy="104" rx="8" ry="12" fill="#8893d6" stroke="#6b76c4" stroke-width="0.6"/>
+        <ellipse cx="182" cy="104" rx="8" ry="12" fill="#8893d6" stroke="#6b76c4" stroke-width="0.6" transform="rotate(120 182 117)"/>
+        <ellipse cx="182" cy="104" rx="8" ry="12" fill="#8d97db" stroke="#6b76c4" stroke-width="0.6" transform="rotate(240 182 117)"/>
+        <circle cx="182" cy="117" r="3" fill="#caa23f"/>
+        <g stroke="#caa23f" stroke-width="0.8" opacity="0.9">
+          <path d="M182 117 l-5 -4 M182 117 l5 -4 M182 117 l-6 2 M182 117 l6 2"/>
+        </g>
+      </g>
+
+      <!-- ── FLOWER A (front, largest) ── -->
+      <g>
+        <ellipse cx="150" cy="104" rx="10.5" ry="15" fill="#8893d6" stroke="#6b76c4" stroke-width="0.7"/>
+        <ellipse cx="150" cy="104" rx="10.5" ry="15" fill="#7f8ad0" stroke="#6b76c4" stroke-width="0.7" transform="rotate(120 150 119)"/>
+        <ellipse cx="150" cy="104" rx="10.5" ry="15" fill="#8893d6" stroke="#6b76c4" stroke-width="0.7" transform="rotate(240 150 119)"/>
+        <!-- gold stamen centre with bearded filaments -->
+        <circle cx="150" cy="119" r="4" fill="#caa23f"/>
+        <g stroke="#caa23f" stroke-width="1" stroke-linecap="round">
+          <path d="M150 119 l-7 -5"/><path d="M150 119 l-3 -8"/><path d="M150 119 l4 -8"/>
+          <path d="M150 119 l8 -3"/><path d="M150 119 l-8 3"/><path d="M150 119 l5 6"/>
+        </g>
+        <g fill="#e2c069">
+          <circle cx="143" cy="114" r="1.4"/><circle cx="147" cy="111" r="1.4"/><circle cx="154" cy="111" r="1.4"/>
+          <circle cx="158" cy="116" r="1.4"/><circle cx="142" cy="122" r="1.4"/><circle cx="155" cy="125" r="1.4"/>
+        </g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Summer Wildflower</div>
+      <h1>Ohio Spiderwort<em>Tradescantia ohiensis</em></h1>
+      <p class="hero-latin">Tradescantia ohiensis</p>
+      <p class="hero-tagline">A clump of long, arching, blue-green leaves and clusters of three-petaled violet-blue flowers — each one open for a single morning — appearing a few at a time from late spring through summer. A tough, adaptable wildflower of prairies, meadows, and roadsides.</p>
+      <div class="flagship-badge">✦ One-Day Flowers</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">2–3 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Late spring to summer</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to medium</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Commelinaceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Three Petals, One Morning</h2>
+    <p>Ohio spiderwort grows as an upright clump of long, narrow leaves that arch outward and fold lengthwise into a shallow channel, clasping the stem where they meet it. The foliage carries a waxy blue-green, slightly powdery cast — the "smooth" or glaucous quality that separates this species from its hairier relatives. The stems are topped by clusters of buds and flowers held above a pair of spreading, leaf-like bracts.</p>
+    <p>Each flower has three rounded petals, usually a clear blue to violet-purple — occasionally rose or white — set off by six bright yellow stamens whose slender filaments are fringed with fine hairs. A flower opens in the morning and closes by afternoon, often sooner in heat, lasting only a single day; but the cluster opens just a few flowers at a time, so a plant can keep blooming for weeks. Ohio spiderwort is notably adaptable, growing in prairies, meadows, open woods, thickets, and along roadsides and railway banks, in dry to medium soils and full sun to part shade.</p>
+
+    <div class="keystone-callout">
+      <p>Spiderwort flowers offer pollen rather than nectar, and they open early and close by midday. Together this concentrates their value into the morning hours, when pollen-collecting bees — bumblebees especially — work the fresh flowers. The plant's role in the garden is largely as an early-day pollen source through late spring and summer, before the day's flowers have closed.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Prairie &amp; meadow</span>
+      <span class="pill">Sunny borders</span>
+      <span class="pill">Naturalized areas</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Tough &amp; poor-soil sites</span>
+      <span class="pill">Cottage-style plantings</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Ohio Spiderwort</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/ohio-spiderwort-plate.png"
+          alt="Botanical field-plate illustration of Ohio Spiderwort"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/ohio-spiderwort-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Tradescantia ohiensis · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Clumps of arching grass-like foliage emerge and the stems rise. The first flower clusters form at the stem tips, gathering buds above their bracts.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late spr.</div><div class="tl-bar"></div><div class="tl-text">Bloom begins — the first violet-blue flowers open in the morning and close by afternoon, with new buds waiting behind them.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">Peak bloom — a few fresh flowers open each morning over many weeks, worked by bees in the early hours before the day's flowers close.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">Flowering slows and the foliage may flop or look tired after heavy bloom. Cutting the clump back hard often brings a flush of fresh leaves, and sometimes a second, lighter bloom.</div></div>
+      <div class="tl-row"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Small seed capsules ripen and the foliage dies back. The plant overwinters as a clump of roots, returning the following spring.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Because the flowers provide pollen but little or no nectar, and close by midday, their visitors are mostly pollen-collecting bees active in the morning. Long-tongued and short-tongued bees both work the flowers, and hover flies visit for pollen as well.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Native Bees</span><span class="insect-count-badge">pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebees</span>
+          <span class="insect-tag common">Long-horned Bees</span>
+          <span class="insect-tag">Sweat Bees</span>
+          <span class="insect-tag">Mining Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies</span><span class="insect-count-badge">pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Hover / Flower Flies</span>
+          <span class="insect-tag">Bee Flies</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Because the flowers close in the afternoon, Ohio spiderwort is most useful to pollinators in the <strong>morning</strong>, which makes it a good companion to later-opening, nectar-rich flowers that carry visitors through the rest of the day. The leafy clumps also offer low cover for ground-active insects.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Ohio spiderwort is undemanding and tolerant of poor, dry ground — qualities that make it easy to grow and, in richer conditions, sometimes a little too enthusiastic. An open, sunny site keeps it compact and full of flower; rich, moist soil tends to produce lax, floppy growth and more self-sowing.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; fullest bloom in sun, while light afternoon shade can keep foliage fresher in heat</td></tr>
+      <tr><td>Soil</td><td>Adaptable; tolerates poor, dry, and clay soils; rich soil encourages floppy growth</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; drought-tolerant once established</td></tr>
+      <tr><td>After bloom</td><td>Foliage often flops or yellows after the main bloom; cutting the clump back hard renews the leaves and can prompt a second flush</td></tr>
+      <tr><td>Spreading</td><td>Self-sows readily and can spread, especially in rich, moist ground; deadhead to keep it in bounds</td></tr>
+      <tr><td>Division</td><td>Lift and divide clumps in spring or fall to manage size or make more plants</td></tr>
+      <tr><td>Maintenance</td><td>Low; mainly cutting back and deadheading to refresh foliage and limit seeding</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>The strappy, arching foliage and clear blue flowers sit well among fine prairie grasses and warm-coloured summer flowers, where the early-day blooms add cool colour before the heat of the day. Its toughness suits dry, sunny plantings and naturalised areas.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Prairie grasses</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Sun-loving colour</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black-eyed Susan</span> <span class="companion-latin">Rudbeckia hirta</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Early-to-mid season</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Coreopsis</span> <span class="companion-latin">Coreopsis spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">A Flower That Lasts a Morning</h3>
+        <p>Each spiderwort flower is open for only a single day. It unfolds in the morning and, particularly in sun and heat, closes again by early afternoon. Because the cluster carries many buds and opens just a few at a time, the plant flowers steadily for weeks even though no individual bloom lasts beyond a day.</p>
+        <p>The spent flowers behave unusually as they fade. Rather than drying and dropping as papery petals, they collapse into a soft, translucent, jelly-like fluid — the petals deliquesce, a trait shared across the spiderworts. What looks like a small bead of clear gel at the tip of a stem is yesterday's flower.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Hairs You Can Watch Living</h3>
+        <p>The fine hairs fringing the stamen filaments are made of long, single-file chains of unusually large cells. Because the cells are big and the hairs nearly transparent, a single stamen hair laid under a microscope is a classic way to watch a living plant cell at work — the nucleus, and the slow circulation of the cytoplasm around it, are visible without stains. Generations of biology students have met the living cell through a spiderwort stamen.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The Spiderwort Radiation Test</h3>
+        <p>Those same stamen hairs gave <em>Tradescantia</em> a second scientific life. In certain spiderworts the hair cells are normally blue, but mutate to pink at a measurable rate. Researchers have used the frequency of these blue-to-pink changes as a living test for mutagens and ionising radiation in the environment, exposing plants to a site and counting the colour shifts. The flower built for a single morning turns out to keep a quiet record of its surroundings.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Tradescant, and the "Spider" in Spiderwort</h3>
+        <p>The genus <em>Tradescantia</em> honours John Tradescant, the elder and the younger, gardeners and plant collectors in seventeenth-century England. The common name "spiderwort" is less settled: it has been linked to the angular, leggy arrangement of the leaves, to the fine threads that string out from a cut stem like a spider's silk, and to the hairy stamens — with "wort" simply an old word for a useful plant. Ohio spiderwort also goes by the name bluejacket.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Ohio Species</p>
+    <h2>Ohio Spiderworts</h2>
+    <p>Ohio spiderwort is the most familiar of several <em>Tradescantia</em> that grow in the state. They are close enough to overlap and hybridise where they meet, and are told apart by details of leaf, stem, and the hairs on the sepals — with habitat offering a first clue.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant · Open ground</p>
+        <p class="species-common">Ohio Spiderwort</p>
+        <p class="species-latin">Tradescantia ohiensis</p>
+        <p class="species-desc">The common spiderwort of open, sunny places across Ohio — prairies, meadows, and roadsides. Distinguished by its smooth, waxy blue-green (glaucous) foliage and stems, and by sepals that are nearly hairless apart from a small tuft at the tip. Violet-blue flowers, each lasting a single morning.</p>
+        <div class="species-traits"><span class="species-trait">2–3 ft</span><span class="species-trait">Dry–med</span><span class="species-trait">Sun–pt shade</span><span class="species-trait">Glaucous</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Woods &amp; edges · Hairy</p>
+        <p class="species-common">Virginia Spiderwort</p>
+        <p class="species-latin">Tradescantia virginiana</p>
+        <p class="species-desc">A spiderwort of woodland edges and clearings, generally greener and hairier than Ohio spiderwort, without the waxy bloom, and with sepals evenly covered in glandular hairs. Often shorter and earlier, it overlaps with Ohio spiderwort and the two can intergrade where they meet.</p>
+        <div class="species-traits"><span class="species-trait">1–2 ft</span><span class="species-trait">Medium</span><span class="species-trait">Pt shade</span><span class="species-trait">Hairy sepals</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Woodland · Part shade</p>
+        <p class="species-common">Zigzag Spiderwort</p>
+        <p class="species-latin">Tradescantia subaspera</p>
+        <p class="species-desc">The shade-dwelling member of the group — a plant of moist woods, ravines, and shaded stream banks rather than open prairie. It is told by its broader leaves and a stem that bends in a distinct zigzag between them, and it often carries some of its blue flowers in the leaf axils along the stem, not only at the tip. Blooms later, into late summer.</p>
+        <div class="species-traits"><span class="species-trait">1–3 ft</span><span class="species-trait">Moist</span><span class="species-trait">Part–full shade</span><span class="species-trait">Zigzag stem</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Tradescantia ohiensis · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

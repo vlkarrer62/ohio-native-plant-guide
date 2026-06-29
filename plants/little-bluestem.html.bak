@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Bluestem · Schizachyrium scoparium · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/little-bluestem.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+  <a href="../index.html">← Home</a>
+  <a href="index.html">Plant Directory</a>
+</nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Little bluestem illustration:
+         Upright, narrow columns of stems — not a fountain,
+         not arching. Distinctly vertical. The blue-green
+         summer culms with flat alternate leaves, and the
+         fall character: copper-russet stems with fluffy
+         white-silver seed tufts along the nodes.
+         Multiple stems at slightly different heights,
+         grouped in a tight clump. -->
+    <svg class="hero-illustration" viewBox="0 0 280 450" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMax meet">
+
+      <!-- STEM GROUP: tight clump of upright culms
+           originating from a single crown at ~(140, 440) -->
+
+      <!-- Summer culms — blue-green, upright with slight natural lean -->
+      <!-- Each culm is a slightly different height, creating an irregular natural top edge -->
+
+      <!-- Stem 1 — tallest, central -->
+      <line x1="138" y1="440" x2="136" y2="60" stroke="#5a7858" stroke-width="2.4" stroke-linecap="round"/>
+      <!-- Stem 2 -->
+      <line x1="144" y1="440" x2="146" y2="80" stroke="#527050" stroke-width="2.2" stroke-linecap="round"/>
+      <!-- Stem 3 — left -->
+      <line x1="132" y1="440" x2="128" y2="100" stroke="#5a7858" stroke-width="2.0" stroke-linecap="round"/>
+      <!-- Stem 4 -->
+      <line x1="150" y1="440" x2="154" y2="110" stroke="#4e6848" stroke-width="1.9" stroke-linecap="round"/>
+      <!-- Stem 5 — far left -->
+      <line x1="126" y1="440" x2="120" y2="125" stroke="#527050" stroke-width="1.7" stroke-linecap="round"/>
+      <!-- Stem 6 — far right -->
+      <line x1="156" y1="440" x2="162" y2="130" stroke="#4e6848" stroke-width="1.7" stroke-linecap="round"/>
+      <!-- Stem 7 — shorter, adds density -->
+      <line x1="148" y1="440" x2="152" y2="155" stroke="#527050" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+      <line x1="134" y1="440" x2="130" y2="165" stroke="#5a7858" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+
+      <!-- ALTERNATE LEAVES — narrow, flat, clasping the stem at nodes
+           Little bluestem leaves are distinctive: flat, folded at the base,
+           spreading outward then drooping slightly at the tip -->
+      <g fill="none" stroke-linecap="round">
+        <!-- Stem 1 leaves -->
+        <path d="M136 200 C128 196 118 198 112 206" stroke="#5a7858" stroke-width="1.3"/>
+        <path d="M136 240 C144 236 154 238 160 246" stroke="#527050" stroke-width="1.3"/>
+        <path d="M136 290 C126 288 116 292 110 300" stroke="#5a7858" stroke-width="1.2"/>
+        <path d="M136 330 C144 328 154 332 158 340" stroke="#527050" stroke-width="1.2"/>
+        <path d="M136 375 C126 374 118 378 114 384" stroke="#5a7858" stroke-width="1.1"/>
+        <!-- Stem 2 leaves -->
+        <path d="M146 215 C154 212 164 214 170 222" stroke="#4e6848" stroke-width="1.2"/>
+        <path d="M146 265 C138 262 128 266 124 274" stroke="#527050" stroke-width="1.2"/>
+        <path d="M146 315 C154 312 164 316 168 322" stroke="#4e6848" stroke-width="1.1"/>
+        <path d="M146 360 C138 358 128 362 124 368" stroke="#527050" stroke-width="1.1"/>
+        <!-- Stem 3 leaves -->
+        <path d="M128 240 C120 237 110 240 106 248" stroke="#5a7858" stroke-width="1.1" opacity="0.8"/>
+        <path d="M128 300 C136 297 146 300 150 308" stroke="#527050" stroke-width="1.1" opacity="0.8"/>
+        <path d="M128 355 C120 353 112 356 108 362" stroke="#5a7858" stroke-width="1.0" opacity="0.75"/>
+      </g>
+
+      <!-- FALL SEED TUFTS — the signature silvery-white fluff at nodes
+           These appear at the rachis along the upper portion of the stem
+           in fall. Each is a small cluster of silky hairs. -->
+
+      <!-- Tufts on stem 1 (tallest) — multiple along upper half -->
+      <g opacity="0.82">
+        <!-- Rachis/seed branch emerging from node -->
+        <line x1="136" y1="100" x2="148" y2="88" stroke="#8a7858" stroke-width="0.9" stroke-linecap="round"/>
+        <line x1="136" y1="120" x2="150" y2="110" stroke="#8a7858" stroke-width="0.9" stroke-linecap="round"/>
+        <line x1="136" y1="145" x2="148" y2="136" stroke="#8a7858" stroke-width="0.9" stroke-linecap="round"/>
+        <line x1="136" y1="170" x2="150" y2="162" stroke="#8a7858" stroke-width="0.9" stroke-linecap="round"/>
+
+        <!-- Tuft 1 — top of stem 1, around (148, 88) -->
+        <g stroke="#d8d0b8" stroke-width="0.7" stroke-linecap="round" opacity="0.9">
+          <line x1="148" y1="88" x2="140" y2="74"/><line x1="148" y1="88" x2="143" y2="72"/>
+          <line x1="148" y1="88" x2="146" y2="70"/><line x1="148" y1="88" x2="150" y2="70"/>
+          <line x1="148" y1="88" x2="154" y2="72"/><line x1="148" y1="88" x2="157" y2="75"/>
+          <line x1="148" y1="88" x2="158" y2="80"/><line x1="148" y1="88" x2="156" y2="84"/>
+          <line x1="148" y1="88" x2="142" y2="78"/>
+        </g>
+        <g fill="#e8e0c8" opacity="0.75">
+          <circle cx="140" cy="73" r="1.4"/><circle cx="143" cy="71" r="1.2"/>
+          <circle cx="146" cy="69" r="1.3"/><circle cx="150" cy="69" r="1.2"/>
+          <circle cx="154" cy="71" r="1.3"/><circle cx="157" cy="74" r="1.2"/>
+          <circle cx="158" cy="79" r="1.2"/><circle cx="142" cy="77" r="1.1"/>
+        </g>
+
+        <!-- Tuft 2 -->
+        <g stroke="#d8d0b8" stroke-width="0.65" stroke-linecap="round" opacity="0.85">
+          <line x1="150" y1="110" x2="143" y2="97"/><line x1="150" y1="110" x2="147" y2="95"/>
+          <line x1="150" y1="110" x2="151" y2="95"/><line x1="150" y1="110" x2="155" y2="97"/>
+          <line x1="150" y1="110" x2="158" y2="102"/><line x1="150" y1="110" x2="158" y2="108"/>
+          <line x1="150" y1="110" x2="144" y2="104"/>
+        </g>
+        <g fill="#e8e0c8" opacity="0.72">
+          <circle cx="143" cy="96" r="1.2"/><circle cx="147" cy="94" r="1.1"/>
+          <circle cx="151" cy="94" r="1.2"/><circle cx="155" cy="96" r="1.1"/>
+          <circle cx="158" cy="101" r="1.1"/><circle cx="144" cy="103" r="1.0"/>
+        </g>
+
+        <!-- Tuft 3 -->
+        <g stroke="#d8d0b8" stroke-width="0.6" stroke-linecap="round" opacity="0.8">
+          <line x1="148" y1="136" x2="141" y2="124"/><line x1="148" y1="136" x2="145" y2="122"/>
+          <line x1="148" y1="136" x2="149" y2="122"/><line x1="148" y1="136" x2="153" y2="124"/>
+          <line x1="148" y1="136" x2="156" y2="130"/><line x1="148" y1="136" x2="142" y2="130"/>
+        </g>
+        <g fill="#e8e0c8" opacity="0.68">
+          <circle cx="141" cy="123" r="1.1"/><circle cx="145" cy="121" r="1.0"/>
+          <circle cx="149" cy="121" r="1.1"/><circle cx="153" cy="123" r="1.0"/>
+          <circle cx="156" cy="129" r="1.0"/>
+        </g>
+
+        <!-- Tuft 4 -->
+        <g stroke="#d8d0b8" stroke-width="0.6" stroke-linecap="round" opacity="0.72">
+          <line x1="150" y1="162" x2="144" y2="151"/><line x1="150" y1="162" x2="147" y2="150"/>
+          <line x1="150" y1="162" x2="151" y2="150"/><line x1="150" y1="162" x2="155" y2="153"/>
+          <line x1="150" y1="162" x2="157" y2="158"/><line x1="150" y1="162" x2="143" y2="157"/>
+        </g>
+      </g>
+
+      <!-- Tufts on stem 2 -->
+      <g opacity="0.72">
+        <line x1="146" y1="120" x2="160" y2="108" stroke="#8a7858" stroke-width="0.9" stroke-linecap="round"/>
+        <line x1="146" y1="148" x2="162" y2="138" stroke="#8a7858" stroke-width="0.85" stroke-linecap="round"/>
+        <g stroke="#d8d0b8" stroke-width="0.6" stroke-linecap="round" opacity="0.85">
+          <line x1="160" y1="108" x2="153" y2="96"/><line x1="160" y1="108" x2="157" y2="95"/>
+          <line x1="160" y1="108" x2="162" y2="95"/><line x1="160" y1="108" x2="166" y2="97"/>
+          <line x1="160" y1="108" x2="168" y2="104"/><line x1="160" y1="108" x2="154" y2="103"/>
+        </g>
+        <g fill="#e8e0c8" opacity="0.7">
+          <circle cx="153" cy="95" r="1.1"/><circle cx="157" cy="94" r="1.0"/>
+          <circle cx="162" cy="94" r="1.1"/><circle cx="166" cy="96" r="1.0"/>
+          <circle cx="168" cy="103" r="1.0"/>
+        </g>
+        <g stroke="#d8d0b8" stroke-width="0.6" stroke-linecap="round" opacity="0.78">
+          <line x1="162" y1="138" x2="156" y2="127"/><line x1="162" y1="138" x2="159" y2="126"/>
+          <line x1="162" y1="138" x2="163" y2="126"/><line x1="162" y1="138" x2="167" y2="129"/>
+          <line x1="162" y1="138" x2="169" y2="134"/>
+        </g>
+      </g>
+
+      <!-- Tufts on stem 3 (left stem) -->
+      <g opacity="0.65">
+        <line x1="128" y1="148" x2="116" y2="136" stroke="#8a7858" stroke-width="0.8" stroke-linecap="round"/>
+        <g stroke="#d8d0b8" stroke-width="0.6" stroke-linecap="round" opacity="0.8">
+          <line x1="116" y1="136" x2="108" y2="124"/><line x1="116" y1="136" x2="112" y2="123"/>
+          <line x1="116" y1="136" x2="115" y2="122"/><line x1="116" y1="136" x2="120" y2="124"/>
+          <line x1="116" y1="136" x2="123" y2="130"/><line x1="116" y1="136" x2="109" y2="131"/>
+        </g>
+        <g fill="#e8e0c8" opacity="0.65">
+          <circle cx="108" cy="123" r="1.0"/><circle cx="112" cy="122" r="1.0"/>
+          <circle cx="115" cy="121" r="1.0"/><circle cx="120" cy="123" r="1.0"/>
+          <circle cx="123" cy="129" r="1.0"/>
+        </g>
+      </g>
+
+      <!-- FALL COPPER COLOUR WASH on lower stems — suggests autumn transformation -->
+      <!-- Subtle amber-copper overlay on the lower portions -->
+      <g opacity="0.22">
+        <line x1="138" y1="440" x2="136" y2="280" stroke="#b87840" stroke-width="6" stroke-linecap="round"/>
+        <line x1="144" y1="440" x2="146" y2="290" stroke="#b07038" stroke-width="5.5" stroke-linecap="round"/>
+        <line x1="132" y1="440" x2="128" y2="295" stroke="#b87840" stroke-width="5" stroke-linecap="round"/>
+        <line x1="150" y1="440" x2="154" y2="300" stroke="#a86830" stroke-width="5" stroke-linecap="round"/>
+        <line x1="126" y1="440" x2="120" y2="305" stroke="#b07038" stroke-width="4.5" stroke-linecap="round"/>
+        <line x1="156" y1="440" x2="162" y2="308" stroke="#a86830" stroke-width="4.5" stroke-linecap="round"/>
+      </g>
+
+      <!-- Crown / base tuft suggestion -->
+      <ellipse cx="140" cy="442" rx="22" ry="6" fill="#7a6840" opacity="0.22"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant</div>
+      <h1>Little<em>Bluestem</em></h1>
+      <p class="hero-latin">Schizachyrium scoparium</p>
+      <p class="hero-tagline">A native prairie grass that stands upright through drought, turns copper-russet in autumn, and holds its form — and its colour — through the longest winters.</p>
+      <div class="season-badge">✦ Blue-Green Summer · Copper Fall · Silver Winter</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Warm-season grass</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">2–4 feet</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Season of Interest</span>
+      <span class="fact-value">All four seasons</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Form</span>
+      <span class="fact-value">Upright clump</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>A Column of the Prairie</h2>
+    <p>Little bluestem does not sprawl or arch or send up atmospheric clouds of flowers. It stands. The stems rise in tight upright columns from a central crown, each one leaning only slightly, the whole clump maintaining a clean vertical structure through the growing season and well into the following year.</p>
+    <p>In summer, the foliage carries an unusual colour — <strong>blue-green to chalky steel-blue</strong>, a tonal quality that reads differently from the yellower greens of most grasses. It has a flattened, almost folded quality at the base of each leaf, and the overall effect in a mass planting is quietly striking against the warmer greens of surrounding species.</p>
+    <p>Then fall arrives, and the plant changes entirely.</p>
+
+    <div class="colour-callout">
+      <p>Through October and into November, the foliage shifts through a sequence of warm tones — copper, burnt orange, russet, deep red — while silvery-white seed tufts emerge along the stems and catch the low autumn light. The colour holds through winter, fading slowly to tawny straw. In a prairie planting, little bluestem in fall is a marker of the season as much as any leaf.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Prairie and meadow plantings</span>
+      <span class="pill">Dry sunny borders</span>
+      <span class="pill">Mass plantings</span>
+      <span class="pill">Slope stabilisation</span>
+      <span class="pill">Four-season structure</span>
+      <span class="pill">Butterfly gardens</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Little Bluestem</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/little-bluestem-plate.png"
+          alt="Botanical field-plate illustration of Little Bluestem"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/little-bluestem-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Little Bluestem · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+
+  <!-- COLOUR ACROSS SEASONS -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Colour</p>
+    <h2>Four Seasons, Four Characters</h2>
+    <p>Little bluestem is one of the few native plants whose most compelling season is not summer. Planting it means committing to a long relationship, and each season rewards that commitment differently.</p>
+
+    <div class="colour-band">
+      <div class="colour-season">
+        <div class="colour-swatch" style="background: #7a9870;"></div>
+        <div class="colour-season-name">Spring</div>
+        <div class="colour-season-desc">Fresh blue-green shoots emerge; foliage has a noticeably cool tone compared to other grasses</div>
+      </div>
+      <div class="colour-season">
+        <div class="colour-swatch" style="background: #5a8070;"></div>
+        <div class="colour-season-name">Summer</div>
+        <div class="colour-season-desc">Full chalky blue-green, upright and architectural; white fluffy seed tufts begin appearing in late summer</div>
+      </div>
+      <div class="colour-season">
+        <div class="colour-swatch" style="background: #b06828;"></div>
+        <div class="colour-season-name">Fall</div>
+        <div class="colour-season-desc">Deep copper, russet, and burnt orange with silver seed tufts — the most vivid season</div>
+      </div>
+      <div class="colour-season">
+        <div class="colour-swatch" style="background: #c8a868;"></div>
+        <div class="colour-season-name">Winter</div>
+        <div class="colour-season-desc">Warm tawny straw, upright through snow; holds structure and seed tufts long after other plants have collapsed</div>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-row build">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">New blue-green shoots emerge from the previous year's base; slow to establish in early seasons but increasingly vigorous once the root system matures</div>
+      </div>
+      <div class="tl-row build">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Full upright form; distinctive chalky blue-green foliage; small inconspicuous flowers along the stem nodes provide limited but consistent pollinator resource</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Copper, russet, and orange; white-silver seed tufts along each stem node; heavily used by sparrows, juncos, and other seed-eating birds</div>
+      </div>
+      <div class="tl-row winter">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Holds form and warm tawny colour through snow and ice; overwintering insects shelter in the dense base; one of the most structurally persistent native grasses in the dormant landscape</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOLOGY -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Wildlife Value</h2>
+    <p>Little bluestem is a <strong>larval host plant for several native skipper butterflies</strong>, including the Cobweb Skipper and the Dusted Skipper — specialist insects that depend specifically on native grasses in the <em>Andropogon</em> tribe to complete their life cycles. The caterpillars feed on the foliage, sheltering in rolled leaf tubes during the day. Without native grasses like little bluestem present in the landscape, these skipper species cannot reproduce.</p>
+    <p>The seed heads are consumed by sparrows, juncos, and other small birds from fall through late winter. The dense base provides overwintering structure for ground-dwelling insects and spiders. As a deeply-rooted warm-season grass, it also contributes to soil stability and organic matter accumulation over time.</p>
+    <p>In terms of sheer landscape presence, little bluestem may contribute more to the <strong>visual ecological continuity</strong> of a prairie planting than any other species — its upright columns and fall colour provide the structural backbone against which shorter wildflowers and finer-textured grasses are read.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Little bluestem is adapted to lean, dry, and well-drained soils. It performs poorly in rich or consistently moist conditions, which tend to produce tall, floppy plants that open at the centre and lose their characteristic upright form. The combination of full sun and lean soil produces the best colour, the most compact habit, and the most vivid fall display.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun; does not perform well in shade or part shade</td></tr>
+      <tr><td>Soil</td><td>Dry to medium; well-drained; performs best in lean or sandy soils — avoid rich or clay-heavy conditions</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; highly drought-tolerant once established</td></tr>
+      <tr><td>Height</td><td>Typically 2–3 feet in lean soil; may reach 4 feet in better conditions, often with reduced form</td></tr>
+      <tr><td>Spacing</td><td>18–24 inches; effective as individuals or in drifts</td></tr>
+      <tr><td>Maintenance</td><td>Cut back to 4–6 inches in late winter or early spring before new growth emerges</td></tr>
+      <tr><td>Longevity</td><td>Long-lived once established; a well-sited plant may persist for many years with minimal intervention</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Little bluestem's upright column form and copper fall colour pair naturally with both bold structural perennials and fine-textured matrix grasses. Its blue-green summer tone contrasts well with the warmer or yellower greens of surrounding species.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Bold structural companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blazing Star</span> <span class="companion-latin">Liatris spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Texture & matrix companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Lovegrass</span> <span class="companion-latin">Eragrostis spectabilis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Sideoats Grama</span> <span class="companion-latin">Bouteloua curtipendula</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Pollinator sequence companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Grass</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Blue Is Real — and It Comes From Wax</h3>
+        <p>The blue-green colour of little bluestem's summer foliage is not a trick of light or a distant impression. The leaves are physically coated in a fine waxy bloom — the same mechanism that makes certain grape varieties appear frosted and blueberries look dusty — that scatters short wavelengths of light and produces the characteristic chalky blue-green tone.</p>
+        <p>This wax layer serves the plant functionally: it reduces water loss from the leaf surface during the dry, hot summers the grass evolved to tolerate. <strong>The blue is a drought adaptation.</strong> In especially dry or lean conditions, the blue colouration is often most pronounced — the plant producing more wax in response to water stress. A little bluestem growing in poor, dry, full-sun conditions will frequently be bluer than one growing in richer soil nearby.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">It Is a Skipper Butterfly's Nursery</h3>
+        <p>Several native skipper butterflies — small, fast, moth-like butterflies that are often overlooked in favour of more conspicuous species — depend on little bluestem as a larval host. The Cobweb Skipper (<em>Hesperia metea</em>) and Dusted Skipper (<em>Atrytonopsis hianna</em>) lay their eggs on the grass, and the caterpillars feed on the foliage while sheltering inside rolled or tied leaves.</p>
+        <p>These are specialist insects. They cannot complete their life cycle on non-native grasses or on other native species outside the <em>Andropogon</em> tribe. Their presence in a landscape is a reliable indicator that native grass communities are functioning — and their absence is often a sign of degradation. A stand of little bluestem in a garden or restoration planting offers these skippers a place they may not find anywhere else nearby.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">It Once Covered the Middle of a Continent</h3>
+        <p>Little bluestem was one of the defining plants of the North American tallgrass and mixed-grass prairies — a vast grassland system that once stretched from southern Canada through the Great Plains and east into Ohio and Indiana. In the mixed-grass transition zones, little bluestem was often the most abundant grass on well-drained upland sites, forming the visual and structural fabric of the landscape for hundreds of miles.</p>
+        <p>In Ohio, it occurred across the western prairie zone and in prairie remnants scattered throughout the state on dry, well-drained soils. Most of those prairies are gone — converted to agriculture over the past two centuries. The little bluestem that grows in gardens and restoration plantings today is returning to landscapes its ancestors shaped, in small increments, one plant at a time.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">The Name Refers to the Stem, Not the Leaf</h3>
+        <p>The "blue" in little bluestem refers specifically to the colour of the lower stem near the base of the plant — a blue-green to steely blue that is distinct from the somewhat greener colouration of the leaves above. The common name distinguishes it from its larger relative big bluestem (<em>Andropogon gerardi</em>), which shares the same bluish stem base and was once classified in the same genus.</p>
+        <p>The two grasses grow side by side in many Ohio prairie plantings, and together they represent the signature grasses of the eastern tallgrass prairie — big bluestem towering to six or seven feet, little bluestem holding the lower two to three feet of the canopy. In historical prairie communities, this vertical layering of two closely related species created a structural complexity that supported an enormous diversity of associated insects, birds, and other wildlife.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Schizachyrium scoparium · Warm-Season Grass · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

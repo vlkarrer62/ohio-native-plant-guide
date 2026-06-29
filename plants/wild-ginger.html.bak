@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Ginger · Asarum canadense · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/wild-ginger.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Asarum canadense illustration (a spreading groundcover, not a
+         single specimen): a low colony of paired, heart-shaped, downy
+         leaves on hairy stalks rising from a creeping rhizome at soil
+         level, knitting into a mat. At the centre, at ground level in
+         the fork between two leaf stalks, sits one of the plant's odd
+         maroon, three-lobed, cup-shaped flowers. -->
+    <svg class="hero-illustration" viewBox="0 0 360 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <!-- one heart/kidney leaf, petiole-notch at origin, blade upward -->
+        <g id="ag-leaf">
+          <path d="M0 0 C -8 -7 -46 -16 -46 -40 C -46 -66 -18 -72 0 -72 C 18 -72 46 -66 46 -40 C 46 -16 8 -7 0 0 Z"/>
+          <g stroke="#82977c" stroke-width="1" fill="none" opacity="0.5">
+            <path d="M0 -6 C 0 -30 0 -50 0 -66"/>
+            <path d="M0 -26 C -14 -32 -26 -40 -34 -52"/>
+            <path d="M0 -42 C -10 -48 -18 -54 -26 -62"/>
+            <path d="M0 -26 C 14 -32 26 -40 34 -52"/>
+            <path d="M0 -42 C 10 -48 18 -54 26 -62"/>
+          </g>
+        </g>
+      </defs>
+
+      <!-- ground shadow + leaf-litter flecks -->
+      <ellipse cx="182" cy="244" rx="150" ry="20" fill="#3c3228" opacity="0.08"/>
+      <g fill="#c9b48f" opacity="0.5">
+        <ellipse cx="92" cy="250" rx="7" ry="2.4"/>
+        <ellipse cx="150" cy="256" rx="9" ry="2.6"/>
+        <ellipse cx="232" cy="252" rx="8" ry="2.4"/>
+        <ellipse cx="286" cy="248" rx="6" ry="2.2"/>
+      </g>
+
+      <!-- creeping rhizome + roots -->
+      <path d="M64 236 C 120 230 150 240 188 234 C 236 227 270 236 300 232"
+            stroke="#8a6f4c" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <g stroke="#7a6244" stroke-width="1.1" stroke-linecap="round" opacity="0.8">
+        <path d="M96 238 l-4 12 M98 238 l3 11"/>
+        <path d="M168 238 l-3 12 M172 238 l3 10"/>
+        <path d="M248 238 l-4 11 M252 238 l3 12"/>
+      </g>
+
+      <!-- hairy petioles (rhizome → leaf notch) -->
+      <g stroke="#6f7d50" stroke-width="3" stroke-linecap="round" fill="none">
+        <path d="M108 232 C 112 200 116 175 118 152"/>
+        <path d="M256 232 C 250 200 246 174 244 152"/>
+        <path d="M180 234 C 181 210 181 188 182 170"/>
+        <path d="M92 233 C 92 212 94 196 96 184"/>
+        <path d="M296 232 C 292 210 288 192 286 182"/>
+        <path d="M228 233 C 226 214 224 200 222 192"/>
+      </g>
+      <!-- a few petiole hairs -->
+      <g stroke="#6f7d50" stroke-width="0.6" stroke-linecap="round" opacity="0.7">
+        <path d="M116 185 l-5 -2 M120 165 l5 -2 M115 205 l-5 -1"/>
+        <path d="M246 185 l5 -2 M242 165 l-5 -2 M247 205 l5 -1"/>
+        <path d="M181 200 l-5 -1 M182 182 l5 -1"/>
+      </g>
+
+      <!-- leaf carpet (back → front) -->
+      <use href="#ag-leaf" transform="translate(118 152) rotate(-8) scale(1.04)" fill="#45634a" stroke="#3a5640" stroke-width="1"/>
+      <use href="#ag-leaf" transform="translate(244 152) rotate(8) scale(1.04)"  fill="#48664b" stroke="#3a5640" stroke-width="1"/>
+      <use href="#ag-leaf" transform="translate(96 184) rotate(-17) scale(0.82)" fill="#4f6b4e" stroke="#3c5842" stroke-width="1"/>
+      <use href="#ag-leaf" transform="translate(286 182) rotate(17) scale(0.82)" fill="#4f6b4e" stroke="#3c5842" stroke-width="1"/>
+      <use href="#ag-leaf" transform="translate(222 192) rotate(12) scale(0.6)"  fill="#5b7752" stroke="#3c5842" stroke-width="1"/>
+      <use href="#ag-leaf" transform="translate(182 170) rotate(0) scale(1.16)"  fill="#557450" stroke="#3c5842" stroke-width="1"/>
+
+      <!-- ── THE STRANGE FLOWER (ground level, centre-front) ── -->
+      <g>
+        <!-- urn body -->
+        <path d="M157 230 C 153 224 153 216 159 212 L171 212 C 177 216 177 224 173 230 C 169 233 161 233 157 230 Z"
+              fill="#7e3b45" stroke="#5e2b33" stroke-width="0.6"/>
+        <!-- dark throat -->
+        <ellipse cx="165" cy="213" rx="6.4" ry="3.1" fill="#54262e"/>
+        <!-- three pointed, recurved maroon lobes -->
+        <path d="M159 213 C 151 208 145 200 147 193 C 151 198 157 206 165 211 Z" fill="#8a4651" stroke="#a86a72" stroke-width="0.5"/>
+        <path d="M171 213 C 179 208 185 200 183 193 C 179 198 173 206 165 211 Z" fill="#8a4651" stroke="#a86a72" stroke-width="0.5"/>
+        <path d="M162 212 C 160 204 162 196 165 191 C 168 196 170 204 168 212 Z" fill="#95505a" stroke="#a86a72" stroke-width="0.5"/>
+        <!-- pale flecks in the throat -->
+        <g fill="#d9b8b0" opacity="0.8">
+          <circle cx="163" cy="213" r="0.9"/><circle cx="167" cy="214" r="0.9"/>
+        </g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Woodland Groundcover</div>
+      <h1>Wild Ginger<em>Asarum canadense</em></h1>
+      <p class="hero-latin">Asarum canadense</p>
+      <p class="hero-tagline">A low, spreading carpet of paired, heart-shaped, softly hairy leaves that covers the shaded woodland floor — with a single curious maroon flower tucked at ground level beneath the foliage each spring. A slow, long-lived groundcover for shade.</p>
+      <div class="flagship-badge">✦ Hidden Spring Flowers</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native groundcover</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">4–8 inches</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Early to mid spring</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Part to full shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium to moist</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Aristolochiaceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>A Carpet for the Forest Floor</h2>
+    <p>Wild ginger is a low, spreading groundcover of rich, shaded woods. It grows from a creeping rhizome that travels just beneath the leaf litter, sending up pairs of soft, heart-shaped leaves on hairy stalks. Over the years the rhizome branches and the plant knits into a dense, weed-suppressing mat only a few inches tall — a living carpet over the woodland floor rather than an upright specimen.</p>
+    <p>Its flower is one of the odd things about it. A single bloom is borne at ground level, in the fork between each pair of leaf stalks, often resting on the soil and hidden from above by the leaves. It is cup-shaped with three pointed, backward-curving lobes in a dull brownish-maroon, and has no true petals — the colour comes from the calyx. The broken rhizome carries a warm, spicy, ginger-like scent, which gives the plant its name, though it is not related to culinary ginger and belongs instead to the birthwort family.</p>
+
+    <div class="keystone-callout">
+      <p>As a groundcover, wild ginger works at soil level. Its overlapping leaves close into a low canopy that shades the ground, holds moisture, and suppresses weeds, while the colony shelters the small invertebrates and ground-foraging life of the woodland floor. It does slowly and for years what a layer of mulch does for a season — covering and protecting bare shaded soil.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Shade groundcover</span>
+      <span class="pill">Woodland gardens</span>
+      <span class="pill">Under trees &amp; shrubs</span>
+      <span class="pill">Shaded slopes</span>
+      <span class="pill">Along shaded paths</span>
+      <span class="pill">Naturalizing in shade</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Wild Ginger</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/wild-ginger-plate.png"
+          alt="Botanical field-plate illustration of Wild Ginger"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/wild-ginger-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Asarum canadense · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row peak"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Paired leaves unfurl from the rhizome tips, and the single maroon flower opens at ground level in the fork between them — easy to miss unless you lift the leaves to look.</div></div>
+      <div class="tl-row active"><div class="tl-season">Late spr.</div><div class="tl-bar"></div><div class="tl-text">The leaves expand to full size and the colony closes into a low mat. The flowers fade and set seed near the soil.</div></div>
+      <div class="tl-row active"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">A steady green groundcover through the season, holding the shaded ground. Ripe seeds, each with an oily appendage, are carried off by ants.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">The foliage holds late into the season, then begins to decline as the canopy opens and the woods cool.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">The leaves die back and the plant overwinters as a rhizome beneath the leaf litter — the colony returning each spring a little wider than before.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Because everything happens at ground level, wild ginger's wildlife relationships are unusual. Its dull, low-set flowers are visited by small early-season insects moving through the leaf litter, and it relies on ants — not birds or wind — to move its seeds. The flowers are also thought to set seed on their own when visitors are scarce.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Early Flies &amp; Gnats</span><span class="insect-count-badge">flower visitors</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Fungus Gnats</span>
+          <span class="insect-tag">Small Flies</span>
+          <span class="insect-tag">Early Midges</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪲</span><span class="insect-category-name">Beetles</span><span class="insect-count-badge">flower visitors</span></div>
+        <div class="insect-list">
+          <span class="insect-tag">Ground-active Beetles</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐜</span><span class="insect-category-name">Ants</span><span class="insect-count-badge">seed dispersal</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Woodland Ants</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">The foliage contains compounds that make it bitter and generally <strong>unpalatable to deer and rabbits</strong>, so the carpet is rarely browsed. Its main wildlife value is structural — low, year-round cover over the soil, and a seed crop that feeds and is spread by ants.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Wild ginger wants the conditions of the woodland floor it comes from: shade, rich soil, and steady moisture. Given those, it is durable and long-lived, though slow to establish — it can take a few seasons to begin spreading, after which it fills in steadily and asks for almost nothing.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Part to full shade; not suited to full sun, where the leaves scorch and fade</td></tr>
+      <tr><td>Soil</td><td>Rich, humusy woodland soil; moist but well-drained; slightly acidic to neutral</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; keep from drying out, especially while establishing</td></tr>
+      <tr><td>Habit</td><td>Spreads slowly by creeping rhizome to form a low mat; widens over years and is not aggressive</td></tr>
+      <tr><td>Establishing</td><td>Slow to start; top-dress with leaf litter or leaf-mould and water through the first seasons</td></tr>
+      <tr><td>Division</td><td>Lift and divide the rhizome in spring or early fall to expand the planting or share it</td></tr>
+      <tr><td>Maintenance</td><td>Very low; leave fallen leaves in place as mulch. Generally untouched by deer and rabbits</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Wild ginger fills the lowest layer of a shaded planting, knitting between taller woodland plants and beneath shrubs and trees. It pairs naturally with other shade-tolerant natives that share its preference for rich, cool ground.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland groundlayer</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Cardinal Flower</span> <span class="companion-latin">Lobelia cardinalis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foxglove Beardtongue</span> <span class="companion-latin">Penstemon digitalis</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Shade-tolerant colour</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrod</span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Overhead structure (the shade it needs)</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Serviceberry</span> <span class="companion-latin">Amelanchier spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Flower That Hides on the Ground</h3>
+        <p>Most flowers advertise themselves; wild ginger's seems built to hide. A single bloom sits at ground level in the crotch between the two leaf stalks, often lying against the soil and screened from above by the leaves — you have to part the foliage to find it. It is a cup of three pointed, recurved lobes in a dull purple-brown, with no true petals.</p>
+        <p>That colour and ground-level position gave rise to a long-held idea: that the flower mimics decaying matter to attract early flies and gnats emerging from the leaf litter in spring. It is a memorable story, but the evidence is mixed — studies suggest insect visits are often few, and that wild ginger frequently pollinates itself. The flower may be less a trap than a quiet backup plan.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Planted by Ants</h3>
+        <p>Each seed carries a small, oil-rich appendage called an elaiosome. Ants find it worth collecting and carry the seeds back to their nests, eat the appendage, and discard the seed, unharmed, in their refuse — leaving it planted in loose, enriched soil a short distance from the parent. This partnership, called myrmecochory, is how a slow, low groundcover reaches beyond the patient creep of its rhizome to start new patches nearby.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Ginger in Name Only</h3>
+        <p>The spicy scent of the broken rhizome earned wild ginger its name, and historically the root was used, dried, as a seasoning and in folk medicine. But the plant is not related to culinary ginger at all — that is <em>Zingiber</em>, from a different family entirely. Wild ginger belongs to the birthwort family, and it contains aristolochic acid, a compound now known to be toxic to the kidneys and carcinogenic. Its culinary past is a matter of history; it is not considered safe to eat today.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">A Groundcover in Slow Motion</h3>
+        <p>Wild ginger spreads by a rhizome that creeps along just under the leaf litter, rooting as it goes and lifting a fresh pair of leaves every so often. The pace is unhurried — a new planting can take two or three years to look like much — but the result is a durable, long-lived carpet that holds its ground and widens a little each season. Patience is the price of a groundcover that, once settled, largely takes care of itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Shade Groundcovers</p>
+    <h2>Ohio's Woodland Carpet</h2>
+    <p>Wild ginger is one of several native plants that spread into low carpets across the shaded woodland floor. They share the groundcover habit — covering bare, shaded soil — but differ in leaf, in flower, and in the exact conditions they prefer.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant · Heart-leaved mat</p>
+        <p class="species-common">Wild Ginger</p>
+        <p class="species-latin">Asarum canadense</p>
+        <p class="species-desc">The heart-leaved groundcover of rich, shaded woods, spreading by rhizome into a low, soft mat with hidden maroon flowers at ground level in spring. Slow to establish but durable and long-lived, and left alone by deer. Best in part to full shade with steady moisture.</p>
+        <div class="species-traits"><span class="species-trait">4–8 in</span><span class="species-trait">Med–moist</span><span class="species-trait">Part–full shade</span><span class="species-trait">Rhizomatous</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Frothy spring bloom</p>
+        <p class="species-common">Foamflower</p>
+        <p class="species-latin">Tiarella cordifolia</p>
+        <p class="species-desc">A clumping woodland groundcover with lobed, heart-shaped leaves and airy spikes of frothy white flowers in spring. It spreads by short runners to form colonies in rich, moist shade, and unlike wild ginger it carries its flowers well above the foliage.</p>
+        <div class="species-traits"><span class="species-trait">6–12 in</span><span class="species-trait">Moist</span><span class="species-trait">Part–full shade</span><span class="species-trait">White spikes</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Low &amp; succulent</p>
+        <p class="species-common">Wild Stonecrop</p>
+        <p class="species-latin">Sedum ternatum</p>
+        <p class="species-desc">A low, creeping native sedum with fleshy, rounded leaves in whorls and white star-shaped flowers in spring. It carpets shaded, rocky ground and ledges, tolerating thinner, drier soils than wild ginger while keeping the same low, spreading habit.</p>
+        <div class="species-traits"><span class="species-trait">3–6 in</span><span class="species-trait">Dry–med</span><span class="species-trait">Part shade</span><span class="species-trait">Succulent</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Grassy groundcover</p>
+        <p class="species-common">Pennsylvania Sedge</p>
+        <p class="species-latin">Carex pensylvanica</p>
+        <p class="species-desc">A fine-textured native sedge that spreads by rhizome into a soft, grassy groundcover, often used as a lawn alternative for shade. It knits well between taller woodland plants and, like wild ginger, forms a continuous low layer rather than distinct clumps.</p>
+        <div class="species-traits"><span class="species-trait">6–8 in</span><span class="species-trait">Dry–med</span><span class="species-trait">Part–full shade</span><span class="species-trait">Spreading</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Asarum canadense · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

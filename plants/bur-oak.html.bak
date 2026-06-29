@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bur Oak · Quercus macrocarpa · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/bur-oak.css" />
+</head>
+<body>
+
+  <nav class="page-nav" aria-label="Page navigation">
+  <a href="../index.html">← Home</a>
+  <a href="index.html">Plant Directory</a>
+</nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Bur oak illustration:
+         Three key visual elements:
+         1. The distinctive fiddle-shaped leaf — widest above
+            the middle, with a narrow waist, deeply lobed
+            upper half, less-lobed lower half.
+         2. The large fringed acorn cup — covering half or
+            more of the nut, with elongated fringe scales
+            at the rim. This is the "bur" and the most
+            diagnostic feature.
+         3. The corky winged bark on young branches —
+            irregular corky ridges running along the twigs,
+            unlike any other Ohio oak. -->
+    <svg class="hero-illustration" viewBox="0 0 280 490" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMax meet">
+
+      <!-- MAIN BRANCH — thick, deeply furrowed bark -->
+      <path d="M75 490 C79 452 86 414 96 378 C106 342 120 310 136 280 C150 252 165 228 178 206" stroke="#a09070" stroke-width="9" stroke-linecap="round" fill="none"/>
+
+      <!-- Deep bark furrowing — vertical channels in the bark -->
+      <g stroke="#8a7858" stroke-width="1.2" opacity="0.38" stroke-linecap="round">
+        <path d="M79 468 C81 456 83 444 84 432" fill="none"/>
+        <path d="M82 426 C84 414 86 402 87 390" fill="none"/>
+        <path d="M90 376 C92 364 95 352 96 340" fill="none"/>
+        <path d="M100 328 C103 316 107 304 109 292" fill="none"/>
+        <path d="M116 278 C119 266 123 254 125 242" fill="none"/>
+      </g>
+
+      <!-- SECONDARY BRANCHES -->
+      <path d="M136 280 C150 268 166 254 184 238 C196 226 208 216 220 208" stroke="#a09070" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+      <path d="M178 206 C168 192 160 178 154 162 C148 148 145 134 144 120" stroke="#9a8860" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <path d="M220 208 C228 194 234 180 238 166 C242 152 242 138 240 126" stroke="#908058" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+
+      <!-- CORKY WINGED BARK on smaller branches — the signature feature.
+           Irregular corky ridges running along twigs. -->
+      <!-- Left twig from branch 2 -->
+      <path d="M154 162 C148 148 142 134 136 120 C130 108 124 98 118 90" stroke="#9a8860" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <!-- Corky wings — irregular fin-like projections -->
+      <g fill="#c0a870" opacity="0.55">
+        <path d="M148 148 C144 146 140 144 138 142 C140 140 144 140 148 142 Z"/>
+        <path d="M143 138 C139 136 135 133 133 131 C135 129 139 130 143 132 Z"/>
+        <path d="M138 128 C134 126 130 123 128 121 C130 119 134 120 138 122 Z"/>
+        <path d="M151 153 C155 150 159 148 161 146 C159 144 155 145 151 147 Z"/>
+        <path d="M146 143 C150 140 154 138 156 136 C154 134 150 135 146 137 Z"/>
+        <path d="M141 133 C145 130 149 128 150 126 C149 124 145 125 141 127 Z"/>
+      </g>
+
+      <!-- BUR OAK LEAVES — the fiddle shape.
+           Upper half: broad with deep rounded lobes (3-4 pairs).
+           Narrow waist / constriction in the middle.
+           Lower half: smaller, shallower lobes.
+           Overall widest near the top. -->
+
+      <!-- LEAF 1 — main leaf, clear fiddle shape visible -->
+      <path d="
+        M178 206
+        C175 196 168 188 162 180
+        C158 174 156 167 159 161
+        C162 155 168 154 172 158
+        C170 151 169 143 173 137
+        C177 131 184 131 186 137
+        C188 130 193 126 199 128
+        C205 130 206 137 202 142
+        C206 137 213 135 217 139
+        C221 143 220 151 215 155
+        C219 151 225 151 227 156
+        C229 161 227 169 221 171
+        C224 169 229 171 229 177
+        C229 183 224 188 218 187
+        C221 191 219 198 213 200
+        C207 202 202 198 201 193
+
+        C204 197 204 203 200 206
+        C197 208 193 206 192 202
+
+        C193 206 191 210 187 211
+        C183 212 180 209 179 205
+        Z
+      " fill="#4e6830" opacity="0.86"/>
+      <!-- Midrib -->
+      <path d="M178 206 C194 180 205 158 214 136" stroke="#3a5020" stroke-width="0.9" fill="none" opacity="0.5"/>
+      <!-- Lateral veins to lobes -->
+      <g stroke="#3a5020" stroke-width="0.5" opacity="0.38" fill="none">
+        <path d="M190 198 C183 190 175 183 169 176"/>
+        <path d="M196 190 C188 180 181 170 178 160"/>
+        <path d="M201 182 C196 170 193 158 192 146"/>
+        <path d="M205 174 C202 162 201 150 201 138"/>
+        <path d="M208 167 C207 155 209 143 212 132"/>
+      </g>
+
+      <!-- LEAF 2 — fall russet-brown, showing the shape at a different angle -->
+      <path d="
+        M220 208
+        C216 198 209 191 203 183
+        C199 177 198 170 201 165
+        C204 160 211 159 214 164
+        C212 157 212 149 216 144
+        C220 139 228 140 229 146
+        C231 139 237 136 243 139
+        C249 142 249 150 244 154
+        C248 150 255 151 256 157
+        C257 163 254 170 248 171
+        C252 170 256 173 256 179
+        C256 185 250 190 244 188
+        C246 193 244 199 238 201
+        C233 203 228 199 228 194
+
+        C229 198 228 204 224 205
+        C221 206 218 204 218 200
+
+        C218 204 216 208 212 208
+        C208 209 205 206 205 202
+        Z
+      " fill="#8a5828" opacity="0.74"/>
+
+      <!-- LEAF 3 — yellowing, partially behind other leaves -->
+      <path d="
+        M136 280
+        C132 271 126 264 121 257
+        C118 251 117 244 121 240
+        C125 236 131 237 133 242
+        C131 235 131 228 135 224
+        C139 220 147 221 148 227
+        C150 220 156 217 162 220
+        C168 223 168 231 163 235
+        C167 231 173 232 174 238
+        C175 244 172 251 166 252
+        C169 251 173 255 172 261
+        C171 267 165 271 160 268
+
+        C162 272 161 278 157 279
+        C153 280 150 277 150 272
+
+        C150 277 148 281 144 281
+        C140 281 137 278 137 274
+        Z
+      " fill="#b89030" opacity="0.70"/>
+
+      <!-- BUR ACORN — the most distinctive element.
+           Large nut, cup covers half or more,
+           fringed/mossy cup rim with elongated scales. -->
+
+      <!-- Acorn peduncle / stem -->
+      <line x1="178" y1="206" x2="172" y2="230" stroke="#7a6040" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- Cup — deep, covering ~60% of nut, with fringed mossy rim -->
+      <!-- Cup body — the deep scaly base -->
+      <path d="M158 258 C160 242 184 242 186 258 Z" fill="#9a7840" opacity="0.88"/>
+      <!-- Cup scales in rows -->
+      <g stroke="#7a6030" stroke-width="0.6" opacity="0.55">
+        <path d="M160 258 C162 252 172 251 182 252 C184 254 184 256 184 258" fill="none"/>
+        <path d="M161 254 C163 248 172 247 181 248 C183 250 183 252 183 254" fill="none"/>
+        <path d="M163 250 C165 244 172 243 180 244 C182 246 182 248 182 250" fill="none"/>
+      </g>
+      <!-- THE BUR FRINGE — the distinctive mossy fringe at the cup rim -->
+      <!-- Long scales / bracts extending beyond the cup edge -->
+      <g stroke="#8a6830" stroke-width="1.1" stroke-linecap="round" opacity="0.82">
+        <!-- Upper fringe — above the cup rim -->
+        <line x1="162" y1="242" x2="158" y2="232"/>
+        <line x1="165" y1="241" x2="162" y2="230"/>
+        <line x1="168" y1="240" x2="166" y2="228"/>
+        <line x1="171" y1="240" x2="170" y2="227"/>
+        <line x1="174" y1="240" x2="174" y2="227"/>
+        <line x1="177" y1="240" x2="178" y2="227"/>
+        <line x1="180" y1="241" x2="182" y2="228"/>
+        <line x1="183" y1="242" x2="186" y2="230"/>
+      </g>
+      <!-- Fringe tips — slight curl -->
+      <g fill="#a07840" opacity="0.65">
+        <circle cx="158" cy="231" r="1.2"/>
+        <circle cx="161" cy="229" r="1.2"/>
+        <circle cx="165" cy="227" r="1.2"/>
+        <circle cx="170" cy="226" r="1.2"/>
+        <circle cx="174" cy="226" r="1.2"/>
+        <circle cx="178" cy="226" r="1.2"/>
+        <circle cx="182" cy="227" r="1.2"/>
+        <circle cx="185" cy="229" r="1.2"/>
+      </g>
+      <!-- Nut body — large, oval, glossy brown -->
+      <ellipse cx="172" cy="272" rx="14" ry="16" fill="#9a7840" opacity="0.90"/>
+      <ellipse cx="172" cy="268" rx="11" ry="10" fill="#b09050" opacity="0.72"/>
+      <!-- Acorn tip -->
+      <ellipse cx="172" cy="256" rx="5" ry="3.5" fill="#7a5e28" opacity="0.7"/>
+
+      <!-- CATKINS — pendulous, spring -->
+      <g opacity="0.48">
+        <path d="M144 120 C140 134 134 148 126 162 C120 172 113 182 106 190" stroke="#9a9850" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M144 120 C141 136 138 152 134 166 C130 178 125 188 119 196" stroke="#8a8840" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <g stroke="#909048" stroke-width="0.5" opacity="0.7">
+          <line x1="138" y1="134" x2="134" y2="136"/><line x1="136" y1="140" x2="132" y2="142"/>
+          <line x1="134" y1="146" x2="130" y2="148"/><line x1="131" y1="152" x2="127" y2="154"/>
+          <line x1="128" y1="158" x2="124" y2="160"/><line x1="125" y1="164" x2="121" y2="166"/>
+        </g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Tree</div>
+      <h1>Bur<em>Oak</em></h1>
+      <p class="hero-latin">Quercus macrocarpa</p>
+      <p class="hero-tagline">The toughest oak in North America — adapted to fire, drought, and the open prairie edge, with deeply furrowed bark, fiddle-shaped leaves, and the largest fringed acorn of any Ohio oak.</p>
+      <div class="endurance-badge">✦ Fire-Adapted · Deep-Rooted · 400+ Year Lifespan</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Large native tree</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">60–80 feet typical</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Spread</span>
+      <span class="fact-value">Often wider than tall</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium; very adaptable</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Habitat</span>
+      <span class="fact-value">Savanna, upland ridge, prairie edge</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Tree</p>
+    <h2>Built for the Edge of Everything</h2>
+    <p>Bur oak grows where other trees hesitate. On dry upland ridges, exposed rocky outcrops, and the fire-swept margins of the tall-grass prairie — sites where soil is thin, drought is periodic, and fire historically moved through on a regular basis — bur oak not only survived but dominated. Its range extends further west than any other eastern oak, into the semi-arid grasslands where trees are exceptional rather than expected.</p>
+    <p>In Ohio it occurs across the western prairie zone and in scattered savanna remnants throughout the state, typically on dry well-drained sites with full sun exposure. It is a tree that looks exactly like what it is: <strong>ancient, weathered, deeply rooted</strong>. The bark on older trees is massively furrowed and plated. The crown spreads wide and irregularly. The silhouette in winter has a particular gravity that comes from centuries of slow growth.</p>
+
+    <div class="fire-callout">
+      <p class="fire-callout-label">Fire adaptation</p>
+      <p>Bur oak evolved in landscapes where fire moved through regularly — the prairie fires that maintained Ohio's western grasslands and savannas burned hot and fast, killing most woody plants. Bur oak survived because of its <strong>exceptionally thick, corky bark</strong>, which insulates the living cambium from the heat of grass fires. Young bur oaks were repeatedly top-killed and resprouted from deep root systems; mature trees developed bark thick enough to survive direct flame. The result is a tree physiologically built for a fire ecology that no longer functions in Ohio — but that still carries the adaptations of that lost landscape.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Large yard canopy tree</span>
+      <span class="pill">Savanna restoration</span>
+      <span class="pill">Dry exposed sites</span>
+      <span class="pill">Prairie edge planting</span>
+      <span class="pill">Long-term wildlife habitat</span>
+      <span class="pill">Difficult dry soils</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Bur Oak</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/bur-oak-plate.png"
+          alt="Botanical field-plate illustration of Bur Oak"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/bur-oak-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Bur Oak · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+
+  <!-- THE BUR ACORN -->
+  <section class="section">
+    <p class="eyebrow">The Acorn</p>
+    <h2>The Largest Fringed Cup in Ohio</h2>
+    <p>The bur oak's acorn is the most immediately recognisable feature of the tree and the source of its common name. The cup is deep — covering half or more of the nut in most cases — and its rim is fringed with elongated, pointed scales that curl outward and downward in a distinctive mossy or shaggy fringe. No other Ohio oak has a cup like it.</p>
+
+    <div class="bark-callout">
+      <p>The nut itself is larger than those of white or red oak — one of the largest acorns produced by any North American oak. The combination of size, low tannin content, and sheer abundance in a good mast year makes bur oak acorns particularly valuable to wildlife. Deer, wild turkeys, wood ducks, and blue jays all consume them in quantity, and the acorns are among the most actively sought mast crops in the Ohio woodland.</p>
+    </div>
+
+    <p>Bur oak acorns ripen in a single season — like white oak and unlike the red oak group — making them available to wildlife in the fall of the year they were produced. In years of heavy mast production, the ground beneath a mature bur oak can be carpeted with the large fringed nuts, and the wildlife activity around the tree in September and October reflects that abundance.</p>
+  </section>
+
+  <!-- BUR VS WHITE OAK -->
+  <section class="section">
+    <p class="eyebrow">Identification</p>
+    <h2>Bur Oak vs. White Oak</h2>
+    <p>Bur oak and white oak are Ohio's two most important savanna and upland oaks, and they are frequently confused. Both have rounded leaf lobes, pale grey bark, and low-tannin acorns. The differences in leaf shape, acorn, bark, and preferred habitat separate them clearly once you know what to look for.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Bur Oak</th>
+          <th>White Oak</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Leaf shape</td>
+          <td>Fiddle-shaped; narrow waist; widest above middle</td>
+          <td>Evenly lobed; widest near middle</td>
+        </tr>
+        <tr>
+          <td>Acorn cup</td>
+          <td>Deep, fringed; covers ½ or more of nut</td>
+          <td>Shallow, scaly; covers ~¼ of nut</td>
+        </tr>
+        <tr>
+          <td>Bark texture</td>
+          <td>Deeply furrowed; corky ridges on young branches</td>
+          <td>Flaky, plated; no corky wings on twigs</td>
+        </tr>
+        <tr>
+          <td>Preferred site</td>
+          <td>Dry ridges, savanna, fire-prone openings</td>
+          <td>Rich, moist woodlands; a wider range</td>
+        </tr>
+        <tr>
+          <td>Mature form</td>
+          <td>Wide-spreading, often irregular; massive trunk</td>
+          <td>Broad-rounded crown; more uniform</td>
+        </tr>
+        <tr>
+          <td>Range in Ohio</td>
+          <td>Western prairie zone; dry upland sites</td>
+          <td>Statewide; woodland generalist</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row foliage">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Leaves emerge slowly; pendulous catkins appear before or with the foliage, releasing pollen; new leaves have a slight reddish cast before fully greening</div>
+      </div>
+      <div class="tl-row foliage">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Full deep-green fiddle-shaped leaves; wide-spreading canopy; acorns developing — visible by midsummer as small nuts in their distinctive fringed cups</div>
+      </div>
+      <div class="tl-row acorn">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Acorns ripen and fall in September and October — immediately sought by deer, turkeys, blue jays, and squirrels; foliage turns yellow-brown to russet before dropping</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">The massive trunk and wide-spreading, irregular crown are at their most visible; deeply furrowed bark and the characteristic corky twigs on younger branches are clear identification features in the dormant season</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOLOGY -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Wildlife Value</h2>
+    <p>As a member of the white oak group, bur oak shares the high ecological value of all Ohio oaks — supporting a substantial community of caterpillars, providing acorns to a wide range of wildlife, and offering nesting and sheltering structure through its long life. Its large, low-tannin acorns are particularly valuable mast, and in good production years they are consumed by a greater diversity of mammals and birds than the more astringent acorns of red oaks.</p>
+    <p>The corky bark on young bur oak branches provides unusually textured surface habitat for bark-gleaning insects and the birds that forage them. The deeply furrowed bark of mature trees creates abundant crevices for insects, spiders, and bark-dwelling organisms. Cavity-nesting birds use old bur oaks wherever they occur.</p>
+    <p>In the savanna context, bur oak is a <strong>keystone species of a largely lost habitat type</strong>. The Ohio oak savanna — open, park-like, bur oak-dominated, with a grass and wildflower understory — once covered significant acreage in the western part of the state. Almost none of it survives. Each bur oak planted in an appropriate open, dry, sunny setting is a small gesture toward the ecology of that vanished landscape.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Bur oak is among the most drought-tolerant of Ohio's native trees and is well-suited to dry, exposed, difficult sites where other oaks would struggle. It requires full sun — it is not a shade-tolerant tree and will not develop a good form or produce reliably in shaded conditions. Like all oaks, it is slow to establish and rewards patience.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun; does not perform well in shade or crowded conditions</td></tr>
+      <tr><td>Soil</td><td>Adaptable — dry, rocky, sandy, clay; performs better in poor dry soils than most oaks</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; highly drought-tolerant once established; avoid poorly drained sites</td></tr>
+      <tr><td>Height</td><td>60–80 feet typical in Ohio; can reach 100 feet in ideal conditions</td></tr>
+      <tr><td>Spread</td><td>50–80 feet; often wider than tall at maturity; allow full room</td></tr>
+      <tr><td>Growth rate</td><td>Slow — especially in early years while the root system develops</td></tr>
+      <tr><td>Transplanting</td><td>Best planted small and young; develops a deep taproot that makes large specimens difficult to establish</td></tr>
+      <tr><td>Longevity</td><td>400+ years documented; some Great Plains specimens exceed 500 years</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Bur oak belongs in open, dry, sunny plantings with prairie and savanna species beneath and around it. It is not a woodland tree — the plants that grow with it in nature are sun-adapted prairie species, not shade-tolerant woodland species.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Savanna prairie companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Switchgrass</span> <span class="companion-latin">Panicum virgatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Savanna wildflowers</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Nodding Onion</span> <span class="companion-latin">Allium cernuum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Associated woody species</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">White Oak</span> <span class="companion-latin">Quercus alba</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Witch Hazel</span> <span class="companion-latin">Hamamelis virginiana</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Elderberry</span> <span class="companion-latin">Sambucus canadensis</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Tree</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Corky Bark Is a Fire Suit</h3>
+        <p>The thick, irregular corky ridges on bur oak's young branches and the deeply furrowed, almost spongy bark on mature trunks serve the same purpose: insulating the living tissue beneath from heat. Cork is an exceptionally poor conductor of heat — the same property that makes it useful for wine bottles and flooring makes it a functional fire barrier on the surface of a tree.</p>
+        <p>In a grass fire moving through a savanna at typical speed and temperature, the outer bark of a mature bur oak absorbs and dissipates heat before it can reach the cambium. Younger trees may be top-killed, but they resprout from deep root systems that survive underground. Over generations, the trees that survived most consistently were those with the thickest, most fire-resistant bark — and the result is a tree that carries its fire history in the texture of its surface. <strong>To run your hand along a deeply furrowed bur oak trunk is to touch an adaptation measured in tens of thousands of years.</strong></p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Young Bur Oak Spends Its First Years Underground</h3>
+        <p>A bur oak seedling does something counterintuitive in its first several years of life: it puts almost all of its energy into root development rather than above-ground growth. The result is that a young bur oak may appear to be barely growing for three, four, or five years — adding only a few inches of height per year — while quietly developing a root system that may extend several feet deep and wide before the tree makes any visible effort to grow tall.</p>
+        <p>This strategy reflects the tree's savanna origin. In a landscape where fire moved through regularly and drought was periodic, the trees that survived were those whose roots were established deeply enough to sustain vigorous resprouting after top-kill. Above-ground growth was secondary to below-ground resilience. When the root system is finally ready, growth accelerates noticeably — gardeners who have waited patiently through those early quiet years often describe a bur oak "taking off" in its fifth or sixth year. The waiting is not wasted time. It is root-building time.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">It Marks the Edge of the Eastern Forest</h3>
+        <p>Bur oak's native range extends further west than any other eastern forest tree — into the semi-arid grasslands of the Great Plains, where it persists in sheltered valleys and along watercourses as isolated individuals or small groves. It is, in a real biogeographic sense, a tree of the boundary between the eastern deciduous forest and the great North American grassland.</p>
+        <p>In Ohio, bur oak marks the eastern terminus of the savanna and prairie zone — the western counties where the forest thinned and opened, where grass and fire shaped the landscape as much as trees and shade. That zone is largely gone now, but the bur oaks that survive in old farm fields, cemeteries, and roadside remnants across western Ohio are vestiges of it. A bur oak standing alone in a field is not a tree that escaped the forest. <strong>It is a tree that was always in the open.</strong></p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">The Oldest Bur Oaks Predate the State of Ohio</h3>
+        <p>Bur oak is a slow-growing, long-lived tree — documented lifespans exceed 400 years, and some Great Plains specimens are believed to exceed 500. In Ohio, old-growth bur oaks in protected remnants and on private land may be 200 to 300 years old, which means they were already mature trees when Ohio achieved statehood in 1803.</p>
+        <p>A 300-year-old bur oak germinated around 1724 — before European settlement of Ohio, before the United States existed as a concept, in a landscape that was still functioning prairie-savanna with regular fire. That tree has outlasted the landscape that shaped it, the ecosystem it belonged to, and every political entity that has governed the land it stands on. It is, in that sense, a more permanent fact than most of the things we build. <strong>Planting a bur oak is the longest act of ecological faith in this guide.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Quercus macrocarpa · Large Native Tree · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

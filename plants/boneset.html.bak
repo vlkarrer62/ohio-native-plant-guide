@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Common Boneset · Eupatorium perfoliatum · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/boneset.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Eupatorium perfoliatum illustration:
+         An upright stem rising through tiers of perfoliate leaves —
+         each pair of long, lance-shaped, wrinkled leaves joined at the
+         base so the stem appears to pass straight through a single
+         leaf — topped by a broad, flat-topped cluster of small, soft
+         white flower heads. -->
+    <svg class="hero-illustration" viewBox="0 0 300 470" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ── PERFOLIATE LEAF TIERS (drawn first; stem crosses over them) ── -->
+      <g fill="#9ab0a3" fill-opacity="0.9" stroke="#6f8a82" stroke-width="0.9" stroke-linejoin="round">
+        <!-- node ~420 (widest) -->
+        <path d="M42 422 C80 410 120 412 150 416 C180 412 220 410 258 422 C220 430 180 436 150 434 C120 436 80 430 42 422 Z"/>
+        <!-- node ~360 -->
+        <path d="M58 362 C92 352 124 354 150 357 C176 354 208 352 242 362 C208 370 176 374 150 372 C124 374 92 370 58 362 Z"/>
+        <!-- node ~305 -->
+        <path d="M76 307 C106 299 130 300 150 303 C170 300 194 299 224 307 C194 314 170 317 150 316 C130 317 106 314 76 307 Z"/>
+        <!-- node ~255 (smallest) -->
+        <path d="M96 257 C120 251 136 252 150 254 C164 252 180 251 204 257 C180 263 164 265 150 264 C136 265 120 263 96 257 Z"/>
+      </g>
+      <!-- midribs + a few lateral veins -->
+      <g stroke="#6f8a82" stroke-width="0.7" opacity="0.55">
+        <path d="M48 421 L252 421 M64 360 L236 360 M82 306 L218 306 M100 256 L200 256"/>
+        <path d="M150 421 l-34 -6 M150 421 l34 -6 M150 421 l-64 -3 M150 421 l64 -3"/>
+        <path d="M150 360 l-30 -5 M150 360 l30 -5 M150 360 l-54 -2 M150 360 l54 -2"/>
+      </g>
+
+      <!-- ── STEM (crosses over the leaf centres → perfoliate read) ── -->
+      <path d="M150 464 L150 150" stroke="#6f8a82" stroke-width="3" stroke-linecap="round"/>
+
+      <!-- ── FLAT-TOPPED FLOWER CLUSTER (soft white) ── -->
+      <!-- flanking lower clusters -->
+      <g transform="translate(110 172)">
+        <g fill="#f4f4ee" stroke="#c4cfc6" stroke-width="0.6">
+          <circle cx="-14" cy="4" r="2.4"/><circle cx="-8" cy="0" r="2.5"/><circle cx="-2" cy="-2" r="2.5"/>
+          <circle cx="4" cy="-2" r="2.5"/><circle cx="10" cy="0" r="2.4"/><circle cx="14" cy="4" r="2.3"/>
+          <circle cx="-6" cy="5" r="2.3"/><circle cx="2" cy="5" r="2.3"/>
+        </g>
+        <g fill="#fbfbf7"><circle cx="-2" cy="-2" r="1"/><circle cx="4" cy="-2" r="1"/></g>
+      </g>
+      <g transform="translate(190 172)">
+        <g fill="#f4f4ee" stroke="#c4cfc6" stroke-width="0.6">
+          <circle cx="-14" cy="4" r="2.3"/><circle cx="-8" cy="0" r="2.4"/><circle cx="-2" cy="-2" r="2.5"/>
+          <circle cx="4" cy="-2" r="2.5"/><circle cx="10" cy="0" r="2.5"/><circle cx="14" cy="4" r="2.4"/>
+          <circle cx="-6" cy="5" r="2.3"/><circle cx="2" cy="5" r="2.3"/>
+        </g>
+        <g fill="#fbfbf7"><circle cx="-2" cy="-2" r="1"/><circle cx="4" cy="-2" r="1"/></g>
+      </g>
+      <!-- broad central flat-topped cluster -->
+      <g transform="translate(150 148)">
+        <g fill="#f4f4ee" stroke="#c4cfc6" stroke-width="0.6">
+          <circle cx="-44" cy="7" r="2.6"/><circle cx="-36" cy="3" r="2.7"/><circle cx="-28" cy="0" r="2.8"/>
+          <circle cx="-20" cy="-2" r="2.8"/><circle cx="-12" cy="-4" r="2.9"/><circle cx="-4" cy="-5" r="3"/>
+          <circle cx="4" cy="-5" r="3"/><circle cx="12" cy="-4" r="2.9"/><circle cx="20" cy="-2" r="2.8"/>
+          <circle cx="28" cy="0" r="2.8"/><circle cx="36" cy="3" r="2.7"/><circle cx="44" cy="7" r="2.6"/>
+          <circle cx="-30" cy="8" r="2.6"/><circle cx="-18" cy="9" r="2.7"/><circle cx="-6" cy="9" r="2.7"/>
+          <circle cx="6" cy="9" r="2.7"/><circle cx="18" cy="9" r="2.7"/><circle cx="30" cy="8" r="2.6"/>
+        </g>
+        <g fill="#fbfbf7">
+          <circle cx="-12" cy="-4" r="1.2"/><circle cx="-4" cy="-5" r="1.2"/><circle cx="4" cy="-5" r="1.2"/><circle cx="12" cy="-4" r="1.2"/>
+        </g>
+        <g stroke="#b3c0b8" stroke-width="0.6" opacity="0.7">
+          <path d="M-20 -2 l-2 -3 M-4 -5 l0 -3 M12 -4 l2 -3 M28 0 l2 -3 M-28 0 l-2 -3"/>
+        </g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Wet-Meadow Wildflower</div>
+      <h1>Common Boneset<em>Eupatorium perfoliatum</em></h1>
+      <p class="hero-tagline">A wet-meadow perennial whose paired leaves are fused around the stem — so it appears to grow straight through them — topped in late summer by broad, flat clusters of soft white flowers that draw crowds of late-season pollinators.</p>
+      <div class="flagship-badge">✦ Perfoliate Leaves</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">2–4 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Late summer to fall</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Moist to wet</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Asteraceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Leaf the Stem Grows Through</h2>
+    <p>Boneset is a stout, upright perennial of wet ground, easiest to recognize by its leaves. They are long, lance-shaped, wrinkled, and finely toothed, and each opposite pair is joined at the base around the stem — so the stem appears to pass straight through a single, pierced leaf. The botanical name records exactly this: <em>perfoliatum</em>, "through the leaf."</p>
+    <p>From mid- or late summer into fall, the branched stem tips carry broad, flat-topped clusters of small, soft white flower heads, fuzzy with protruding flower parts and held above the foliage. It grows in wet meadows, marsh and pond edges, low fields, ditches, and stream banks — in full sun to part shade, on ground that stays moist to wet.</p>
+
+    <div class="keystone-callout">
+      <p>Blooming late and presenting many small, shallow, easily reached flowers on broad flat heads, boneset is <strong>among the more heavily visited late-season nectar plants</strong> of the wet meadow. Its open clusters draw a wide cross-section of insects — bees, wasps, flies, beetles, and butterflies — in the weeks when the meadow's flowering is winding down.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Rain gardens</span>
+      <span class="pill">Wet meadows</span>
+      <span class="pill">Pond &amp; stream edges</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Bioswales</span>
+      <span class="pill">Naturalizing</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Boneset</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/boneset-plate.png"
+          alt="Botanical field-plate illustration of Boneset"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/boneset-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Eupatorium perfoliatum · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Stems rise from the crown, the perfoliate leaf pairs clasping the stem as they expand — the pierced-leaf shape clear from early on.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">The plant gains its full height on moist ground and branches near the top, where the flat flower clusters form in bud, still green.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Peak bloom — broad flat heads of soft white flowers open above the foliage and are worked steadily by a wide range of late-season insects.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Flowering continues, then fades to tan as the heads set seed. The upright stems and wrinkled leaves hold their shape.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Dried seed heads and stems stand through much of winter, offering structure and some seed before being cut back in late winter.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>The broad, flat heads present many tiny, shallow flowers at a height that is easy to reach, late in the season, so boneset draws an unusually wide range of visitors — short- and long-tongued bees, many wasps and flies, beetles, and butterflies. Its foliage is also reported to support the caterpillars of several moths, though those associations vary by place.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees &amp; Wasps</span><span class="insect-count-badge">nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Small Native Bees</span>
+          <span class="insect-tag">Bumblebees</span>
+          <span class="insect-tag">Sweat Bees</span>
+          <span class="insect-tag">Predatory Wasps</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies &amp; Beetles</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Hover / Flower Flies</span>
+          <span class="insect-tag">Tachinid Flies</span>
+          <span class="insect-tag">Soldier Beetles</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">nectar + larvae</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Small Butterflies</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Moth Larvae</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Boneset's reach across so many insect groups owes much to its <strong>open, accessible flowers</strong> and its late bloom, which together make it a useful nectar source as the season closes. Standing seed heads add winter structure and hold some seed above the ground.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Boneset is easy where it has the consistent moisture it wants, and rewards an open, sunny position with sturdy, upright stems and full flat heads. It tolerates clay and periodic flooding, and even seasonal standing water; what it does not take well is drought, where it tends to wilt, brown at the edges, and stay short.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; fullest, sturdiest growth comes in sun</td></tr>
+      <tr><td>Soil</td><td>Average to rich; tolerates clay and periodic flooding; not suited to dry sites</td></tr>
+      <tr><td>Moisture</td><td>Moist to wet; consistent moisture is the main requirement</td></tr>
+      <tr><td>Habit</td><td>Clump-forming and upright; spreads slowly by short rhizomes and by seed</td></tr>
+      <tr><td>Propagation</td><td>Divide in spring; seed benefits from a cold, moist period before sowing</td></tr>
+      <tr><td>Toxicity</td><td>Contains pyrrolizidine alkaloids and is considered toxic if ingested; see "Did You Know." Noted here as caution, not a use</td></tr>
+      <tr><td>Maintenance</td><td>Low; leave the seed heads for winter structure and cut stems back in late winter</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Boneset belongs to wet, sunny ground — rain gardens, wet meadows, and the edges of ponds and streams. Its broad white heads sit well among the taller verticals and the warm late colours of the wet meadow, and it pairs naturally with other moisture-loving natives.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Wet-meadow company</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe-Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Swamp Milkweed</span> <span class="companion-latin">Asclepias incarnata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Cardinal Flower</span> <span class="companion-latin">Lobelia cardinalis</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Vertical structure</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Culver's Root</span> <span class="companion-latin">Veronicastrum virginicum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Blue Vervain</span> <span class="companion-latin">Verbena hastata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ironweed</span> <span class="companion-latin">Vernonia spp.</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Late-season colour</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Aster</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrod</span> <span class="companion-latin">Solidago spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Pierced by Its Own Stem</h3>
+        <p>Boneset's signature is its <strong>perfoliate</strong> leaves: each opposite pair is fully joined at the base, forming what looks like one long leaf with the stem running straight through its centre. The species name, <em>perfoliatum</em>, means just that — "through the leaf."</p>
+        <p>The joined leaves form a shallow cup at each node. It has been suggested that this catches rain and dew, and may make the stem harder for crawling insects to climb, though how much it matters to the plant is not settled. Whatever its function, it is the quickest way to tell boneset from its many white-flowered relatives.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Boneset Name</h3>
+        <p>The common name comes from the plant's long history in folk and early medicine, where a bitter tea of the dried leaves was taken for fevers, colds, and influenza. It was particularly associated with "breakbone fever" — an old name for dengue and similar illnesses, named for the deep, aching pain in the bones — and the plant's reputation for easing that ache is one traditional source of the name "boneset."</p>
+        <p>A second tradition ties the name to the doctrine of signatures: the joined, "bone-knitting" look of the perfoliate leaves was read as a sign the plant could help mend bones. Boneset contains pyrrolizidine alkaloids and is considered toxic; this history is recounted as background and caution, not as guidance for any use.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">A Crowd in Late Summer</h3>
+        <p>Boneset is noted for the sheer breadth of insects its flowers draw. Because the heads are flat, open, and shallow, their nectar is within reach of short-tongued visitors that deeper flowers exclude — small bees, many wasps and flies, and beetles — alongside the longer-tongued bees and butterflies. Arriving late in the season, it adds an accessible nectar source just as much of the surrounding bloom is finishing.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">One of Many Thoroughworts</h3>
+        <p>Boneset was once placed in a very large genus, <em>Eupatorium</em>, the thoroughworts. Botanists have since divided much of that group: the Joe-Pye weeds moved to <em>Eutrochium</em>, white snakeroot to <em>Ageratina</em>, and the mistflowers to <em>Conoclinium</em>. Boneset itself kept the old name and remains <em>Eupatorium perfoliatum</em> — so its many flat-topped, fuzzy-flowered cousins are relatives at a slightly greater distance than their shared look suggests.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Genus Eupatorium</p>
+    <h2>Meet the Bonesets</h2>
+    <p>"Boneset" and "thoroughwort" are both names for the genus <em>Eupatorium</em> — upright, late-blooming natives that carry flat-topped clusters of small white flowers. Common boneset, profiled above, is the wet-meadow member most often grown; its relatives sort out mainly by leaf shape and the ground they prefer.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">Most Common · Garden-Ready</p>
+        <p class="species-common">Common Boneset</p>
+        <p class="species-latin">Eupatorium perfoliatum</p>
+        <p class="species-desc">The species profiled on this page: paired leaves fused around the stem (perfoliate), broad flat heads of soft white flowers, and the widest pollinator draw of the group. The wet-meadow boneset, and the one most often planted.</p>
+        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Moist–wet</span><span class="species-trait">Late summer</span><span class="species-trait">Perfoliate leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Dry prairie &amp; savanna</p>
+        <p class="species-common">Tall Thoroughwort</p>
+        <p class="species-latin">Eupatorium altissimum</p>
+        <p class="species-desc">A dry-prairie and savanna species with narrow leaves and a much more airy appearance than common boneset — taller and more open, on dry to medium ground.</p>
+        <div class="species-traits"><span class="species-trait">3–5 ft</span><span class="species-trait">Dry–medium</span><span class="species-trait">Aug–Sep</span><span class="species-trait">Narrow leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Sandier ground</p>
+        <p class="species-common">Roundleaf Thoroughwort</p>
+        <p class="species-latin">Eupatorium rotundifolium</p>
+        <p class="species-desc">A plant of sandier habitats, set apart by its distinctive rounded leaves held in pairs along the stem. White flat-topped clusters like the rest of the genus.</p>
+        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Sandy–dry</span><span class="species-trait">Aug–Sep</span><span class="species-trait">Round leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Fine-textured</p>
+        <p class="species-common">Hyssop-Leaved Thoroughwort</p>
+        <p class="species-latin">Eupatorium hyssopifolium</p>
+        <p class="species-desc">The finest-textured of the group, with narrow, almost needle-like foliage and delicate white flower clusters. A species of dry, sandy ground.</p>
+        <div class="species-traits"><span class="species-trait">1–3 ft</span><span class="species-trait">Sandy–dry</span><span class="species-trait">Aug–Oct</span><span class="species-trait">Fine foliage</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Roadside &amp; old field</p>
+        <p class="species-common">Late Boneset</p>
+        <p class="species-latin">Eupatorium serotinum</p>
+        <p class="species-desc">A common roadside and old-field species blooming later in the season, with clearly stalked leaves rather than joined ones. Often the last of the bonesets in flower.</p>
+        <div class="species-traits"><span class="species-trait">3–6 ft</span><span class="species-trait">Med–moist</span><span class="species-trait">Sep–Oct</span><span class="species-trait">Stalked leaves</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Eupatorium perfoliatum · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

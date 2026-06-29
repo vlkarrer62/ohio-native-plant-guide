@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cup Plant · Silphium perfoliatum · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/cup-plant.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Silphium perfoliatum illustration:
+         A tall, square stem rising through pairs of large, coarse,
+         opposite leaves that fuse around the stem to form cups holding
+         rainwater; topped by branched, bright yellow sunflower-like
+         heads. -->
+    <svg class="hero-illustration" viewBox="0 0 300 470" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ── SQUARE STEM (edges shaded to imply 4 angles) ── -->
+      <rect x="145.5" y="150" width="9" height="312" fill="#557a3c"/>
+      <rect x="145.5" y="150" width="2.4" height="312" fill="#6c9150"/>
+      <rect x="152.1" y="150" width="2.4" height="312" fill="#456731"/>
+
+      <!-- ── LEAF-CUPS (fused opposite pairs forming bowls) ── -->
+      <g fill="#6e9350" fill-opacity="0.92" stroke="#4f7039" stroke-width="0.9" stroke-linejoin="round">
+        <!-- small upper pair ~218 -->
+        <path d="M147 222 C126 214 104 206 84 192 C100 210 124 222 147 226 Z"/>
+        <path d="M153 222 C174 214 196 206 216 192 C200 210 176 222 153 226 Z"/>
+        <!-- medium pair ~286 -->
+        <path d="M147 290 C120 282 92 272 66 254 C86 278 116 290 147 294 Z"/>
+        <path d="M153 290 C180 282 208 272 234 254 C214 278 184 290 153 294 Z"/>
+        <!-- large lower pair ~362 -->
+        <path d="M146 366 C112 356 80 338 52 306 C70 344 106 362 146 370 Z"/>
+        <path d="M154 366 C188 356 220 338 248 306 C230 344 194 362 154 370 Z"/>
+      </g>
+      <!-- leaf midribs -->
+      <g stroke="#4f7039" stroke-width="0.7" opacity="0.5">
+        <path d="M147 224 L86 196 M153 224 L214 196"/>
+        <path d="M147 292 L68 258 M153 292 L232 258"/>
+        <path d="M146 368 L54 310 M154 368 L246 310"/>
+      </g>
+
+      <!-- ── WATER HELD IN THE CUPS ── -->
+      <g>
+        <ellipse cx="150" cy="288" rx="20" ry="5" fill="#a9cdda"/>
+        <ellipse cx="146" cy="287" rx="11" ry="2.6" fill="#d6e8ee" opacity="0.75"/>
+        <ellipse cx="150" cy="361" rx="30" ry="7.5" fill="#a9cdda"/>
+        <ellipse cx="144" cy="359" rx="17" ry="3.6" fill="#d6e8ee" opacity="0.75"/>
+      </g>
+
+      <!-- ── FLOWER PEDUNCLES ── -->
+      <g stroke="#4f7039" stroke-width="2" fill="none" stroke-linecap="round">
+        <path d="M150 152 C150 140 150 130 150 124"/>
+        <path d="M150 158 C128 148 116 140 110 158"/>
+        <path d="M150 158 C172 148 184 140 192 154"/>
+      </g>
+
+      <!-- ── SUNFLOWER-LIKE HEADS (full, even rays) ── -->
+      <!-- main -->
+      <g transform="translate(150 116)">
+        <g fill="#e6b53a" stroke="#cf9a26" stroke-width="0.5">
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(0)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(30)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(60)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(90)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(120)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(150)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(180)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(210)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(240)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(270)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(300)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(330)"/>
+        </g>
+        <circle r="6.5" fill="#9c7b2e"/>
+        <g fill="#b8923a"><circle cx="-2" cy="-1.6" r="1.1"/><circle cx="2" cy="0.4" r="1.1"/><circle cx="-0.6" cy="2.2" r="1"/><circle cx="2.4" cy="-2.4" r="0.9"/></g>
+      </g>
+      <!-- left -->
+      <g transform="translate(108 152) scale(0.8)">
+        <g fill="#e6b53a" stroke="#cf9a26" stroke-width="0.6">
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(0)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(30)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(60)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(90)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(120)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(150)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(180)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(210)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(240)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(270)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(300)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(330)"/>
+        </g>
+        <circle r="6.5" fill="#9c7b2e"/>
+        <g fill="#b8923a"><circle cx="-2" cy="-1.4" r="1.1"/><circle cx="2" cy="0.6" r="1.1"/><circle cx="0" cy="2.2" r="1"/></g>
+      </g>
+      <!-- right -->
+      <g transform="translate(192 148) scale(0.8)">
+        <g fill="#e6b53a" stroke="#cf9a26" stroke-width="0.6">
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(0)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(30)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(60)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(90)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(120)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(150)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(180)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(210)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(240)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(270)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(300)"/>
+          <ellipse cx="9" cy="0" rx="8" ry="2.4" transform="rotate(330)"/>
+        </g>
+        <circle r="6.5" fill="#9c7b2e"/>
+        <g fill="#b8923a"><circle cx="2" cy="-1.4" r="1.1"/><circle cx="-2" cy="0.6" r="1.1"/><circle cx="0" cy="2.2" r="1"/></g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Prairie Wildflower</div>
+      <h1>Cup Plant<em>Silphium perfoliatum</em></h1>
+      <p class="hero-tagline">A towering prairie perennial with square stems and paired leaves fused into cups that catch and hold rainwater — crowned through summer by bright yellow, sunflower-like heads alive with bees and finches.</p>
+      <div class="flagship-badge">✦ Rain-Holding Cups</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">4–8 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Mid to late summer</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium to moist</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Asteraceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Cup That Holds the Rain</h2>
+    <p>Cup plant is one of the tallest perennials of the moist prairie — a coarse, robust species on a distinctly square stem, set with large, rough, opposite leaves. At each node the bases of those paired leaves are fused right around the stem, forming a shallow bowl, or cup, that catches and holds rainwater and dew. It is the feature that names the plant, and you can find small reservoirs of water held up its stem after a storm.</p>
+    <p>Through mid- and late summer the branched top carries many bright yellow, sunflower-like heads, each with a ring of even rays around a darker disc. It grows in moist prairies, wet meadows, stream banks, and savanna openings, in full sun to part shade, often forming broad colonies.</p>
+
+    <div class="keystone-callout">
+      <p>Cup plant is a true multi-resource species: its long run of yellow heads offers <strong>nectar and pollen</strong> to bees and butterflies through summer, its large seeds feed goldfinches and other birds into fall, and the rainwater held in its leaf-cups is reported to be used by birds and insects — several jobs from one plant.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Rain gardens</span>
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Back of border</span>
+      <span class="pill">Screens &amp; backdrops</span>
+      <span class="pill">Pollinator gardens</span>
+      <span class="pill">Bird gardens</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Cup Plant</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/cup-plant-plate.png"
+          alt="Botanical field-plate illustration of Cup Plant"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/cup-plant-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Silphium perfoliatum · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Big, rough leaves unfold and the square stems begin to climb; the first fused leaf-cups form at the lower nodes.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Rapid growth to full height. The cups hold rainwater after storms, and the branched flower head forms at the top in bud.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Mid–late sum.</div><div class="tl-bar"></div><div class="tl-text">Peak bloom — many bright yellow heads open across the branched top over a long season, busy with bees and butterflies.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Heads set large, flat seeds that goldfinches and other birds work over; the tall, sturdy stems stand without flopping.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">The strong dried stems and seed heads persist well into winter, holding structure and cover before being cut back.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Cup plant's long bloom and abundant open heads draw a wide range of insects through summer — bumblebees and other native bees, butterflies, wasps, and flies. As a tall, resource-rich prairie plant it also supports some specialist insects, though those associations vary by region.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees &amp; Wasps</span><span class="insect-count-badge">nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebees</span>
+          <span class="insect-tag">Long-tongued Bees</span>
+          <span class="insect-tag">Native Bees</span>
+          <span class="insect-tag">Wasps</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Butterflies</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Moth Larvae</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies &amp; Beetles</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag">Flower Flies</span>
+          <span class="insect-tag">Beetles</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Beyond insects, cup plant is valued for <strong>birds</strong>: goldfinches and other songbirds feed heavily on its ripe seed, and the rainwater held in its leaf-cups is reported to draw birds and insects to drink. The standing stems add cover and structure through winter.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Cup plant is easy, long-lived, and emphatically large. Give it sun and average-to-moist, fertile soil and it will reach well above head height on stems sturdy enough that they rarely need staking. The thing to plan for is scale and spread: it forms colonies by rhizome and self-sows, so it belongs at the back of a planting or in a naturalised area with room to grow.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; fullest and sturdiest in sun</td></tr>
+      <tr><td>Soil</td><td>Average to rich; tolerates clay and seasonal wet; deep, fertile soil is ideal</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; tolerates wet ground, and drought once well established</td></tr>
+      <tr><td>Habit</td><td>Very tall and colony-forming; spreads by rhizome and seed — give it room</td></tr>
+      <tr><td>Height</td><td>Often 6–8 ft (to 10) — a back-of-border, screen, or naturalising plant</td></tr>
+      <tr><td>Maintenance</td><td>Low; the square stems seldom need support; cut back in late winter; divide to limit spread</td></tr>
+      <tr><td>Wildlife</td><td>Leave seed heads for finches; the leaf-cups hold water through summer</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Cup plant anchors the back of a big, sunny, moist planting — prairie beds, rain gardens, and bottomland borders — among other tall natives and prairie grasses that can match its scale.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Tall company</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wingstem</span> <span class="companion-latin">Verbesina alternifolia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Joe-Pye Weed</span> <span class="companion-latin">Eutrochium spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ironweed</span> <span class="companion-latin">Vernonia spp.</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Prairie structure</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Culver's Root</span> <span class="companion-latin">Veronicastrum virginicum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Big Bluestem</span> <span class="companion-latin">Andropogon gerardii</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Late-season colour</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrod</span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Aster</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">A Cup at Every Node</h3>
+        <p>Where each pair of leaves meets the stem, their bases are fused all the way around it, making a shallow bowl that catches rain and dew. The cups can hold a surprising amount of water well up the plant, and birds and insects are reported to drink from them — though, as with any standing water, the cups can also collect debris and the odd mosquito larva. Either way, it is the feature that gives the plant its name.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Square Stems, Resinous Sap</h3>
+        <p>Run a hand up the stem and you can feel it is distinctly four-angled — square in cross-section, and rigid enough that even an eight-foot plant rarely flops. Break one and it exudes a sticky, aromatic resin; that resin gives the genus its other common name, rosinweed, and was historically chewed as a kind of gum. It is mentioned here as background, not as a use.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Built for Finches</h3>
+        <p>Cup plant's large, flat seeds ripen in late summer and fall and are a favourite of goldfinches in particular, which will work the drying heads while the stems still stand. Between nectar, pollen, seed, the water in its cups, and winter cover, few single plants in the prairie palette do as many different jobs across the year.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Cup Plant &amp; the Silphiums</h3>
+        <p>Cup plant belongs to <em>Silphium</em>, the silphiums or rosinweeds — tall, deep-rooted prairie perennials with yellow heads. What is striking about the genus is how differently each species handles its leaves: compass plant slices them into fern-like blades that tend to align north–south, prairie dock raises enormous paddle-shaped leaves from the ground, and cup plant fuses its into cups. The genus is the subject of the showcase below.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Genus Silphium</p>
+    <h2>Meet the Silphiums</h2>
+    <p><em>Silphium</em> — the silphiums or rosinweeds — are tall, coarse, deep-rooted prairie perennials with yellow heads and resinous stems. What most sets the species apart is how each one handles its leaves. Cup plant, profiled above, is the moisture-loving member and the most adaptable in gardens; its relatives are creatures of drier prairie.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">Most Common · Garden-Ready</p>
+        <p class="species-common">Cup Plant</p>
+        <p class="species-latin">Silphium perfoliatum</p>
+        <p class="species-desc">The species profiled on this page: square stems and opposite leaves fused into rain-holding cups, with bright yellow heads through summer. The moisture-loving silphium of wet prairies and stream banks, and the easiest to grow.</p>
+        <div class="species-traits"><span class="species-trait">4–8 ft</span><span class="species-trait">Moist</span><span class="species-trait">Cupped leaves</span><span class="species-trait">Square stem</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Dry prairie · Sliced leaves</p>
+        <p class="species-common">Compass Plant</p>
+        <p class="species-latin">Silphium laciniatum</p>
+        <p class="species-desc">A dry-prairie giant with deeply cut, fern-like basal leaves that tend to align north–south to limit midday sun, over a very deep taproot. Tall, resinous flower stalks carry yellow heads.</p>
+        <div class="species-traits"><span class="species-trait">5–9 ft</span><span class="species-trait">Dry prairie</span><span class="species-trait">Lobed leaves</span><span class="species-trait">N–S leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Dry–mesic · Basal paddles</p>
+        <p class="species-common">Prairie Dock</p>
+        <p class="species-latin">Silphium terebinthinaceum</p>
+        <p class="species-desc">Enormous, rough, paddle-shaped leaves stand upright at ground level, sending up tall, nearly leafless stalks of yellow heads. A signature of dry to mesic prairie remnants.</p>
+        <div class="species-traits"><span class="species-trait">4–10 ft</span><span class="species-trait">Dry–mesic</span><span class="species-trait">Basal paddles</span><span class="species-trait">Bare stalk</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Mesic prairie · Plain leaves</p>
+        <p class="species-common">Rosinweed</p>
+        <p class="species-latin">Silphium integrifolium</p>
+        <p class="species-desc">The plainest of the four — branched stems with simple, opposite, sandpapery leaves and yellow heads, of mesic prairies and openings. Named, like its kin, for the sticky resin in its stems.</p>
+        <div class="species-traits"><span class="species-trait">3–6 ft</span><span class="species-trait">Mesic prairie</span><span class="species-trait">Simple leaves</span><span class="species-trait">Resinous</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Silphium perfoliatum · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Snakeroot · Ageratina altissima · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/white-snakeroot.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Ageratina altissima illustration:
+         A bushy, branched plant on slender dark stems with opposite,
+         toothed, pointed leaves; topped by several flat-topped clusters
+         of tiny white flower heads (no ray petals — all small disc
+         florets), frothy with protruding styles, glowing against the
+         shaded ground. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+
+      <!-- ── STEMS ── -->
+      <g stroke="#6a7a4e" stroke-linecap="round" fill="none">
+        <path d="M150 436 L150 250" stroke-width="2.8"/>
+        <path d="M150 300 C150 278 150 262 150 236" stroke-width="2"/>
+        <path d="M150 312 C140 292 128 274 119 250" stroke-width="1.9"/>
+        <path d="M150 312 C160 292 172 274 181 250" stroke-width="1.9"/>
+        <path d="M150 332 C132 316 110 296 95 266" stroke-width="1.8"/>
+        <path d="M150 332 C168 316 190 296 205 266" stroke-width="1.8"/>
+      </g>
+
+      <!-- ── OPPOSITE LEAF PAIRS (ovate, pointed) ── -->
+      <g fill="#7e9466" stroke="#66794f" stroke-width="0.8" stroke-linejoin="round">
+        <!-- node ~330 -->
+        <path d="M150 330 C131 325 114 322 99 311 C113 322 132 327 150 329 Z"/>
+        <path d="M150 330 C169 325 186 322 201 311 C187 322 168 327 150 329 Z"/>
+        <!-- node ~370 -->
+        <path d="M150 372 C128 368 108 366 90 354 C107 367 130 371 150 371 Z"/>
+        <path d="M150 372 C172 368 192 366 210 354 C193 367 170 371 150 371 Z"/>
+        <!-- node ~408 (lower, larger) -->
+        <path d="M150 410 C125 407 102 406 82 393 C102 408 128 412 150 410 Z"/>
+        <path d="M150 410 C175 407 198 406 218 393 C198 408 172 412 150 410 Z"/>
+        <!-- small pair high on the central stalk -->
+        <path d="M150 292 C137 289 125 288 115 281 C126 289 139 292 150 292 Z"/>
+        <path d="M150 292 C163 289 175 288 185 281 C174 289 161 292 150 292 Z"/>
+      </g>
+
+      <!-- ── FLAT-TOPPED FLOWER CLUSTERS (glowing white) ── -->
+      <!-- centre -->
+      <g transform="translate(150 224)">
+        <ellipse cx="0" cy="1" rx="25" ry="13" fill="#dce8cd" fill-opacity="0.16"/>
+        <g fill="#eef2e8">
+          <circle cx="-16" cy="3" r="2.4"/><circle cx="-10" cy="-1" r="2.6"/><circle cx="-4" cy="-4" r="2.5"/>
+          <circle cx="3" cy="-4" r="2.6"/><circle cx="9" cy="-1" r="2.5"/><circle cx="16" cy="3" r="2.4"/>
+          <circle cx="-7" cy="4" r="2.3"/><circle cx="0" cy="3" r="2.6"/><circle cx="7" cy="4" r="2.3"/>
+          <circle cx="-13" cy="6" r="2"/><circle cx="13" cy="6" r="2"/>
+        </g>
+        <g fill="#f7f9f3"><circle cx="-4" cy="-4" r="1.1"/><circle cx="3" cy="-4" r="1.1"/><circle cx="0" cy="3" r="1.1"/></g>
+        <g stroke="#cdd6bf" stroke-width="0.6" opacity="0.7"><path d="M-10 -1 l-2 -3 M3 -4 l2 -3 M0 3 l0 -3 M9 -1 l2 -3"/></g>
+      </g>
+      <!-- inner left -->
+      <g transform="translate(119 232)">
+        <ellipse cx="0" cy="1" rx="21" ry="11" fill="#dce8cd" fill-opacity="0.15"/>
+        <g fill="#eef2e8">
+          <circle cx="-13" cy="3" r="2.2"/><circle cx="-8" cy="-1" r="2.3"/><circle cx="-2" cy="-3" r="2.3"/>
+          <circle cx="4" cy="-3" r="2.3"/><circle cx="10" cy="0" r="2.2"/><circle cx="-5" cy="4" r="2.1"/>
+          <circle cx="2" cy="3" r="2.3"/><circle cx="8" cy="4" r="2"/>
+        </g>
+        <g fill="#f7f9f3"><circle cx="-2" cy="-3" r="1"/><circle cx="4" cy="-3" r="1"/></g>
+        <g stroke="#cdd6bf" stroke-width="0.6" opacity="0.7"><path d="M-8 -1 l-2 -3 M4 -3 l2 -3 M2 3 l0 -3"/></g>
+      </g>
+      <!-- inner right -->
+      <g transform="translate(181 232)">
+        <ellipse cx="0" cy="1" rx="21" ry="11" fill="#dce8cd" fill-opacity="0.15"/>
+        <g fill="#eef2e8">
+          <circle cx="-10" cy="0" r="2.2"/><circle cx="-4" cy="-3" r="2.3"/><circle cx="2" cy="-3" r="2.3"/>
+          <circle cx="8" cy="-1" r="2.3"/><circle cx="13" cy="3" r="2.2"/><circle cx="-2" cy="3" r="2.3"/>
+          <circle cx="5" cy="4" r="2.1"/><circle cx="-7" cy="4" r="2"/>
+        </g>
+        <g fill="#f7f9f3"><circle cx="-4" cy="-3" r="1"/><circle cx="2" cy="-3" r="1"/></g>
+        <g stroke="#cdd6bf" stroke-width="0.6" opacity="0.7"><path d="M-4 -3 l-2 -3 M8 -1 l2 -3 M-2 3 l0 -3"/></g>
+      </g>
+      <!-- outer left -->
+      <g transform="translate(95 250)">
+        <ellipse cx="0" cy="1" rx="18" ry="10" fill="#dce8cd" fill-opacity="0.14"/>
+        <g fill="#eef2e8">
+          <circle cx="-11" cy="2" r="2"/><circle cx="-6" cy="-2" r="2.1"/><circle cx="0" cy="-3" r="2.1"/>
+          <circle cx="6" cy="-1" r="2.1"/><circle cx="11" cy="3" r="2"/><circle cx="-3" cy="3" r="2"/>
+          <circle cx="4" cy="3" r="1.9"/>
+        </g>
+        <g fill="#f7f9f3"><circle cx="0" cy="-3" r="0.9"/></g>
+        <g stroke="#cdd6bf" stroke-width="0.55" opacity="0.7"><path d="M-6 -2 l-2 -3 M6 -1 l2 -3"/></g>
+      </g>
+      <!-- outer right -->
+      <g transform="translate(205 250)">
+        <ellipse cx="0" cy="1" rx="18" ry="10" fill="#dce8cd" fill-opacity="0.14"/>
+        <g fill="#eef2e8">
+          <circle cx="-11" cy="3" r="2"/><circle cx="-6" cy="-1" r="2.1"/><circle cx="0" cy="-3" r="2.1"/>
+          <circle cx="6" cy="-2" r="2.1"/><circle cx="11" cy="2" r="2"/><circle cx="-4" cy="3" r="2"/>
+          <circle cx="3" cy="3" r="1.9"/>
+        </g>
+        <g fill="#f7f9f3"><circle cx="0" cy="-3" r="0.9"/></g>
+        <g stroke="#cdd6bf" stroke-width="0.55" opacity="0.7"><path d="M-6 -1 l-2 -3 M6 -2 l2 -3"/></g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Woodland Wildflower</div>
+      <h1>White Snakeroot<em>Ageratina altissima</em></h1>
+      <p class="hero-tagline">A bushy woodland perennial that opens flat-topped clusters of small, bright white flowers in late summer and fall — lighting up shaded ground at a time when little else in the woods is in bloom.</p>
+      <div class="flagship-badge">✦ White Light in Shade</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">1–3 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">Late summer to fall</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Part shade to shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium to moist</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Asteraceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>Bright White in Deep Shade</h2>
+    <p>White snakeroot grows as a bushy, branched plant on slender, often dark stems, set with opposite leaves that are broadly oval, pointed, and coarsely toothed. For most of the year it reads as quiet green foliage in the shade. Then, from late summer into fall, the stem tips open flat-topped clusters of small white flower heads — each head a tuft of tiny tubular disc florets with no ray petals, so the effect is soft and frothy rather than daisy-like.</p>
+    <p>It grows in woodland interiors and along shaded edges, in thickets, and on stream banks, in medium to moist humusy soil, though it tolerates dry shade once established. It is one of relatively few native plants that bring bright white bloom to shaded ground late in the season, when most of the woodland's flowering is finished.</p>
+
+    <div class="keystone-callout">
+      <p>Opening late, in shade, when much of the surrounding woodland has finished flowering, white snakeroot offers an accessible source of <strong>late-season nectar and pollen</strong> to a wide range of small insects. Its broad, flat clusters present many shallow flowers at once, and in many shaded gardens it is among the more active patches for pollinators in the weeks before frost.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Shade gardens</span>
+      <span class="pill">Woodland edges</span>
+      <span class="pill">Dry shade</span>
+      <span class="pill">Late-season nectar</span>
+      <span class="pill">Naturalizing</span>
+      <span class="pill">Under trees &amp; shrubs</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>White Snakeroot</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/white-snakeroot-plate.png"
+          alt="Botanical field-plate illustration of White Snakeroot"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/white-snakeroot-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Ageratina altissima · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Mounds of opposite, toothed leaves emerge on dark stems, filling shaded ground with quiet green foliage.</div></div>
+      <div class="tl-row active"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">Stems lengthen and branch. The flat flower clusters form at the tips, still green and tightly in bud, the bushy shape filling out.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">The clusters begin to open — small white florets brightening the shade, frothy with protruding styles, drawing the first late-season visitors.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Peak bloom. The plant reads as drifts of bright white in shaded ground, worked steadily by small bees, wasps, flies, and butterflies in the weeks before frost.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Each floret gives way to a tiny seed tipped with a tuft of white hairs; the fluffy seed heads scatter on the wind and the dried stems stand a while.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>The flat clusters present many tiny, shallow, accessible flowers at once, late in the season, so white snakeroot draws a broad mix of small visitors — short-tongued native bees, wasps, flies, beetles, and small butterflies — through fall. Its foliage is also reported to support the caterpillars of some moths, though the associations vary by region.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Pollinators</span><span class="insect-count-badge">late-season nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Small Native Bees</span>
+          <span class="insect-tag">Wasps</span>
+          <span class="insect-tag">Hover / Flower Flies</span>
+          <span class="insect-tag">Beetles</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">nectar + larvae</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Small Butterflies</span>
+          <span class="insect-tag">Skippers</span>
+          <span class="insect-tag">Moth Larvae</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🪰</span><span class="insect-category-name">Flies &amp; Others</span><span class="insect-count-badge">nectar</span></div>
+        <div class="insect-list">
+          <span class="insect-tag">Bee Flies</span>
+          <span class="insect-tag">Soldier Beetles</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">Its foliage contains compounds that are <strong>toxic to mammals</strong>, and as a result the plant is generally left alone by deer and rabbits — though browsing pressure varies and no plant is reliably untouched. (See the toxicity note below, and "Did You Know.")</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>White snakeroot is undemanding in the shade and part shade it prefers, taking ordinary to rich woodland soil and tolerating dry shade once established — a useful trait, since few flowering plants thrive in that setting. Its main quirk is enthusiasm: it self-sows freely, which makes it excellent for naturalizing a shaded area and something to keep an eye on in a tidy bed.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Part shade to shade; takes morning sun, but not hot, dry full sun</td></tr>
+      <tr><td>Soil</td><td>Average to rich; humusy woodland soil preferred; tolerates clay</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; tolerates dry shade once established</td></tr>
+      <tr><td>Habit</td><td>Bushy, branched, clump-forming; spreads chiefly by seed</td></tr>
+      <tr><td>Self-sowing</td><td>Seeds freely on the wind and can naturalize widely; deadhead before seed set to limit spread in beds</td></tr>
+      <tr><td>Toxicity</td><td>All parts contain tremetol and are toxic if eaten; keep livestock away and avoid ingestion (see "Did You Know"). Recounted here as caution, not a use</td></tr>
+      <tr><td>Maintenance</td><td>Low; cut stems back in late winter and thin seedlings as needed</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>White snakeroot belongs to the shaded garden and the woodland edge. Its late white reads well against the deeper greens of a shade planting, and it pairs naturally with spring part-shade wildflowers that finish long before it begins, and with other fall bloomers of dappled ground.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland floor</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Spring part-shade</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Geranium</span> <span class="companion-latin">Geranium maculatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Columbine</span> <span class="companion-latin">Aquilegia canadensis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Fall company</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Aster</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrod</span> <span class="companion-latin">Solidago spp.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Flowers Without Petals</h3>
+        <p>Each bright white head is not a single flower but a small cluster of tiny tubular florets, all of the disc type — there are no ray petals at all, the strap-shaped "petals" that ring a daisy. What gives the heads their soft, fuzzy look is the flower parts themselves: the styles protrude well beyond the florets, and en masse they read as a frothy white tuft.</p>
+        <p>The heads are gathered into broad, flat-topped clusters, and they open over a stretch of weeks, so a plant can carry open flowers and buds together. After bloom each floret yields a single small seed.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Milk Sickness</h3>
+        <p>White snakeroot contains a compound called <strong>tremetol</strong>. When cattle graze the plant, the toxin can pass into their milk and meat — and from there to people. In the early 1800s this caused outbreaks of "milk sickness" across the Ohio Valley and the frontier Midwest, an often-fatal illness that emptied settlements before its cause was understood.</p>
+        <p>The death of Nancy Hanks Lincoln — Abraham Lincoln's mother — in 1818 is widely attributed to milk sickness. The plant's role was not formally established until decades later; by tradition, a frontier physician, Anna Pierce Hobbs Bixby, is credited with tracing the illness to the plant. It is recounted here as history and as a caution: the plant is toxic, and this is not guidance for any use.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The "Snakeroot" Name</h3>
+        <p>The common name comes from a historical folk use of the root as a purported treatment for snakebite — a use reflected in the names of several unrelated "snakeroots." That history is the source of the name only; all parts of the plant are toxic, and this is offered as background rather than a recommendation.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Seeds on the Wind</h3>
+        <p>Like many in the aster family, each finished floret produces a small seed tipped with a tuft of fine white hairs — a tiny parachute that carries it on the wind, the way a dandelion's seeds travel. This is how white snakeroot self-sows so readily and colonizes shaded ground.</p>
+        <p>The dark-stemmed, purple-leaved plant sold in nurseries as 'Chocolate' is a selected garden form of this same native species, grown for its foliage colour against the white flowers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Shade Company</p>
+    <h2>White Flowers of the Fall Woods</h2>
+    <p>White snakeroot is one of several pale-flowered plants that bloom in shaded and edge ground late in the year, and a couple of them are easy to confuse with it. The quickest tells are the flower shape — fuzzy tufts versus daisy rays — and where the plant is growing.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Plant · Fuzzy white tufts</p>
+        <p class="species-common">White Snakeroot</p>
+        <p class="species-latin">Ageratina altissima</p>
+        <p class="species-desc">Bushy and branched, with opposite toothed leaves and broad, flat-topped clusters of small white flower heads that have no ray petals — soft and frothy in texture. A plant of woodland shade and edges, blooming late summer into fall. All parts are toxic.</p>
+        <div class="species-traits"><span class="species-trait">1–3 ft</span><span class="species-trait">Shade</span><span class="species-trait">Late bloom</span><span class="species-trait">No ray petals</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Shade · White rays</p>
+        <p class="species-common">White Wood Aster</p>
+        <p class="species-latin">Eurybia divaricata</p>
+        <p class="species-desc">A low, wiry shade aster that blooms the same season in similar ground, but its flowers are small white daisies with distinct ray petals around a yellow centre, and its lower leaves are heart-shaped. The ray petals are the easiest way to tell it from snakeroot's fuzzy tufts.</p>
+        <div class="species-traits"><span class="species-trait">1–2 ft</span><span class="species-trait">Shade</span><span class="species-trait">Ray petals</span><span class="species-trait">Heart leaves</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Wet sun · Close relative</p>
+        <p class="species-common">Boneset</p>
+        <p class="species-latin">Eupatorium perfoliatum</p>
+        <p class="species-desc">A relative with similar flat-topped clusters of fuzzy white flowers, but told apart by its leaves, which are joined around the stem so the stem appears to pass through them, and by its home ground: wet meadows and marsh edges in full sun, not dry woodland shade.</p>
+        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Wet · sun</span><span class="species-trait">Joined leaves</span><span class="species-trait">White tufts</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Shade · Yellow</p>
+        <p class="species-common">Zigzag Goldenrod</p>
+        <p class="species-latin">Solidago flexicaulis</p>
+        <p class="species-desc">A goldenrod of the same woodland shade, named for its bending, zigzag stem, with small yellow flower clusters in the leaf axils in fall. Not a look-alike but a frequent neighbour, its yellow setting off snakeroot's white in the same shaded ground.</p>
+        <div class="species-traits"><span class="species-trait">1–3 ft</span><span class="species-trait">Shade</span><span class="species-trait">Yellow</span><span class="species-trait">Zigzag stem</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Ageratina altissima · Native Perennial · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

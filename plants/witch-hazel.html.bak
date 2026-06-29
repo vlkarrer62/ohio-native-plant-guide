@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Witch Hazel · Hamamelis virginiana · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/witch-hazel.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+  <a href="../index.html">← Home</a>
+  <a href="index.html">Plant Directory</a>
+</nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Witch hazel illustration:
+         The key elements: zigzag branching pattern
+         (alternate buds at sharp angles); broadly oval
+         toothed leaves; and most distinctively, the
+         spidery four-petalled flowers — four narrow
+         strap-like yellow petals that crinkle and curl,
+         appearing in clusters along the bare or partly
+         bare branches in late fall. The illustration
+         shows a branch section with a mix of late-season
+         foliage (some turning yellow) and open flowers. -->
+    <svg class="hero-illustration" viewBox="0 0 280 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMax meet">
+
+      <!-- BRANCHES — characteristic witch hazel zigzag.
+           The branches change direction at each node,
+           creating the diagnostic angular branching pattern. -->
+
+      <!-- Main stem — ascending, pale grey-brown -->
+      <path d="M100 480 C102 448 106 416 112 386 C118 356 126 330 136 306 C146 282 158 262 168 244" stroke="#a89870" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+
+      <!-- Zigzag branches — the angular alternating pattern -->
+      <path d="M136 306 C148 294 162 280 178 265 C190 254 202 244 212 234" stroke="#a89870" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+      <path d="M168 244 C156 232 146 218 138 204 C132 193 128 182 126 170" stroke="#9a8860" stroke-width="4" stroke-linecap="round" fill="none"/>
+      <path d="M212 234 C220 220 226 206 230 192 C234 180 234 168 232 158" stroke="#9a8860" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M126 170 C136 158 148 146 162 136 C172 128 184 122 194 118" stroke="#9a8860" stroke-width="3" stroke-linecap="round" fill="none"/>
+      <path d="M232 158 C224 146 214 136 204 126 C196 118 188 112 182 106" stroke="#8a7858" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+      <!-- Bark texture on main stem -->
+      <g stroke="#908058" stroke-width="0.7" opacity="0.35" stroke-linecap="round">
+        <path d="M106 450 C108 444 109 438" fill="none"/>
+        <path d="M110 424 C112 418 113 412" fill="none"/>
+        <path d="M116 396 C118 390 119 384" fill="none"/>
+        <path d="M124 366 C126 360 127 354" fill="none"/>
+      </g>
+
+      <!-- LEAVES — broadly oval, wavy-toothed margin, asymmetric base.
+           Characteristic witch hazel leaf shape — one side of
+           the base is more rounded than the other. In fall,
+           leaves turn yellow to orange. -->
+
+      <!-- Leaf 1 — still green, lower branch -->
+      <path d="M136 306
+        C132 298 124 292 118 285
+        C114 280 112 274 115 268
+        C118 262 125 260 130 264
+        C126 258 124 251 127 245
+        C130 239 137 238 141 243
+        C144 237 150 234 156 237
+        C162 240 163 247 158 252
+        C163 248 169 248 172 253
+        C175 258 173 265 167 267
+        C172 265 177 267 178 273
+        C179 279 174 284 168 283
+        C170 288 168 294 163 297
+        C158 300 153 298 151 293
+        C150 298 146 303 140 304
+        Z" fill="#527040" opacity="0.82"/>
+      <!-- Midrib -->
+      <path d="M136 306 C148 284 158 264 165 246" stroke="#3a5028" stroke-width="0.8" fill="none" opacity="0.5"/>
+
+      <!-- Leaf 2 — yellowing fall leaf, upper -->
+      <path d="M168 244
+        C164 236 156 230 150 223
+        C146 218 145 212 148 207
+        C151 202 158 201 162 205
+        C159 199 158 192 162 187
+        C166 182 173 182 176 187
+        C179 181 185 179 190 182
+        C195 185 196 192 191 196
+        C196 193 201 194 203 200
+        C205 206 202 213 196 214
+        C201 213 206 216 206 222
+        C206 228 200 232 194 231
+        C195 236 192 242 186 244
+        C180 246 175 243 174 237
+        C172 242 167 247 162 247
+        Z" fill="#b89830" opacity="0.78"/>
+      <path d="M168 244 C179 220 189 200 196 184" stroke="#8a7020" stroke-width="0.8" fill="none" opacity="0.45"/>
+
+      <!-- Leaf 3 — orange-gold, partially visible -->
+      <path d="M212 234
+        C208 227 202 222 198 216
+        C195 211 195 206 198 202
+        C201 198 208 198 210 202
+        C208 196 208 190 212 186
+        C216 182 222 183 224 188
+        C226 183 231 181 236 184
+        C241 187 241 194 236 197
+        C240 195 244 197 245 203
+        C246 209 243 215 237 215
+        C241 215 244 220 243 226
+        C242 232 236 235 230 233
+        C230 238 227 243 221 244
+        C215 245 211 241 211 235
+        Z" fill="#c88828" opacity="0.72"/>
+
+      <!-- FLOWERS — the star of the show.
+           Four narrow strap-like petals, 0.5–0.75 inch long,
+           crinkled and curling. They emerge in tight clusters
+           from the nodes, usually 3–4 flowers per cluster.
+           Colour: bright clear yellow, sometimes with red at base.
+           The petals are so narrow they look like spiders' legs. -->
+
+      <!-- Flower cluster 1 — on main branch, fully open -->
+      <!-- Each flower: 4 narrow petals radiating from a small calyx -->
+
+      <!-- Flower 1a -->
+      <g opacity="0.9" transform="translate(194, 118)">
+        <!-- calyx -->
+        <circle cx="0" cy="0" r="3.5" fill="#8a6020" opacity="0.8"/>
+        <!-- 4 strap petals — narrow, slightly curved, crinkled -->
+        <path d="M0 0 C-2 -4 -3 -8 -4 -14 C-4.5 -18 -4 -22 -3 -24" stroke="#d4a820" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C3 -3 6 -6 10 -10 C13 -13 15 -16 15 -20" stroke="#d4a820" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C2 4 3 8 4 14 C4.5 18 4 22 3 24" stroke="#d4a820" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C-3 3 -6 6 -10 10 C-13 13 -15 16 -15 20" stroke="#d4a820" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Stamen tips -->
+        <circle cx="-3" cy="-25" r="1.2" fill="#e8c040"/>
+        <circle cx="15" cy="-21" r="1.2" fill="#e8c040"/>
+        <circle cx="3"  cy="25"  r="1.2" fill="#e8c040"/>
+        <circle cx="-15" cy="21" r="1.2" fill="#e8c040"/>
+      </g>
+
+      <!-- Flower 1b — slightly different angle, same cluster -->
+      <g opacity="0.85" transform="translate(206, 112)">
+        <circle cx="0" cy="0" r="3" fill="#8a6020" opacity="0.75"/>
+        <path d="M0 0 C-1 -4 -2 -9 -2 -15 C-2 -19 -1 -22 1 -24" stroke="#c89c18" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C4 -2 8 -4 13 -7 C16 -9 18 -12 18 -17" stroke="#d4a820" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C1 4 2 9 2 15 C2 19 1 22 -1 24" stroke="#c89c18" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C-4 2 -8 4 -12 7 C-15 9 -17 12 -17 17" stroke="#d4a820" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="1"   cy="-25" r="1.1" fill="#e8c040"/>
+        <circle cx="18"  cy="-18" r="1.1" fill="#e8c040"/>
+        <circle cx="-1"  cy="25"  r="1.1" fill="#e8c040"/>
+        <circle cx="-17" cy="18"  r="1.1" fill="#e8c040"/>
+      </g>
+
+      <!-- Flower cluster 2 — on right upper branch -->
+      <g opacity="0.82" transform="translate(182, 106)">
+        <circle cx="0" cy="0" r="3.2" fill="#8a6020" opacity="0.78"/>
+        <path d="M0 0 C-1.5 -4 -2.5 -9 -3 -15 C-3.5 -19 -3 -23 -1 -25" stroke="#d4a820" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C4 -1.5 8 -3 13 -5 C17 -7 19 -10 19 -16" stroke="#c89c18" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C1.5 4 2.5 9 3 15 C3.5 19 3 23 1 25" stroke="#d4a820" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C-4 1.5 -8 3 -12 5 C-16 7 -18 10 -18 16" stroke="#c89c18" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <circle cx="-1" cy="-26" r="1.1" fill="#e8c040"/>
+        <circle cx="19" cy="-17" r="1.1" fill="#e8c040"/>
+        <circle cx="1"  cy="26"  r="1.1" fill="#e8c040"/>
+        <circle cx="-18" cy="17" r="1.1" fill="#e8c040"/>
+      </g>
+
+      <!-- Flower cluster 3 — on left branch near leaf 2, smaller -->
+      <g opacity="0.75" transform="translate(162, 136)">
+        <circle cx="0" cy="0" r="2.8" fill="#8a6020" opacity="0.72"/>
+        <path d="M0 0 C-1 -4 -2 -8 -2 -13 C-2 -17 -1 -20 1 -22" stroke="#c89c18" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C3 -1 7 -2 11 -4 C14 -6 16 -9 15 -14" stroke="#d4a820" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C1 4 2 8 2 13 C2 17 1 20 -1 22" stroke="#c89c18" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C-3 1 -7 2 -10 4 C-13 6 -14 9 -13 14" stroke="#d4a820" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- Flower bud — still closed, just red-brown sepals visible -->
+      <g opacity="0.65" transform="translate(230, 158)">
+        <ellipse cx="0" cy="0" rx="4" ry="5" fill="#7a5018" opacity="0.8"/>
+        <!-- Just tips of petals emerging -->
+        <path d="M0 -5 C-0.5 -8 -1 -11 -1 -14" stroke="#c8a018" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <path d="M0 -5 C1 -7 2.5 -10 4 -13"  stroke="#c8a018" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.7"/>
+      </g>
+
+      <!-- FRUIT CAPSULE — woody, persistent, from previous year.
+           The capsule splits open forcefully at maturity,
+           ejecting seeds. Often visible alongside current flowers. -->
+      <g opacity="0.62" transform="translate(148, 282)">
+        <!-- Woody capsule — oval, splitting -->
+        <path d="M-6 0 C-6 -8 -3 -14 0 -16 C3 -14 6 -8 6 0 C6 8 3 14 0 16 C-3 14 -6 8 -6 0 Z" fill="#8a6838" opacity="0.8"/>
+        <!-- Split line -->
+        <line x1="0" y1="-16" x2="0" y2="16" stroke="#6a5028" stroke-width="0.7" opacity="0.6"/>
+        <!-- Peduncle -->
+        <line x1="0" y1="16" x2="2" y2="24" stroke="#7a6030" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Shrub · Tree</div>
+      <h1>Witch<em>Hazel</em></h1>
+      <p class="hero-latin">Hamamelis virginiana</p>
+      <p class="hero-tagline">The last native plant to flower in Ohio — spidery yellow blooms that open on bare branches in October and November, when the rest of the garden has gone quiet.</p>
+      <div class="bloom-badge">✦ Blooms October · November · Sometimes December</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Large native shrub / small tree</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">10–20 feet</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom</span>
+      <span class="fact-value">October to December</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Part shade to full sun</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Medium to moist</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Habitat</span>
+      <span class="fact-value">Woodland edge, slopes</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>When Everything Else Has Finished</h2>
+    <p>Witch hazel blooms after its leaves have dropped, in the weeks when the gardening year is understood to be over. The flowers appear in October, continue through November, and in mild years persist into December — small, four-petalled, clear yellow, in clusters along the bare angular branches. They are spidery in form, each petal a narrow strap less than a centimetre wide and about two centimetres long, slightly crinkled and curling at the tips.</p>
+    <p>The timing is unusual enough that gardeners encountering it for the first time sometimes mistake the bloom for something left over from autumn rather than something newly opened. It is not a residual display. <strong>It is a deliberate one</strong> — a plant that has evolved to flower in the gap between all other native plants, in a season that belongs to it alone.</p>
+
+    <div class="late-callout">
+      <p class="late-callout-label">The last flower of the year</p>
+      <p>No other native Ohio plant blooms as late as witch hazel. It occupies a <strong>completely uncontested flowering window</strong> — there are no competitors for pollinators in October and November, no other nectar sources, no other colour in the bare woodland. Whatever insects are still active in that season — certain moths, late-season flies, winter-active bees in warm spells — find witch hazel alone.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Woodland edge</span>
+      <span class="pill">Late-season interest</span>
+      <span class="pill">Understory structure</span>
+      <span class="pill">Naturalistic borders</span>
+      <span class="pill">Rain garden edges</span>
+      <span class="pill">Native plant garden anchor</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Witch Hazel</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/witch-hazel-plate.png"
+          alt="Botanical field-plate illustration of Witch Hazel"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/witch-hazel-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Witch Hazel · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+
+  <!-- THE PETAL SECTION -->
+  <section class="section">
+    <p class="eyebrow">The Flower</p>
+    <h2>A Frost-Proof Design</h2>
+    <p>The four petals of a witch hazel flower are not simply narrow — they are <strong>contractile</strong>. On cold nights they curl inward, rolling into tight spirals that protect the reproductive structures from freezing. On warmer days they unfurl again, resuming their spidery open form and releasing fragrance. A single flower may go through this cycle many times across the weeks it remains open.</p>
+
+    <div class="petal-callout">
+      <p>This rolling and unrolling gives witch hazel flowers a quality of motion across days and weeks — the plant looks slightly different depending on the temperature when you visit it. On a cold grey November morning the petals are tightly curled. On an unexpectedly warm afternoon they spread wide and release a faint sweet scent that is one of the more unexpected sensory experiences in the late-fall garden.</p>
+    </div>
+
+    <p>The flowers are also frost-tolerant to a degree unusual among flowering plants. Hard frosts do not kill the open blooms — they curl inward, wait for warmer air, and open again. This resilience extends the effective flowering period considerably beyond what would be possible for more temperature-sensitive flowers.</p>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row foliage">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Broadly oval leaves emerge, distinctly asymmetric at the base — one side more rounded than the other; the plant leafs out after most woodland shrubs, taking its time</div>
+      </div>
+      <div class="tl-row foliage">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Dense green foliage creates solid shade in the understory; the zigzag branching pattern is obscured by leaves; fruit capsules from the previous year's flowers are quietly developing</div>
+      </div>
+      <div class="tl-row fruit">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Leaves turn yellow to orange before dropping; mature fruit capsules split open and eject seeds ballistically; and then, as the leaves fall, the flowers begin to open — the year's most distinctive moment</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Late Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Peak bloom on bare branches, October through November — the only flowering native woody plant in Ohio at this season; spidery yellow flowers visible from a distance against the bare canopy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ECOLOGY -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>Wildlife Value</h2>
+    <p>Witch hazel's ecological niche is defined almost entirely by its timing. Because it blooms when no other native plant is flowering, it serves a concentrated set of late-season and overwintering insects that have no alternative nectar source in the Ohio landscape.</p>
+    <p><strong>Witch hazel owlet moths</strong> — a small group of moths in the genus <em>Eupsilia</em> — are among the few insects still active in October and November, and they are thought to be among the primary pollinators of witch hazel. These moths overwinter as adults, flying on warm nights through fall and early spring. Their activity window overlaps almost precisely with witch hazel bloom. The association between these moths and this plant appears to be a genuine ecological pairing developed over a long period of co-occurrence.</p>
+    <p>The woody seed capsules, which ripen a full year after the flowers that produced them, provide a small but consistent seed source for birds in late fall. The dense branching structure offers shelter and nesting sites. And the plant's <strong>ballistic seed dispersal</strong> — the capsule splits under tension and propels seeds up to ten metres away with an audible pop — is one of the more memorable phenomena in the native plant garden for anyone who happens to be nearby when it occurs.</p>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Witch hazel is adaptable but performs best in the cool, moist, slightly acidic soils of its native woodland edge habitat. It tolerates considerably more shade than most flowering shrubs, making it genuinely useful in difficult garden situations where other plants would not flower reliably.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Part shade to full sun; flowers reliably in dappled woodland light where most flowering shrubs fail</td></tr>
+      <tr><td>Soil</td><td>Moist, well-drained, slightly acidic; woodland soil with organic matter is ideal; tolerates clay if drainage is adequate</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; consistent moisture produces best growth; tolerates brief dry spells once established</td></tr>
+      <tr><td>Height</td><td>10–15 feet in typical garden settings; can reach 20 feet in ideal conditions over time</td></tr>
+      <tr><td>Width</td><td>10–15 feet; multi-stemmed, spreading, open form at maturity</td></tr>
+      <tr><td>Growth rate</td><td>Slow to moderate; expect 1–2 feet per year once established</td></tr>
+      <tr><td>Pruning</td><td>Rarely needed; if pruning is necessary, do so immediately after bloom to avoid removing next year's flower buds</td></tr>
+      <tr><td>Fruit note</td><td>Seed capsules ripen 12 months after flowering — the fruits visible in fall were produced by the previous year's flowers</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Witch hazel works best as a structural anchor in woodland edge plantings, where its late bloom extends the season of interest well beyond what any other plant in the composition can achieve. Plant it where it can be seen from inside in November.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland edge structure</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Red Buckeye</span> <span class="companion-latin">Aesculus pavia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Spicebush</span> <span class="companion-latin">Lindera benzoin</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Elderberry</span> <span class="companion-latin">Sambucus canadensis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">White Oak</span> <span class="companion-latin">Quercus alba</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Understory wildflowers</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Woodland Phlox</span> <span class="companion-latin">Phlox divaricata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Nodding Onion</span> <span class="companion-latin">Allium cernuum</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Late season companions</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Ohio Native Asters</span> <span class="companion-latin">Symphyotrichum spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">The Seeds Take a Full Year to Ripen After the Flower</h3>
+        <p>Witch hazel has an unusual reproductive timeline. The flowers open in October or November. Pollination occurs — by moths, flies, or other late-active insects. But the seeds do not ripen until the following fall, a full twelve months later. This means that at any given moment in late autumn, a witch hazel branch may simultaneously carry open flowers from the current year and mature seed capsules from the previous year's flowers.</p>
+        <p>The ripe capsule then splits explosively under tension — the woody walls contract as they dry, and the seeds are ejected with enough force to travel up to ten metres. <strong>The pop of a witch hazel capsule releasing its seeds is audible</strong>, and standing near a plant on a dry fall day when multiple capsules are splitting simultaneously is a genuinely memorable encounter with plant mechanics.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Name Has Nothing to Do with Witches</h3>
+        <p>The "witch" in witch hazel does not refer to witchcraft. It derives from the Old English word <em>wych</em>, meaning pliant or bendable — a reference to the flexible young branches. The same root appears in the wych elm (<em>Ulmus glabra</em>) of Britain. The "hazel" refers to the superficial resemblance of the leaves to those of the common hazel (<em>Corylus avellana</em>).</p>
+        <p>The association with divining rods — the traditional practice of using a forked stick to locate underground water — may have reinforced the name's witch-adjacent resonance over time. Witch hazel branches were reportedly among the preferred woods for dowsing rods in early American folk practice. Whether the name came first or the practice, the connection stuck, and a plant that blooms quietly in November when no one is looking acquired a rather more dramatic reputation than its modest yellow flowers might suggest.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The Extract Is the Oldest Commercial Native Plant Product in America</h3>
+        <p>Witch hazel extract — a distillate made from the bark and leaves — has been in continuous commercial production in the United States since the 1840s, making it one of the oldest commercial native plant products on the continent. The extract was developed based on the medicinal use of witch hazel by several Indigenous peoples, who used preparations from the plant as a topical treatment for skin irritation, swelling, and inflammation.</p>
+        <p>The pharmacological properties of witch hazel extract — primarily its tannin content, which has mild astringent and anti-inflammatory effects — have been confirmed by modern research to be genuinely active, not merely traditional. <strong>The plant that blooms alone in November has been in continuous human use for far longer than most of the garden plants around it.</strong></p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">It Marks the End of the Native Plant Year</h3>
+        <p>Every guide, every garden, every ecological planting has an implicit narrative arc — a sequence that begins in early spring and moves through the seasons. Red buckeye in April, golden alexanders in May, mountain mint in July, asters in October. Each plant marks a moment in that arc.</p>
+        <p>Witch hazel is the final chapter. When its flowers open in late October, the growing season is not winding down — it is already over for every other native plant in this guide. The witch hazel blooms into silence, into bare branches and cold mornings and the particular quality of November light. It asks nothing of the gardener at that point except to notice it. <strong>In a garden designed around the full ecological year, witch hazel is not an afterthought — it is the closing sentence.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Hamamelis virginiana · Native Shrub · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>

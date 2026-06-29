@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Oak · Quercus alba · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/white-oak.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+  <a href="../index.html">← Home</a>
+  <a href="index.html">Plant Directory</a>
+</nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- White oak illustration:
+         The deeply lobed rounded leaf — no pointed tips,
+         the clearest visual distinction from red oaks.
+         Seven to nine rounded lobes separated by deep
+         sinuses. The pale grey plated bark texture on
+         the branch. Small acorns with shallow scaly cups.
+         A branch section showing leaves at different angles,
+         the characteristic leaf shape clearly readable. -->
+    <svg class="hero-illustration" viewBox="0 0 280 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMax meet">
+
+      <!-- Main woody branch — pale grey, thick, angled -->
+      <path d="M60 480 C65 440 72 400 82 362 C92 325 106 295 122 268 C138 242 155 222 168 198" stroke="#b8aa90" stroke-width="8" stroke-linecap="round" fill="none"/>
+      <!-- Bark texture lines -->
+      <g stroke="#a89880" stroke-width="0.8" opacity="0.4" stroke-linecap="round">
+        <path d="M65 458 C68 450 70 442 72 434" fill="none"/>
+        <path d="M74 428 C77 420 79 412 80 404" fill="none"/>
+        <path d="M83 396 C86 388 88 380 89 372" fill="none"/>
+        <path d="M94 358 C97 350 100 342 101 334" fill="none"/>
+      </g>
+
+      <!-- Secondary branch -->
+      <path d="M122 268 C138 258 156 244 172 228" stroke="#b8aa90" stroke-width="5.5" stroke-linecap="round" fill="none"/>
+      <!-- Short twig for acorn -->
+      <path d="M168 198 C175 186 182 175 186 162" stroke="#a89880" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+      <!-- ── WHITE OAK LEAVES ──
+           The deeply lobed rounded-tip leaf is the
+           key visual identifier. Each lobe is rounded,
+           not pointed. Deep sinuses between lobes.
+           7-9 lobes per leaf. -->
+
+      <!-- LEAF 1 — large, primary, facing viewer -->
+      <!-- Petiole -->
+      <line x1="168" y1="198" x2="168" y2="178" stroke="#5a6830" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Leaf outline — deeply lobed, rounded tips -->
+      <path d="
+        M168 178
+        C165 174 160 170 156 165 C153 162 152 158 154 154 C156 150 160 149 163 151
+        C161 148 159 143 161 138 C163 133 168 132 171 135
+        C170 131 170 126 173 122 C176 118 181 118 183 122
+        C185 118 187 114 191 113 C195 112 198 115 198 119
+        C200 115 203 112 207 113 C211 114 212 119 210 123
+        C213 120 217 119 220 122 C223 125 222 130 219 133
+        C222 130 226 130 228 134 C230 138 228 143 224 145
+        C227 143 230 145 231 150 C232 155 228 159 224 158
+        C226 163 225 168 221 170 C217 172 213 170 212 166
+        C211 170 208 174 204 175 C200 176 197 173 196 169
+        C194 173 190 176 186 176 C182 176 180 173 180 169
+        C178 172 174 175 170 175 C169 175 168 174 168 173
+        Z
+      " fill="#4a6830" opacity="0.85"/>
+      <!-- Midrib -->
+      <path d="M168 178 C182 165 196 152 212 140 C220 134 226 130" stroke="#3a5020" stroke-width="0.8" fill="none" opacity="0.5"/>
+      <!-- Lateral veins — one per lobe pair -->
+      <g stroke="#3a5020" stroke-width="0.5" opacity="0.4" fill="none">
+        <path d="M173 170 C166 162 158 157 154 152"/>
+        <path d="M178 163 C170 153 163 145 161 139"/>
+        <path d="M184 157 C178 146 175 136 174 128"/>
+        <path d="M191 153 C188 142 188 132 190 123"/>
+        <path d="M199 153 C198 143 200 132 202 123"/>
+        <path d="M206 156 C208 146 212 137 216 129"/>
+        <path d="M212 161 C217 151 223 143 227 136"/>
+        <path d="M216 167 C222 159 228 153 230 148"/>
+      </g>
+
+      <!-- LEAF 2 — slightly smaller, angled away, partly behind leaf 1 -->
+      <line x1="148" y1="242" x2="140" y2="220" stroke="#5a6830" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="
+        M140 220
+        C137 216 132 213 128 208 C126 204 126 200 129 198
+        C128 194 127 189 130 185 C133 181 138 182 140 186
+        C140 182 141 177 144 174 C147 171 152 172 153 176
+        C155 172 159 170 163 172 C167 174 167 179 164 182
+        C167 179 171 179 173 183 C175 187 173 192 169 193
+        C172 192 175 194 175 199 C175 204 171 207 167 205
+        C168 209 167 213 163 215 C159 217 156 214 155 210
+        C154 214 151 217 147 217 C144 217 141 215 141 212
+        Z
+      " fill="#527838" opacity="0.78"/>
+
+      <!-- LEAF 3 — lower on branch, deeper colour, slightly more angled -->
+      <line x1="122" y1="268" x2="108" y2="250" stroke="#5a6830" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="
+        M108 250
+        C105 246 100 242 97 237 C95 233 96 229 99 228
+        C98 224 98 219 101 215 C104 212 109 213 111 217
+        C111 213 113 208 117 206 C121 204 125 207 125 211
+        C127 207 131 205 135 207 C139 209 139 214 136 217
+        C139 215 143 216 144 220 C145 224 143 229 139 229
+        C142 229 145 232 144 237 C143 242 139 244 135 242
+        C136 246 134 250 130 251 C126 252 123 249 122 245
+        C121 249 118 252 114 252 C111 252 108 250 108 250
+        Z
+      " fill="#4a6830" opacity="0.72"/>
+
+      <!-- LEAF 4 — on secondary branch, showing fall russet colour -->
+      <line x1="172" y1="228" x2="185" y2="210" stroke="#5a6830" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="
+        M185 210
+        C183 206 178 202 175 198 C173 195 174 191 177 190
+        C176 186 176 181 179 178 C182 175 187 176 188 180
+        C189 176 191 172 195 171 C199 170 202 173 202 177
+        C204 174 208 172 211 174 C214 176 214 181 211 184
+        C214 182 218 182 219 186 C220 190 218 195 214 195
+        C217 195 219 198 219 202 C219 206 215 209 212 207
+        C212 211 210 214 207 215 C203 216 200 213 200 209
+        C199 213 196 215 193 215 C190 215 188 213 188 210
+        Z
+      " fill="#8a5828" opacity="0.68"/>
+
+      <!-- ACORNS — small, oval, with shallow scaly cup -->
+      <!-- White oak acorns are smaller than red oak, cup covers ~¼ of nut -->
+      <!-- Acorn 1 — ripe, brown -->
+      <line x1="186" y1="162" x2="186" y2="152" stroke="#6a5030" stroke-width="1.4" stroke-linecap="round"/>
+      <!-- Cup -->
+      <path d="M178 155 C180 148 192 148 194 155 Z" fill="#7a6040" opacity="0.85"/>
+      <path d="M178 155 C180 150 192 150 194 155" stroke="#6a5030" stroke-width="0.6" fill="none" opacity="0.6"/>
+      <!-- Cup scales texture -->
+      <g stroke="#6a5030" stroke-width="0.5" opacity="0.5">
+        <line x1="181" y1="154" x2="181" y2="149"/><line x1="184" y1="154" x2="184" y2="148"/>
+        <line x1="187" y1="154" x2="187" y2="148"/><line x1="190" y1="154" x2="190" y2="149"/>
+      </g>
+      <!-- Nut body -->
+      <ellipse cx="186" cy="165" rx="8" ry="10" fill="#9a7040" opacity="0.88"/>
+      <ellipse cx="186" cy="163" rx="6.5" ry="7" fill="#a87848" opacity="0.72"/>
+
+      <!-- Acorn 2 — slightly smaller, still on pedicel -->
+      <line x1="196" y1="168" x2="198" y2="157" stroke="#6a5030" stroke-width="1.2" stroke-linecap="round"/>
+      <path d="M191 160 C193 154 205 154 206 160 Z" fill="#7a6040" opacity="0.78"/>
+      <ellipse cx="198" cy="170" rx="7" ry="9" fill="#9a7040" opacity="0.80"/>
+
+      <!-- CATKINS — pendulous male flower clusters, spring -->
+      <!-- Long, drooping, yellow-green, from branch tip -->
+      <g opacity="0.55">
+        <path d="M168 198 C164 210 158 222 152 234 C148 242 144 248 140 252" stroke="#a8a060" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <path d="M168 198 C166 212 162 226 158 238 C155 246 152 252 149 256" stroke="#9a9850" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <!-- Catkin texture — tiny scale marks -->
+        <g stroke="#989050" stroke-width="0.5" opacity="0.7">
+          <line x1="160" y1="212" x2="156" y2="214"/><line x1="158" y1="218" x2="154" y2="220"/>
+          <line x1="156" y1="224" x2="152" y2="226"/><line x1="154" y1="230" x2="150" y2="232"/>
+          <line x1="152" y1="236" x2="148" y2="238"/><line x1="150" y1="242" x2="146" y2="244"/>
+        </g>
+      </g>
+
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Tree</div>
+      <h1>White<em>Oak</em></h1>
+      <p class="hero-latin">Quercus alba</p>
+      <p class="hero-tagline">A long-lived native tree of Ohio's forests and savannas — a keystone species that may support more forms of wildlife than any other plant in the eastern landscape.</p>
+      <div class="longevity-badge">✦ Lives 500+ Years · Supports 500+ Caterpillar Species</div>
+    </div>
+  </header>
+
+  <!-- QUICK FACTS BAND -->
+  <div class="facts-band">
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Large native tree</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">60–100 feet at maturity</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Spread</span>
+      <span class="fact-value">Often equal to height</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun to part shade</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Dry to medium; adaptable</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Longevity</span>
+      <span class="fact-value">500+ years possible</span>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="section">
+    <p class="eyebrow">About This Tree</p>
+    <h2>A Tree on a Different Scale</h2>
+    <p>A white oak planted today will not reach its full ecological potential in the lifetime of the person who plants it. That fact is not a discouragement — it is an invitation to think about a garden and a landscape differently. White oak is not a plant you choose for next summer. It is a plant you choose for the next century, and the one after that.</p>
+    <p>In the landscape, a mature white oak is a <strong>structural fact</strong> — a wide, rounded canopy sometimes as broad as it is tall, pale grey bark broken into rectangular plates, deeply lobed leaves with the rounded tips that distinguish this genus from the red oak group. In fall the foliage turns wine-red to russet-brown, and some leaves persist through winter as papery tawny remnants, a habit called <em>marcescence</em> that gives the tree a distinctive winter presence.</p>
+    <p>In the ecology, a white oak is something else entirely — one of the most important plants in the eastern North American landscape, full stop.</p>
+
+    <div class="longevity-callout">
+      <p class="longevity-callout-label">Ecological weight</p>
+      <p>Research by entomologist Doug Tallamy and colleagues has documented that native oaks support <strong>over 500 species of caterpillars</strong> in the eastern United States — more than any other native tree genus. Those caterpillars are not incidental; they are the primary food source for nesting birds during the breeding season. A single pair of chickadees raising a clutch of young may collect 6,000 to 9,000 caterpillars in the weeks their nestlings are in the nest. Without oaks, that food chain collapses.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Large yard canopy tree</span>
+      <span class="pill">Savanna plantings</span>
+      <span class="pill">Woodland restoration</span>
+      <span class="pill">Wildlife gardens</span>
+      <span class="pill">Long-term landscape anchor</span>
+      <span class="pill">Succession plantings</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>White Oak</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/white-oak-plate.png"
+          alt="Botanical field-plate illustration of White Oak"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/white-oak-plate.png</span>
+        </div>
+      </div>
+      <figcaption>White Oak · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+
+  <!-- CATERPILLAR / ECOLOGY -->
+  <section class="section">
+    <p class="eyebrow">Ecology</p>
+    <h2>The Caterpillar Connection</h2>
+
+    <div class="stat-block">
+      <div class="stat-number">500+<span>caterpillar<br>species</span></div>
+      <div class="stat-text">Native oaks support more caterpillar species than any other native tree genus in the eastern United States — research documented by Doug Tallamy and colleagues at the University of Delaware. The next closest genus supports fewer than half as many.</div>
+    </div>
+
+    <p>This number matters because caterpillars are the critical link between plants and birds. Most songbirds cannot raise young on seeds and berries alone — their nestlings require the high-protein, easily digestible nutrition that caterpillars provide. A landscape without caterpillar-supporting plants is a landscape that cannot sustain breeding bird populations, regardless of how many seed feeders are present.</p>
+    <p>White oak supports this food web at every scale. The caterpillars feed the birds. The acorns feed deer, wild turkeys, wood ducks, blue jays, and dozens of other species. The bark and cavities shelter cavity-nesting birds, bats, and insects. The root system supports mycorrhizal fungi that connect to surrounding plants. <strong>A single mature white oak is not a tree — it is a habitat.</strong></p>
+    <p>The acorns of white oak are lower in tannin than those of red oaks and can be eaten without processing — a distinction that made them a food source for many Indigenous peoples across the species' range, and that makes them more immediately accessible to wildlife than the more astringent red oak mast.</p>
+  </section>
+
+  <!-- SEASONAL INTEREST -->
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row foliage">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Leaves emerge with a distinctive reddish-bronze cast, gradually greening; pendulous yellow-green catkins appear before or with the leaves, releasing pollen; the most ecologically active period for caterpillar communities begins</div>
+      </div>
+      <div class="tl-row foliage">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Full dark-green deeply lobed canopy; acorns developing through summer; consistent caterpillar activity throughout; dense shade beneath the wide-spreading crown</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Foliage turns wine-red, russet, and deep burgundy — among the richer fall colours of Ohio native trees; acorns ripen and fall, immediately sought by blue jays, deer, turkeys, and squirrels</div>
+      </div>
+      <div class="tl-row acorn">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Some marcescent leaves persist through winter as tawny papery remnants; the broad structure of the canopy is visible; bark texture and wide-spreading branching architecture are strongest in the dormant season</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GROWING CONDITIONS -->
+  <section class="section">
+    <p class="eyebrow">Care & Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>White oak is adaptable to a range of soil conditions but grows best in deep, well-drained soils. It is slow to establish from transplant — largely because it puts a great deal of early energy into root development rather than above-ground growth. Patience in the early years is rewarded with a tree that becomes progressively more self-sufficient and resilient over time.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; best canopy development in full sun</td></tr>
+      <tr><td>Soil</td><td>Adaptable — loam, sandy loam, clay; prefers deep, well-drained soils; avoid poorly drained sites</td></tr>
+      <tr><td>Moisture</td><td>Dry to medium; highly drought-tolerant once established; dislikes standing water</td></tr>
+      <tr><td>Height</td><td>60–100 feet at maturity; grows slowly in early years, more rapidly once established</td></tr>
+      <tr><td>Spread</td><td>50–80 feet; allow full space for canopy development — do not plant within 20 feet of structures</td></tr>
+      <tr><td>Establishment</td><td>Slow; plant young and give it 5–10 years to establish before expecting vigorous growth</td></tr>
+      <tr><td>Transplanting</td><td>Best planted small — trees under 2 inches trunk diameter establish far more successfully than larger specimens</td></tr>
+      <tr><td>Longevity</td><td>Potentially 500+ years; some Ohio white oaks predate European settlement</td></tr>
+    </table>
+  </section>
+
+  <!-- COMPANIONS -->
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>White oak functions as a canopy anchor — the tallest structural element around which an entire plant community is organised. Planting partners should be chosen to work in the light conditions the oak creates, which shift over decades from full sun to part shade as the canopy develops.</p>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Savanna & open woodland understory</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland edge shrubs</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Spicebush</span> <span class="companion-latin">Lindera benzoin</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Hydrangea</span> <span class="companion-latin">Hydrangea arborescens</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Witch Hazel</span> <span class="companion-latin">Hamamelis virginiana</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Red Buckeye</span> <span class="companion-latin">Aesculus pavia</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Shade-adapted groundcover</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Pennsylvania Sedge</span> <span class="companion-latin">Carex pensylvanica</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FASCINATING FACTS -->
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Tree</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Some Ohio White Oaks Were Standing Before European Contact</h3>
+        <p>White oak is among the longest-lived trees in eastern North America, with documented lifespans exceeding 500 years in favourable conditions. A white oak with a trunk diameter of three feet is typically 200 to 300 years old. Trees of that age were saplings when Ohio was still entirely forested, before the land clearing that began in the late 18th century.</p>
+        <p>Some white oaks in Ohio's older forest remnants and on protected properties predate European settlement of the region. They are living witnesses to a landscape that no longer exists at any meaningful scale — a continuous forest and savanna system that once covered the state from the Lake Erie shoreline to the Ohio River. <strong>Planting a white oak today is an act that will have ecological meaning 200 years from now</strong>, long after every other plant in the current garden has lived and died multiple times over.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">The Rounded Lobe Is the Field Mark</h3>
+        <p>White oak and red oak are Ohio's two dominant native oak groups, and the single most reliable way to distinguish them is the shape of the leaf lobe tip. Red oaks — including pin oak, scarlet oak, and northern red oak — have lobes that end in pointed, bristle-tipped points. White oaks have lobes with <strong>rounded tips, no bristles</strong>.</p>
+        <p>This difference is not trivial. The two groups have different ecological relationships, different acorn tannin levels, different timing of acorn development, and different wildlife associations. White oak acorns ripen in a single season and are lower in tannins — more immediately palatable to wildlife and historically more important as a food source for people. Red oak acorns take two seasons to mature and are more astringent. The rounded lobe is a single visual key that unlocks a significant difference in ecological function.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Blue Jays Are the Primary Reason White Oaks Spread</h3>
+        <p>White oak regenerates primarily by acorn dispersal — and the most important disperser of white oak acorns is the blue jay. Blue jays cache acorns in large numbers each fall, carrying multiple acorns in their expandable throat pouches and burying them singly in the soil at distances of up to a mile from the parent tree. Many of these cached acorns are never retrieved, and some of those germinate.</p>
+        <p>The geographic range of white oak — and the speed with which oaks recolonised northern landscapes after the last glaciation — is thought to have been significantly shaped by blue jay behaviour. The trees and the birds have been in an ecological partnership long enough to have influenced each other's distributions across the continent. <strong>A blue jay burying an acorn in a lawn is continuing a relationship older than any current landscape.</strong></p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Planting One Is an Ecological Decision, Not a Garden Decision</h3>
+        <p>Most plants in this guide are chosen on a timescale of seasons or years — a mountain mint planted this spring will be contributing to pollinator habitat by August. White oak operates on a different timescale entirely. The tree you plant today will not be ecologically mature — supporting its full complement of caterpillar species, producing meaningful acorn crops, forming trunk cavities for nesting birds — for decades, perhaps longer.</p>
+        <p>This is why planting white oak is an ecological decision rather than a garden decision. The beneficiary is not primarily the person who plants it. It is the birds and insects and people who will inhabit the landscape fifty years from now, who will find a tree already there, already deep-rooted, already sheltering and feeding a community that exists nowhere else in the garden. The best time to plant a white oak was a hundred years ago. <strong>The second best time is now.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Quercus alba · Large Native Tree · Native to Ohio
+    </p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+      { threshold: 0.06 }
+    );
+    sections.forEach(s => observer.observe(s));
+  </script>
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>
