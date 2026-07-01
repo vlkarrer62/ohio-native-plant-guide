@@ -574,3 +574,8 @@ footer strong { color: var(--green); font-weight: 500; }
 @media (max-width: 380px) {
   .facts-band { grid-template-columns: 1fr; }
 }
+/* TEMP FIX — keeps the page visible even if JS fails */
+.section {
+  opacity: 1 !important;
+  transform: none !important;
+}
