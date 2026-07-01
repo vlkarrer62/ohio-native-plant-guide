@@ -151,6 +151,16 @@ a.companion-link:focus-visible {
   background: var(--switch-accent, var(--heading, currentColor));
   opacity: 0.85;
 }
-.plate-view { display: none; }
-.plate-view.is-on { display: block; }
-.plate-garden-img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.plate-gallery { position: relative; }
+.plate-garden-img { width: 100%; height: auto; border-radius: 6px; display: none; }
+.plate-garden-img.is-on { display: block; }
+.plate-dots { display: flex; justify-content: center; gap: 7px; margin-top: 0.6rem; }
+.plate-dot {
+  width: 8px; height: 8px; padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--text-dim, #8a7a60);
+  background: transparent;
+  opacity: 0.55; cursor: pointer;
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+.plate-dot.is-on { background: var(--heading, #1e1608); border-color: var(--heading, #1e1608); opacity: 1; }
