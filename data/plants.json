@@ -1881,6 +1881,10 @@
   "relatedWildlifeSlugs": [],
   "relatedPlantSlugs": ["wingstem", "boneset", "culvers-root", "goldenrod", "aster"],
   "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie"],
-  "aliases": ["Silphium perfoliatum", "Cup Plant", "Cupplant", "Carpenter's Weed", "Indian Cup", "Squareweed"]
+  "aliases": ["Silphium perfoliatum", "Cup Plant", "Cupplant", "Carpenter's Weed", "Indian Cup", "Squareweed"],
+  "garden": [
+    { "src": "../images/cup-plant-garden.jpg",   "caption": "Rain caught where the leaves clasp the stem · Bay Village, Ohio" },
+    { "src": "../images/cup-plant-garden-2.jpg", "caption": "Flower buds forming, still closed · Bay Village, Ohio" }
+  ]
 }
 ]
