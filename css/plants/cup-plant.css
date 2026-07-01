@@ -129,8 +129,12 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 3.6rem 1.6rem 2.4rem;
-  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 3rem 1.8rem 2.6rem;
+  text-align: left;
   background:
     radial-gradient(120% 80% at 50% 6%, var(--bg-tint) 0%, rgba(232, 236, 221, 0) 62%),
     linear-gradient(168deg, #f6f3e9 0%, var(--bg) 60%, var(--bg-warm) 100%);
@@ -140,9 +144,9 @@ body {
 .hero-light {
   position: absolute;
   top: -10%;
-  left: 50%;
+  left: 70%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 74%;
   height: 70%;
   background: radial-gradient(circle, rgba(120, 150, 80, 0.16) 0%, rgba(120, 150, 80, 0) 68%);
   filter: blur(8px);
@@ -151,20 +155,24 @@ body {
 .hero-illustration {
   position: relative;
   z-index: 1;
+  flex: 0 0 auto;
+  align-self: center;
   display: block;
-  margin: 0 auto 1.1rem;
+  margin: 0;
+  width: 38%;
   height: auto;
-  width: auto;
-  max-height: 300px;
-  max-width: 230px;
+  max-width: 210px;
+  max-height: 340px;
   opacity: 0.96;
   pointer-events: none;
 }
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 34rem;
-  margin: 0 auto;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
 }
 .badge {
   display: inline-block;
@@ -181,11 +189,11 @@ body {
 .hero h1 {
   font-family: var(--display);
   font-weight: 600;
-  font-size: clamp(2.6rem, 7.2vw, 4.1rem);
+  font-size: clamp(2.05rem, 6.5vw, 3.9rem);
   line-height: 1.04;
   letter-spacing: -0.015em;
   color: var(--heading);
-  margin: 1.1rem 0 0.4rem;
+  margin: 0.85rem 0 0.4rem;
 }
 .hero h1 em {
   display: block;
@@ -197,10 +205,10 @@ body {
   margin-top: 0.55rem;
 }
 .hero-tagline {
-  max-width: 30rem;
+  max-width: 32rem;
   font-size: 1.02rem;
   color: var(--text-dim);
-  margin: 0 auto 1.4rem;
+  margin: 0 0 1.4rem;
 }
 .flagship-badge {
   display: inline-block;
@@ -544,8 +552,8 @@ footer strong { color: var(--green); font-weight: 500; }
   .species-card.featured { grid-column: auto; }
 }
 @media (max-width: 600px) {
-  .hero { padding: 3rem 1.3rem 2rem; }
-  .hero-illustration { max-height: 240px; max-width: 195px; }
+  .hero { padding: 2.4rem 1.2rem 2rem; gap: 1rem; }
+  .hero-illustration { width: 36%; max-height: 260px; max-width: 150px; }
   .hero-content { max-width: none; }
   .facts-band { grid-template-columns: repeat(2, 1fr); }
   .story-card { grid-template-columns: 1fr; gap: 0.4rem; }
