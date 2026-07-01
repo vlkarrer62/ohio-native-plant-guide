@@ -68,39 +68,10 @@ async function autoLinkCompanionPlants() {
         ...(plant.aliases || [])
       ].filter(Boolean);
 
-      names.forEach(name => {
-        const key = normalize(name);
-        if (key && !plantMap.has(key)) plantMap.set(key, plant.url);
-      });
-    });
-
-    companionNames.forEach(el => {
-      // Leave existing manual links alone.
-      if (el.querySelector('a')) return;
-
-      const name = el.textContent.trim();
-      const matchUrl = plantMap.get(normalize(name));
-      if (!matchUrl) return;
-
-      const link = document.createElement('a');
-      link.href = matchUrl;
-      link.className = 'companion-link';
-      link.textContent = name;
-
-      el.textContent = '';
-      el.appendChild(link);
-    });
-  } catch (err) {
-    console.warn('Companion auto-linking failed:', err);
-  }
-}
-
-autoLinkCompanionPlants();
-
-/* ---- Botanical plate ⇄ garden photo switcher (final) ----
-   Adds an "In the Garden" view to a plant's botanical plate, but ONLY
-   when that plant has a `garden` photo in /data/plants.json.
-   Plants without one are left exactly as they are today. */
+ /* ---- Botanical plate ⇄ garden photo switcher (gallery-capable) ----
+   `garden` in plants.json may be ONE object {src, caption} or an ARRAY of them.
+   One photo behaves exactly as before; two or more get dots + swipe.
+   Plants with no `garden` are left untouched. */
 (function plateGardenSwitcher() {
   const figure = document.querySelector('figure.botanical-plate');
   if (!figure) return;
@@ -121,30 +92,85 @@ autoLinkCompanionPlants();
     const plant = plants.find(p =>
       (p.slug && p.slug.toLowerCase() === slug) ||
       (p.url && p.url.toLowerCase().replace(/\.html?$/, '') === slug));
-    if (!plant || !plant.garden || !plant.garden.src) return;  // no photo → untouched
+    if (!plant || !plant.garden) return;
 
+    // accept a single object OR an array — keeps existing single-photo entries working
+    const photos = (Array.isArray(plant.garden) ? plant.garden : [plant.garden])
+      .filter(ph => ph && ph.src);
+    if (!photos.length) return;
+
+    const fallbackCap = (plant.commonName || slug) + ' in the garden';
     const cap = figure.querySelector('figcaption');
-    const plateHTML = cap ? cap.innerHTML : '';                 // keep the <em> italics
-    const gardenCaption = plant.garden.caption || ((plant.commonName || slug) + ' in the garden');
+    const plateHTML = cap ? cap.innerHTML : '';          // preserve the <em> italics
 
+    // --- plate panel: move the existing figure content (except figcaption) in ---
     const platePanel = document.createElement('div');
     platePanel.className = 'plate-view is-on';
     platePanel.id = 'pv-plate';
     platePanel.setAttribute('role', 'tabpanel');
     Array.from(figure.childNodes).filter(n => n !== cap).forEach(n => platePanel.appendChild(n));
 
+    // --- garden panel: a gallery (1..n photos) ---
     const gardenPanel = document.createElement('div');
     gardenPanel.className = 'plate-view';
     gardenPanel.id = 'pv-garden';
     gardenPanel.setAttribute('role', 'tabpanel');
     gardenPanel.hidden = true;
-    const img = document.createElement('img');
-    img.className = 'plate-garden-img';
-    img.alt = (plant.commonName || slug) + ' growing in the garden';
-    img.loading = 'lazy';
-    img.dataset.src = plant.garden.src;
-    gardenPanel.appendChild(img);
 
+    const gallery = document.createElement('div');
+    gallery.className = 'plate-gallery';
+    const imgs = photos.map((ph, idx) => {
+      const im = document.createElement('img');
+      im.className = 'plate-garden-img' + (idx === 0 ? ' is-on' : '');
+      im.alt = ph.alt || fallbackCap;
+      im.loading = 'lazy';
+      im.dataset.src = ph.src;
+      gallery.appendChild(im);
+      return im;
+    });
+    gardenPanel.appendChild(gallery);
+
+    let dots = [];
+    let cur = 0;
+    function showPhoto(i) {
+      cur = (i + photos.length) % photos.length;
+      imgs.forEach((im, idx) => {
+        const on = idx === cur;
+        im.classList.toggle('is-on', on);
+        if (on && !im.src) im.src = im.dataset.src;   // lazy-load on first view
+      });
+      dots.forEach((d, idx) => d.classList.toggle('is-on', idx === cur));
+      if (cap) cap.textContent = photos[cur].caption || fallbackCap;
+    }
+
+    if (photos.length > 1) {
+      const dotWrap = document.createElement('div');
+      dotWrap.className = 'plate-dots';
+      dotWrap.setAttribute('role', 'tablist');
+      dots = photos.map((_, idx) => {
+        const b = document.createElement('button');
+        b.className = 'plate-dot' + (idx === 0 ? ' is-on' : '');
+        b.setAttribute('aria-label', 'Photo ' + (idx + 1) + ' of ' + photos.length);
+        b.addEventListener('click', () => showPhoto(idx));
+        b.addEventListener('keydown', e => {
+          if (e.key === 'ArrowRight') { showPhoto(cur + 1); dots[cur].focus(); }
+          if (e.key === 'ArrowLeft')  { showPhoto(cur - 1); dots[cur].focus(); }
+        });
+        dotWrap.appendChild(b);
+        return b;
+      });
+      gardenPanel.appendChild(dotWrap);
+
+      let tx = 0;
+      gallery.addEventListener('touchstart', e => { tx = e.changedTouches[0].clientX; }, { passive: true });
+      gallery.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - tx;
+        if (dx < -40) showPhoto(cur + 1);
+        else if (dx > 40) showPhoto(cur - 1);
+      }, { passive: true });
+    }
+
+    // --- the outer Botanical Plate / In the Garden control ---
     const sw = document.createElement('div');
     sw.className = 'plate-switch';
     sw.setAttribute('role', 'tablist');
@@ -170,12 +196,11 @@ autoLinkCompanionPlants();
         v.classList.toggle('is-on', on); v.hidden = !on;
       });
       place(tab);
-      if (cap) {
-        if (tab.getAttribute('aria-controls') === 'pv-garden') cap.textContent = gardenCaption;
-        else cap.innerHTML = plateHTML;
+      if (tab.getAttribute('aria-controls') === 'pv-garden') {
+        showPhoto(cur);                       // sets caption + lazy-loads current photo
+      } else if (cap) {
+        cap.innerHTML = plateHTML;            // restore italic scientific name
       }
-      const gi = gardenPanel.querySelector('img');
-      if (tab.getAttribute('aria-controls') === 'pv-garden' && gi && !gi.src) gi.src = gi.dataset.src;
     }
     tabs.forEach((t, i) => {
       t.addEventListener('click', () => select(t));
