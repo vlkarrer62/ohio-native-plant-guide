@@ -1,1890 +1,338 @@
-[
-  {
-    "commonName": "Golden Alexanders",
-    "scientificName": "Zizia aurea",
-    "type": "Spring Wildflower",
-    "category": "wildflowers",
-    "bloom": "Blooms late spring",
-    "season": "Spring",
-    "sun": "Full sun to part shade",
-    "moisture": "Moist to medium",
-    "height": "3–4 ft",
-    "description": "Ohio's essential early-season pollinator plant — golden umbels that feed specialist bees and host black swallowtail butterflies before midsummer species emerge.",
-    "url": "golden-alexanders.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#edeadc",
-    "accentTo": "#e6e0d0",
-    "svgIcon": "alexanders",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant"
-    ],
-    "gardenRole": [
-      "Edge Plant",
-      "Rain Garden Plant"
-    ],
-    "slug": "golden-alexanders",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "penstemon",
-      "nodding-onion"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "rain-garden",
-      "woodland-edge"
-    ],
-    "aliases": [
-      "Zizia aurea"
-    ]
-  },
-  {
-    "commonName": "Rattlesnake Master",
-    "scientificName": "Eryngium yuccifolium",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms mid–late summer",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "3–5 ft",
-    "description": "A bold architectural prairie plant with spiky globe flower heads — one of the most distinctive natives in any meadow planting, with extraordinary value for beneficial insects.",
-    "url": "rattlesnake-master.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#e4e8ee",
-    "accentTo": "#dce2ec",
-    "svgIcon": "rattlesnake",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Matrix Plant"
-    ],
-    "slug": "rattlesnake-master",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "switchgrass",
-      "mountain-mint",
-      "liatris"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Eryngium yuccifolium"
-    ]
-  },
-  {
-    "commonName": "Switchgrass",
-    "scientificName": "Panicum virgatum",
-    "type": "Warm-Season Grass",
-    "category": "grasses",
-    "bloom": "Seeds late summer–winter",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part sun",
-    "moisture": "Dry to medium",
-    "height": "3–6 ft",
-    "description": "A native prairie grass with deep roots, airy seed heads, and exceptional soil-building value — one of Ohio's ecological workhorses, beautiful through all four seasons.",
-    "url": "switchgrass.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#ede8dc",
-    "accentTo": "#e4dfd2",
-    "svgIcon": "switchgrass",
-    "plantType": "Grass",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Seed Source",
-      "Cover/Shelter",
-      "Host Plant"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Structural Plant"
-    ],
-    "slug": "switchgrass",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "rattlesnake-master",
-      "little-bluestem",
-      "prairie-dropseed"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "rain-garden",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Panicum virgatum"
-    ]
-  },
-  {
-    "commonName": "Purple Lovegrass",
-    "scientificName": "Eragrostis spectabilis",
-    "type": "Warm-Season Grass",
-    "category": "grasses",
-    "bloom": "Blooms late summer–fall",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "1–2 ft",
-    "description": "A low, airy native grass known for its purple-pink cloudlike seed heads and soft meadow texture — the atmospheric connector of the late-summer prairie.",
-    "url": "purple-lovegrass.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#ede0e8",
-    "accentTo": "#e4d4de",
-    "svgIcon": "lovegrass",
-    "plantType": "Grass",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Filler"
-    ],
-    "slug": "purple-lovegrass",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "little-bluestem",
-      "prairie-dropseed",
-      "switchgrass"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Eragrostis spectabilis"
-    ]
-  },
-  {
-    "commonName": "Mountain Mint",
-    "scientificName": "Pycnanthemum spp.",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms mid–late summer",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium; adaptable",
-    "height": "2–4 ft",
-    "description": "Ohio's most ecologically active summer perennial — a keystone biodiversity hub that hosts more insect species simultaneously than almost any other native plant.",
-    "url": "mountain-mint.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#e4ece8",
-    "accentTo": "#dce8e2",
-    "svgIcon": "mint",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Structural Plant"
-    ],
-    "slug": "mountain-mint",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "wild-bergamot",
-      "rattlesnake-master",
-      "liatris"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "rain-garden"
-    ],
-    "aliases": [
-      "Pycnanthemum",
-      "Pycnanthemum spp."
-    ]
-  },
-  {
-    "commonName": "Ohio Native Asters",
-    "aliases": [
-      "New England Aster",
-      "New England Asters",
-      "Asters",
-      "Aster",
-      "White Wood Aster",
-      "Native Asters"
-    ],
-    "scientificName": "Symphyotrichum spp.",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms late summer through frost",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium; varies by species",
-    "height": "1–6 ft",
-    "description": "The grand finale of the Ohio prairie year — violet-blue flowers that arrive just as most everything else finishes, feeding migrating monarchs, specialist bees, and late pollinators before winter.",
-    "url": "aster.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#eae6f4",
-    "accentTo": "#dfd8f0",
-    "svgIcon": "aster",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Edge Plant"
-    ],
-    "slug": "aster",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "little-bluestem",
-      "joe-pye-weed",
-      "liatris"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "woodland-edge"
-    ]
-  },
-  {
-    "commonName": "Prairie Dropseed",
-    "scientificName": "Sporobolus heterolepis",
-    "type": "Warm-Season Grass",
-    "category": "grasses",
-    "bloom": "Seeds late summer to fall",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "18–24 inches",
-    "description": "A long-lived warm-season grass with a graceful fountain form, distinctive buttery fragrance in late summer, and amber fall colour. Slow to establish but among the most enduring native grasses.",
-    "url": "prairie-dropseed.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#ede8d8",
-    "accentTo": "#e6dfc8",
-    "svgIcon": "dropseed",
-    "plantType": "Grass",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Groundcover"
-    ],
-    "slug": "prairie-dropseed",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "little-bluestem",
-      "switchgrass",
-      "purple-lovegrass"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Sporobolus heterolepis"
-    ]
-  },
-  {
-    "commonName": "Little Bluestem",
-    "scientificName": "Schizachyrium scoparium",
-    "type": "Warm-Season Grass",
-    "category": "grasses",
-    "bloom": "Seeds late summer through winter",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "2–4 feet",
-    "description": "A native prairie grass with chalky blue-green summer foliage that transforms to deep copper and russet in fall, holding its upright form and warm colour through the longest winters.",
-    "url": "little-bluestem.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#ede4d4",
-    "accentTo": "#e6d8c4",
-    "svgIcon": "little-bluestem",
-    "plantType": "Grass",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Seed Source",
-      "Host Plant",
-      "Cover/Shelter"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Structural Plant"
-    ],
-    "slug": "little-bluestem",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "prairie-dropseed",
-      "switchgrass",
-      "butterfly-weed"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Schizachyrium scoparium"
-    ]
-  },
-  {
-    "commonName": "Purple Coneflower",
-    "scientificName": "Echinacea purpurea",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms midsummer to early fall",
-    "season": "Summer · Fall",
-    "sun": "Full sun to light part shade",
-    "moisture": "Dry to medium",
-    "height": "2–4 feet",
-    "description": "A bold midsummer wildflower with rose-purple drooping petals and a raised spiny cone — widely visited by bees, butterflies, and beetles in summer, and by goldfinches working the persistent seed heads through winter.",
-    "url": "purple-coneflower.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#f0e4ec",
-    "accentTo": "#e8d8e4",
-    "svgIcon": "coneflower",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Matrix Plant"
-    ],
-    "slug": "purple-coneflower",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "mountain-mint",
-      "wild-bergamot",
-      "liatris",
-      "coreopsis"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "sunny-border"
-    ],
-    "aliases": [
-      "Coneflower",
-      "Echinacea",
-      "Echinacea purpurea"
-    ],
-     "garden": {
-      "src": "../images/purple-coneflower-garden.jpg",
-      "caption": "Bay Village, Ohio · July 2025"
+// Shared plant profile behavior.
+// 1) Reveals .section blocks as they enter the viewport.
+// 2) Auto-links companion plant names using /data/plants.json.
+// 3) Adds Botanical Plate / In the Garden switcher.
+//    Supports plant.garden as either one object or an array of photos.
+
+(function revealSections() {
+  const sections = document.querySelectorAll(".section");
+
+  if (!sections.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    sections.forEach(section => section.classList.add("visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.07 }
+  );
+
+  sections.forEach(section => observer.observe(section));
+})();
+
+async function loadPlantsJson() {
+  const paths = [
+    "../data/plants.json",
+    "./data/plants.json",
+    "data/plants.json",
+    "/data/plants.json",
+    "/ohio-native-plant-guide/data/plants.json"
+  ];
+
+  for (const path of paths) {
+    try {
+      const response = await fetch(path);
+      if (!response.ok) continue;
+
+      const plants = await response.json();
+      if (Array.isArray(plants)) return plants;
+    } catch (_) {
+      // Try next path.
     }
-  },
-  {
-    "commonName": "Red Buckeye",
-    "scientificName": "Aesculus pavia",
-    "type": "Small Native Tree",
-    "category": "trees",
-    "bloom": "Blooms April to May",
-    "season": "Spring",
-    "sun": "Part shade to full sun",
-    "moisture": "Medium to moist",
-    "height": "8–20 feet",
-    "description": "A small native tree of woodland edges that flowers in April with upright red panicles — timed precisely to the spring arrival of ruby-throated hummingbirds, and the first tree to bloom in the Ohio native garden.",
-    "url": "red-buckeye.html",
-    "tagClass": "tag-tree",
-    "accentFrom": "#f0e4de",
-    "accentTo": "#e8d8d0",
-    "svgIcon": "red-buckeye",
-    "plantType": "Tree",
-    "lightTags": [
-      "Part Sun",
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Cover/Shelter"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Edge Plant"
-    ],
-    "slug": "red-buckeye",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "white-oak",
-      "witch-hazel"
-    ],
-    "relatedHabitatSlugs": [
-      "woodland-edge"
-    ],
-    "aliases": [
-      "Aesculus pavia"
-    ]
-  },
-  {
-    "commonName": "White Oak",
-    "scientificName": "Quercus alba",
-    "type": "Large Native Tree",
-    "category": "trees",
-    "bloom": "Catkins April to May",
-    "season": "Spring · Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "60–100 feet",
-    "description": "A long-lived canopy tree and ecological keystone — supporting over 500 caterpillar species, feeding dozens of wildlife species through its acorns, and anchoring entire woodland communities across centuries.",
-    "url": "white-oak.html",
-    "tagClass": "tag-tree",
-    "accentFrom": "#eae4d8",
-    "accentTo": "#e2dace",
-    "svgIcon": "white-oak",
-    "plantType": "Tree",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Host Plant",
-      "Seed Source",
-      "Cover/Shelter"
-    ],
-    "gardenRole": [
-      "Structural Plant"
-    ],
-    "slug": "white-oak",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "bur-oak",
-      "pennsylvania-sedge"
-    ],
-    "relatedHabitatSlugs": [
-      "oak-savanna",
-      "woodland-edge",
-      "woodland-understory"
-    ],
-    "aliases": [
-      "Quercus alba"
-    ]
-  },
-  {
-    "commonName": "Witch Hazel",
-    "scientificName": "Hamamelis virginiana",
-    "type": "Native Shrub",
-    "category": "shrubs",
-    "bloom": "Blooms October to December",
-    "season": "Fall · Winter",
-    "sun": "Part shade to full sun",
-    "moisture": "Medium to moist",
-    "height": "10–20 feet",
-    "description": "The last native plant to flower in Ohio — spidery yellow blooms that open on bare branches in October and November, serving late-active moths and marking the close of the native plant year.",
-    "url": "witch-hazel.html",
-    "tagClass": "tag-shrub",
-    "accentFrom": "#ece6d4",
-    "accentTo": "#e4dec8",
-    "svgIcon": "witch-hazel",
-    "plantType": "Shrub",
-    "lightTags": [
-      "Part Sun",
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source",
-      "Cover/Shelter"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Edge Plant"
-    ],
-    "slug": "witch-hazel",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "red-buckeye",
-      "white-oak"
-    ],
-    "relatedHabitatSlugs": [
-      "woodland-edge",
-      "stream-edge"
-    ],
-    "aliases": [
-      "Hamamelis virginiana"
-    ]
-  },
-  {
-    "commonName": "Bur Oak",
-    "scientificName": "Quercus macrocarpa",
-    "type": "Large Native Tree",
-    "category": "trees",
-    "bloom": "Catkins April to May",
-    "season": "Spring · Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "60–80 feet",
-    "description": "The toughest oak in North America — fire-adapted, deeply rooted, and built for the open savanna edge. Large fringed acorns, distinctive corky bark on young branches, and a lifespan measured in centuries.",
-    "url": "bur-oak.html",
-    "tagClass": "tag-tree",
-    "accentFrom": "#e6e0d0",
-    "accentTo": "#ddd8c4",
-    "svgIcon": "bur-oak",
-    "plantType": "Tree",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Host Plant",
-      "Seed Source",
-      "Cover/Shelter"
-    ],
-    "gardenRole": [
-      "Structural Plant"
-    ],
-    "slug": "bur-oak",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "white-oak",
-      "switchgrass"
-    ],
-    "relatedHabitatSlugs": [
-      "oak-savanna",
-      "sunny-meadow"
-    ],
-    "aliases": [
-      "Quercus macrocarpa"
-    ]
-  },
-  {
-    "commonName": "Swamp Milkweed",
-    "scientificName": "Asclepias incarnata",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms midsummer to early fall",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium to wet",
-    "height": "3–5 feet",
-    "description": "A tall native perennial of moist edges and wetlands — one of Ohio's most important milkweed species for monarch butterflies, with deep rose-pink flower clusters and distinctive silky seedpods.",
-    "url": "swamp-milkweed.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#f0e4e8",
-    "accentTo": "#e8d8dc",
-    "svgIcon": "swamp-milkweed",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Moist",
-      "Wet"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Host Plant",
-      "Nectar Plant",
-      "Pollen Plant"
-    ],
-    "gardenRole": [
-      "Rain Garden Plant",
-      "Pond Edge Plant"
-    ],
-    "slug": "swamp-milkweed",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "cardinal-flower",
-      "joe-pye-weed",
-      "butterfly-weed"
-    ],
-    "relatedHabitatSlugs": [
-      "rain-garden",
-      "wet-edge",
-      "pond-edge"
-    ],
-    "aliases": [
-      "Rose Milkweed",
-      "Asclepias incarnata"
-    ]
-  },
-  {
-    "commonName": "Wild Bergamot",
-    "scientificName": "Monarda fistulosa",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms midsummer",
-    "season": "Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "2–4 feet",
-    "description": "A fragrant prairie wildflower with shaggy lavender flower heads and strongly oregano-scented foliage — a midsummer bee and butterfly magnet with a long history of culinary and medicinal use.",
-    "url": "wild-bergamot.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#eee8f0",
-    "accentTo": "#e6dcea",
-    "svgIcon": "wild-bergamot",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Structural Plant"
-    ],
-    "slug": "wild-bergamot",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "mountain-mint",
-      "purple-coneflower",
-      "liatris"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Monarda fistulosa"
-    ]
-  },
-  {
-    "commonName": "Fox Sedge",
-    "scientificName": "Carex vulpinoidea",
-    "type": "Native Sedge",
-    "category": "grasses",
-    "bloom": "Seeds late spring to summer",
-    "season": "Spring · Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Moist to wet",
-    "height": "1–3 feet",
-    "description": "A native wetland sedge with dense bristly seed clusters and fine arching foliage — an adaptable, low-maintenance plant that stabilises wet soils, feeds seed-eating birds, and thrives where most plants fail.",
-    "url": "fox-sedge.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#e4e8de",
-    "accentTo": "#dce4d4",
-    "svgIcon": "fox-sedge",
-    "plantType": "Sedge",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Moist",
-      "Wet"
-    ],
-    "bloomSeasonTags": [
-      "Spring",
-      "Summer"
-    ],
-    "wildlifeRole": [
-      "Seed Source",
-      "Cover/Shelter",
-      "Erosion Control"
-    ],
-    "gardenRole": [
-      "Rain Garden Plant",
-      "Pond Edge Plant",
-      "Groundcover"
-    ],
-    "slug": "fox-sedge",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "pennsylvania-sedge",
-      "cardinal-flower",
-      "swamp-milkweed"
-    ],
-    "relatedHabitatSlugs": [
-      "rain-garden",
-      "wet-edge",
-      "pond-edge"
-    ],
-    "aliases": [
-      "Carex vulpinoidea"
-    ]
-  },
-  {
-    "commonName": "Pennsylvania Sedge",
-    "scientificName": "Carex pensylvanica",
-    "type": "Native Sedge",
-    "category": "grasses",
-    "bloom": "Blooms April to May",
-    "season": "Spring",
-    "sun": "Part to full shade",
-    "moisture": "Dry to medium",
-    "height": "6–8 inches",
-    "description": "A fine-textured sedge of dry oak woods that spreads into a soft, low carpet — a living groundcover for the shade where turfgrass struggles.",
-    "url": "pennsylvania-sedge.html",
-    "tagClass": "tag-grass",
-    "accentFrom": "#e6ece0",
-    "accentTo": "#dde6d2",
-    "svgIcon": "pennsylvania-sedge",
-    "plantType": "Sedge",
-    "lightTags": [
-      "Part Sun",
-      "Shade"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Host Plant",
-      "Seed Source",
-      "Cover/Shelter",
-      "Erosion Control"
-    ],
-    "gardenRole": [
-      "Groundcover",
-      "Edge Plant"
-    ],
-    "slug": "pennsylvania-sedge",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "fox-sedge",
-      "white-oak"
-    ],
-    "relatedHabitatSlugs": [
-      "woodland-understory",
-      "oak-savanna"
-    ],
-    "aliases": [
-      "Carex pensylvanica"
-    ]
-  },
-  {
-    "commonName": "Butterfly Weed",
-    "scientificName": "Asclepias tuberosa",
-    "type": "Perennial Milkweed",
-    "category": "wildflowers",
-    "bloom": "Blooms June to August",
-    "season": "Summer",
-    "sun": "Full sun",
-    "moisture": "Dry, well-drained",
-    "height": "1–2½ feet",
-    "description": "The milkweed without milky sap — flat clusters of vivid orange over dry, sunny ground, feeding the monarch and the meadow at once.",
-    "url": "butterfly-weed.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#f4e2d2",
-    "accentTo": "#eed4be",
-    "svgIcon": "butterfly-weed",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry"
-    ],
-    "bloomSeasonTags": [
-      "Summer"
-    ],
-    "wildlifeRole": [
-      "Host Plant",
-      "Nectar Plant",
-      "Pollen Plant"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Edge Plant"
-    ],
-    "slug": "butterfly-weed",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "swamp-milkweed",
-      "little-bluestem",
-      "prairie-dropseed"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Butterfly Milkweed",
-      "Asclepias tuberosa"
-    ]
-  },
-  {
-    "commonName": "Joe Pye Weed",
-    "scientificName": "Eutrochium maculatum",
-    "type": "Perennial Wildflower",
-    "category": "wildflowers",
-    "bloom": "Blooms July to September",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium to wet",
-    "height": "4–7 feet",
-    "description": "Tall whorled stems crowned with domed clusters of dusty mauve — a late-summer beacon for butterflies as the rest of the meadow begins to fade.",
-    "url": "joe-pye-weed.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#efe2e8",
-    "accentTo": "#e6d2dc",
-    "svgIcon": "joe-pye-weed",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Rain Garden Plant"
-    ],
-    "slug": "joe-pye-weed",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "swamp-milkweed",
-      "cardinal-flower",
-      "aster"
-    ],
-    "relatedHabitatSlugs": [
-      "rain-garden",
-      "wet-edge",
-      "sunny-meadow"
-    ],
-    "aliases": [
-      "Joe-Pye Weed",
-      "Joe Pye"
-    ]
-  },
-  {
-    "commonName": "Blazing Star",
-    "scientificName": "Liatris spp.",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms July to September",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to moist (by species)",
-    "height": "1–6 feet",
-    "description": "Tall purple spikes that open top-to-bottom against late summer — a nectar column for monarchs, bumblebees, and specialist bees through the warmest weeks of the year.",
-    "url": "liatris.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#ede8f4",
-    "accentTo": "#e4dced",
-    "svgIcon": "liatris",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Matrix Plant"
-    ],
-    "slug": "liatris",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "mountain-mint",
-      "wild-bergamot",
-      "rattlesnake-master",
-      "purple-coneflower"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie"
-    ],
-    "aliases": [
-      "Liatris",
-      "Liatris spp."
-    ]
-  },
-  {
-    "commonName": "Honey Locust",
-    "scientificName": "Gleditsia triacanthos",
-    "type": "Native Tree",
-    "category": "trees",
-    "bloom": "Blooms May to June",
-    "season": "Spring · Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Adaptable; drought-tolerant",
-    "height": "30–70 feet",
-    "description": "A tough, fast-growing tree of floodplains and forest edges — armed with branching thorns, hung with long sweet pods, and an underestimated contributor to wildlife and soil health.",
-    "url": "honey-locust.html",
-    "tagClass": "tag-tree",
-    "accentFrom": "#ede0c8",
-    "accentTo": "#e4d4b4",
-    "svgIcon": "honey-locust",
-    "plantType": "Tree",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source",
-      "Cover/Shelter",
-      "Host Plant"
-    ],
-    "gardenRole": [
-      "Structural Plant"
-    ],
-    "slug": "honey-locust",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "white-oak",
-      "bur-oak"
-    ],
-    "relatedHabitatSlugs": [
-      "street-tree",
-      "woodland-edge",
-      "floodplain"
-    ],
-    "aliases": [
-      "Gleditsia triacanthos"
-    ]
-  },
-  {
-    "commonName": "Foxglove Beardtongue",
-    "scientificName": "Penstemon digitalis",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms May to June",
-    "season": "Spring · Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "2–4 feet",
-    "description": "Tall white flower spikes in early summer, bridging the gap between spring ephemerals and the midsummer prairie — a native perennial that rewards bumblebee queens when they need it most.",
-    "url": "penstemon.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#ede8f4",
-    "accentTo": "#e4dced",
-    "svgIcon": "penstemon",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Spring",
-      "Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Edge Plant"
-    ],
-    "slug": "penstemon",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "golden-alexanders",
-      "wild-bergamot",
-      "nodding-onion"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "woodland-edge",
-      "sunny-border"
-    ],
-    "aliases": [
-      "Penstemon",
-      "Smooth Penstemon",
-      "Penstemon digitalis"
-    ]
-  },
-  {
-    "commonName": "Cardinal Flower",
-    "scientificName": "Lobelia cardinalis",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms July to September",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Moist to wet",
-    "height": "2–4 feet",
-    "description": "One of the most vivid reds in the Ohio native flora — a midsummer flower built almost exclusively for the ruby-throated hummingbird, its colour invisible to the bees it does not need.",
-    "url": "cardinal-flower.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#f0e0dc",
-    "accentTo": "#e8d0cc",
-    "svgIcon": "cardinal-flower",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Moist",
-      "Wet"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant"
-    ],
-    "gardenRole": [
-      "Rain Garden Plant",
-      "Pond Edge Plant",
-      "Edge Plant"
-    ],
-    "slug": "cardinal-flower",
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "swamp-milkweed",
-      "joe-pye-weed",
-      "fox-sedge"
-    ],
-    "relatedHabitatSlugs": [
-      "rain-garden",
-      "wet-edge",
-      "pond-edge",
-      "stream-edge"
-    ],
-    "aliases": [
-      "Lobelia cardinalis"
-    ]
-  },
-  {
-    "commonName": "Tickseed",
-    "scientificName": "Coreopsis spp.",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms June to September",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "1–8 feet",
-    "description": "Bright golden daisies on airy branching stems — among the most adaptable and long-blooming of Ohio's native wildflowers, working steadily for bees and goldfinches from early summer into fall.",
-    "url": "coreopsis.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#ede8c8",
-    "accentTo": "#e4deb4",
-    "svgIcon": "coreopsis",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Edge Plant",
-      "Structural Plant"
-    ],
-    "slug": "coreopsis",
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "purple-coneflower",
-      "liatris",
-      "mountain-mint",
-      "wild-bergamot"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie",
-      "sunny-border"
-    ],
-    "aliases": [
-      "Coreopsis"
-    ]
-  },
-  {
-    "commonName": "Ironweed",
-    "scientificName": "Vernonia spp.",
-    "slug": "ironweed",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms August to October",
-    "season": "Late Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium to moist",
-    "height": "3–8 feet",
-    "description": "Some of the most vivid purple in the Ohio late-summer landscape — a large, stiff-stemmed wildflower that arrives when much of the season has already finished, and a critical nectar source for migrating monarchs.",
-    "url": "ironweed.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#2a1040",
-    "accentTo": "#1e0830",
-    "svgIcon": "ironweed",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Rain Garden Plant",
-      "Edge Plant"
-    ],
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "joe-pye-weed",
-      "switchgrass",
-      "cardinal-flower",
-      "aster",
-      "swamp-milkweed",
-      "coreopsis",
-      "liatris",
-      "goldenrod"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "wet-edge",
-      "rain-garden",
-      "stream-edge"
-    ],
-    "aliases": [
-      "Vernonia",
-      "Vernonia spp."
-    ]
-  },
-  {
-    "commonName": "Goldenrod",
-    "aliases": [
-      "Goldenrods",
-      "Solidago",
-      "Tall Goldenrod"
-    ],
-    "scientificName": "Solidago spp.",
-    "slug": "goldenrod",
-    "type": "Native Perennial",
-    "category": "wildflowers",
-    "bloom": "Blooms August to October",
-    "season": "Late Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to moist (by species)",
-    "height": "1–6 feet",
-    "description": "The defining colour of the Ohio autumn — arching golden plumes that support over 100 Lepidoptera species, specialist bees, and migrating monarchs through the closing weeks of the growing season.",
-    "url": "goldenrod.html",
-    "tagClass": "tag-perennial",
-    "accentFrom": "#ede0a8",
-    "accentTo": "#e4d090",
-    "svgIcon": "goldenrod",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Structural Plant",
-      "Rain Garden Plant"
-    ],
-    "relatedWildlifeSlugs": [],
-    "relatedPlantSlugs": [
-      "ironweed",
-      "aster",
-      "joe-pye-weed",
-      "little-bluestem",
-      "switchgrass",
-      "prairie-dropseed",
-      "purple-coneflower",
-      "liatris"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie",
-      "woodland-edge",
-      "wet-edge"
-    ]
-  },
-  {
-    "commonName": "False Sunflower",
-    "scientificName": "Heliopsis helianthoides",
-    "slug": "false-sunflower",
-    "type": "Summer Wildflower",
-    "category": "wildflowers",
-    "bloom": "Golden daisy-like heads, June to September",
-    "season": "Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "3–5 feet",
-    "description": "A long-blooming golden composite of prairies and open ground, with ray florets that set seed and stay attached as the head ripens.",
-    "url": "false-sunflower.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#c8941e",
-    "accentTo": "#8a6418",
-    "svgIcon": "flower",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Matrix Plant"
-    ],
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "purple-coneflower",
-      "wild-bergamot",
-      "butterfly-weed",
-      "coreopsis",
-      "goldenrod",
-      "little-bluestem"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie",
-      "sunny-border"
-    ],
-    "aliases": [
-      "Heliopsis helianthoides"
-    ]
-  },
-  {
-    "commonName": "Serviceberry",
-    "scientificName": "Amelanchier laevis",
-    "slug": "serviceberry",
-    "type": "Spring-Flowering Tree",
-    "category": "trees",
-    "bloom": "Drooping clusters of white flowers, early spring",
-    "season": "Spring · Summer · Fall",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium",
-    "height": "15–25 feet (to 40)",
-    "description": "A four-season small tree: among the first to bloom in spring, edible June fruit, orange-red fall color, and smooth silver-grey bark.",
-    "url": "serviceberry.html",
-    "tagClass": "tag-tree",
-    "accentFrom": "#b47888",
-    "accentTo": "#5e4452",
-    "svgIcon": "tree",
-    "plantType": "Tree",
-    "lightTags": [
-      "Full Sun",
-      "Part Sun"
-    ],
-    "moistureTags": [
-      "Medium",
-      "Moist"
-    ],
-    "bloomSeasonTags": [
-      "Spring"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Structural Plant",
-      "Edge Plant"
-    ],
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "witch-hazel",
-      "red-buckeye",
-      "white-oak",
-      "pennsylvania-sedge",
-      "penstemon",
-      "nodding-onion",
-      "golden-alexanders"
-    ],
-    "relatedHabitatSlugs": [
-      "woodland-edge",
-      "woodland-understory",
-      "oak-savanna"
-    ],
-    "aliases": [
-      "Amelanchier",
-      "Amelanchier spp."
-    ]
-  },
-  {
-    "commonName": "Black-eyed Susan",
-    "scientificName": "Rudbeckia hirta",
-    "slug": "black-eyed-susan",
-    "type": "Summer Wildflower",
-    "category": "wildflowers",
-    "bloom": "Golden rays around a dark central cone, June to October",
-    "season": "Summer · Fall",
-    "sun": "Full sun",
-    "moisture": "Dry to medium",
-    "height": "1–3 feet",
-    "description": "A fast-establishing golden composite with a dark central cone — short-lived but freely reseeding, often first to bloom in a new planting.",
-    "url": "black-eyed-susan.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#e6b82e",
-    "accentTo": "#3a2410",
-    "svgIcon": "flower",
-    "plantType": "Wildflower",
-    "lightTags": [
-      "Full Sun"
-    ],
-    "moistureTags": [
-      "Dry",
-      "Medium"
-    ],
-    "bloomSeasonTags": [
-      "Summer",
-      "Late Summer",
-      "Fall"
-    ],
-    "wildlifeRole": [
-      "Nectar Plant",
-      "Pollen Plant",
-      "Host Plant",
-      "Seed Source"
-    ],
-    "gardenRole": [
-      "Matrix Plant",
-      "Filler"
-    ],
-    "relatedWildlifeSlugs": [
-      "carpenter-bee"
-    ],
-    "relatedPlantSlugs": [
-      "purple-coneflower",
-      "coreopsis",
-      "wild-bergamot",
-      "liatris",
-      "goldenrod",
-      "aster",
-      "little-bluestem"
-    ],
-    "relatedHabitatSlugs": [
-      "sunny-meadow",
-      "dry-prairie",
-      "sunny-border"
-    ],
-    "aliases": [
-      "Black Eyed Susan",
-      "Black-Eyed Susan"
-    ]
-  },
-  {
-    "commonName": "Nodding Onion",
-    "scientificName": "Allium cernuum",
-    "slug": "nodding-onion",
-    "type": "Summer Wildflower",
-    "category": "wildflowers",
-    "bloom": "Pink to lilac bells in nodding umbels",
-    "season": "Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "12–18 in",
-    "description": "A clump-forming native onion with slender grey-green leaves and umbels of pink-lilac bells that nod from a bent stalk in mid- to late summer. Its onion-scented foliage is generally left alone by deer and rabbits.",
-    "url": "nodding-onion.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#8a76a8",
-    "accentTo": "#b3a7c4",
-    "svgIcon": "flower",
-    "native": true,
-    "aliases": ["Allium cernuum", "Nodding Wild Onion", "Nodding Onions", "Lady's Leek"],
-    "plantType": "Wildflower",
-    "lightTags": ["Full Sun", "Part Sun"],
-    "moistureTags": ["Dry", "Medium"],
-    "bloomSeasonTags": ["Summer", "Late Summer"],
-    "wildlifeRole": ["Nectar Plant", "Pollen Plant"],
-    "gardenRole": ["Edge Plant", "Filler"],
-    "relatedWildlifeSlugs": ["sweat-bee", "carpenter-bee", "hover-fly"],
-    "relatedPlantSlugs": ["little-bluestem", "prairie-dropseed", "butterfly-weed", "purple-coneflower", "rattlesnake-master", "mountain-mint"],
-    "relatedHabitatSlugs": ["dry-prairie", "sunny-meadow"]
-  },
-  {
-    "commonName": "Culver's Root",
-    "scientificName": "Veronicastrum virginicum",
-    "slug": "culvers-root",
-    "type": "Summer Wildflower",
-    "category": "wildflowers",
-    "bloom": "Slender white candelabra spikes",
-    "season": "Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Medium to moist",
-    "height": "3–6 ft",
-    "description": "A tall, architectural native with tiered whorls of leaves and a candelabra of slender white flower spikes in mid- to late summer. A strong bee plant that holds its upright form into winter.",
-    "url": "culvers-root.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#5f7a5a",
-    "accentTo": "#86a07d",
-    "svgIcon": "spike",
-    "native": true,
-    "aliases": ["Veronicastrum virginicum", "Culvers Root", "Blackroot", "Black Root", "Bowman's Root"],
-    "plantType": "Wildflower",
-    "lightTags": ["Full Sun", "Part Sun"],
-    "moistureTags": ["Medium", "Moist"],
-    "bloomSeasonTags": ["Summer", "Late Summer"],
-    "wildlifeRole": ["Nectar Plant", "Pollen Plant"],
-    "gardenRole": ["Structural Plant", "Rain Garden Plant"],
-    "relatedWildlifeSlugs": ["bumble-bee", "long-horned-bee"],
-    "relatedPlantSlugs": ["cardinal-flower", "ironweed", "goldenrod", "wild-bergamot", "black-eyed-susan", "mountain-mint"],
-    "relatedHabitatSlugs": ["rain-garden", "wet-edge", "sunny-meadow"]
-  },
-  {
-    "commonName": "Ohio Spiderwort",
-    "scientificName": "Tradescantia ohiensis",
-    "slug": "ohio-spiderwort",
-    "type": "Summer Wildflower",
-    "category": "wildflowers",
-    "bloom": "Violet-blue three-petaled flowers",
-    "season": "Spring · Summer",
-    "sun": "Full sun to part shade",
-    "moisture": "Dry to medium",
-    "height": "2–3 ft",
-    "description": "A tough, adaptable native with arching blue-green leaves and clusters of violet-blue, three-petaled flowers — each open for a single morning — from late spring through summer. A reliable early-day pollen source for bees.",
-    "url": "ohio-spiderwort.html",
-    "tagClass": "tag-wildflower",
-    "accentFrom": "#4d5aa0",
-    "accentTo": "#8d97db",
-    "svgIcon": "flower",
-    "native": true,
-    "aliases": ["Tradescantia ohiensis", "Smooth Spiderwort", "Bluejacket", "Spiderwort", "Ohio Spiderworts"],
-    "plantType": "Wildflower",
-    "lightTags": ["Full Sun", "Part Sun"],
-    "moistureTags": ["Dry", "Medium"],
-    "bloomSeasonTags": ["Spring", "Summer"],
-    "wildlifeRole": ["Pollen Plant"],
-    "gardenRole": ["Matrix Plant", "Edge Plant"],
-    "relatedWildlifeSlugs": ["bumble-bee", "long-horned-bee", "hover-fly"],
-    "relatedPlantSlugs": ["little-bluestem", "prairie-dropseed", "butterfly-weed", "purple-coneflower", "black-eyed-susan", "golden-alexanders", "wild-bergamot", "coreopsis"],
-    "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie", "sunny-border"]
-  },
-  {
-  "commonName": "Wild Ginger",
-  "scientificName": "Asarum canadense",
-  "slug": "wild-ginger",
-  "type": "Woodland Groundcover",
-  "category": "wildflowers",
-  "bloom": "Hidden maroon flowers at ground level",
-  "season": "Spring",
-  "sun": "Part to full shade",
-  "moisture": "Medium to moist",
-  "height": "4–8 in",
-  "description": "A low, spreading woodland groundcover with paired heart-shaped leaves and curious maroon flowers hidden at ground level in spring. Slow to establish but durable, long-lived, and left alone by deer.",
-  "url": "wild-ginger.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#8c5560",
-  "accentTo": "#b1868e",
-  "svgIcon": "leaf",
-  "native": true,
-  "aliases": ["Asarum canadense", "Canada Wild Ginger", "Canadian Wild Ginger", "Wild Ginger"],
-  "plantType": "Wildflower",
-  "lightTags": ["Part Sun", "Shade"],
-  "moistureTags": ["Medium", "Moist"],
-  "bloomSeasonTags": ["Spring"],
-  "wildlifeRole": ["Cover/Shelter", "Erosion Control", "Seed Source"],
-  "gardenRole": ["Groundcover", "Matrix Plant"],
-  "relatedWildlifeSlugs": [],
-  "relatedPlantSlugs": ["pennsylvania-sedge", "cardinal-flower", "foxglove-beardtongue", "aster", "goldenrod", "golden-alexanders", "serviceberry"],
-  "relatedHabitatSlugs": ["woodland-understory", "woodland-edge"]
-},
-{
-  "commonName": "Wild Columbine",
-  "scientificName": "Aquilegia canadensis",
-  "slug": "wild-columbine",
-  "type": "Spring Wildflower",
-  "category": "wildflowers",
-  "bloom": "Nodding red-and-yellow spurred flowers",
-  "season": "Spring · Summer",
-  "sun": "Part shade to full sun",
-  "moisture": "Dry to medium",
-  "height": "1–2 ft",
-  "description": "Ohio's native columbine, with nodding red-and-yellow flowers whose long nectar spurs draw hummingbirds in spring. Airy blue-green foliage on a short-lived but freely self-sowing plant of rocky woods and ledges.",
-  "url": "wild-columbine.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#bf5147",
-  "accentTo": "#d68b83",
-  "svgIcon": "flower",
-  "native": true,
-  "aliases": ["Aquilegia canadensis", "Eastern Red Columbine", "Red Columbine", "Canadian Columbine", "Columbine"],
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Dry", "Medium"],
-  "bloomSeasonTags": ["Spring", "Summer"],
-  "wildlifeRole": ["Nectar Plant", "Host Plant"],
-  "gardenRole": ["Edge Plant", "Filler"],
-  "relatedWildlifeSlugs": ["bumble-bee"],
-  "relatedPlantSlugs": ["wild-ginger", "pennsylvania-sedge", "foxglove-beardtongue", "little-bluestem", "prairie-dropseed", "butterfly-weed", "golden-alexanders", "wild-bergamot", "purple-coneflower"],
-  "relatedHabitatSlugs": ["woodland-edge", "oak-savanna"]
-},
-{
-  "commonName": "Wild Geranium",
-  "scientificName": "Geranium maculatum",
-  "slug": "wild-geranium",
-  "type": "Spring Wildflower",
-  "category": "wildflowers",
-  "bloom": "Rose-pink saucer flowers in loose clusters",
-  "season": "Spring · Summer",
-  "sun": "Part shade to full sun",
-  "moisture": "Medium",
-  "height": "1.5–2 ft",
-  "description": "Ohio's showy native cranesbill, with deeply lobed leaves and clusters of upward-facing rose-pink flowers in spring, followed by beaked seedpods that catapult their seeds. An easy, long-lived plant for part shade.",
-  "url": "wild-geranium.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#b56a93",
-  "accentTo": "#cf9bb6",
-  "svgIcon": "flower",
-  "native": true,
-  "aliases": ["Geranium maculatum", "Spotted Geranium", "Wood Geranium", "Cranesbill", "Wild Cranesbill"],
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Medium"],
-  "bloomSeasonTags": ["Spring", "Summer"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant"],
-  "gardenRole": ["Filler", "Matrix Plant"],
-  "relatedWildlifeSlugs": ["bumble-bee"],
-  "relatedPlantSlugs": ["wild-ginger", "wild-columbine", "pennsylvania-sedge", "foxglove-beardtongue", "golden-alexanders", "cardinal-flower", "aster", "goldenrod", "wild-bergamot"],
-  "relatedHabitatSlugs": ["woodland-edge", "woodland-understory"]
-},
- {
-  "commonName": "White Snakeroot",
-  "scientificName": "Ageratina altissima",
-  "type": "Woodland Wildflower",
-  "category": "wildflowers",
-  "bloom": "Blooms late summer to fall",
-  "season": "Late Summer · Fall",
-  "sun": "Part shade to shade",
-  "moisture": "Medium to moist",
-  "height": "1–3 ft",
-  "description": "A bushy shade perennial whose flat-topped clusters of small, bright white flowers light up woodland ground in late summer and fall, when little else is blooming. All parts are toxic.",
-  "url": "white-snakeroot.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#e8ece2",
-  "accentTo": "#dfe6d6",
-  "svgIcon": "snakeroot",
-  "plantType": "Wildflower",
-  "lightTags": ["Part Sun", "Shade"],
-  "moistureTags": ["Medium", "Moist"],
-  "bloomSeasonTags": ["Late Summer", "Fall"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
-  "gardenRole": ["Filler", "Edge Plant"],
-  "slug": "white-snakeroot",
-  "relatedWildlifeSlugs": [],
-  "relatedPlantSlugs": ["wild-ginger", "pennsylvania-sedge", "wild-geranium", "wild-columbine", "golden-alexanders", "aster", "goldenrod"],
-  "relatedHabitatSlugs": ["woodland-edge", "woodland-understory"],
-  "aliases": ["Ageratina altissima", "Eupatorium rugosum", "Eupatorium ageratoides", "White Snake Root", "Snakeroot", "White Sanicle"]
-},
-{
-  "commonName": "Boneset",
-  "scientificName": "Eupatorium perfoliatum",
-  "type": "Wet-Meadow Wildflower",
-  "category": "wildflowers",
-  "bloom": "Blooms late summer to fall",
-  "season": "Late Summer · Fall",
-  "sun": "Full sun to part shade",
-  "moisture": "Moist to wet",
-  "height": "2–4 ft",
-  "description": "A stout wet-meadow perennial with pierced, perfoliate leaves and broad flat clusters of soft white flowers — among the most heavily visited late-season nectar plants for bees, wasps, and flies.",
-  "url": "boneset.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#e6ece8",
-  "accentTo": "#dde6e0",
-  "svgIcon": "boneset",
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Moist", "Wet"],
-  "bloomSeasonTags": ["Late Summer", "Fall"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
-  "gardenRole": ["Filler", "Edge Plant"],
-  "slug": "boneset",
-  "relatedWildlifeSlugs": [],
-  "relatedPlantSlugs": ["white-snakeroot", "culvers-root", "aster", "goldenrod"],
-  "relatedHabitatSlugs": ["sunny-meadow"],
-  "aliases": ["Eupatorium perfoliatum", "Common Boneset", "Thoroughwort", "Agueweed", "Feverwort", "Boneset"]
-},
-{
-  "commonName": "Wingstem",
-  "scientificName": "Verbesina alternifolia",
-  "type": "Bottomland Wildflower",
-  "category": "wildflowers",
-  "bloom": "Blooms late summer to fall",
-  "season": "Late Summer · Fall",
-  "sun": "Full sun to part shade",
-  "moisture": "Medium to moist",
-  "height": "3–8 ft",
-  "description": "A tall bottomland perennial with conspicuous winged stems and branched sprays of ragged yellow flowers in late summer — a generous, accessible nectar source that also hosts the silvery checkerspot and feeds finches.",
-  "url": "wingstem.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#efe9d2",
-  "accentTo": "#e6e0c6",
-  "svgIcon": "wingstem",
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Medium", "Moist"],
-  "bloomSeasonTags": ["Late Summer", "Fall"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
-  "gardenRole": ["Filler", "Edge Plant"],
-  "slug": "wingstem",
-  "relatedWildlifeSlugs": [],
-  "relatedPlantSlugs": ["boneset", "culvers-root", "goldenrod", "aster"],
-  "relatedHabitatSlugs": ["woodland-edge", "sunny-meadow"],
-  "aliases": ["Verbesina alternifolia", "Wingstem", "Yellow Ironweed", "Common Wingstem", "Actinomeris alternifolia"]
-},
-{
-  "commonName": "Cup Plant",
-  "scientificName": "Silphium perfoliatum",
-  "type": "Prairie Wildflower",
-  "category": "wildflowers",
-  "bloom": "Blooms mid to late summer",
-  "season": "Summer · Late Summer",
-  "sun": "Full sun to part shade",
-  "moisture": "Medium to moist",
-  "height": "4–8 ft",
-  "description": "A towering prairie perennial with square stems and paired leaves fused into rain-holding cups, crowned by bright yellow sunflower heads — a multi-resource plant offering nectar, pollen, seed for finches, and water held in its leaves.",
-  "url": "cup-plant.html",
-  "tagClass": "tag-wildflower",
-  "accentFrom": "#edeedd",
-  "accentTo": "#e3e6cd",
-  "svgIcon": "cup-plant",
-  "plantType": "Wildflower",
-  "lightTags": ["Full Sun", "Part Sun"],
-  "moistureTags": ["Medium", "Moist"],
-  "bloomSeasonTags": ["Summer", "Late Summer"],
-  "wildlifeRole": ["Nectar Plant", "Pollen Plant", "Host Plant"],
-  "gardenRole": ["Filler", "Edge Plant"],
-  "slug": "cup-plant",
-  "relatedWildlifeSlugs": [],
-  "relatedPlantSlugs": ["wingstem", "boneset", "culvers-root", "goldenrod", "aster"],
-  "relatedHabitatSlugs": ["sunny-meadow", "dry-prairie"],
-  "aliases": ["Silphium perfoliatum", "Cup Plant", "Cupplant", "Carpenter's Weed", "Indian Cup", "Squareweed"],
-  "garden": [
-    { "src": "../images/cup-plant-garden.jpg",   "caption": "Rain caught where the leaves clasp the stem · Bay Village, Ohio" },
-    { "src": "../images/cup-plant-garden-2.jpg", "caption": "Flower buds forming, still closed · Bay Village, Ohio" }
-  ]
+  }
+
+  return null;
 }
-]
+
+function normalizePlantName(text) {
+  return String(text || "")
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[’']/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function getCurrentPlantSlug() {
+  return (
+    document.body.dataset.plant ||
+    location.pathname.split("/").pop().replace(/\.html?$/, "")
+  ).toLowerCase();
+}
+
+async function autoLinkCompanionPlants() {
+  try {
+    const companionNames = document.querySelectorAll(".companion-common");
+    if (!companionNames.length) return;
+
+    const plants = await loadPlantsJson();
+    if (!Array.isArray(plants)) return;
+
+    const plantMap = new Map();
+
+    plants.forEach(plant => {
+      if (!plant.url) return;
+
+      const names = [
+        plant.commonName,
+        plant.scientificName,
+        plant.displayName,
+        plant.shortName,
+        ...(plant.aliases || [])
+      ].filter(Boolean);
+
+      names.forEach(name => {
+        plantMap.set(normalizePlantName(name), plant.url);
+      });
+    });
+
+    companionNames.forEach(nameEl => {
+      const key = normalizePlantName(nameEl.textContent);
+      const url = plantMap.get(key);
+
+      if (!url) return;
+      if (nameEl.querySelector("a")) return;
+
+      const link = document.createElement("a");
+      link.href = url;
+      link.className = "companion-link";
+      link.textContent = nameEl.textContent;
+
+      nameEl.replaceChildren(link);
+    });
+  } catch (error) {
+    console.warn("Companion plant linking failed:", error);
+  }
+}
+
+async function plateGardenSwitcher() {
+  try {
+    const figure = document.querySelector("figure.botanical-plate");
+    if (!figure) return;
+
+    const plants = await loadPlantsJson();
+    if (!Array.isArray(plants)) return;
+
+    const slug = getCurrentPlantSlug();
+
+    const plant = plants.find(p =>
+      (p.slug && p.slug.toLowerCase() === slug) ||
+      (p.url && p.url.toLowerCase().replace(/\.html?$/, "") === slug)
+    );
+
+    if (!plant || !plant.garden) return;
+
+    const photos = (Array.isArray(plant.garden) ? plant.garden : [plant.garden])
+      .filter(photo => photo && photo.src);
+
+    if (!photos.length) return;
+
+    const caption = figure.querySelector("figcaption");
+    const originalCaptionHTML = caption ? caption.innerHTML : "";
+    const fallbackCaption = `${plant.commonName || slug} in the garden`;
+
+    const platePanel = document.createElement("div");
+    platePanel.className = "plate-view is-on";
+    platePanel.id = "pv-plate";
+    platePanel.setAttribute("role", "tabpanel");
+
+    Array.from(figure.childNodes)
+      .filter(node => node !== caption)
+      .forEach(node => platePanel.appendChild(node));
+
+    const gardenPanel = document.createElement("div");
+    gardenPanel.className = "plate-view";
+    gardenPanel.id = "pv-garden";
+    gardenPanel.setAttribute("role", "tabpanel");
+    gardenPanel.hidden = true;
+
+    const gallery = document.createElement("div");
+    gallery.className = "plate-gallery";
+
+    const images = photos.map((photo, index) => {
+      const img = document.createElement("img");
+      img.className = "plate-garden-img" + (index === 0 ? " is-on" : "");
+      img.alt = photo.alt || fallbackCaption;
+      img.loading = "lazy";
+      img.dataset.src = photo.src;
+      gallery.appendChild(img);
+      return img;
+    });
+
+    gardenPanel.appendChild(gallery);
+
+    let currentIndex = 0;
+    let dots = [];
+
+    function showPhoto(index) {
+      currentIndex = (index + photos.length) % photos.length;
+
+      images.forEach((img, imgIndex) => {
+        const active = imgIndex === currentIndex;
+        img.classList.toggle("is-on", active);
+
+        if (active && !img.src) {
+          img.src = img.dataset.src;
+        }
+      });
+
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("is-on", dotIndex === currentIndex);
+        dot.setAttribute("aria-selected", dotIndex === currentIndex ? "true" : "false");
+      });
+
+      if (caption) {
+        caption.textContent = photos[currentIndex].caption || fallbackCaption;
+      }
+    }
+
+    if (photos.length > 1) {
+      const dotWrap = document.createElement("div");
+      dotWrap.className = "plate-dots";
+      dotWrap.setAttribute("role", "tablist");
+      dotWrap.setAttribute("aria-label", "Garden photo gallery");
+
+      dots = photos.map((_, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "plate-dot" + (index === 0 ? " is-on" : "");
+        button.setAttribute("role", "tab");
+        button.setAttribute("aria-label", `Photo ${index + 1} of ${photos.length}`);
+        button.setAttribute("aria-selected", index === 0 ? "true" : "false");
+
+        button.addEventListener("click", () => showPhoto(index));
+
+        button.addEventListener("keydown", event => {
+          if (event.key === "ArrowRight") {
+            event.preventDefault();
+            showPhoto(currentIndex + 1);
+            dots[currentIndex].focus();
+          }
+
+          if (event.key === "ArrowLeft") {
+            event.preventDefault();
+            showPhoto(currentIndex - 1);
+            dots[currentIndex].focus();
+          }
+        });
+
+        dotWrap.appendChild(button);
+        return button;
+      });
+
+      gardenPanel.appendChild(dotWrap);
+
+      let touchStartX = 0;
+
+      gallery.addEventListener(
+        "touchstart",
+        event => {
+          touchStartX = event.changedTouches[0].clientX;
+        },
+        { passive: true }
+      );
+
+      gallery.addEventListener(
+        "touchend",
+        event => {
+          const distanceX = event.changedTouches[0].clientX - touchStartX;
+
+          if (distanceX < -40) showPhoto(currentIndex + 1);
+          if (distanceX > 40) showPhoto(currentIndex - 1);
+        },
+        { passive: true }
+      );
+    }
+
+    const switcher = document.createElement("div");
+    switcher.className = "plate-switch";
+    switcher.setAttribute("role", "tablist");
+    switcher.setAttribute("aria-label", "Choose how to view this plant");
+
+    switcher.innerHTML = `
+      <span class="thumb" aria-hidden="true"></span>
+      <button type="button" role="tab" aria-selected="true" aria-controls="pv-plate">Botanical Plate</button>
+      <button type="button" role="tab" aria-selected="false" aria-controls="pv-garden">In the Garden</button>
+    `;
+
+    figure.insertBefore(switcher, caption || null);
+    figure.insertBefore(platePanel, caption || null);
+    figure.insertBefore(gardenPanel, caption || null);
+
+    const tabs = Array.from(switcher.querySelectorAll("button"));
+    const thumb = switcher.querySelector(".thumb");
+
+    const views = {
+      "pv-plate": platePanel,
+      "pv-garden": gardenPanel
+    };
+
+    function placeThumb(tab) {
+      if (!thumb || !tab) return;
+      thumb.style.left = `${tab.offsetLeft}px`;
+      thumb.style.width = `${tab.offsetWidth}px`;
+    }
+
+    function selectTab(tab) {
+      tabs.forEach(currentTab => {
+        const active = currentTab === tab;
+        currentTab.setAttribute("aria-selected", active ? "true" : "false");
+
+        const view = views[currentTab.getAttribute("aria-controls")];
+        if (!view) return;
+
+        view.classList.toggle("is-on", active);
+        view.hidden = !active;
+      });
+
+      placeThumb(tab);
+
+      if (tab.getAttribute("aria-controls") === "pv-garden") {
+        showPhoto(currentIndex);
+      } else if (caption) {
+        caption.innerHTML = originalCaptionHTML;
+      }
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener("click", () => selectTab(tab));
+
+      tab.addEventListener("keydown", event => {
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+
+        event.preventDefault();
+
+        const nextIndex =
+          event.key === "ArrowRight"
+            ? (index + 1) % tabs.length
+            : (index - 1 + tabs.length) % tabs.length;
+
+        tabs[nextIndex].focus();
+        selectTab(tabs[nextIndex]);
+      });
+    });
+
+    requestAnimationFrame(() => {
+      placeThumb(tabs[0]);
+    });
+
+    window.addEventListener("resize", () => {
+      const activeTab = tabs.find(tab => tab.getAttribute("aria-selected") === "true");
+      placeThumb(activeTab);
+    });
+  } catch (error) {
+    console.warn("Botanical plate switcher failed:", error);
+  }
+}
+
+autoLinkCompanionPlants();
+plateGardenSwitcher();
