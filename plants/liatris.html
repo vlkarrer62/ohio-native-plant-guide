@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blazing Star · Liatris · Ohio Native Plant</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/base.css" />
   <link rel="stylesheet" href="../css/plant-profile.css" />
   <link rel="stylesheet" href="../css/plants/liatris.css" />
@@ -16,148 +16,176 @@
   <a href="index.html">Plant Directory</a>
 </nav>
 
+  <!-- ════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
   <header class="hero">
     <div class="hero-light"></div>
-    <!-- Liatris: tall vertical spike of densely packed purple florets, opening top-to-bottom; narrow grass-like leaves -->
-    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
-      <!-- left secondary spike -->
-      <path d="M108 440 C108 360 109 270 110 190 C110 150 111 118 112 90" stroke="#8050b0" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-      <g opacity="0.55">
-        <ellipse cx="112" cy="86" rx="5" ry="8" fill="#9060c0" transform="rotate(-4 112 86)"/>
-        <ellipse cx="112" cy="100" rx="5" ry="7" fill="#8050b0" transform="rotate(-3 112 100)"/>
-        <ellipse cx="112" cy="114" rx="4.5" ry="6" fill="#9060c0" transform="rotate(-2 112 114)"/>
-        <ellipse cx="112" cy="127" rx="4" ry="6" fill="#8050b0"/>
-        <ellipse cx="112" cy="139" rx="4" ry="5.5" fill="#9060c0"/>
-        <ellipse cx="112" cy="151" rx="3.5" ry="5" fill="#8050b0"/>
-        <g fill="#d4b8f0" opacity="0.7">
-          <path d="M107 87 l-8-3 M107 101 l-8-3 M117 87 l8-3 M117 101 l8-3 M107 114 l-7-2 M107 127 l-7-2"/>
+
+    <!-- Blazing star illustration:
+         Vertical wand structure — dense spikes of feathery purple
+         flower heads that open from the TOP DOWN. The top of each
+         spike is fully open and fluffy; the lower heads are still
+         tight buds. Grass-like leaves at the base.
+         The top-down bloom gradient is the signature visual element. -->
+    <svg class="hero-illustration" viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMaxYMid meet">
+      <defs>
+        <!-- Fully open feathery head — radiating thread-like styles -->
+        <g id="tuft">
+          <line x1="0" y1="0" x2="0"     y2="-11"  stroke="#a86bae" stroke-width="1.1" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="6"     y2="-9.5" stroke="#c79ccd" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-6"    y2="-9.5" stroke="#c79ccd" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="10"    y2="-5"   stroke="#a86bae" stroke-width="1.1" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-10"   y2="-5"   stroke="#a86bae" stroke-width="1.1" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="11"    y2="0.5"  stroke="#8c4a92" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-11"   y2="0.5"  stroke="#8c4a92" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="8.5"   y2="6"    stroke="#c79ccd" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-8.5"  y2="6"    stroke="#c79ccd" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="4"     y2="9.5"  stroke="#a86bae" stroke-width="1"   stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-4"    y2="9.5"  stroke="#a86bae" stroke-width="1"   stroke-linecap="round"/>
+          <circle cx="0" cy="0" r="2.4" fill="#8c4a92" opacity="0.85"/>
         </g>
-      </g>
-      <!-- narrow grass-like basal leaves (left) -->
-      <g stroke="#6840a0" stroke-width="1.2" stroke-linecap="round" opacity="0.5">
-        <path d="M108 440 C100 380 88 300 72 240"/>
-        <path d="M108 440 C96 390 78 320 60 270"/>
-        <path d="M108 440 C104 390 100 340 96 290"/>
-      </g>
-      <!-- main central spike — tall -->
-      <path d="M168 440 C168 360 168 260 168 170 C168 128 168 92 168 56" stroke="#7040a8" stroke-width="2.8" stroke-linecap="round"/>
-      <!-- florets along spike — packed, opening top to bottom (top = fully open, bottom = tight buds) -->
-      <!-- open florets top section: fuller, fluffy look -->
-      <g opacity="0.95">
-        <!-- topmost open florets -->
-        <ellipse cx="168" cy="54" rx="9" ry="11" fill="#9060c8"/>
-        <ellipse cx="168" cy="68" rx="9" ry="10" fill="#8858c0"/>
-        <ellipse cx="168" cy="82" rx="9.5" ry="10" fill="#9060c8"/>
-        <ellipse cx="168" cy="96" rx="9" ry="10" fill="#8858c0"/>
-        <ellipse cx="168" cy="110" rx="9" ry="10" fill="#9060c8"/>
-        <ellipse cx="168" cy="123" rx="8.5" ry="9.5" fill="#8858c0"/>
-        <ellipse cx="168" cy="136" rx="8.5" ry="9" fill="#9060c8"/>
-        <ellipse cx="168" cy="148" rx="8" ry="9" fill="#8858c0"/>
-        <!-- floret ray-threads — tiny lines radiating outward -->
-        <g stroke="#d0a8f0" stroke-width="0.7" stroke-linecap="round" opacity="0.85">
-          <line x1="158" y1="54" x2="151" y2="52"/><line x1="178" y1="54" x2="185" y2="52"/>
-          <line x1="157" y1="68" x2="149" y2="66"/><line x1="179" y1="68" x2="187" y2="66"/>
-          <line x1="158" y1="82" x2="150" y2="80"/><line x1="178" y1="82" x2="186" y2="80"/>
-          <line x1="158" y1="96" x2="150" y2="94"/><line x1="178" y1="96" x2="186" y2="94"/>
-          <line x1="158" y1="110" x2="151" y2="108"/><line x1="178" y1="110" x2="185" y2="108"/>
-          <line x1="159" y1="123" x2="152" y2="121"/><line x1="177" y1="123" x2="184" y2="121"/>
-          <line x1="159" y1="136" x2="152" y2="134"/><line x1="177" y1="136" x2="184" y2="134"/>
+        <!-- Half-open head — shorter threads over a bud base -->
+        <g id="tuft-half">
+          <ellipse cx="0" cy="2.5" rx="4" ry="5.2" fill="#9a6ba0" opacity="0.8"/>
+          <line x1="0" y1="0" x2="0"    y2="-8"  stroke="#a86bae" stroke-width="1"  stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="5"    y2="-6"  stroke="#c79ccd" stroke-width="0.9" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-5"   y2="-6"  stroke="#c79ccd" stroke-width="0.9" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="7.5"  y2="-2"  stroke="#a86bae" stroke-width="0.9" stroke-linecap="round"/>
+          <line x1="0" y1="0" x2="-7.5" y2="-2"  stroke="#a86bae" stroke-width="0.9" stroke-linecap="round"/>
         </g>
-        <!-- subtending bracts at base of each floret cluster -->
-        <g fill="#5a3880" opacity="0.7">
-          <path d="M160 63 l-4 8 M176 63 l4 8"/>
-          <path d="M160 77 l-4 7 M176 77 l4 7"/>
-          <path d="M160 91 l-3 7 M176 91 l3 7"/>
-          <path d="M160 105 l-3 6 M176 105 l3 6"/>
-        </g>
+        <!-- Tight bud -->
+        <ellipse id="bud" rx="3.8" ry="5.4"/>
+      </defs>
+
+      <!-- Basal grass-like leaves -->
+      <g stroke-linecap="round" fill="none">
+        <path d="M150 420 C132 380 112 356 92 344"  stroke="#5a7a46" stroke-width="2"   opacity="0.6"/>
+        <path d="M152 420 C168 376 190 350 212 340" stroke="#5a7a46" stroke-width="2"   opacity="0.6"/>
+        <path d="M150 420 C142 372 130 336 122 316" stroke="#4c6a3c" stroke-width="1.7" opacity="0.55"/>
+        <path d="M154 420 C164 370 176 334 186 312" stroke="#4c6a3c" stroke-width="1.7" opacity="0.55"/>
+        <path d="M102 420 C96 388 88 366 76 352"    stroke="#5a7a46" stroke-width="1.5" opacity="0.45"/>
+        <path d="M206 420 C212 386 220 362 232 348" stroke="#5a7a46" stroke-width="1.5" opacity="0.45"/>
       </g>
-      <!-- mid section — slightly smaller, tightening toward bud -->
-      <g opacity="0.88">
-        <ellipse cx="168" cy="162" rx="7.5" ry="8.5" fill="#7848b8"/>
-        <ellipse cx="168" cy="174" rx="7" ry="8" fill="#8858c0"/>
-        <ellipse cx="168" cy="186" rx="7" ry="7.5" fill="#7848b8"/>
-        <ellipse cx="168" cy="198" rx="6.5" ry="7" fill="#8050b8"/>
-        <ellipse cx="168" cy="210" rx="6" ry="6.5" fill="#7848b8"/>
-        <g stroke="#c0a0e8" stroke-width="0.6" stroke-linecap="round" opacity="0.75">
-          <line x1="160" y1="162" x2="153" y2="160"/><line x1="176" y1="162" x2="183" y2="160"/>
-          <line x1="161" y1="174" x2="154" y2="172"/><line x1="175" y1="174" x2="182" y2="172"/>
-          <line x1="161" y1="186" x2="154" y2="184"/><line x1="175" y1="186" x2="182" y2="184"/>
-        </g>
+
+      <!-- ── MAIN SPIKE (center) ── -->
+      <line x1="152" y1="420" x2="152" y2="66" stroke="#4c6a3c" stroke-width="2.6" stroke-linecap="round"/>
+      <!-- narrow stem leaves -->
+      <g stroke="#5a7a46" stroke-linecap="round" opacity="0.6">
+        <line x1="152" y1="300" x2="134" y2="286" stroke-width="1.3"/>
+        <line x1="152" y1="300" x2="170" y2="286" stroke-width="1.3"/>
+        <line x1="152" y1="336" x2="132" y2="324" stroke-width="1.3"/>
+        <line x1="152" y1="336" x2="172" y2="324" stroke-width="1.3"/>
       </g>
-      <!-- lower section — tight buds -->
-      <g opacity="0.72">
-        <ellipse cx="168" cy="222" rx="5.5" ry="6" fill="#6838a8"/>
-        <ellipse cx="168" cy="233" rx="5" ry="5.5" fill="#7040b0"/>
-        <ellipse cx="168" cy="244" rx="4.5" ry="5" fill="#6838a8"/>
-        <ellipse cx="168" cy="254" rx="4" ry="4.5" fill="#7040b0"/>
-        <ellipse cx="168" cy="264" rx="3.5" ry="4" fill="#6030a0"/>
-        <ellipse cx="168" cy="273" rx="3" ry="3.5" fill="#5830a0"/>
+      <!-- open crown — blooms from the top down -->
+      <use href="#tuft" transform="translate(152 74)"/>
+      <use href="#tuft" transform="translate(152 93)  scale(0.95)"/>
+      <use href="#tuft" transform="translate(152 112) scale(0.9)"/>
+      <use href="#tuft" transform="translate(152 130) scale(0.85)"/>
+      <!-- transition -->
+      <use href="#tuft-half" transform="translate(152 148)"/>
+      <use href="#tuft-half" transform="translate(152 164) scale(0.92)"/>
+      <!-- tight buds below -->
+      <use href="#bud" x="152" y="180" fill="#9a6ba0" opacity="0.85"/>
+      <use href="#bud" x="152" y="195" fill="#8f6a94" opacity="0.8"/>
+      <use href="#bud" x="152" y="210" fill="#856a8a" opacity="0.75"/>
+      <use href="#bud" x="152" y="225" fill="#7d7460" opacity="0.7"/>
+      <use href="#bud" x="152" y="240" fill="#77855c" opacity="0.65"/>
+
+      <!-- ── LEFT SPIKE (shorter) ── -->
+      <line x1="102" y1="420" x2="102" y2="150" stroke="#4c6a3c" stroke-width="2.2" stroke-linecap="round"/>
+      <g stroke="#5a7a46" stroke-linecap="round" opacity="0.55">
+        <line x1="102" y1="330" x2="86"  y2="318" stroke-width="1.2"/>
+        <line x1="102" y1="330" x2="118" y2="318" stroke-width="1.2"/>
       </g>
-      <!-- narrow leaves along stem -->
-      <g stroke="#5a3888" stroke-width="1.1" stroke-linecap="round" opacity="0.6">
-        <path d="M168 300 C155 286 142 280 136 284"/>
-        <path d="M168 300 C181 286 194 280 200 284"/>
-        <path d="M168 330 C156 318 144 316 140 322"/>
-        <path d="M168 330 C180 318 192 316 196 322"/>
-        <path d="M168 360 C157 350 148 350 146 356"/>
-        <path d="M168 360 C179 350 188 350 190 356"/>
-        <path d="M168 390 C158 382 150 383 148 388"/>
-        <path d="M168 390 C178 382 186 383 188 388"/>
+      <use href="#tuft" transform="translate(102 157) scale(0.85)"/>
+      <use href="#tuft" transform="translate(102 174) scale(0.8)"/>
+      <use href="#tuft-half" transform="translate(102 190) scale(0.9)"/>
+      <use href="#bud" x="102" y="205" fill="#9a6ba0" opacity="0.8"/>
+      <use href="#bud" x="102" y="219" fill="#856a8a" opacity="0.72"/>
+      <use href="#bud" x="102" y="233" fill="#77855c" opacity="0.62"/>
+
+      <!-- ── RIGHT SPIKE ── -->
+      <line x1="206" y1="420" x2="206" y2="118" stroke="#4c6a3c" stroke-width="2.4" stroke-linecap="round"/>
+      <g stroke="#5a7a46" stroke-linecap="round" opacity="0.55">
+        <line x1="206" y1="316" x2="190" y2="304" stroke-width="1.2"/>
+        <line x1="206" y1="316" x2="222" y2="304" stroke-width="1.2"/>
       </g>
-      <!-- right secondary spike -->
-      <path d="M228 440 C228 368 228 284 228 214 C228 178 228 150 228 124" stroke="#7040a8" stroke-width="1.8" stroke-linecap="round" opacity="0.65"/>
-      <g opacity="0.6">
-        <ellipse cx="228" cy="120" rx="7" ry="9" fill="#8858c0"/>
-        <ellipse cx="228" cy="133" rx="7" ry="8.5" fill="#9060c8"/>
-        <ellipse cx="228" cy="145" rx="6.5" ry="8" fill="#8050b8"/>
-        <ellipse cx="228" cy="157" rx="6" ry="7.5" fill="#9060c8"/>
-        <ellipse cx="228" cy="168" rx="5.5" ry="7" fill="#8050b8"/>
-        <ellipse cx="228" cy="179" rx="5" ry="6.5" fill="#7848b8"/>
-        <g stroke="#c8a8f0" stroke-width="0.6" stroke-linecap="round" opacity="0.7">
-          <line x1="221" y1="120" x2="214" y2="118"/><line x1="235" y1="120" x2="242" y2="118"/>
-          <line x1="221" y1="133" x2="214" y2="131"/><line x1="235" y1="133" x2="242" y2="131"/>
-          <line x1="222" y1="145" x2="215" y2="143"/><line x1="234" y1="145" x2="241" y2="143"/>
-        </g>
-      </g>
-      <g stroke="#6040a0" stroke-width="1.1" stroke-linecap="round" opacity="0.5">
-        <path d="M228 440 C238 380 252 300 268 240"/>
-        <path d="M228 440 C234 390 244 320 256 270"/>
+      <use href="#tuft" transform="translate(206 125) scale(0.92)"/>
+      <use href="#tuft" transform="translate(206 143) scale(0.88)"/>
+      <use href="#tuft" transform="translate(206 160) scale(0.82)"/>
+      <use href="#tuft-half" transform="translate(206 176)"/>
+      <use href="#bud" x="206" y="192" fill="#9a6ba0" opacity="0.82"/>
+      <use href="#bud" x="206" y="207" fill="#8f6a94" opacity="0.76"/>
+      <use href="#bud" x="206" y="222" fill="#856a8a" opacity="0.7"/>
+      <use href="#bud" x="206" y="237" fill="#77855c" opacity="0.62"/>
+
+      <!-- Hint of a monarch drifting in — abstract wing shapes -->
+      <g opacity="0.5" transform="translate(238 88) rotate(18)">
+        <path d="M0 0 C-7 -8 -13 -8 -14 -2 C-14 3 -7 4 0 0 Z" fill="#c88a30"/>
+        <path d="M0 0 C7 -8 13 -8 14 -2 C14 3 7 4 0 0 Z"      fill="#b87a26"/>
+        <path d="M0 0 C-5 6 -9 7 -10 3"  stroke="#a06820" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <path d="M0 0 C5 6 9 7 10 3"     stroke="#a06820" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        <line x1="0" y1="-3" x2="0" y2="4" stroke="#4a3a20" stroke-width="1.2" stroke-linecap="round"/>
       </g>
     </svg>
+
     <div class="hero-content">
-      <div class="badge">Ohio Native Plant · Prairie Perennial</div>
+      <div class="badge">Ohio Native Plant · Prairie Wildflower</div>
       <h1>Blazing<em>Star</em></h1>
       <p class="hero-latin">Liatris spp.</p>
-      <p class="hero-tagline">Tall purple spikes that open top-to-bottom against late summer — a nectar column for monarchs, bumblebees, and specialist bees through the warmest weeks of the year.</p>
-      <div class="flagship-badge">✦ Monarch Nectar Plant</div>
+      <p class="hero-tagline">The prairie's vertical exclamation point — feathery purple wands that bloom from the top down and anchor the late-summer nectar sequence.</p>
+      <div class="flagship-badge">✦ Late-Summer Nectar Landmark</div>
     </div>
   </header>
 
+  <!-- QUICK FACTS BAND -->
   <div class="facts-band">
-    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Native perennial</span></div>
-    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">1–6 ft (by species)</span></div>
-    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">July–September</span></div>
-    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Full sun</span></div>
-    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Dry to moist (by species)</span></div>
-    <div class="fact-item"><span class="fact-label">Root</span><span class="fact-value">Corm</span></div>
+    <div class="fact-item">
+      <span class="fact-label">Type</span>
+      <span class="fact-value">Native perennial · corm</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Height</span>
+      <span class="fact-value">2–5 feet by species</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Bloom</span>
+      <span class="fact-value">Mid to late summer</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Light</span>
+      <span class="fact-value">Full sun</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Moisture</span>
+      <span class="fact-value">Medium · species vary</span>
+    </div>
+    <div class="fact-item">
+      <span class="fact-label">Family</span>
+      <span class="fact-value">Asteraceae (aster family)</span>
+    </div>
   </div>
 
+  <!-- OVERVIEW -->
   <section class="section">
     <p class="eyebrow">About This Plant</p>
-    <h2>A Spike That Opens from the Top Down</h2>
-    <p>Blazing star is one of the most recognisable wildflowers of the Ohio prairie — a tall, unbranched spike densely set with small purple floret clusters that open progressively from tip to base over the course of several weeks. The direction is unusual. Most flowering spikes open from the bottom up; <em>Liatris</em> works the other way, presenting fresh florets at the top of the spike first and working downward, so the plant is always tallest at its most colourful moment.</p>
-    <p>The foliage is linear and grass-like, with narrow leaves that clasp the stem at alternating intervals from ground to tip. Several species grow in Ohio, ranging from compact dry-soil plants under two feet to tall moist-prairie giants that reach six feet or more. All share the same essential character: the upright vertical form, the dense purple spike, and the steady procession of pollinators.</p>
+    <h2>The Prairie Turned Vertical</h2>
+    <p>Most prairie wildflowers spread their bloom outward — a daisy face, a flat-topped cluster. Blazing star concentrates it <strong>upward</strong>: a dense, unbranched spike packed with small feathery flower heads that open in a slow purple wave down the stem. In a planting, the effect is architectural — a rhythm of vertical strokes rising out of mounded and grass-textured neighbors.</p>
+    <p>The timing matters as much as the shape. Blazing star reaches peak bloom in mid to late summer, a stretch when many early perennials have finished and the fall asters haven't started. That position in the season makes it a reliable <strong>bridge in the nectar sequence</strong>, often busy with bumble bees, butterflies, and other visitors during the hottest weeks of the year.</p>
+
     <div class="keystone-callout">
-      <p>Blazing star's long bloom window and abundant, <strong>accessible nectar</strong> make it one of the most consistently visited plants of the late-summer prairie — worked continuously by monarchs, bumblebees, and specialist bees from the first open florets through the last.</p>
+      <p>Blazing star's late-summer bloom often overlaps with the period when <strong>monarchs</strong> are moving through Ohio, and patches in flower are a frequently recommended nectar stop in monarch-focused plantings. The dense spikes offer many small nectar-rich florets in one landing zone — an efficient refueling stand for a butterfly with a long way to go.</p>
     </div>
+
     <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
     <div class="pill-list">
-      <span class="pill">Prairie plantings</span>
       <span class="pill">Pollinator gardens</span>
-      <span class="pill">Sunny borders</span>
+      <span class="pill">Prairie plantings</span>
+      <span class="pill">Vertical accents</span>
       <span class="pill">Monarch waystations</span>
-      <span class="pill">Cut flower gardens</span>
-      <span class="pill">Rain garden edges</span>
+      <span class="pill">Cut-flower beds</span>
+      <span class="pill">Meadow matrices</span>
     </div>
   </section>
 
@@ -181,184 +209,270 @@
     </figure>
   </section>
 
-
+  <!-- SEASONAL INTEREST -->
   <section class="section">
     <p class="eyebrow">Seasonal Interest</p>
     <h2>A Year in the Life</h2>
     <div class="timeline">
-      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Narrow grass-like leaves emerge from the corm and build the season's rosette; stems begin to lengthen through early summer.</div></div>
-      <div class="tl-row active"><div class="tl-season">Early sum.</div><div class="tl-bar"></div><div class="tl-text">Tall stems fully formed with tight buds packed from base to tip, still weeks from opening.</div></div>
-      <div class="tl-row peak"><div class="tl-season">Late sum.</div><div class="tl-bar"></div><div class="tl-text">Florets open top-to-bottom across several weeks — the spike is continuously in motion, with open florets descending the stem as days pass.</div></div>
-      <div class="tl-row fade"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">Spent florets give way to small seed heads with feathery pappus; goldfinches and sparrows forage the dried spikes.</div></div>
-      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Dried stems persist and provide winter structure; the corm overwinters safely underground.</div></div>
+      <div class="tl-row active">
+        <div class="tl-season">Spring</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Grass-like tufts of narrow leaves emerge from underground corms — easy to mistake for a grass until the flower stem begins to rise</div>
+      </div>
+      <div class="tl-row peak">
+        <div class="tl-season">Summer</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Spikes ignite from the top down in feathery purple — peak nectar traffic, with bumble bees, butterflies, and skippers working the wands through the hottest weeks</div>
+      </div>
+      <div class="tl-row fade">
+        <div class="tl-season">Fall</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Spikes ripen into fluffy seedheads; goldfinches and other seed-eating songbirds often work the standing stalks</div>
+      </div>
+      <div class="tl-row">
+        <div class="tl-season">Winter</div>
+        <div class="tl-bar"></div>
+        <div class="tl-text">Stiff stalks stand through snow, holding seed into the cold months and keeping a vertical line in the dormant garden</div>
+      </div>
     </div>
   </section>
 
+  <!-- WILDLIFE SUPPORT -->
   <section class="section">
     <p class="eyebrow">Wildlife Support</p>
-    <h2>Who Visits</h2>
-    <p>Blazing star is among the most reliably visited plants of the midsummer prairie. Its florets are structured to reward longer-tongued insects, but the long bloom window and sheer volume of florets attract a broad community of visitors regardless.</p>
+    <h2>Who Visits — and Why It Matters</h2>
+    <p>Each spike carries many small flower heads, and each head holds a cluster of tubular disc florets — so a single stem offers <strong>dozens of nectar stops in one vertical line</strong>. Larger visitors like bumble bees and swallowtails can walk the spike floret to floret rather than flying between blooms, which is part of why blazing star tends to hold visitors for long, unhurried stretches.</p>
+
     <div class="insect-hub">
       <div class="insect-category">
-        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies</span><span class="insect-count-badge">late-summer nectar</span></div>
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🐝</span>
+          <span class="insect-category-name">Native Bees</span>
+          <span class="insect-count-badge">steady traffic</span>
+        </div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumble Bees</span>
+          <span class="insect-tag common">Long-horned Bees</span>
+          <span class="insect-tag">Sweat Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Small Carpenter Bees</span>
+        </div>
+      </div>
+
+      <div class="insect-category">
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🦋</span>
+          <span class="insect-category-name">Butterflies</span>
+          <span class="insect-count-badge">peak-bloom regulars</span>
+        </div>
         <div class="insect-list">
           <span class="insect-tag common">Monarch</span>
           <span class="insect-tag common">Eastern Tiger Swallowtail</span>
-          <span class="insect-tag common">Great Spangled Fritillary</span>
-          <span class="insect-tag">Spicebush Swallowtail</span>
-          <span class="insect-tag">Silver-spotted Skipper</span>
+          <span class="insect-tag">Great Spangled Fritillary</span>
           <span class="insect-tag">Painted Lady</span>
+          <span class="insect-tag">Silver-spotted Skipper</span>
+          <span class="insect-tag">Grass Skippers</span>
         </div>
       </div>
+
       <div class="insect-category">
-        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Native Bees</span><span class="insect-count-badge">specialist visitors</span></div>
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🌙</span>
+          <span class="insect-category-name">Moths</span>
+          <span class="insect-count-badge">incl. specialists</span>
+        </div>
         <div class="insect-list">
-          <span class="insect-tag common">Bumblebees</span>
-          <span class="insect-tag common">Long-horned Bees</span>
-          <span class="insect-tag">Liatris specialist bees</span>
-          <span class="insect-tag">Sweat Bees</span>
-          <span class="insect-tag">Leafcutter Bees</span>
+          <span class="insect-tag">Bleeding Flower Moth</span>
+          <span class="insect-tag">Hummingbird Clearwing</span>
+          <span class="insect-tag">Various nocturnal moths</span>
         </div>
       </div>
+
       <div class="insect-category">
-        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Birds</span><span class="insect-count-badge">seed</span></div>
+        <div class="insect-category-header">
+          <span class="insect-category-icon">🐦</span>
+          <span class="insect-category-name">Birds</span>
+          <span class="insect-count-badge">seed season</span>
+        </div>
         <div class="insect-list">
           <span class="insect-tag common">American Goldfinch</span>
-          <span class="insect-tag">Sparrows (dried spikes)</span>
+          <span class="insect-tag">Other seed-eating songbirds</span>
         </div>
       </div>
     </div>
-    <p style="margin-top: 1.2rem;"><em>Liatris</em> is noted as a particularly important nectar source for migrating monarchs building fat reserves for their journey south — its late-summer bloom timing overlaps with the migration window in a way that makes it one of the more ecologically significant plants for that species.</p>
+
+    <p style="margin-top: 1.2rem;">The relationship runs deeper than nectar. A few moths are closely tied to the genus — the bleeding flower moth, for example, is reported to develop on <em>Liatris</em> flowers and seeds — and in fall the ripe seedheads become a <strong>standing bird feeder</strong>, one more reason to leave the stalks up through winter.</p>
   </section>
 
+  <!-- GROWING CONDITIONS -->
   <section class="section">
-    <p class="eyebrow">Care &amp; Cultivation</p>
+    <p class="eyebrow">Care & Cultivation</p>
     <h2>Growing Conditions</h2>
-    <p>Blazing star grows from a corm — a rounded underground storage organ similar to a bulb — which makes it very drought-tolerant once established. The main enemy is wet winter soil, which can rot the corm. Well-drained ground is the single most important factor in long-term success.</p>
+    <p>Blazing star grows from a corm — a bulb-like storage structure — and stays where you plant it, forming a slowly widening clump rather than a running colony. The main thing it asks for is sun and drainage; in many gardens, soggy winter soil is harder on the corms than summer drought.</p>
     <table class="care-table">
-      <tr><td>Light</td><td>Full sun; reduced bloom and floppy stems in partial shade</td></tr>
-      <tr><td>Soil</td><td>Well-drained, average to lean; tolerates sandy and rocky soils</td></tr>
-      <tr><td>Moisture</td><td>Dry to medium; moist-prairie species tolerate more; all dislike wet winter ground</td></tr>
-      <tr><td>Root</td><td>Corm — drought-tolerant storage organ; resents waterlogging more than drought</td></tr>
-      <tr><td>Staking</td><td>Tall species (especially <em>L. pycnostachya</em>) may need support in exposed sites</td></tr>
-      <tr><td>Aftercare</td><td>Leave dried spikes for birds and winter structure; cut back in early spring</td></tr>
-      <tr><td>Division</td><td>Corms can be divided in early spring to increase stock</td></tr>
+      <tr><td>Light</td><td>Full sun for the strongest, most upright spikes; tends to lean or thin in shade</td></tr>
+      <tr><td>Soil</td><td>Average to lean, well-drained soils; dense blazing star is the most tolerant of moisture-retentive sites</td></tr>
+      <tr><td>Moisture</td><td>Medium once established; species range from dry-site to moist-meadow (see the species guide below)</td></tr>
+      <tr><td>Height</td><td>2–5 feet depending on species and site; taller spikes may lean in rich soil</td></tr>
+      <tr><td>Spread</td><td>Clump-forming from corms; self-sows modestly where seedheads are left standing</td></tr>
+      <tr><td>Wildlife pressure</td><td>Rabbits often browse young shoots, and voles sometimes dig corms — new plantings may need protection in some gardens</td></tr>
+      <tr><td>Winter care</td><td>Leave stalks standing for seed-eating birds and stem structure; cut back in early spring</td></tr>
     </table>
   </section>
 
+  <!-- COMPANION PLANTS -->
   <section class="section">
     <p class="eyebrow">Planting Partners</p>
     <h2>Grows Well With</h2>
-    <p>The vertical purple spikes of blazing star are among the most versatile forms in the prairie palette — they punctuate horizontal masses and work especially well against fine-textured grasses and warm late-season tones.</p>
+    <p>Blazing star reads best in repetition — spikes scattered through a planting so the vertical line recurs, rising out of rounder and finer-textured company. Prairie grasses also lend the stems some physical support.</p>
+
     <div class="companion-group">
-      <p class="companion-group-label">Prairie structure</p>
+      <p class="companion-group-label">Form contrast — mounds & domes</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black-Eyed Susan</span> <span class="companion-latin">Rudbeckia hirta</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Bergamot</span> <span class="companion-latin">Monarda fistulosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
+      </div>
+    </div>
+
+    <div class="companion-group">
+      <p class="companion-group-label">Prairie matrix — grasses</p>
       <div class="companion-list">
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Little Bluestem</span> <span class="companion-latin">Schizachyrium scoparium</span></div></div>
         <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Prairie Dropseed</span> <span class="companion-latin">Sporobolus heterolepis</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Rattlesnake Master</span> <span class="companion-latin">Eryngium yuccifolium</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Switchgrass</span> <span class="companion-latin">Panicum virgatum</span></div></div>
       </div>
     </div>
+
     <div class="companion-group">
-      <p class="companion-group-label">Complementary bloom</p>
+      <p class="companion-group-label">Bloom sequence — before & after</p>
       <div class="companion-list">
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Purple Coneflower</span> <span class="companion-latin">Echinacea purpurea</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Mountain Mint</span> <span class="companion-latin">Pycnanthemum spp.</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black-eyed Susan</span> <span class="companion-latin">Rudbeckia hirta</span></div></div>
-        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Butterfly Weed</span> <span class="companion-latin">Asclepias tuberosa</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Golden Alexanders</span> <span class="companion-latin">Zizia aurea</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Goldenrods</span> <span class="companion-latin">Solidago spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">New England Aster</span> <span class="companion-latin">Symphyotrichum novae-angliae</span></div></div>
       </div>
     </div>
   </section>
 
+  <!-- FASCINATING FACTS -->
   <section class="section fact-feature">
     <p class="eyebrow">Did You Know?</p>
     <h2>The Stories Behind This Plant</h2>
+
     <div class="story-card story-card--highlight">
       <div class="story-number">01</div>
       <div class="story-body">
-        <h3 class="story-title">It Opens from the Top Down — Against All Expectations</h3>
-        <p>Nearly every flowering spike in nature opens from the bottom up: buds at the base mature first, and bloom progresses upward over time. <em>Liatris</em> reverses this. The topmost florets open first, and bloom works progressively downward toward the base over several weeks.</p>
-        <p>The result is a plant that is always tallest at its most vivid — the open purple florets crown the spike while the lower buds are still tightly closed. <strong>Why the reversal?</strong> One hypothesis is that the top-down sequence benefits visiting monarchs and bumblebees, which tend to land at the top of a spike and work downward — so fresh florets are always at the point of first contact.</p>
+        <h3 class="story-title">It Blooms Upside Down</h3>
+        <p>Most spike-flowering plants open from the bottom up — think of a lupine or a foxglove climbing toward an unopened tip. Blazing star does the opposite: the spike opens <strong>from the top down</strong>, the crown flowering first while the lower buds wait their turn. It's one of the easiest field marks in the genus, and one of the more unusual bloom sequences among familiar garden perennials.</p>
+        <p>The practical effect is a long, orderly bloom. As the wave of open florets descends the stem week by week, the spike keeps presenting fresh flowers — and fresh nectar — at a steadily moving front, rather than spending itself all at once.</p>
       </div>
     </div>
+
     <div class="story-card">
       <div class="story-number">02</div>
       <div class="story-body">
-        <h3 class="story-title">The Root Is a Corm, Not a Bulb</h3>
-        <p>Blazing star grows from a solid, rounded underground storage organ called a <strong>corm</strong> — similar in appearance to a bulb but structurally different. A bulb is layered, like an onion; a corm is solid throughout, a compressed stem packed with starch. The corm is what gives <em>Liatris</em> its drought tolerance and its longevity, and why established plants emerge reliably for many years from the same spot without replanting.</p>
+        <h3 class="story-title">No Petals — Just a Thousand Threads</h3>
+        <p>Look closely and there isn't a petal in the usual sense anywhere on the spike. Blazing star belongs to the aster family, but unlike a daisy it carries <strong>no ray florets at all</strong> — every flower head is a tight cluster of small tubular disc florets. The feathery texture comes from the florets' long, thread-like styles, which extend well beyond the flower and curl outward.</p>
+        <p>Those threads are the whole show. En masse they give the spike its soft, flame-like fuzz — the source of both common names, "blazing star" and the older florists' name <em>gayfeather</em>.</p>
       </div>
     </div>
+
     <div class="story-card">
       <div class="story-number">03</div>
       <div class="story-body">
-        <h3 class="story-title">A Monarch Waystation Plant</h3>
-        <p>The late-summer bloom of blazing star overlaps closely with the southward migration of monarch butterflies through Ohio. Monarchs must build significant fat reserves for the long journey to their Mexican overwintering grounds, and high-nectar plants in late August and September are critical fuel stops. <em>Liatris</em> is among the most consistently visited plants during that window — its dense, nectar-rich spikes are well-suited to the energy demands of a migrating butterfly.</p>
+        <h3 class="story-title">The Corm Is the Strategy</h3>
+        <p>Underground, blazing star keeps its reserves in a <strong>corm</strong> — a firm, bulb-like base that stores energy from season to season. On the historic prairie, that structure was insurance: drought, fire, and grazing could take the top growth, and the corm would send it back up. In the garden, the same trait makes established plants notably drought-tolerant and long-lived in lean, well-drained soil.</p>
+        <p>It also explains blazing star's tidy manners. Unlike rhizomatous spreaders that weave outward through a planting, a corm stays put — the clump widens slowly, and new plants arrive mainly by seed. The one caveat: voles find the corms as nourishing as the plant does, and in some gardens new plantings benefit from protection.</p>
       </div>
     </div>
+
     <div class="story-card">
       <div class="story-number">04</div>
       <div class="story-body">
-        <h3 class="story-title">The Name Means Nothing — and That Is Unusual</h3>
-        <p>Most plant genus names carry a meaning — a reference to a person, a place, a physical trait, or a classical myth. <em>Liatris</em> is one of the rare exceptions: the name appears to have no clear etymology, and botanists have debated its origin for centuries without settling on a convincing source. It may be a latinised form of a vernacular name now lost, or simply an invented coinage. For a plant so visually distinctive, the anonymous genus name is a mild botanical curiosity.</p>
+        <h3 class="story-title">A Prairie Native in the World's Flower Markets</h3>
+        <p>Blazing star is one of the few North American prairie wildflowers to have become a <strong>commercial cut flower grown around the world</strong>. The florist trade knows it as liatris or gayfeather, and it's cultivated far beyond its native range for exactly the traits gardeners value: a strong straight stem, a long vase life, and that top-down bloom, which means the visible tip of a cut spike is always the freshest part.</p>
+        <p>So a stem in a supermarket bouquet and a wand in an Ohio prairie remnant are the same plant leading two very different lives — one of the quieter ways a tallgrass native has traveled the globe.</p>
       </div>
     </div>
   </section>
 
+  <!-- OHIO SPECIES SECTION -->
   <section class="section">
     <p class="eyebrow">Ohio Species</p>
-    <h2>Ohio Blazing Stars</h2>
-    <p>Five species of <em>Liatris</em> grow in Ohio, spanning a wide range of heights, moisture preferences, and garden applications. Matching the species to your site's conditions is the key to long-term success — and gives you options for almost any sunny location.</p>
+    <h2>Ohio Blazing Star Species</h2>
+    <p>Several species of blazing star are native to Ohio, spanning a wide moisture gradient — from moist prairie swales to dry gravel and limestone slopes. They share the vertical spike and top-down bloom; they differ in stature, head size, and the sites they call home.</p>
+
     <div class="species-grid">
+
       <div class="species-card featured">
-        <p class="species-tag">Most common · Garden-ready</p>
+        <p class="species-tag">Flagship Species</p>
         <p class="species-common">Dense Blazing Star</p>
         <p class="species-latin">Liatris spicata</p>
-        <p class="species-desc">The most widely grown species, with the densest, most uniform spike. Tolerates average to moist soils better than most, and the most forgiving of garden conditions. The standard choice for borders and pollinator plantings.</p>
-        <div class="species-traits"><span class="species-trait">3–5 ft</span><span class="species-trait">Moist to avg</span><span class="species-trait">Dense spike</span></div>
+        <p class="species-desc">The species most often grown in gardens and the standard of the cut-flower trade. Tall, tightly packed spikes of purple; the most tolerant of moist and average garden soils, at home in prairie swales and rain garden edges. The benchmark for the genus in cultivation.</p>
+        <div class="species-traits">
+          <span class="species-trait">3–5 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Moist – medium</span>
+          <span class="species-trait">Garden standard</span>
+        </div>
       </div>
+
       <div class="species-card">
-        <p class="species-tag">Prairie species · Dry sites</p>
+        <p class="species-tag">Dry sites · Late bloom</p>
         <p class="species-common">Rough Blazing Star</p>
         <p class="species-latin">Liatris aspera</p>
-        <p class="species-desc">A true prairie species for dry, well-drained soils — more loosely set floret clusters give it a slightly more open, naturalistic quality than <em>L. spicata</em>. Excellent in lean garden soils and prairie restorations.</p>
-        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Dry soils</span><span class="species-trait">Open spike</span></div>
+        <p class="species-desc">A dry-prairie species with a looser, more open spike — the flower heads read as distinct rounded buttons spaced along the stem. Tends to bloom later than dense blazing star, extending the genus's season, and thrives in sandy or gravelly soil where richer plantings struggle.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–4 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry – medium</span>
+          <span class="species-trait">Button-like heads</span>
+        </div>
       </div>
+
       <div class="species-card">
-        <p class="species-tag">Tallest · Most dramatic</p>
-        <p class="species-common">Prairie Blazing Star</p>
-        <p class="species-latin">Liatris pycnostachya</p>
-        <p class="species-desc">The tallest and most imposing Ohio species, from moist prairie ground. Long dense spikes on tall stems that may need support in exposed sites. A strong vertical presence at the back of any planting.</p>
-        <div class="species-traits"><span class="species-trait">4–6 ft</span><span class="species-trait">Moist prairie</span><span class="species-trait">May need stake</span></div>
-      </div>
-      <div class="species-card">
-        <p class="species-tag">Compact · Rocky / dry</p>
+        <p class="species-tag">Compact · Lean soils</p>
         <p class="species-common">Cylindrical Blazing Star</p>
         <p class="species-latin">Liatris cylindracea</p>
-        <p class="species-desc">The most compact Ohio species, suited to rocky, dry, and lean soils where taller species cannot thrive. Fewer but larger individual floret heads spaced along the spike give it a distinctive open look.</p>
-        <div class="species-traits"><span class="species-trait">1–2 ft</span><span class="species-trait">Dry rocky</span><span class="species-trait">Open heads</span></div>
+        <p class="species-desc">The smallest of Ohio's blazing stars — a fine-textured plant of dry, often limestone-influenced prairies and gravel slopes, with relatively few, neatly cylindrical flower heads. Suited to rock gardens, lean hell-strips, and other tight, well-drained spots where taller species would flop.</p>
+        <div class="species-traits">
+          <span class="species-trait">1–2 ft</span>
+          <span class="species-trait">Full sun</span>
+          <span class="species-trait">Dry · well-drained</span>
+          <span class="species-trait">Smallest species</span>
+        </div>
       </div>
+
       <div class="species-card">
-        <p class="species-tag">Large-headed · Open woodland edge</p>
-        <p class="species-common">Large-headed Blazing Star</p>
+        <p class="species-tag">Savanna · Bold heads</p>
+        <p class="species-common">Savanna Blazing Star</p>
         <p class="species-latin">Liatris scariosa</p>
-        <p class="species-desc">Distinctive for its notably large, well-spaced floret heads — fewer per spike than other species, but each one broader and more open. Found in dry open woods and rocky slopes; tolerates more shade than most. Less common in the nursery trade but worth seeking.</p>
-        <div class="species-traits"><span class="species-trait">2–4 ft</span><span class="species-trait">Dry to avg</span><span class="species-trait">Large heads</span><span class="species-trait">Part shade</span></div>
+        <p class="species-desc">A blazing star of savannas and open woodland edges, carrying fewer but noticeably larger flower heads on the spike. Its looser architecture and tolerance of light, dappled conditions make it the family's candidate for the sunnier edge of a woodland planting.</p>
+        <div class="species-traits">
+          <span class="species-trait">2–4 ft</span>
+          <span class="species-trait">Sun – light shade</span>
+          <span class="species-trait">Dry – medium</span>
+          <span class="species-trait">Large heads</span>
+        </div>
       </div>
+
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
-    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Liatris spp. · Native Perennial · Native to Ohio</p>
+    <p>
+      <strong>Ohio Native Plant Garden</strong><br/>
+      You scanned a QR code in our native garden.<br/>
+      Each plant here was chosen to support local wildlife,<br/>
+      build healthy soil, and restore Ohio's native plant communities.
+    </p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.45">
+      Liatris spp. · Native Perennial · Native to Ohio
+    </p>
   </footer>
 
-  <script>
-    const sections = document.querySelectorAll('.section');
-    const observer = new IntersectionObserver(
-      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-      { threshold: 0.06 }
-    );
-    sections.forEach(s => observer.observe(s));
-  </script>
   <script src="../js/plant-profile.js"></script>
 </body>
 </html>
