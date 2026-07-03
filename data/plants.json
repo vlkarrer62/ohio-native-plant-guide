@@ -1896,5 +1896,29 @@
     { "src": "../images/cup-plant-garden.jpg",   "caption": "Rain caught where the leaves clasp the stem · Bay Village, Ohio" },
     { "src": "../images/cup-plant-garden-2.jpg", "caption": "Flower buds forming, still closed · Bay Village, Ohio" }
   ]
+},
+{
+  "slug": "liatris",
+  "url": "plants/liatris.html",
+  "commonName": "Blazing Star",
+  "displayName": "Blazing Star",
+  "shortName": "Blazing Star",
+  "scientificName": "Liatris spp.",
+  "aliases": [
+    "Blazing Stars", "Gayfeather", "Gay Feather", "Liatris",
+    "Dense Blazing Star", "Liatris spicata",
+    "Rough Blazing Star", "Liatris aspera",
+    "Cylindrical Blazing Star", "Liatris cylindracea",
+    "Savanna Blazing Star", "Liatris scariosa"
+  ],
+  "tagClass": "tag-wildflower",
+  "accentFrom": "#efe4f2",
+  "accentTo": "#e0cfe8",
+  "relatedHabitatSlugs": ["oak-savanna"],
+  "relatedWildlifeSlugs": [],
+  "garden": [
+    { "src": "../images/liatris-garden.jpg",   "caption": "Two spikes a stage apart — one budded, one in full color · Bay Village, Ohio" },
+    { "src": "../images/liatris-garden-2.jpg", "caption": "The spike opening top-down, buds waiting below · Bay Village, Ohio" }
+  ]
 }
 ]
