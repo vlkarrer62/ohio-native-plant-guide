@@ -25,7 +25,7 @@
     ],
     "foundAlong": ["Woodland borders", "Clearings & trail edges", "Hedgerows", "Fence lines & old fields", "Stream & pond margins", "Yard-and-woods boundaries"],
     "designPrinciples": ["Layer tall to low", "Grade shade to sun", "Anchor with a small tree", "Keep a shrub band", "Leave the leaf litter", "Soften the mown line"],
-    "relatedPlantSlugs": ["serviceberry", "wild-geranium", "wild-columbine", "golden-alexanders", "foxglove-beardtongue", "wild-ginger", "pennsylvania-sedge", "wild-bergamot", "black-eyed-susan", "butterfly-weed"],
+    "relatedPlantSlugs": ["serviceberry", "wild-geranium", "wild-columbine", "golden-alexanders", "penstemon", "wild-ginger", "pennsylvania-sedge", "wild-bergamot", "black-eyed-susan", "butterfly-weed"],
     "relatedWildlifeSlugs": [],
     "relatedHabitatSlugs": ["woodland-understory", "sunny-meadow", "oak-savanna"]
   },
