@@ -58,7 +58,8 @@
   <!-- FILTER BAR -->
   <div class="filter-bar" aria-label="Directory status">
     <div class="filter-bar-inner">
-      <span class="filter-label">Showing all profiles</span>
+      <span class="filter-label" id="filter-label">Showing all profiles</span>
+      <a href="index.html" class="filter-clear" id="filter-clear" hidden>View all plants</a>
       <span class="filter-count" id="plant-count">Loading…</span>
     </div>
   </div>
@@ -187,10 +188,34 @@
     // CARD BUILDER
     // Returns an <a> element for a single plant.
     // ─────────────────────────────────────────────
+    const CATEGORY_FILTERS = {
+      wildflowers: { label: 'Wildflowers & Perennials', category: 'wildflowers' },
+      grasses:     { label: 'Grasses & Sedges', category: 'grasses' },
+      shrubs:      { label: 'Shrubs', category: 'shrubs' },
+      trees:       { label: 'Trees', category: 'trees' },
+      vines:       { label: 'Vines', category: 'vines' }
+    };
+
+    function getCategoryFilterKey() {
+      const type = new URLSearchParams(window.location.search).get('type');
+      return type && CATEGORY_FILTERS[type] ? type : null;
+    }
+
+    function filterPlantsByCategory(plants, typeKey) {
+      if (!typeKey) return plants;
+      const category = CATEGORY_FILTERS[typeKey].category;
+      return plants.filter(plant => plant.category === category);
+    }
+
+    function formatProfileCount(count) {
+      return `<strong>${count}</strong> profile${count !== 1 ? 's' : ''}`;
+    }
+
     function buildCard(plant, index) {
       const card = document.createElement('a');
 card.href        = plant.url;
 card.className   = 'plant-card';
+card.dataset.category = plant.category || '';
 card.dataset.search = [
   plant.commonName,
   plant.scientificName,
@@ -273,9 +298,19 @@ card.setAttribute('aria-label',
           </svg>
         </div>
         <div class="coming-text">
-          <h3>More profiles coming soon</h3>
-          <p>This directory grows alongside the garden. Each new profile follows the same depth — ecology, wildlife relationships, natural history, and growing guidance. Future entries will include Wild Bergamot, Purple Coneflower, Little Bluestem, New England Aster, and many more Ohio native species.</p>
+          <h3>The guide keeps growing</h3>
+          <p>This directory expands alongside the garden. Each profile covers ecology, wildlife relationships, natural history, and growing guidance — the same depth for every species added over time.</p>
         </div>`;
+      return el;
+    }
+
+    function buildEmptyCategoryState(typeKey) {
+      const label = CATEGORY_FILTERS[typeKey].label;
+      const el = document.createElement('div');
+      el.className = 'empty-category-state';
+      el.innerHTML = `
+        <p><strong>No ${label.toLowerCase()} profiles yet.</strong></p>
+        <p>Check back as the guide grows, or <a href="index.html">browse all plants</a>.</p>`;
       return el;
     }
 
@@ -307,7 +342,7 @@ card.setAttribute('aria-label',
     // ─────────────────────────────────────────────
 // DIRECTORY SEARCH
 // ─────────────────────────────────────────────
-function initDirectorySearch() {
+function initDirectorySearch(totalProfiles) {
   const input = document.getElementById('plantSearch');
   const searchCount = document.getElementById('searchCount');
   const plantCount = document.getElementById('plant-count');
@@ -315,7 +350,7 @@ function initDirectorySearch() {
   const seasonGroups = Array.from(document.querySelectorAll('.season-group'));
   const comingSoon = document.getElementById('coming-soon');
 
-  if (!input || !cards.length) return;
+  if (!input) return;
 
   function normalize(text) {
     return String(text || '').toLowerCase().replace(/\s+/g, ' ').trim();
@@ -344,7 +379,7 @@ function initDirectorySearch() {
 
     if (!query) {
       searchCount.textContent = '';
-      plantCount.innerHTML = `<strong>${cards.length}</strong> profile${cards.length !== 1 ? 's' : ''} available · more coming soon`;
+      plantCount.innerHTML = formatProfileCount(totalProfiles ?? cards.length);
     } else {
       searchCount.textContent = `${visibleCount} plant${visibleCount === 1 ? '' : 's'} found`;
       plantCount.innerHTML = `<strong>${visibleCount}</strong> matching profile${visibleCount !== 1 ? 's' : ''}`;
@@ -358,44 +393,59 @@ function initDirectorySearch() {
     // MAIN — fetch & render
     // ─────────────────────────────────────────────
     async function loadDirectory() {
-      const root      = document.getElementById('directory-root');
-      const countEl   = document.getElementById('plant-count');
-      const loadingEl = document.getElementById('loading-msg');
+      const root       = document.getElementById('directory-root');
+      const countEl    = document.getElementById('plant-count');
+      const labelEl    = document.getElementById('filter-label');
+      const clearEl    = document.getElementById('filter-clear');
+      const loadingEl  = document.getElementById('loading-msg');
+      const typeKey    = getCategoryFilterKey();
 
       try {
         const res = await fetch('../data/plants.json');
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const plants = await res.json();
+        const allPlants = await res.json();
+        const plants = filterPlantsByCategory(allPlants, typeKey);
 
-        // Update count
-        countEl.innerHTML =
-          `<strong>${plants.length}</strong> profile${plants.length !== 1 ? 's' : ''} available · more coming soon`;
+        if (typeKey && labelEl) {
+          labelEl.textContent = `Showing ${CATEGORY_FILTERS[typeKey].label.toLowerCase()}`;
+          document.title = `${CATEGORY_FILTERS[typeKey].label} · Plant Directory · Ohio Native Plant Guide`;
+        }
 
-        // Group by season, preserving the order seasons first appear
-        const seasonOrder = [];
-        const grouped     = {};
-        plants.forEach(plant => {
-          if (!grouped[plant.season]) {
-            seasonOrder.push(plant.season);
-            grouped[plant.season] = [];
-          }
-          grouped[plant.season].push(plant);
-        });
+        if (clearEl) {
+          clearEl.hidden = !typeKey;
+        }
+
+        countEl.innerHTML = formatProfileCount(plants.length);
 
         // Clear loading message
         root.innerHTML = '';
 
-        // Render each season group
-        seasonOrder.forEach(season => {
-          root.appendChild(buildSeasonGroup(season, grouped[season]));
-        });
+        if (!plants.length) {
+          root.appendChild(buildEmptyCategoryState(typeKey));
+        } else {
+          // Group by season, preserving the order seasons first appear
+          const seasonOrder = [];
+          const grouped     = {};
+          plants.forEach(plant => {
+            if (!grouped[plant.season]) {
+              seasonOrder.push(plant.season);
+              grouped[plant.season] = [];
+            }
+            grouped[plant.season].push(plant);
+          });
 
-        // Coming soon block
-        root.appendChild(buildComingSoon());
+          seasonOrder.forEach(season => {
+            root.appendChild(buildSeasonGroup(season, grouped[season]));
+          });
+
+          if (!typeKey) {
+            root.appendChild(buildComingSoon());
+          }
+        }
 
        // Wire up scroll animations and search
        attachRevealObserver();
-       initDirectorySearch();
+       initDirectorySearch(plants.length);
 
       } catch (err) {
         loadingEl && (loadingEl.style.display = 'none');
