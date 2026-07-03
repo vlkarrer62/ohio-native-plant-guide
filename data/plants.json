@@ -51,7 +51,8 @@
     ],
     "aliases": [
       "Zizia aurea"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Rattlesnake Master",
@@ -103,7 +104,8 @@
     ],
     "aliases": [
       "Eryngium yuccifolium"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Switchgrass",
@@ -157,7 +159,8 @@
     ],
     "aliases": [
       "Panicum virgatum"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Purple Lovegrass",
@@ -207,7 +210,8 @@
     ],
     "aliases": [
       "Eragrostis spectabilis"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Mountain Mint",
@@ -261,7 +265,8 @@
     "aliases": [
       "Pycnanthemum",
       "Pycnanthemum spp."
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Ohio Native Asters",
@@ -320,7 +325,8 @@
     "relatedHabitatSlugs": [
       "sunny-meadow",
       "woodland-edge"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Prairie Dropseed",
@@ -331,7 +337,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Dry to medium",
-    "height": "18–24 inches",
+    "height": "18–24 in",
     "description": "A long-lived warm-season grass with a graceful fountain form, distinctive buttery fragrance in late summer, and amber fall colour. Slow to establish but among the most enduring native grasses.",
     "url": "prairie-dropseed.html",
     "tagClass": "tag-grass",
@@ -371,7 +377,8 @@
     ],
     "aliases": [
       "Sporobolus heterolepis"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Little Bluestem",
@@ -382,7 +389,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun",
     "moisture": "Dry to medium",
-    "height": "2–4 feet",
+    "height": "2–4 ft",
     "description": "A native prairie grass with chalky blue-green summer foliage that transforms to deep copper and russet in fall, holding its upright form and warm colour through the longest winters.",
     "url": "little-bluestem.html",
     "tagClass": "tag-grass",
@@ -423,7 +430,8 @@
     ],
     "aliases": [
       "Schizachyrium scoparium"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Purple Coneflower",
@@ -434,7 +442,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to light part shade",
     "moisture": "Dry to medium",
-    "height": "2–4 feet",
+    "height": "2–4 ft",
     "description": "A bold midsummer wildflower with rose-purple drooping petals and a raised spiny cone — widely visited by bees, butterflies, and beetles in summer, and by goldfinches working the persistent seed heads through winter.",
     "url": "purple-coneflower.html",
     "tagClass": "tag-perennial",
@@ -482,10 +490,13 @@
       "Echinacea",
       "Echinacea purpurea"
     ],
-    "garden": {
-      "src": "../images/purple-coneflower-garden.jpg",
-      "caption": "Bay Village, Ohio · July 2025"
-    }
+    "garden": [
+      {
+        "src": "../images/purple-coneflower-garden.jpg",
+        "caption": "Bay Village, Ohio · July 2025"
+      }
+    ],
+    "native": true
   },
   {
     "commonName": "Red Buckeye",
@@ -496,7 +507,7 @@
     "season": "Spring",
     "sun": "Part shade to full sun",
     "moisture": "Medium to moist",
-    "height": "8–20 feet",
+    "height": "8–20 ft",
     "description": "A small native tree of woodland edges that flowers in April with upright red panicles — timed precisely to the spring arrival of ruby-throated hummingbirds, and the first tree to bloom in the Ohio native garden.",
     "url": "red-buckeye.html",
     "tagClass": "tag-tree",
@@ -534,7 +545,8 @@
     ],
     "aliases": [
       "Aesculus pavia"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "White Oak",
@@ -545,7 +557,7 @@
     "season": "Spring · Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Dry to medium",
-    "height": "60–100 feet",
+    "height": "60–100 ft",
     "description": "A long-lived canopy tree and ecological keystone — supporting over 500 caterpillar species, feeding dozens of wildlife species through its acorns, and anchoring entire woodland communities across centuries.",
     "url": "white-oak.html",
     "tagClass": "tag-tree",
@@ -585,7 +597,8 @@
     ],
     "aliases": [
       "Quercus alba"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Witch Hazel",
@@ -596,7 +609,7 @@
     "season": "Fall · Winter",
     "sun": "Part shade to full sun",
     "moisture": "Medium to moist",
-    "height": "10–20 feet",
+    "height": "10–20 ft",
     "description": "The last native plant to flower in Ohio — spidery yellow blooms that open on bare branches in October and November, serving late-active moths and marking the close of the native plant year.",
     "url": "witch-hazel.html",
     "tagClass": "tag-shrub",
@@ -613,7 +626,8 @@
       "Moist"
     ],
     "bloomSeasonTags": [
-      "Fall"
+      "Fall",
+      "Winter"
     ],
     "wildlifeRole": [
       "Nectar Plant",
@@ -637,7 +651,8 @@
     ],
     "aliases": [
       "Hamamelis virginiana"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Bur Oak",
@@ -648,7 +663,7 @@
     "season": "Spring · Summer · Fall",
     "sun": "Full sun",
     "moisture": "Dry to medium",
-    "height": "60–80 feet",
+    "height": "60–80 ft",
     "description": "The toughest oak in North America — fire-adapted, deeply rooted, and built for the open savanna edge. Large fringed acorns, distinctive corky bark on young branches, and a lifespan measured in centuries.",
     "url": "bur-oak.html",
     "tagClass": "tag-tree",
@@ -686,7 +701,8 @@
     ],
     "aliases": [
       "Quercus macrocarpa"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Swamp Milkweed",
@@ -697,7 +713,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Medium to wet",
-    "height": "3–5 feet",
+    "height": "3–5 ft",
     "description": "A tall native perennial of moist edges and wetlands — one of Ohio's most important milkweed species for monarch butterflies, with deep rose-pink flower clusters and distinctive silky seedpods.",
     "url": "swamp-milkweed.html",
     "tagClass": "tag-perennial",
@@ -710,6 +726,7 @@
       "Part Sun"
     ],
     "moistureTags": [
+      "Medium",
       "Moist",
       "Wet"
     ],
@@ -751,7 +768,8 @@
         "src": "../images/milkweed-garden.jpeg",
         "caption": "Swamp milkweed rising with narrow leaves and summer buds · Bay Village, Ohio · July 2026"
       }
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Wild Bergamot",
@@ -762,7 +780,7 @@
     "season": "Summer",
     "sun": "Full sun to part shade",
     "moisture": "Dry to medium",
-    "height": "2–4 feet",
+    "height": "2–4 ft",
     "description": "A fragrant prairie wildflower with shaggy lavender flower heads and strongly oregano-scented foliage — a midsummer bee and butterfly magnet with a long history of culinary and medicinal use.",
     "url": "wild-bergamot.html",
     "tagClass": "tag-perennial",
@@ -805,7 +823,8 @@
     ],
     "aliases": [
       "Monarda fistulosa"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Fox Sedge",
@@ -816,7 +835,7 @@
     "season": "Spring · Summer",
     "sun": "Full sun to part shade",
     "moisture": "Moist to wet",
-    "height": "1–3 feet",
+    "height": "1–3 ft",
     "description": "A native wetland sedge with dense bristly seed clusters and fine arching foliage — an adaptable, low-maintenance plant that stabilises wet soils, feeds seed-eating birds, and thrives where most plants fail.",
     "url": "fox-sedge.html",
     "tagClass": "tag-grass",
@@ -860,7 +879,8 @@
     ],
     "aliases": [
       "Carex vulpinoidea"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Pennsylvania Sedge",
@@ -871,7 +891,7 @@
     "season": "Spring",
     "sun": "Part to full shade",
     "moisture": "Dry to medium",
-    "height": "6–8 inches",
+    "height": "6–8 in",
     "description": "A fine-textured sedge of dry oak woods that spreads into a soft, low carpet — a living groundcover for the shade where turfgrass struggles.",
     "url": "pennsylvania-sedge.html",
     "tagClass": "tag-grass",
@@ -912,7 +932,8 @@
     ],
     "aliases": [
       "Carex pensylvanica"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Butterfly Weed",
@@ -923,7 +944,7 @@
     "season": "Summer",
     "sun": "Full sun",
     "moisture": "Dry, well-drained",
-    "height": "1–2½ feet",
+    "height": "1–2½ ft",
     "description": "The milkweed without milky sap — flat clusters of vivid orange over dry, sunny ground, feeding the monarch and the meadow at once.",
     "url": "butterfly-weed.html",
     "tagClass": "tag-perennial",
@@ -963,7 +984,8 @@
     "aliases": [
       "Butterfly Milkweed",
       "Asclepias tuberosa"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Joe Pye Weed",
@@ -974,7 +996,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Medium to wet",
-    "height": "4–7 feet",
+    "height": "4–7 ft",
     "description": "Tall whorled stems crowned with domed clusters of dusty mauve — a late-summer beacon for butterflies as the rest of the meadow begins to fade.",
     "url": "joe-pye-weed.html",
     "tagClass": "tag-perennial",
@@ -988,7 +1010,8 @@
     ],
     "moistureTags": [
       "Medium",
-      "Moist"
+      "Moist",
+      "Wet"
     ],
     "bloomSeasonTags": [
       "Late Summer",
@@ -1018,7 +1041,8 @@
     "aliases": [
       "Joe-Pye Weed",
       "Joe Pye"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Blazing Star",
@@ -1029,7 +1053,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun",
     "moisture": "Dry to moist (by species)",
-    "height": "1–6 feet",
+    "height": "1–6 ft",
     "description": "Tall purple spikes that open top-to-bottom against late summer — a nectar column for monarchs, bumblebees, and specialist bees through the warmest weeks of the year.",
     "url": "liatris.html",
     "tagClass": "tag-perennial",
@@ -1042,7 +1066,8 @@
     ],
     "moistureTags": [
       "Dry",
-      "Medium"
+      "Medium",
+      "Moist"
     ],
     "bloomSeasonTags": [
       "Late Summer",
@@ -1095,7 +1120,8 @@
         "src": "../images/liatris-garden-2.jpg",
         "caption": "The spike opening top-down, buds waiting below · Bay Village, Ohio"
       }
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Honey Locust",
@@ -1106,7 +1132,7 @@
     "season": "Spring · Summer · Fall",
     "sun": "Full sun",
     "moisture": "Adaptable; drought-tolerant",
-    "height": "30–70 feet",
+    "height": "30–70 ft",
     "description": "A tough, fast-growing tree of floodplains and forest edges — armed with branching thorns, hung with long sweet pods, and an underestimated contributor to wildlife and soil health.",
     "url": "honey-locust.html",
     "tagClass": "tag-tree",
@@ -1147,7 +1173,8 @@
     ],
     "aliases": [
       "Gleditsia triacanthos"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Foxglove Beardtongue",
@@ -1158,7 +1185,7 @@
     "season": "Spring · Summer",
     "sun": "Full sun to part shade",
     "moisture": "Dry to medium",
-    "height": "2–4 feet",
+    "height": "2–4 ft",
     "description": "Tall white flower spikes in early summer, bridging the gap between spring ephemerals and the midsummer prairie — a native perennial that rewards bumblebee queens when they need it most.",
     "url": "penstemon.html",
     "tagClass": "tag-perennial",
@@ -1204,7 +1231,8 @@
       "Penstemon",
       "Smooth Penstemon",
       "Penstemon digitalis"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Cardinal Flower",
@@ -1215,7 +1243,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Moist to wet",
-    "height": "2–4 feet",
+    "height": "2–4 ft",
     "description": "One of the most vivid reds in the Ohio native flora — a midsummer flower built almost exclusively for the ruby-throated hummingbird, its colour invisible to the bees it does not need.",
     "url": "cardinal-flower.html",
     "tagClass": "tag-perennial",
@@ -1258,7 +1286,8 @@
     ],
     "aliases": [
       "Lobelia cardinalis"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Tickseed",
@@ -1269,7 +1298,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun",
     "moisture": "Dry to medium",
-    "height": "1–8 feet",
+    "height": "1–8 ft",
     "description": "Bright golden daisies on airy branching stems — among the most adaptable and long-blooming of Ohio's native wildflowers, working steadily for bees and goldfinches from early summer into fall.",
     "url": "coreopsis.html",
     "tagClass": "tag-perennial",
@@ -1315,7 +1344,8 @@
     ],
     "aliases": [
       "Coreopsis"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Ironweed",
@@ -1327,7 +1357,7 @@
     "season": "Late Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Medium to moist",
-    "height": "3–8 feet",
+    "height": "3–8 ft",
     "description": "Some of the most vivid purple in the Ohio late-summer landscape — a large, stiff-stemmed wildflower that arrives when much of the season has already finished, and a critical nectar source for migrating monarchs.",
     "url": "ironweed.html",
     "tagClass": "tag-perennial",
@@ -1378,7 +1408,8 @@
     "aliases": [
       "Vernonia",
       "Vernonia spp."
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Goldenrod",
@@ -1395,7 +1426,7 @@
     "season": "Late Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Dry to moist (by species)",
-    "height": "1–6 feet",
+    "height": "1–6 ft",
     "description": "The defining colour of the Ohio autumn — arching golden plumes that support over 100 Lepidoptera species, specialist bees, and migrating monarchs through the closing weeks of the growing season.",
     "url": "goldenrod.html",
     "tagClass": "tag-perennial",
@@ -1443,7 +1474,8 @@
       "dry-prairie",
       "woodland-edge",
       "wet-edge"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "False Sunflower",
@@ -1455,7 +1487,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Dry to medium",
-    "height": "3–5 feet",
+    "height": "3–5 ft",
     "description": "A long-blooming golden composite of prairies and open ground, with ray florets that set seed and stay attached as the head ripens.",
     "url": "false-sunflower.html",
     "tagClass": "tag-wildflower",
@@ -1503,7 +1535,8 @@
     ],
     "aliases": [
       "Heliopsis helianthoides"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Serviceberry",
@@ -1515,7 +1548,7 @@
     "season": "Spring · Summer · Fall",
     "sun": "Full sun to part shade",
     "moisture": "Medium",
-    "height": "15–25 feet (to 40)",
+    "height": "15–25 ft (to 40 ft)",
     "description": "A four-season small tree: among the first to bloom in spring, edible June fruit, orange-red fall color, and smooth silver-grey bark.",
     "url": "serviceberry.html",
     "tagClass": "tag-tree",
@@ -1564,7 +1597,8 @@
     "aliases": [
       "Amelanchier",
       "Amelanchier spp."
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Black-eyed Susan",
@@ -1576,7 +1610,7 @@
     "season": "Summer · Fall",
     "sun": "Full sun",
     "moisture": "Dry to medium",
-    "height": "1–3 feet",
+    "height": "1–3 ft",
     "description": "A fast-establishing golden composite with a dark central cone — short-lived but freely reseeding, often first to bloom in a new planting.",
     "url": "black-eyed-susan.html",
     "tagClass": "tag-wildflower",
@@ -1626,7 +1660,8 @@
     "aliases": [
       "Black Eyed Susan",
       "Black-Eyed Susan"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Nodding Onion",
@@ -2070,7 +2105,8 @@
       "White Snake Root",
       "Snakeroot",
       "White Sanicle"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Boneset",
@@ -2128,7 +2164,8 @@
       "Agueweed",
       "Feverwort",
       "Boneset"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Wingstem",
@@ -2186,7 +2223,8 @@
       "Yellow Ironweed",
       "Common Wingstem",
       "Actinomeris alternifolia"
-    ]
+    ],
+    "native": true
   },
   {
     "commonName": "Cup Plant",
@@ -2256,6 +2294,7 @@
         "src": "../images/cup-plant-garden-2.jpg",
         "caption": "Flower buds forming, still closed · Bay Village, Ohio"
       }
-    ]
+    ],
+    "native": true
   }
 ]

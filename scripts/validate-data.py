@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -57,6 +58,53 @@ def resolve_image(path: str) -> Path:
     return IMAGES_DIR / Path(normalized).name
 
 
+MOISTURE_FROM_TEXT = (
+    ("Wet", re.compile(r"\bwet\b", re.I)),
+    ("Moist", re.compile(r"\bmoist\b", re.I)),
+    ("Medium", re.compile(r"\bmedium\b", re.I)),
+    ("Dry", re.compile(r"\bdry\b", re.I)),
+)
+
+HEIGHT_PATTERN = re.compile(r"\b(feet|inches)\b", re.I)
+
+
+def moisture_tags_from_text(text: str) -> set[str]:
+    return {label for label, pattern in MOISTURE_FROM_TEXT if pattern.search(text)}
+
+
+def validate_plant_schema(plant: dict) -> tuple[list[str], list[str]]:
+    errors: list[str] = []
+    warnings: list[str] = []
+    slug = plant.get("slug", "(unknown)")
+
+    if plant.get("native") is not True:
+        errors.append(f"{slug}: native must be true for directory entries")
+
+    height = plant.get("height", "")
+    if HEIGHT_PATTERN.search(height):
+        errors.append(f"{slug}: height should use ft/in, not feet/inches ({height!r})")
+
+    garden = plant.get("garden")
+    if garden is not None and not isinstance(garden, list):
+        errors.append(f"{slug}: garden must be an array when present")
+
+    moisture = plant.get("moisture", "")
+    moisture_tags = set(plant.get("moistureTags", []))
+    expected_moisture = moisture_tags_from_text(moisture)
+    missing_moisture = expected_moisture - moisture_tags
+    if missing_moisture:
+        errors.append(
+            f"{slug}: moistureTags missing {sorted(missing_moisture)} for text {moisture!r}"
+        )
+
+    season = plant.get("season", "")
+    bloom_tags = set(plant.get("bloomSeasonTags", []))
+    if re.search(r"\bwinter\b", season, re.I) and "Winter" not in bloom_tags:
+        errors.append(f"{slug}: bloomSeasonTags must include Winter for season {season!r}")
+
+    return errors, warnings
+
+
 def validate_plants(plants: list, html_slugs: set[str], habitat_set: set[str], wildlife_set: set[str]) -> tuple[list[str], list[str]]:
     errors: list[str] = []
     warnings: list[str] = []
@@ -66,6 +114,10 @@ def validate_plants(plants: list, html_slugs: set[str], habitat_set: set[str], w
     for plant in plants:
         slug = plant.get("slug", "")
         url = plant.get("url", "")
+
+        schema_errors, schema_warnings = validate_plant_schema(plant)
+        errors.extend(schema_errors)
+        warnings.extend(schema_warnings)
 
         if not slug:
             errors.append(f"Plant missing slug: {plant.get('commonName', '(unknown)')}")
@@ -98,8 +150,7 @@ def validate_plants(plants: list, html_slugs: set[str], habitat_set: set[str], w
         if not garden:
             continue
 
-        photos = [garden] if isinstance(garden, dict) else garden
-        for photo in photos:
+        for photo in garden:
             src = photo.get("src")
             if not src:
                 continue
