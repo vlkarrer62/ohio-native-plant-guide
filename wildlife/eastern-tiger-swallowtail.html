@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Tiger Swallowtail · Papilio glaucus · Ohio Wildlife</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/directory.css" />
+  <link rel="stylesheet" href="../css/wildlife/eastern-tiger-swallowtail.css" />
+</head>
+<body>
+  <nav class="site-return-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Wildlife Directory</a>
+    <a href="../plants/index.html">Plant Directory</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Eastern Tiger Swallowtail (Papilio glaucus), dorsal, wings spread:
+         yellow wings with four black tiger stripes per forewing, black wing
+         margins with yellow marginal spots, hindwing tails, a row of blue
+         chevrons and an orange spot near each tail, a black furred body,
+         and clubbed antennae. Right half authored once, mirrored with <use>. -->
+    <svg class="hero-illustration" viewBox="0 0 300 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <clipPath id="fwR"><path d="M150 128 C186 112 226 110 250 122 C254 140 250 160 242 172 C206 178 176 180 150 182 Z"/></clipPath>
+        <clipPath id="hwR"><path d="M150 182 C186 184 214 196 224 212 C227 228 222 244 210 254 L216 294 L200 258 C186 264 170 266 158 262 C153 242 150 214 150 182 Z"/></clipPath>
+
+        <g id="wingR">
+          <!-- hindwing base -->
+          <path d="M150 182 C186 184 214 196 224 212 C227 228 222 244 210 254 L216 294 L200 258 C186 264 170 266 158 262 C153 242 150 214 150 182 Z" fill="#eeba18" stroke="#1c1710" stroke-width="3" stroke-linejoin="round"/>
+          <g clip-path="url(#hwR)">
+            <!-- black outer/lower margin band -->
+            <path d="M224 212 C227 228 222 244 210 254 L216 294 L200 258 C186 264 170 266 158 262 C155 252 153 244 152 236 C170 244 190 244 205 235 C215 228 220 220 223 212 Z" fill="#1c1710"/>
+            <!-- blue chevrons inside the band -->
+            <g fill="#43649c">
+              <ellipse cx="206" cy="236" rx="6.5" ry="6"/>
+              <ellipse cx="191" cy="245" rx="6.5" ry="6"/>
+              <ellipse cx="175" cy="249" rx="6.5" ry="5.6"/>
+              <ellipse cx="216" cy="224" rx="6" ry="6"/>
+            </g>
+            <g fill="#8aa4cf" opacity="0.75">
+              <ellipse cx="206" cy="236" rx="2.8" ry="2.6"/>
+              <ellipse cx="191" cy="245" rx="2.8" ry="2.6"/>
+              <ellipse cx="175" cy="249" rx="2.6" ry="2.4"/>
+            </g>
+            <!-- orange spot near inner tail angle -->
+            <circle cx="163" cy="252" r="5" fill="#d9852a"/>
+            <!-- one tiger stripe continuing onto the hindwing -->
+            <path d="M167 184 C174 200 179 214 181 230" stroke="#1c1710" stroke-width="8" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- forewing base -->
+          <path d="M150 128 C186 112 226 110 250 122 C254 140 250 160 242 172 C206 178 176 180 150 182 Z" fill="#eeba18" stroke="#1c1710" stroke-width="3" stroke-linejoin="round"/>
+          <g clip-path="url(#fwR)">
+            <!-- black outer margin -->
+            <path d="M250 122 C254 140 250 160 242 172 L231 168 C239 152 243 136 239 124 Z" fill="#1c1710"/>
+            <!-- yellow marginal spots in the margin -->
+            <g fill="#eeba18">
+              <ellipse cx="242" cy="134" rx="2.4" ry="3.2"/>
+              <ellipse cx="242" cy="146" rx="2.4" ry="3.2"/>
+              <ellipse cx="238" cy="158" rx="2.4" ry="3"/>
+            </g>
+            <!-- four tiger stripes -->
+            <g fill="#1c1710">
+              <path d="M170 122 C176 140 178 160 176 182 L164 182 C166 160 164 140 160 126 Z"/>
+              <path d="M190 117 C196 137 198 160 196 182 L184 182 C186 160 184 137 180 121 Z"/>
+              <path d="M210 117 C216 137 218 158 216 180 L204 181 C206 158 204 137 200 121 Z"/>
+              <path d="M229 122 C235 140 237 156 235 172 L223 174 C225 156 223 140 219 126 Z"/>
+            </g>
+          </g>
+        </g>
+      </defs>
+
+      <!-- wings: right, then mirrored left -->
+      <use href="#wingR"/>
+      <use href="#wingR" transform="matrix(-1 0 0 1 300 0)"/>
+
+      <!-- body -->
+      <ellipse cx="150" cy="214" rx="7" ry="46" fill="#1c1710"/>
+      <!-- faint yellow abdominal side marks -->
+      <g fill="#e8b83a" opacity="0.6">
+        <rect x="143.5" y="188" width="1.6" height="9" rx="0.8"/>
+        <rect x="154.9" y="188" width="1.6" height="9" rx="0.8"/>
+        <rect x="143.5" y="204" width="1.6" height="9" rx="0.8"/>
+        <rect x="154.9" y="204" width="1.6" height="9" rx="0.8"/>
+        <rect x="144" y="220" width="1.4" height="8" rx="0.7"/>
+        <rect x="154.6" y="220" width="1.4" height="8" rx="0.7"/>
+      </g>
+      <!-- thorax (furred) -->
+      <ellipse cx="150" cy="152" rx="8.5" ry="20" fill="#1c1710"/>
+      <g stroke="#3a2f18" stroke-width="1.4" stroke-linecap="round" opacity="0.7">
+        <path d="M143 146 l-4 -2"/><path d="M143 156 l-4 1"/>
+        <path d="M157 146 l4 -2"/><path d="M157 156 l4 1"/>
+      </g>
+      <!-- head + eyes -->
+      <circle cx="150" cy="126" r="7" fill="#1c1710"/>
+      <circle cx="146.4" cy="126" r="2.1" fill="#0e0b06"/>
+      <circle cx="153.6" cy="126" r="2.1" fill="#0e0b06"/>
+      <!-- clubbed antennae -->
+      <g stroke="#1c1710" stroke-width="2.3" fill="none" stroke-linecap="round">
+        <path d="M146 120 C138 108 130 101 123 97"/>
+        <path d="M154 120 C162 108 170 101 177 97"/>
+      </g>
+      <circle cx="122" cy="96" r="3.4" fill="#1c1710"/>
+      <circle cx="178" cy="96" r="3.4" fill="#1c1710"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Wildlife · Pollinators · Butterflies</div>
+      <h1>Eastern Tiger<em>Swallowtail</em></h1>
+      <p class="hero-latin">Papilio glaucus</p>
+      <p class="hero-tagline">The big yellow-and-black butterfly of Ohio summers — sailing high around wood edges and gardens, laying its eggs on cherry and tuliptree, and drifting down to nectar on almost any open bloom.</p>
+      <div class="flagship-badge">✦ Ohio's Great Yellow Butterfly</div>
+    </div>
+  </header>
+
+  <!-- ── FIELD GUIDE TAG BAND ── -->
+  <div class="field-tag-band">
+    <div class="field-tag-group">
+      <span class="field-tag-label">Wildlife Type</span>
+      <div class="field-tag-pills">
+        <span class="field-tag">Butterfly (Papilio)</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Ecological Role</span>
+      <div class="field-tag-pills">
+        <span class="field-tag role">Pollinator</span>
+        <span class="field-tag role">Nectar Feeder</span>
+        <span class="field-tag role">Leaf Herbivore (larva)</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Season Seen</span>
+      <div class="field-tag-pills">
+        <span class="field-tag season">Spring</span>
+        <span class="field-tag season">Summer</span>
+        <span class="field-tag season">Early Fall</span>
+      </div>
+    </div>
+    <div class="field-tag-group">
+      <span class="field-tag-label">Supported By</span>
+      <div class="field-tag-pills">
+        <span class="field-tag support">Host Trees</span>
+        <span class="field-tag support">Nectar Flowers</span>
+        <span class="field-tag support">Sunny Edges</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Swallowtail butterfly</span></div>
+    <div class="fact-item"><span class="fact-label">Wingspan</span><span class="fact-value">Large — about 3–5½ in</span></div>
+    <div class="fact-item"><span class="fact-label">Adult food</span><span class="fact-value">Flower nectar</span></div>
+    <div class="fact-item"><span class="fact-label">Caterpillar food</span><span class="fact-value">Tree leaves (cherry, tuliptree)</span></div>
+    <div class="fact-item"><span class="fact-label">Broods</span><span class="fact-value">Usually two in Ohio</span></div>
+    <div class="fact-item"><span class="fact-label">Winter</span><span class="fact-value">Overwinters as a chrysalis</span></div>
+  </div>
+
+  <section class="section">
+    <p class="eyebrow">About This Butterfly</p>
+    <h2>Ohio's Great Yellow Butterfly</h2>
+    <p>The Eastern Tiger Swallowtail is among the largest and most familiar butterflies of the eastern United States, and one of the easiest to know on sight: broad yellow wings crossed by <strong>four black "tiger stripes"</strong> on each forewing, a black border set with a row of small yellow spots, and long tails trailing from the hindwings. Near each tail sits a blush of orange and a line of blue. It ranges across the east and north into southern Ontario, and in a garden it tends to sail high, then drop to feed.</p>
+    <p>Males are always yellow. Females come in <strong>two forms</strong> — a yellow one much like the male but with more blue along the hindwing, and a dark form that is nearly all black. The butterfly you're most likely to see drifting over an Ohio garden in summer is this one, whether visiting flowers for nectar or gliding along the sunny edge of the trees where its caterpillars feed.</p>
+    <div class="keystone-callout">
+      <p>It lives in <strong>two worlds at once</strong>: as an adult it drinks nectar from open garden flowers, but as a caterpillar it eats tree leaves — chiefly <strong>wild cherry and tuliptree</strong>. A garden that helps it needs both: flowers to feed the butterfly, and the right trees nearby to raise the next generation.</p>
+    </div>
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best supported by</p>
+    <div class="pill-list">
+      <span class="pill">Nectar-rich flowers</span>
+      <span class="pill">Early &amp; late bloom</span>
+      <span class="pill">Host trees nearby</span>
+      <span class="pill">Sunny wood edges</span>
+      <span class="pill">A damp puddling spot</span>
+      <span class="pill">Undisturbed leaf litter</span>
+    </div>
+  </section>
+
+  <!-- ── FIELD GUIDE PLATE ── -->
+  <section class="section field-plate-section">
+    <p class="eyebrow">Field Guide Plate</p>
+    <h2>Eastern Tiger Swallowtail</h2>
+    <div class="plate-wrap">
+<svg viewBox="0 0 1000 506" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="Field guide plate: Eastern Tiger Swallowtail, Papilio glaucus. Left panel shows the butterfly from above — yellow wings with four black tiger stripes on each forewing, black margins set with yellow spots, hindwing tails, and a row of blue chevrons with an orange spot near each tail — with below it a comparison of the two female forms, the yellow morph beside the dark morph, and a detail of the caterpillar, green with two large false eyespots that mimic a snake. Right panel is a labelled anatomy diagram identifying the four tiger stripes, the black wing margin with yellow spots, the hindwing blue chevrons, the orange spot, the tails, the clubbed antennae, and the two pairs of wings, with notes that males are always yellow while females may be yellow or dark, the dark female mimics the toxic pipevine swallowtail, caterpillars feed on cherry and tuliptree leaves, the butterfly has about two broods a year in Ohio, and it overwinters as a chrysalis.">
+  <rect width="1000" height="506" fill="#14100a"/>
+  <rect x="12" y="12" width="976" height="482" fill="none" stroke="rgba(224,168,30,0.18)" stroke-width="0.8"/>
+  <line x1="486" y1="20" x2="486" y2="486" stroke="rgba(224,168,30,0.2)" stroke-width="0.8" stroke-dasharray="4,3"/>
+
+  <defs>
+    <!-- Reusable dorsal butterfly, centred at (0,0) at the thorax. -->
+    <g id="etsDorsal">
+      <!-- RIGHT hindwing -->
+      <path d="M0 20 C34 22 62 32 78 46 C81 62 76 78 65 88 L72 118 L54 86 C42 92 26 94 12 90 C5 70 2 46 0 20 Z" fill="#e8b23a" stroke="#0e0b06" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- LEFT hindwing -->
+      <path d="M0 20 C-34 22 -62 32 -78 46 C-81 62 -76 78 -65 88 L-72 118 L-54 86 C-42 92 -26 94 -12 90 C-5 70 -2 46 0 20 Z" fill="#e8b23a" stroke="#0e0b06" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- hindwing margins (dark) + blue chevrons + orange, right -->
+      <path d="M78 46 C81 62 76 78 65 88 L72 118 L54 86 C42 92 26 94 12 90 C9 80 8 72 7 64 C24 72 44 72 58 63 C68 57 74 52 77 46 Z" fill="#241a10"/>
+      <g fill="#4a6aa0"><circle cx="58" cy="66" r="4.6"/><circle cx="44" cy="74" r="4.6"/><circle cx="29" cy="78" r="4.2"/><circle cx="67" cy="55" r="4.2"/></g>
+      <circle cx="17" cy="80" r="3.6" fill="#cf7a2a"/>
+      <!-- hindwing margins + chevrons + orange, left -->
+      <path d="M-78 46 C-81 62 -76 78 -65 88 L-72 118 L-54 86 C-42 92 -26 94 -12 90 C-9 80 -8 72 -7 64 C-24 72 -44 72 -58 63 C-68 57 -74 52 -77 46 Z" fill="#241a10"/>
+      <g fill="#4a6aa0"><circle cx="-58" cy="66" r="4.6"/><circle cx="-44" cy="74" r="4.6"/><circle cx="-29" cy="78" r="4.2"/><circle cx="-67" cy="55" r="4.2"/></g>
+      <circle cx="-17" cy="80" r="3.6" fill="#cf7a2a"/>
+
+      <!-- RIGHT forewing -->
+      <path d="M0 -18 C30 -34 66 -40 94 -30 C98 -14 94 8 86 22 C56 28 26 30 0 32 Z" fill="#e8b23a" stroke="#0e0b06" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- LEFT forewing -->
+      <path d="M0 -18 C-30 -34 -66 -40 -94 -30 C-98 -14 -94 8 -86 22 C-56 28 -26 30 0 32 Z" fill="#e8b23a" stroke="#0e0b06" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- forewing dark margin + spots, right -->
+      <path d="M94 -30 C98 -14 94 8 86 22 L77 18 C84 4 88 -12 84 -26 Z" fill="#241a10"/>
+      <g fill="#e8b23a"><circle cx="87" cy="-14" r="1.8"/><circle cx="86" cy="-4" r="1.8"/><circle cx="82" cy="6" r="1.7"/></g>
+      <!-- forewing tiger stripes, right -->
+      <g fill="#241a10">
+        <path d="M18 -26 C24 -8 26 10 24 30 L15 30 C17 10 15 -8 11 -24 Z"/>
+        <path d="M36 -32 C42 -12 44 10 42 30 L33 30 C35 10 33 -12 29 -30 Z"/>
+        <path d="M54 -34 C60 -14 62 8 60 28 L51 29 C53 8 51 -14 47 -32 Z"/>
+        <path d="M72 -30 C78 -12 80 6 78 24 L69 26 C71 6 69 -12 65 -28 Z"/>
+      </g>
+      <!-- forewing tiger stripes, left -->
+      <g fill="#241a10">
+        <path d="M-18 -26 C-24 -8 -26 10 -24 30 L-15 30 C-17 10 -15 -8 -11 -24 Z"/>
+        <path d="M-36 -32 C-42 -12 -44 10 -42 30 L-33 30 C-35 10 -33 -12 -29 -30 Z"/>
+        <path d="M-54 -34 C-60 -14 -62 8 -60 28 L-51 29 C-53 8 -51 -14 -47 -32 Z"/>
+        <path d="M-72 -30 C-78 -12 -80 6 -78 24 L-69 26 C-71 6 -69 -12 -65 -28 Z"/>
+      </g>
+      <!-- forewing dark margin + spots, left -->
+      <path d="M-94 -30 C-98 -14 -94 8 -86 22 L-77 18 C-84 4 -88 -12 -84 -26 Z" fill="#241a10"/>
+      <g fill="#e8b23a"><circle cx="-87" cy="-14" r="1.8"/><circle cx="-86" cy="-4" r="1.8"/><circle cx="-82" cy="6" r="1.7"/></g>
+
+      <!-- body -->
+      <ellipse cx="0" cy="52" rx="5" ry="34" fill="#161009"/>
+      <ellipse cx="0" cy="4" rx="6" ry="16" fill="#161009"/>
+      <circle cx="0" cy="-20" r="5.4" fill="#161009"/>
+      <g stroke="#161009" stroke-width="1.7" fill="none" stroke-linecap="round">
+        <path d="M-3 -24 C-9 -34 -15 -40 -21 -43"/>
+        <path d="M3 -24 C9 -34 15 -40 21 -43"/>
+      </g>
+      <circle cx="-22" cy="-44" r="2.6" fill="#161009"/>
+      <circle cx="22" cy="-44" r="2.6" fill="#161009"/>
+    </g>
+  </defs>
+
+  <!-- ── LEFT PANEL headings ── -->
+  <text x="36" y="38" font-family="'Piazzolla',Georgia,serif" font-size="15" fill="#f0d488" letter-spacing="0.1em">EASTERN TIGER SWALLOWTAIL</text>
+  <text x="36" y="55" font-family="'Piazzolla',Georgia,serif" font-size="10.5" fill="#cbb482" letter-spacing="0.04em" font-style="italic">Papilio glaucus · male, from above</text>
+  <text x="36" y="69" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#d0a23a" letter-spacing="0.1em">OHIO WILDLIFE · POLLINATOR · GREAT YELLOW BUTTERFLY</text>
+
+  <!-- specimen: dorsal male -->
+  <use href="#etsDorsal" transform="translate(238 150) scale(1.4)"/>
+  <text x="238" y="332" font-family="DM Mono,Courier New,monospace" font-size="8" fill="#d0a23a" letter-spacing="0.1em" text-anchor="middle">MALE · DORSAL</text>
+
+  <!-- female morph comparison -->
+  <g>
+    <use href="#etsDorsal" transform="translate(120 400) scale(0.62)"/>
+    <text x="120" y="490" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#cbb482" text-anchor="middle">FEMALE · YELLOW</text>
+    <!-- dark morph -->
+    <g transform="translate(250 400) scale(0.62)">
+      <path d="M0 20 C34 22 62 32 78 46 C81 62 76 78 65 88 L72 118 L54 86 C42 92 26 94 12 90 C5 70 2 46 0 20 Z" fill="#2a2213" stroke="#0e0b06" stroke-width="1.6"/>
+      <path d="M0 20 C-34 22 -62 32 -78 46 C-81 62 -76 78 -65 88 L-72 118 L-54 86 C-42 92 -26 94 -12 90 C-5 70 -2 46 0 20 Z" fill="#2a2213" stroke="#0e0b06" stroke-width="1.6"/>
+      <g fill="#4a6aa0"><circle cx="58" cy="66" r="4.6"/><circle cx="44" cy="74" r="4.6"/><circle cx="29" cy="78" r="4.2"/><circle cx="-58" cy="66" r="4.6"/><circle cx="-44" cy="74" r="4.6"/><circle cx="-29" cy="78" r="4.2"/></g>
+      <circle cx="17" cy="80" r="3.6" fill="#cf7a2a"/><circle cx="-17" cy="80" r="3.6" fill="#cf7a2a"/>
+      <path d="M0 -18 C30 -34 66 -40 94 -30 C98 -14 94 8 86 22 C56 28 26 30 0 32 Z" fill="#2a2213" stroke="#0e0b06" stroke-width="1.6"/>
+      <path d="M0 -18 C-30 -34 -66 -40 -94 -30 C-98 -14 -94 8 -86 22 C-56 28 -26 30 0 32 Z" fill="#2a2213" stroke="#0e0b06" stroke-width="1.6"/>
+      <g stroke="#171009" stroke-width="4" opacity="0.5" fill="none">
+        <path d="M20 -24 C25 -6 26 12 24 30"/><path d="M46 -30 C51 -10 52 12 50 30"/>
+        <path d="M-20 -24 C-25 -6 -26 12 -24 30"/><path d="M-46 -30 C-51 -10 -52 12 -50 30"/>
+      </g>
+      <ellipse cx="0" cy="52" rx="5" ry="34" fill="#161009"/><ellipse cx="0" cy="4" rx="6" ry="16" fill="#161009"/><circle cx="0" cy="-20" r="5.4" fill="#161009"/>
+    </g>
+    <text x="250" y="490" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#cbb482" text-anchor="middle">FEMALE · DARK</text>
+    <text x="185" y="360" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#d0a23a" text-anchor="middle" letter-spacing="0.08em">TWO FEMALE FORMS</text>
+  </g>
+
+  <!-- caterpillar detail -->
+  <g>
+    <text x="384" y="360" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#d0a23a" text-anchor="middle" letter-spacing="0.08em">CATERPILLAR</text>
+    <path d="M348 452 C356 430 372 420 392 420 C416 420 430 434 430 452 C430 466 416 470 392 470 C372 470 356 466 348 452 Z" fill="#5f7d2e" stroke="#3c521c" stroke-width="1.4"/>
+    <path d="M348 452 C356 446 372 444 392 444 C416 444 428 448 430 452" fill="none" stroke="#7a9a44" stroke-width="1.2" opacity="0.7"/>
+    <!-- false eyespots (snake mimic) -->
+    <circle cx="404" cy="440" r="6.5" fill="#f0d060" stroke="#2c3a16" stroke-width="1.3"/>
+    <circle cx="420" cy="440" r="6.5" fill="#f0d060" stroke="#2c3a16" stroke-width="1.3"/>
+    <circle cx="405" cy="441" r="3" fill="#2b3a5c"/><circle cx="419" cy="441" r="3" fill="#2b3a5c"/>
+    <circle cx="404" cy="440" r="1" fill="#dfe6f2"/><circle cx="418" cy="440" r="1" fill="#dfe6f2"/>
+    <text x="384" y="486" font-family="DM Mono,Courier New,monospace" font-size="7" fill="#a89470" text-anchor="middle">GREEN · FALSE SNAKE-EYES</text>
+  </g>
+
+  <!-- ── RIGHT PANEL: labelled anatomy ── -->
+  <text x="502" y="38" font-family="'Piazzolla',Georgia,serif" font-size="15" fill="#f0d488" letter-spacing="0.1em">SWALLOWTAIL ANATOMY</text>
+  <text x="502" y="55" font-family="'Piazzolla',Georgia,serif" font-size="10.5" fill="#cbb482" letter-spacing="0.04em" font-style="italic">Wings spread, from above</text>
+  <text x="502" y="69" font-family="DM Mono,Courier New,monospace" font-size="7.5" fill="#c89a3a" letter-spacing="0.1em">TELLING IT FROM ITS LOOK-ALIKES</text>
+
+  <use href="#etsDorsal" transform="translate(704 196) scale(1.62)"/>
+
+  <!-- callouts — dots sit on real features; left labels anchored end -->
+  <!-- FOUR TIGER STRIPES · left forewing -->
+  <circle cx="636" cy="182" r="2.2" fill="none" stroke="rgba(240,200,99,0.85)" stroke-width="0.7"/>
+  <line x1="632" y1="178" x2="560" y2="132" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="556" y="129" font-size="7.5" fill="#d9c48a" text-anchor="end">FOUR TIGER STRIPES</text>
+  <text x="556" y="139" font-size="7" fill="#a89470" text-anchor="end">PER FOREWING · ALWAYS ON MALES</text>
+
+  <!-- BLACK MARGIN · right forewing edge -->
+  <circle cx="844" cy="184" r="2.2" fill="none" stroke="rgba(240,200,99,0.85)" stroke-width="0.7"/>
+  <line x1="848" y1="182" x2="876" y2="150" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="880" y="147" font-size="7.5" fill="#d9c48a">BLACK MARGIN</text>
+  <text x="880" y="157" font-size="7" fill="#a89470">ROW OF YELLOW SPOTS</text>
+
+  <!-- CLUBBED ANTENNAE · right antenna club -->
+  <circle cx="740" cy="126" r="2.2" fill="none" stroke="rgba(240,200,99,0.8)" stroke-width="0.7"/>
+  <line x1="744" y1="124" x2="876" y2="206" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="880" y="203" font-size="7.5" fill="#d9c48a">CLUBBED ANTENNAE</text>
+  <text x="880" y="213" font-size="7" fill="#a89470">A BUTTERFLY MARK · NOT A MOTH</text>
+
+  <!-- BLUE CHEVRONS · right hindwing -->
+  <circle cx="786" cy="309" r="2.2" fill="none" stroke="rgba(120,150,210,0.9)" stroke-width="0.7"/>
+  <line x1="790" y1="311" x2="876" y2="288" stroke="rgba(120,150,210,0.55)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="880" y="285" font-size="7.5" fill="#9fb6dc">BLUE CHEVRONS</text>
+  <text x="880" y="295" font-size="7" fill="#8a9ec4">STRONGEST ON FEMALES</text>
+
+  <!-- ORANGE SPOT · left hindwing near tail -->
+  <circle cx="676" cy="326" r="2.2" fill="none" stroke="rgba(207,122,42,0.9)" stroke-width="0.7"/>
+  <line x1="672" y1="326" x2="560" y2="300" stroke="rgba(207,122,42,0.55)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="556" y="297" font-size="7.5" fill="#e0a258" text-anchor="end">ORANGE SPOT</text>
+  <text x="556" y="307" font-size="7" fill="#b08858" text-anchor="end">NEAR EACH TAIL</text>
+
+  <!-- HINDWING TAILS · left tail -->
+  <circle cx="589" cy="384" r="2.2" fill="none" stroke="rgba(240,200,99,0.8)" stroke-width="0.7"/>
+  <line x1="585" y1="382" x2="560" y2="356" stroke="rgba(240,200,99,0.5)" stroke-width="0.7" stroke-dasharray="3,2"/>
+  <text x="556" y="353" font-size="7.5" fill="#d9c48a" text-anchor="end">HINDWING TAILS</text>
+  <text x="556" y="363" font-size="7" fill="#a89470" text-anchor="end">THE "SWALLOW" TAILS</text>
+
+  <line x1="502" y1="404" x2="980" y2="404" stroke="rgba(224,168,30,0.16)" stroke-width="0.7"/>
+  <g font-family="DM Mono,Courier New,monospace" font-size="7.8" fill="#d0a23a" letter-spacing="0.09em">
+    <text x="502" y="424">MALES YELLOW · FEMALES YELLOW OR DARK</text>
+    <text x="502" y="439">DARK FEMALE MIMICS THE TOXIC PIPEVINE SWALLOWTAIL</text>
+    <text x="502" y="454">CATERPILLARS EAT CHERRY &amp; TULIPTREE LEAVES</text>
+    <text x="502" y="469">ABOUT TWO BROODS A YEAR IN OHIO · OVERWINTERS AS A CHRYSALIS</text>
+  </g>
+</svg>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">What Brings Them In</p>
+    <h2>Trees to Raise Them, Flowers to Feed Them</h2>
+    <p>Supporting this butterfly means thinking about both halves of its life. The caterpillars are leaf-eaters of a few <strong>native trees</strong> — most reliably <em>wild black cherry</em> (<em>Prunus serotina</em>) and <em>tuliptree</em> (<em>Liriodendron tulipifera</em>), sometimes ash or aspen. These often aren't garden plantings, but a neighbourhood with cherries and tuliptrees quietly raises far more swallowtails than any one flower bed. The adults, by contrast, nectar widely, and are easy to feed. They share many of these blooms with the <a href="carpenter-bee.html">carpenter bee</a> and <a href="bumble-bee.html">bumble bee</a>. Tap any plant to read its profile.</p>
+
+    <div class="plant-links">
+      <div class="plant-link-group">
+        <p class="plant-link-group-label">Spring &amp; early summer — first brood</p>
+        <div class="plant-link-list">
+          <a href="../plants/red-buckeye.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Red Buckeye</span>
+              <span class="plant-link-latin">Aesculus pavia</span>
+            </div>
+            <span class="plant-link-note">Early nectar</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/wild-geranium.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Wild Geranium</span>
+              <span class="plant-link-latin">Geranium maculatum</span>
+            </div>
+            <span class="plant-link-note">Spring bloom</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/golden-alexanders.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Golden Alexanders</span>
+              <span class="plant-link-latin">Zizia aurea</span>
+            </div>
+            <span class="plant-link-note">Early season</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="plant-link-group">
+        <p class="plant-link-group-label">Summer into fall — second brood</p>
+        <div class="plant-link-list">
+          <a href="../plants/swamp-milkweed.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Swamp Milkweed</span>
+              <span class="plant-link-latin">Asclepias incarnata</span>
+            </div>
+            <span class="plant-link-note">Rich nectar</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/joe-pye-weed.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Joe-Pye Weed</span>
+              <span class="plant-link-latin">Eutrochium spp.</span>
+            </div>
+            <span class="plant-link-note">Big landing pad</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/liatris.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Blazing Star</span>
+              <span class="plant-link-latin">Liatris spp.</span>
+            </div>
+            <span class="plant-link-note">Swallowtail draw</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/wild-bergamot.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Wild Bergamot</span>
+              <span class="plant-link-latin">Monarda fistulosa</span>
+            </div>
+            <span class="plant-link-note">Midsummer</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/purple-coneflower.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Purple Coneflower</span>
+              <span class="plant-link-latin">Echinacea purpurea</span>
+            </div>
+            <span class="plant-link-note">Broad perch</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+          <a href="../plants/ironweed.html" class="plant-link-row">
+            <div class="plant-link-dot"></div>
+            <div class="plant-link-names">
+              <span class="plant-link-common">Ironweed</span>
+              <span class="plant-link-latin">Vernonia spp.</span>
+            </div>
+            <span class="plant-link-note">Late summer</span>
+            <span class="plant-link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Life Cycle</p>
+    <h2>From Egg to Wing</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">Adults emerge from chrysalises that overwintered, and the first flight begins. Females lay pale green eggs singly on the leaves of host trees.</div></div>
+      <div class="tl-row active"><div class="tl-season">Early summer</div><div class="tl-bar"></div><div class="tl-text">Caterpillars hatch and feed on tree leaves, growing through several stages. Young ones resemble bird droppings; older ones turn green with large false eyespots.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Midsummer</div><div class="tl-bar"></div><div class="tl-text">A second brood of adults is on the wing across Ohio — the busiest stretch, with butterflies nectaring widely in gardens and along sunny edges.</div></div>
+      <div class="tl-row fade"><div class="tl-season">Late summer</div><div class="tl-bar"></div><div class="tl-text">The season's last caterpillars finish feeding. Late-brood pupae enter diapause — a paused, dormant chrysalis that will wait out the winter.</div></div>
+      <div class="tl-row"><div class="tl-season">Fall–winter</div><div class="tl-bar"></div><div class="tl-text">The butterfly passes the cold as a chrysalis, often attached to a twig or tucked in leaf litter and debris, holding until spring warmth releases the next generation.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Habitat &amp; Needs</p>
+    <h2>What It Needs</h2>
+    <table class="care-table">
+      <tr><td>Adult food</td><td>Nectar from many flowers — milkweeds and dogbanes, daisies and asters, and legumes are all commonly visited</td></tr>
+      <tr><td>Caterpillar food</td><td>Leaves of a few native trees, chiefly wild black cherry and tuliptree; sometimes ash or aspen</td></tr>
+      <tr><td>Season</td><td>An unbroken bloom from spring through early fall, covering both broods</td></tr>
+      <tr><td>Sun &amp; edges</td><td>Open sunlit space to fly and nectar, next to trees for egg-laying — the sunny edge of woods or a garden with scattered trees suits them well</td></tr>
+      <tr><td>Minerals</td><td>Males gather at damp sand or mud to "puddle" for salts — a reliably damp sunny spot is a small help</td></tr>
+      <tr><td>Overwintering</td><td>Undisturbed twigs, leaf litter, and debris where chrysalises can pass the winter safely</td></tr>
+      <tr><td>What harms</td><td>Insecticides, loss of host trees, and heavy fall clean-up that removes overwintering chrysalises</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">How to Support It</p>
+    <h2>Garden Actions That Help</h2>
+    <p>An Eastern Tiger Swallowtail garden feeds the adult and makes room for the whole life cycle — and much of it is about doing a little less.</p>
+    <p><strong>Bloom across the season.</strong> Two broods means two windows to feed: spring flowers for the first, and a strong run of summer-into-fall nectar for the second. Aim for something open at every stage.</p>
+    <p><strong>Value the host trees.</strong> Wild cherry and tuliptree are what the caterpillars actually eat. Where there's room, they're worth keeping or planting; where there isn't, a neighbourhood that holds onto them does the work.</p>
+    <p><strong>Leave a damp, sunny spot.</strong> A shallow saucer of wet sand or a patch of mud in the sun gives puddling males a place to gather minerals.</p>
+    <p><strong>Go easy on fall clean-up.</strong> Chrysalises overwinter on twigs and in leaf litter. Raking and clearing every corner can remove next year's butterflies along with the leaves.</p>
+    <p><strong>Skip the insecticides.</strong> Sprays kill caterpillars and adults alike, and a butterfly garden and a sprayed garden rarely coexist.</p>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Butterfly</h2>
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">A Female in Disguise</h3>
+        <p>Male tiger swallowtails are always yellow. Females come in two forms — one yellow like the male, and one almost entirely <strong>black</strong>. That dark form is thought to be a case of Batesian mimicry: it resembles the <a href="#lookalikes">pipevine swallowtail</a>, a butterfly that is distasteful to birds, and so may borrow some of that protection. The dark form is strictly female, carried on a gene that males don't inherit — so every dark tiger swallowtail you see is a she.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Caterpillar That Plays Snake</h3>
+        <p>The caterpillar defends itself by pretending to be something it isn't. When small, it's mottled brown and white and looks convincingly like a <em>bird dropping</em> — not worth a second glance. As it grows it turns green and develops two large false eyespots near the head, giving it a startling, <strong>snake-like</strong> face. Disturbed, it can also evert a forked orange gland, the osmeterium, that gives off a strong smell to push predators away.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Two Lives in Two Places</h3>
+        <p>Few garden visitors live so plainly in two worlds. As a caterpillar, this butterfly is bound to a handful of <strong>trees</strong>, eating their leaves high in the canopy. As an adult, it's a creature of <strong>flowers</strong>, drifting between blooms for nectar. The trees and the flowers are usually different plants in different places — which is why a butterfly-friendly landscape is really a partnership between the garden and the trees around it.</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">The Boys at the Puddle</h3>
+        <p>On a warm day you may find tiger swallowtails clustered at the damp edge of a puddle, a driveway seep, or wet sand. This behaviour, called <strong>puddling</strong>, is mostly the males: they draw up dissolved salts and minerals from the wet ground, nutrients they pass to females and that support the next generation. A reliably damp, sunny spot can turn a garden into a regular stop.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="lookalikes">
+    <p class="eyebrow">Look-Alikes</p>
+    <h2>Tiger Swallowtails &amp; Their Doubles</h2>
+    <p>A big yellow-and-black butterfly in Ohio is almost always the Eastern Tiger Swallowtail — but a few others invite a second look, and its own dark females add to the puzzle. A quick guide to the confusables.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Page · Ohio's Resident</p>
+        <p class="species-common">Eastern Tiger Swallowtail</p>
+        <p class="species-latin">Papilio glaucus</p>
+        <p class="species-desc">The large yellow butterfly with four black tiger stripes, black spotted margins, and tailed hindwings. The resident tiger swallowtail across Ohio, usually seen in two broods a season. The one you're most likely to have photographed.</p>
+        <div class="species-traits"><span class="species-trait">Large</span><span class="species-trait">Yellow + stripes</span><span class="species-trait">Two broods</span><span class="species-trait">Resident</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Same Species · Dark Form</p>
+        <p class="species-common">Dark-Morph Female</p>
+        <p class="species-latin">Papilio glaucus (f. nigra)</p>
+        <p class="species-desc">Not a different butterfly at all — a female Eastern Tiger Swallowtail in her black form, with the tiger stripes showing only as faint shadows and a strong blue wash on the hindwing. Thought to mimic the toxic pipevine swallowtail.</p>
+        <div class="species-traits"><span class="species-trait">Black</span><span class="species-trait">Female only</span><span class="species-trait">Blue hindwing</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Northern Look-Alike</p>
+        <p class="species-common">Canadian Tiger Swallowtail</p>
+        <p class="species-latin">Papilio canadensis</p>
+        <p class="species-desc">A very similar but more northern, boreal species that reaches only the edge of the region — smaller, with broader black stripes and a continuous yellow band on the underside of the forewing, and typically a single brood. Uncommon this far south.</p>
+        <div class="species-traits"><span class="species-trait">Smaller</span><span class="species-trait">More northern</span><span class="species-trait">One brood</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">The Toxic Model</p>
+        <p class="species-common">Pipevine Swallowtail</p>
+        <p class="species-latin">Battus philenor</p>
+        <p class="species-desc">A dark swallowtail with an iridescent blue-green sheen on the hindwing, distasteful to birds because its caterpillars feed on pipevines. It's the butterfly the dark-morph female tiger swallowtail is thought to imitate for protection.</p>
+        <div class="species-traits"><span class="species-trait">Dark</span><span class="species-trait">Blue-green sheen</span><span class="species-trait">Distasteful</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Papilio glaucus · Eastern Tiger Swallowtail · Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js"></script>
+</body>
+</html>
