@@ -154,14 +154,8 @@ nav {
 .contact-section {
   padding: 3.5rem 0;
   border-bottom: 1px solid var(--border);
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.contact-section.visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .contact-section:last-of-type { border-bottom: none; }
