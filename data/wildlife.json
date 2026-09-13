@@ -845,5 +845,57 @@
       "dry-prairie",
       "oak-savanna"
     ]
+  },
+  {
+    "commonName": "Large Milkweed Bug",
+    "scientificName": "Oncopeltus fasciatus",
+    "slug": "milkweed-bug",
+    "type": "Native Seed-Feeder",
+    "category": "other-garden-life",
+    "subcategory": "true-bugs",
+    "wildlifeType": [
+      "True Bug"
+    ],
+    "ecologicalRole": [
+      "Seed Feeder",
+      "Aposematic Herbivore",
+      "Milkweed Specialist"
+    ],
+    "supportedBy": [
+      "Milkweed Pods",
+      "Standing Seed Heads",
+      "No Spraying"
+    ],
+    "seasonSeen": [
+      "Summer",
+      "Fall"
+    ],
+    "size": "½–¾ in",
+    "activeSeason": "June through October",
+    "shelter": "Flies south in fall; few overwinter in Ohio",
+    "range": "Statewide",
+    "description": "The orange-and-black bug of the milkweed pods — a seed-feeder that drinks from developing milkweed seeds through the pod wall, gathers in bright clusters of nymphs and adults, and wears the plant's own toxins as a warning. Harmless to monarchs and to the plant.",
+    "url": "milkweed-bug.html",
+    "tagClass": "tag-bug",
+    "accentFrom": "#f2a26a",
+    "accentTo": "#d4581a",
+    "svgIcon": "milkweed-bug",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 4.6 C8.4 4.6 6.4 7.6 6.4 11.4 C6.4 15.8 8.8 19.6 12 20.4 C15.2 19.6 17.6 15.8 17.6 11.4 C17.6 7.6 15.6 4.6 12 4.6 Z\" fill=\"currentColor\" fill-opacity=\"0.75\"/><path d=\"M6.6 10.6 L17.4 10.6 L17.4 13.2 L6.6 13.2 Z\" fill=\"#1a1008\" fill-opacity=\"0.8\"/><path d=\"M8.2 6.2 L15.8 6.2 L12 9.4 Z\" fill=\"#1a1008\" fill-opacity=\"0.8\"/><path d=\"M8.6 17 L15.4 17 L12 20.4 Z\" fill=\"#1a1008\" fill-opacity=\"0.8\"/><ellipse cx=\"12\" cy=\"4.2\" rx=\"2\" ry=\"1.4\" fill=\"#1a1008\" fill-opacity=\"0.85\"/><path d=\"M10.6 3.4 C9.6 2.4 8.6 2 7.6 2.2 M13.4 3.4 C14.4 2.4 15.4 2 16.4 2.2\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><path d=\"M7 9 L4.2 8 M7 12.4 L3.8 13.2 M8 15.6 L5 17.6 M17 9 L19.8 8 M17 12.4 L20.2 13.2 M16 15.6 L19 17.6\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-linecap=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "swamp-milkweed",
+      "butterfly-weed",
+      "false-sunflower",
+      "black-eyed-susan"
+    ],
+    "relatedWildlifeSlugs": [
+      "monarch",
+      "aphid",
+      "lady-beetle"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "rain-garden"
+    ]
   }
 ]

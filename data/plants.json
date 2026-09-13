@@ -767,7 +767,8 @@
     ],
     "slug": "swamp-milkweed",
     "relatedWildlifeSlugs": [
-      "monarch"
+      "monarch",
+      "milkweed-bug"
     ],
     "relatedPlantSlugs": [
       "cardinal-flower",
@@ -998,7 +999,8 @@
     ],
     "slug": "butterfly-weed",
     "relatedWildlifeSlugs": [
-      "monarch"
+      "monarch",
+      "milkweed-bug"
     ],
     "relatedPlantSlugs": [
       "swamp-milkweed",
