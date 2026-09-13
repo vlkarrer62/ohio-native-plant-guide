@@ -496,61 +496,354 @@
     ]
   },
   {
-  "commonName": "Eastern Tiger Swallowtail",
-  "scientificName": "Papilio glaucus",
-  "slug": "eastern-tiger-swallowtail",
-  "type": "Native Butterfly",
-  "category": "pollinators",
-  "subcategory": "butterflies",
-  "wildlifeType": [
-    "Butterfly"
-  ],
-  "ecologicalRole": [
-    "Pollinator",
-    "Nectar Feeder",
-    "Leaf Herbivore (larva)"
-  ],
-  "supportedBy": [
-    "Host Trees",
-    "Nectar Flowers",
-    "Sunny Edges"
-  ],
-  "seasonSeen": [
-    "Spring",
-    "Summer",
-    "Fall"
-  ],
-  "size": "3–5½ in wingspan",
-  "activeSeason": "Spring through early fall",
-  "shelter": "Overwinters as a chrysalis",
-  "range": "Statewide",
-  "description": "Ohio's great yellow butterfly — four black tiger stripes and tailed hindwings, its caterpillars feeding on tree leaves like cherry and tuliptree while the adults drift widely for flower nectar. Females come in a yellow form and a dark form thought to mimic the toxic pipevine swallowtail.",
-  "url": "eastern-tiger-swallowtail.html",
-  "tagClass": "tag-butterfly",
-  "accentFrom": "#f0d072",
-  "accentTo": "#d89a24",
-  "svgIcon": "butterfly",
-  "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 5.2 C12 9 12 15 12 18.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M12 8 C9 4 4 3.6 3 6.6 C2.3 8.9 4.6 10.8 8 11.5 C10 11.9 11.2 10.5 12 8 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M12 8 C15 4 20 3.6 21 6.6 C21.7 8.9 19.4 10.8 16 11.5 C14 11.9 12.8 10.5 12 8 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M12 11.8 C10 12.4 5.6 13 5 15.9 C4.6 18.3 7.5 19.9 10 18.4 C11.4 17.5 11.7 14.7 12 11.8 Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/><path d=\"M12 11.8 C14 12.4 18.4 13 19 15.9 C19.4 18.3 16.5 19.9 14 18.4 C12.6 17.5 12.3 14.7 12 11.8 Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/><path d=\"M12 5.2 C11 3.7 10 3.1 9 3.1\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M12 5.2 C13 3.7 14 3.1 15 3.1\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/></svg>",
-  "relatedPlantSlugs": [
-    "red-buckeye",
-    "wild-geranium",
-    "golden-alexanders",
-    "swamp-milkweed",
-    "joe-pye-weed",
-    "liatris",
-    "wild-bergamot",
-    "purple-coneflower",
-    "ironweed"
-  ],
-  "relatedWildlifeSlugs": [
-    "carpenter-bee",
-    "bumble-bee"
-  ],
-  "relatedHabitatSlugs": [
-    "sunny-meadow",
-    "sunny-border",
-    "woodland-edge",
-    "oak-savanna"
-  ]
-}
+    "commonName": "Eastern Tiger Swallowtail",
+    "scientificName": "Papilio glaucus",
+    "slug": "eastern-tiger-swallowtail",
+    "type": "Native Butterfly",
+    "category": "pollinators",
+    "subcategory": "butterflies",
+    "wildlifeType": [
+      "Butterfly"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Nectar Feeder",
+      "Leaf Herbivore (larva)"
+    ],
+    "supportedBy": [
+      "Host Trees",
+      "Nectar Flowers",
+      "Sunny Edges"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "3–5½ in wingspan",
+    "activeSeason": "Spring through early fall",
+    "shelter": "Overwinters as a chrysalis",
+    "range": "Statewide",
+    "description": "Ohio's great yellow butterfly — four black tiger stripes and tailed hindwings, its caterpillars feeding on tree leaves like cherry and tuliptree while the adults drift widely for flower nectar. Females come in a yellow form and a dark form thought to mimic the toxic pipevine swallowtail.",
+    "url": "eastern-tiger-swallowtail.html",
+    "tagClass": "tag-butterfly",
+    "accentFrom": "#f0d072",
+    "accentTo": "#d89a24",
+    "svgIcon": "butterfly",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 5.2 C12 9 12 15 12 18.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M12 8 C9 4 4 3.6 3 6.6 C2.3 8.9 4.6 10.8 8 11.5 C10 11.9 11.2 10.5 12 8 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M12 8 C15 4 20 3.6 21 6.6 C21.7 8.9 19.4 10.8 16 11.5 C14 11.9 12.8 10.5 12 8 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M12 11.8 C10 12.4 5.6 13 5 15.9 C4.6 18.3 7.5 19.9 10 18.4 C11.4 17.5 11.7 14.7 12 11.8 Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/><path d=\"M12 11.8 C14 12.4 18.4 13 19 15.9 C19.4 18.3 16.5 19.9 14 18.4 C12.6 17.5 12.3 14.7 12 11.8 Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/><path d=\"M12 5.2 C11 3.7 10 3.1 9 3.1\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M12 5.2 C13 3.7 14 3.1 15 3.1\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "red-buckeye",
+      "wild-geranium",
+      "golden-alexanders",
+      "swamp-milkweed",
+      "joe-pye-weed",
+      "liatris",
+      "wild-bergamot",
+      "purple-coneflower",
+      "ironweed"
+    ],
+    "relatedWildlifeSlugs": [
+      "carpenter-bee",
+      "bumble-bee"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge",
+      "oak-savanna"
+    ]
+  },
+  {
+    "commonName": "Monarch",
+    "scientificName": "Danaus plexippus",
+    "slug": "monarch",
+    "type": "Migratory Butterfly",
+    "category": "pollinators",
+    "subcategory": "butterflies",
+    "wildlifeType": [
+      "Butterfly"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Nectar Feeder",
+      "Milkweed Specialist (larva)",
+      "Long-Distance Migrant"
+    ],
+    "supportedBy": [
+      "Milkweeds",
+      "Nectar Flowers",
+      "Late-Season Bloom",
+      "No Spraying"
+    ],
+    "seasonSeen": [
+      "Summer",
+      "Fall"
+    ],
+    "size": "3½–4 in wingspan",
+    "activeSeason": "Late May through October",
+    "shelter": "Winters in the mountains of central Mexico",
+    "range": "Statewide",
+    "description": "The orange-and-black butterfly of milkweed and September skies — its caterpillars eat only milkweed, its adults nectar widely, and the last generation of the year flies from Ohio to the mountains of Mexico to spend the winter.",
+    "url": "monarch.html",
+    "tagClass": "tag-butterfly",
+    "accentFrom": "#f4b060",
+    "accentTo": "#d4741a",
+    "svgIcon": "monarch",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 5.4 C12 9 12 15 12 18.6\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\"/><path d=\"M12 8.4 C9.4 4.2 4.4 3.4 3.2 6.4 C2.4 8.8 4.8 11 8.2 11.7 C10.2 12.1 11.3 10.8 12 8.4 Z\" fill=\"currentColor\" fill-opacity=\"0.65\"/><path d=\"M12 8.4 C14.6 4.2 19.6 3.4 20.8 6.4 C21.6 8.8 19.2 11 15.8 11.7 C13.8 12.1 12.7 10.8 12 8.4 Z\" fill=\"currentColor\" fill-opacity=\"0.65\"/><path d=\"M12 12 C10 12.6 5.8 13.2 5.2 16 C4.8 18.4 7.6 19.9 10 18.4 C11.4 17.5 11.7 14.8 12 12 Z\" fill=\"currentColor\" fill-opacity=\"0.45\"/><path d=\"M12 12 C14 12.6 18.2 13.2 18.8 16 C19.2 18.4 16.4 19.9 14 18.4 C12.6 17.5 12.3 14.8 12 12 Z\" fill=\"currentColor\" fill-opacity=\"0.45\"/><path d=\"M6 7.6 C8 8.2 10 9.2 11.6 10.4 M18 7.6 C16 8.2 14 9.2 12.4 10.4\" stroke=\"currentColor\" stroke-width=\"0.7\" stroke-linecap=\"round\" opacity=\"0.7\"/><path d=\"M12 5.4 C11 3.9 10 3.3 9 3.3 M12 5.4 C13 3.9 14 3.3 15 3.3\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "swamp-milkweed",
+      "butterfly-weed",
+      "liatris",
+      "wild-bergamot",
+      "purple-coneflower",
+      "joe-pye-weed",
+      "ironweed",
+      "goldenrod",
+      "aster",
+      "boneset",
+      "blue-vervain"
+    ],
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail",
+      "silver-spotted-skipper",
+      "bumble-bee"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "rain-garden",
+      "oak-savanna"
+    ]
+  },
+  {
+    "commonName": "Silver-spotted Skipper",
+    "scientificName": "Epargyreus clarus",
+    "slug": "silver-spotted-skipper",
+    "type": "Native Skipper",
+    "category": "pollinators",
+    "subcategory": "butterflies",
+    "wildlifeType": [
+      "Skipper"
+    ],
+    "ecologicalRole": [
+      "Pollinator",
+      "Nectar Feeder",
+      "Leaf Herbivore (larva)"
+    ],
+    "supportedBy": [
+      "Legume Hosts",
+      "Purple & Pink Flowers",
+      "Leaf Shelters",
+      "Sunny Edges"
+    ],
+    "seasonSeen": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "size": "1¾–2½ in wingspan",
+    "activeSeason": "May through September",
+    "shelter": "Overwinters as a pupa in a leaf shelter",
+    "range": "Statewide",
+    "description": "Ohio's largest and most familiar skipper — a fast, chunky brown butterfly with a gold band across the forewing and a bright silver-white patch under the hindwing, raised on honey locust and other legumes and drawn to purple and pink flowers.",
+    "url": "silver-spotted-skipper.html",
+    "tagClass": "tag-butterfly",
+    "accentFrom": "#e8c874",
+    "accentTo": "#a9782a",
+    "svgIcon": "skipper",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 19 C9 13 7 8 6.5 4.5 C10 7 12.5 11 13.5 19 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M13.5 19 C14 12 16 8 19 5 C18.5 10 17 15 15 19.5 Z\" fill=\"currentColor\" fill-opacity=\"0.4\"/><ellipse cx=\"15.6\" cy=\"15\" rx=\"1.6\" ry=\"2.2\" transform=\"rotate(-20 15.6 15)\" fill=\"#ffffff\" fill-opacity=\"0.85\"/><path d=\"M9.4 9.5 C10.4 10.6 11.2 12 11.8 13.6\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\"/><path d=\"M12.5 19 C12.5 20 12.6 21 12.8 21.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\"/><path d=\"M12.4 18.6 C10.6 17.6 9 17.2 7.5 17.5\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-linecap=\"round\"/><path d=\"M7.5 17.5 L6.4 16.6\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-linecap=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "honey-locust",
+      "liatris",
+      "wild-bergamot",
+      "purple-coneflower",
+      "ironweed",
+      "joe-pye-weed",
+      "swamp-milkweed",
+      "mountain-mint",
+      "penstemon",
+      "blue-vervain"
+    ],
+    "relatedWildlifeSlugs": [
+      "monarch",
+      "eastern-tiger-swallowtail",
+      "bumble-bee"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "sunny-border",
+      "woodland-edge",
+      "oak-savanna"
+    ]
+  },
+  {
+    "commonName": "Common True Katydid",
+    "scientificName": "Pterophylla camellifolia",
+    "slug": "katydid",
+    "type": "Night Singer",
+    "category": "singers",
+    "subcategory": "katydids",
+    "wildlifeType": [
+      "Katydid"
+    ],
+    "ecologicalRole": [
+      "Leaf Herbivore",
+      "Night Chorus",
+      "Prey Base"
+    ],
+    "supportedBy": [
+      "Oak Canopy",
+      "Native Trees",
+      "Dark Nights",
+      "No Spraying"
+    ],
+    "seasonSeen": [
+      "Summer",
+      "Fall"
+    ],
+    "size": "1¾–2 in",
+    "activeSeason": "July until frost",
+    "shelter": "Overwinters as eggs in bark and twigs",
+    "range": "Statewide",
+    "description": "The voice of Ohio's summer nights — a leaf-green insect that lives high in the oak canopy, rarely flies, and rasps its two-syllable 'ka-ty-did' from dusk to dawn from midsummer until the first hard frost.",
+    "url": "katydid.html",
+    "tagClass": "tag-katydid",
+    "accentFrom": "#c9dd8e",
+    "accentTo": "#6f9a3a",
+    "svgIcon": "katydid",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5 13 C7 9.5 12 8.4 17.5 9.2 C19.8 9.6 21 11 21 12.4 C19 15 13 16.6 8 15.4 C6 14.9 5 14 5 13 Z\" fill=\"currentColor\" fill-opacity=\"0.55\"/><path d=\"M7 12.8 C10 11.2 14 10.8 19 11.6\" stroke=\"currentColor\" stroke-width=\"0.7\" stroke-linecap=\"round\" opacity=\"0.6\"/><circle cx=\"4.6\" cy=\"12.6\" r=\"1.6\" fill=\"currentColor\" fill-opacity=\"0.75\"/><path d=\"M4 11.4 C3 7 3.6 4 7 2.4 M4.4 11.2 C2.4 8 1.6 5.4 2.4 3\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M9 15.4 L8 19.4 L9.6 21 M14 16 L15.6 19.6 L14.4 21.2\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M12 15.6 C14.4 15.8 16.6 15.3 18.4 14.5 L20.8 18.2 L19.4 21\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "white-oak",
+      "bur-oak",
+      "honey-locust",
+      "serviceberry",
+      "spicebush",
+      "witch-hazel",
+      "switchgrass",
+      "little-bluestem",
+      "cup-plant"
+    ],
+    "relatedWildlifeSlugs": [
+      "cicada",
+      "grasshopper",
+      "firefly"
+    ],
+    "relatedHabitatSlugs": [
+      "oak-savanna",
+      "woodland-edge",
+      "woodland-understory",
+      "sunny-meadow"
+    ]
+  },
+  {
+    "commonName": "Dog-day Cicada",
+    "scientificName": "Neotibicen spp.",
+    "slug": "cicada",
+    "type": "Annual Cicada",
+    "category": "singers",
+    "subcategory": "cicadas",
+    "wildlifeType": [
+      "Cicada"
+    ],
+    "ecologicalRole": [
+      "Sap Feeder",
+      "Day Chorus",
+      "Prey Base",
+      "Soil Aerator (nymph)"
+    ],
+    "supportedBy": [
+      "Mature Trees",
+      "Undisturbed Soil",
+      "No Spraying",
+      "Shed Skins Left"
+    ],
+    "seasonSeen": [
+      "Summer"
+    ],
+    "size": "1¼–2 in",
+    "activeSeason": "July through September",
+    "shelter": "Nymphs live 2–5 years on tree roots underground",
+    "range": "Statewide",
+    "description": "The buzz of August heat — a heavy green-and-black insect with clear wings whose males drone from the treetops on the hottest afternoons, after years spent underground as nymphs drinking from tree roots.",
+    "url": "cicada.html",
+    "tagClass": "tag-cicada",
+    "accentFrom": "#a9d8c8",
+    "accentTo": "#2f8474",
+    "svgIcon": "cicada",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 6 C9.2 6 7.6 8 7.6 10.6 L7.6 14 C7.6 17.6 9.4 20.6 12 21.6 C14.6 20.6 16.4 17.6 16.4 14 L16.4 10.6 C16.4 8 14.8 6 12 6 Z\" fill=\"currentColor\" fill-opacity=\"0.7\"/><path d=\"M11 8.4 C9.4 10.6 5.6 13 3.2 17.8 C5.6 17.4 9 15 11 12.6 Z\" fill=\"currentColor\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"0.7\"/><path d=\"M13 8.4 C14.6 10.6 18.4 13 20.8 17.8 C18.4 17.4 15 15 13 12.6 Z\" fill=\"currentColor\" fill-opacity=\"0.25\" stroke=\"currentColor\" stroke-width=\"0.7\"/><ellipse cx=\"12\" cy=\"5.4\" rx=\"3.2\" ry=\"1.8\" fill=\"currentColor\" fill-opacity=\"0.85\"/><circle cx=\"9.2\" cy=\"5.4\" r=\"0.9\" fill=\"currentColor\"/><circle cx=\"14.8\" cy=\"5.4\" r=\"0.9\" fill=\"currentColor\"/><path d=\"M9.4 12 L14.6 12 M9.6 14.4 L14.4 14.4 M10 16.8 L14 16.8\" stroke=\"#ffffff\" stroke-width=\"0.6\" opacity=\"0.5\"/></svg>",
+    "relatedPlantSlugs": [
+      "white-oak",
+      "bur-oak",
+      "honey-locust",
+      "red-buckeye",
+      "serviceberry",
+      "witch-hazel"
+    ],
+    "relatedWildlifeSlugs": [
+      "katydid",
+      "grasshopper"
+    ],
+    "relatedHabitatSlugs": [
+      "oak-savanna",
+      "woodland-edge",
+      "street-tree"
+    ]
+  },
+  {
+    "commonName": "Red-legged Grasshopper",
+    "scientificName": "Melanoplus femurrubrum",
+    "slug": "grasshopper",
+    "type": "Meadow Grazer",
+    "category": "singers",
+    "subcategory": "grasshoppers",
+    "wildlifeType": [
+      "Grasshopper"
+    ],
+    "ecologicalRole": [
+      "Grass & Forb Herbivore",
+      "Prey Base",
+      "Nutrient Cycler"
+    ],
+    "supportedBy": [
+      "Standing Grass",
+      "Bare Soil Patches",
+      "Unmown Meadow",
+      "No Spraying"
+    ],
+    "seasonSeen": [
+      "Summer",
+      "Fall"
+    ],
+    "size": "¾–1¼ in",
+    "activeSeason": "July until frost",
+    "shelter": "Overwinters as egg pods in the soil",
+    "range": "Statewide",
+    "description": "Ohio's most common grasshopper — an olive-and-yellow leaper with red hind shins that grazes meadow grasses and forbs from midsummer to frost, and in doing so feeds the kestrels, meadowlarks, bluebirds, and turkeys of open country.",
+    "url": "grasshopper.html",
+    "tagClass": "tag-grasshopper",
+    "accentFrom": "#e8d48a",
+    "accentTo": "#b08a1e",
+    "svgIcon": "grasshopper",
+    "icon": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 12.4 C6 10.4 10 9.6 16 10 C18.4 10.2 20 11.2 20.6 12.4 C18 14.4 13 15.2 8 14.4 C6 14.1 4.6 13.4 4 12.4 Z\" fill=\"currentColor\" fill-opacity=\"0.6\"/><path d=\"M6 12.2 C9.5 11.4 13.5 11.2 18.6 11.8\" stroke=\"currentColor\" stroke-width=\"0.7\" stroke-linecap=\"round\" opacity=\"0.6\"/><circle cx=\"3.8\" cy=\"12.2\" r=\"1.7\" fill=\"currentColor\" fill-opacity=\"0.8\"/><path d=\"M3 11 C2.4 9.6 2.2 8.6 2.6 7.4 M4 10.8 C4.2 9.4 4.6 8.6 5.4 7.8\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-linecap=\"round\"/><path d=\"M8.4 14.4 L7.6 17.6 L9.2 19.2 M12 14.8 L12.4 18 L13.8 19.4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14.4 14.6 C17.4 13.6 20 12 21.6 9.8 L21.4 14.6 L18.6 19.6\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+    "relatedPlantSlugs": [
+      "little-bluestem",
+      "switchgrass",
+      "prairie-dropseed",
+      "purple-lovegrass",
+      "fox-sedge",
+      "goldenrod",
+      "aster",
+      "black-eyed-susan"
+    ],
+    "relatedWildlifeSlugs": [
+      "katydid",
+      "cicada",
+      "lady-beetle"
+    ],
+    "relatedHabitatSlugs": [
+      "sunny-meadow",
+      "dry-prairie",
+      "oak-savanna"
+    ]
+  }
 ]

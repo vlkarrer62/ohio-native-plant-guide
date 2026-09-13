@@ -118,3 +118,20 @@ Pages updated:
 - Updated Serviceberry, False Sunflower, and Black-eyed Susan to use the shared botanical-plate placeholder frame pattern.
 - Removed duplicate inline scroll-reveal scripts from those three newer plant pages so they rely on `../js/plant-profile.js`.
 - No page visual redesigns were made.
+
+
+## Plant page expansion: Spicebush, Blue Vervain, Woodland Phlox
+
+- Added three new plant profiles built on the current Cup Plant page template: `plants/spicebush.html`, `plants/blue-vervain.html`, `plants/woodland-phlox.html`, each with its own stylesheet in `css/plants/` and an original hero SVG.
+- Added matching entries to `data/plants.json`, with aliases so existing companion mentions (e.g. Blue Vervain on the Boneset, Cardinal Flower, Ironweed, Joe-Pye Weed, and Wingstem pages) auto-link through `js/plant-profile.js`.
+- Added reciprocal `relatedPlantSlugs` on the pages that already named these plants as companions.
+- Added `spicebush`, `vervain`, and `phlox` icons to the directory icon library in `plants/index.html`.
+- Botanical plates follow the placeholder pattern: drop `images/spicebush-plate.png`, `images/blue-vervain-plate.png`, or `images/woodland-phlox-plate.png` into place and they appear automatically.
+
+
+## Wildlife expansion: Monarch, Silver-spotted Skipper, Katydid, Cicada, Grasshopper
+
+- Added five wildlife profiles built on the Eastern Tiger Swallowtail template: `wildlife/monarch.html`, `wildlife/silver-spotted-skipper.html`, `wildlife/katydid.html`, `wildlife/cicada.html`, `wildlife/grasshopper.html`, each with its own stylesheet in `css/wildlife/`, an original hero SVG, and an inline field-guide plate SVG.
+- Added matching entries (with inline card icons) to `data/wildlife.json`.
+- Added a new `singers` category ("Singers of Summer") to the wildlife directory for the katydid, cicada, and grasshopper, plus `tag-katydid`, `tag-cicada`, and `tag-grasshopper` tag styles in `css/wildlife/index.css`.
+- Added `relatedWildlifeSlugs` back-links on the host and habitat plants in `data/plants.json` (milkweeds → monarch, honey locust → skipper, oaks → katydid and cicada, warm-season grasses → grasshopper).

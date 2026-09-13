@@ -211,6 +211,9 @@
     .tag-lacewing   { color: #2f8a5e; background: rgba(47,138,94,0.10);  border: 1px solid rgba(47,138,94,0.22); }
     .tag-bug        { color: #9c4422; background: rgba(156,68,34,0.10);  border: 1px solid rgba(156,68,34,0.22); }
     .tag-frog       { color: #385828; background: rgba(56,88,40,0.10);   border: 1px solid rgba(56,88,40,0.22); }
+    .tag-katydid    { color: #4a7020; background: rgba(74,112,32,0.10);   border: 1px solid rgba(74,112,32,0.22); }
+    .tag-cicada     { color: #2a6e60; background: rgba(42,110,96,0.10);   border: 1px solid rgba(42,110,96,0.22); }
+    .tag-grasshopper{ color: #8a6a14; background: rgba(138,106,20,0.10);  border: 1px solid rgba(138,106,20,0.22); }
 
     /* ── EMPTY STATE ── */
     .coming-soon {
