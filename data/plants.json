@@ -146,7 +146,9 @@
       "Structural Plant"
     ],
     "slug": "switchgrass",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "grasshopper"
+    ],
     "relatedPlantSlugs": [
       "rattlesnake-master",
       "little-bluestem",
@@ -198,7 +200,9 @@
       "Filler"
     ],
     "slug": "purple-lovegrass",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "grasshopper"
+    ],
     "relatedPlantSlugs": [
       "little-bluestem",
       "prairie-dropseed",
@@ -251,7 +255,8 @@
     ],
     "slug": "mountain-mint",
     "relatedWildlifeSlugs": [
-      "carpenter-bee"
+      "carpenter-bee",
+      "silver-spotted-skipper"
     ],
     "relatedPlantSlugs": [
       "wild-bergamot",
@@ -316,7 +321,9 @@
       "Edge Plant"
     ],
     "slug": "aster",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch"
+    ],
     "relatedPlantSlugs": [
       "little-bluestem",
       "joe-pye-weed",
@@ -365,7 +372,9 @@
       "Groundcover"
     ],
     "slug": "prairie-dropseed",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "grasshopper"
+    ],
     "relatedPlantSlugs": [
       "little-bluestem",
       "switchgrass",
@@ -418,7 +427,9 @@
       "Structural Plant"
     ],
     "slug": "little-bluestem",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "grasshopper"
+    ],
     "relatedPlantSlugs": [
       "prairie-dropseed",
       "switchgrass",
@@ -587,7 +598,10 @@
       "Structural Plant"
     ],
     "slug": "white-oak",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "katydid",
+      "cicada"
+    ],
     "relatedPlantSlugs": [
       "bur-oak",
       "pennsylvania-sedge",
@@ -695,7 +709,10 @@
       "Structural Plant"
     ],
     "slug": "bur-oak",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "katydid",
+      "cicada"
+    ],
     "relatedPlantSlugs": [
       "white-oak",
       "switchgrass"
@@ -749,7 +766,9 @@
       "Pond Edge Plant"
     ],
     "slug": "swamp-milkweed",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch"
+    ],
     "relatedPlantSlugs": [
       "cardinal-flower",
       "joe-pye-weed",
@@ -815,7 +834,8 @@
     ],
     "slug": "wild-bergamot",
     "relatedWildlifeSlugs": [
-      "carpenter-bee"
+      "carpenter-bee",
+      "silver-spotted-skipper"
     ],
     "relatedPlantSlugs": [
       "mountain-mint",
@@ -977,7 +997,9 @@
       "Edge Plant"
     ],
     "slug": "butterfly-weed",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch"
+    ],
     "relatedPlantSlugs": [
       "swamp-milkweed",
       "little-bluestem",
@@ -1033,7 +1055,9 @@
       "Rain Garden Plant"
     ],
     "slug": "joe-pye-weed",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch"
+    ],
     "relatedPlantSlugs": [
       "swamp-milkweed",
       "cardinal-flower",
@@ -1091,7 +1115,9 @@
     ],
     "slug": "liatris",
     "relatedWildlifeSlugs": [
-      "carpenter-bee"
+      "carpenter-bee",
+      "monarch",
+      "silver-spotted-skipper"
     ],
     "relatedPlantSlugs": [
       "mountain-mint",
@@ -1168,7 +1194,10 @@
       "Structural Plant"
     ],
     "slug": "honey-locust",
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "silver-spotted-skipper",
+      "cicada"
+    ],
     "relatedPlantSlugs": [
       "white-oak",
       "bur-oak"
@@ -1396,7 +1425,10 @@
       "Rain Garden Plant",
       "Edge Plant"
     ],
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch",
+      "silver-spotted-skipper"
+    ],
     "relatedPlantSlugs": [
       "joe-pye-weed",
       "switchgrass",
@@ -1467,7 +1499,9 @@
       "Structural Plant",
       "Rain Garden Plant"
     ],
-    "relatedWildlifeSlugs": [],
+    "relatedWildlifeSlugs": [
+      "monarch"
+    ],
     "relatedPlantSlugs": [
       "ironweed",
       "aster",
@@ -2427,7 +2461,9 @@
     "slug": "blue-vervain",
     "relatedWildlifeSlugs": [
       "bumble-bee",
-      "sweat-bee"
+      "sweat-bee",
+      "monarch",
+      "silver-spotted-skipper"
     ],
     "relatedPlantSlugs": [
       "boneset",

@@ -127,3 +127,11 @@ Pages updated:
 - Added reciprocal `relatedPlantSlugs` on the pages that already named these plants as companions.
 - Added `spicebush`, `vervain`, and `phlox` icons to the directory icon library in `plants/index.html`.
 - Botanical plates follow the placeholder pattern: drop `images/spicebush-plate.png`, `images/blue-vervain-plate.png`, or `images/woodland-phlox-plate.png` into place and they appear automatically.
+
+
+## Wildlife expansion: Monarch, Silver-spotted Skipper, Katydid, Cicada, Grasshopper
+
+- Added five wildlife profiles built on the Eastern Tiger Swallowtail template: `wildlife/monarch.html`, `wildlife/silver-spotted-skipper.html`, `wildlife/katydid.html`, `wildlife/cicada.html`, `wildlife/grasshopper.html`, each with its own stylesheet in `css/wildlife/`, an original hero SVG, and an inline field-guide plate SVG.
+- Added matching entries (with inline card icons) to `data/wildlife.json`.
+- Added a new `singers` category ("Singers of Summer") to the wildlife directory for the katydid, cicada, and grasshopper, plus `tag-katydid`, `tag-cicada`, and `tag-grasshopper` tag styles in `css/wildlife/index.css`.
+- Added `relatedWildlifeSlugs` back-links on the host and habitat plants in `data/plants.json` (milkweeds → monarch, honey locust → skipper, oaks → katydid and cicada, warm-season grasses → grasshopper).
