@@ -538,7 +538,9 @@
     "relatedWildlifeSlugs": [],
     "relatedPlantSlugs": [
       "white-oak",
-      "witch-hazel"
+      "witch-hazel",
+      "spicebush",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge"
@@ -588,7 +590,8 @@
     "relatedWildlifeSlugs": [],
     "relatedPlantSlugs": [
       "bur-oak",
-      "pennsylvania-sedge"
+      "pennsylvania-sedge",
+      "spicebush"
     ],
     "relatedHabitatSlugs": [
       "oak-savanna",
@@ -643,7 +646,9 @@
     "relatedWildlifeSlugs": [],
     "relatedPlantSlugs": [
       "red-buckeye",
-      "white-oak"
+      "white-oak",
+      "spicebush",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge",
@@ -924,7 +929,8 @@
     "relatedWildlifeSlugs": [],
     "relatedPlantSlugs": [
       "fox-sedge",
-      "white-oak"
+      "white-oak",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -1031,7 +1037,8 @@
     "relatedPlantSlugs": [
       "swamp-milkweed",
       "cardinal-flower",
-      "aster"
+      "aster",
+      "blue-vervain"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -1276,7 +1283,8 @@
     "relatedPlantSlugs": [
       "swamp-milkweed",
       "joe-pye-weed",
-      "fox-sedge"
+      "fox-sedge",
+      "blue-vervain"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -1397,7 +1405,8 @@
       "swamp-milkweed",
       "coreopsis",
       "liatris",
-      "goldenrod"
+      "goldenrod",
+      "blue-vervain"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow",
@@ -1587,7 +1596,8 @@
       "pennsylvania-sedge",
       "penstemon",
       "nodding-onion",
-      "golden-alexanders"
+      "golden-alexanders",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge",
@@ -1909,7 +1919,8 @@
       "aster",
       "goldenrod",
       "golden-alexanders",
-      "serviceberry"
+      "serviceberry",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -2038,7 +2049,8 @@
       "cardinal-flower",
       "aster",
       "goldenrod",
-      "wild-bergamot"
+      "wild-bergamot",
+      "woodland-phlox"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge",
@@ -2152,7 +2164,8 @@
       "white-snakeroot",
       "culvers-root",
       "aster",
-      "goldenrod"
+      "goldenrod",
+      "blue-vervain"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow"
@@ -2211,7 +2224,8 @@
       "boneset",
       "culvers-root",
       "goldenrod",
-      "aster"
+      "aster",
+      "blue-vervain"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge",
@@ -2294,6 +2308,216 @@
         "src": "../images/cup-plant-garden-2.jpg",
         "caption": "Flower buds forming, still closed · Bay Village, Ohio"
       }
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Spicebush",
+    "scientificName": "Lindera benzoin",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms March to April",
+    "season": "Spring",
+    "sun": "Part shade to full sun",
+    "moisture": "Medium to moist",
+    "height": "6–12 ft",
+    "description": "The shrub that opens the woodland year — a haze of tiny yellow flowers on bare twigs in March, aromatic leaves that host the spicebush swallowtail, and fat-rich scarlet berries for migrating thrushes in fall.",
+    "url": "spicebush.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#ece9d6",
+    "accentTo": "#e3e0c8",
+    "svgIcon": "spicebush",
+    "plantType": "Shrub",
+    "lightTags": [
+      "Part Sun",
+      "Full Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant",
+      "Rain Garden Plant"
+    ],
+    "slug": "spicebush",
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail"
+    ],
+    "relatedPlantSlugs": [
+      "witch-hazel",
+      "serviceberry",
+      "red-buckeye",
+      "woodland-phlox",
+      "wild-ginger",
+      "wild-geranium",
+      "pennsylvania-sedge",
+      "white-oak",
+      "bur-oak"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge",
+      "stream-edge",
+      "rain-garden"
+    ],
+    "aliases": [
+      "Lindera benzoin",
+      "Northern Spicebush",
+      "Common Spicebush",
+      "Wild Allspice",
+      "Benjamin Bush",
+      "Spicebush"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Blue Vervain",
+    "scientificName": "Verbena hastata",
+    "type": "Wet-Meadow Wildflower",
+    "category": "wildflowers",
+    "bloom": "Blooms July to September",
+    "season": "Summer · Late Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to wet",
+    "height": "2–5 ft",
+    "description": "A slender wet-meadow perennial lifting a candelabra of pencil-thin violet-blue spikes over square stems in midsummer — each spike blooming in a slow ring from base to tip, feeding bees and hosting the common buckeye.",
+    "url": "blue-vervain.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#e4e3ee",
+    "accentTo": "#dbdbe8",
+    "svgIcon": "vervain",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist",
+      "Wet"
+    ],
+    "bloomSeasonTags": [
+      "Summer",
+      "Late Summer"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Filler",
+      "Rain Garden Plant",
+      "Pond Edge Plant"
+    ],
+    "slug": "blue-vervain",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "sweat-bee"
+    ],
+    "relatedPlantSlugs": [
+      "boneset",
+      "swamp-milkweed",
+      "joe-pye-weed",
+      "cardinal-flower",
+      "culvers-root",
+      "ironweed",
+      "wingstem",
+      "fox-sedge",
+      "switchgrass"
+    ],
+    "relatedHabitatSlugs": [
+      "wet-edge",
+      "rain-garden",
+      "pond-edge",
+      "sunny-meadow"
+    ],
+    "aliases": [
+      "Verbena hastata",
+      "Swamp Verbena",
+      "Swamp Vervain",
+      "American Vervain",
+      "Simpler's Joy",
+      "Blue Vervain"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Woodland Phlox",
+    "scientificName": "Phlox divaricata",
+    "type": "Spring Wildflower",
+    "category": "wildflowers",
+    "bloom": "Blooms April to May",
+    "season": "Spring",
+    "sun": "Part shade to shade",
+    "moisture": "Medium to moist",
+    "height": "8–15 in",
+    "description": "The fragrant lavender-blue drift of the April woods — loose clusters of five-petaled flowers on low, leafy stems that carpet rich shade, built for the long tongues of swallowtails, clearwing moths, and the spring bee fly.",
+    "url": "woodland-phlox.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#e6e4f0",
+    "accentTo": "#dedcea",
+    "svgIcon": "phlox",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant"
+    ],
+    "gardenRole": [
+      "Groundcover",
+      "Matrix Plant",
+      "Filler"
+    ],
+    "slug": "woodland-phlox",
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail",
+      "bumble-bee"
+    ],
+    "relatedPlantSlugs": [
+      "wild-geranium",
+      "wild-columbine",
+      "golden-alexanders",
+      "wild-ginger",
+      "pennsylvania-sedge",
+      "spicebush",
+      "serviceberry",
+      "red-buckeye"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Phlox divaricata",
+      "Wild Blue Phlox",
+      "Blue Phlox",
+      "Wild Sweet William",
+      "Woodland Phlox"
     ],
     "native": true
   }

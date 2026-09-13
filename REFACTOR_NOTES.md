@@ -118,3 +118,12 @@ Pages updated:
 - Updated Serviceberry, False Sunflower, and Black-eyed Susan to use the shared botanical-plate placeholder frame pattern.
 - Removed duplicate inline scroll-reveal scripts from those three newer plant pages so they rely on `../js/plant-profile.js`.
 - No page visual redesigns were made.
+
+
+## Plant page expansion: Spicebush, Blue Vervain, Woodland Phlox
+
+- Added three new plant profiles built on the current Cup Plant page template: `plants/spicebush.html`, `plants/blue-vervain.html`, `plants/woodland-phlox.html`, each with its own stylesheet in `css/plants/` and an original hero SVG.
+- Added matching entries to `data/plants.json`, with aliases so existing companion mentions (e.g. Blue Vervain on the Boneset, Cardinal Flower, Ironweed, Joe-Pye Weed, and Wingstem pages) auto-link through `js/plant-profile.js`.
+- Added reciprocal `relatedPlantSlugs` on the pages that already named these plants as companions.
+- Added `spicebush`, `vervain`, and `phlox` icons to the directory icon library in `plants/index.html`.
+- Botanical plates follow the placeholder pattern: drop `images/spicebush-plate.png`, `images/blue-vervain-plate.png`, or `images/woodland-phlox-plate.png` into place and they appear automatically.
