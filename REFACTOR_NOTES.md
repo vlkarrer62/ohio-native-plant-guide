@@ -135,3 +135,10 @@ Pages updated:
 - Added matching entries (with inline card icons) to `data/wildlife.json`.
 - Added a new `singers` category ("Singers of Summer") to the wildlife directory for the katydid, cicada, and grasshopper, plus `tag-katydid`, `tag-cicada`, and `tag-grasshopper` tag styles in `css/wildlife/index.css`.
 - Added `relatedWildlifeSlugs` back-links on the host and habitat plants in `data/plants.json` (milkweeds → monarch, honey locust → skipper, oaks → katydid and cicada, warm-season grasses → grasshopper).
+
+
+## Wildlife: Large Milkweed Bug
+
+- Added `wildlife/milkweed-bug.html` and `css/wildlife/milkweed-bug.css` on the wildlife template, in the Other Garden Life category beside the Aphid.
+- First wildlife page with a **From the Garden** photo section: four garden photographs at `images/milkweed-bug-garden-1.jpg` through `-4.jpg`, resized to 1400 px. The `.garden-gallery` grid lives in the page stylesheet.
+- Added the `data/wildlife.json` entry and `relatedWildlifeSlugs` back-links on Swamp Milkweed and Butterfly Weed.
