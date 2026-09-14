@@ -609,7 +609,8 @@
     "relatedPlantSlugs": [
       "bur-oak",
       "pennsylvania-sedge",
-      "spicebush"
+      "spicebush",
+      "wild-hydrangea"
     ],
     "relatedHabitatSlugs": [
       "oak-savanna",
@@ -2998,6 +2999,225 @@
       "Christmas Fern",
       "Dagger Fern",
       "Evergreen Fern"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Wild Hydrangea",
+    "scientificName": "Hydrangea arborescens",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms June to August",
+    "season": "Summer",
+    "sun": "Part shade to full shade",
+    "moisture": "Medium to moist",
+    "height": "3–5 ft",
+    "description": "A low, mounding shrub of shaded ravines and rocky slopes with flat lacecap heads of tiny cream flowers ringed by a few showy white florets in midsummer — the wild, bee-feeding parent of the garden 'Annabelle', and a shrub for dry-ish shade.",
+    "url": "wild-hydrangea.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#eaefe6",
+    "accentTo": "#dfe6da",
+    "svgIcon": "hydrangea",
+    "plantType": "Shrub",
+    "lightTags": [
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Cover/Shelter",
+      "Erosion Control"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "wild-hydrangea",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "sweat-bee",
+      "hover-fly",
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "spicebush",
+      "witch-hazel",
+      "christmas-fern",
+      "foamflower",
+      "wild-ginger",
+      "woodland-phlox",
+      "wild-columbine",
+      "wild-geranium",
+      "white-snakeroot"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge",
+      "stream-edge"
+    ],
+    "aliases": [
+      "Hydrangea arborescens",
+      "Smooth Hydrangea",
+      "Sevenbark",
+      "Seven-bark",
+      "American Hydrangea",
+      "Wild Hydrangea"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Tuliptree",
+    "scientificName": "Liriodendron tulipifera",
+    "type": "Large Native Tree",
+    "category": "trees",
+    "bloom": "Blooms May to June",
+    "season": "Late Spring",
+    "sun": "Full sun",
+    "moisture": "Medium to moist",
+    "height": "70–100 ft",
+    "description": "The tallest tree of the eastern forest — a straight-trunked giant with tulip-shaped green-and-orange flowers high in the canopy in May, four-lobed leaves with a notched tip, and the leaves that raise the eastern tiger swallowtail.",
+    "url": "tuliptree.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#ebe9d2",
+    "accentTo": "#e0dcc0",
+    "svgIcon": "tuliptree",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring",
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant"
+    ],
+    "slug": "tuliptree",
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail",
+      "bumble-bee",
+      "carpenter-bee",
+      "cicada",
+      "katydid"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "bur-oak",
+      "honey-locust",
+      "spicebush",
+      "serviceberry",
+      "witch-hazel",
+      "christmas-fern",
+      "wild-ginger",
+      "woodland-phlox"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "woodland-understory",
+      "street-tree"
+    ],
+    "aliases": [
+      "Liriodendron tulipifera",
+      "Tulip Tree",
+      "Tulip Poplar",
+      "Yellow Poplar",
+      "Tulip-tree",
+      "Tuliptree"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "False Indigo",
+    "scientificName": "Baptisia australis",
+    "type": "Native Perennial",
+    "category": "wildflowers",
+    "bloom": "Blooms May to June",
+    "season": "Late Spring",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "3–4 ft",
+    "description": "A long-lived, shrub-like prairie perennial with blue-green clover leaves, spikes of indigo-blue pea flowers in late spring for bumblebees, and black rattling seed pods after — a deep-rooted, nitrogen-fixing anchor for the dry garden and a host for the wild indigo duskywing.",
+    "url": "false-indigo.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#e4e6ee",
+    "accentTo": "#d8dce8",
+    "svgIcon": "baptisia",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Spring",
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "false-indigo",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "silver-spotted-skipper",
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "little-bluestem",
+      "prairie-dropseed",
+      "sideoats-grama",
+      "penstemon",
+      "golden-alexanders",
+      "ohio-spiderwort",
+      "butterfly-weed",
+      "purple-coneflower",
+      "wild-bergamot",
+      "rattlesnake-master"
+    ],
+    "relatedHabitatSlugs": [
+      "dry-prairie",
+      "sunny-meadow",
+      "sunny-border",
+      "oak-savanna"
+    ],
+    "aliases": [
+      "Baptisia australis",
+      "Blue False Indigo",
+      "Blue Wild Indigo",
+      "Wild Blue Indigo",
+      "Wild Indigo",
+      "Rattleweed",
+      "False Indigo"
     ],
     "native": true
   }
