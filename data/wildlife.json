@@ -154,7 +154,9 @@
       "purple-coneflower",
       "mountain-mint",
       "liatris",
-      "goldenrod"
+      "goldenrod",
+      "false-indigo",
+      "wild-hydrangea"
     ],
     "relatedWildlifeSlugs": [
       "carpenter-bee",
@@ -540,7 +542,8 @@
       "liatris",
       "wild-bergamot",
       "purple-coneflower",
-      "ironweed"
+      "ironweed",
+      "tuliptree"
     ],
     "relatedWildlifeSlugs": [
       "carpenter-bee",
@@ -662,7 +665,8 @@
       "swamp-milkweed",
       "mountain-mint",
       "penstemon",
-      "blue-vervain"
+      "blue-vervain",
+      "false-indigo"
     ],
     "relatedWildlifeSlugs": [
       "monarch",
@@ -721,7 +725,8 @@
       "witch-hazel",
       "switchgrass",
       "little-bluestem",
-      "cup-plant"
+      "cup-plant",
+      "tuliptree"
     ],
     "relatedWildlifeSlugs": [
       "cicada",
@@ -777,7 +782,8 @@
       "honey-locust",
       "red-buckeye",
       "serviceberry",
-      "witch-hazel"
+      "witch-hazel",
+      "tuliptree"
     ],
     "relatedWildlifeSlugs": [
       "katydid",

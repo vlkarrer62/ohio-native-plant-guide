@@ -158,3 +158,11 @@ Pages updated:
 - Christmas Fern uses `type: "Native Fern"`, `plantType: "Fern"`, the `tag-perennial` tag class, an empty `bloomSeasonTags`, and lives in the `wildflowers` category so it appears under Wildflowers & Perennials in the directory.
 - Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs` on the pages that already named these as companions, and wildlife back-links.
 - Added `lobelia`, `buttonbush`, and `fern` icons to the directory icon library.
+
+
+## Plant page expansion: Wild Hydrangea, Tuliptree, False Indigo
+
+- Added three more plant profiles on the Cup Plant template: `plants/wild-hydrangea.html` ("Shrubs for Rocky Shade" showcase), `plants/tuliptree.html` (sixth tree, "Meet the Magnolias" showcase), and `plants/false-indigo.html` ("Meet the Wild Indigos" showcase).
+- Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs`, and wildlife back-links; added `tuliptree`, `false-indigo`, and `wild-hydrangea` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
+- The Eastern Tiger Swallowtail wildlife page gained a "Host tree" plant-link row for Tuliptree, and the Silver-spotted Skipper page a False Indigo row, so the host plants named in their prose now link somewhere.
+- Added `hydrangea`, `tuliptree`, and `baptisia` icons to the directory icon library.
