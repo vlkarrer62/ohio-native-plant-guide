@@ -903,7 +903,8 @@
       "pennsylvania-sedge",
       "cardinal-flower",
       "swamp-milkweed",
-      "elderberry"
+      "elderberry",
+      "buttonbush"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -959,7 +960,8 @@
       "fox-sedge",
       "white-oak",
       "woodland-phlox",
-      "foamflower"
+      "foamflower",
+      "christmas-fern"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -1072,7 +1074,8 @@
       "swamp-milkweed",
       "cardinal-flower",
       "aster",
-      "blue-vervain"
+      "blue-vervain",
+      "great-blue-lobelia"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -1323,7 +1326,8 @@
       "swamp-milkweed",
       "joe-pye-weed",
       "fox-sedge",
-      "blue-vervain"
+      "blue-vervain",
+      "great-blue-lobelia"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -2624,7 +2628,8 @@
       "boneset",
       "joe-pye-weed",
       "swamp-milkweed",
-      "switchgrass"
+      "switchgrass",
+      "buttonbush"
     ],
     "relatedHabitatSlugs": [
       "wet-edge",
@@ -2767,7 +2772,8 @@
       "wild-columbine",
       "spicebush",
       "witch-hazel",
-      "serviceberry"
+      "serviceberry",
+      "christmas-fern"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -2781,6 +2787,217 @@
       "False Mitrewort",
       "Foam Flower",
       "Foamflower"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Great Blue Lobelia",
+    "scientificName": "Lobelia siphilitica",
+    "type": "Wet-Meadow Wildflower",
+    "category": "wildflowers",
+    "bloom": "Blooms August to October",
+    "season": "Late Summer · Fall",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to wet",
+    "height": "2–4 ft",
+    "description": "A late-summer perennial of wet meadows and stream banks with dense spikes of true-blue, two-lipped flowers built for bumblebees — the blue partner of cardinal flower, blooming into October when little else in the wet garden is.",
+    "url": "great-blue-lobelia.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#e0e6f0",
+    "accentTo": "#d4dcea",
+    "svgIcon": "lobelia",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist",
+      "Wet"
+    ],
+    "bloomSeasonTags": [
+      "Late Summer",
+      "Fall"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source"
+    ],
+    "gardenRole": [
+      "Filler",
+      "Rain Garden Plant",
+      "Pond Edge Plant"
+    ],
+    "slug": "great-blue-lobelia",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "cardinal-flower",
+      "blue-vervain",
+      "boneset",
+      "joe-pye-weed",
+      "swamp-milkweed",
+      "culvers-root",
+      "fox-sedge",
+      "elderberry",
+      "buttonbush"
+    ],
+    "relatedHabitatSlugs": [
+      "wet-edge",
+      "rain-garden",
+      "pond-edge",
+      "stream-edge",
+      "sunny-meadow"
+    ],
+    "aliases": [
+      "Lobelia siphilitica",
+      "Blue Cardinal Flower",
+      "Blue Lobelia",
+      "Great Lobelia",
+      "Big Blue Lobelia",
+      "Great Blue Lobelia"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Buttonbush",
+    "scientificName": "Cephalanthus occidentalis",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms June to August",
+    "season": "Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to wet",
+    "height": "6–12 ft",
+    "description": "A shrub that will grow with its roots in standing water, carrying perfect white spheres of fragrant flowers through midsummer that draw swallowtails, skippers, and bees — then round seed balls that ducks eat into winter.",
+    "url": "buttonbush.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#e9ede4",
+    "accentTo": "#dfe6da",
+    "svgIcon": "buttonbush",
+    "plantType": "Shrub",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Moist",
+      "Wet"
+    ],
+    "bloomSeasonTags": [
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Pond Edge Plant",
+      "Rain Garden Plant"
+    ],
+    "slug": "buttonbush",
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail",
+      "silver-spotted-skipper",
+      "monarch",
+      "bumble-bee",
+      "carpenter-bee"
+    ],
+    "relatedPlantSlugs": [
+      "elderberry",
+      "swamp-milkweed",
+      "cardinal-flower",
+      "great-blue-lobelia",
+      "joe-pye-weed",
+      "blue-vervain",
+      "boneset",
+      "fox-sedge",
+      "switchgrass"
+    ],
+    "relatedHabitatSlugs": [
+      "pond-edge",
+      "wet-edge",
+      "stream-edge",
+      "rain-garden"
+    ],
+    "aliases": [
+      "Cephalanthus occidentalis",
+      "Common Buttonbush",
+      "Button Bush",
+      "Button-bush",
+      "Honey-balls",
+      "Buttonbush"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Christmas Fern",
+    "scientificName": "Polystichum acrostichoides",
+    "type": "Native Fern",
+    "category": "wildflowers",
+    "bloom": "Evergreen · no flowers",
+    "season": "Evergreen",
+    "sun": "Part shade to full shade",
+    "moisture": "Medium to moist",
+    "height": "1–2 ft",
+    "description": "Ohio's most common evergreen fern — a vase of leathery, dark green fronds that stay green under snow, with a Christmas-stocking lobe on every leaflet. Tough enough for dry shade and slopes, and cover for the small life of the forest floor.",
+    "url": "christmas-fern.html",
+    "tagClass": "tag-perennial",
+    "accentFrom": "#e2e9e0",
+    "accentTo": "#d7e0d4",
+    "svgIcon": "fern",
+    "plantType": "Fern",
+    "lightTags": [
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [],
+    "wildlifeRole": [
+      "Cover/Shelter",
+      "Erosion Control"
+    ],
+    "gardenRole": [
+      "Groundcover",
+      "Matrix Plant",
+      "Structural Plant"
+    ],
+    "slug": "christmas-fern",
+    "relatedWildlifeSlugs": [
+      "firefly"
+    ],
+    "relatedPlantSlugs": [
+      "foamflower",
+      "wild-ginger",
+      "pennsylvania-sedge",
+      "woodland-phlox",
+      "wild-geranium",
+      "wild-columbine",
+      "spicebush",
+      "witch-hazel",
+      "serviceberry"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Polystichum acrostichoides",
+      "Christmas Fern",
+      "Dagger Fern",
+      "Evergreen Fern"
     ],
     "native": true
   }
