@@ -150,3 +150,11 @@ Pages updated:
 - Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs` on every existing page that already named these as companions, and `relatedWildlifeSlugs` to the new wildlife pages.
 - Added `elderberry`, `sideoats`, and `foamflower` icons to the directory icon library in `plants/index.html`.
 - Plates follow the placeholder pattern: `images/elderberry-plate.png`, `images/sideoats-grama-plate.png`, `images/foamflower-plate.png`.
+
+
+## Plant page expansion: Great Blue Lobelia, Buttonbush, Christmas Fern
+
+- Added three more plant profiles on the Cup Plant template: `plants/great-blue-lobelia.html` ("Meet the Lobelias" showcase), `plants/buttonbush.html` ("Shrubs of the Water's Edge" showcase), and `plants/christmas-fern.html` — the site's first fern, with a "Ferns for Ohio Shade" showcase and a "Who Shelters Here" wildlife section in place of pollinators.
+- Christmas Fern uses `type: "Native Fern"`, `plantType: "Fern"`, the `tag-perennial` tag class, an empty `bloomSeasonTags`, and lives in the `wildflowers` category so it appears under Wildflowers & Perennials in the directory.
+- Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs` on the pages that already named these as companions, and wildlife back-links.
+- Added `lobelia`, `buttonbush`, and `fern` icons to the directory icon library.
