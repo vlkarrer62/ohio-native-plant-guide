@@ -206,7 +206,8 @@
     "relatedPlantSlugs": [
       "little-bluestem",
       "prairie-dropseed",
-      "switchgrass"
+      "switchgrass",
+      "sideoats-grama"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow",
@@ -378,7 +379,8 @@
     "relatedPlantSlugs": [
       "little-bluestem",
       "switchgrass",
-      "purple-lovegrass"
+      "purple-lovegrass",
+      "sideoats-grama"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow",
@@ -433,7 +435,8 @@
     "relatedPlantSlugs": [
       "prairie-dropseed",
       "switchgrass",
-      "butterfly-weed"
+      "butterfly-weed",
+      "sideoats-grama"
     ],
     "relatedHabitatSlugs": [
       "sunny-meadow",
@@ -551,7 +554,8 @@
       "white-oak",
       "witch-hazel",
       "spicebush",
-      "woodland-phlox"
+      "woodland-phlox",
+      "elderberry"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge"
@@ -662,7 +666,8 @@
       "red-buckeye",
       "white-oak",
       "spicebush",
-      "woodland-phlox"
+      "woodland-phlox",
+      "elderberry"
     ],
     "relatedHabitatSlugs": [
       "woodland-edge",
@@ -715,7 +720,8 @@
     ],
     "relatedPlantSlugs": [
       "white-oak",
-      "switchgrass"
+      "switchgrass",
+      "elderberry"
     ],
     "relatedHabitatSlugs": [
       "oak-savanna",
@@ -896,7 +902,8 @@
     "relatedPlantSlugs": [
       "pennsylvania-sedge",
       "cardinal-flower",
-      "swamp-milkweed"
+      "swamp-milkweed",
+      "elderberry"
     ],
     "relatedHabitatSlugs": [
       "rain-garden",
@@ -951,7 +958,8 @@
     "relatedPlantSlugs": [
       "fox-sedge",
       "white-oak",
-      "woodland-phlox"
+      "woodland-phlox",
+      "foamflower"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -2544,7 +2552,8 @@
       "pennsylvania-sedge",
       "spicebush",
       "serviceberry",
-      "red-buckeye"
+      "red-buckeye",
+      "foamflower"
     ],
     "relatedHabitatSlugs": [
       "woodland-understory",
@@ -2556,6 +2565,222 @@
       "Blue Phlox",
       "Wild Sweet William",
       "Woodland Phlox"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Elderberry",
+    "scientificName": "Sambucus canadensis",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms June to July",
+    "season": "Summer",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to wet",
+    "height": "5–12 ft",
+    "description": "A fast, suckering shrub of wet edges with flat white flower plates in June and heavy clusters of purple-black berries in August that feed more than forty kinds of birds — with hollow stems that shelter small native bees.",
+    "url": "elderberry.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#ebe4ee",
+    "accentTo": "#e0d6e4",
+    "svgIcon": "elderberry",
+    "plantType": "Shrub",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist",
+      "Wet"
+    ],
+    "bloomSeasonTags": [
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Pollen Plant",
+      "Host Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Rain Garden Plant",
+      "Pond Edge Plant"
+    ],
+    "slug": "elderberry",
+    "relatedWildlifeSlugs": [
+      "hover-fly",
+      "sweat-bee",
+      "monarch"
+    ],
+    "relatedPlantSlugs": [
+      "spicebush",
+      "witch-hazel",
+      "red-buckeye",
+      "bur-oak",
+      "fox-sedge",
+      "blue-vervain",
+      "boneset",
+      "joe-pye-weed",
+      "swamp-milkweed",
+      "switchgrass"
+    ],
+    "relatedHabitatSlugs": [
+      "wet-edge",
+      "rain-garden",
+      "pond-edge",
+      "stream-edge",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Sambucus canadensis",
+      "Sambucus nigra subsp. canadensis",
+      "American Elderberry",
+      "American Black Elderberry",
+      "Common Elderberry",
+      "Elder",
+      "Elderberry"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Sideoats Grama",
+    "scientificName": "Bouteloua curtipendula",
+    "type": "Warm-Season Grass",
+    "category": "grasses",
+    "bloom": "Blooms July to September",
+    "season": "Summer · Fall",
+    "sun": "Full sun",
+    "moisture": "Dry to medium",
+    "height": "1–3 ft",
+    "description": "A neat, knee-high prairie bunchgrass whose oat-like spikelets all hang from one side of the stem, lit in midsummer by bright orange anthers — a drought-proof matrix grass of dry ground and a host for grass skippers.",
+    "url": "sideoats-grama.html",
+    "tagClass": "tag-grass",
+    "accentFrom": "#ece7d6",
+    "accentTo": "#e2dcc4",
+    "svgIcon": "sideoats",
+    "plantType": "Grass",
+    "lightTags": [
+      "Full Sun"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Summer",
+      "Late Summer"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Seed Source",
+      "Cover/Shelter",
+      "Erosion Control"
+    ],
+    "gardenRole": [
+      "Matrix Plant",
+      "Edge Plant",
+      "Filler"
+    ],
+    "slug": "sideoats-grama",
+    "relatedWildlifeSlugs": [
+      "grasshopper",
+      "silver-spotted-skipper",
+      "katydid"
+    ],
+    "relatedPlantSlugs": [
+      "little-bluestem",
+      "prairie-dropseed",
+      "purple-lovegrass",
+      "butterfly-weed",
+      "rattlesnake-master",
+      "nodding-onion",
+      "coreopsis",
+      "liatris",
+      "black-eyed-susan"
+    ],
+    "relatedHabitatSlugs": [
+      "dry-prairie",
+      "sunny-meadow",
+      "oak-savanna"
+    ],
+    "aliases": [
+      "Bouteloua curtipendula",
+      "Side-oats Grama",
+      "Sideoats Gramagrass",
+      "Side Oats Grama",
+      "Grama Grass",
+      "Sideoats Grama"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Foamflower",
+    "scientificName": "Tiarella cordifolia",
+    "type": "Woodland Groundcover",
+    "category": "wildflowers",
+    "bloom": "Blooms April to May",
+    "season": "Spring",
+    "sun": "Part shade to full shade",
+    "moisture": "Medium to moist",
+    "height": "6–12 in",
+    "description": "A low, running groundcover of rich woods with heart-shaped, maroon-veined leaves and frothy spikes of tiny white starry flowers in spring — the foam of the forest floor, and an easy shade carpet for small bees and flies.",
+    "url": "foamflower.html",
+    "tagClass": "tag-wildflower",
+    "accentFrom": "#e8ece4",
+    "accentTo": "#dfe5da",
+    "svgIcon": "foamflower",
+    "plantType": "Wildflower",
+    "lightTags": [
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Nectar Plant",
+      "Pollen Plant",
+      "Cover/Shelter",
+      "Erosion Control"
+    ],
+    "gardenRole": [
+      "Groundcover",
+      "Matrix Plant"
+    ],
+    "slug": "foamflower",
+    "relatedWildlifeSlugs": [
+      "sweat-bee",
+      "hover-fly",
+      "firefly"
+    ],
+    "relatedPlantSlugs": [
+      "wild-ginger",
+      "woodland-phlox",
+      "pennsylvania-sedge",
+      "wild-geranium",
+      "wild-columbine",
+      "spicebush",
+      "witch-hazel",
+      "serviceberry"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Tiarella cordifolia",
+      "Heart-leaved Foamflower",
+      "Heartleaf Foamflower",
+      "Allegheny Foamflower",
+      "False Mitrewort",
+      "Foam Flower",
+      "Foamflower"
     ],
     "native": true
   }
