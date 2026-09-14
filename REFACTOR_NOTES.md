@@ -142,3 +142,11 @@ Pages updated:
 - Added `wildlife/milkweed-bug.html` and `css/wildlife/milkweed-bug.css` on the wildlife template, in the Other Garden Life category beside the Aphid.
 - First wildlife page with a **From the Garden** photo section: four garden photographs at `images/milkweed-bug-garden-1.jpg` through `-4.jpg`, resized to 1400 px. The `.garden-gallery` grid lives in the page stylesheet.
 - Added the `data/wildlife.json` entry and `relatedWildlifeSlugs` back-links on Swamp Milkweed and Butterfly Weed.
+
+
+## Plant page expansion: Elderberry, Sideoats Grama, Foamflower
+
+- Added three more plant profiles on the Cup Plant template: `plants/elderberry.html` (third shrub, with a "Shrubs for Wet Ground" showcase), `plants/sideoats-grama.html` (seventh grass, with a "Meet the Gramas" showcase), and `plants/foamflower.html` (fifth groundcover, with a saxifrage-family "Telling Them Apart" showcase). Each has its own stylesheet in `css/plants/` and an original hero SVG.
+- Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs` on every existing page that already named these as companions, and `relatedWildlifeSlugs` to the new wildlife pages.
+- Added `elderberry`, `sideoats`, and `foamflower` icons to the directory icon library in `plants/index.html`.
+- Plates follow the placeholder pattern: `images/elderberry-plate.png`, `images/sideoats-grama-plate.png`, `images/foamflower-plate.png`.
