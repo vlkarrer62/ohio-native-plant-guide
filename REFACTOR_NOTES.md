@@ -166,3 +166,12 @@ Pages updated:
 - Added entries to `data/plants.json` with aliases, reciprocal `relatedPlantSlugs`, and wildlife back-links; added `tuliptree`, `false-indigo`, and `wild-hydrangea` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
 - The Eastern Tiger Swallowtail wildlife page gained a "Host tree" plant-link row for Tuliptree, and the Silver-spotted Skipper page a False Indigo row, so the host plants named in their prose now link somewhere.
 - Added `hydrangea`, `tuliptree`, and `baptisia` icons to the directory icon library.
+
+
+## Plant page expansion: Virginia Creeper, Black Cherry
+
+- Added `plants/virginia-creeper.html` — the site's first vine, in the `vines` category with the existing `tag-vine` tag class, so the directory's Vines filter and the home page's Vines type card now have an entry. Showcase: "Vines for Ohio Gardens" (Trumpet Honeysuckle, American Bittersweet, Dutchman's Pipe).
+- Added `plants/black-cherry.html` — seventh tree and the tiger swallowtail's second host, with a "Meet the Native Cherries & Plums" showcase.
+- Added entries to `data/plants.json` with aliases and wildlife back-links; added `black-cherry` and `virginia-creeper` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
+- The Eastern Tiger Swallowtail page's host group now lists both Tuliptree and Black Cherry.
+- Added `creeper` and `cherry` icons to the directory icon library.

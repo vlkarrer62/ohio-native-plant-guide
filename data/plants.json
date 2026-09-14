@@ -3220,5 +3220,153 @@
       "False Indigo"
     ],
     "native": true
+  },
+  {
+    "commonName": "Virginia Creeper",
+    "scientificName": "Parthenocissus quinquefolia",
+    "type": "Native Vine",
+    "category": "vines",
+    "bloom": "Blooms June to July",
+    "season": "Summer · Fall",
+    "sun": "Full sun to full shade",
+    "moisture": "Dry to moist",
+    "height": "30–50 ft climbing",
+    "description": "The five-fingered vine of every Ohio fencerow and wood edge — climbing by tiny adhesive discs, turning scarlet in September to flag its blue-black berries to migrating birds, and raising five kinds of sphinx moth on its leaves. Harmless, and often mistaken for poison ivy.",
+    "url": "virginia-creeper.html",
+    "tagClass": "tag-vine",
+    "accentFrom": "#ece4dc",
+    "accentTo": "#e2d6cc",
+    "svgIcon": "creeper",
+    "plantType": "Vine",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Dry",
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Summer"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Seed Source",
+      "Cover/Shelter",
+      "Erosion Control",
+      "Nectar Plant"
+    ],
+    "gardenRole": [
+      "Groundcover",
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "virginia-creeper",
+    "relatedWildlifeSlugs": [
+      "sweat-bee",
+      "hover-fly",
+      "katydid"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "tuliptree",
+      "black-cherry",
+      "elderberry",
+      "spicebush",
+      "witch-hazel",
+      "christmas-fern",
+      "pennsylvania-sedge",
+      "white-snakeroot"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "woodland-understory",
+      "oak-savanna"
+    ],
+    "aliases": [
+      "Parthenocissus quinquefolia",
+      "Woodbine",
+      "Five-leaved Ivy",
+      "Five-finger",
+      "American Ivy",
+      "Virginia Creeper"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Black Cherry",
+    "scientificName": "Prunus serotina",
+    "type": "Large Native Tree",
+    "category": "trees",
+    "bloom": "Blooms May",
+    "season": "Spring",
+    "sun": "Full sun",
+    "moisture": "Medium",
+    "height": "50–80 ft",
+    "description": "The wild cherry of Ohio's fencerows and woods — drooping white flower racemes in May, black cherries in August for fifty kinds of birds, and leaves that feed more caterpillars than almost any tree but the oaks, including the eastern tiger swallowtail.",
+    "url": "black-cherry.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#e9ece2",
+    "accentTo": "#dde3d6",
+    "svgIcon": "cherry",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "black-cherry",
+    "relatedWildlifeSlugs": [
+      "eastern-tiger-swallowtail",
+      "bumble-bee",
+      "sweat-bee",
+      "katydid",
+      "cicada"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "bur-oak",
+      "tuliptree",
+      "honey-locust",
+      "serviceberry",
+      "spicebush",
+      "elderberry",
+      "virginia-creeper",
+      "woodland-phlox",
+      "christmas-fern"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "oak-savanna",
+      "woodland-understory"
+    ],
+    "aliases": [
+      "Prunus serotina",
+      "Wild Black Cherry",
+      "Wild Cherry",
+      "Rum Cherry",
+      "Mountain Black Cherry",
+      "Black Cherry"
+    ],
+    "native": true
   }
 ]
