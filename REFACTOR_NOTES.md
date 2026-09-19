@@ -175,3 +175,13 @@ Pages updated:
 - Added entries to `data/plants.json` with aliases and wildlife back-links; added `black-cherry` and `virginia-creeper` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
 - The Eastern Tiger Swallowtail page's host group now lists both Tuliptree and Black Cherry.
 - Added `creeper` and `cherry` icons to the directory icon library.
+
+
+## Plant page expansion: Winterberry
+
+- Added `plants/winterberry.html` (sixth shrub) on the Cup Plant template's structure and components, but with the site's first **dark palette on the current template** — a winter-night theme in the spirit of the Rattlesnake Master page (berry red `--berry` accent, frost blue-grey `--frost` secondary, charcoal-blue backgrounds, faint snowfall in the hero). Stylesheet: `css/plants/winterberry.css`. The dark theme overrides the shared botanical-plate frame and plate-switcher colours locally so the placeholder and the "In the Garden" switcher stay legible on dark.
+- Original hero SVG: bare grey twigs with whorled berry clusters and a dusting of snow.
+- Content specifics: the "Wildlife Support" hub leads with a featured **Winter Birds** category (reusing `.insect-category` with a `--featured` modifier); the care table has a **Pollination** row; story 01 documents this garden's planting — two red-berried females and a 'Southern Gentleman' male — and why a matching late-flowering male matters. Showcase: "Meet the Native Hollies" (American Holly, Mountain Holly, Inkberry, with honest range notes).
+- Added the `data/plants.json` entry (`season: "Fall · Winter"`, grouped with Witch Hazel in the directory; `bloomSeasonTags` include Winter per the validator rule) with aliases including "Holly Berry" and "Winterberry Holly"; added reciprocal `relatedPlantSlugs` on Elderberry and Buttonbush, which already name Winterberry in their shrub showcases.
+- Added a `winterberry` icon to the directory icon library in `plants/index.html`.
+- Plate follows the placeholder pattern: drop `images/winterberry-plate.png` into place and it appears automatically; garden photos can be added later via a `garden` array in `plants.json`.

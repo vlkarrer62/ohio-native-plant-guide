@@ -2630,7 +2630,8 @@
       "joe-pye-weed",
       "swamp-milkweed",
       "switchgrass",
-      "buttonbush"
+      "buttonbush",
+      "winterberry"
     ],
     "relatedHabitatSlugs": [
       "wet-edge",
@@ -2921,7 +2922,8 @@
       "blue-vervain",
       "boneset",
       "fox-sedge",
-      "switchgrass"
+      "switchgrass",
+      "winterberry"
     ],
     "relatedHabitatSlugs": [
       "pond-edge",
@@ -3366,6 +3368,86 @@
       "Rum Cherry",
       "Mountain Black Cherry",
       "Black Cherry"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Winterberry",
+    "scientificName": "Ilex verticillata",
+    "type": "Native Shrub",
+    "category": "shrubs",
+    "bloom": "Blooms June · berries October through winter",
+    "season": "Fall · Winter",
+    "sun": "Full sun to part shade",
+    "moisture": "Moist to wet",
+    "height": "6–10 ft",
+    "description": "A deciduous holly of Ohio's swamps and wet woods that drops its leaves in October and spends the winter as bare grey twigs studded with scarlet berries — a late-winter lifeline for robins, waxwings, and bluebirds. Female plants fruit only with a male blooming nearby.",
+    "url": "winterberry.html",
+    "tagClass": "tag-shrub",
+    "accentFrom": "#efe2e1",
+    "accentTo": "#e5d2d1",
+    "svgIcon": "winterberry",
+    "plantType": "Shrub",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist",
+      "Wet"
+    ],
+    "bloomSeasonTags": [
+      "Summer",
+      "Fall",
+      "Winter"
+    ],
+    "wildlifeRole": [
+      "Seed Source",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Host Plant",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Rain Garden Plant",
+      "Pond Edge Plant"
+    ],
+    "slug": "winterberry",
+    "relatedWildlifeSlugs": [
+      "sweat-bee",
+      "hover-fly",
+      "bumble-bee"
+    ],
+    "relatedPlantSlugs": [
+      "buttonbush",
+      "elderberry",
+      "spicebush",
+      "cardinal-flower",
+      "great-blue-lobelia",
+      "blue-vervain",
+      "joe-pye-weed",
+      "swamp-milkweed",
+      "fox-sedge",
+      "christmas-fern"
+    ],
+    "relatedHabitatSlugs": [
+      "wet-edge",
+      "rain-garden",
+      "pond-edge",
+      "stream-edge",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Ilex verticillata",
+      "Winterberry Holly",
+      "Common Winterberry",
+      "Black Alder",
+      "Michigan Holly",
+      "Canada Holly",
+      "Holly Berry",
+      "Winterberry"
     ],
     "native": true
   }
