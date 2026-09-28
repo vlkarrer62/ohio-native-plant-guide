@@ -177,8 +177,9 @@ Pages updated:
 - Added `creeper` and `cherry` icons to the directory icon library.
 
 
-## Plant page expansion: Native trees — Eastern Redbud
+## Plant page expansion: Native trees — Eastern Redbud, Pawpaw
 
 - Added `plants/eastern-redbud.html` — eighth tree and the first small understory tree beyond Red Buckeye and Serviceberry, with an "Ohio's Understory Trees" showcase (Flowering Dogwood, Pawpaw, American Hornbeam).
-- Added its entry to `data/plants.json` with aliases, and added `eastern-redbud` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
-- Added a `redbud` icon to the directory icon library.
+- Added `plants/pawpaw.html` — Ohio's official native fruit, the zebra swallowtail's host, with an "Ohio's Native Fruit Trees" showcase (American Persimmon, Serviceberry, American Plum).
+- Added entries to `data/plants.json` with aliases, and added `eastern-redbud` and `pawpaw` to the relevant `relatedPlantSlugs` in `data/wildlife.json`.
+- Added `redbud` and `pawpaw` icons to the directory icon library.

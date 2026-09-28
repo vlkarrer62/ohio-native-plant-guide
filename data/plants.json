@@ -3440,5 +3440,76 @@
       "Eastern Redbud"
     ],
     "native": true
+  },
+  {
+    "commonName": "Pawpaw",
+    "scientificName": "Asimina triloba",
+    "type": "Small Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April–May",
+    "season": "Spring",
+    "sun": "Part shade to full sun",
+    "moisture": "Medium to moist",
+    "height": "15–30 ft",
+    "description": "Ohio's official native fruit — a small understory tree with long, drooping, almost tropical leaves, nodding maroon flowers in April, and custardy green fruit in September that tastes of banana and mango, on the only host of the zebra swallowtail.",
+    "url": "pawpaw.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#e7ecda",
+    "accentTo": "#dbe3cc",
+    "svgIcon": "pawpaw",
+    "plantType": "Tree",
+    "lightTags": [
+      "Shade",
+      "Part Sun",
+      "Full Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "pawpaw",
+    "relatedWildlifeSlugs": [
+      "hover-fly"
+    ],
+    "relatedPlantSlugs": [
+      "tuliptree",
+      "white-oak",
+      "spicebush",
+      "wild-hydrangea",
+      "elderberry",
+      "serviceberry",
+      "wild-ginger",
+      "christmas-fern",
+      "woodland-phlox",
+      "foamflower"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "floodplain",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Asimina triloba",
+      "Common Pawpaw",
+      "Hoosier Banana",
+      "Poor Man's Banana",
+      "Custard Apple",
+      "Indiana Banana",
+      "Pawpaw"
+    ],
+    "native": true
   }
 ]
