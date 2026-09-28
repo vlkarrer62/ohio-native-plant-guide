@@ -3511,5 +3511,80 @@
       "Pawpaw"
     ],
     "native": true
+  },
+  {
+    "commonName": "Sugar Maple",
+    "scientificName": "Acer saccharum",
+    "type": "Large Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April",
+    "season": "Spring · Fall",
+    "sun": "Full sun to full shade",
+    "moisture": "Medium to moist",
+    "height": "60–80 ft",
+    "description": "The tree of Ohio's sugarbushes and October hillsides — tassels of yellow-green flowers in April, paired samaras in fall, sap that boils down to maple syrup in March, and leaves that blaze orange and scarlet while feeding nearly three hundred kinds of caterpillars.",
+    "url": "sugar-maple.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#eceadb",
+    "accentTo": "#e6d9c6",
+    "svgIcon": "maple",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant"
+    ],
+    "slug": "sugar-maple",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "sweat-bee",
+      "cicada",
+      "katydid",
+      "aphid"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "tuliptree",
+      "black-cherry",
+      "spicebush",
+      "witch-hazel",
+      "serviceberry",
+      "wild-ginger",
+      "christmas-fern",
+      "woodland-phlox",
+      "foamflower",
+      "wild-geranium"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Acer saccharum",
+      "Hard Maple",
+      "Rock Maple",
+      "Sugar Tree",
+      "Sugartree",
+      "Hard Rock Maple",
+      "Sugar Maple"
+    ],
+    "native": true
   }
 ]

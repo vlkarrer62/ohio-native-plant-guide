@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugar Maple · Acer saccharum · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/sugar-maple.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Acer saccharum illustration:
+         A grey-brown branch with opposite pairs of five-lobed maple
+         leaves on long stalks, their U-shaped sinuses and few blunt teeth
+         grading from summer green at the base through gold and orange to
+         scarlet at the tip; a dangling tassel of long-stalked yellow-green
+         flowers on the left, and paired U-shaped samaras hanging on the
+         right. -->
+    <svg class="hero-illustration" viewBox="0 0 300 470" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <!-- five-lobed leaf: petiole from 0,0; blade tip points up (-y) -->
+        <g id="maple-leaf">
+          <path d="M0 0 L0 -16" fill="none" stroke-width="1.6" stroke-linecap="round"/>
+          <path transform="translate(0 -16)" stroke-width="1" stroke-linejoin="round" d="M0 -4 C-8 -2 -18 -4 -24 -8 L-30 -14 L-26 -18 L-28 -22 L-22 -24 Q-14 -20 -18 -32 L-30 -38 L-36 -40 L-34 -50 L-28 -48 L-26 -54 L-20 -48 Q-10 -40 -8 -54 L-12 -58 L-6 -60 L0 -70 L6 -60 L12 -58 L8 -54 Q10 -40 20 -48 L26 -54 L28 -48 L34 -50 L36 -40 L30 -38 L18 -32 Q14 -20 22 -24 L28 -22 L26 -18 L30 -14 L24 -8 C18 -4 8 -2 0 -4 Z"/>
+          <path transform="translate(0 -16)" fill="none" stroke-width="0.6" opacity="0.65" d="M0 -4 L0 -66 M0 -6 L-32 -48 M0 -6 L32 -48 M0 -5 L-28 -15 M0 -5 L28 -15 M-14 -26 L-24 -40 M14 -26 L24 -40"/>
+        </g>
+        <!-- one samara wing with its seed; mirrored for the pair -->
+        <g id="samara">
+          <path d="M0 0 C-6 4 -10 16 -11 30 C-11.5 38 -5 41 -3 35 C-1 26 1 12 1.5 3 Z" fill="#cdbf7c" stroke="#8a7a44" stroke-width="0.8" stroke-linejoin="round"/>
+          <path d="M-1 4 C-4 14 -6 24 -8 34 M-2 10 L-6 14 M-3 18 L-8 22 M-4 26 L-9 29" stroke="#a8985c" stroke-width="0.5" fill="none"/>
+          <ellipse cx="-1.6" cy="4.4" rx="3.2" ry="4.4" fill="#9a8646" stroke="#6e5e30" stroke-width="0.6"/>
+        </g>
+      </defs>
+
+      <!-- branch -->
+      <path d="M150 462 C150 400 148 340 152 280 C156 230 164 180 176 130 C182 110 186 96 190 84" stroke="#5a4a3c" stroke-width="6" stroke-linecap="round"/>
+      <path d="M152 300 C128 290 112 272 102 252" stroke="#5a4a3c" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <path d="M160 215 C186 208 208 202 224 190" stroke="#5a4a3c" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+      <!-- pale bark furrows -->
+      <g stroke="#9a8a78" stroke-width="1.1" stroke-linecap="round" opacity="0.6"><path d="M148 446 L148 430 M152 420 L152 402 M147 378 L148 362 M151 346 L151 330 M153 262 L154 246 M157 232 L159 218"/></g>
+
+      <!-- opposite leaf pairs, green at the base to scarlet at the tip -->
+      <use href="#maple-leaf" fill="#4f8a46" stroke="#356a34" transform="translate(150 405) rotate(-60) scale(0.9)"/>
+      <use href="#maple-leaf" fill="#4f8a46" stroke="#356a34" transform="translate(150 405) rotate(60) scale(0.9)"/>
+      <use href="#maple-leaf" fill="#8aa83e" stroke="#5e7a28" transform="translate(152 300) rotate(62) scale(0.85)"/>
+      <use href="#maple-leaf" fill="#6e9a44" stroke="#4a7030" transform="translate(102 252) rotate(-28) scale(0.62)"/>
+      <use href="#maple-leaf" fill="#d9a030" stroke="#a0741c" transform="translate(160 215) rotate(-62) scale(0.85)"/>
+      <use href="#maple-leaf" fill="#e0802c" stroke="#a8561a" transform="translate(224 190) rotate(68) scale(0.66)"/>
+      <use href="#maple-leaf" fill="#e0762a" stroke="#a4501a" transform="translate(176 135) rotate(-50) scale(0.82)"/>
+      <use href="#maple-leaf" fill="#d4512a" stroke="#963418" transform="translate(176 135) rotate(48) scale(0.8)"/>
+      <use href="#maple-leaf" fill="#c23a22" stroke="#862416" transform="translate(190 84) rotate(8) scale(0.84)"/>
+
+      <!-- dangling tassel of long-stalked yellow-green flowers -->
+      <g stroke="#9aa24a" stroke-width="0.9" stroke-linecap="round" fill="none">
+        <path d="M102 254 Q92 272 80 306 M102 254 Q94 280 86 318 M102 254 Q98 286 92 326 M102 254 Q101 288 98 330 M102 254 Q106 288 104 328 M102 254 Q110 284 110 322 M102 254 Q114 278 116 312 M102 254 Q94 270 90 300 M102 254 Q106 276 108 302"/>
+      </g>
+      <g fill="#c9cf5c" stroke="#8e9636" stroke-width="0.5">
+        <ellipse cx="80" cy="309" rx="2.4" ry="3.4"/><ellipse cx="86" cy="321" rx="2.4" ry="3.4"/><ellipse cx="92" cy="329" rx="2.4" ry="3.4"/><ellipse cx="98" cy="333" rx="2.4" ry="3.4"/><ellipse cx="104" cy="331" rx="2.4" ry="3.4"/><ellipse cx="110" cy="325" rx="2.4" ry="3.4"/><ellipse cx="116" cy="315" rx="2.4" ry="3.4"/><ellipse cx="90" cy="303" rx="2.2" ry="3.2"/><ellipse cx="108" cy="305" rx="2.2" ry="3.2"/>
+      </g>
+      <g stroke="#d8c050" stroke-width="0.6" stroke-linecap="round"><path d="M80 312 L79 316 M80 312 L81.5 316 M92 332 L91 336 M92 332 L93.5 336 M98 336 L97 340 M98 336 L99.5 340 M104 334 L103 338 M104 334 L105.5 338 M116 318 L115 322 M116 318 L117.5 322 M86 324 L85 328 M110 328 L111 332"/></g>
+
+      <!-- paired, U-shaped samaras on long stalks -->
+      <path d="M214 196 C218 214 220 232 218 250" stroke="#8a7a44" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <path d="M224 192 C234 212 240 238 244 272" stroke="#8a7a44" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+      <use href="#samara" transform="translate(218 250) rotate(6)"/>
+      <use href="#samara" transform="translate(218 250) rotate(-6) scale(-1 1)"/>
+      <use href="#samara" transform="translate(244 272) rotate(-4) scale(0.9)"/>
+      <use href="#samara" transform="translate(244 272) rotate(-14) scale(-0.9 0.9)"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Large Native Tree</div>
+      <h1>Sugar Maple<em>Acer saccharum</em></h1>
+      <p class="hero-tagline">The tree of Ohio's sugarbushes and October hillsides — tassels of yellow-green flowers in April, sap that boils down to syrup in March, and five-lobed leaves that feed nearly three hundred kinds of caterpillars before they blaze orange and scarlet.</p>
+      <div class="flagship-badge">✦ The Sugarbush Tree</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Large native tree</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">60–80 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">April, with the leaves</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Sun to shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium to moist</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Sapindaceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Maple of the Deep Woods</h2>
+    <p>Sugar maple is the great tree of Ohio's rich, moist forests — the beech-maple woods of the glaciated north and the ravines and north-facing slopes of the south. It is among the most <strong>shade-tolerant</strong> trees in the state: its seedlings carpet the forest floor and can wait for decades in the gloom beneath their parents, growing a few inches a year, until a gap in the canopy opens and they race upward. In the open it becomes a broad, dense, oval tree of sixty to eighty feet; in the forest, a tall, clean trunk with grey bark that breaks into long, firm, upturned plates.</p>
+    <p>The leaves are the maple leaf of the Canadian flag — <strong>five-lobed</strong>, with a few large, blunt teeth and smooth, <strong>U-shaped sinuses</strong> between the lobes, set in opposite pairs on long stalks. In April, as the leaves unfold, the tree hangs out tassels of tiny <strong>yellow-green flowers</strong> on threadlike stalks, visited by early bees and carried off by the wind. By fall they have become <strong>paired, U-shaped samaras</strong> that spin to the ground, and the leaves turn the famous yellow, orange, and scarlet of an Ohio October.</p>
+
+    <div class="keystone-callout">
+      <p>The maples host nearly <strong>three hundred species of caterpillar</strong> in the eastern states — among them the rosy maple moth, the cecropia, and the maple spanworm — and they are one of the canopy trees that feed nesting songbirds through the summer. Add <strong>April pollen</strong> for early bees, seed for squirrels and finches, and the deep shade that shelters a woodland wildflower floor, and sugar maple is a keystone of Ohio's forests.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Shade tree</span>
+      <span class="pill">Fall color</span>
+      <span class="pill">Large yards &amp; parks</span>
+      <span class="pill">Caterpillar host</span>
+      <span class="pill">Woodland restoration</span>
+      <span class="pill">Backyard sugaring</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Sugar Maple</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/sugar-maple-plate.png"
+          alt="Botanical field-plate illustration of Sugar Maple"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/sugar-maple-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Acer saccharum · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Late winter</div><div class="tl-bar"></div><div class="tl-text">Freezing nights and thawing days set the sap running in February and March — the sugaring season, when Ohio's sugarbushes are tapped and the sugarhouses steam.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Spring</div><div class="tl-bar"></div><div class="tl-text">In April the tree hangs out tassels of yellow-green flowers on long, drooping stalks as the pale new leaves unfold, and early bumblebees and sweat bees work them for pollen.</div></div>
+      <div class="tl-row active"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">A dense canopy of deep green, casting the heaviest shade of any Ohio tree, with rosy maple moth and hundreds of other caterpillars feeding the songbirds nesting above.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Fall</div><div class="tl-bar"></div><div class="tl-text">In October the leaves turn yellow, orange, and scarlet — often all three on one tree — and the paired samaras ripen and spin down for squirrels, chipmunks, and finches.</div></div>
+      <div class="tl-row"><div class="tl-season">Winter</div><div class="tl-bar"></div><div class="tl-text">Grey, platy bark, opposite branching, and sharp, brown, cone-shaped buds identify the bare tree; the fallen leaves lie as a rich, fast-rotting mulch.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Sugar maple gives in three ways. Its April flowers, open to both the wind and insects, are an early pollen and nectar source for bees coming out of winter. Its leaves, all summer, raise one of the larger caterpillar communities among native trees — food for the warblers, vireos, and grosbeaks that nest in its canopy. And its seeds, bark, and hollows feed and shelter mammals and birds through the year.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">host plant</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Rosy Maple Moth</span>
+          <span class="insect-tag common">Cecropia Moth</span>
+          <span class="insect-tag">Polyphemus Moth</span>
+          <span class="insect-tag">Maple Spanworm</span>
+          <span class="insect-tag">Io Moth</span>
+          <span class="insect-tag">Dagger Moths</span>
+          <span class="insect-tag">Hundreds of Moth Larvae</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees &amp; Other Insects</span><span class="insect-count-badge">early pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebee Queens</span>
+          <span class="insect-tag common">Mining Bees</span>
+          <span class="insect-tag">Sweat Bees</span>
+          <span class="insect-tag">Cicadas</span>
+          <span class="insect-tag">Katydids</span>
+          <span class="insect-tag">Aphids</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Birds &amp; Mammals</span><span class="insect-count-badge">seed &amp; shelter</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Rose-breasted Grosbeak</span>
+          <span class="insect-tag common">Yellow-bellied Sapsucker</span>
+          <span class="insect-tag">Red-eyed Vireo</span>
+          <span class="insect-tag">Evening Grosbeak</span>
+          <span class="insect-tag">Squirrels &amp; Chipmunks</span>
+          <span class="insect-tag">Cavity Nesters</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">The <strong>rosy maple moth</strong> — a small, woolly moth in raspberry pink and butter yellow — is the maples' signature caterpillar, and its green-striped larvae feed in groups on the leaves in summer. <strong>Yellow-bellied sapsuckers</strong> drill neat rows of wells in the bark in spring and return to lap the sweet sap, and hummingbirds and early insects visit the wells after them.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Sugar maple is a forest tree, and it grows best where the forest would: deep, cool, moist, well-drained soil with its own leaf litter left beneath it. Give it that and it is long-lived, strong-wooded, and nearly trouble-free. It does poorly as a street tree — <strong>road salt, compacted soil, reflected heat, and drought</strong> all stress it, and scorched leaf edges in August are the sign. Plant it in a lawn, park, or woodland edge with room to spread, mulch the root zone widely, and water through its first dry summers.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to full shade; seedlings are among the most shade-tolerant of Ohio trees</td></tr>
+      <tr><td>Soil</td><td>Deep, rich, well-drained loam; slightly acid to neutral; poor on heavy, compacted, or wet clay</td></tr>
+      <tr><td>Moisture</td><td>Medium to moist; dislikes drought and standing water alike</td></tr>
+      <tr><td>Habit</td><td>Dense oval crown 60–80 ft tall and 40–60 ft wide; slow to moderate growth, long-lived</td></tr>
+      <tr><td>Placement</td><td>Lawns, parks, and woodland edges away from salted roads, driveways, and paving</td></tr>
+      <tr><td>Maintenance</td><td>Low; mulch the root zone instead of lawn, avoid trenching or soil grading under the crown, and water in drought</td></tr>
+      <tr><td>Wildlife</td><td>Leave the leaf litter beneath for overwintering moth pupae, and leave dead limbs and hollows where safe</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Sugar maple belongs to the rich mesic forest, and it grows among the other great hardwoods of Ohio over an understory of small trees and shrubs and a spring-blooming woodland floor that flowers before its canopy closes.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Canopy company</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">White Oak</span> <span class="companion-latin">Quercus alba</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Tuliptree</span> <span class="companion-latin">Liriodendron tulipifera</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black Cherry</span> <span class="companion-latin">Prunus serotina</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Understory trees &amp; shrubs</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Spicebush</span> <span class="companion-latin">Lindera benzoin</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Witch-hazel</span> <span class="companion-latin">Hamamelis virginiana</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Serviceberry</span> <span class="companion-latin">Amelanchier spp.</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Woodland floor</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Woodland Phlox</span> <span class="companion-latin">Phlox divaricata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Geranium</span> <span class="companion-latin">Geranium maculatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foamflower</span> <span class="companion-latin">Tiarella cordifolia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Christmas Fern</span> <span class="companion-latin">Polystichum acrostichoides</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Forty Gallons to One</h3>
+        <p>Sugar maple sap runs clear and watery, only about <strong>two percent sugar</strong>, so it takes roughly forty gallons of it, boiled down for hours, to make a single gallon of syrup. It flows best on the swing between freezing nights and thawing days in late winter, when pressure inside the trunk pushes sap out of a tap hole. Ohio is a real maple-syrup state: Indigenous peoples made maple sugar here long before settlers, and today hundreds of sugarbushes — thickest in the northeast, where <strong>Geauga County</strong> holds a maple festival every spring — still tap the trees each March.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">Where the Colors Come From</h3>
+        <p>The yellow and orange of a maple in October were in the leaf all summer: <strong>carotenoid</strong> pigments, hidden under green chlorophyll until the tree stops making it in fall. The scarlet is new. As the days shorten, a sugar maple traps sugars in its leaves and builds red <strong>anthocyanins</strong> from them — most of all after sunny days and cool, frost-free nights. That is why a bright, crisp October brings a brilliant fall, and why one tree can be gold on its shaded side and scarlet on its sunny one.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">Watering Its Neighbors</h3>
+        <p>On summer nights, when its leaves close their pores, a sugar maple draws water up from moist soil deep below and releases it through its shallow roots into the dry topsoil — then drinks it back up again the next morning. This <strong>hydraulic lift</strong>, first measured in sugar maples, can supply a real share of the tree's daily water, and some of that moisture is taken up by the shallow-rooted wildflowers and shrubs growing beneath it.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Hard Maple and Bird's-Eye</h3>
+        <p>Lumbermen call it <strong>hard maple</strong> or rock maple, and the name is earned: the pale, dense, fine-grained wood is tough enough for bowling alleys, basketball courts, butcher blocks, and baseball bats. Now and then a tree grows wood full of tiny swirling knots, like scattered eyes — <strong>bird's-eye maple</strong>, whose cause is still debated and which is prized by cabinetmakers and luthiers. Curly, or "tiger," maple, with its rippled shimmer, comes from the same tree.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Genus Acer</p>
+    <h2>Meet Ohio's Native Maples</h2>
+    <p><em>Acer</em> — the maples — is one of the most important tree genera for caterpillars in the eastern states, and Ohio has several natives beyond sugar maple, profiled above. All share opposite leaves and paired, winged samaras; they differ in leaf shape, habitat, and how early they flower.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Page · Sugarbush · Statewide</p>
+        <p class="species-common">Sugar Maple</p>
+        <p class="species-latin">Acer saccharum</p>
+        <p class="species-desc">The species profiled on this page: a large, shade-tolerant tree of rich woods with five-lobed, U-sinused leaves, tassels of yellow-green flowers in April, and fall color in yellow, orange, and scarlet. The source of maple syrup.</p>
+        <div class="species-traits"><span class="species-trait">60–80 ft</span><span class="species-trait">Sun–shade</span><span class="species-trait">April bloom</span><span class="species-trait">Host tree</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Adaptable · Red flowers</p>
+        <p class="species-common">Red Maple</p>
+        <p class="species-latin">Acer rubrum</p>
+        <p class="species-desc">The most widespread maple in the East, at home from swamps to dry ridges, with three-lobed, sharply toothed leaves and clusters of red flowers in March — one of the first bee flowers of the year. Reliable scarlet fall color.</p>
+        <div class="species-traits"><span class="species-trait">40–70 ft</span><span class="species-trait">Sun–part shade</span><span class="species-trait">March bloom</span><span class="species-trait">Wet or dry</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Floodplain · Fast-growing</p>
+        <p class="species-common">Silver Maple</p>
+        <p class="species-latin">Acer saccharinum</p>
+        <p class="species-desc">A big, fast, riverbank tree with deeply cut leaves that flash silver-white beneath, flowering in late winter and dropping large samaras by May. Brittle and aggressive-rooted near buildings, but a fine tree for floodplains.</p>
+        <div class="species-traits"><span class="species-trait">50–80 ft</span><span class="species-trait">Sun</span><span class="species-trait">Feb–Mar bloom</span><span class="species-trait">Floodplains</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Close cousin · Drooping leaves</p>
+        <p class="species-common">Black Maple</p>
+        <p class="species-latin">Acer nigrum</p>
+        <p class="species-desc">So close to sugar maple that many botanists treat it as a subspecies: darker bark, leaves that droop at the edges and are usually three-lobed and velvety beneath. Found in moist bottomlands and tapped for syrup just the same.</p>
+        <div class="species-traits"><span class="species-trait">60–80 ft</span><span class="species-trait">Sun–part shade</span><span class="species-trait">April bloom</span><span class="species-trait">Syrup tree</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Compound leaves · Pioneer</p>
+        <p class="species-common">Boxelder</p>
+        <p class="species-latin">Acer negundo</p>
+        <p class="species-desc">The maple that doesn't look like one: leaves divided into three to five leaflets, green twigs, and male and female flowers on separate trees. A quick, weedy stream-bank tree, host to the boxelder bug and a winter seed source for evening grosbeaks.</p>
+        <div class="species-traits"><span class="species-trait">30–50 ft</span><span class="species-trait">Sun–part shade</span><span class="species-trait">Compound</span><span class="species-trait">Stream banks</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Acer saccharum · Large Native Tree · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js?v=4"></script>
+</body>
+</html>
