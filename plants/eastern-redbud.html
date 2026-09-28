@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastern Redbud · Cercis canadensis · Ohio Native Plant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/plant-profile.css" />
+  <link rel="stylesheet" href="../css/plants/eastern-redbud.css" />
+</head>
+<body>
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="../index.html">← Home</a>
+    <a href="index.html">Plant Directory</a>
+  </nav>
+
+  <!-- ════ HERO ═══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-light"></div>
+
+    <!-- Cercis canadensis illustration:
+         A dark, zig-zagging trunk and branches crowded with clusters of
+         small magenta pea-flowers sprouting straight from the bare wood
+         (cauliflory), a few heart-shaped leaves just unfolding at the
+         twig tips, and last year's flat, purple-brown seed pods still
+         hanging from a side branch. -->
+    <svg class="hero-illustration" viewBox="0 0 300 470" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <!-- trunk and zig-zag main branch -->
+      <path d="M150 462 C148 430 152 400 148 370 C146 352 150 344 158 330 L176 300 C170 288 160 276 154 262 L180 226 C174 212 166 198 162 186 L188 150 C182 136 176 122 172 110 L194 74 C196 64 196 56 194 46" stroke="#3e2f2c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- left side branch -->
+      <path d="M149 382 C130 376 114 366 104 350 L88 336 C84 320 80 306 72 292 L58 280" stroke="#3e2f2c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- right side branch (carries old pods) -->
+      <path d="M168 240 C188 236 204 226 214 212 L232 206 C240 196 248 186 262 176" stroke="#3e2f2c" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- small upper twigs -->
+      <path d="M176 176 C160 166 150 152 140 138 M186 148 C204 142 218 130 228 116" stroke="#3e2f2c" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <!-- bark texture -->
+      <g stroke="#6a5650" stroke-width="1" stroke-linecap="round" opacity="0.55"><path d="M146 448 L148 432 M152 420 L151 404 M146 394 L147 380 M157 342 L162 334"/></g>
+
+      <defs>
+        <!-- a single pea-flower: upright banner, paired wings, and keel on a short pedicel -->
+        <g id="redbud-flower">
+          <path d="M0 0 L0 -4" stroke="#7a3a52" stroke-width="0.8" stroke-linecap="round"/>
+          <ellipse cx="0" cy="-8" rx="2.6" ry="3.4" fill="#d24e90"/>
+          <ellipse cx="-2.6" cy="-5.6" rx="1.8" ry="2.8" transform="rotate(-30 -2.6 -5.6)" fill="#b8337a"/>
+          <ellipse cx="2.6" cy="-5.6" rx="1.8" ry="2.8" transform="rotate(30 2.6 -5.6)" fill="#b8337a"/>
+          <ellipse cx="0" cy="-4.6" rx="1.3" ry="2" fill="#8e2458"/>
+        </g>
+        <!-- a tight cluster of 5 flowers bursting from one bud on old wood -->
+        <g id="redbud-cluster">
+          <use href="#redbud-flower" transform="rotate(-70)"/>
+          <use href="#redbud-flower" transform="rotate(-35)"/>
+          <use href="#redbud-flower"/>
+          <use href="#redbud-flower" transform="rotate(35)"/>
+          <use href="#redbud-flower" transform="rotate(70)"/>
+          <circle r="1.6" fill="#5a2a3c"/>
+        </g>
+        <!-- heart-shaped leaf: notch (petiole end) at the origin, pointed tip upward -->
+        <path id="redbud-leaf" d="M0 0 C-8 6 -22 0 -22 -14 C-22 -28 -8 -38 0 -46 C8 -38 22 -28 22 -14 C22 0 8 6 0 0 Z"/>
+        <!-- flat legume pod -->
+        <path id="redbud-pod" d="M0 0 C4 2 6 10 6 28 C6 42 4 50 0 56 C-4 50 -5 42 -5 28 C-5 10 -3 2 0 0 Z"/>
+      </defs>
+
+      <!-- heart leaves unfolding at the twig tips -->
+      <g fill="#6e9a5e" stroke="#4a7040" stroke-width="1" stroke-linejoin="round">
+        <use href="#redbud-leaf" transform="translate(194 46) rotate(-8) scale(0.72)"/>
+        <use href="#redbud-leaf" transform="translate(140 138) rotate(-40) scale(0.62)"/>
+        <use href="#redbud-leaf" transform="translate(228 116) rotate(34) scale(0.66)"/>
+        <use href="#redbud-leaf" transform="translate(58 280) rotate(-52) scale(0.58)"/>
+      </g>
+      <g stroke="#4a7040" stroke-width="0.6" opacity="0.6" fill="none">
+        <path d="M194 46 L190 14 M194 46 L180 30 M194 46 L206 28 M228 116 L246 92 M228 116 L232 98 M140 138 L118 116 M140 138 L130 116"/>
+      </g>
+
+      <!-- flat seed pods from last year, still hanging -->
+      <g fill="#8a5a62" stroke="#5e3a40" stroke-width="0.8">
+        <use href="#redbud-pod" transform="translate(214 212) rotate(8)"/>
+        <use href="#redbud-pod" transform="translate(222 210) rotate(-6) scale(0.92)"/>
+        <use href="#redbud-pod" transform="translate(246 190) rotate(4) scale(0.88)"/>
+        <use href="#redbud-pod" transform="translate(262 176) rotate(-10) scale(0.8)"/>
+      </g>
+      <g fill="#b88a8e" opacity="0.6">
+        <ellipse cx="206" cy="232" rx="1.6" ry="2.6"/><ellipse cx="204" cy="246" rx="1.6" ry="2.6"/>
+        <ellipse cx="226" cy="230" rx="1.5" ry="2.4"/><ellipse cx="228" cy="244" rx="1.5" ry="2.4"/>
+        <ellipse cx="245" cy="210" rx="1.4" ry="2.2"/><ellipse cx="244" cy="224" rx="1.4" ry="2.2"/>
+        <ellipse cx="264" cy="194" rx="1.3" ry="2"/>
+      </g>
+
+      <!-- magenta flower clusters straight from bare trunk and branches -->
+      <use href="#redbud-cluster" transform="translate(146 438) rotate(-90)"/>
+      <use href="#redbud-cluster" transform="translate(154 412) rotate(90)"/>
+      <use href="#redbud-cluster" transform="translate(146 396) rotate(-80)"/>
+      <use href="#redbud-cluster" transform="translate(152 356) rotate(70)"/>
+      <use href="#redbud-cluster" transform="translate(124 372) rotate(-20)"/>
+      <use href="#redbud-cluster" transform="translate(98 346) rotate(-40)"/>
+      <use href="#redbud-cluster" transform="translate(84 320) rotate(-70)"/>
+      <use href="#redbud-cluster" transform="translate(74 298) rotate(-30)"/>
+      <use href="#redbud-cluster" transform="translate(170 312) rotate(60)"/>
+      <use href="#redbud-cluster" transform="translate(162 282) rotate(-60)"/>
+      <use href="#redbud-cluster" transform="translate(172 238) rotate(80)"/>
+      <use href="#redbud-cluster" transform="translate(190 232) rotate(-10)"/>
+      <use href="#redbud-cluster" transform="translate(168 202) rotate(-70)"/>
+      <use href="#redbud-cluster" transform="translate(180 164) rotate(70)"/>
+      <use href="#redbud-cluster" transform="translate(158 158) rotate(-30)"/>
+      <use href="#redbud-cluster" transform="translate(182 124) rotate(-60)"/>
+      <use href="#redbud-cluster" transform="translate(206 136) rotate(10)"/>
+      <use href="#redbud-cluster" transform="translate(190 88) rotate(60)"/>
+      <use href="#redbud-cluster" transform="translate(186 70) rotate(-50) scale(0.85)"/>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge">Ohio Native Plant · Small Native Tree</div>
+      <h1>Eastern Redbud<em>Cercis canadensis</em></h1>
+      <p class="hero-tagline">The first color of the Ohio woods — magenta pea-flowers crowding bare twigs and even the trunk in April, before a single leaf, followed by heart-shaped leaves and flat purple pods that hang on into winter.</p>
+      <div class="flagship-badge">✦ Blooms on Bare Wood</div>
+    </div>
+  </header>
+
+  <div class="facts-band">
+    <div class="fact-item"><span class="fact-label">Type</span><span class="fact-value">Small native tree</span></div>
+    <div class="fact-item"><span class="fact-label">Height</span><span class="fact-value">20–30 feet</span></div>
+    <div class="fact-item"><span class="fact-label">Bloom</span><span class="fact-value">April, before leaves</span></div>
+    <div class="fact-item"><span class="fact-label">Light</span><span class="fact-value">Sun to part shade</span></div>
+    <div class="fact-item"><span class="fact-label">Moisture</span><span class="fact-value">Medium</span></div>
+    <div class="fact-item"><span class="fact-label">Family</span><span class="fact-value">Fabaceae</span></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <p class="eyebrow">About This Plant</p>
+    <h2>The Tree That Blooms From Its Bark</h2>
+    <p>Eastern redbud is a small, often multi-stemmed tree of woodland edges, stream bluffs, and open limestone slopes, found across most of Ohio but scarce in the glaciated northeast. It grows twenty to thirty feet tall with a spreading, flat-topped crown and a trunk that often leans or forks low, and its twigs grow in a distinct <strong>zig-zag</strong>, bending at each bud. For most of the year it is a quiet understory tree; for two weeks in April it is the brightest thing in the woods.</p>
+    <p>The flowers come before the leaves, in tight clusters of small <strong>magenta-pink pea-flowers</strong> that sprout not only from the twigs but from old branches and the trunk itself. They are followed by broad, <strong>heart-shaped leaves</strong> with smooth edges and palmate veins, which turn clear yellow in fall, and by bunches of <strong>flat legume pods</strong> that ripen from green to purple-brown and rattle on the branches well into winter. The plant is a legume, a member of the pea family, and the flower shape — banner, wings, and keel — shows it at a glance.</p>
+
+    <div class="keystone-callout">
+      <p>Redbud opens its flowers when few other trees offer anything, and its deep pea-flowers are worked by <strong>queen bumblebees, mason bees, and carpenter bees</strong> strong enough to pry the keel open. It is also the chief Ohio host of <strong>Henry's elfin</strong>, a small spring hairstreak whose caterpillars feed on the flowers and young pods.</p>
+    </div>
+
+    <p class="eyebrow" style="margin-top: 1.2rem; margin-bottom: 0.4rem">Best garden uses</p>
+    <div class="pill-list">
+      <span class="pill">Specimen tree</span>
+      <span class="pill">Woodland edges</span>
+      <span class="pill">Small yards</span>
+      <span class="pill">Early bee forage</span>
+      <span class="pill">Understory layer</span>
+      <span class="pill">Spring color</span>
+    </div>
+  </section>
+
+  <section class="section botanical-plate-section">
+    <p class="eyebrow">Botanical Plate</p>
+    <h2>Eastern Redbud</h2>
+    <figure class="botanical-plate botanical-plate--placeholder">
+      <div class="botanical-plate-frame">
+        <img
+          src="../images/eastern-redbud-plate.png"
+          alt="Botanical field-plate illustration of Eastern Redbud"
+          onload="this.closest('.botanical-plate').classList.add('has-image')"
+          onerror="this.style.display='none'; this.closest('.botanical-plate').classList.add('is-missing')"
+        />
+        <div class="botanical-plate-placeholder" aria-hidden="true">
+          <span class="botanical-plate-placeholder-label">Plate pending</span>
+          <span class="botanical-plate-placeholder-file">images/eastern-redbud-plate.png</span>
+        </div>
+      </div>
+      <figcaption>Cercis canadensis · Botanical field plate</figcaption>
+    </figure>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Seasonal Interest</p>
+    <h2>A Year in the Life</h2>
+    <div class="timeline">
+      <div class="tl-row active"><div class="tl-season">Early spring</div><div class="tl-bar"></div><div class="tl-text">In late March the buds along the bare twigs and trunk swell and show color, dotting the dark bark with beads of deep rose.</div></div>
+      <div class="tl-row peak"><div class="tl-season">Mid-spring</div><div class="tl-bar"></div><div class="tl-text">Peak bloom in April — two or three weeks of magenta-pink clusters on leafless wood, worked by queen bumblebees, mason bees, and carpenter bees, with Henry's elfins laying eggs on the flower buds.</div></div>
+      <div class="tl-row active"><div class="tl-season">Late spring</div><div class="tl-bar"></div><div class="tl-text">Heart-shaped leaves unfold, bronze-tinged at first, as the spent flowers give way to clusters of thin, flat green pods.</div></div>
+      <div class="tl-row"><div class="tl-season">Summer</div><div class="tl-bar"></div><div class="tl-text">A dense layer of broad leaves shades the woodland edge; leafcutter bees snip neat circles from their margins, and the pods fill out and redden.</div></div>
+      <div class="tl-row"><div class="tl-season">Fall–winter</div><div class="tl-bar"></div><div class="tl-text">Leaves turn clear yellow and drop; bunches of purple-brown pods hang on through winter above the zig-zag twigs and dark, finely scaly bark.</div></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Wildlife Support</p>
+    <h2>Who Visits</h2>
+    <p>Redbud's great gift to wildlife is its timing. It blooms in the lean weeks of April, when bumblebee queens are founding colonies and solitary bees are provisioning their first nests, and its closed pea-flowers reward the strong, long-tongued bees that can open them. Its leaves and flowers host a small but specialized set of caterpillars, and its seeds and branching cover serve birds through the rest of the year.</p>
+    <div class="insect-hub">
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐝</span><span class="insect-category-name">Bees</span><span class="insect-count-badge">early nectar &amp; pollen</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Bumblebee Queens</span>
+          <span class="insect-tag common">Mason Bees</span>
+          <span class="insect-tag common">Carpenter Bees</span>
+          <span class="insect-tag">Long-horned Bees</span>
+          <span class="insect-tag">Mining Bees</span>
+          <span class="insect-tag">Leafcutter Bees</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🦋</span><span class="insect-category-name">Butterflies &amp; Moths</span><span class="insect-count-badge">host plant</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Henry's Elfin</span>
+          <span class="insect-tag">Redbud Leaffolder</span>
+          <span class="insect-tag">Io Moth</span>
+          <span class="insect-tag">Other Moth Larvae</span>
+        </div>
+      </div>
+      <div class="insect-category">
+        <div class="insect-category-header"><span class="insect-category-icon">🐦</span><span class="insect-category-name">Birds &amp; Mammals</span><span class="insect-count-badge">seeds &amp; cover</span></div>
+        <div class="insect-list">
+          <span class="insect-tag common">Ruby-throated Hummingbird</span>
+          <span class="insect-tag">Northern Bobwhite</span>
+          <span class="insect-tag">Rose-breasted Grosbeak</span>
+          <span class="insect-tag">Nesting Songbirds</span>
+          <span class="insect-tag">White-tailed Deer</span>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top: 1.2rem;">The neat round holes that appear in redbud leaves by midsummer are the work of <strong>leafcutter bees</strong>, which carry the pieces off to line their nest cells — a sign the tree is doing its job, not a problem to treat. Early <strong>ruby-throated hummingbirds</strong> returning in late April will also sip from the last of the flowers.</p>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Care &amp; Cultivation</p>
+    <h2>Growing Conditions</h2>
+    <p>Redbud is one of the easiest native trees to grow and one of the best for a small yard, flowering within a few years of planting and staying a manageable size. It is not a long-lived tree — twenty to thirty years is typical in a garden — so plant it where its early bloom can be enjoyed and plan on letting a seedling take over in time. Plant it young; it grows a deep taproot and resents being moved once established.</p>
+    <table class="care-table">
+      <tr><td>Light</td><td>Full sun to part shade; blooms most heavily in sun, but grows naturally at the edge of taller trees</td></tr>
+      <tr><td>Soil</td><td>Adaptable; well-drained loam, clay, or rocky limestone soils, acid to alkaline</td></tr>
+      <tr><td>Moisture</td><td>Medium; tolerates dry spells once established; dislikes poorly drained, waterlogged ground</td></tr>
+      <tr><td>Habit</td><td>Spreading crown 20–30 ft tall and 25–35 ft wide, often multi-stemmed; fast-growing and relatively short-lived</td></tr>
+      <tr><td>Placement</td><td>Woodland edges, the understory of tall trees, lawn specimens, and small yards; visible from a window in April</td></tr>
+      <tr><td>Maintenance</td><td>Low; prune out dead or cankered branches in dry weather, keep mower and trimmer off the thin bark, and pull extra seedlings</td></tr>
+      <tr><td>Wildlife</td><td>Leave the pods on the tree, the leaf litter beneath, and the leafcutter holes in the leaves</td></tr>
+    </table>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Planting Partners</p>
+    <h2>Grows Well With</h2>
+    <p>Redbud is a tree of the layered woodland edge, sitting beneath the canopy trees and above the spring wildflowers, and it blooms alongside the other early-flowering shrubs and trees that open the season for bees.</p>
+    <div class="companion-group">
+      <p class="companion-group-label">Canopy overhead</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">White Oak</span> <span class="companion-latin">Quercus alba</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Tuliptree</span> <span class="companion-latin">Liriodendron tulipifera</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Black Cherry</span> <span class="companion-latin">Prunus serotina</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Early-blooming understory</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Serviceberry</span> <span class="companion-latin">Amelanchier spp.</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Spicebush</span> <span class="companion-latin">Lindera benzoin</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Virginia Creeper</span> <span class="companion-latin">Parthenocissus quinquefolia</span></div></div>
+      </div>
+    </div>
+    <div class="companion-group">
+      <p class="companion-group-label">Spring woodland floor</p>
+      <div class="companion-list">
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Woodland Phlox</span> <span class="companion-latin">Phlox divaricata</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Geranium</span> <span class="companion-latin">Geranium maculatum</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Columbine</span> <span class="companion-latin">Aquilegia canadensis</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Foamflower</span> <span class="companion-latin">Tiarella cordifolia</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Wild Ginger</span> <span class="companion-latin">Asarum canadense</span></div></div>
+        <div class="companion-row"><div class="companion-dot"></div><div><span class="companion-common">Christmas Fern</span> <span class="companion-latin">Polystichum acrostichoides</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section fact-feature">
+    <p class="eyebrow">Did You Know?</p>
+    <h2>The Stories Behind This Plant</h2>
+
+    <div class="story-card story-card--highlight">
+      <div class="story-number">01</div>
+      <div class="story-body">
+        <h3 class="story-title">Flowers From the Trunk</h3>
+        <p>Most temperate trees bloom only on new growth at the twig tips, but redbud also flowers from dormant buds on old branches and on the trunk itself — a habit botanists call <strong>cauliflory</strong>, far more common in tropical trees like cacao. The buds persist in the bark for years, and each spring they burst into tufts of pink flowers directly from the wood. It is why an old redbud in bloom looks as though it has been dipped in color, trunk and all.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">02</div>
+      <div class="story-body">
+        <h3 class="story-title">A Legume Without the Nodules</h3>
+        <p>Redbud is in the pea family, and its flowers and pods are unmistakably those of a legume. But unlike clover, wild lupine, or false indigo, it does not form root nodules with nitrogen-fixing bacteria. Redbud belongs to an old, early-branching lineage of the family that split off before that partnership evolved — a reminder that "legume" and "nitrogen fixer" are not quite the same thing.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">03</div>
+      <div class="story-body">
+        <h3 class="story-title">The Elfin of April</h3>
+        <p>Henry's elfin is a small, dusky brown hairstreak that flies for only a few weeks in early spring. In Ohio its caterpillars feed mainly on redbud, eating the flower buds, blossoms, and young pods rather than the leaves, and the butterfly's single flight is timed to the tree's bloom. It spends the rest of the year as a chrysalis in the leaf litter below — one more reason to leave the leaves where they fall.</p>
+      </div>
+    </div>
+
+    <div class="story-card">
+      <div class="story-number">04</div>
+      <div class="story-body">
+        <h3 class="story-title">Redbuds and Judas Trees</h3>
+        <p>The genus <em>Cercis</em> has a handful of species around the Northern Hemisphere, and the Mediterranean one, <em>Cercis siliquastrum</em>, is the "Judas tree" of old European legend. Ohio's redbud is its New World cousin. The name comes from the buds, which are a deep red-purple before they open into pink; settlers and naturalists noted that the flowers were sometimes eaten in spring salads, mentioned here as history, not as advice.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Ohio's Understory Trees</p>
+    <h2>Meet Redbud's Neighbors</h2>
+    <p>Ohio has only one native <em>Cercis</em>, but redbud shares the woodland edge and understory with several other small native trees. Each fills the layer beneath the oaks and tuliptrees with flowers, fruit, or fine structure, and together they make the difference between a forest and a woodland garden.</p>
+    <div class="species-grid">
+      <div class="species-card featured">
+        <p class="species-tag">This Page · April bloom · Statewide</p>
+        <p class="species-common">Eastern Redbud</p>
+        <p class="species-latin">Cercis canadensis</p>
+        <p class="species-desc">The species profiled on this page: a small spreading tree with magenta pea-flowers on bare wood in April, heart-shaped leaves, and flat pods into winter. The bee tree of early spring and host of Henry's elfin.</p>
+        <div class="species-traits"><span class="species-trait">20–30 ft</span><span class="species-trait">Sun–part shade</span><span class="species-trait">April bloom</span><span class="species-trait">Bee tree</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">White bracts · Red fruit</p>
+        <p class="species-common">Flowering Dogwood</p>
+        <p class="species-latin">Cornus florida</p>
+        <p class="species-desc">Redbud's classic partner in bloom, following a week or two behind with four white bracts around each flower cluster. Its glossy red fruit in fall is rich in fat and is stripped by thrushes and other migrating birds.</p>
+        <div class="species-traits"><span class="species-trait">15–30 ft</span><span class="species-trait">Part shade</span><span class="species-trait">April–May</span><span class="species-trait">Bird fruit</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Largest native fruit · Host tree</p>
+        <p class="species-common">Pawpaw</p>
+        <p class="species-latin">Asimina triloba</p>
+        <p class="species-desc">A colony-forming understory tree of rich bottomland woods with maroon, bell-shaped flowers in April and large custard-fleshed fruits in September. The only host of the zebra swallowtail.</p>
+        <div class="species-traits"><span class="species-trait">15–25 ft</span><span class="species-trait">Shade–part sun</span><span class="species-trait">Maroon flowers</span><span class="species-trait">Host tree</span></div>
+      </div>
+      <div class="species-card">
+        <p class="species-tag">Musclewood · Shade tolerant</p>
+        <p class="species-common">American Hornbeam</p>
+        <p class="species-latin">Carpinus caroliniana</p>
+        <p class="species-desc">A slow, shade-loving small tree of stream banks with smooth, blue-grey, sinewy bark that earns it the name musclewood. Its hanging clusters of leafy-winged nutlets feed birds, and its fall color runs from orange to red.</p>
+        <div class="species-traits"><span class="species-trait">20–30 ft</span><span class="species-trait">Shade</span><span class="species-trait">Fluted bark</span><span class="species-trait">Streamside</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Ohio Native Plant Garden</strong><br/>You scanned a QR code in our native garden.<br/>Each plant here was chosen to support local wildlife,<br/>build healthy soil, and restore Ohio's native plant communities.</p>
+    <p style="margin-top:1rem; font-size:0.58rem; opacity:0.55">Cercis canadensis · Small Native Tree · Native to Ohio</p>
+  </footer>
+
+  <script src="../js/plant-profile.js?v=4"></script>
+</body>
+</html>

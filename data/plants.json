@@ -3368,5 +3368,223 @@
       "Black Cherry"
     ],
     "native": true
+  },
+  {
+    "commonName": "Eastern Redbud",
+    "scientificName": "Cercis canadensis",
+    "type": "Small Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April",
+    "season": "Spring",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium",
+    "height": "20–30 ft",
+    "description": "The first color of the Ohio woods — magenta pea-flowers crowding bare twigs and even the trunk in April, before a single leaf, followed by heart-shaped leaves and flat purple pods that hang on into winter.",
+    "url": "eastern-redbud.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#f2e6ea",
+    "accentTo": "#e8d8de",
+    "svgIcon": "redbud",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "eastern-redbud",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "carpenter-bee",
+      "long-horned-bee",
+      "sweat-bee"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "tuliptree",
+      "black-cherry",
+      "serviceberry",
+      "spicebush",
+      "virginia-creeper",
+      "woodland-phlox",
+      "wild-geranium",
+      "wild-columbine",
+      "foamflower",
+      "wild-ginger",
+      "christmas-fern"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "woodland-understory"
+    ],
+    "aliases": [
+      "Cercis canadensis",
+      "Redbud",
+      "American Redbud",
+      "Judas Tree",
+      "Eastern Redbud"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Pawpaw",
+    "scientificName": "Asimina triloba",
+    "type": "Small Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April–May",
+    "season": "Spring",
+    "sun": "Part shade to full sun",
+    "moisture": "Medium to moist",
+    "height": "15–30 ft",
+    "description": "Ohio's official native fruit — a small understory tree with long, drooping, almost tropical leaves, nodding maroon flowers in April, and custardy green fruit in September that tastes of banana and mango, on the only host of the zebra swallowtail.",
+    "url": "pawpaw.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#e7ecda",
+    "accentTo": "#dbe3cc",
+    "svgIcon": "pawpaw",
+    "plantType": "Tree",
+    "lightTags": [
+      "Shade",
+      "Part Sun",
+      "Full Sun"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "pawpaw",
+    "relatedWildlifeSlugs": [
+      "hover-fly"
+    ],
+    "relatedPlantSlugs": [
+      "tuliptree",
+      "white-oak",
+      "spicebush",
+      "wild-hydrangea",
+      "elderberry",
+      "serviceberry",
+      "wild-ginger",
+      "christmas-fern",
+      "woodland-phlox",
+      "foamflower"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "floodplain",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Asimina triloba",
+      "Common Pawpaw",
+      "Hoosier Banana",
+      "Poor Man's Banana",
+      "Custard Apple",
+      "Indiana Banana",
+      "Pawpaw"
+    ],
+    "native": true
+  },
+  {
+    "commonName": "Sugar Maple",
+    "scientificName": "Acer saccharum",
+    "type": "Large Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April",
+    "season": "Spring · Fall",
+    "sun": "Full sun to full shade",
+    "moisture": "Medium to moist",
+    "height": "60–80 ft",
+    "description": "The tree of Ohio's sugarbushes and October hillsides — tassels of yellow-green flowers in April, paired samaras in fall, sap that boils down to maple syrup in March, and leaves that blaze orange and scarlet while feeding nearly three hundred kinds of caterpillars.",
+    "url": "sugar-maple.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#eceadb",
+    "accentTo": "#e6d9c6",
+    "svgIcon": "maple",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun",
+      "Shade"
+    ],
+    "moistureTags": [
+      "Medium",
+      "Moist"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant"
+    ],
+    "slug": "sugar-maple",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "sweat-bee",
+      "cicada",
+      "katydid",
+      "aphid"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "tuliptree",
+      "black-cherry",
+      "spicebush",
+      "witch-hazel",
+      "serviceberry",
+      "wild-ginger",
+      "christmas-fern",
+      "woodland-phlox",
+      "foamflower",
+      "wild-geranium"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-understory",
+      "woodland-edge"
+    ],
+    "aliases": [
+      "Acer saccharum",
+      "Hard Maple",
+      "Rock Maple",
+      "Sugar Tree",
+      "Sugartree",
+      "Hard Rock Maple",
+      "Sugar Maple"
+    ],
+    "native": true
   }
 ]

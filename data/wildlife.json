@@ -43,7 +43,8 @@
       "penstemon",
       "coreopsis",
       "liatris",
-      "golden-alexanders"
+      "golden-alexanders",
+      "eastern-redbud"
     ],
     "relatedWildlifeSlugs": [],
     "relatedHabitatSlugs": [
@@ -99,7 +100,9 @@
       "goldenrod",
       "aster",
       "virginia-creeper",
-      "black-cherry"
+      "black-cherry",
+      "eastern-redbud",
+      "sugar-maple"
     ],
     "relatedWildlifeSlugs": [
       "carpenter-bee",
@@ -158,7 +161,9 @@
       "liatris",
       "goldenrod",
       "false-indigo",
-      "wild-hydrangea"
+      "wild-hydrangea",
+      "eastern-redbud",
+      "sugar-maple"
     ],
     "relatedWildlifeSlugs": [
       "carpenter-bee",
@@ -215,7 +220,8 @@
       "cup-plant",
       "goldenrod",
       "aster",
-      "coreopsis"
+      "coreopsis",
+      "eastern-redbud"
     ],
     "relatedWildlifeSlugs": [
       "carpenter-bee",
@@ -272,7 +278,8 @@
       "wingstem",
       "goldenrod",
       "aster",
-      "virginia-creeper"
+      "virginia-creeper",
+      "pawpaw"
     ],
     "relatedWildlifeSlugs": [
       "aphid",
@@ -489,7 +496,8 @@
       "black-eyed-susan",
       "goldenrod",
       "aster",
-      "boneset"
+      "boneset",
+      "sugar-maple"
     ],
     "relatedWildlifeSlugs": [
       "lady-beetle",
@@ -731,7 +739,8 @@
       "little-bluestem",
       "cup-plant",
       "tuliptree",
-      "black-cherry"
+      "black-cherry",
+      "sugar-maple"
     ],
     "relatedWildlifeSlugs": [
       "cicada",
@@ -789,7 +798,8 @@
       "serviceberry",
       "witch-hazel",
       "tuliptree",
-      "black-cherry"
+      "black-cherry",
+      "sugar-maple"
     ],
     "relatedWildlifeSlugs": [
       "katydid",
