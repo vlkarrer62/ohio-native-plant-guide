@@ -3368,5 +3368,77 @@
       "Black Cherry"
     ],
     "native": true
+  },
+  {
+    "commonName": "Eastern Redbud",
+    "scientificName": "Cercis canadensis",
+    "type": "Small Native Tree",
+    "category": "trees",
+    "bloom": "Blooms April",
+    "season": "Spring",
+    "sun": "Full sun to part shade",
+    "moisture": "Medium",
+    "height": "20–30 ft",
+    "description": "The first color of the Ohio woods — magenta pea-flowers crowding bare twigs and even the trunk in April, before a single leaf, followed by heart-shaped leaves and flat purple pods that hang on into winter.",
+    "url": "eastern-redbud.html",
+    "tagClass": "tag-tree",
+    "accentFrom": "#f2e6ea",
+    "accentTo": "#e8d8de",
+    "svgIcon": "redbud",
+    "plantType": "Tree",
+    "lightTags": [
+      "Full Sun",
+      "Part Sun"
+    ],
+    "moistureTags": [
+      "Medium"
+    ],
+    "bloomSeasonTags": [
+      "Spring"
+    ],
+    "wildlifeRole": [
+      "Host Plant",
+      "Nectar Plant",
+      "Pollen Plant",
+      "Seed Source",
+      "Cover/Shelter"
+    ],
+    "gardenRole": [
+      "Structural Plant",
+      "Edge Plant"
+    ],
+    "slug": "eastern-redbud",
+    "relatedWildlifeSlugs": [
+      "bumble-bee",
+      "carpenter-bee",
+      "long-horned-bee",
+      "sweat-bee"
+    ],
+    "relatedPlantSlugs": [
+      "white-oak",
+      "tuliptree",
+      "black-cherry",
+      "serviceberry",
+      "spicebush",
+      "virginia-creeper",
+      "woodland-phlox",
+      "wild-geranium",
+      "wild-columbine",
+      "foamflower",
+      "wild-ginger",
+      "christmas-fern"
+    ],
+    "relatedHabitatSlugs": [
+      "woodland-edge",
+      "woodland-understory"
+    ],
+    "aliases": [
+      "Cercis canadensis",
+      "Redbud",
+      "American Redbud",
+      "Judas Tree",
+      "Eastern Redbud"
+    ],
+    "native": true
   }
 ]
